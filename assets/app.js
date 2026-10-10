@@ -52,11 +52,11 @@
   };
   const stars = (r) => r == null ? '<span class="muted">—</span>' :
     `<span class="stars" title="${r} of 5">${"★".repeat(Math.floor(r))}${r % 1 ? "½" : ""}<span class="off">${"★".repeat(5 - Math.ceil(r))}</span></span>`;
-  const scorePill = (v) => {
+  const scorePill = (v, kind) => {
     if (!v) return '<span class="muted">—</span>';
     const n = parseInt(v, 10);
     const cls = v.includes("/") ? (n >= 4 ? "good" : n >= 3 ? "warn" : "bad") : (n <= 4 ? "good" : n <= 6 ? "warn" : "bad");
-    return `<span class="pill ${cls}">${esc(v)}</span>`;
+    return `<span class="pill ${cls}"${kind ? ` data-vk="${kind}"` : ""}>${esc(v)}</span>`;
   };
   // Approximate star colour from effective temperature (Tanner Helland's blackbody fit).
   const teffColor = (t) => {
@@ -100,6 +100,312 @@
   const bib = (b) => b ? `<a href="https://ui.adsabs.harvard.edu/abs/${encodeURIComponent(String(b).trim())}" target="_blank" rel="noopener">${esc(String(b).trim())}</a>` : "—";
   const paras = (text) => String(text || "").split(/\n+/).filter((p) => p.trim()).map((p) => `<p>${esc(p.trim())}</p>`).join("");
 
+  // ---------- glossary tooltips ----------
+  // window.MO_GLOSSARY (assets/glossary.js) supplies {terms, lookup(text), explainValue(kind, value)}.
+  // Everything below degrades to plain text when it is missing. Elements carry data-term="<id>"
+  // and/or data-value-kind + data-value; one floating tooltip serves the whole page (and #overview).
+  // annotate(root) finds label-like elements and attaches those attributes; markup can steer it
+  // with data-gl="candidate|candidate" (lookup texts) and data-vk / data-vv (value kind / raw value).
+  const TIP_SEL = "[data-term], [data-value-kind]";
+  const gloss = () => { const g = window.MO_GLOSSARY; return g && typeof g === "object" ? g : null; };
+  const glTerm = (id) => { const g = gloss(); return (id && g && g.terms && g.terms[id]) || null; };
+  const glLookup = (text) => {
+    const g = gloss();
+    if (!g || typeof g.lookup !== "function" || !text || !String(text).trim()) return null;
+    try { const id = g.lookup(String(text).trim()); return id && glTerm(id) ? id : null; } catch { return null; }
+  };
+  const glExplain = (kind, value) => {
+    const g = gloss();
+    if (!g || typeof g.explainValue !== "function" || blank(value) || String(value).trim() === "—") return null;
+    try { const s = g.explainValue(kind, String(value).trim()); return s ? String(s) : null; } catch { return null; }
+  };
+  const tip = { el: null, target: null, timer: 0, pointer: "mouse", downAt: 0 };
+  const KIND_TITLES = { spectral_type: "Spectral type", otype: "Object type", luminosity_class: "Luminosity class",
+    bortle: "Bortle scale", seeing: "Seeing", transparency: "Transparency", mag: "Magnitude", band: "Photometric band" };
+
+  function tipBox() {
+    if (!tip.el) {
+      tip.el = document.createElement("div");
+      tip.el.className = "gtip"; tip.el.id = "gtip"; tip.el.setAttribute("role", "tooltip"); tip.el.hidden = true;
+      document.body.appendChild(tip.el);
+    }
+    return tip.el;
+  }
+  function tipHtml(t) {
+    const id = t.getAttribute("data-term"), term = glTerm(id);
+    const kind = t.getAttribute("data-value-kind"), value = t.getAttribute("data-value") || "";
+    const expl = kind ? glExplain(kind, value) : null;
+    if (!term && !expl) return "";
+    const head = term ? term.term || id : KIND_TITLES[kind] || value;
+    let h = `<div class="gtip-t">${esc(head)}</div>`;
+    // explainValue usually opens with the value itself; prefix it only when it does not.
+    const lead = expl && !expl.slice(0, value.length + 20).toLowerCase().includes(value.toLowerCase().replace(/^-/, ""));
+    if (expl) h += `<div class="gtip-v">${lead ? `<span class="gtip-vv">${esc(value)}</span> ` : ""}${esc(expl)}</div>`;
+    if (term && term.short) h += `<div class="gtip-s">${esc(term.short)}</div>`;
+    if (term && term.long) h += `<div class="gtip-l">${esc(term.long)}</div>`;
+    return h;
+  }
+  function showTip(t) {
+    clearTimeout(tip.timer);
+    if (tip.target === t && tip.el && !tip.el.hidden) return placeTip();
+    const html = tipHtml(t);
+    if (!html) return;
+    const box = tipBox();
+    if (tip.target && tip.target !== t) tip.target.removeAttribute("aria-describedby");
+    box.innerHTML = html;
+    tip.target = t;
+    t.setAttribute("aria-describedby", "gtip");
+    box.hidden = false;
+    placeTip();
+  }
+  function placeTip() {
+    const box = tip.el, t = tip.target;
+    if (!box || box.hidden || !t) return;
+    if (!t.isConnected) return hideTip();
+    const r = t.getBoundingClientRect();
+    const vw = document.documentElement.clientWidth || innerWidth, vh = innerHeight, m = 8;
+    if ((!r.width && !r.height) || r.bottom < 0 || r.top > vh) return hideTip();
+    box.style.maxWidth = Math.min(360, vw - 2 * m) + "px";
+    box.style.left = "0px"; box.style.top = "0px";
+    const w = box.offsetWidth, h = box.offsetHeight;
+    const x = Math.max(m, Math.min(r.left, vw - w - m));
+    let y = r.bottom + 6;
+    if (y + h > vh - m) y = r.top - h - 6 >= m ? r.top - h - 6 : Math.max(m, vh - h - m);
+    box.style.left = Math.round(x) + "px"; box.style.top = Math.round(y) + "px";
+  }
+  function hideTip() {
+    clearTimeout(tip.timer);
+    if (tip.target) tip.target.removeAttribute("aria-describedby");
+    tip.target = null;
+    if (tip.el) tip.el.hidden = true;
+  }
+  const hideTipSoon = () => { clearTimeout(tip.timer); tip.timer = setTimeout(hideTip, 120); };
+  // Keyboard focus on a <summary> or <button> shows the term inside it.
+  const tipTargetFor = (n) => !n || !n.closest ? null
+    : n.closest(TIP_SEL) || (/^(SUMMARY|BUTTON)$/.test(n.tagName) ? n.querySelector(TIP_SEL) : null);
+
+  document.addEventListener("pointerdown", (e) => { tip.pointer = e.pointerType || "mouse"; tip.downAt = Date.now(); }, true);
+  document.addEventListener("pointerover", (e) => {
+    if (e.pointerType === "touch") return;
+    const t = e.target.closest && e.target.closest(TIP_SEL);
+    if (t) showTip(t);
+  });
+  document.addEventListener("pointerout", (e) => {
+    if (e.pointerType === "touch" || !tip.target) return;
+    const t = e.target.closest && e.target.closest(TIP_SEL);
+    if (t !== tip.target || (e.relatedTarget && t.contains(e.relatedTarget))) return;
+    if (document.activeElement === t) return;   // keyboard focus keeps it open
+    hideTipSoon();
+  });
+  document.addEventListener("focusin", (e) => {
+    if (tip.pointer === "touch" && Date.now() - tip.downAt < 800) return;   // the tap's click toggles it
+    const t = tipTargetFor(e.target);
+    if (t) showTip(t);
+  });
+  document.addEventListener("focusout", (e) => {
+    if (tip.target && tipTargetFor(e.target) === tip.target) hideTipSoon();
+  });
+  // Touch: a tap toggles the tooltip; a tap anywhere else closes it.
+  document.addEventListener("click", (e) => {
+    if (tip.pointer !== "touch" || Date.now() - tip.downAt > 1500) return;
+    const t = e.target.closest && e.target.closest(TIP_SEL);
+    if (t) { if (tip.target === t && tip.el && !tip.el.hidden) hideTip(); else showTip(t); return; }
+    if (tip.target && !(tip.el && tip.el.contains(e.target))) hideTip();
+  }, true);
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && tip.target) hideTip(); });
+  let tipFrame = 0;
+  const tipFollow = () => { if (!tip.target || tipFrame) return; tipFrame = requestAnimationFrame(() => { tipFrame = 0; placeTip(); }); };
+  window.addEventListener("scroll", tipFollow, { passive: true, capture: true });
+  window.addEventListener("resize", tipFollow);
+
+  // --- annotate
+  const LABEL_SEL = [".fact .k", "th", "summary", "h2", "h3", ".mtitle", ".mo-card__title", ".mo-field__label",
+    ".mo-axis-label", ".mo-ref-label", "[data-gl]"].join(",");
+  const PROSE_SEL = ".note, .fact .x, .mo-card__sub, .mo-card__foot";
+  const UNIT_RE = /^(M☉|R☉|L☉|M⊕|R⊕|ly|pc|kpc|Mpc|mas|mas\/yr|AU|K|Myr|Gyr|km\/s|arcmin|arcsec|deg²)$/;
+  const COL_KINDS = [[/^(spectral type|sptype|sp\.? type)$/i, "spectral_type"], [/^(otype|type|object type)$/i, "otype"],
+    [/^seeing$/i, "seeing"], [/^transp(\.|arency)?$/i, "transparency"], [/^bortle$/i, "bortle"], [/^band$/i, "band"],
+    [/^(mag|magnitude|v|apparent magnitude)$/i, "mag"]];
+  const WD_KINDS = [[/^spectral (class|type)$/i, "spectral_type"], [/^apparent magnitude$/i, "mag"], [/^instance of$/i, "otype"]];
+  const PROSE_STOP = new Set(("the and for with from that this each are was not but all its into than then they them only also more most " +
+    "less same show shows click drag filter point points size objects object observation observations highlight highlighted region chart " +
+    "view star stars night nights local noon rating time left right top bottom centre center north east south west line lines join " +
+    "data page full text place computed when where which there their these those latest none main new repeat mean").split(" "));
+
+  const directText = (el) => {
+    let s = "";
+    el.childNodes.forEach((n) => { if (n.nodeType === 3) s += n.nodeValue; });
+    return s.replace(/\s+/g, " ").trim();
+  };
+  function candidates(text) {
+    text = String(text || "").replace(/\s+/g, " ").trim();
+    if (!text) return [];
+    const first = text.split(" · ")[0];
+    return [...new Set([text, first, first.replace(/\s*\([^)]*\)/g, ""), first.split(/\s+\/\s+/)[0], first.replace(/[:=]\s*$/, "")]
+      .map((s) => s.trim()).filter(Boolean))];
+  }
+  function makeFocusable(el) {
+    if (el.matches("a[href], button, summary, input, select, textarea, [tabindex]")) return;
+    if (el.closest("a[href], button, summary, select")) return;   // never nest a tab stop in a control
+    el.setAttribute("tabindex", "0");
+  }
+  function markTerm(el, id) {
+    el.setAttribute("data-term", id);
+    el.classList.add("gl");
+    makeFocusable(el);
+  }
+  // Wrap `phrase` (inside one of el's direct text nodes) in a span; returns the span or null.
+  function wrapPhrase(el, phrase) {
+    for (const n of [...el.childNodes]) {
+      if (n.nodeType !== 3) continue;
+      const i = n.nodeValue.indexOf(phrase);
+      if (i < 0) continue;
+      const mid = i ? n.splitText(i) : n;
+      mid.splitText(phrase.length);
+      const span = document.createElement("span");
+      span.className = "gl-w";
+      mid.replaceWith(span);
+      span.appendChild(mid);
+      return span;
+    }
+    return null;
+  }
+  function annotateLabel(el) {
+    if (el.hasAttribute("data-term") || (el.closest && el.closest(".gtip"))) return;
+    const isSvg = el instanceof SVGElement;
+    const gl = el.getAttribute("data-gl");
+    const text = gl ? "" : isSvg ? el.textContent.replace(/\s+/g, " ").trim() : directText(el);
+    const key = gl || text;
+    if (!key || el.getAttribute("data-gl-done") === key) return;
+    el.setAttribute("data-gl-done", key);
+    const tries = gl ? gl.split("|").map((s) => s.trim()).filter(Boolean) : candidates(text);
+    let id = null, hit = "";
+    for (const c of tries) { id = glLookup(c); if (id) { hit = c; break; } }
+    if (!id) return;
+    if (gl || isSvg) return markTerm(el, id);
+    const whole = el.children.length === 0 && hit === text;
+    if (whole) return markTerm(el, id);
+    const span = wrapPhrase(el, hit) || wrapPhrase(el, text.split(" · ")[0]);
+    markTerm(span || el, id);
+  }
+  function annotateValue(el, kind, value) {
+    if (!el || el.hasAttribute("data-value-kind")) return;
+    value = String(value ?? el.textContent).replace(/\s+/g, " ").trim();
+    if (!value || value === "—") return;
+    if (!glExplain(kind, value)) return;
+    el.setAttribute("data-value-kind", kind);
+    el.setAttribute("data-value", value);
+    el.classList.add("gl");
+    makeFocusable(el);
+  }
+  // The element inside a table cell that should carry a value explanation.
+  function cellTarget(td) {
+    const t = td.textContent.replace(/\s+/g, " ").trim();
+    if (!t || t === "—" || td.hasAttribute("data-value-kind")) return null;
+    const kids = td.children;
+    if (kids.length === 1 && kids[0].textContent.trim() === td.textContent.trim()) {
+      return kids[0].matches("a, button") ? null : kids[0];
+    }
+    if (kids.length) return null;
+    const span = document.createElement("span");
+    span.append(...td.childNodes);
+    td.appendChild(span);
+    return span;
+  }
+  function annotateTables(root) {
+    root.querySelectorAll("table").forEach((tbl) => {
+      const head = tbl.tHead && tbl.tHead.rows[0];
+      if (!head) return;
+      const kinds = [...head.cells].map((th) => {
+        if (th.dataset.colVk) return th.dataset.colVk;
+        const t = (th.querySelector(".gl-name") || th).textContent.replace(/\s+/g, " ").trim();
+        const hit = COL_KINDS.find(([re]) => re.test(t));
+        return hit ? hit[1] : null;
+      });
+      if (!kinds.some(Boolean)) return;
+      [...tbl.tBodies].forEach((tb) => [...tb.rows].forEach((tr) => [...tr.cells].forEach((td, i) => {
+        if (kinds[i] && td.tagName === "TD") annotateValue(cellTarget(td), kinds[i], td.dataset.vv);
+      })));
+    });
+    root.querySelectorAll("table.wd tr").forEach((tr) => {
+      const th = tr.querySelector("th");
+      const hit = th && WD_KINDS.find(([re]) => re.test(th.textContent.trim()));
+      if (hit) tr.querySelectorAll(".wdv").forEach((v) => { if (!v.querySelector("a")) annotateValue(v, hit[1]); });
+    });
+  }
+  // Prose: wrap the first occurrence of each glossary term in short notes and chart captions.
+  function annotateProse(el) {
+    const before = el.textContent;
+    if (el.getAttribute("data-gl-scan") === before) return;
+    const seen = new Set([...el.querySelectorAll("[data-term]")].map((x) => x.getAttribute("data-term")));
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, {
+      acceptNode: (n) => n.parentElement.closest("[data-term], [data-value-kind], a, button, .mono, select, option")
+        ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
+    });
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach((n) => wrapTerms(n, seen));
+    el.setAttribute("data-gl-scan", el.textContent);
+  }
+  function wrapTerms(node, seen) {
+    const s = node.nodeValue;
+    const toks = [...s.matchAll(/[\p{L}\p{N}][\p{L}\p{N}'’−–-]*/gu)].map((m) => ({ a: m.index, b: m.index + m[0].length, w: m[0] }));
+    const hits = [];
+    for (let i = 0; i < toks.length; i++) {
+      for (let len = Math.min(4, toks.length - i); len >= 1; len--) {
+        let ok = true;
+        for (let j = i; j < i + len - 1 && ok; j++) ok = /^[  -]+$/.test(s.slice(toks[j].b, toks[j + 1].a));
+        if (!ok) continue;
+        const phrase = s.slice(toks[i].a, toks[i + len - 1].b);
+        const low = phrase.toLowerCase();
+        if (len === 1 && (low.length < 3 || PROSE_STOP.has(low) || /^\d/.test(low))) continue;
+        const id = glLookup(phrase);
+        if (!id || seen.has(id)) continue;
+        if (len === 1) {   // single words must really name the term (no loose variant matches)
+          const name = String((glTerm(id) || {}).term || "").toLowerCase().replace(/\s*\(.*\)$/, "");
+          if (!(name === low || name.startsWith(low) || low.startsWith(name) || /[A-Z]{2}|[−–]/.test(phrase))) continue;
+        }
+        seen.add(id);
+        hits.push({ a: toks[i].a, b: toks[i + len - 1].b, id });
+        i += len - 1;
+        break;
+      }
+    }
+    if (!hits.length) return;
+    const frag = document.createDocumentFragment();
+    let at = 0;
+    hits.forEach((h) => {
+      if (h.a > at) frag.appendChild(document.createTextNode(s.slice(at, h.a)));
+      const span = document.createElement("span");
+      span.textContent = s.slice(h.a, h.b);
+      frag.appendChild(span);
+      markTerm(span, h.id);
+      at = h.b;
+    });
+    if (at < s.length) frag.appendChild(document.createTextNode(s.slice(at)));
+    node.replaceWith(frag);
+  }
+  function annotate(root) {
+    root = root || document.body;
+    if (!root || !root.querySelectorAll || !gloss()) return;
+    try {
+      root.querySelectorAll(LABEL_SEL).forEach(annotateLabel);
+      root.querySelectorAll("[data-vk]").forEach((el) => annotateValue(el, el.getAttribute("data-vk"), el.getAttribute("data-vv")));
+      annotateTables(root);
+      root.querySelectorAll(".u, .unit").forEach((el) => {
+        const t = el.textContent.trim();
+        if (!el.hasAttribute("data-term") && UNIT_RE.test(t)) { const id = glLookup(t); if (id) markTerm(el, id); }
+      });
+      root.querySelectorAll(PROSE_SEL).forEach(annotateProse);
+      if (tip.target && !tip.target.isConnected) hideTip();
+    } catch (e) { console.warn("glossary annotate", e); }
+  }
+  const termHtml = (id, text) => {
+    const t = glTerm(id), label = esc(text ?? (t && t.term) ?? id ?? "");
+    return t ? `<span class="gl" data-term="${esc(id)}" tabindex="0">${label}</span>` : label;
+  };
+  window.MO_TIP = { annotate, term: termHtml, hide: hideTip };
+
   // ---------- list ----------
   const sorters = {
     last: (a, b) => (b.last_observed || "").localeCompare(a.last_observed || ""),
@@ -139,12 +445,13 @@
         const des = cleanId(o.designation);
         const sub = [des && des !== o.name ? des : null, o.app_type, o.constellation]
           .filter(Boolean).join(" · ");
-        const right = [o.v_mag != null ? `mag ${num(o.v_mag, 1)}` : "", `${o.observations}× seen`].filter(Boolean).join("<br>");
+        const right = [o.v_mag != null ? `<span data-gl="apparent magnitude|magnitude" data-vk="mag" data-vv="${esc(o.v_mag)}">mag ${num(o.v_mag, 1)}</span>` : "", `${o.observations}× seen`].filter(Boolean).join("<br>");
         const img = o.thumb ? `<img loading="lazy" src="${esc(fileUrl(o, o.thumb))}" alt="">` : '<div class="noimg"></div>';
         return `<a class="item" href="#${esc(o.path)}" aria-current="${current === o.path}">${img}<div><div class="t">${esc(o.name)}</div><div class="s">${esc(sub)}</div></div><div class="r">${right}</div></a>`;
       }).join("");
     }
     $("#list").innerHTML = html || '<div class="empty">No objects match.</div>';
+    annotate($("#list"));
   }
 
   // ---------- data loading ----------
@@ -182,6 +489,19 @@
     sptype: "Spectral type", teff: "Teff", log_g: "log g", fe_h: "[Fe/H]", vsini: "v sin i",
   };
   const colName = (k) => COL_NAMES[k] || String(k).replace(/__+/g, " ").replace(/_/g, " ").trim();
+  // Glossary lookup hints for raw SIMBAD column keys (the header text is tried too).
+  const COL_GL = {
+    pmra: "proper motion in right ascension|proper motion", pmde: "proper motion in declination|proper motion",
+    pmdec: "proper motion in declination|proper motion", pmra_err: "proper motion|uncertainty", pmde_err: "proper motion|uncertainty",
+    plx: "parallax", plx_err: "parallax|uncertainty", teff: "effective temperature|Teff", log_g: "surface gravity|log g",
+    fe_h: "metallicity|[Fe/H]", vsini: "v sin i|projected rotational velocity", vsini_err: "v sin i|uncertainty",
+    upvsini: "v sin i", sptype: "spectral type", otype: "object type|otype", bibcode: "bibcode", mag: "magnitude|apparent magnitude",
+    err: "uncertainty|error", band: "photometric band|band|passband", membership: "membership probability|membership",
+    velvalue: "radial velocity", veltype: "radial velocity", meanerror: "uncertainty", coosystem: "coordinate system|reference frame",
+    qual: "quality code|quality", quality: "quality code|quality", nbmes: "number of measurements", wdomain: "wavelength domain|wavelength",
+    exptime: "exposure time", obsdate: "observation date", relation: "hierarchy", type: "object type",
+  };
+  const colTh = (k) => `<th${COL_GL[k] ? ` data-gl="${esc(COL_GL[k])}|${esc(colName(k))}"` : ""}>${esc(colName(k))}</th>`;
   function cell(k, v) {
     if (blank(v)) return '<span class="muted">—</span>';
     if (typeof v === "number") return rawNum(v);
@@ -202,22 +522,27 @@
     if (!used.length) return "";
     const body = rows.map((r, i) =>
       `<tr${i >= limit ? ' class="extra"' : ""}>${used.map((k) => `<td>${cell(k, r[k])}</td>`).join("")}</tr>`).join("");
-    return `<div class="clip"><div class="tablewrap"><table><thead><tr>${used.map((k) => `<th>${esc(colName(k))}</th>`).join("")}</tr></thead><tbody>${body}</tbody></table></div>${moreButton(rows.length, limit, unit)}</div>`;
+    return `<div class="clip"><div class="tablewrap"><table><thead><tr>${used.map(colTh).join("")}</tr></thead><tbody>${body}</tbody></table></div>${moreButton(rows.length, limit, unit)}</div>`;
   }
   const moreButton = (n, limit, unit) => n > limit
     ? `<button type="button" class="more-btn" data-action="more" data-label="Show all ${n} ${unit}" aria-expanded="false">Show all ${n} ${unit}</button>` : "";
   // Two-column label/value table from [label, html] pairs; null values are skipped.
-  function kvTable(pairs, cls = "") {
-    const rows = pairs.filter(([, v]) => v != null && v !== "").map(([k, v]) => `<tr><th scope="row">${esc(k)}</th><td>${v}</td></tr>`).join("");
+  // pairs: [label, html, glossaryHint?]; with rawLabels the label is already HTML.
+  function kvTable(pairs, cls = "", rawLabels = false) {
+    const rows = pairs.filter(([, v]) => v != null && v !== "").map(([k, v, gl]) =>
+      `<tr><th scope="row"${gl ? ` data-gl="${esc(gl)}"` : ""}>${rawLabels ? k : esc(k)}</th><td>${v}</td></tr>`).join("");
     return rows ? `<div class="tablewrap"><table class="kv ${cls}">${rows}</table></div>` : "";
   }
   const section = (id, title, body, extra = "") => body
     ? `<section class="sec" id="sec-${id}"><h2>${title}</h2>${extra}${body}</section>` : "";
 
   // ---------- detail: hero and key facts ----------
-  function factCard(k, v, extra = "") {
+  // opts: {gl: "lookup|hints" for the label, vk/vv: value kind and raw value for a value explanation}
+  function factCard(k, v, extra = "", opts = {}) {
     if (v == null || v === "—" || v === "") return "";
-    return `<div class="fact"><div class="k">${esc(k)}</div><div class="v">${v}</div>${extra ? `<div class="x">${extra}</div>` : ""}</div>`;
+    const gl = opts.gl ? ` data-gl="${esc(opts.gl)}"` : "";
+    const vk = opts.vk && !blank(opts.vv) ? ` data-vk="${esc(opts.vk)}" data-vv="${esc(opts.vv)}"` : "";
+    return `<div class="fact"><div class="k"${gl}>${esc(k)}</div><div class="v"><span${vk}>${v}</span></div>${extra ? `<div class="x">${extra}</div>` : ""}</div>`;
   }
 
   const paperCount = (o) => o.papers_count ?? (o.simbad || {}).papers_count ?? (o.simbad || {}).nbref ?? null;
@@ -228,12 +553,12 @@
     const np = paperCount(o);
     const cards = [
       factCard("Apparent magnitude", s.v_mag != null ? num(s.v_mag, 2) : null,
-        s.b_minus_v != null ? `B−V ${num(s.b_minus_v, 2)}` : ""),
+        s.b_minus_v != null ? `B−V ${num(s.b_minus_v, 2)}` : "", { vk: "mag", vv: s.v_mag }),
       factCard("Absolute magnitude", s.abs_mag != null ? num(s.abs_mag, 2) : null),
       factCard("Distance", s.distance_ly != null ? `${num(s.distance_ly, 1)}<span class="u">ly</span>` : null,
         s.distance_pc != null ? `${num(s.distance_pc, 1)} pc · parallax ${num(sb.plx_value, 2)} mas` : ""),
-      factCard("Spectral type", s.spectral_type ? esc(s.spectral_type) : null),
-      factCard("Temperature", s.teff_k ? `${color ? `<span class="swatch" style="background:${color};color:${color}"></span>` : ""}${num(s.teff_k, 0)}<span class="u">K</span>` : null),
+      factCard("Spectral type", s.spectral_type ? esc(s.spectral_type) : null, "", { vk: "spectral_type", vv: s.spectral_type }),
+      factCard("Temperature", s.teff_k ? `${color ? `<span class="swatch" style="background:${color};color:${color}"></span>` : ""}${num(s.teff_k, 0)}<span class="u">K</span>` : null, "", { gl: "effective temperature|temperature" }),
       factCard("Mass", s.mass ? qty(s.mass) : null),
       factCard("Radius", s.radius ? qty(s.radius) : null),
       factCard("Luminosity", s.luminosity ? qty(s.luminosity) : null),
@@ -241,17 +566,17 @@
       factCard("Constellation", s.constellation ? esc(s.constellation) : null),
       factCard("Right ascension", s.ra_deg != null ? ra(s.ra_deg) : null, s.ra_deg != null ? `${num(s.ra_deg, 4)}°` : ""),
       factCard("Declination", s.dec_deg != null ? dec(s.dec_deg) : null, s.dec_deg != null ? `${num(s.dec_deg, 4)}°` : ""),
-      factCard("Object type", s.object_type ? esc(s.object_type) : null),
+      factCard("Object type", s.object_type ? esc(s.object_type) : null, "", { vk: "otype", vv: s.object_type }),
       factCard("Area", s.area ? qty(s.area) : null),
       factCard("Abbreviation", s.abbreviation ? esc(s.abbreviation) : null),
       factCard("Orbital period", s.orbital_period ? qty(s.orbital_period) : null),
       factCard("Rotation period", s.rotation_period ? qty(s.rotation_period) : null),
-      factCard("NORAD ID", s.norad_id ?? null),
+      factCard("NORAD ID", s.norad_id ?? null, "", { gl: "NORAD ID|NORAD catalog number|NORAD" }),
       factCard("Launched", s.launch_date ? esc(s.launch_date) : null, s.owner ? `Owner: ${esc(s.owner)}` : ""),
       factCard("Orbit", s.apogee_km != null ? `${num(s.perigee_km, 0)}–${num(s.apogee_km, 0)}<span class="u">km</span>` : null,
-        s.inclination_deg != null ? `${num(s.inclination_deg, 2)}° inclination · ${num(s.period_min, 1)} min period` : ""),
+        s.inclination_deg != null ? `${num(s.inclination_deg, 2)}° inclination · ${num(s.period_min, 1)} min period` : "", { gl: "orbit|perigee|apogee" }),
       factCard("Rotation (v sin i)", (sb.vsini_measurements || []).length ? `${num(median(sb.vsini_measurements.map((x) => x.vsini)), 0)}<span class="u">km/s</span>` : null,
-        (sb.vsini_measurements || []).length ? `median of ${sb.vsini_measurements.length} measurements` : ""),
+        (sb.vsini_measurements || []).length ? `median of ${sb.vsini_measurements.length} measurements` : "", { gl: "v sin i|Rotation (v sin i)|projected rotational velocity" }),
       factCard("Radial velocity", sb.rvz_radvel != null ? `${num(sb.rvz_radvel, 1)}<span class="u">km/s</span>` : null),
       np ? `<button type="button" class="fact fact-link" data-action="papers" aria-haspopup="dialog"><div class="k">Research papers</div><div class="v">${num(np, 0)}</div><div class="x">references in SIMBAD · <span class="go">browse →</span></div></button>` : "",
     ].join("");
@@ -266,12 +591,13 @@
     const hasEph = obs.some((x) => x.ephemeris);
     const rows = obs.map((x) => {
       const alt = x.altitude_deg != null && !Number.isNaN(x.altitude_deg)
-        ? `${num(x.altitude_deg, 1)}° <span class="muted">${compass(x.azimuth_deg)} ${num(x.azimuth_deg, 0)}°</span>` : '<span class="muted">—</span>';
+        ? `<span data-gl="altitude">${num(x.altitude_deg, 1)}°</span> <span class="muted" data-gl="azimuth">${compass(x.azimuth_deg)} ${num(x.azimuth_deg, 0)}°</span>` : '<span class="muted">—</span>';
       const loc = x.location ? esc(x.location) : x.location_assumed ? `<span class="muted" title="Location not visible in screenshot; assumed">${esc(x.location_assumed)}*</span>` : "—";
-      const eph = hasEph ? `<td>${x.ephemeris ? `mag ${esc(x.ephemeris.mag)} · ${num(x.ephemeris.angular_diameter_arcsec, 1)}″ · ${num(x.ephemeris.illuminated_pct, 0)}% lit · ${num(x.ephemeris.distance_au, 3)} AU` : "—"}</td>` : "";
-      return `<tr><td>${esc(x.datetime)}${x.incomplete ? ' <span class="pill warn" title="Card was cut off in the screenshot">partial</span>' : ""}</td><td>${stars(x.rating)}</td><td>${scorePill(x.seeing)}</td><td>${scorePill(x.transparency)}</td><td>${scorePill(x.bortle)}</td><td>${alt}</td>${eph}<td>${loc}</td></tr>`;
+      const e = x.ephemeris;
+      const eph = hasEph ? `<td>${e ? `<span data-gl="apparent magnitude|magnitude" data-vk="mag" data-vv="${esc(e.mag)}">mag ${esc(e.mag)}</span> · <span data-gl="angular diameter|apparent size">${num(e.angular_diameter_arcsec, 1)}″</span> · <span data-gl="illuminated fraction|illumination|phase">${num(e.illuminated_pct, 0)}% lit</span> · <span data-gl="delta|astronomical unit|AU">${num(e.distance_au, 3)} AU</span>` : "—"}</td>` : "";
+      return `<tr><td>${esc(x.datetime)}${x.incomplete ? ' <span class="pill warn" title="Card was cut off in the screenshot">partial</span>' : ""}</td><td>${stars(x.rating)}</td><td>${scorePill(x.seeing, "seeing")}</td><td>${scorePill(x.transparency, "transparency")}</td><td>${scorePill(x.bortle, "bortle")}</td><td>${alt}</td>${eph}<td>${loc}</td></tr>`;
     }).join("");
-    return `<section class="sec" id="sec-obs"><h2>My observations · ${obs.length}</h2><div class="tablewrap"><table><thead><tr><th>Local time</th><th>Rating</th><th>Seeing</th><th>Transp.</th><th>Bortle</th><th>Altitude / direction</th>${hasEph ? "<th>At that moment</th>" : ""}<th>Location</th></tr></thead><tbody>${rows}</tbody></table></div><div class="note">Altitude and direction are computed for the observation time and place.${obs.some((x) => x.location_assumed) ? " * location not visible in the screenshot; assumed." : ""}</div></section>`;
+    return `<section class="sec" id="sec-obs"><h2>My observations · ${obs.length}</h2><div class="tablewrap"><table><thead><tr><th data-gl="local time">Local time</th><th data-gl="rating">Rating</th><th data-gl="seeing">Seeing</th><th data-gl="transparency|Transp.">Transp.</th><th data-gl="Bortle scale|Bortle">Bortle</th><th data-gl="altitude|Altitude / direction">Altitude / direction</th>${hasEph ? '<th data-gl="ephemeris">At that moment</th>' : ""}<th data-gl="observing location|location">Location</th></tr></thead><tbody>${rows}</tbody></table></div><div class="note">Altitude and direction are computed for the observation time and place.${obs.some((x) => x.location_assumed) ? " * location not visible in the screenshot; assumed." : ""}</div></section>`;
   }
 
   function images(o) {
@@ -428,6 +754,7 @@
       <details class="wp-sec" open><summary>Introduction</summary><div class="prose">${paras(leadText)}</div></details>
       ${shown.map((g) => `<details class="wp-sec" id="${g.id}"><summary>${esc(g.title)}</summary><div class="prose">${body(g)}</div></details>`).join("")}
       </div></div><div class="note">Full text of the ${link} article, as plain text.</div>`;
+    annotate(host);
   }
 
   // ---------- detail: SIMBAD ----------
@@ -437,6 +764,22 @@
     mesFe_h: "Temperature, gravity and metallicity", mesDistance: "Distance", mesVar: "Variability",
     mesIUE: "IUE ultraviolet spectra", mesXmm: "XMM-Newton X-ray observations", mesHerschel: "Herschel observations",
     mesISO: "ISO observations", mesOtype: "Object type history", mesPos: "Position", mesUncertainty: "Position uncertainty",
+  };
+  const MEASUREMENT_GL = {
+    mesPM: "proper motion", mesPLX: "parallax", mesRV: "radial velocity", mesVelocities: "radial velocity",
+    mesSpT: "spectral type", mesDiameter: "angular diameter|diameter", mesRot: "v sin i|projected rotational velocity",
+    mesFe_h: "metallicity|effective temperature|surface gravity", mesDistance: "distance", mesVar: "variable star|variability",
+    mesIUE: "IUE|International Ultraviolet Explorer|ultraviolet", mesXmm: "XMM-Newton|X-ray", mesHerschel: "Herschel|infrared",
+    mesISO: "ISO|Infrared Space Observatory|infrared", mesOtype: "object type", mesPos: "coordinates|position",
+    mesUncertainty: "positional uncertainty|uncertainty",
+  };
+  // SIMBAD coordinate fields beyond RA/Dec/l/b: friendly label and glossary hint.
+  const COORD_FIELDS = {
+    frame: ["Reference frame", "reference frame|ICRS"], epoch: ["Epoch", "epoch|J2000"],
+    err_maj_mas: ["Position error, long axis (mas)", "positional uncertainty|error ellipse|uncertainty"],
+    err_min_mas: ["Position error, short axis (mas)", "positional uncertainty|error ellipse|uncertainty"],
+    err_angle_deg: ["Position error, angle (°)", "position angle|error ellipse"],
+    quality: ["Position quality", "quality code|quality"], wavelength: ["Position measured in", "wavelength|wavelength domain"],
   };
 
   function simbadSection(o) {
@@ -451,26 +794,27 @@
     if ((gl == null || gb == null) && raDeg != null && decDeg != null) {
       const g = galactic(+raDeg, +decDeg); gl = g.l; gb = g.b; galNote = ' <span class="muted">(computed here)</span>';
     }
-    const ref = (v, e, u) => v == null ? null : `${rawNum(+v)}${e != null ? ` <span class="muted">± ${rawNum(+e)}</span>` : ""}${u ? ` <span class="muted">${u}</span>` : ""}`;
+    const ref = (v, e, u) => v == null ? null : `${rawNum(+v)}${e != null ? ` <span class="muted">± ${rawNum(+e)}</span>` : ""}${u ? ` <span class="muted unit">${u}</span>` : ""}`;
     const np = paperCount(o);
     const consumed = new Set(["ra", "ra_deg", "ra_icrs", "dec", "dec_deg", "dec_icrs", "ra_hms", "dec_dms", "gal_l", "l", "glon", "galactic_l", "lon_gal", "gal_b", "b", "glat", "galactic_b", "lat_gal", "galactic"]);
     const otherCoords = Object.entries(co).filter(([k, v]) => !consumed.has(k) && !blank(v))
-      .map(([k, v]) => [/bibcode/i.test(k) ? "Coordinate source" : colName(k), cell(k, v)]);
+      .map(([k, v]) => /bibcode/i.test(k) ? ["Coordinate source", cell(k, v), "bibcode"]
+        : COORD_FIELDS[k] ? [COORD_FIELDS[k][0], cell(k, v), COORD_FIELDS[k][1]] : [colName(k), cell(k, v)]);
     const basic = kvTable([
-      ["Identifier", sb.main_id ? `<span class="mono">${esc(String(sb.main_id).replace(/\s+/g, " "))}</span>` : null],
-      ["Object type", sb.otype || sb.otype_desc ? `${esc(sb.otype_desc || "")}${sb.otype ? ` <span class="muted mono">${esc(sb.otype)}</span>` : ""}` : null],
-      ["RA (ICRS, J2000)", raDeg != null ? `${ra(+raDeg)} <span class="muted">${rawNum(+raDeg)}°</span>` : null],
-      ["Dec (ICRS, J2000)", decDeg != null ? `${dec(+decDeg)} <span class="muted">${rawNum(+decDeg)}°</span>` : null],
-      ["Galactic longitude l", gl != null ? `${(+gl).toFixed(4)}°${galNote}` : null],
-      ["Galactic latitude b", gb != null ? `${(+gb).toFixed(4)}°${galNote}` : null],
+      ["Identifier", sb.main_id ? `<span class="mono">${esc(String(sb.main_id).replace(/\s+/g, " "))}</span>` : null, "SIMBAD identifier|main identifier|designation|identifier"],
+      ["Object type", sb.otype || sb.otype_desc ? `<span data-vk="otype" data-vv="${esc(sb.otype || sb.otype_desc)}">${esc(sb.otype_desc || "")}${sb.otype ? ` <span class="muted mono">${esc(sb.otype)}</span>` : ""}</span>` : null, "object type|otype"],
+      ["RA (ICRS, J2000)", raDeg != null ? `${ra(+raDeg)} <span class="muted">${rawNum(+raDeg)}°</span>` : null, "right ascension|RA (ICRS, J2000)|RA"],
+      ["Dec (ICRS, J2000)", decDeg != null ? `${dec(+decDeg)} <span class="muted">${rawNum(+decDeg)}°</span>` : null, "declination|Dec (ICRS, J2000)|Dec"],
+      ["Galactic longitude l", gl != null ? `${(+gl).toFixed(4)}°${galNote}` : null, "galactic longitude|galactic coordinates"],
+      ["Galactic latitude b", gb != null ? `${(+gb).toFixed(4)}°${galNote}` : null, "galactic latitude|galactic coordinates"],
       ...otherCoords,
-      ["Proper motion", sb.pmra != null || sb.pmdec != null ? `RA ${sb.pmra != null ? rawNum(+sb.pmra) : "—"} · Dec ${sb.pmdec != null ? rawNum(+sb.pmdec) : "—"} <span class="muted">mas/yr</span>` : null],
-      ["Parallax", ref(sb.plx_value, sb.plx_err, "mas")],
-      ["Radial velocity", ref(sb.rvz_radvel, sb.rvz_err, "km/s")],
-      ["Redshift z", sb.rvz_redshift != null ? rawNum(+sb.rvz_redshift) : null],
-      ["Spectral type", sb.sp_type ? esc(sb.sp_type) : null],
-      ["Morphology", sb.morph_type ? esc(sb.morph_type) : null],
-      ["Dimensions", sb.galdim_majaxis != null ? `${rawNum(+sb.galdim_majaxis)}′ × ${sb.galdim_minaxis != null ? rawNum(+sb.galdim_minaxis) : "—"}′${sb.galdim_angle != null ? ` <span class="muted">PA ${rawNum(+sb.galdim_angle)}°</span>` : ""}` : null],
+      ["Proper motion", sb.pmra != null || sb.pmdec != null ? `RA ${sb.pmra != null ? rawNum(+sb.pmra) : "—"} · Dec ${sb.pmdec != null ? rawNum(+sb.pmdec) : "—"} <span class="muted unit">mas/yr</span>` : null, "proper motion"],
+      ["Parallax", ref(sb.plx_value, sb.plx_err, "mas"), "parallax"],
+      ["Radial velocity", ref(sb.rvz_radvel, sb.rvz_err, "km/s"), "radial velocity"],
+      ["Redshift z", sb.rvz_redshift != null ? rawNum(+sb.rvz_redshift) : null, "redshift|Redshift z"],
+      ["Spectral type", sb.sp_type ? `<span data-vk="spectral_type" data-vv="${esc(sb.sp_type)}">${esc(sb.sp_type)}</span>` : null, "spectral type"],
+      ["Morphology", sb.morph_type ? esc(sb.morph_type) : null, "galaxy morphology|morphological type|morphology"],
+      ["Dimensions", sb.galdim_majaxis != null ? `${rawNum(+sb.galdim_majaxis)}′ × ${sb.galdim_minaxis != null ? rawNum(+sb.galdim_minaxis) : "—"}′${sb.galdim_angle != null ? ` <span class="muted">PA ${rawNum(+sb.galdim_angle)}°</span>` : ""}` : null, "angular size|angular diameter|dimensions"],
       ["References", np ? `${num(np, 0)} <button type="button" class="linklike" data-action="papers" aria-haspopup="dialog">browse papers →</button>` : null],
     ]);
     let html = `<h3>Basic data</h3>${basic}`;
@@ -480,11 +824,11 @@
       const order = "UBVRIGJHK";
       fl.sort((a, b) => (order.indexOf(a[0]) + 1 || 99) - (order.indexOf(b[0]) + 1 || 99));
       const rows = fl.map(([band, v]) => Object.assign({ band }, v && typeof v === "object" ? v : { mag: v }));
-      html += `<h3>Photometry · ${fl.length} bands</h3>${dataTable(rows, { limit: 20, unit: "bands" })}`;
+      html += `<h3><span data-gl="photometry|photometric band|apparent magnitude">Photometry</span> · ${fl.length} bands</h3>${dataTable(rows, { limit: 20, unit: "bands" })}`;
     }
 
     const hier = hierarchyRows(sb.hierarchy);
-    if (hier.length) html += `<h3>Hierarchy · ${hier.length}</h3>${dataTable(hier, { limit: 10 })}`;
+    if (hier.length) html += `<h3><span data-gl="hierarchy|SIMBAD hierarchy">Hierarchy</span> · ${hier.length}</h3>${dataTable(hier, { limit: 10 })}`;
 
     // Every measurement table; fall back to the older curated lists.
     let tables = Object.entries(sb.measurements || {}).filter(([, rows]) => asList(rows).length);
@@ -497,15 +841,16 @@
       html += tables.map(([name, rows]) => {
         rows = asList(rows);
         const title = MEASUREMENT_NAMES[name] || String(name).replace(/^mes/, "");
-        return `<div class="mtable"><div class="mtitle">${esc(title)} <span class="muted">· ${rows.length} ${rows.length === 1 ? "row" : "rows"} · <span class="mono">${esc(name)}</span></span></div>${dataTable(rows)}</div>`;
+        const mgl = MEASUREMENT_GL[name] ? ` data-gl="${esc(MEASUREMENT_GL[name])}|${esc(title)}"` : "";
+        return `<div class="mtable"><div class="mtitle"><span class="mname"${mgl}>${esc(title)}</span> <span class="muted">· ${rows.length} ${rows.length === 1 ? "row" : "rows"} · <span class="mono">${esc(name)}</span></span></div>${dataTable(rows)}</div>`;
       }).join("");
     }
 
     if ((sb.identifiers || []).length) {
-      html += `<h3>Identifiers · ${sb.identifiers.length}</h3><div class="ids">${sb.identifiers.map((i) => `<span class="tag mono">${esc(String(i).replace(/\s+/g, " "))}</span>`).join("")}</div>`;
+      html += `<h3><span data-gl="identifier|designation|catalogue designation">Identifiers</span> · ${sb.identifiers.length}</h3><div class="ids">${sb.identifiers.map((i) => `<span class="tag mono">${esc(String(i).replace(/\s+/g, " "))}</span>`).join("")}</div>`;
     }
     if ((sb.types || []).length) {
-      html += `<h3>Classifications</h3><div class="ids">${sb.types.map((t) => `<span class="tag mono">${esc(t)}</span>`).join("")}</div>`;
+      html += `<h3 data-gl="object type|otype|classification">Classifications</h3><div class="ids">${sb.types.map((t) => `<span class="tag mono" data-vk="otype">${esc(t)}</span>`).join("")}</div>`;
     }
     const notes = asList(sb.notes).filter((n) => !blank(n));
     if (notes.length) {
@@ -566,27 +911,275 @@
   }
 
   // ---------- detail: Horizons and CelesTrak ----------
+  // JPL Horizons physical data arrives as fixed-width text ("Label = value", one or two pairs per
+  // line, then a small Perihelion/Aphelion/Mean table). [pattern on the lower-cased label, friendly
+  // name, unit appended to bare numbers, extra glossary hint]
+  const HZ_LABELS = [
+    [/^mass x\s?10/, "Mass", "kg", "mass"],
+    [/^density/, "Density", "g/cm³", "density"],
+    [/^equat(\.|orial)? radius/, "Equatorial radius", "km", "equatorial radius|radius"],
+    [/^polar radius/, "Polar radius", "km", "polar radius|radius"],
+    [/^vol(\.|ume)? mean radius/, "Mean radius", "km", "mean radius|radius"],
+    [/^flattening/, "Flattening (how squashed it is)", "", "flattening|oblateness"],
+    [/^geometric albedo/, "Geometric albedo (reflectivity)", "", "geometric albedo|albedo"],
+    [/^rocky core mass/, "Rocky core mass (fraction of total mass)", "", "rocky core mass|core"],
+    [/^sid(\.|ereal)? rot(\.|ation)? period/, "Rotation period (sidereal)", "", "sidereal rotation period|rotation period|sidereal"],
+    [/^sid(\.|ereal)? rot(\.|ation)? rate/, "Rotation rate", "rad/s", "rotation rate|angular velocity"],
+    [/^mean solar day/, "Length of a solar day", "", "solar day|mean solar day"],
+    [/^gm 1-sigma/, "GM uncertainty (1σ)", "km³/s²", "1-sigma|standard deviation|uncertainty"],
+    [/^gm\b/, "GM (gravitational parameter)", "km³/s²", "standard gravitational parameter|GM"],
+    [/^equ(\.|atorial)? grav/, "Surface gravity at the equator", "m/s²", "surface gravity|gravity"],
+    [/^pol(\.|ar)? grav/, "Surface gravity at the poles", "m/s²", "surface gravity|gravity"],
+    [/^vis(\.|ual)? mag(\.|nitude)? v\(1,0\)/, "Brightness at 1 AU, V(1,0)", "", "V(1,0)|absolute magnitude"],
+    [/^vis(\.|ual)? mag(\.|nitude)? \(opposition\)/, "Magnitude at opposition", "", "opposition|apparent magnitude"],
+    [/^obliquity/, "Axial tilt (obliquity)", "", "obliquity|axial tilt"],
+    [/^(sidereal orbit period|mean sidereal orb(it)? per)/, "Orbital period (sidereal)", "", "sidereal orbital period|orbital period|sidereal"],
+    [/^mean daily motion/, "Mean daily motion", "", "mean daily motion|mean motion"],
+    [/^(mean orbit (speed|velocity)|orbital speed)/, "Mean orbital speed", "km/s", "orbital speed|orbital velocity"],
+    [/^atmos(\.|pheric)? temp/, "Atmosphere temperature (at 1 bar)", "", "atmospheric temperature|bar|temperature"],
+    [/^mean temperature/, "Mean temperature", "K", "temperature|kelvin"],
+    [/^escape (speed|velocity)/, "Escape speed", "km/s", "escape velocity|escape speed"],
+    [/^a_?roche\(ice\)/, "Roche limit for ice (planet radii)", "", "Roche limit"],
+    [/^hill's sphere/, "Hill sphere radius (planet radii)", "", "Hill sphere"],
+    [/^core radius/, "Core radius", "km", "core|radius"],
+    [/^mass ratio/, "Mass ratio (Sun ÷ planet)", "", "mass ratio|mass"],
+    [/^mass of atmosphere/, "Mass of the atmosphere", "kg", "atmosphere|mass"],
+    [/^atmos(\.|pheric)? pressure/, "Surface air pressure", "bar", "atmospheric pressure|bar"],
+    [/^max(\.|imum)? angular diam/, "Largest apparent size", "", "angular diameter|apparent size"],
+    [/^volume/, "Volume", "km³", "volume"],
+    [/^solar constant/, "Sunlight received (solar constant)", "W/m²", "solar constant|irradiance"],
+    [/^maximum planetary ir/, "Heat given off, maximum (infrared)", "W/m²", "planetary IR|infrared"],
+    [/^minimum planetary ir/, "Heat given off, minimum (infrared)", "W/m²", "planetary IR|infrared"],
+  ];
+  function hzLabel(label) {
+    const low = label.toLowerCase().replace(/\s+/g, " ").trim();
+    const hit = HZ_LABELS.find(([re]) => re.test(low));
+    const exp = label.match(/x\s?10\^(-?\d+)/i);
+    let unit = hit ? hit[2] : "";
+    if (!unit && /,\s*hrs?\b/.test(low)) unit = "h";
+    const name = hit ? hit[1] : label;
+    return { name, unit, exp: exp ? exp[1] : null, gl: [label, name, hit && hit[3]].filter(Boolean).join("|") };
+  }
+  function hzValue(v, f) {
+    let s = esc(String(v).trim()).replace(/\s*\+-\s*/g, " ± ").replace(/(^|[\s±(~])\.(\d)/g, "$10.$2").replace(/(\d)\s*deg\/d\b/g, "$1°/day").replace(/(\d)\s*deg\b/g, "$1°")
+      .replace(/\bx\s*10\^(-?\d+)/g, "× 10<sup>$1</sup>").replace(/\^(-?\d+)/g, "<sup>$1</sup>");
+    const bare = /^[~<>]?\s*[+\-−]?\d*\.?\d+(\(\d+(\s*±\s*\d+)?\))?(\s*±\s*\d*\.?\d+)?$/.test(String(v).trim().replace(/\s*\+-\s*/g, " ± "));
+    if (bare && f) {
+      if (f.exp) s += ` × 10<sup>${esc(f.exp)}</sup>`;
+      if (f.unit) s += ` <span class="u">${esc(f.unit)}</span>`;
+    }
+    return s;
+  }
+  const hzLabelHtml = (label) => {
+    const f = hzLabel(label);
+    return `<span class="gl-name" data-gl="${esc(f.gl)}">${esc(f.name)}</span>${f.name !== label ? `<span class="hz-orig">${esc(label)}</span>` : ""}`;
+  };
+
+  function parsePhysical(text) {
+    const lines = String(text || "").replace(/\r/g, "").split("\n");
+    const out = { title: "", pairs: [], head: null, rows: [], other: [] };
+    const eqs = (l) => [...l].reduce((a, c, i) => (c === "=" ? a.concat(i) : a), []);
+    // Word starts between two "=" signs (after the first value token), with the run of spaces before each.
+    const splits = (l, from, to) => {
+      const c = [];
+      let i = from + 1;
+      while (i < to && l[i] === " ") i++;
+      while (i < to && l[i] !== " ") i++;
+      for (; i < to; i++) {
+        if (l[i] === " " || l[i - 1] !== " ") continue;
+        let run = 0;
+        for (let j = i - 1; j >= 0 && l[j] === " "; j--) run++;
+        c.push({ p: i, run });
+      }
+      return c;
+    };
+    // Horizons aligns the second column; learn its start column from the unambiguous lines.
+    const cols = [];
+    lines.forEach((l) => {
+      const e = eqs(l);
+      for (let k = 0; k + 1 < e.length; k++) {
+        const c = splits(l, e[k], e[k + 1]);
+        const best = c.reduce((a, b) => (b.run > (a ? a.run : -1) ? b : a), null);
+        if (best && best.run >= 3) cols.push(best.p);
+      }
+    });
+    cols.sort((a, b) => a - b);
+    const C = cols.length ? cols[Math.floor(cols.length / 2)] : null;
+    lines.forEach((l) => {
+      if (!l.trim()) return;
+      const e = eqs(l);
+      if (!e.length) {
+        if (/perihelion/i.test(l) && /aphelion/i.test(l)) { out.head = l.trim().split(/\s{2,}/); return; }
+        const m = out.head && l.match(/^\s*(.+?)\s{2,}(\S+)\s+(\S+)\s+(\S+)\s*$/);
+        if (m) { out.rows.push([m[1].trim(), m[2], m[3], m[4]]); return; }
+        if (!out.pairs.length && !out.title && /:\s*$|physical data/i.test(l)) { out.title = l.trim().replace(/:$/, ""); return; }
+        out.other.push(l.trim());
+        return;
+      }
+      let start = 0;
+      e.forEach((eq, k) => {
+        const label = l.slice(start, eq).trim();
+        let end = l.length;
+        if (k + 1 < e.length) {
+          const c = splits(l, eq, e[k + 1]);
+          const wide = c.filter((x) => x.run >= 2), pool = wide.length ? wide : c;
+          const pick = !pool.length ? null : C != null
+            ? pool.reduce((a, b) => (Math.abs(b.p - C) < Math.abs(a.p - C) || (Math.abs(b.p - C) === Math.abs(a.p - C) && b.run > a.run) ? b : a))
+            : pool.reduce((a, b) => (b.run > a.run ? b : a));
+          end = pick ? pick.p : e[k + 1];
+        }
+        const value = l.slice(eq + 1, end).trim();
+        if (label || value) out.pairs.push({ label: label || "—", value });
+        start = end;
+      });
+    });
+    return out;
+  }
+
+  function physicalBlock(text) {
+    const P = parsePhysical(text);
+    const raw = `<details class="raw"><summary>Raw text from JPL Horizons</summary><div><pre>${esc(text)}</pre></div></details>`;
+    if (!P.pairs.length && !P.rows.length) return `<pre>${esc(text)}</pre>`;
+    let html = kvTable(P.pairs.map(({ label, value }) => [hzLabelHtml(label), value ? hzValue(value, hzLabel(label)) : '<span class="muted">—</span>']), "hz", true);
+    if (P.rows.length) {
+      const head = (P.head || ["Perihelion", "Aphelion", "Mean"]).slice(-3);
+      const HEAD_GL = { perihelion: "perihelion", aphelion: "aphelion", mean: "mean distance|semi-major axis" };
+      html += `<div class="tablewrap hz-pam"><table><thead><tr><th></th>${head.map((h) =>
+        `<th${HEAD_GL[h.toLowerCase()] ? ` data-gl="${HEAD_GL[h.toLowerCase()]}|${esc(h)}"` : ""}>${esc(h)}</th>`).join("")}</tr></thead><tbody>${P.rows.map(([label, ...vals]) => {
+        const f = hzLabel(label);
+        return `<tr><th scope="row">${hzLabelHtml(label)}</th>${vals.map((v) => `<td>${hzValue(v, f)}</td>`).join("")}</tr>`;
+      }).join("")}</tbody></table></div>`;
+    }
+    if (P.other.length) html += `<div class="note">${P.other.map(esc).join("<br>")}</div>`;
+    if (P.title) html += `<div class="note">${esc(P.title.replace(/^physical data\s*/i, "Horizons physical data "))}</div>`;
+    return html + raw;
+  }
+
+  // Horizons ephemeris columns: [pattern on the raw key, header, glossary hints, cell formatter, value kind]
+  const deg = (v) => `${rawNum(+v)}°`;
+  const EPH_COLS = [
+    [/^date/i, "Date and time (UT)", "Universal Time|UT|UTC", null],
+    [/^r\.?a\.?(_|\b)/i, "Right ascension", "right ascension|RA", (v) => ra(+v)],
+    [/^dec(_|\b)/i, "Declination", "declination|Dec", (v) => dec(+v)],
+    [/^azi/i, "Azimuth", "azimuth", (v) => `${rawNum(+v)}° <span class="muted">${compass(+v)}</span>`],
+    [/^elev/i, "Altitude", "altitude|elevation", deg],
+    [/^apmag$/i, "Magnitude", "APmag|apparent magnitude|magnitude", null, "mag"],
+    [/^s-brt$/i, "Surface brightness", "S-brt|surface brightness", (v) => `${rawNum(+v)} <span class="u">mag/arcsec²</span>`],
+    [/^illu%$/i, "Illuminated", "Illu%|illuminated fraction|illumination|phase", (v) => `${num(+v, 1)}%`],
+    [/^ang-diam$/i, "Apparent size", "Ang-diam|angular diameter|apparent size", (v) => `${num(+v, 2)}″`],
+    [/^delta$/i, "Distance from you (AU)", "delta|astronomical unit|AU", (v) => num(+v, 4)],
+    [/^deldot$/i, "Range rate", "deldot|range rate|radial velocity", (v) => `${num(+v, 3)} <span class="u">km/s</span>`],
+    [/^s-o-t$/i, "Sun–object–observer angle (elongation)", "S-O-T|elongation", deg],
+    [/^\/r$/i, "Side of the Sun", "S-O-T|elongation|leading|trailing", (v) => /L/i.test(v) ? "leads the Sun <span class=\"muted\">(morning sky)</span>" : /T/i.test(v) ? "trails the Sun <span class=\"muted\">(evening sky)</span>" : esc(v), null, true],
+    [/^s-t-o$/i, "Phase angle", "S-T-O|phase angle", deg],
+    [/^r$/i, "Distance from the Sun (AU)", "heliocentric distance|r|astronomical unit", (v) => num(+v, 4)],
+    [/^rdot$/i, "Sun range rate", "rdot|range rate", (v) => `${num(+v, 3)} <span class="u">km/s</span>`],
+    [/^t-o-m$/i, "Angle from the Moon", "T-O-M|lunar elongation", deg],
+    [/^cnst$/i, "Constellation", "constellation", null],
+  ];
+  function ephemerisTable(eph) {
+    const keys = [];
+    eph.forEach((r) => Object.keys(r).forEach((k) => { if (!keys.includes(k)) keys.push(k); }));
+    // Junk columns: empty keys and columns with no values.
+    const used = keys.filter((k) => k.replace(/[\s/_]/g, "") && eph.some((r) => !blank(r[k])));
+    if (!used.length) return "";
+    const spec = used.map((k) => EPH_COLS.find(([re]) => re.test(k.trim())) || [null, colName(k), k, null]);
+    const head = used.map((k, i) => {
+      const [, name, gl, , vk] = spec[i];
+      return `<th${vk ? ` data-col-vk="${vk}"` : ""}><span class="gl-name" data-gl="${esc(gl)}|${esc(name)}">${esc(name)}</span>${name !== k ? `<span class="hz-orig">${esc(k)}</span>` : ""}</th>`;
+    }).join("");
+    const body = eph.map((r, n) => `<tr${n >= 10 ? ' class="extra"' : ""}>${used.map((k, i) => {
+      const v = r[k], f = spec[i][3];
+      if (blank(v)) return '<td><span class="muted">—</span></td>';
+      const s = String(v).trim();
+      const isNum = s !== "" && !Number.isNaN(+s);
+      return `<td data-vv="${esc(s)}">${f && (isNum || spec[i][5]) ? f(s) : esc(s)}</td>`;
+    }).join("")}</tr>`).join("");
+    return `<div class="clip"><div class="tablewrap"><table class="eph"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>${moreButton(eph.length, 10, "rows")}</div>`;
+  }
+
   function horizonsSection(o) {
     const hz = o.horizons;
     if (!hz) return "";
     let html = "";
-    if (hz.physical_data) html += `<h3>Physical data</h3><pre>${esc(hz.physical_data)}</pre>`;
+    if (hz.physical_data) html += `<h3>Physical data</h3>${physicalBlock(hz.physical_data)}`;
     const eph = asList(hz.ephemeris).filter((r) => r && typeof r === "object");
     if (eph.length) {
-      const rows = eph.map((r) => Object.fromEntries(Object.entries(r).filter(([k]) => k && k.replace(/[\s/]/g, ""))));
-      html += `<h3>Ephemeris · ${eph.length} ${eph.length === 1 ? "row" : "rows"}</h3>${dataTable(rows)}<div class="note">Positions computed by JPL Horizons for the observation times.</div>`;
+      html += `<h3><span data-gl="ephemeris">Ephemeris</span> · ${eph.length} ${eph.length === 1 ? "row" : "rows"}</h3>${ephemerisTable(eph)}<div class="note">Positions computed by JPL Horizons for the observation times, as seen from the observing site.</div>`;
     }
     const link = safeUrl(hz.url) ? ` <a class="sec-src" href="${esc(safeUrl(hz.url))}" target="_blank" rel="noopener">Horizons ↗</a>` : "";
     return section("horizons", `JPL Horizons${link}`, html);
   }
 
+  // CelesTrak SATCAT / GP fields: friendly label, glossary hints, unit, value decoder.
+  const CT_FIELDS = {
+    OBJECT_NAME: ["Name", "satellite name|name"],
+    OBJECT_ID: ["International designator (COSPAR ID)", "COSPAR ID|international designator"],
+    NORAD_CAT_ID: ["NORAD catalogue number", "NORAD ID|NORAD catalog number|NORAD"],
+    EPOCH: ["Epoch (time these elements describe)", "epoch"],
+    MEAN_MOTION: ["Mean motion (orbits/day)", "mean motion"],
+    ECCENTRICITY: ["Eccentricity (0 = circular)", "eccentricity"],
+    INCLINATION: ["Inclination", "inclination", "°"],
+    RA_OF_ASC_NODE: ["Right ascension of ascending node", "right ascension of the ascending node|RAAN|ascending node", "°"],
+    ARG_OF_PERICENTER: ["Argument of perigee", "argument of perigee|argument of periapsis|argument of pericenter", "°"],
+    MEAN_ANOMALY: ["Mean anomaly", "mean anomaly", "°"],
+    EPHEMERIS_TYPE: ["Ephemeris type", "ephemeris type|SGP4"],
+    CLASSIFICATION_TYPE: ["Classification", "classification type|classification"],
+    ELEMENT_SET_NO: ["Element set number", "element set number|element set|TLE"],
+    REV_AT_EPOCH: ["Orbit count at epoch", "revolution number|revolution"],
+    BSTAR: ["Drag term (B*)", "BSTAR|B*|drag term"],
+    MEAN_MOTION_DOT: ["Change in mean motion (1st derivative)", "mean motion derivative|MEAN_MOTION_DOT|mean motion"],
+    MEAN_MOTION_DDOT: ["Change in mean motion (2nd derivative)", "mean motion second derivative|MEAN_MOTION_DDOT|mean motion"],
+    OBJECT_TYPE: ["Object type", "satellite object type|object type"],
+    OPS_STATUS_CODE: ["Operational status", "operational status"],
+    OWNER: ["Owner", "owner"],
+    LAUNCH_DATE: ["Launch date", "launch date"],
+    LAUNCH_SITE: ["Launch site", "launch site"],
+    DECAY_DATE: ["Re-entry (decay) date", "orbital decay|decay date|re-entry"],
+    PERIOD: ["Orbital period", "orbital period|period", "min"],
+    APOGEE: ["Apogee (highest point)", "apogee", "km"],
+    PERIGEE: ["Perigee (lowest point)", "perigee", "km"],
+    RCS: ["Radar cross-section", "radar cross-section|RCS", "m²"],
+    DATA_STATUS_CODE: ["Data status", "data status"],
+    ORBIT_CENTER: ["Orbit centre", "orbit center|orbit centre"],
+    ORBIT_TYPE: ["Orbit type", "orbit type"],
+  };
+  const CT_VALUES = {
+    OBJECT_TYPE: { PAY: "Payload (working spacecraft)", "R/B": "Rocket body", DEB: "Debris", UNK: "Unknown" },
+    OPS_STATUS_CODE: { "+": "Operational", "-": "Not operational", P: "Partially operational", B: "Backup", S: "Spare",
+      X: "Extended mission", D: "Decayed", "?": "Unknown" },
+    ORBIT_CENTER: { EA: "Earth", MO: "Moon", SU: "Sun", EM: "Earth–Moon" },
+    ORBIT_TYPE: { ORB: "In orbit", LAN: "Landed", IMP: "Impacted", DOC: "Docked", "R/T": "Round trip" },
+    CLASSIFICATION_TYPE: { U: "Unclassified", C: "Classified", S: "Secret" },
+    EPHEMERIS_TYPE: { 0: "Standard (SGP4 model)" },
+    OWNER: { US: "United States", PRC: "China", CIS: "Russia / former USSR", ESA: "European Space Agency", JPN: "Japan",
+      IND: "India", UK: "United Kingdom", FR: "France", GER: "Germany", CA: "Canada", ISS: "International Space Station partners" },
+    LAUNCH_SITE: { AFETR: "Cape Canaveral, Florida", AFWTR: "Vandenberg, California", TYMSC: "Baikonur, Kazakhstan",
+      PKMTR: "Plesetsk, Russia", JSC: "Jiuquan, China", XICLF: "Xichang, China", TAISC: "Taiyuan, China", WSC: "Wenchang, China",
+      FRGUI: "Kourou, French Guiana", SRILR: "Sriharikota, India", TNSTA: "Tanegashima, Japan", KYMSC: "Kapustin Yar, Russia",
+      VOSTO: "Vostochny, Russia", RLLB: "Mahia, New Zealand", WRAS: "Wallops Island, Virginia", STAR: "Starbase, Texas" },
+  };
+  function ctValue(k, v) {
+    if (blank(v)) return '<span class="muted">—</span>';
+    const f = CT_FIELDS[k], dict = CT_VALUES[k];
+    if (dict && dict[v] != null) return `${esc(dict[v])} <span class="muted mono">${esc(v)}</span>`;
+    if (k === "EPOCH" && /^\d{4}-\d\d-\d\dT/.test(v)) return `${esc(String(v).replace("T", " ").replace(/\.\d+$/, ""))} <span class="u">UTC</span>`;
+    const s = typeof v === "number" ? (k === "ECCENTRICITY" ? String(+v.toPrecision(4)) : rawNum(v)) : esc(v);
+    return f && f[2] && typeof v === "number" ? `${s}${f[2] === "°" ? "°" : ` <span class="u">${f[2]}</span>`}` : s;
+  }
+
   function celestrakSection(o) {
     const c = o.celestrak;
     if (!c) return "";
-    const tbl = (obj) => kvTable(Object.entries(obj || {}).map(([k, v]) => [colName(k), blank(v) ? '<span class="muted">—</span>' : typeof v === "number" ? rawNum(v) : esc(v)]));
+    const tbl = (obj) => kvTable(Object.entries(obj || {}).map(([k, v]) => {
+      const f = CT_FIELDS[k];
+      const name = f ? f[0] : colName(k);
+      const label = `<span class="gl-name" data-gl="${esc(f ? f[1] : k)}|${esc(name)}|${esc(k)}">${esc(name)}</span><span class="hz-orig">${esc(k)}</span>`;
+      return [label, ctValue(k, v)];
+    }), "ct", true);
     const parts = [];
-    if (c.catalog) parts.push(`<div><h3>Satellite catalogue record</h3>${tbl(c.catalog)}</div>`);
-    if (c.orbit) parts.push(`<div><h3>Current orbital elements</h3>${tbl(c.orbit)}<div class="note">Latest elements, not those at the time of the observation.</div></div>`);
+    if (c.catalog) parts.push(`<div><h3 data-gl="satellite catalog|SATCAT">Satellite catalogue record</h3>${tbl(c.catalog)}</div>`);
+    if (c.orbit) parts.push(`<div><h3 data-gl="orbital elements|TLE|two-line element set">Current orbital elements</h3>${tbl(c.orbit)}<div class="note">Latest elements, not those at the time of the observation.</div></div>`);
     const link = safeUrl(c.url) ? ` <a class="sec-src" href="${esc(safeUrl(c.url))}" target="_blank" rel="noopener">CelesTrak ↗</a>` : "";
     return section("celestrak", `CelesTrak${link}`, parts.length ? `<div class="two-col">${parts.join("")}</div>` : "");
   }
@@ -695,12 +1288,48 @@
     }).join("");
     const more = list.length > modal.shown ? `<button type="button" class="more-btn" data-action="more-papers">Show ${Math.min(100, list.length - modal.shown)} more of ${list.length - modal.shown}</button>` : "";
     el.querySelector(".modal-body").innerHTML = `<ol class="papers">${items}</ol>${more}`;
+    annotate(el);
+  }
+
+  // ---------- glossary modal (topbar "?") ----------
+  function openGlossary(opener) {
+    closeModal();
+    modal.obj = null; modal.opener = opener || document.activeElement; modal.papers = [];
+    const g = gloss();
+    const terms = g && g.terms ? Object.entries(g.terms).filter(([, t]) => t && typeof t === "object")
+      .map(([id, t]) => ({ id, t, hay: [t.term, t.short, t.long, id].filter(Boolean).join(" ").toLowerCase() }))
+      .sort((a, b) => String(a.t.term || a.id).localeCompare(String(b.t.term || b.id), undefined, { sensitivity: "base" })) : [];
+    const el = document.createElement("div");
+    el.className = "modal-backdrop";
+    el.innerHTML = `<div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-head"><h3 id="modal-title">Glossary</h3><button type="button" class="ghost modal-close" data-action="close" aria-label="Close">✕</button></div>
+      <div class="modal-tools"><input type="search" class="modal-search" placeholder="Search ${terms.length} terms…" aria-label="Search the glossary" autocomplete="off"></div>
+      <div class="modal-count muted" aria-live="polite"></div>
+      <div class="modal-body"></div></div>`;
+    document.body.appendChild(el);
+    document.body.classList.add("modal-open");
+    modal.el = el;
+    const input = el.querySelector(".modal-search"), body = el.querySelector(".modal-body"), count = el.querySelector(".modal-count");
+    const render = () => {
+      const q = input.value.trim().toLowerCase();
+      const named = (x) => String(x.t.term || x.id).toLowerCase().includes(q) ? 0 : 1;   // name matches first
+      const list = terms.filter((x) => !q || q.split(/\s+/).every((w) => x.hay.includes(w))).sort((a, b) => q ? named(a) - named(b) : 0);
+      count.textContent = q ? `${list.length} of ${terms.length} terms` : `${terms.length} terms`;
+      if (!terms.length) { body.innerHTML = '<div class="empty">The glossary (assets/glossary.js) is not loaded.</div>'; return; }
+      body.innerHTML = list.length ? `<dl class="gloss">${list.map(({ id, t }) => `<div class="gloss-item" id="gloss-${esc(id)}"><dt>${esc(t.term || id)}</dt>${t.short ? `<dd>${esc(t.short)}</dd>` : ""}${t.long ? `<dd class="gloss-long">${esc(t.long)}</dd>` : ""}</div>`).join("")}</dl>`
+        : '<div class="empty">No terms match.</div>';
+    };
+    el.addEventListener("click", (e) => { if (e.target === el || e.target.closest('[data-action="close"]')) closeModal(); });
+    input.addEventListener("input", render);
+    render();
+    input.focus();
   }
 
   function closeModal() {
     if (!modal.el) return;
     modal.el.remove();
     modal.el = null;
+    if (tip.target && !tip.target.isConnected) hideTip();
     document.body.classList.remove("modal-open");
     const back = modal.opener;
     modal.opener = null;
@@ -723,6 +1352,7 @@
   // ---------- routing ----------
   function renderOverview() {
     document.body.classList.add("is-overview");
+    $("#objects-link").removeAttribute("aria-current");
     $(".layout").classList.add("showing");
     $("#overview-link").setAttribute("aria-current", "page");
     if (state.overview) return;
@@ -753,17 +1383,20 @@
   async function renderDetail() {
     const path = decodeURIComponent(location.hash.slice(1));
     const seq = ++state.seq;
+    hideTip();
     closeModal();
     destroyAladin();
-    if (path === "overview") return renderOverview();
+    if (!path || path === "overview") return renderOverview();   // the overview is the home page
     leaveOverview();
     const layout = $(".layout");
-    if (!path) {
+    if (path === "objects") {
       layout.classList.remove("showing");
+      $("#objects-link").setAttribute("aria-current", "page");
       $("#detail").innerHTML = `<div class="empty">Pick an object on the left, or open the <a href="#overview">overview</a>. ${state.objects.length} objects, ${state.objects.reduce((n, o) => n + o.observations, 0)} observations.</div>`;
       return;
     }
     layout.classList.add("showing");
+    $("#objects-link").removeAttribute("aria-current");
     $("#detail").innerHTML = '<div class="empty">Loading…</div>';
     let o;
     try { o = await loadObject(path); }
@@ -776,10 +1409,11 @@
     const body = [keyFacts(o), skySection(o), observationsTable(o), horizonsSection(o), celestrakSection(o),
       articleSection(o), simbadSection(o), wikidataSection(o), sourcesRow(o)].join("");
     $("#detail").innerHTML = `
-      <a class="back" href="#">← All objects</a>
+      <a class="back" href="#objects">← All objects</a>
       <div class="hero"><div><h1>${esc(o.name)}</h1>${s.description ? `<div class="desc">${esc(s.description)}</div>` : ""}<div class="tags">${tags}</div></div>${images(o)}</div>
       ${pageNav(body)}
       ${body}`;
+    annotate($("#detail"));
     window.scrollTo({ top: 0 });
     mountAladin(o, seq);
     if (o.wikipedia) {
@@ -794,9 +1428,11 @@
   });
   $("#search").addEventListener("input", (e) => {
     state.query = e.target.value.trim(); renderList();
-    if (state.overview || document.body.classList.contains("is-overview")) location.hash = "";   // searching leaves the overview
+    if (state.overview || document.body.classList.contains("is-overview")) location.hash = "objects";   // searching leaves the overview
   });
   $("#sort").addEventListener("change", (e) => { state.sort = e.target.value; save("sort", state.sort); renderList(); });
+  const glossBtn = $("#glossary-btn");
+  if (glossBtn) glossBtn.addEventListener("click", () => openGlossary(glossBtn));
   $("#night").addEventListener("click", () => {
     const on = document.documentElement.dataset.theme !== "night";
     setNight(on); save("night", on ? "1" : "");
@@ -814,6 +1450,7 @@
         const open = clip.classList.toggle("open");
         act.textContent = open ? "Show fewer" : act.dataset.label;
         act.setAttribute("aria-expanded", open);
+        annotate(clip);
       } else if (a === "jump") {
         const t = document.getElementById(act.dataset.target);
         if (t) { if (t.tagName === "DETAILS") t.open = true; t.scrollIntoView({ behavior: "smooth", block: "start" }); }

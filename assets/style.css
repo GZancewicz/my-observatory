@@ -162,7 +162,7 @@ details table td, details table th { padding: 6px 8px; }
   .topbar { flex-wrap: wrap; }
   #search { flex-basis: 100%; order: 3; }
   .brand { display: inline; }
-  .navlink { margin-right: auto; }
+  #objects-link { margin-right: auto; }
 }
 
 /* ---------- object page sections ---------- */
@@ -273,3 +273,47 @@ body.is-overview .list, body.is-overview .chips { display: none; }
 body.is-overview .layout { grid-template-columns: 1fr; }
 body.is-overview .detail { max-width: none; display: block; }
 body.is-overview .back { display: none; }
+
+/* ---------- glossary tooltips (app.js: data-term / data-value-kind) ---------- */
+.gl {
+  text-decoration-line: underline; text-decoration-style: dotted; text-decoration-thickness: 1px;
+  text-decoration-color: color-mix(in srgb, var(--muted) 85%, transparent); text-underline-offset: 3px;
+  cursor: help;
+}
+.gl:hover, .gl:focus-visible { text-decoration-color: var(--accent); }
+.gl:focus:not(:focus-visible) { outline: none; }
+a .gl, button .gl { cursor: inherit; }
+svg text.gl { text-decoration: underline dotted; }
+svg text.gl:hover, svg text.gl:focus { fill: var(--text); }
+svg text.gl:focus { outline: none; }
+.gtip {
+  position: fixed; left: 0; top: 0; z-index: 40; pointer-events: none;
+  max-width: 360px; padding: 9px 12px;
+  background: var(--panel-2); color: var(--text); border: 1px solid var(--line); border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .45); font-size: 13px; line-height: 1.45; text-align: left;
+  text-transform: none; letter-spacing: 0; font-weight: 400;
+}
+.gtip[hidden] { display: none; }
+.gtip-t { font-weight: 600; color: var(--text); }
+.gtip-v { margin-top: 4px; padding: 5px 8px; border-radius: 6px; background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.gtip-vv { font-family: var(--mono); font-size: .92em; color: var(--accent); margin-right: 2px; }
+.gtip-s { margin-top: 4px; }
+.gtip-l { margin-top: 4px; color: var(--muted); font-size: 12.5px; }
+
+/* friendlier labels with the source's raw field name underneath */
+.hz-orig { display: block; font-family: var(--mono); font-size: 11px; color: var(--muted); opacity: .75; text-transform: none; letter-spacing: 0; font-weight: 400; margin-top: 1px; }
+.kv.hz th, .kv.ct th { width: 46%; }
+.hz-pam { margin-top: 10px; }
+.hz-pam th[scope="row"] { text-transform: none; letter-spacing: 0; font-size: 13px; font-weight: 500; }
+table.eph th { text-transform: none; letter-spacing: 0; font-size: 12.5px; white-space: nowrap; }
+details.raw { margin-top: 10px; }
+details.raw > summary { font-size: 13px; color: var(--muted); }
+
+/* glossary list modal */
+#glossary-btn { min-width: 36px; font-weight: 600; }
+.gloss { margin: 0; }
+.gloss-item { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.gloss-item dt { font-weight: 600; }
+.gloss-item dd { margin: 2px 0 0; }
+.gloss-item .gloss-long { color: var(--muted); font-size: 13.5px; }
+.hz-pam td { white-space: nowrap; }

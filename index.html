@@ -13,6 +13,7 @@
   <header class="topbar">
     <a class="brand" href="#">My Observatory</a>
     <a id="overview-link" class="navlink" href="#overview">Overview</a>
+    <a id="objects-link" class="navlink" href="#objects">Objects</a>
     <input id="search" type="search" placeholder="Search objects, designations, constellations…" autocomplete="off">
     <select id="sort" aria-label="Sort">
       <option value="last">Last observed</option>
@@ -22,6 +23,7 @@
       <option value="rating">Best rated</option>
       <option value="count">Most observed</option>
     </select>
+    <button id="glossary-btn" class="ghost" title="Glossary: what the terms on these pages mean" aria-label="Glossary" aria-haspopup="dialog">?</button>
     <button id="night" class="ghost" title="Red night-vision mode">Night</button>
   </header>
   <nav id="chips" class="chips" aria-label="Categories"></nav>
@@ -34,6 +36,7 @@
   <script src="https://aladin.cds.unistra.fr/AladinLite/api/v3/latest/aladin.js" charset="utf-8"></script>
   <script src="data/bundle.js"></script>
   <script src="data/sky/boundaries.js"></script>
+  <script src="assets/glossary.js"></script>
   <script src="assets/charts.js"></script>
   <script src="assets/app.js"></script>
 </body>

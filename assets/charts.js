@@ -31,6 +31,9 @@
     if (text !== undefined && text !== null) e.textContent = text;
     return e;
   }
+  // Glossary tooltips live in app.js (window.MO_TIP). data-gl="a|b" gives lookup candidates for an element.
+  function gl(node, hints) { if (node && hints) node.setAttribute("data-gl", hints); return node; }
+  function annotateRoot() { try { if (S && window.MO_TIP && window.MO_TIP.annotate) window.MO_TIP.annotate(S.root); } catch (e) { /* tooltips are optional */ } }
   function fmt(v, d) { return v === null || v === undefined ? "—" : (+v).toFixed(d === undefined ? 1 : d).replace("-", "−"); }
   function fmtInt(v) { return v === null || v === undefined ? "—" : d3.format(",")(Math.round(v)); }
   function norm360(a) { return ((a % 360) + 360) % 360; }
@@ -378,9 +381,10 @@
     g.attr("class", "mo-gridlines").selectAll("line").data(ticks || x.ticks(5)).join("line")
       .attr("y1", 0).attr("y2", h).attr("x1", (d) => x(d)).attr("x2", (d) => x(d));
   }
-  function axisLabel(g, text, x, y, anchor, rotate) {
+  function axisLabel(g, text, x, y, anchor, rotate, hints) {
     const t = g.append("text").attr("class", "mo-axis-label").attr("x", x).attr("y", y).attr("text-anchor", anchor || "middle").text(text);
     if (rotate) t.attr("transform", "rotate(-90," + x + "," + y + ")");
+    if (hints) t.attr("data-gl", hints);
     return t;
   }
   function topRect(x, y, w, h, r) { // rounded data-end at the top, square at the baseline
@@ -468,19 +472,19 @@
 
   // ---------------------------------------------------------------- charts
   const CHARTS = [
-    { id: "sky", wide: true, title: "All-sky map", sub: "Hammer projection of right ascension and declination, centred on 6h. Point size shows apparent brightness; colour shows temperature. Drag to highlight a region.", draw: drawSky },
-    { id: "hr", title: "Hertzsprung–Russell diagram", sub: "Colour index against absolute magnitude. Hot stars to the left, luminous stars at the top. Drag to highlight.", draw: drawHR },
-    { id: "dist", title: "Distance and apparent magnitude", sub: "Diagonal lines join points of equal absolute magnitude M. Drag to highlight.", draw: drawDist },
-    { id: "polar", title: "Where they were in my sky", sub: "Altitude and azimuth at each observation. Zenith at the centre, horizon at the rim, north up, east right.", draw: drawPolar },
-    { id: "cond", title: "Conditions and rating", sub: "Rating of each observation against altitude, seeing and transparency. Ticks mark the mean rating.", draw: drawConditions },
-    { id: "timeline", title: "Sessions", sub: "Observations per night (noon to noon local). Click a night to filter to it.", draw: drawTimeline },
-    { id: "spec", title: "Spectral classes", sub: "Stars in view by spectral class, hottest to coolest. Click a bar to filter by class.", draw: drawSpectral },
+    { id: "sky", wide: true, title: "All-sky map", gl: "All-sky map|celestial sphere|Hammer projection", sub: "Hammer projection of right ascension and declination, centred on 6h. Point size shows apparent brightness; colour shows temperature. Drag to highlight a region.", draw: drawSky },
+    { id: "hr", title: "Hertzsprung–Russell diagram", gl: "Hertzsprung–Russell diagram|Hertzsprung-Russell diagram|H-R diagram|HR diagram", sub: "Colour index against absolute magnitude. Hot stars to the left, luminous stars at the top. Drag to highlight.", draw: drawHR },
+    { id: "dist", title: "Distance and apparent magnitude", gl: "apparent magnitude|Distance and apparent magnitude", sub: "Diagonal lines join points of equal absolute magnitude M. Drag to highlight.", draw: drawDist },
+    { id: "polar", title: "Where they were in my sky", gl: "altitude-azimuth|alt-az|horizontal coordinate system|altitude", sub: "Altitude and azimuth at each observation. Zenith at the centre, horizon at the rim, north up, east right.", draw: drawPolar },
+    { id: "cond", title: "Conditions and rating", gl: "observing conditions|seeing", sub: "Rating of each observation against altitude, seeing and transparency. Ticks mark the mean rating.", draw: drawConditions },
+    { id: "timeline", title: "Sessions", gl: "observing session|session", sub: "Observations per night (noon to noon local). Click a night to filter to it.", draw: drawTimeline },
+    { id: "spec", title: "Spectral classes", gl: "spectral class|Spectral classes", sub: "Stars in view by spectral class, hottest to coolest. Click a bar to filter by class.", draw: drawSpectral },
   ];
 
   function legendTemp(leg, withShapes, withSize) {
     leg.replaceChildren();
     const T = S.theme;
-    const item = el("span", "mo-legend__item");
+    const item = gl(el("span", "mo-legend__item"), "effective temperature|temperature|kelvin");
     const bar = el("span", "mo-legend__ramp");
     bar.style.background = "linear-gradient(90deg," + T.tempGradient.slice().reverse().join(",") + ")";
     item.appendChild(el("span", "mo-legend__end", "30,000 K"));
@@ -488,7 +492,7 @@
     item.appendChild(el("span", "mo-legend__end", "3,000 K"));
     leg.appendChild(item);
     if (withSize) {
-      const si = el("span", "mo-legend__item");
+      const si = gl(el("span", "mo-legend__item"), "apparent magnitude|magnitude");
       [[0, 6.6], [3, 4.6], [6, 2.6]].forEach(([m, r]) => {
         const dot = el("span", "mo-legend__dot");
         dot.style.width = dot.style.height = (2 * r) + "px";
@@ -498,10 +502,10 @@
       leg.appendChild(si);
     }
     if (withShapes) {
-      const a = el("span", "mo-legend__item");
+      const a = gl(el("span", "mo-legend__item"), "planet");
       a.appendChild(el("span", "mo-legend__diamond")); a.appendChild(el("span", null, "Planet"));
       leg.appendChild(a);
-      const b = el("span", "mo-legend__item");
+      const b = gl(el("span", "mo-legend__item"), "constellation");
       b.appendChild(el("span", "mo-legend__cross", "+")); b.appendChild(el("span", null, "Constellation"));
       leg.appendChild(b);
     }
@@ -529,11 +533,11 @@
     g.append("path").attr("class", "mo-ref").attr("clip-path", "url(#" + clipId + ")")
       .attr("d", d3.line().curve(d3.curveMonotoneX).x((d) => x(d[0])).y((d) => y(d[1]))(MAIN_SEQ));
     const msLab = MAIN_SEQ.find((d) => x(d[0]) > w * 0.62 && y(d[1]) < h - 8);
-    if (msLab) g.append("text").attr("class", "mo-ref-label").attr("x", x(msLab[0]) + 8).attr("y", y(msLab[1]) - 6).text("main sequence");
+    if (msLab) g.append("text").attr("class", "mo-ref-label").attr("x", x(msLab[0]) + 8).attr("y", y(msLab[1]) - 6).attr("data-gl", "main sequence").text("main sequence");
     g.append("g").attr("transform", "translate(0," + h + ")").call(d3.axisBottom(x).ticks(Math.max(3, Math.floor(w / 70))).tickSizeOuter(0)).call(axisStyle);
     g.append("g").call(d3.axisLeft(y).ticks(6).tickSizeOuter(0)).call(axisStyle);
-    axisLabel(g, "B−V colour index  (hotter ←  → cooler)", w / 2, h + 34);
-    axisLabel(g, "Absolute magnitude  (brighter ↑)", -34, h / 2, "middle", true);
+    axisLabel(g, "B−V colour index  (hotter ←  → cooler)", w / 2, h + 34, null, false, "B−V colour index|B−V|colour index|color index");
+    axisLabel(g, "Absolute magnitude  (brighter ↑)", -34, h / 2, "middle", true, "absolute magnitude");
     const pts = data.map((o) => ({ o, key: o.path, px: x(o.bv), py: y(o.absMag), r: 4.5 }));
     const marks = g.append("g").attr("class", "mo-marks").selectAll("circle").data(pts).join("circle")
       .attr("class", "mo-dot").attr("cx", (p) => p.px).attr("cy", (p) => p.py).attr("r", (p) => p.r)
@@ -589,19 +593,19 @@
     g.append("path").attr("class", "mo-equator").attr("d", path({ type: "LineString", coordinates: eq }));
     g.append("path").attr("class", "mo-ecliptic").attr("d", path({ type: "LineString", coordinates: ecl }));
     const pEq = proj(lonlat(232, 0)), pEc = proj(ecl[121]);
-    if (pEq) g.append("text").attr("class", "mo-ref-label").attr("x", pEq[0]).attr("y", pEq[1] - 4).attr("text-anchor", "middle").text("equator");
-    if (pEc && w > 420) g.append("text").attr("class", "mo-ref-label").attr("x", pEc[0]).attr("y", pEc[1] - 5).attr("text-anchor", "middle").text("ecliptic");
+    if (pEq) g.append("text").attr("class", "mo-ref-label").attr("x", pEq[0]).attr("y", pEq[1] - 4).attr("text-anchor", "middle").attr("data-gl", "celestial equator|equator").text("equator");
+    if (pEc && w > 420) g.append("text").attr("class", "mo-ref-label").attr("x", pEc[0]).attr("y", pEc[1] - 5).attr("text-anchor", "middle").attr("data-gl", "ecliptic").text("ecliptic");
     // RA hour labels along the equator, Dec labels along the central meridian
     const hourStep = w < 520 ? 4 : 2;
     const ticks = g.append("g").attr("class", "mo-sky-ticks");
     d3.range(0, 24, hourStep).forEach((hh) => {
       if (hh === 6) return;
       const p = proj(lonlat(hh * 15, 0));
-      if (p) ticks.append("text").attr("x", p[0]).attr("y", p[1] + 12).attr("text-anchor", "middle").text(hh + "h");
+      if (p) ticks.append("text").attr("x", p[0]).attr("y", p[1] + 12).attr("text-anchor", "middle").attr("data-gl", "right ascension").text(hh + "h");
     });
     [-60, -30, 30, 60].forEach((dd) => {
       const p = proj(lonlat(90, dd));
-      if (p) ticks.append("text").attr("x", p[0] + 4).attr("y", p[1] - 3).text((dd > 0 ? "+" : "−") + Math.abs(dd) + "°");
+      if (p) ticks.append("text").attr("x", p[0] + 4).attr("y", p[1] - 3).attr("data-gl", "declination").text((dd > 0 ? "+" : "−") + Math.abs(dd) + "°");
     });
     // constellation names for constellations with objects in view
     if (SK && w >= 520) {
@@ -668,17 +672,17 @@
       if (b < y0 || a > y1) continue;
       lines.append("line").attr("class", "mo-ref").attr("x1", x(d0)).attr("y1", y(a)).attr("x2", x(d1)).attr("y2", y(b));
       const label = "M " + (M > 0 ? "+" : M < 0 ? "−" : "") + Math.abs(M);
-      if (b >= y0 && b <= y1) labs.append("text").attr("class", "mo-ref-label").attr("x", w + 4).attr("y", y(b) + 3).text(label);
+      if (b >= y0 && b <= y1) labs.append("text").attr("class", "mo-ref-label").attr("x", w + 4).attr("y", y(b) + 3).attr("data-gl", "absolute magnitude").text(label);
       else { // exits through the bottom edge (faint): label where it crosses y1
         const ly = 3.26156 * Math.pow(10, (y1 - M + 5) / 5);
-        if (ly > d0 && ly < d1 && x(ly) < w - 30 && x(ly) - lastBottom > 40 && (lastBottom = x(ly))) labs.append("text").attr("class", "mo-ref-label").attr("x", x(ly) + 3).attr("y", h - 4).text(label);
+        if (ly > d0 && ly < d1 && x(ly) < w - 30 && x(ly) - lastBottom > 40 && (lastBottom = x(ly))) labs.append("text").attr("class", "mo-ref-label").attr("x", x(ly) + 3).attr("y", h - 4).attr("data-gl", "absolute magnitude").text(label);
       }
     }
     const fmtLy = (d) => (d >= 1000 ? d3.format(",")(d) : String(d));
     g.append("g").attr("transform", "translate(0," + h + ")").call(d3.axisBottom(x).tickValues(xt).tickFormat(fmtLy).tickSizeOuter(0)).call(axisStyle);
     g.append("g").call(d3.axisLeft(y).ticks(6).tickSizeOuter(0)).call(axisStyle);
-    axisLabel(g, "Distance (light-years, log scale)", w / 2, h + 34);
-    axisLabel(g, "Apparent magnitude V  (brighter ↑)", -34, h / 2, "middle", true);
+    axisLabel(g, "Distance (light-years, log scale)", w / 2, h + 34, null, false, "light-year|logarithmic scale|distance");
+    axisLabel(g, "Apparent magnitude V  (brighter ↑)", -34, h / 2, "middle", true, "apparent magnitude|V magnitude");
     const pts = data.map((o) => ({ o, key: o.path, px: x(o.distLy), py: y(o.v), r: 4.5 }));
     const marks = g.append("g").attr("class", "mo-marks").selectAll("circle").data(pts).join("circle")
       .attr("class", "mo-dot").attr("cx", (p) => p.px).attr("cy", (p) => p.py).attr("r", (p) => p.r).attr("fill", (p) => colorOf(p.o));
@@ -695,7 +699,7 @@
   function drawPolar(chart, plot, W) {
     chart.legend.replaceChildren();
     legendTemp(chart.legend, false, false);
-    const shape = el("span", "mo-legend__item");
+    const shape = gl(el("span", "mo-legend__item"), "planet");
     shape.appendChild(el("span", "mo-legend__diamond")); shape.appendChild(el("span", null, "Planet"));
     chart.legend.appendChild(shape);
     const all = S.view.obs.filter((b) => b.alt !== null && b.az !== null);
@@ -715,9 +719,9 @@
     d3.range(0, 360, 45).forEach((az) => grid.append("line").attr("x1", 0).attr("y1", 0)
       .attr("x2", R * Math.sin(az * RAD)).attr("y2", -R * Math.cos(az * RAD)));
     const t = g.append("g").attr("class", "mo-sky-ticks");
-    [30, 60].forEach((a) => t.append("text").attr("x", 3).attr("y", -r(a) - 3).text(a + "°"));
+    [30, 60].forEach((a) => t.append("text").attr("x", 3).attr("y", -r(a) - 3).attr("data-gl", "altitude").text(a + "°"));
     [["N", 0], ["E", 90], ["S", 180], ["W", 270]].forEach(([n, az]) => t.append("text").attr("class", "mo-compass")
-      .attr("x", (R + 12) * Math.sin(az * RAD)).attr("y", -(R + 12) * Math.cos(az * RAD) + 4).attr("text-anchor", "middle").text(n));
+      .attr("x", (R + 12) * Math.sin(az * RAD)).attr("y", -(R + 12) * Math.cos(az * RAD) + 4).attr("text-anchor", "middle").attr("data-gl", "azimuth|cardinal direction").text(n));
     const pts = data.map((b) => ({ b, o: b.o, key: b.path, px: r(b.alt) * Math.sin(b.az * RAD), py: -r(b.alt) * Math.cos(b.az * RAD), r: 4.5 }));
     const mk = g.append("g").attr("class", "mo-marks");
     const dots = mk.selectAll("circle").data(pts.filter((p) => p.o.category !== "planets")).join("circle")
@@ -749,9 +753,9 @@
       return ((hsh & 0xffff) / 0xffff - 0.5);
     };
     const panels = [
-      { key: "alt", label: "Altitude (°)", x: d3.scaleLinear().domain([0, 90]).range([0, pw]), get: (b) => b.alt, cont: true },
-      { key: "seeing", label: "Seeing (1–5)", x: d3.scaleLinear().domain([0.5, 5.5]).range([0, pw]), get: (b) => b.seeing },
-      { key: "transparency", label: "Transparency (1–5)", x: d3.scaleLinear().domain([0.5, 5.5]).range([0, pw]), get: (b) => b.transparency },
+      { key: "alt", label: "Altitude (°)", gl: "altitude", x: d3.scaleLinear().domain([0, 90]).range([0, pw]), get: (b) => b.alt, cont: true },
+      { key: "seeing", label: "Seeing (1–5)", gl: "seeing", x: d3.scaleLinear().domain([0.5, 5.5]).range([0, pw]), get: (b) => b.seeing },
+      { key: "transparency", label: "Transparency (1–5)", gl: "transparency", x: d3.scaleLinear().domain([0.5, 5.5]).range([0, pw]), get: (b) => b.transparency },
     ];
     const allMarks = [];
     panels.forEach((p, i) => {
@@ -763,8 +767,8 @@
         .call(d3.axisBottom(p.x).ticks(p.cont ? 4 : 5).tickFormat(d3.format("d")).tickSizeOuter(0)).call(axisStyle);
       const ya = g.append("g").call(d3.axisLeft(y).ticks(5).tickFormat(d3.format("d")).tickSizeOuter(0)).call(axisStyle);
       if (i > 0 && cols === 3) ya.selectAll("text").remove();
-      axisLabel(g, p.label, pw / 2, ph + 32);
-      if (i === 0 || cols === 1) axisLabel(g, "Rating", -28, ph / 2, "middle", true);
+      axisLabel(g, p.label, pw / 2, ph + 32, null, false, p.gl);
+      if (i === 0 || cols === 1) axisLabel(g, "Rating", -28, ph / 2, "middle", true, "rating");
       const sub = data.filter((b) => p.get(b) !== null);
       const pts = sub.map((b) => ({
         b, o: b.o, key: b.path, r: 3.5,
@@ -790,10 +794,10 @@
   function drawTimeline(chart, plot, W) {
     const leg = chart.legend; leg.replaceChildren();
     [["New object", "--mo-new"], ["Repeat", "--mo-repeat"]].forEach(([t, v]) => {
-      const it = el("span", "mo-legend__item"); const sw = el("span", "mo-legend__rect");
+      const it = gl(el("span", "mo-legend__item"), t === "New object" ? "new object|first observation" : "repeat observation|repeat"); const sw = el("span", "mo-legend__rect");
       sw.style.background = "var(" + v + ")"; it.appendChild(sw); it.appendChild(el("span", null, t)); leg.appendChild(it);
     });
-    const sl = el("span", "mo-legend__item mo-legend__selkey"); sl.appendChild(el("span", "mo-legend__rect mo-legend__rect--sel")); sl.appendChild(el("span", null, "Highlighted")); leg.appendChild(sl);
+    const sl = el("span", "mo-legend__item mo-legend__selkey"); sl.appendChild(el("span", "mo-legend__rect mo-legend__rect--sel")); sl.appendChild(el("span", null, "Highlighted")); gl(sl, "linked brushing|highlight"); leg.appendChild(sl);
     chart.foot.textContent = "";
     const nights = S.P.nights;
     const by = d3.group(S.view.obs, (b) => b.night);
@@ -855,7 +859,7 @@
   // ---- 7. Spectral class breakdown
   function drawSpectral(chart, plot, W) {
     chart.legend.replaceChildren();
-    const sl = el("span", "mo-legend__item mo-legend__selkey"); sl.appendChild(el("span", "mo-legend__rect mo-legend__rect--sel")); sl.appendChild(el("span", null, "Highlighted")); chart.legend.appendChild(sl);
+    const sl = el("span", "mo-legend__item mo-legend__selkey"); sl.appendChild(el("span", "mo-legend__rect mo-legend__rect--sel")); sl.appendChild(el("span", null, "Highlighted")); gl(sl, "linked brushing|highlight"); chart.legend.appendChild(sl);
     const stars = S.view.objects.filter((o) => o.category === "stars");
     const rows = CLASSES.map((c) => ({ c, objs: stars.filter((o) => o.specClass === c) }));
     const none = stars.filter((o) => !o.specClass).length;
@@ -868,9 +872,10 @@
     const svg = makeSvg(plot, W, H, "Stars by spectral class");
     const g = svg.append("g").attr("transform", "translate(" + m.l + "," + m.t + ")");
     g.append("g").call(gridY, y, w);
-    g.append("g").attr("transform", "translate(0," + h + ")").call(d3.axisBottom(x).tickSizeOuter(0)).call(axisStyle);
+    g.append("g").attr("transform", "translate(0," + h + ")").call(d3.axisBottom(x).tickSizeOuter(0)).call(axisStyle)
+      .selectAll(".tick text").attr("data-gl", "spectral class").attr("data-vk", "spectral_type").attr("data-vv", (d) => d);
     g.append("g").call(d3.axisLeft(y).ticks(4).tickFormat(d3.format("d")).tickSizeOuter(0)).call(axisStyle);
-    axisLabel(g, "Spectral class  (hottest → coolest)", w / 2, h + 32);
+    axisLabel(g, "Spectral class  (hottest → coolest)", w / 2, h + 32, null, false, "spectral class");
     const col = g.selectAll("g.mo-col").data(rows).join("g").attr("class", "mo-col")
       .classed("is-active", (d) => S.filters.classes.indexOf(d.c) >= 0)
       .attr("transform", (d) => "translate(" + (x(d.c) + (x.bandwidth() - bw) / 2) + ",0)");
@@ -909,9 +914,9 @@
   }
 
   // ---------------------------------------------------------------- filter panel
-  function field(label, control, cls) {
+  function field(label, control, cls, hints) {
     const f = el("label", "mo-field" + (cls ? " " + cls : ""));
-    f.appendChild(el("span", "mo-field__label", label));
+    f.appendChild(gl(el("span", "mo-field__label", label), hints));
     f.appendChild(control);
     return f;
   }
@@ -922,12 +927,13 @@
     s.addEventListener("change", () => onChange(s.value));
     return s;
   }
-  function chipGroup(label, items, getArr) {
+  function chipGroup(label, items, getArr, hints, chipKind) {
     const wrap = el("div", "mo-field mo-field--chips");
-    wrap.appendChild(el("span", "mo-field__label", label));
+    wrap.appendChild(gl(el("span", "mo-field__label", label), hints));
     const row = el("div", "mo-chips"); row.setAttribute("role", "group"); row.setAttribute("aria-label", label);
     items.forEach(([v, t, n]) => {
       const b = el("button", "mo-chip"); b.type = "button"; b.dataset.value = v;
+      if (chipKind && v !== "?") { b.dataset.vk = chipKind; b.dataset.vv = v; }
       b.appendChild(document.createTextNode(t));
       if (n !== undefined) b.appendChild(el("span", "mo-chip__n", String(n)));
       b.addEventListener("click", () => {
@@ -951,7 +957,7 @@
     C.from = selectEl(nightOpts, F.nightFrom, (v) => { F.nightFrom = v; if (F.nightTo < v) F.nightTo = v; syncControls(); refresh(); });
     C.to = selectEl(nightOpts, F.nightTo, (v) => { F.nightTo = v; if (F.nightFrom > v) F.nightFrom = v; syncControls(); refresh(); });
     const sess = el("div", "mo-field mo-field--range");
-    sess.appendChild(el("span", "mo-field__label", "Nights"));
+    sess.appendChild(gl(el("span", "mo-field__label", "Nights"), "observing session|night"));
     const sr = el("div", "mo-inline"); sr.appendChild(C.from); sr.appendChild(el("span", "mo-dash", "to")); sr.appendChild(C.to);
     sess.appendChild(sr);
     form.appendChild(sess);
@@ -963,15 +969,15 @@
     // spectral class
     const cl = CLASSES.map((c) => [c, c, P.objects.filter((o) => o.specClass === c).length]);
     cl.push(["?", "none", P.objects.filter((o) => !o.specClass).length]);
-    C.classes = chipGroup("Spectral class", cl, () => F.classes);
+    C.classes = chipGroup("Spectral class", cl, () => F.classes, "spectral class", "spectral_type");
     form.appendChild(C.classes);
     // constellation
     const cons = d3.rollups(P.objects.filter((o) => o.constellation), (v) => v.length, (o) => o.constellation).sort((a, b) => d3.ascending(a[0], b[0]));
     C.cons = selectEl([["", "All constellations"]].concat(cons.map(([n, c]) => [n, n + " (" + c + ")"])), F.constellation, (v) => { F.constellation = v; refresh(); });
-    form.appendChild(field("Constellation", C.cons));
+    form.appendChild(field("Constellation", C.cons, null, "constellation"));
     // magnitude limit
     const magWrap = el("div", "mo-field mo-field--mag");
-    const ml = el("span", "mo-field__label", "Magnitude limit ");
+    const ml = gl(el("span", "mo-field__label", "Magnitude limit "), "limiting magnitude|magnitude limit|apparent magnitude");
     C.magOut = el("output", "mo-out");
     ml.appendChild(C.magOut);
     magWrap.appendChild(ml);
@@ -979,14 +985,14 @@
     C.mag = el("input", "mo-range"); C.mag.type = "range"; C.mag.min = "-3"; C.mag.max = String(P.magCeil); C.mag.step = "0.5";
     C.mag.setAttribute("aria-label", "Magnitude limit");
     C.mag.addEventListener("input", () => { const v = +C.mag.value; F.magMax = v >= P.magCeil ? null : v; syncControls(); refreshSoon(); });
-    C.naked = el("button", "mo-chip", "Naked eye ≤ 6"); C.naked.type = "button";
+    C.naked = gl(el("button", "mo-chip", "Naked eye ≤ 6"), "naked eye|naked-eye limit|limiting magnitude"); C.naked.type = "button";
     C.naked.addEventListener("click", () => { F.magMax = F.magMax === 6 ? null : 6; syncControls(); refresh(); });
     mr.appendChild(C.mag); mr.appendChild(C.naked);
     magWrap.appendChild(mr);
     form.appendChild(magWrap);
     // distance
     const dist = el("div", "mo-field mo-field--range");
-    dist.appendChild(el("span", "mo-field__label", "Distance (ly)"));
+    dist.appendChild(gl(el("span", "mo-field__label", "Distance (ly)"), "light-year|distance"));
     const dr = el("div", "mo-inline");
     const numIn = (ph, key) => {
       const i = el("input", "mo-num"); i.type = "number"; i.min = "0"; i.step = "any"; i.placeholder = ph; i.inputMode = "decimal";
@@ -1003,9 +1009,9 @@
     C.rating = selectEl(minOpts("Any"), String(F.minRating), (v) => { F.minRating = +v; refresh(); });
     C.seeing = selectEl(minOpts("Any"), String(F.minSeeing), (v) => { F.minSeeing = +v; refresh(); });
     C.transp = selectEl(minOpts("Any"), String(F.minTransp), (v) => { F.minTransp = +v; refresh(); });
-    form.appendChild(field("Min rating", C.rating, "mo-field--small"));
-    form.appendChild(field("Min seeing", C.seeing, "mo-field--small"));
-    form.appendChild(field("Min transparency", C.transp, "mo-field--small"));
+    form.appendChild(field("Min rating", C.rating, "mo-field--small", "rating"));
+    form.appendChild(field("Min seeing", C.seeing, "mo-field--small", "seeing"));
+    form.appendChild(field("Min transparency", C.transp, "mo-field--small", "transparency"));
     // reset
     const rs = el("button", "mo-reset", "Reset"); rs.type = "button";
     rs.addEventListener("click", () => { S.filters = defaultFilters(S.P); setSelectionQuiet(null); buildFilters(form); refresh(); });
@@ -1060,6 +1066,7 @@
     drawCharts();
     buildTable();
     updateSelection();
+    annotateRoot();
     saved = { filters: S.filters, selection: S.selection };
   }
   function drawCharts() {
@@ -1108,7 +1115,7 @@
     CHARTS.forEach((def) => {
       const card = el("section", "mo-card" + (def.wide ? " mo-card--wide" : ""));
       card.dataset.chart = def.id;
-      card.appendChild(el("h2", "mo-card__title", def.title));
+      card.appendChild(gl(el("h2", "mo-card__title", def.title), def.gl));
       card.appendChild(el("p", "mo-card__sub", def.sub));
       const legend = el("div", "mo-legend");
       const plot = el("div", "mo-plot");
@@ -1124,7 +1131,9 @@
     const tw = el("div", "mo-table__wrap");
     const table = el("table");
     const thead = el("thead"); const hr = el("tr");
-    ["Name", "Category", "Constellation", "Spectral type", "V", "M", "B−V", "Distance (ly)", "Obs.", "Best"].forEach((t, i) => hr.appendChild(el("th", i >= 4 ? "mo-num-cell" : null, t)));
+    const TH_GL = { Constellation: "constellation", "Spectral type": "spectral type", V: "apparent magnitude|V magnitude", M: "absolute magnitude",
+      "B−V": "B−V|colour index|color index", "Distance (ly)": "light-year|distance", "Obs.": "observation", Best: "rating" };
+    ["Name", "Category", "Constellation", "Spectral type", "V", "M", "B−V", "Distance (ly)", "Obs.", "Best"].forEach((t, i) => hr.appendChild(gl(el("th", i >= 4 ? "mo-num-cell" : null, t), TH_GL[t])));
     thead.appendChild(hr); table.appendChild(thead); table.appendChild(el("tbody"));
     tw.appendChild(table); det.appendChild(tw); root.appendChild(det);
     S.table = det;
@@ -1143,13 +1152,13 @@
         const nw = root.clientWidth;
         if (Math.abs(nw - lastW) < 4) return;
         lastW = nw; clearTimeout(rt);
-        rt = setTimeout(() => { if (S) { drawCharts(); updateSelection(); } }, 150);
+        rt = setTimeout(() => { if (S) { drawCharts(); updateSelection(); annotateRoot(); } }, 150);
       });
       ro.observe(root);
       S.observers.push(ro);
       S.listeners.push(() => clearTimeout(rt));
     }
-    const mo = new MutationObserver(() => { if (S) { drawCharts(); updateSelection(); } });
+    const mo = new MutationObserver(() => { if (S) { drawCharts(); updateSelection(); annotateRoot(); } });
     mo.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme", "class"] });
     S.observers.push(mo);
   }
