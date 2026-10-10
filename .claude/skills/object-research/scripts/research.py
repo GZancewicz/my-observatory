@@ -4,23 +4,32 @@ Usage (from the project root):
     python3 .claude/skills/object-research/scripts/research.py            # new objects only
     python3 .claude/skills/object-research/scripts/research.py --refresh  # re-harvest everything
     python3 .claude/skills/object-research/scripts/research.py --only "ρ Hya" --refresh
+    python3 .claude/skills/object-research/scripts/research.py --refresh --workers 6
+    python3 .claude/skills/object-research/scripts/research.py --sky      # rebuild data/sky/boundaries.*
 
 Each object folder gets object.json (all details plus my observations of it),
-sky.jpg (DSS2 colour cutout, when the object has coordinates) and photo.jpg
-(the Wikipedia lead image, when there is one). data/index.json lists every
-object for the viewer. Observations are rewritten on every run; harvested
-details are kept unless --refresh is given.
+papers.json (SIMBAD references), article.json (full Wikipedia article),
+extra.js (papers + article for the browser), sky.jpg (DSS2 colour cutout, when
+the object has coordinates) and photo.jpg (the Wikipedia lead image, when there
+is one). data/index.json and data/bundle.js list every object for the viewer;
+data/sky/boundaries.json and .js hold the IAU constellation boundaries.
+Observations are rewritten on every run; harvested details are kept unless
+--refresh is given.
 """
 import argparse
+import contextlib
 import csv
 import json
 import math
 import re
 import sys
+import threading
 import time
 import unicodedata
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
 import requests
@@ -30,10 +39,17 @@ DATA = ROOT / "data"
 CSV_PATH = ROOT / "observations.csv"
 UA = {"User-Agent": "my-observatory/0.1 (personal observing log)"}
 PAUSE = 0.3  # seconds between requests to the same service
+# host -> (minimum seconds between request starts, requests in flight at once)
+HOST_LIMITS = {"nominatim.openstreetmap.org": (1.1, 1), "celestrak.org": (1.0, 1),
+               "query.wikidata.org": (0.5, 1)}
+PER_HOST = 2
+TAP_PAGE = 20000  # rows per page when paging long SIMBAD reference lists
 
 SIMBAD_TAP = "https://simbad.cds.unistra.fr/simbad/sim-tap/sync"
+SIMBAD_ID = "https://simbad.cds.unistra.fr/simbad/sim-id"
 SESAME = "https://cds.unistra.fr/cgi-bin/nph-sesame/-oxp/S?"
 WIKI_REST = "https://en.wikipedia.org/api/rest_v1/page/summary/"
+WIKI_MEDIA = "https://en.wikipedia.org/api/rest_v1/page/media-list/"
 WIKI_API = "https://en.wikipedia.org/w/api.php"
 WIKIDATA_API = "https://www.wikidata.org/w/api.php"
 WIKIDATA_SPARQL = "https://query.wikidata.org/sparql"
@@ -88,6 +104,33 @@ Pup:Puppis Pyx:Pyxidis Ret:Reticuli Sge:Sagittae Sgr:Sagittarii Sco:Scorpii Scl:
 Ser:Serpentis Sex:Sextantis Tau:Tauri Tel:Telescopii Tri:Trianguli TrA:Trianguli_Australis Tuc:Tucanae
 UMa:Ursae_Majoris UMi:Ursae_Minoris Vel:Velorum Vir:Virginis Vol:Volantis Vul:Vulpeculae""".split())
 GENITIVE = {k: v.replace("_", " ") for k, v in GENITIVE.items()}
+CONSTELLATIONS = dict(x.split(":") for x in """And:Andromeda Ant:Antlia Aps:Apus Aqr:Aquarius Aql:Aquila
+Ara:Ara Ari:Aries Aur:Auriga Boo:Boötes Cae:Caelum Cam:Camelopardalis Cnc:Cancer CVn:Canes_Venatici
+CMa:Canis_Major CMi:Canis_Minor Cap:Capricornus Car:Carina Cas:Cassiopeia Cen:Centaurus Cep:Cepheus
+Cet:Cetus Cha:Chamaeleon Cir:Circinus Col:Columba Com:Coma_Berenices CrA:Corona_Australis
+CrB:Corona_Borealis Crv:Corvus Crt:Crater Cru:Crux Cyg:Cygnus Del:Delphinus Dor:Dorado Dra:Draco
+Equ:Equuleus Eri:Eridanus For:Fornax Gem:Gemini Gru:Grus Her:Hercules Hor:Horologium Hya:Hydra
+Hyi:Hydrus Ind:Indus Lac:Lacerta Leo:Leo LMi:Leo_Minor Lep:Lepus Lib:Libra Lup:Lupus Lyn:Lynx
+Lyr:Lyra Men:Mensa Mic:Microscopium Mon:Monoceros Mus:Musca Nor:Norma Oct:Octans Oph:Ophiuchus
+Ori:Orion Pav:Pavo Peg:Pegasus Per:Perseus Phe:Phoenix Pic:Pictor Psc:Pisces PsA:Piscis_Austrinus
+Pup:Puppis Pyx:Pyxis Ret:Reticulum Sge:Sagitta Sgr:Sagittarius Sco:Scorpius Scl:Sculptor Sct:Scutum
+Ser:Serpens Sex:Sextans Tau:Taurus Tel:Telescopium Tri:Triangulum TrA:Triangulum_Australe Tuc:Tucana
+UMa:Ursa_Major UMi:Ursa_Minor Vel:Vela Vir:Virgo Vol:Volans Vul:Vulpecula""".split())
+CONSTELLATIONS = {k: v.replace("_", " ") for k, v in CONSTELLATIONS.items()}
+
+# empty Wikipedia sections not worth keeping (their lists are dropped by the plain-text extract)
+WIKI_SKIP = {"References", "External links", "Notes", "Bibliography", "Further reading", "Sources",
+             "Citations", "Footnotes", "Notes and references", "See also"}
+
+# SIMBAD measurement tables copied whole into simbad.measurements
+MES_TABLES = ["mesDiameter", "mesDistance", "mesFe_h", "mesHerschel", "mesISO", "mesIUE", "mesOtype",
+              "mesPLX", "mesPM", "mesRot", "mesSpT", "mesVar", "mesVelocities", "mesXmm"]
+# ICRS -> galactic rotation (Hipparcos, ESA 1997)
+GAL_MATRIX = ((-0.0548755604162154, -0.8734370902348850, -0.4838350155487132),
+              (0.4941094278755837, -0.4448296299600112, 0.7469822444972189),
+              (-0.8676661490190047, -0.1980763734312015, 0.4559837761750669))
+JD_B1875 = 2405889.258550475
+JD_J2000 = 2451545.0
 
 # Wikidata properties worth showing, by label used in object.json
 WD_PROPS = {
@@ -122,32 +165,59 @@ SOLAR = {"Q180892": "M☉", "Q48440": "R☉", "Q843877": "L☉", "Q651336": "M�
 
 # ---------- helpers ----------
 
-def get(url, **kw):
+_hosts, _hosts_lock = {}, threading.Lock()
+
+
+@contextlib.contextmanager
+def polite(url):
+    """Space request starts to one host and cap how many run at once, across worker threads."""
+    host = urlparse(url).netloc
+    gap, slots = HOST_LIMITS.get(host, (PAUSE, PER_HOST))
+    with _hosts_lock:
+        st = _hosts.setdefault(host, {"next": 0.0, "lock": threading.Lock(),
+                                      "sem": threading.Semaphore(slots)})
+    with st["sem"]:
+        with st["lock"]:
+            wait = st["next"] - time.monotonic()
+            st["next"] = max(st["next"], time.monotonic()) + gap
+        if wait > 0:
+            time.sleep(wait)
+        yield
+
+
+def request(method, url, **kw):
     kw.setdefault("timeout", 40)
-    headers = {**UA, **kw.pop("headers", {})}
+    kw["headers"] = {**UA, **kw.pop("headers", {})}
     for attempt in range(3):
         try:
-            r = requests.get(url, headers=headers, **kw)
-            if r.status_code == 429:
+            with polite(url):
+                r = requests.request(method, url, **kw)
+            if r.status_code in (429, 503):
                 time.sleep(5 * (attempt + 1))
                 continue
-            time.sleep(PAUSE)
             return r
         except requests.RequestException:
             time.sleep(2 * (attempt + 1))
     return None
 
 
-def tap(query):
-    try:
-        r = requests.post(SIMBAD_TAP, headers=UA, timeout=60, data={
-            "request": "doQuery", "lang": "adql", "format": "json", "query": query})
-        time.sleep(PAUSE)
-        j = r.json()
-    except (requests.RequestException, ValueError):
-        return []
-    cols = [m["name"] for m in j.get("metadata", [])]
-    return [dict(zip(cols, row)) for row in j.get("data", [])]
+def get(url, **kw):
+    return request("GET", url, **kw)
+
+
+def tap(query, url=SIMBAD_TAP):
+    """Run an ADQL query; rows as dicts, [] on failure."""
+    for attempt in range(2):
+        r = request("POST", url, timeout=120, data={
+            "request": "doQuery", "lang": "adql", "format": "json", "MAXREC": 2000000, "query": query})
+        try:
+            j = r.json()
+            cols = [m["name"] for m in j.get("metadata", [])]
+            return [dict(zip(cols, row)) for row in j.get("data", [])]
+        except (AttributeError, ValueError):
+            time.sleep(3)
+    print(f"  TAP query failed: {' '.join(query.split())[:120]}", flush=True)
+    return []
 
 
 def esc(s):
@@ -191,6 +261,37 @@ def now_iso():
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+def write_json(path, data, indent=2):
+    path.write_text(json.dumps(data, indent=indent, ensure_ascii=False))
+
+
+def js_json(data):
+    """JSON safe to embed in a .js file."""
+    return json.dumps(data, ensure_ascii=False).replace("\u2028", "\\u2028").replace("\u2029", "\\u2029")
+
+
+def unit_vector(ra, dec):
+    ra, dec = math.radians(ra), math.radians(dec)
+    return (math.cos(dec) * math.cos(ra), math.cos(dec) * math.sin(ra), math.sin(dec))
+
+
+def galactic(ra, dec):
+    """ICRS degrees -> galactic (l, b) degrees."""
+    v = unit_vector(ra, dec)
+    x, y, z = (sum(GAL_MATRIX[i][j] * v[j] for j in range(3)) for i in range(3))
+    return round(math.degrees(math.atan2(y, x)) % 360, 5), round(math.degrees(math.asin(max(-1, min(1, z)))), 5)
+
+
+def sexagesimal(value, hours=False):
+    """101.287 -> '06 45 08.917' (hours) or -16.716 -> '-16 42 58.02'."""
+    v = value / 15 if hours else value
+    sign = "-" if v < 0 else ("" if hours else "+")
+    total = round(abs(v) * 3600, 3 if hours else 2)
+    d, m = int(total // 3600), int(total % 3600 // 60)
+    s = total - d * 3600 - m * 60
+    return f"{sign}{d:02d} {m:02d} {s:0{6 if hours else 5}.{3 if hours else 2}f}"
+
+
 # ---------- SIMBAD ----------
 
 def sesame(name):
@@ -201,30 +302,134 @@ def sesame(name):
     return m.group(1) if m else None
 
 
+def strip_columns(row, drop=("oidref", "mespos", "hpx", "otype_txt")):
+    """Drop internal ids and *_prec digit counts from a SIMBAD row."""
+    return {k: v for k, v in row.items() if k not in drop and not k.endswith("_prec")}
+
+
+def subset(rows, keys):
+    return [{k: r.get(k) for k in keys} for r in rows]
+
+
 def simbad_record(main_id):
-    rows = tap(f"""SELECT b.oid, b.main_id, b.ra, b.dec, b.otype, d.description AS otype_desc,
-        b.sp_type, b.plx_value, b.plx_err, b.pmra, b.pmdec, b.rvz_radvel, b.rvz_redshift,
-        b.galdim_majaxis, b.galdim_minaxis, b.morph_type, b.nbref
+    rows = tap(f"""SELECT b.*, d.description AS otype_desc
         FROM basic b LEFT JOIN otypedef d ON b.otype = d.otype
         WHERE b.main_id = '{esc(main_id)}'""")
     if not rows:
         return None
-    rec = rows[0]
-    oid = rec.pop("oid")
+    rec = strip_columns(rows[0])
+    oid = rec["oid"]
     rec["identifiers"] = [i["id"] for i in tap(f"SELECT id FROM ident WHERE oidref = {oid}")]
     rec["fluxes"] = {f["filter"]: {"mag": f["flux"], "err": f["flux_err"]}
                      for f in tap(f"SELECT filter, flux, flux_err FROM flux WHERE oidref = {oid}")}
-    feh = tap(f"SELECT teff, log_g, fe_h, bibcode FROM mesFe_h WHERE oidref = {oid}")
+    if rec.get("ra") is not None:
+        rec["coordinates"] = simbad_coordinates(rec)
+    rec["hierarchy"] = simbad_hierarchy(oid)
+    mes = {}
+    for table in MES_TABLES:
+        got = [strip_columns(r) for r in tap(f"SELECT * FROM {table} WHERE oidref = {oid}")]
+        if got:
+            mes[table] = got
+    rec["measurements"] = mes
+    feh = subset(mes.get("mesFe_h", []), ("teff", "log_g", "fe_h", "bibcode"))
     rec["atmosphere_measurements"] = feh
     teffs = sorted(x["teff"] for x in feh if x["teff"])
     rec["teff_median"] = teffs[len(teffs) // 2] if teffs else None
-    rot = tap(f"SELECT vsini, vsini_err, bibcode FROM mesRot WHERE oidref = {oid}")
-    rec["vsini_measurements"] = rot
-    rec["distance_measurements"] = tap(
-        f"SELECT dist, unit, plus_err, minus_err, method, bibcode FROM mesDistance WHERE oidref = {oid}")
+    rec["vsini_measurements"] = subset(mes.get("mesRot", []), ("vsini", "vsini_err", "bibcode"))
+    rec["distance_measurements"] = subset(mes.get("mesDistance", []),
+                                          ("dist", "unit", "plus_err", "minus_err", "method", "bibcode"))
     rec["types"] = [t["otype"] for t in tap(f"SELECT otype FROM otypes WHERE oidref = {oid}")]
+    notes = simbad_notes(main_id)
+    if notes:
+        rec["notes"] = notes
     rec["url"] = "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=" + requests.utils.quote(main_id)
     return rec
+
+
+def simbad_coordinates(rec):
+    ra, dec = rec["ra"], rec["dec"]
+    gl, gb = galactic(ra, dec)
+    return {"frame": "ICRS", "epoch": "J2000", "ra_deg": ra, "dec_deg": dec,
+            "ra_hms": sexagesimal(ra, hours=True), "dec_dms": sexagesimal(dec),
+            "gal_l": gl, "gal_b": gb,
+            "err_maj_mas": rec.get("coo_err_maj"), "err_min_mas": rec.get("coo_err_min"),
+            "err_angle_deg": rec.get("coo_err_angle"), "quality": rec.get("coo_qual"),
+            "wavelength": rec.get("coo_wavelength"), "bibcode": rec.get("coo_bibcode")}
+
+
+def simbad_hierarchy(oid, cap=500):
+    """Parents and children from h_link, e.g. a star's cluster or its components."""
+    cols = "b.main_id, b.otype, d.description AS otype_desc, h.membership, h.link_bibcode AS bibcode"
+    parents = tap(f"""SELECT {cols} FROM h_link h JOIN basic b ON b.oid = h.parent
+        LEFT JOIN otypedef d ON d.otype = b.otype WHERE h.child = {oid}""")
+    children = tap(f"""SELECT TOP {cap} {cols} FROM h_link h JOIN basic b ON b.oid = h.child
+        LEFT JOIN otypedef d ON d.otype = b.otype WHERE h.parent = {oid}""")
+    out = {"parents": parents, "children": children}
+    if len(children) == cap:
+        n = tap(f"SELECT COUNT(*) AS n FROM h_link WHERE parent = {oid}")
+        out["children_total"] = n[0]["n"] if n else None
+    return out
+
+
+def simbad_notes(main_id):
+    """Notes from the SIMBAD object page (not in TAP), as [{date, text}]."""
+    r = get(SIMBAD_ID, params={"Ident": main_id, "output.format": "ASCII", "obj.notesel": "on",
+                               "obj.bibsel": "off", "obj.messel": "off"})
+    if r is None or r.status_code != 200:
+        return []
+    m = re.search(r"^Notes \((\d+)\) :\n(.*?)^={10,}", r.text, re.S | re.M)
+    if not m or m.group(1) == "0":
+        return []
+    notes = []
+    for line in m.group(2).splitlines():
+        head = re.match(r"\(\w\)\s+(\S+)", line)
+        if head:
+            notes.append({"date": head.group(1), "text": ""})
+        elif notes and line.strip():
+            notes[-1]["text"] += " " + line.strip()
+    for n in notes:
+        n["text"] = re.sub(r"\\\w+((?:\{[^}]*\})+)",
+                           lambda g: re.findall(r"\{([^}]*)\}", g.group(1))[-1], n["text"]).strip()
+    return notes
+
+
+def simbad_papers(oid):
+    """Every reference for the object (has_ref joined to ref), first 10 authors each, newest first."""
+    refs, last = [], -1
+    while True:
+        page = tap(f"""SELECT TOP {TAP_PAGE} r.oidbib, r.bibcode, r.title, r."year", r.journal, r.volume,
+            r.page, r.last_page, r.doi FROM has_ref h JOIN ref r ON h.oidbibref = r.oidbib
+            WHERE h.oidref = {oid} AND r.oidbib > {last} ORDER BY r.oidbib""")
+        refs += page
+        if len(page) < TAP_PAGE:
+            break
+        last = page[-1]["oidbib"]
+    authors, last = {}, -1
+    while True:
+        page = tap(f"""SELECT TOP {TAP_PAGE} a.oidbibref, a.pos, a.name FROM has_ref h
+            JOIN author a ON a.oidbibref = h.oidbibref
+            WHERE h.oidref = {oid} AND a.pos <= 11 AND a.oidbibref > {last} ORDER BY a.oidbibref""")
+        full = len(page) == TAP_PAGE
+        if full:   # the last paper may be cut off; fetch it again with the next page
+            last = page[-1]["oidbibref"] - 1
+            page = [a for a in page if a["oidbibref"] <= last]
+            if not page:
+                break
+        for a in page:
+            authors.setdefault(a["oidbibref"], []).append((a["pos"], a["name"]))
+        if not full:
+            break
+    out = []
+    for r in refs:
+        names = [n.strip() for _, n in sorted(authors.get(r["oidbib"], []))]
+        p = {k: r.get(k) for k in ("bibcode", "title", "year", "journal", "volume", "page", "last_page", "doi")}
+        p["bibcode"] = (p["bibcode"] or "").strip()
+        p["authors"] = names[:10]
+        if len(names) > 10:
+            p["et_al"] = True
+        out.append({k: v for k, v in p.items() if v not in (None, "")})
+    out.sort(key=lambda p: (p.get("year") or 0, p["bibcode"]), reverse=True)
+    return out
 
 
 # ---------- Wikipedia / Wikidata ----------
@@ -303,54 +508,95 @@ def wikidata_entity(qid):
     return r.json()["entities"].get(qid)
 
 
+_labels, _labels_lock = {}, threading.Lock()
+
+
 def wikidata_labels(qids):
-    labels = {}
+    """English labels for items or properties, cached across objects."""
     qids = sorted(set(qids))
-    for i in range(0, len(qids), 50):
-        r = get(WIKIDATA_API, params={"action": "wbgetentities", "ids": "|".join(qids[i:i + 50]),
+    with _labels_lock:
+        todo = [q for q in qids if q not in _labels]
+    for i in range(0, len(todo), 50):
+        r = get(WIKIDATA_API, params={"action": "wbgetentities", "ids": "|".join(todo[i:i + 50]),
                                       "props": "labels", "languages": "en", "format": "json"})
         if r is None:
             continue
-        for q, e in r.json().get("entities", {}).items():
-            labels[q] = e.get("labels", {}).get("en", {}).get("value", q)
-    return labels
+        try:
+            entities = r.json().get("entities", {})
+        except ValueError:
+            continue
+        with _labels_lock:
+            for q, e in entities.items():
+                _labels[q] = e.get("labels", {}).get("en", {}).get("value", q)
+    with _labels_lock:
+        return {q: _labels[q] for q in qids if q in _labels}
 
 
-def wikidata_facts(entity):
-    """Selected claims as {label: [{"value", "unit", "rank"}...]}, preferred rank first."""
-    claims = entity.get("claims", {})
-    raw, item_ids = {}, []
-    for pid, label in WD_PROPS.items():
-        vals = []
-        for c in claims.get(pid, []):
-            dv = c["mainsnak"].get("datavalue")
-            if not dv:
-                continue
-            v, t = dv["value"], dv["type"]
-            if t == "quantity":
-                unit = v["unit"].rsplit("/", 1)[-1] if v["unit"] != "1" else ""
-                if unit and unit not in SOLAR:
-                    item_ids.append(unit)
-                entry = {"value": float(v["amount"]), "unit": unit}
-                if "upperBound" in v:
-                    entry["plus"] = float(v["upperBound"]) - float(v["amount"])
-                    entry["minus"] = float(v["amount"]) - float(v["lowerBound"])
-            elif t == "wikibase-entityid":
-                item_ids.append(v["id"])
-                entry = {"value": v["id"]}
-            elif t == "time":
-                entry = {"value": v["time"].lstrip("+").split("T")[0]}
-            elif t in ("string", "monolingualtext"):
-                entry = {"value": v if isinstance(v, str) else v["text"]}
-            else:
-                continue
-            entry["rank"] = c.get("rank")
-            vals.append(entry)
-        if vals:
-            vals.sort(key=lambda e: e["rank"] != "preferred")
-            raw[label] = vals
-    labels = wikidata_labels(item_ids) if item_ids else {}
-    for vals in raw.values():
+_formatters = {}
+
+
+def wikidata_formatters(pids):
+    """Formatter URLs (P1630) for external-id properties, cached across objects."""
+    todo = sorted(set(pids) - set(_formatters))
+    for i in range(0, len(todo), 100):
+        values = " ".join(f"wd:{p}" for p in todo[i:i + 100])
+        r = get(WIKIDATA_SPARQL, params={"format": "json", "query":
+                f"SELECT ?p ?f WHERE {{ VALUES ?p {{ {values} }} ?p wdt:P1630 ?f . }}"})
+        for p in todo[i:i + 100]:
+            _formatters.setdefault(p, None)
+        if r is None or r.status_code != 200:
+            continue
+        for b in r.json()["results"]["bindings"]:
+            pid = b["p"]["value"].rsplit("/", 1)[1]
+            if not _formatters.get(pid):
+                _formatters[pid] = b["f"]["value"]
+    return {p: _formatters.get(p) for p in pids}
+
+
+def wd_time(v):
+    """Wikidata time value -> '1862-01-31', '1862-01' or '1862' by its precision."""
+    neg = v["time"].startswith("-")
+    y, m, d = v["time"].lstrip("+-").split("T")[0].split("-")
+    y, prec = y.lstrip("0") or "0", v.get("precision", 11)
+    out = y if prec <= 9 else f"{y}-{m}" if prec == 10 else f"{y}-{m}-{d}"
+    return ("-" if neg else "") + out
+
+
+def wd_entry(snak, item_ids):
+    """One claim value as {"value", "unit"?, "plus"?, "minus"?, "type"}; item ids collected for labelling."""
+    dv = snak.get("datavalue")
+    if not dv:
+        return None
+    v, t = dv["value"], dv["type"]
+    if t == "quantity":
+        unit = v["unit"].rsplit("/", 1)[-1] if v["unit"] != "1" else ""
+        if unit and unit not in SOLAR:
+            item_ids.append(unit)
+        entry = {"value": float(v["amount"]), "unit": unit}
+        if "upperBound" in v:
+            entry["plus"] = float(v["upperBound"]) - float(v["amount"])
+            entry["minus"] = float(v["amount"]) - float(v["lowerBound"])
+    elif t == "wikibase-entityid":
+        qid = v.get("id") or f"Q{v.get('numeric-id')}"
+        item_ids.append(qid)
+        entry = {"value": qid, "qid": qid}
+    elif t == "time":
+        entry = {"value": wd_time(v)}
+    elif t == "monolingualtext":
+        entry = {"value": v["text"]}
+    elif t == "string":
+        entry = {"value": v}
+    elif t == "globecoordinate":
+        entry = {"value": f"{v['latitude']:.4f}, {v['longitude']:.4f}"}
+    else:
+        entry = {"value": json.dumps(v, ensure_ascii=False)}
+    entry["type"] = snak.get("datatype") or t
+    return entry
+
+
+def wd_finish(groups, labels):
+    """Label units and items in place; yottagrams become kg."""
+    for vals in groups.values():
         for e in vals:
             if "unit" in e:
                 u = SOLAR.get(e["unit"], labels.get(e["unit"], e["unit"]))
@@ -362,9 +608,69 @@ def wikidata_facts(entity):
                             e[k] *= 1e21
             elif isinstance(e["value"], str) and re.fullmatch(r"Q\d+", e["value"]):
                 e["value"] = labels.get(e["value"], e["value"])
-            e.pop("rank", None)
+
+
+def wikidata_facts(entity):
+    """Selected claims as {label: [{"value", "unit"...}]}, preferred rank first."""
+    claims = entity.get("claims", {})
+    raw, item_ids = {}, []
+    for pid, label in WD_PROPS.items():
+        vals = []
+        for c in claims.get(pid, []):
+            entry = wd_entry(c["mainsnak"], item_ids)
+            if not entry or entry["type"] not in ("quantity", "wikibase-item", "time", "string",
+                                                  "monolingualtext", "external-id"):
+                continue
+            entry["rank"] = c.get("rank")
+            vals.append(entry)
+        if vals:
+            vals.sort(key=lambda e: e["rank"] != "preferred")
+            raw[label] = vals
+    labels = wikidata_labels(item_ids) if item_ids else {}
+    wd_finish(raw, labels)
+    for vals in raw.values():
+        for e in vals:
+            for k in ("rank", "type", "qid"):
+                e.pop(k, None)
     image = claims.get("P18", [{}])[0].get("mainsnak", {}).get("datavalue", {}).get("value")
     return raw, image
+
+
+def wikidata_all_claims(entity):
+    """Every claim keyed by property label, deprecated values dropped, preferred first.
+    Returns (claims, property ids by label)."""
+    claims = entity.get("claims", {})
+    raw, item_ids = {}, []
+    for pid, cs in claims.items():
+        vals = []
+        for c in cs:
+            if c.get("rank") == "deprecated":
+                continue
+            entry = wd_entry(c["mainsnak"], item_ids)
+            if entry:
+                entry["preferred"] = c.get("rank") == "preferred"
+                vals.append(entry)
+        if vals:
+            vals.sort(key=lambda e: not e["preferred"])
+            raw[pid] = vals
+    labels = wikidata_labels(item_ids + list(raw))
+    wd_finish(raw, labels)
+    ext = [p for p, vals in raw.items() if vals[0]["type"] == "external-id"]
+    fmts = wikidata_formatters(ext) if ext else {}
+    out, pids = {}, {}
+    for pid in sorted(raw, key=lambda p: int(p[1:])):
+        for e in raw[pid]:
+            e.pop("preferred")
+            if e["type"] == "external-id" and fmts.get(pid):
+                e["url"] = fmts[pid].replace("$1", requests.utils.quote(str(e["value"]), safe=":/"))
+            if e["type"] == "commonsMedia":
+                e["url"] = "https://commons.wikimedia.org/wiki/File:" + str(e["value"]).replace(" ", "_")
+        label = labels.get(pid, pid)
+        if label in out:
+            label = f"{label} ({pid})"
+        out[label] = raw[pid]
+        pids[label] = pid
+    return out, pids
 
 
 def wikipedia_block(title):
@@ -381,6 +687,49 @@ def wikipedia_block(title):
         "image": (s.get("originalimage") or {}).get("source"),
         "wikidata": s.get("wikibase_item"),
     }
+
+
+def wiki_sections(title):
+    """Whole article as plain text, split into [{title, level, text}]; the lead is level 1."""
+    r = get(WIKI_API, params={"action": "query", "prop": "extracts", "explaintext": 1,
+                              "exsectionformat": "wiki", "redirects": 1, "titles": title, "format": "json"})
+    if r is None or r.status_code != 200:
+        return []
+    pages = r.json().get("query", {}).get("pages", {})
+    text = next(iter(pages.values()), {}).get("extract") or ""
+    sections = [{"title": "Introduction", "level": 1, "text": ""}]
+    for line in text.split("\n"):
+        m = re.fullmatch(r"(={2,6})\s*(.*?)\s*\1\s*", line)
+        if m:
+            sections.append({"title": m.group(2), "level": len(m.group(1)), "text": ""})
+        else:
+            sections[-1]["text"] += line + "\n"
+    for s in sections:
+        s["text"] = re.sub(r"\n{3,}", "\n\n", s["text"]).strip()
+    return [s for s in sections if s["text"] or s["title"] not in WIKI_SKIP]
+
+
+def wiki_images(title, cap=12):
+    """Up to `cap` article images: file title, thumbnail URL, caption."""
+    r = get(WIKI_MEDIA + requests.utils.quote(title.replace(" ", "_"), safe=""))
+    if r is None or r.status_code != 200:
+        return []
+    out = []
+    for it in r.json().get("items", []):
+        if it.get("type") != "image" or it.get("showInGallery") is False or not it.get("srcset"):
+            continue
+        src = it["srcset"][0]["src"].split("?")[0]
+        out.append({"title": it["title"], "thumbnail": ("https:" + src) if src.startswith("//") else src,
+                    "caption": ((it.get("caption") or {}).get("text") or "").strip() or None,
+                    "url": "https://en.wikipedia.org/wiki/" + requests.utils.quote(it["title"])})
+        if len(out) >= cap:
+            break
+    return out
+
+
+def wiki_article(title):
+    return {"title": title, "url": "https://en.wikipedia.org/wiki/" + requests.utils.quote(title.replace(" ", "_")),
+            "sections": wiki_sections(title), "images": wiki_images(title), "retrieved": now_iso()}
 
 
 # ---------- Horizons / CelesTrak ----------
@@ -459,8 +808,7 @@ def load_locations():
 def locate(place, locations):
     if place in locations or not place:
         return locations.get(place)
-    r = get(NOMINATIM, params={"q": place, "format": "json", "limit": 1}, timeout=30)
-    time.sleep(1)  # Nominatim policy: one request per second
+    r = get(NOMINATIM, params={"q": place, "format": "json", "limit": 1}, timeout=30)  # 1/s via HOST_LIMITS
     if r is None or not r.json():
         return None
     hit = r.json()[0]
@@ -472,18 +820,10 @@ def locate(place, locations):
 
 def constellation_geometry(abbr):
     """Centre and radius of a constellation from the IAU boundaries (VizieR VI/49)."""
-    try:
-        r = requests.post(VIZIER_TAP, headers=UA, timeout=60, data={
-            "request": "doQuery", "lang": "adql", "format": "json",
-            "query": f"SELECT RAJ2000, DEJ2000 FROM \"VI/49/bound_20\" WHERE cst = '{abbr.upper():<4}'"})
-        pts = r.json()["data"]
-    except (requests.RequestException, ValueError, KeyError):
+    rows = tap(f"SELECT RAJ2000, DEJ2000 FROM \"VI/49/bound_20\" WHERE cst = '{abbr.upper():<4}'", VIZIER_TAP)
+    if not rows:
         return None
-    if not pts:
-        return None
-    vec = lambda ra, de: (math.cos(math.radians(de)) * math.cos(math.radians(ra)),
-                          math.cos(math.radians(de)) * math.sin(math.radians(ra)), math.sin(math.radians(de)))
-    vs = [vec(ra, de) for ra, de in pts]
+    vs = [unit_vector(p["RAJ2000"], p["DEJ2000"]) for p in rows]
     x, y, z = (sum(v[i] for v in vs) for i in range(3))
     n = math.sqrt(x * x + y * y + z * z)
     x, y, z = x / n, y / n, z / n
@@ -491,6 +831,82 @@ def constellation_geometry(abbr):
     return {"ra_deg": round(math.degrees(math.atan2(y, x)) % 360, 3),
             "dec_deg": round(math.degrees(math.asin(z)), 3), "radius_deg": round(radius, 1),
             "source": "IAU boundaries, VizieR VI/49"}
+
+
+# ---------- constellation boundaries for the sky map ----------
+
+def precess(ra, dec, jd0=JD_B1875, jd1=JD_J2000):
+    """Rigorous IAU 1976 precession (Meeus 21.4), degrees in and out."""
+    T, t = (jd0 - JD_J2000) / 36525, (jd1 - jd0) / 36525
+    asec = lambda x: math.radians(x / 3600)
+    zeta = asec((2306.2181 + 1.39656 * T - 0.000139 * T * T) * t + (0.30188 - 0.000344 * T) * t * t + 0.017998 * t ** 3)
+    z = asec((2306.2181 + 1.39656 * T - 0.000139 * T * T) * t + (1.09468 + 0.000066 * T) * t * t + 0.018203 * t ** 3)
+    theta = asec((2004.3109 - 0.85330 * T - 0.000217 * T * T) * t - (0.42665 + 0.000217 * T) * t * t - 0.041833 * t ** 3)
+    a, d = math.radians(ra), math.radians(dec)
+    A = math.cos(d) * math.sin(a + zeta)
+    B = math.cos(theta) * math.cos(d) * math.cos(a + zeta) - math.sin(theta) * math.sin(d)
+    C = math.sin(theta) * math.cos(d) * math.cos(a + zeta) + math.cos(theta) * math.sin(d)
+    return math.degrees(math.atan2(A, B) + z) % 360, math.degrees(math.asin(max(-1, min(1, C))))
+
+
+def ring_area(ring):
+    """Spherical area of a closed [lon, lat] ring as d3.geoArea measures it (interior on the clockwise side)."""
+    total = 0.0
+    lam0, phi0 = math.radians(ring[0][0]), math.radians(ring[0][1]) / 2 + math.pi / 4
+    cos0, sin0 = math.cos(phi0), math.sin(phi0)
+    for lon, lat in ring[1:]:
+        lam, phi = math.radians(lon), math.radians(lat) / 2 + math.pi / 4
+        dl = lam - lam0
+        sd = 1 if dl >= 0 else -1
+        c, s = math.cos(phi), math.sin(phi)
+        k = sin0 * s
+        total += math.atan2(k * sd * math.sin(sd * dl), cos0 * c + k * math.cos(sd * dl))
+        lam0, cos0, sin0 = lam, c, s
+    area = 2 * total
+    return area + 4 * math.pi if area < 0 else area
+
+
+def boundary_ring(vertices, step=1.0):
+    """B1875 vertices (edges along constant RA or Dec) -> J2000 ring with points every `step` degrees."""
+    pts = []
+    for (ra0, de0), (ra1, de1) in zip(vertices, vertices[1:]):
+        dra = (ra1 - ra0 + 180) % 360 - 180
+        n = max(1, math.ceil(max(abs(dra) * math.cos(math.radians(de0)), abs(de1 - de0)) / step),
+                math.ceil(abs(dra) / 5))
+        for k in range(n):
+            pts.append(precess((ra0 + dra * k / n) % 360, de0 + (de1 - de0) * k / n))
+    pts.append(pts[0])
+    ring = [[round(ra, 4), round(de, 4)] for ra, de in pts]
+    return ring if ring_area(ring) < 2 * math.pi else ring[::-1]
+
+
+def build_boundaries():
+    """data/sky/boundaries.json and .js from VizieR VI/49 (B1875 vertices with adjacency, precessed to J2000)."""
+    rows = tap('SELECT recno, RAB1875, DEB1875, cst, adj FROM "VI/49/constbnd" ORDER BY recno', VIZIER_TAP)
+    if not rows:
+        print("  constellation boundaries: VizieR query failed", flush=True)
+        return
+    polys = []
+    for r in rows:
+        if not (r["adj"] or "").strip():      # first vertex of a polygon has no neighbour
+            polys.append((r["cst"].strip(), []))
+        polys[-1][1].append((r["RAB1875"], r["DEB1875"]))
+    canon = {k.upper(): k for k in CONSTELLATIONS}
+    bounds = {}
+    for abbr, verts in polys:      # 'Cra' -> 'CrA', 'Ser1'/'Ser2' -> 'Ser'
+        bounds.setdefault(canon.get(abbr.rstrip("12").upper(), abbr), []).append(boundary_ring(verts))
+    bounds = {k: v[0] if len(v) == 1 else v for k, v in sorted(bounds.items())}
+    sky = {"boundaries": bounds, "names": {k: CONSTELLATIONS.get(k, k) for k in bounds},
+           "source": "IAU constellation boundaries, VizieR VI/49 (Davenhall & Leggett 1989), "
+                     "B1875 vertices precessed to J2000, edges sampled every 1 degree",
+           "format": "[ra_deg, dec_deg] J2000, closed rings wound clockwise for d3-geo with lon = RA; "
+                     "Ser is a list of two rings (Caput, Cauda)",
+           "generated": now_iso()}
+    folder = DATA / "sky"
+    folder.mkdir(exist_ok=True)
+    write_json(folder / "boundaries.json", sky, indent=None)
+    (folder / "boundaries.js").write_text("window.MO_SKY = " + js_json(sky) + ";\n")
+    print(f"{len(bounds)} constellations -> data/sky/boundaries.json", flush=True)
 
 
 # ---------- images ----------
@@ -513,16 +929,16 @@ def brighten(path):
 
 def relabel(obj):
     """Replace Wikidata ids left unlabelled by a failed label lookup."""
-    facts = (obj.get("wikidata") or {}).get("facts", {})
-    qids = [e["value"] for vals in facts.values() for e in vals
-            if isinstance(e.get("value"), str) and re.fullmatch(r"Q\d+", e["value"])]
-    if not qids:
+    wd = obj.get("wikidata") or {}
+    groups = list(wd.get("facts", {}).values()) + list(wd.get("all_claims", {}).values())
+    entries = [e for vals in groups for e in vals
+               if isinstance(e.get("value"), str) and re.fullmatch(r"Q\d+", e["value"])
+               and e.get("type", "wikibase-item") == "wikibase-item"]
+    if not entries:
         return
-    labels = wikidata_labels(qids)
-    for vals in facts.values():
-        for e in vals:
-            if e.get("value") in labels:
-                e["value"] = labels[e["value"]]
+    labels = wikidata_labels([e["value"] for e in entries])
+    for e in entries:
+        e["value"] = labels.get(e["value"], e["value"])
 
 
 def sky_cutout(ra, dec, fov, dest):
