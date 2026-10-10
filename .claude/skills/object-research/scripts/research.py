@@ -41,7 +41,8 @@ UA = {"User-Agent": "my-observatory/0.1 (personal observing log)"}
 PAUSE = 0.3  # seconds between requests to the same service
 # host -> (minimum seconds between request starts, requests in flight at once)
 HOST_LIMITS = {"nominatim.openstreetmap.org": (1.1, 1), "celestrak.org": (1.0, 1),
-               "query.wikidata.org": (0.5, 1)}
+               "query.wikidata.org": (0.5, 1), "simbad.cds.unistra.fr": (PAUSE, 3),
+               "en.wikipedia.org": (0.4, 1), "www.wikidata.org": (0.4, 1)}
 PER_HOST = 2
 TAP_PAGE = 20000  # rows per page when paging long SIMBAD reference lists
 
@@ -188,16 +189,21 @@ def polite(url):
 def request(method, url, **kw):
     kw.setdefault("timeout", 40)
     kw["headers"] = {**UA, **kw.pop("headers", {})}
-    for attempt in range(3):
+    why = None
+    for attempt in range(5):
         try:
             with polite(url):
                 r = requests.request(method, url, **kw)
             if r.status_code in (429, 503):
-                time.sleep(5 * (attempt + 1))
+                why = f"HTTP {r.status_code}"
+                after = r.headers.get("retry-after", "")
+                time.sleep(min(int(after), 60) if after.isdigit() else 5 * (attempt + 1))
                 continue
             return r
-        except requests.RequestException:
+        except requests.RequestException as exc:
+            why = type(exc).__name__
             time.sleep(2 * (attempt + 1))
+    print(f"  request failed ({why}): {urlparse(url).netloc}{urlparse(url).path}", flush=True)
     return None
 
 
@@ -399,24 +405,24 @@ def simbad_papers(oid):
     while True:
         page = tap(f"""SELECT TOP {TAP_PAGE} r.oidbib, r.bibcode, r.title, r."year", r.journal, r.volume,
             r.page, r.last_page, r.doi FROM has_ref h JOIN ref r ON h.oidbibref = r.oidbib
-            WHERE h.oidref = {oid} AND r.oidbib > {last} ORDER BY r.oidbib""")
+            WHERE h.oidref = {oid} AND r.oidbib > {last} ORDER BY oidbib""")
         refs += page
         if len(page) < TAP_PAGE:
             break
         last = page[-1]["oidbib"]
     authors, last = {}, -1
     while True:
-        page = tap(f"""SELECT TOP {TAP_PAGE} a.oidbibref, a.pos, a.name FROM has_ref h
+        page = tap(f"""SELECT TOP {TAP_PAGE} a.oidbibref AS bib, a.pos, a.name FROM has_ref h
             JOIN author a ON a.oidbibref = h.oidbibref
-            WHERE h.oidref = {oid} AND a.pos <= 11 AND a.oidbibref > {last} ORDER BY a.oidbibref""")
+            WHERE h.oidref = {oid} AND a.pos <= 11 AND a.oidbibref > {last} ORDER BY bib""")
         full = len(page) == TAP_PAGE
         if full:   # the last paper may be cut off; fetch it again with the next page
-            last = page[-1]["oidbibref"] - 1
-            page = [a for a in page if a["oidbibref"] <= last]
+            last = page[-1]["bib"] - 1
+            page = [a for a in page if a["bib"] <= last]
             if not page:
                 break
         for a in page:
-            authors.setdefault(a["oidbibref"], []).append((a["pos"], a["name"]))
+            authors.setdefault(a["bib"], []).append((a["pos"], a["name"]))
         if not full:
             break
     out = []
@@ -444,13 +450,27 @@ def wiki_summary(title):
     return s
 
 
+def wiki_extract(title, intro=False):
+    """Plain-text extract of an article (lead only with intro=True); retried, since it comes back empty at times."""
+    params = {"action": "query", "prop": "extracts", "explaintext": 1, "redirects": 1,
+              "titles": title, "format": "json"}
+    params.update({"exintro": 1} if intro else {"exsectionformat": "wiki"})
+    for attempt in range(3):
+        r = get(WIKI_API, params=params)
+        try:
+            pages = r.json().get("query", {}).get("pages", {})
+            text = next(iter(pages.values()), {}).get("extract")
+        except (AttributeError, ValueError):
+            text = None
+        if text:
+            return text
+        time.sleep(3 * (attempt + 1))
+    print(f"  empty Wikipedia extract: {title}", flush=True)
+    return None
+
+
 def wiki_intro(title):
-    r = get(WIKI_API, params={"action": "query", "prop": "extracts", "exintro": 1,
-                              "explaintext": 1, "redirects": 1, "titles": title, "format": "json"})
-    if r is None:
-        return None
-    pages = r.json().get("query", {}).get("pages", {})
-    return next(iter(pages.values()), {}).get("extract")
+    return wiki_extract(title, intro=True)
 
 
 def wiki_titles_from_ids(name, identifiers):
@@ -518,7 +538,7 @@ def wikidata_labels(qids):
         todo = [q for q in qids if q not in _labels]
     for i in range(0, len(todo), 50):
         r = get(WIKIDATA_API, params={"action": "wbgetentities", "ids": "|".join(todo[i:i + 50]),
-                                      "props": "labels", "languages": "en", "format": "json"})
+                                      "props": "labels", "languages": "en|mul", "format": "json"})
         if r is None:
             continue
         try:
@@ -527,7 +547,8 @@ def wikidata_labels(qids):
             continue
         with _labels_lock:
             for q, e in entities.items():
-                _labels[q] = e.get("labels", {}).get("en", {}).get("value", q)
+                lab = e.get("labels", {})
+                _labels[q] = (lab.get("en") or lab.get("mul") or {}).get("value", q)
     with _labels_lock:
         return {q: _labels[q] for q in qids if q in _labels}
 
@@ -691,12 +712,9 @@ def wikipedia_block(title):
 
 def wiki_sections(title):
     """Whole article as plain text, split into [{title, level, text}]; the lead is level 1."""
-    r = get(WIKI_API, params={"action": "query", "prop": "extracts", "explaintext": 1,
-                              "exsectionformat": "wiki", "redirects": 1, "titles": title, "format": "json"})
-    if r is None or r.status_code != 200:
+    text = wiki_extract(title)
+    if not text:
         return []
-    pages = r.json().get("query", {}).get("pages", {})
-    text = next(iter(pages.values()), {}).get("extract") or ""
     sections = [{"title": "Introduction", "level": 1, "text": ""}]
     for line in text.split("\n"):
         m = re.fullmatch(r"(={2,6})\s*(.*?)\s*\1\s*", line)
@@ -928,17 +946,38 @@ def brighten(path):
 
 
 def relabel(obj):
-    """Replace Wikidata ids left unlabelled by a failed label lookup."""
+    """Resolve Wikidata ids left raw by a failed label lookup: item values, quantity units and
+    all_claims property labels."""
     wd = obj.get("wikidata") or {}
-    groups = list(wd.get("facts", {}).values()) + list(wd.get("all_claims", {}).values())
-    entries = [e for vals in groups for e in vals
-               if isinstance(e.get("value"), str) and re.fullmatch(r"Q\d+", e["value"])
-               and e.get("type", "wikibase-item") == "wikibase-item"]
-    if not entries:
+    claims, pids = wd.get("all_claims", {}), wd.get("property_ids", {})
+    groups = list(wd.get("facts", {}).values()) + list(claims.values())
+    qid = lambda v: isinstance(v, str) and re.fullmatch(r"Q\d+", v)
+    items = [e for vals in groups for e in vals
+             if qid(e.get("value")) and "unit" not in e and e.get("type", "wikibase-item") == "wikibase-item"]
+    units = [e for vals in groups for e in vals if qid(e.get("unit"))]
+    raw_props = [k for k in claims if re.fullmatch(r"P\d+", k)]
+    if not (items or units or raw_props):
         return
-    labels = wikidata_labels([e["value"] for e in entries])
-    for e in entries:
+    labels = wikidata_labels([e["value"] for e in items] + [e["unit"] for e in units] + raw_props)
+    for e in items:
         e["value"] = labels.get(e["value"], e["value"])
+    wd_finish({"units": units}, labels)
+    for pid in raw_props:
+        label = labels.get(pid, pid)
+        if label != pid:
+            label = label if label not in claims else f"{label} ({pid})"
+            claims[label] = claims.pop(pid)
+            pids.pop(pid, None)
+            pids[label] = pid
+    if raw_props:
+        wd["all_claims"] = {k: claims[k] for k in sorted(claims, key=lambda k: int(pids.get(k, "P0")[1:]))}
+
+
+def star_fov(vmag):
+    """Bright stars saturate the survey plates; widen the field so the surroundings show."""
+    if vmag is None:
+        return 0.4
+    return 3.0 if vmag < 0.5 else 1.5 if vmag < 2 else 0.8 if vmag < 4 else 0.4
 
 
 def sky_cutout(ra, dec, fov, dest):
@@ -991,6 +1030,9 @@ def harvest(name, category, app_type, folder, obs_times_utc, site):
         if rec:
             obj["simbad"] = rec
             obj["sources"].append({"name": "SIMBAD (CDS)", "url": rec["url"], "retrieved": now_iso()})
+            papers = simbad_papers(rec["oid"])
+            write_json(folder / "papers.json", papers)
+            obj["papers_count"] = len(papers)
             if not wiki_title:
                 wiki_title = first_star_article(wiki_titles_from_ids(name, rec["identifiers"]))
 
@@ -999,11 +1041,20 @@ def harvest(name, category, app_type, folder, obs_times_utc, site):
         obj["wikipedia"] = wp
         qid = qid or wp.get("wikidata")
         obj["sources"].append({"name": "Wikipedia", "url": wp["url"], "retrieved": now_iso()})
+        article = wiki_article(wp["title"])
+        obj["wikipedia"]["sections_count"] = len(article["sections"])
+    else:
+        article = {"sections": [], "images": []}
+    write_json(folder / "article.json", article)
+    if not obj.get("simbad"):
+        write_json(folder / "papers.json", [])
     if qid:
         ent = wikidata_entity(qid)
         if ent:
             facts, commons_image = wikidata_facts(ent)
-            obj["wikidata"] = {"id": qid, "facts": facts, "commons_image": commons_image,
+            claims, pids = wikidata_all_claims(ent)
+            obj["wikidata"] = {"id": qid, "facts": facts, "all_claims": claims, "property_ids": pids,
+                               "commons_image": commons_image,
                                "url": f"https://www.wikidata.org/wiki/{qid}"}
             obj["sources"].append({"name": "Wikidata", "url": obj["wikidata"]["url"], "retrieved": now_iso()})
 
@@ -1024,7 +1075,7 @@ def harvest(name, category, app_type, folder, obs_times_utc, site):
 
     sb = obj.get("simbad") or {}
     if sb.get("ra") is not None:
-        fov = 1.0 if category in ("clusters", "nebulae", "galaxies") else 0.4
+        fov = 1.0 if category in ("clusters", "nebulae", "galaxies") else star_fov((sb.get("fluxes") or {}).get("V", {}).get("mag"))
         if sky_cutout(sb["ra"], sb["dec"], fov, folder / "sky.jpg"):
             obj["images"]["sky"] = {"file": "sky.jpg", "credit": "DSS2 colour via CDS hips2fits",
                                     "fov_deg": fov}
@@ -1056,6 +1107,15 @@ def harvest(name, category, app_type, folder, obs_times_utc, site):
 def first(facts, key):
     v = (facts.get(key) or [None])[0]
     return v
+
+
+def spectral_classes(sp):
+    """'A0mA1Va' -> ('A', 'V'); 'M1-M2Ia-Iab' -> ('M', 'Ia'); 'K0III' -> ('K', 'III')."""
+    m = re.match(r"\s*(?:sd|esd|usd|d|g|c|k)?([OBAFGKM])(.*)", sp or "")
+    if not m:
+        return None, None
+    lum = re.search(r"(Ia0|Ia\+|Iab|Ia|Ib|III|II|IV|VI|V|I)(?![IV])", m.group(2))
+    return m.group(1), lum.group(1) if lum else None
 
 
 def summarise(obj):
@@ -1098,6 +1158,11 @@ def summarise(obj):
             s["distance_ly"] = round(d["value"] * 3.26156, 1)
     if obj.get("geometry"):
         s["ra_deg"], s["dec_deg"] = obj["geometry"]["ra_deg"], obj["geometry"]["dec_deg"]
+    if s.get("v_mag") is not None and (sb.get("plx_value") or 0) > 0:
+        s["abs_mag"] = round(s["v_mag"] + 5 * math.log10(sb["plx_value"]) - 10, 2)
+    s["spectral_class"], s["luminosity_class"] = spectral_classes(s.get("spectral_type"))
+    if s.get("ra_deg") is not None and s.get("dec_deg") is not None:
+        s["gal_l"], s["gal_b"] = galactic(s["ra_deg"], s["dec_deg"])
     wp = obj.get("wikipedia") or {}
     s["description"] = wp.get("description")
     ct = (obj.get("celestrak") or {})
@@ -1152,9 +1217,12 @@ def attach_observations(obj, rows, locations):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--refresh", action="store_true", help="re-harvest objects that already have object.json")
-    ap.add_argument("--only", help="limit to one object name, as written in observations.csv")
+    ap.add_argument("--only", action="append",
+                    help="limit to an object name as written in observations.csv (repeatable)")
     ap.add_argument("--incomplete", action="store_true",
                     help="re-harvest objects missing SIMBAD (stars) or Wikipedia data")
+    ap.add_argument("--workers", type=int, default=4, help="objects harvested in parallel (default 4)")
+    ap.add_argument("--sky", action="store_true", help="rebuild data/sky/boundaries.* (also built when missing)")
     args = ap.parse_args()
 
     rows = list(csv.DictReader(open(CSV_PATH, encoding="utf-8")))
@@ -1162,9 +1230,14 @@ def main():
     objects = {}
     for r in rows:
         objects.setdefault(r["object"], {"type": r["type"], "rows": []})["rows"].append(r)
+    if args.only:
+        missing = [n for n in args.only if n not in objects]
+        if missing:
+            print(f"not in observations.csv: {', '.join(missing)}", flush=True)
 
+    jobs, todo = [], []
     for name, info in objects.items():
-        if args.only and name != args.only:
+        if args.only and name not in args.only:
             continue
         cat = category_for(info["type"])
         folder = DATA / cat / slugify(name)
@@ -1177,20 +1250,58 @@ def main():
         if args.incomplete and path.exists():
             old = json.loads(path.read_text())
             stale = not old.get("wikipedia") or (cat == "stars" and not old.get("simbad"))
-        if path.exists() and not args.refresh and not stale:
-            obj = json.loads(path.read_text())
-            relabel(obj)
-            obj["summary"] = summarise(obj)   # derived from stored data; cheap to rebuild
-        else:
-            print(f"harvesting {cat}/{folder.name} ({name})", flush=True)
-            obj = harvest(name, cat, info["type"], folder, obs_utc, site)
-            relabel(obj)
-            obj["summary"] = summarise(obj)
-        obj["id"], obj["path"] = folder.name, f"{cat}/{folder.name}"
-        attach_observations(obj, info["rows"], locations)
-        path.write_text(json.dumps(obj, indent=2, ensure_ascii=False))
+        job = {"name": name, "cat": cat, "info": info, "folder": folder, "path": path,
+               "site": site, "obs_utc": obs_utc, "obj": None}
+        jobs.append(job)
+        if not path.exists() or args.refresh or stale:
+            todo.append(job)
 
+    def run(job):
+        print(f"harvesting {job['cat']}/{job['folder'].name} ({job['name']})", flush=True)
+        t0 = time.monotonic()
+        obj = harvest(job["name"], job["cat"], job["info"]["type"], job["folder"], job["obs_utc"], job["site"])
+        print(f"  done {job['cat']}/{job['folder'].name} in {time.monotonic() - t0:.0f}s"
+              f" (papers {obj.get('papers_count', '-')})", flush=True)
+        return obj
+
+    with ThreadPoolExecutor(max_workers=max(1, args.workers)) as pool:
+        futures = {pool.submit(run, job): job for job in todo}
+        for fut in as_completed(futures):
+            job = futures[fut]
+            try:
+                job["obj"] = fut.result()
+            except Exception as exc:  # keep the old data for this object
+                print(f"  FAILED {job['cat']}/{job['folder'].name}: {exc!r}", flush=True)
+
+    for job in jobs:
+        obj = job["obj"]
+        if obj is None:
+            if not job["path"].exists():
+                continue
+            obj = json.loads(job["path"].read_text())
+        relabel(obj)
+        obj["summary"] = summarise(obj)   # derived from stored data; cheap to rebuild
+        obj["id"], obj["path"] = job["folder"].name, f"{job['cat']}/{job['folder'].name}"
+        attach_observations(obj, job["info"]["rows"], locations)
+        write_json(job["path"], obj)
+
+    if args.sky or (args.refresh and not args.only) or not (DATA / "sky" / "boundaries.js").exists():
+        build_boundaries()
     write_index()
+
+
+def write_extra(folder, key):
+    """extra.js: papers and article text, loaded by the page on demand."""
+    def load(name, default):
+        try:
+            return json.loads((folder / name).read_text())
+        except (OSError, ValueError):
+            return default
+    papers, article = load("papers.json", []), load("article.json", {})
+    payload = {"papers": papers, "article": {"sections": article.get("sections", []),
+                                             "images": article.get("images", [])}}
+    (folder / "extra.js").write_text(
+        f"(window.MO_EXTRA = window.MO_EXTRA || {{}})[{json.dumps(key)}] = {js_json(payload)};\n")
 
 
 def thumb(o):
@@ -1205,6 +1316,7 @@ def write_index():
     for path in sorted(DATA.glob("*/*/object.json")):
         o = json.loads(path.read_text())
         everything[o["path"]] = o
+        write_extra(path.parent, o["path"])
         obs = o.get("observations", [])
         ratings = [x["rating"] for x in obs if x.get("rating") is not None]
         s = o.get("summary", {})
@@ -1214,6 +1326,7 @@ def write_index():
             "designation": s.get("designation"), "constellation": s.get("constellation"),
             "v_mag": s.get("v_mag"), "spectral_type": s.get("spectral_type"),
             "distance_ly": s.get("distance_ly"), "observations": len(obs),
+            "papers_count": o.get("papers_count"),
             "last_observed": obs[0]["datetime"] if obs else None,
             "best_rating": max(ratings) if ratings else None,
             "thumb": thumb(o),

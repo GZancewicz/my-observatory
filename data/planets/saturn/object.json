@@ -2,22 +2,22 @@
   "name": "Saturn",
   "category": "planets",
   "app_type": "Planet",
-  "harvested": "2026-10-10T16:16:18Z",
+  "harvested": "2026-10-10T18:08:04Z",
   "sources": [
     {
       "name": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Saturn",
-      "retrieved": "2026-10-10T16:16:18Z"
+      "retrieved": "2026-10-10T18:08:05Z"
     },
     {
       "name": "Wikidata",
       "url": "https://www.wikidata.org/wiki/Q193",
-      "retrieved": "2026-10-10T16:16:21Z"
+      "retrieved": "2026-10-10T18:10:01Z"
     },
     {
       "name": "JPL Horizons",
       "url": "https://ssd.jpl.nasa.gov/horizons/app.html",
-      "retrieved": "2026-10-10T16:16:22Z"
+      "retrieved": "2026-10-10T18:10:02Z"
     }
   ],
   "images": {
@@ -41,7 +41,8 @@
     "url": "https://en.wikipedia.org/wiki/Saturn",
     "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Saturn_global_view_from_Cassini%2C_rings_open_Better_Colour.png/330px-Saturn_global_view_from_Cassini%2C_rings_open_Better_Colour.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Saturn_global_view_from_Cassini%2C_rings_open_Better_Colour.png/3840px-Saturn_global_view_from_Cassini%2C_rings_open_Better_Colour.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "wikidata": "Q193"
+    "wikidata": "Q193",
+    "sections_count": 27
   },
   "wikidata": {
     "id": "Q193",
@@ -742,6 +743,2233 @@
           "unit": "kilometre per hour"
         }
       ]
+    },
+    "all_claims": {
+      "video": [
+        {
+          "value": "Looking saturn in the eye.ogv",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Looking_saturn_in_the_eye.ogv"
+        }
+      ],
+      "image": [
+        {
+          "value": "8423 20181 1saturn2016.jpg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:8423_20181_1saturn2016.jpg"
+        },
+        {
+          "value": "Saturn, Four Years On, by ISS.tif",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Saturn,_Four_Years_On,_by_ISS.tif"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "gas giant",
+          "qid": "Q121750",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "outer planet",
+          "qid": "Q30014",
+          "type": "wikibase-item"
+        }
+      ],
+      "named after": [
+        {
+          "value": "Saturn",
+          "qid": "Q134388",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Wu Xing",
+          "qid": "Q218652",
+          "type": "wikibase-item"
+        }
+      ],
+      "VIAF cluster ID": [
+        {
+          "value": "246142422",
+          "type": "external-id",
+          "url": "https://viaf.org/en/viaf/246142422"
+        }
+      ],
+      "GND ID": [
+        {
+          "value": "4179170-8",
+          "type": "external-id",
+          "url": "https://d-nb.info/gnd/4179170-8"
+        }
+      ],
+      "Library of Congress Authorities ID": [
+        {
+          "value": "sh85117690",
+          "type": "external-id",
+          "url": "https://id.loc.gov/authorities/sh85117690"
+        }
+      ],
+      "Bibliothèque nationale de France ID": [
+        {
+          "value": "11976363g",
+          "type": "external-id",
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb11976363g"
+        }
+      ],
+      "IdRef ID": [
+        {
+          "value": "027799042",
+          "type": "external-id",
+          "url": "https://www.idref.fr/027799042"
+        }
+      ],
+      "location": [
+        {
+          "value": "outer Solar System",
+          "qid": "Q3962257",
+          "type": "wikibase-item"
+        }
+      ],
+      "NDL Authority ID": [
+        {
+          "value": "00561718",
+          "type": "external-id",
+          "url": "https://id.ndl.go.jp/auth/ndlna/00561718"
+        }
+      ],
+      "part of": [
+        {
+          "value": "outer Solar System",
+          "qid": "Q3962257",
+          "type": "wikibase-item"
+        }
+      ],
+      "astronomic symbol image": [
+        {
+          "value": "Saturn symbol (fixed width).svg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Saturn_symbol_(fixed_width).svg"
+        }
+      ],
+      "Commons category": [
+        {
+          "value": "Saturn (planet)",
+          "type": "string"
+        }
+      ],
+      "parent astronomical body": [
+        {
+          "value": "Sun",
+          "qid": "Q525",
+          "type": "wikibase-item"
+        }
+      ],
+      "child astronomical body": [
+        {
+          "value": "Titan",
+          "qid": "Q2565",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Pan",
+          "qid": "Q17705",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Daphnis",
+          "qid": "Q17706",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Atlas",
+          "qid": "Q17707",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Prometheus",
+          "qid": "Q17739",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Pandora",
+          "qid": "Q17746",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Epimetheus",
+          "qid": "Q17751",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Janus",
+          "qid": "Q17754",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Aegaeon",
+          "qid": "Q17762",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Mimas",
+          "qid": "Q15034",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Methone",
+          "qid": "Q17782",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Anthe",
+          "qid": "Q17788",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Pallene",
+          "qid": "Q17850",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Enceladus",
+          "qid": "Q3303",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Tethys",
+          "qid": "Q15047",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Telesto",
+          "qid": "Q17857",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Calypso",
+          "qid": "Q17869",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Kiviuq",
+          "qid": "Q17965",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Helene",
+          "qid": "Q17875",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Dione",
+          "qid": "Q15040",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Polydeuces",
+          "qid": "Q17882",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Rhea",
+          "qid": "Q15050",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Hyperion",
+          "qid": "Q15037",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Iapetus",
+          "qid": "Q17958",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Ijiraq",
+          "qid": "Q17971",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Phoebe",
+          "qid": "Q17975",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Skathi",
+          "qid": "Q17982",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Albiorix",
+          "qid": "Q17995",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Bebhionn",
+          "qid": "Q17999",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Skoll",
+          "qid": "Q18001",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Tarqeq",
+          "qid": "Q18010",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Greip",
+          "qid": "Q18016",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Siarnaq",
+          "qid": "Q18024",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Hyrrokkin",
+          "qid": "Q18032",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Tarvos",
+          "qid": "Q18039",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 13",
+          "qid": "Q18047",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Jarnsaxa",
+          "qid": "Q18178",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 17",
+          "qid": "Q18179",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Mundilfari",
+          "qid": "Q18183",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Bergelmir",
+          "qid": "Q18195",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2006 S 1",
+          "qid": "Q18199",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Aegir",
+          "qid": "Q18201",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Narvi",
+          "qid": "Q18207",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 12",
+          "qid": "Q18211",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Bestla",
+          "qid": "Q18213",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Suttungr",
+          "qid": "Q18214",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Farbauti",
+          "qid": "Q18217",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 7",
+          "qid": "Q18218",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Hati",
+          "qid": "Q18220",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Thrymr",
+          "qid": "Q18223",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2006 S 3",
+          "qid": "Q18228",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Fenrir",
+          "qid": "Q18229",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Fornjot",
+          "qid": "Q18234",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Surtur",
+          "qid": "Q18235",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Kari",
+          "qid": "Q18236",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Ymir",
+          "qid": "Q18238",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Loge",
+          "qid": "Q18239",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "rings of Saturn",
+          "qid": "Q194",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2009 S 1",
+          "qid": "Q18246",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2007 S 2",
+          "qid": "Q18247",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2007 S 3",
+          "qid": "Q18340",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Themis",
+          "qid": "Q1753556",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "E Ring",
+          "qid": "Q1109971",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "G ring",
+          "qid": "Q1133273",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "C ring",
+          "qid": "Q2257686",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "F ring",
+          "qid": "Q2528985",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "B ring",
+          "qid": "Q2738054",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "A ring",
+          "qid": "Q2739023",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "D ring",
+          "qid": "Q2851405",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Phoebe ring",
+          "qid": "Q19606402",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 6",
+          "qid": "Q18345",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 4",
+          "qid": "Q18350",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 3",
+          "qid": "Q18355",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Paaliaq",
+          "qid": "Q17979",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Erriapus",
+          "qid": "Q18004",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Earhart",
+          "qid": "Q12872515",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Blériot",
+          "qid": "Q12881327",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Santos-Dumont",
+          "qid": "Q12884260",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Curtiss",
+          "qid": "Q16545274",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Hinkler",
+          "qid": "Q16641857",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Kingsford Smith",
+          "qid": "Q16648449",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Lindbergh",
+          "qid": "Q16655961",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Post",
+          "qid": "Q16670796",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Richthofen",
+          "qid": "Q16672766",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Sikorsky",
+          "qid": "Q16676807",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Wright",
+          "qid": "Q16683435",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Peggy",
+          "qid": "Q28491368",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Gridr",
+          "qid": "Q70012792",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 21",
+          "qid": "Q70072437",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Angrboda",
+          "qid": "Q70072703",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Skrymir",
+          "qid": "Q70072804",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 24",
+          "qid": "Q70072805",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Gerd",
+          "qid": "Q70072808",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 26",
+          "qid": "Q70072809",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Eggther",
+          "qid": "Q70072812",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 28",
+          "qid": "Q70072813",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 29",
+          "qid": "Q70072816",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Beli",
+          "qid": "Q70072817",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Alvaldi",
+          "qid": "Q70141937",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/1995 S 8",
+          "qid": "Q12072293",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/1995 S 6",
+          "qid": "Q12871986",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/1995 S 4",
+          "qid": "Q12871985",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/1995 S 1",
+          "qid": "Q16327028",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/1995 S 3",
+          "qid": "Q16327033",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/1995 S 5",
+          "qid": "Q16327036",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/1995 S 7",
+          "qid": "Q16327040",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 1",
+          "qid": "Q109629247",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Chrysalis",
+          "qid": "Q113995807",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2005 S 4",
+          "qid": "Q119225141",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2020 S 1",
+          "qid": "Q119229029",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2006 S 20",
+          "qid": "Q119267325",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 14",
+          "qid": "Q119389049",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2020 S 3",
+          "qid": "Q119389652",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2020 S 5",
+          "qid": "Q119413517",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 41",
+          "qid": "Q119417722",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 40",
+          "qid": "Q119417721",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 43",
+          "qid": "Q119417727",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 42",
+          "qid": "Q119417725",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 44",
+          "qid": "Q119417730",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 46",
+          "qid": "Q119417734",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 45",
+          "qid": "Q119417732",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 48",
+          "qid": "Q119417738",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 47",
+          "qid": "Q119417736",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 50",
+          "qid": "Q119417742",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 51",
+          "qid": "Q119417743",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 49",
+          "qid": "Q119417740",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 53",
+          "qid": "Q119417746",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2004 S 52",
+          "qid": "Q119417745",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2006 S 9",
+          "qid": "Q119417750",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2005 S 5",
+          "qid": "Q119417749",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2006 S 11",
+          "qid": "Q119418250",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2006 S 12",
+          "qid": "Q119418251",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2006 S 10",
+          "qid": "Q119418248",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2006 S 14",
+          "qid": "Q119418254",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2006 S 13",
+          "qid": "Q119418253",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2006 S 15",
+          "qid": "Q119418256",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2006 S 16",
+          "qid": "Q119418257",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2006 S 18",
+          "qid": "Q119418262",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2006 S 17",
+          "qid": "Q119418261",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2006 S 19",
+          "qid": "Q119418264",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2007 S 5",
+          "qid": "Q119418305",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2007 S 7",
+          "qid": "Q119418414",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2007 S 6",
+          "qid": "Q119418413",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2007 S 9",
+          "qid": "Q119418510",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2007 S 8",
+          "qid": "Q119418508",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 2",
+          "qid": "Q119418578",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 3",
+          "qid": "Q119418647",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 4",
+          "qid": "Q119418650",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 5",
+          "qid": "Q119418772",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 6",
+          "qid": "Q119419706",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 7",
+          "qid": "Q119419707",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 8",
+          "qid": "Q119419708",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 9",
+          "qid": "Q119419712",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 11",
+          "qid": "Q119419719",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 10",
+          "qid": "Q119419716",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 12",
+          "qid": "Q119419723",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 13",
+          "qid": "Q119419727",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 15",
+          "qid": "Q119419730",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 16",
+          "qid": "Q119419733",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 18",
+          "qid": "Q119419739",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 17",
+          "qid": "Q119419736",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 19",
+          "qid": "Q119419801",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 20",
+          "qid": "Q119419805",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2020 S 2",
+          "qid": "Q119419810",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2019 S 21",
+          "qid": "Q119419808",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2020 S 4",
+          "qid": "Q119419934",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2020 S 6",
+          "qid": "Q119420005",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2020 S 7",
+          "qid": "Q119420127",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2020 S 8",
+          "qid": "Q119420128",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2020 S 9",
+          "qid": "Q119420261",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "S/2020 S10",
+          "qid": "Q119420618",
+          "type": "wikibase-item"
+        }
+      ],
+      "pronunciation audio": [
+        {
+          "value": "En-us-Saturn.ogg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:En-us-Saturn.ogg"
+        },
+        {
+          "value": "It-Saturno.ogg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:It-Saturno.ogg"
+        },
+        {
+          "value": "LL-Q9027 (swe)-Moonhouse-Saturnus.wav",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:LL-Q9027_(swe)-Moonhouse-Saturnus.wav"
+        },
+        {
+          "value": "De-Saturn2.ogg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:De-Saturn2.ogg"
+        }
+      ],
+      "MeSH descriptor ID": [
+        {
+          "value": "D018539",
+          "type": "external-id",
+          "url": "https://meshb.nlm.nih.gov/record/ui?ui=D018539"
+        }
+      ],
+      "Unicode character": [
+        {
+          "value": "♄",
+          "type": "string"
+        }
+      ],
+      "BNCF Thesaurus ID": [
+        {
+          "value": "71848",
+          "type": "external-id",
+          "url": "https://thes.bncf.firenze.sbn.it/termine.php?id=71848"
+        }
+      ],
+      "has part(s)": [
+        {
+          "value": "atmosphere of Saturn",
+          "qid": "Q303397",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "magnetosphere of Saturn",
+          "qid": "Q2334004",
+          "type": "wikibase-item"
+        }
+      ],
+      "Freebase ID": [
+        {
+          "value": "/m/0c3s8",
+          "type": "external-id",
+          "url": "https://www.google.com/search?kgmid=/m/0c3s8"
+        }
+      ],
+      "MeSH tree code": [
+        {
+          "value": "G01.060.075.730.700.831",
+          "type": "external-id",
+          "url": "https://id.nlm.nih.gov/mesh/G01.060.075.730.700.831"
+        }
+      ],
+      "NL CR AUT ID": [
+        {
+          "value": "ph118072",
+          "type": "external-id",
+          "url": "https://aleph.nkp.cz/F/?func=find-c&local_base=aut&ccl_term=ica=ph118072"
+        }
+      ],
+      "significant event": [
+        {
+          "value": "planetary flyby",
+          "qid": "Q828032",
+          "type": "wikibase-item"
+        }
+      ],
+      "IPA transcription": [
+        {
+          "value": "zaˈtʊʁn",
+          "type": "string"
+        }
+      ],
+      "topic's main category": [
+        {
+          "value": "Category:Saturn",
+          "qid": "Q6115544",
+          "type": "wikibase-item"
+        }
+      ],
+      "notation": [
+        {
+          "value": "♄",
+          "qid": "Q3594853",
+          "type": "wikibase-item"
+        }
+      ],
+      "Commons gallery": [
+        {
+          "value": "Saturn",
+          "type": "string"
+        }
+      ],
+      "National Library of Israel ID (old)": [
+        {
+          "value": "000744636",
+          "type": "external-id",
+          "url": "http://olduli.nli.org.il/F/?func=direct&local_base=nlx10&doc_number=000744636"
+        }
+      ],
+      "National Library of Spain SpMaBN ID": [
+        {
+          "value": "XX455432",
+          "type": "external-id",
+          "url": "https://datos.bne.es/resource/XX455432"
+        }
+      ],
+      "spoken text audio": [
+        {
+          "value": "Hy-Սատուրն (Saturn).ogg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Hy-Սատուրն_(Saturn).ogg"
+        },
+        {
+          "value": "Saturn.ogg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Saturn.ogg"
+        }
+      ],
+      "Dewey Decimal Classification": [
+        {
+          "value": "523.46",
+          "type": "external-id"
+        }
+      ],
+      "PSH ID": [
+        {
+          "value": "494",
+          "type": "external-id",
+          "url": "https://psh.techlib.cz/skos/PSH494"
+        }
+      ],
+      "orbital eccentricity": [
+        {
+          "value": 0.05386179,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "flattening": [
+        {
+          "value": 0.09796,
+          "unit": "",
+          "plus": 0.0001799999999999996,
+          "minus": 0.0001799999999999996,
+          "type": "quantity"
+        }
+      ],
+      "topic's main Wikimedia portal": [
+        {
+          "value": "Portal:Saturn",
+          "qid": "Q38207123",
+          "type": "wikibase-item"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 1.2,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": -0.24,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "U.S. National Archives Identifier": [
+        {
+          "value": "10046640",
+          "type": "external-id",
+          "url": "https://catalog.archives.gov/id/10046640"
+        }
+      ],
+      "OmegaWiki Defined Meaning": [
+        {
+          "value": "382630",
+          "type": "external-id",
+          "url": "http://www.omegawiki.org/DefinedMeaning:(382630)"
+        }
+      ],
+      "Iconclass notation": [
+        {
+          "value": "24C17",
+          "type": "external-id",
+          "url": "https://iconclass.org/24C17"
+        }
+      ],
+      "Gran Enciclopèdia Catalana ID (former scheme)": [
+        {
+          "value": "0061127",
+          "type": "external-id",
+          "url": "https://www.enciclopedia.cat/ec-gec-0061127.xml"
+        }
+      ],
+      "described by source": [
+        {
+          "value": "Small Brockhaus and Efron Encyclopedic Dictionary",
+          "qid": "Q19180675",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Brockhaus and Efron Encyclopedic Dictionary",
+          "qid": "Q602358",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "The Nuttall Encyclopædia",
+          "qid": "Q3181656",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Encyclopædia Britannica 11th edition",
+          "qid": "Q867541",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Armenian Soviet Encyclopedia, vol. 10",
+          "qid": "Q124737637",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Granat Encyclopedic Dictionary",
+          "qid": "Q4532138",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Meyers Konversations-Lexikon, 4th edition (1885–1890)",
+          "qid": "Q19219752",
+          "type": "wikibase-item"
+        }
+      ],
+      "Encyclopædia Britannica Online ID": [
+        {
+          "value": "place/Saturn-planet",
+          "type": "external-id",
+          "url": "https://www.britannica.com/place/Saturn-planet"
+        }
+      ],
+      "topic has template": [
+        {
+          "value": "Template:Saturn",
+          "qid": "Q6308278",
+          "type": "wikibase-item"
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": 28.0,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "Stack Exchange tag": [
+        {
+          "value": "https://astronomy.stackexchange.com/tags/saturn",
+          "type": "url"
+        }
+      ],
+      "demonym": [
+        {
+          "value": "زُحَلِيٌّ",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "Saturnian",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "Cronian",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "Saturnano",
+          "type": "monolingualtext"
+        }
+      ],
+      "BBC Things ID": [
+        {
+          "value": "6ac437e6-53d9-4cf9-8adb-a4adbdd54ae7",
+          "type": "external-id",
+          "url": "https://www.bbc.co.uk/things/6ac437e6-53d9-4cf9-8adb-a4adbdd54ae7"
+        }
+      ],
+      "Getty Thesaurus of Geographic Names ID": [
+        {
+          "value": "7030640",
+          "type": "external-id",
+          "url": "https://vocab.getty.edu/page/tgn/7030640"
+        }
+      ],
+      "different from": [
+        {
+          "value": "Saturn",
+          "qid": "Q3950829",
+          "type": "wikibase-item"
+        }
+      ],
+      "orbital inclination": [
+        {
+          "value": 2.48599187,
+          "unit": "°",
+          "type": "quantity"
+        },
+        {
+          "value": 5.51,
+          "unit": "°",
+          "type": "quantity"
+        },
+        {
+          "value": 0.93,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "area": [
+        {
+          "value": 42700000000.0,
+          "unit": "km²",
+          "type": "quantity"
+        }
+      ],
+      "speed": [
+        {
+          "value": 9.6446,
+          "unit": "km/s",
+          "type": "quantity"
+        },
+        {
+          "value": 10.183,
+          "unit": "km/s",
+          "type": "quantity"
+        },
+        {
+          "value": 9.137,
+          "unit": "kilometre per hour",
+          "type": "quantity"
+        }
+      ],
+      "density": [
+        {
+          "value": 0.19,
+          "unit": "kilogram per cubic metre",
+          "type": "quantity"
+        },
+        {
+          "value": 0.867,
+          "unit": "g/cm³",
+          "type": "quantity"
+        }
+      ],
+      "mass": [
+        {
+          "value": 5.6836e+26,
+          "unit": "kg",
+          "plus": 1e+22,
+          "minus": 1e+22,
+          "type": "quantity"
+        }
+      ],
+      "magnetic moment": [
+        {
+          "value": 4.6e+25,
+          "unit": "joule per tesla",
+          "plus": 5.000000000000051e+23,
+          "minus": 4.999999999999965e+23,
+          "type": "quantity"
+        }
+      ],
+      "temperature": [
+        {
+          "value": 134.0,
+          "unit": "K",
+          "type": "quantity"
+        }
+      ],
+      "radius": [
+        {
+          "value": 58232.0,
+          "unit": "km",
+          "plus": 6.0,
+          "minus": 6.0,
+          "type": "quantity"
+        },
+        {
+          "value": 60268.0,
+          "unit": "km",
+          "plus": 4.0,
+          "minus": 4.0,
+          "type": "quantity"
+        },
+        {
+          "value": 54364.0,
+          "unit": "km",
+          "plus": 10.0,
+          "minus": 10.0,
+          "type": "quantity"
+        }
+      ],
+      "orbital period": [
+        {
+          "value": 10757.7365,
+          "unit": "d",
+          "type": "quantity"
+        }
+      ],
+      "rotation period": [
+        {
+          "value": 10.7,
+          "unit": "h",
+          "type": "quantity"
+        }
+      ],
+      "FAST ID": [
+        {
+          "value": "1242721",
+          "type": "external-id",
+          "url": "https://id.worldcat.org/fast/1242721"
+        }
+      ],
+      "longitude of ascending node": [
+        {
+          "value": 113.66242448,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "semi-major axis of an orbit": [
+        {
+          "value": 1429394069.0,
+          "unit": "km",
+          "plus": 1.0,
+          "minus": 1.0,
+          "type": "quantity"
+        },
+        {
+          "value": 9.53667594,
+          "unit": "AU",
+          "type": "quantity"
+        }
+      ],
+      "volume as quantity": [
+        {
+          "value": 827130000000000.0,
+          "unit": "cubic kilometre",
+          "type": "quantity"
+        }
+      ],
+      "apoapsis": [
+        {
+          "value": 1503509229.0,
+          "unit": "km",
+          "type": "quantity"
+        },
+        {
+          "value": 10.11595804,
+          "unit": "AU",
+          "type": "quantity"
+        },
+        {
+          "value": 1514.5,
+          "unit": "gigametre",
+          "type": "quantity"
+        }
+      ],
+      "periapsis": [
+        {
+          "value": 1349823615.0,
+          "unit": "km",
+          "type": "quantity"
+        },
+        {
+          "value": 9.04807635,
+          "unit": "AU",
+          "type": "quantity"
+        },
+        {
+          "value": 1352.55,
+          "unit": "gigametre",
+          "type": "quantity"
+        }
+      ],
+      "argument of periapsis": [
+        {
+          "value": 92.59887831,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "mean anomaly": [
+        {
+          "value": 317.02,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "YSO ID": [
+        {
+          "value": "19586",
+          "type": "external-id",
+          "url": "https://www.yso.fi/onto/yso/p19586"
+        }
+      ],
+      "diameter": [
+        {
+          "value": 120536.0,
+          "unit": "km",
+          "type": "quantity"
+        }
+      ],
+      "studied by": [
+        {
+          "value": "kronology",
+          "qid": "Q131626666",
+          "type": "wikibase-item"
+        }
+      ],
+      "BabelNet ID": [
+        {
+          "value": "00069343n",
+          "type": "external-id",
+          "url": "https://babelnet.org/synset?id=bn%00069343n&lang=EN"
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 1195000000.0,
+          "unit": "km",
+          "type": "quantity"
+        },
+        {
+          "value": 1660000000.0,
+          "unit": "km",
+          "type": "quantity"
+        }
+      ],
+      "Great Russian Encyclopedia Online ID (2017)": [
+        {
+          "value": "3537413",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/0/old.bigenc.ru/text/3537413"
+        }
+      ],
+      "NAIF ID": [
+        {
+          "value": "699",
+          "type": "external-id"
+        }
+      ],
+      "Encyclopædia Universalis ID": [
+        {
+          "value": "saturne-planete",
+          "type": "external-id",
+          "url": "https://www.universalis.fr/encyclopedie/saturne-planete/"
+        }
+      ],
+      "New York Times topic ID": [
+        {
+          "value": "subject/saturn",
+          "type": "external-id",
+          "url": "https://www.nytimes.com/topic/subject/saturn"
+        }
+      ],
+      "NE.se ID": [
+        {
+          "value": "saturnus",
+          "type": "external-id",
+          "url": "https://www.ne.se/uppslagsverk/encyklopedi/lång/saturnus"
+        }
+      ],
+      "Quora topic ID": [
+        {
+          "value": "Saturn-planet",
+          "type": "external-id",
+          "url": "https://www.quora.com/topic/Saturn-planet"
+        }
+      ],
+      "Zhihu topic ID": [
+        {
+          "value": "19840594",
+          "type": "external-id",
+          "url": "https://www.zhihu.com/topic/19840594"
+        }
+      ],
+      "JSTOR topic ID (archived)": [
+        {
+          "value": "saturn",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/*/https://www.jstor.org/topic/saturn"
+        }
+      ],
+      "DBC author ID": [
+        {
+          "value": "87097992990389",
+          "type": "external-id",
+          "url": "https://viaf.org/processed/DBC87097992990389"
+        }
+      ],
+      "synodic period": [
+        {
+          "value": 378.0944,
+          "unit": "d",
+          "type": "quantity"
+        }
+      ],
+      "Great Norwegian Encyclopedia ID": [
+        {
+          "value": "Saturn",
+          "type": "external-id",
+          "url": "https://wikidata-externalid-url.toolforge.org/?p=4342&url_prefix=https://snl.no/&id=Saturn"
+        }
+      ],
+      "Unified Astronomy Thesaurus ID": [
+        {
+          "value": "1426",
+          "type": "external-id",
+          "url": "https://astrothesaurus.org/uat/1426"
+        }
+      ],
+      "albedo": [
+        {
+          "value": 0.47,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 0.342,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "National Library of Brazil ID": [
+        {
+          "value": "000152450",
+          "type": "external-id",
+          "url": "https://acervo.bn.gov.br/sophia_web/autoridade/detalhe/000152450"
+        }
+      ],
+      "LC and MARC vocabularies ID": [
+        {
+          "value": "geographicAreas/zsa",
+          "type": "external-id",
+          "url": "https://id.loc.gov/vocabulary/geographicAreas/zsa.html"
+        }
+      ],
+      "Wolfram Language entity code": [
+        {
+          "value": "Entity[\"Planet\", \"Saturn\"]",
+          "type": "external-id",
+          "url": "https://www.wolframalpha.com/input/?i=Entity%5B%22Planet%22%2C%20%22Saturn%22%5D"
+        }
+      ],
+      "on focus list of Wikimedia project": [
+        {
+          "value": "Wikipedia:List of articles all languages should have",
+          "qid": "Q5460604",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Wikipedia:Vital articles/Level/4",
+          "qid": "Q6173448",
+          "type": "wikibase-item"
+        }
+      ],
+      "Brockhaus Enzyklopädie online ID": [
+        {
+          "value": "saturn",
+          "type": "external-id",
+          "url": "https://brockhaus.de/ecs/enzy/article/saturn"
+        }
+      ],
+      "Interlingual Index ID": [
+        {
+          "value": "i86131",
+          "type": "external-id",
+          "url": "https://globalwordnet.github.io/cili/i86131"
+        }
+      ],
+      "Wikimedia outline": [
+        {
+          "value": "outline of Saturn",
+          "qid": "Q30589070",
+          "type": "wikibase-item"
+        }
+      ],
+      "Giant Bomb ID (former scheme)": [
+        {
+          "value": "3035-6",
+          "type": "external-id",
+          "url": "https://www.giantbomb.com/wd/3035-6/"
+        }
+      ],
+      "Google News topics ID": [
+        {
+          "value": "CAAqIQgKIhtDQkFTRGdvSUwyMHZNR016Y3pnU0FtVnVLQUFQAQ",
+          "type": "external-id",
+          "url": "https://news.google.com/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNR016Y3pnU0FtVnVLQUFQAQ"
+        }
+      ],
+      "angular diameter": [
+        {
+          "value": 14.5,
+          "unit": "arcsecond",
+          "type": "quantity"
+        },
+        {
+          "value": 20.1,
+          "unit": "arcsecond",
+          "type": "quantity"
+        }
+      ],
+      "Comic Vine ID": [
+        {
+          "value": "4020-56294",
+          "type": "external-id",
+          "url": "https://comicvine.gamespot.com/wd/4020-56294/"
+        }
+      ],
+      "Larousse ID": [
+        {
+          "value": "divers/Saturne/143322",
+          "type": "external-id",
+          "url": "https://www.larousse.fr/encyclopedie/divers/Saturne/143322"
+        }
+      ],
+      "maintained by WikiProject": [
+        {
+          "value": "WikiProject Astronomical objects",
+          "qid": "Q8502932",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "WikiProject Solar System",
+          "qid": "Q11030684",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "WikiProject Astronomy",
+          "qid": "Q8493596",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "WikiProject Space weather",
+          "qid": "Q135105849",
+          "type": "wikibase-item"
+        }
+      ],
+      "BBC News topic ID": [
+        {
+          "value": "crr7mlg0r5yt",
+          "type": "external-id",
+          "url": "https://www.bbc.com/news/topics/crr7mlg0r5yt"
+        }
+      ],
+      "epoch": [
+        {
+          "value": "J2000.0",
+          "qid": "Q1264450",
+          "type": "wikibase-item"
+        }
+      ],
+      "Fandom article ID": [
+        {
+          "value": "expanse:Saturn",
+          "type": "external-id",
+          "url": "https://community.fandom.com/wiki/w:c:expanse:Saturn"
+        }
+      ],
+      "Microsoft Academic ID (discontinued)": [
+        {
+          "value": "511503438",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/https://academic.microsoft.com/v2/detail/511503438"
+        }
+      ],
+      "Klexikon article ID": [
+        {
+          "value": "Saturn",
+          "type": "external-id",
+          "url": "https://klexikon.zum.de/wiki/Saturn"
+        }
+      ],
+      "TV Tropes ID": [
+        {
+          "value": "UsefulNotes/Saturn",
+          "type": "external-id",
+          "url": "https://tvtropes.org/pmwiki/pmwiki.php/UsefulNotes/Saturn"
+        }
+      ],
+      "NicoNicoPedia word article ID": [
+        {
+          "value": "土星",
+          "type": "external-id",
+          "url": "https://dic.nicovideo.jp/a/%E5%9C%9F%E6%98%9F"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 8.96,
+          "unit": "metre per square second",
+          "type": "quantity"
+        }
+      ],
+      "Australian Educational Vocabulary ID": [
+        {
+          "value": "scot/8429",
+          "type": "external-id",
+          "url": "https://vocabulary.curriculum.edu.au/scot/8429.html"
+        }
+      ],
+      "National Library of Iceland ID": [
+        {
+          "value": "000076086",
+          "type": "external-id",
+          "url": "https://viaf.org/processed/UIY|000076086"
+        }
+      ],
+      "Online PWN Encyclopedia ID": [
+        {
+          "value": "3972610",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/2/https://encyklopedia.pwn.pl/haslo/;3972610.html"
+        }
+      ],
+      "Golden ID (archived)": [
+        {
+          "value": "Saturn-P449Y",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/0/https://golden.com/wiki/Saturn-P449Y"
+        }
+      ],
+      "article ID in the Lithuanian Universal Encyclopedia Online": [
+        {
+          "value": "saturnas-1",
+          "type": "external-id",
+          "url": "https://www.vle.lt/straipsnis/saturnas-1/"
+        }
+      ],
+      "Slovak National Library (VIAF) ID": [
+        {
+          "value": "vtls007419356",
+          "type": "external-id",
+          "url": "https://viaf.org/processed/SKMASNL|vtls007419356"
+        }
+      ],
+      "ToposText person ID": [
+        {
+          "value": "17553",
+          "type": "external-id",
+          "url": "https://topostext.org/people/17553"
+        }
+      ],
+      "J9U entity ID": [
+        {
+          "value": "987007558479205171",
+          "type": "external-id",
+          "url": "https://www.nli.org.il/en/authorities/987007558479205171"
+        }
+      ],
+      "KBpedia ID": [
+        {
+          "value": "PlanetSaturn",
+          "type": "external-id",
+          "url": "https://kbpedia.org/knowledge-graph/reference-concept/?uri=PlanetSaturn"
+        }
+      ],
+      "WordNet 3.1 Synset ID": [
+        {
+          "value": "09447520-n",
+          "type": "external-id",
+          "url": "https://en-word.net/view/synset/09447520-n"
+        }
+      ],
+      "Namuwiki ID": [
+        {
+          "value": "토성",
+          "type": "external-id",
+          "url": "https://namu.wiki/w/%ED%86%A0%EC%84%B1"
+        }
+      ],
+      "SVKKL authority ID": [
+        {
+          "value": "0294135-Saturn-planeta",
+          "type": "external-id",
+          "url": "https://ipac.svkkl.cz/arl-kl/cs/detail-kl_us_auth-0294135-Saturn-planeta"
+        }
+      ],
+      "France 24 topic ID (French)": [
+        {
+          "value": "saturne",
+          "type": "external-id",
+          "url": "https://www.france24.com/fr/tag/saturne/"
+        }
+      ],
+      "Encyclopedia of Korean Culture ID": [
+        {
+          "value": "E0059190",
+          "type": "external-id",
+          "url": "http://encykorea.aks.ac.kr/Article/E0059190"
+        }
+      ],
+      "MANTO ID": [
+        {
+          "value": "11296008",
+          "type": "external-id",
+          "url": "https://resource.manto.unh.edu/11296008"
+        }
+      ],
+      "SNK ID": [
+        {
+          "value": "184818",
+          "type": "external-id",
+          "url": "https://autority.snk.sk/vufind/AuthorityRecord/184818"
+        }
+      ],
+      "National Library of Ireland ID": [
+        {
+          "value": "vtls001188916",
+          "type": "external-id",
+          "url": "https://viaf.org/processed/N6Ivtls001188916"
+        }
+      ],
+      "Der Spiegel topic ID": [
+        {
+          "value": "saturn",
+          "type": "external-id",
+          "url": "https://www.spiegel.de/thema/saturn"
+        }
+      ],
+      "OpenAlex ID": [
+        {
+          "value": "C511503438",
+          "type": "external-id",
+          "url": "https://openalex.org/C511503438"
+        }
+      ],
+      "Wikisimpsons article ID": [
+        {
+          "value": "249880",
+          "type": "external-id",
+          "url": "https://simpsonswiki.com/w/index.php?curid=249880"
+        }
+      ],
+      "ScienceDirect topic ID": [
+        {
+          "value": "earth-and-planetary-sciences/saturn-planet",
+          "type": "external-id",
+          "url": "https://www.sciencedirect.com/topics/earth-and-planetary-sciences/saturn-planet"
+        }
+      ],
+      "Femiwiki ID": [
+        {
+          "value": "12598",
+          "type": "external-id",
+          "url": "https://femiwiki.com/w/index.php?curid=12598"
+        }
+      ],
+      "Encyclopedia of China (Third Edition) old ID (2021)": [
+        {
+          "value": "567623",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/0/https://www.zgbk.com/ecph/words?SiteID=1&ID=567623"
+        }
+      ],
+      "AccessScience ID": [
+        {
+          "value": "603200",
+          "type": "external-id",
+          "url": "https://www.accessscience.com/content/603200"
+        }
+      ],
+      "Famous Birthdays ID": [
+        {
+          "value": "planets/saturn",
+          "type": "external-id",
+          "url": "https://www.famousbirthdays.com/planets/saturn.html"
+        }
+      ],
+      "Pixiv Encyclopedia ID": [
+        {
+          "value": "土星",
+          "type": "external-id",
+          "url": "https://wikidata-externalid-url.toolforge.org/index.php?p=11408&url_prefix=https://dic.pixiv.net/a/&id=%E5%9C%9F%E6%98%9F"
+        }
+      ],
+      "WikiKids ID": [
+        {
+          "value": "Saturnus_(planeet)",
+          "type": "external-id",
+          "url": "https://wikikids.nl/Saturnus_%28planeet%29"
+        }
+      ],
+      "Gran Enciclopèdia Catalana ID": [
+        {
+          "value": "saturn-1",
+          "type": "external-id",
+          "url": "https://www.enciclopedia.cat/gran-enciclopedia-catalana/saturn-1"
+        }
+      ],
+      "museum-digital tag ID": [
+        {
+          "value": "151824",
+          "type": "external-id",
+          "url": "https://term.museum-digital.de/md-de/tag/151824"
+        }
+      ],
+      "Lille norske leksikon ID": [
+        {
+          "value": "Saturn",
+          "type": "external-id",
+          "url": "https://wikidata-externalid-url.toolforge.org/?p=12721&url_prefix=https://lille.snl.no/&id=Saturn"
+        }
+      ],
+      "Vikidia article ID": [
+        {
+          "value": "en:Saturn_(planet)",
+          "type": "external-id",
+          "url": "https://central.vikidia.org/wiki/en:Saturn_%28planet%29"
+        },
+        {
+          "value": "it:Saturno_(astronomia)",
+          "type": "external-id",
+          "url": "https://central.vikidia.org/wiki/it:Saturno_%28astronomia%29"
+        },
+        {
+          "value": "es:Saturno",
+          "type": "external-id",
+          "url": "https://central.vikidia.org/wiki/es:Saturno"
+        },
+        {
+          "value": "eu:Saturno",
+          "type": "external-id",
+          "url": "https://central.vikidia.org/wiki/eu:Saturno"
+        },
+        {
+          "value": "ca:Saturn",
+          "type": "external-id",
+          "url": "https://central.vikidia.org/wiki/ca:Saturn"
+        },
+        {
+          "value": "fr:Saturne_(planète)",
+          "type": "external-id",
+          "url": "https://central.vikidia.org/wiki/fr:Saturne_%28plan%C3%A8te%29"
+        }
+      ],
+      "‎Yale LUX ID": [
+        {
+          "value": "concept/80a09a7e-e8a4-445d-a44e-d93cf36f5eb3",
+          "type": "external-id",
+          "url": "https://lux.collections.yale.edu/view/concept/80a09a7e-e8a4-445d-a44e-d93cf36f5eb3"
+        }
+      ],
+      "‎GameSpot platform ID": [
+        {
+          "value": "76",
+          "type": "external-id",
+          "url": "https://www.gamespot.com/new-games/?sort=score&game_filter%5Bplatform%5D=76"
+        }
+      ],
+      "Enciclopedia Galega Universal ID": [
+        {
+          "value": "184098",
+          "type": "external-id",
+          "url": "https://egu.xunta.gal/gl/termo/184098"
+        }
+      ],
+      "Harper's tag": [
+        {
+          "value": "saturn-planet",
+          "type": "external-id",
+          "url": "https://harpers.org/tag/saturn-planet/"
+        }
+      ],
+      "‎Giant Bomb Wiki ID": [
+        {
+          "value": "Locations/Saturn",
+          "type": "external-id",
+          "url": "https://giantbomb.com/wiki/Locations/Saturn"
+        }
+      ],
+      "Encyclopedia of China (Third Edition) ID (2026)": [
+        {
+          "value": "3FBw4A",
+          "type": "external-id",
+          "url": "https://www.zgbk.com/ecph/words?SiteID=1&ID=3FBw4A"
+        }
+      ]
+    },
+    "property_ids": {
+      "video": "P10",
+      "image": "P18",
+      "instance of": "P31",
+      "named after": "P138",
+      "VIAF cluster ID": "P214",
+      "GND ID": "P227",
+      "Library of Congress Authorities ID": "P244",
+      "Bibliothèque nationale de France ID": "P268",
+      "IdRef ID": "P269",
+      "location": "P276",
+      "NDL Authority ID": "P349",
+      "part of": "P361",
+      "astronomic symbol image": "P367",
+      "Commons category": "P373",
+      "parent astronomical body": "P397",
+      "child astronomical body": "P398",
+      "pronunciation audio": "P443",
+      "MeSH descriptor ID": "P486",
+      "Unicode character": "P487",
+      "BNCF Thesaurus ID": "P508",
+      "has part(s)": "P527",
+      "Freebase ID": "P646",
+      "MeSH tree code": "P672",
+      "NL CR AUT ID": "P691",
+      "significant event": "P793",
+      "IPA transcription": "P898",
+      "topic's main category": "P910",
+      "notation": "P913",
+      "Commons gallery": "P935",
+      "National Library of Israel ID (old)": "P949",
+      "National Library of Spain SpMaBN ID": "P950",
+      "spoken text audio": "P989",
+      "Dewey Decimal Classification": "P1036",
+      "PSH ID": "P1051",
+      "orbital eccentricity": "P1096",
+      "flattening": "P1102",
+      "topic's main Wikimedia portal": "P1151",
+      "apparent magnitude": "P1215",
+      "U.S. National Archives Identifier": "P1225",
+      "OmegaWiki Defined Meaning": "P1245",
+      "Iconclass notation": "P1256",
+      "Gran Enciclopèdia Catalana ID (former scheme)": "P1296",
+      "described by source": "P1343",
+      "Encyclopædia Britannica Online ID": "P1417",
+      "topic has template": "P1424",
+      "absolute magnitude": "P1457",
+      "Stack Exchange tag": "P1482",
+      "demonym": "P1549",
+      "BBC Things ID": "P1617",
+      "Getty Thesaurus of Geographic Names ID": "P1667",
+      "different from": "P1889",
+      "orbital inclination": "P2045",
+      "area": "P2046",
+      "speed": "P2052",
+      "density": "P2054",
+      "mass": "P2067",
+      "magnetic moment": "P2069",
+      "temperature": "P2076",
+      "radius": "P2120",
+      "orbital period": "P2146",
+      "rotation period": "P2147",
+      "FAST ID": "P2163",
+      "longitude of ascending node": "P2213",
+      "semi-major axis of an orbit": "P2233",
+      "volume as quantity": "P2234",
+      "apoapsis": "P2243",
+      "periapsis": "P2244",
+      "argument of periapsis": "P2248",
+      "mean anomaly": "P2325",
+      "YSO ID": "P2347",
+      "diameter": "P2386",
+      "studied by": "P2579",
+      "BabelNet ID": "P2581",
+      "distance from Earth": "P2583",
+      "Great Russian Encyclopedia Online ID (2017)": "P2924",
+      "NAIF ID": "P2956",
+      "Encyclopædia Universalis ID": "P3219",
+      "New York Times topic ID": "P3221",
+      "NE.se ID": "P3222",
+      "Quora topic ID": "P3417",
+      "Zhihu topic ID": "P3553",
+      "JSTOR topic ID (archived)": "P3827",
+      "DBC author ID": "P3846",
+      "synodic period": "P4341",
+      "Great Norwegian Encyclopedia ID": "P4342",
+      "Unified Astronomy Thesaurus ID": "P4466",
+      "albedo": "P4501",
+      "National Library of Brazil ID": "P4619",
+      "LC and MARC vocabularies ID": "P4801",
+      "Wolfram Language entity code": "P4839",
+      "on focus list of Wikimedia project": "P5008",
+      "Brockhaus Enzyklopädie online ID": "P5019",
+      "Interlingual Index ID": "P5063",
+      "Wikimedia outline": "P5125",
+      "Giant Bomb ID (former scheme)": "P5247",
+      "Google News topics ID": "P5337",
+      "angular diameter": "P5348",
+      "Comic Vine ID": "P5905",
+      "Larousse ID": "P6058",
+      "maintained by WikiProject": "P6104",
+      "BBC News topic ID": "P6200",
+      "epoch": "P6259",
+      "Fandom article ID": "P6262",
+      "Microsoft Academic ID (discontinued)": "P6366",
+      "Klexikon article ID": "P6573",
+      "TV Tropes ID": "P6839",
+      "NicoNicoPedia word article ID": "P6900",
+      "surface gravity": "P7015",
+      "Australian Educational Vocabulary ID": "P7033",
+      "National Library of Iceland ID": "P7039",
+      "Online PWN Encyclopedia ID": "P7305",
+      "Golden ID (archived)": "P7502",
+      "article ID in the Lithuanian Universal Encyclopedia Online": "P7666",
+      "Slovak National Library (VIAF) ID": "P7700",
+      "ToposText person ID": "P8069",
+      "J9U entity ID": "P8189",
+      "KBpedia ID": "P8408",
+      "WordNet 3.1 Synset ID": "P8814",
+      "Namuwiki ID": "P8885",
+      "SVKKL authority ID": "P9322",
+      "France 24 topic ID (French)": "P9346",
+      "Encyclopedia of Korean Culture ID": "P9475",
+      "MANTO ID": "P9736",
+      "SNK ID": "P9807",
+      "National Library of Ireland ID": "P10227",
+      "Der Spiegel topic ID": "P10234",
+      "OpenAlex ID": "P10283",
+      "Wikisimpsons article ID": "P10291",
+      "ScienceDirect topic ID": "P10376",
+      "Femiwiki ID": "P10509",
+      "Encyclopedia of China (Third Edition) old ID (2021)": "P10565",
+      "AccessScience ID": "P10707",
+      "Famous Birthdays ID": "P11194",
+      "Pixiv Encyclopedia ID": "P11408",
+      "WikiKids ID": "P12086",
+      "Gran Enciclopèdia Catalana ID": "P12385",
+      "museum-digital tag ID": "P12596",
+      "Lille norske leksikon ID": "P12721",
+      "Vikidia article ID": "P12800",
+      "‎Yale LUX ID": "P13591",
+      "‎GameSpot platform ID": "P13599",
+      "Enciclopedia Galega Universal ID": "P13613",
+      "Harper's tag": "P13772",
+      "‎Giant Bomb Wiki ID": "P14470",
+      "Encyclopedia of China (Third Edition) ID (2026)": "P14541"
     },
     "commons_image": "Saturn, Four Years On, by ISS.tif",
     "url": "https://www.wikidata.org/wiki/Q193"

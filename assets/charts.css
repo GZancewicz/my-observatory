@@ -70,12 +70,24 @@
 .mo-overview .mo-selbar__hint { color: var(--muted); font-size: 12px; }
 
 /* ---- chart grid */
-.mo-overview .mo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 16px; }
+.mo-overview { container-type: inline-size; container-name: mo; }
+.mo-overview .mo-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+@container mo (min-width: 800px) {
+  .mo-overview .mo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@container mo (min-width: 1180px) {
+  .mo-overview .mo-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .mo-overview .mo-card { grid-column: span 3; }
+  .mo-overview .mo-card[data-chart="hr"],
+  .mo-overview .mo-card[data-chart="dist"],
+  .mo-overview .mo-card[data-chart="polar"] { grid-column: span 2; }
+  .mo-overview .mo-card[data-chart="cond"] { grid-column: 1 / -1; }
+}
 .mo-overview .mo-card {
   background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 16px; min-width: 0;
 }
-.mo-overview .mo-card--wide { grid-column: 1 / -1; }
+.mo-overview .mo-card.mo-card--wide { grid-column: 1 / -1; }
 .mo-overview .mo-card[data-chart="sky"] { --mo-surface: var(--bg); }
 .mo-overview .mo-card__title {
   margin: 0; font-size: 15px; font-weight: 600; color: var(--text); text-transform: none; letter-spacing: 0;

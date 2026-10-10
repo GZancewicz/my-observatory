@@ -2,22 +2,22 @@
   "name": "STARLINK-37502",
   "category": "satellites",
   "app_type": "ISS/Artificial Satellites",
-  "harvested": "2026-10-10T16:06:05Z",
+  "harvested": "2026-10-10T17:26:26Z",
   "sources": [
     {
       "name": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Starlink",
-      "retrieved": "2026-10-10T16:06:06Z"
+      "retrieved": "2026-10-10T17:26:27Z"
     },
     {
       "name": "Wikidata",
       "url": "https://www.wikidata.org/wiki/Q19867977",
-      "retrieved": "2026-10-10T16:06:07Z"
+      "retrieved": "2026-10-10T17:27:35Z"
     },
     {
       "name": "CelesTrak",
       "url": "https://celestrak.org/satcat/table-satcat.php?CATNR=69263",
-      "retrieved": "2026-10-10T16:06:08Z"
+      "retrieved": "2026-10-10T17:27:36Z"
     }
   ],
   "images": {
@@ -41,7 +41,8 @@
     "url": "https://en.wikipedia.org/wiki/Starlink",
     "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Starlink_Logo_2024.svg/330px-Starlink_Logo_2024.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Starlink_Logo_2024.svg/960px-Starlink_Logo_2024.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "wikidata": "Q19867977"
+    "wikidata": "Q19867977",
+    "sections_count": 57
   },
   "wikidata": {
     "id": "Q19867977",
@@ -81,6 +82,342 @@
           "value": "ongoing project"
         }
       ]
+    },
+    "all_claims": {
+      "country": [
+        {
+          "value": "United States",
+          "qid": "Q30",
+          "type": "wikibase-item"
+        }
+      ],
+      "image": [
+        {
+          "value": "Starlink Mission (47926144123).jpg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Starlink_Mission_(47926144123).jpg"
+        },
+        {
+          "value": "Starlink SpaceX 1584 satellites 72 Planes 22each.png",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Starlink_SpaceX_1584_satellites_72_Planes_22each.png"
+        },
+        {
+          "value": "Starlink Satellites Imaged from CTIO.jpg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Starlink_Satellites_Imaged_from_CTIO.jpg"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "satellite internet constellation",
+          "qid": "Q54806917",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "ongoing project",
+          "qid": "Q136937248",
+          "type": "wikibase-item"
+        }
+      ],
+      "operator": [
+        {
+          "value": "Starlink",
+          "qid": "Q127785902",
+          "type": "wikibase-item"
+        }
+      ],
+      "named after": [
+        {
+          "value": "The Fault in Our Stars",
+          "qid": "Q658375",
+          "type": "wikibase-item"
+        }
+      ],
+      "logo image": [
+        {
+          "value": "Starlink Logo 2024.svg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Starlink_Logo_2024.svg"
+        },
+        {
+          "value": "Starlink Logo.svg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Starlink_Logo.svg"
+        }
+      ],
+      "manufacturer": [
+        {
+          "value": "Starlink",
+          "qid": "Q127785902",
+          "type": "wikibase-item"
+        }
+      ],
+      "part of": [
+        {
+          "value": "list of companies involved in the Gaza war",
+          "qid": "Q134661623",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "2025–2026 Iranian protests",
+          "qid": "Q137612545",
+          "type": "wikibase-item"
+        }
+      ],
+      "has use": [
+        {
+          "value": "satellite Internet access",
+          "qid": "Q877159",
+          "type": "wikibase-item"
+        }
+      ],
+      "Commons category": [
+        {
+          "value": "Starlink",
+          "type": "string"
+        }
+      ],
+      "country of origin": [
+        {
+          "value": "United States",
+          "qid": "Q30",
+          "type": "wikibase-item"
+        }
+      ],
+      "inception": [
+        {
+          "value": "2015-01",
+          "type": "time"
+        }
+      ],
+      "topic's main category": [
+        {
+          "value": "Category:Starlink",
+          "qid": "Q137844579",
+          "type": "wikibase-item"
+        }
+      ],
+      "official name": [
+        {
+          "value": "Starlink",
+          "type": "monolingualtext"
+        }
+      ],
+      "different from": [
+        {
+          "value": "Starlink",
+          "qid": "Q7602102",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Starlink",
+          "qid": "Q127785902",
+          "type": "wikibase-item"
+        }
+      ],
+      "mass": [
+        {
+          "value": 227.0,
+          "unit": "kg",
+          "type": "quantity"
+        },
+        {
+          "value": 260.0,
+          "unit": "kg",
+          "type": "quantity"
+        },
+        {
+          "value": 295.0,
+          "unit": "kg",
+          "type": "quantity"
+        },
+        {
+          "value": 800.0,
+          "unit": "kg",
+          "type": "quantity"
+        },
+        {
+          "value": 1250.0,
+          "unit": "kg",
+          "type": "quantity"
+        }
+      ],
+      "has list": [
+        {
+          "value": "list of Starlink launches",
+          "qid": "Q110311637",
+          "type": "wikibase-item"
+        }
+      ],
+      "operating area": [
+        {
+          "value": "Brazil",
+          "qid": "Q155",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "metropolitan France",
+          "qid": "Q212429",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Poland",
+          "qid": "Q36",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Rwanda",
+          "qid": "Q1037",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Saudi Arabia",
+          "qid": "Q851",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Armenia",
+          "qid": "Q399",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Iran",
+          "qid": "Q794",
+          "type": "wikibase-item"
+        }
+      ],
+      "has part(s) of the class": [
+        {
+          "value": "communications satellite",
+          "qid": "Q149918",
+          "type": "wikibase-item"
+        }
+      ],
+      "Google Knowledge Graph ID": [
+        {
+          "value": "/g/11f4pphz_9",
+          "type": "external-id",
+          "url": "https://www.google.com/search?kgmid=/g/11f4pphz_9"
+        }
+      ],
+      "NE.se ID": [
+        {
+          "value": "starlink",
+          "type": "external-id",
+          "url": "https://www.ne.se/uppslagsverk/encyklopedi/lång/starlink"
+        }
+      ],
+      "Quora topic ID": [
+        {
+          "value": "SpaceX-Satellite-Constellation",
+          "type": "external-id",
+          "url": "https://www.quora.com/topic/SpaceX-Satellite-Constellation"
+        }
+      ],
+      "subreddit": [
+        {
+          "value": "Starlink",
+          "type": "external-id",
+          "url": "https://www.reddit.com/r/Starlink/"
+        }
+      ],
+      "UK Parliament thesaurus ID": [
+        {
+          "value": "509226",
+          "type": "external-id",
+          "url": "https://lda.data.parliament.uk/terms/509226.html"
+        }
+      ],
+      "Google News topics ID": [
+        {
+          "value": "CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2o5azVPMUVCRWpHUkdKVVhzNXVTZ0FQAQ",
+          "type": "external-id",
+          "url": "https://news.google.com/topics/CAAqNggKIjBDQklTSGpvSmMzUnZjbmt0TXpZd1NoRUtEd2o5azVPMUVCRWpHUkdKVVhzNXVTZ0FQAQ"
+        }
+      ],
+      "Fandom article ID": [
+        {
+          "value": "logo:Starlink",
+          "type": "external-id",
+          "url": "https://community.fandom.com/wiki/w:c:logo:Starlink"
+        }
+      ],
+      "Lex ID": [
+        {
+          "value": "Starlink",
+          "type": "external-id",
+          "url": "https://wikidata-externalid-url.toolforge.org/?p=8313&url_prefix=https://lex.dk/&id=Starlink"
+        }
+      ],
+      "Namuwiki ID": [
+        {
+          "value": "스타링크",
+          "type": "external-id",
+          "url": "https://namu.wiki/w/%EC%8A%A4%ED%83%80%EB%A7%81%ED%81%AC"
+        }
+      ],
+      "service status information URL": [
+        {
+          "value": "https://downdetector.ph/status/starlink/",
+          "type": "url"
+        }
+      ],
+      "France 24 topic ID (French)": [
+        {
+          "value": "starlink",
+          "type": "external-id",
+          "url": "https://www.france24.com/fr/tag/starlink/"
+        }
+      ],
+      "HuijiWiki article ID": [
+        {
+          "value": "sat:星链",
+          "type": "external-id",
+          "url": "https://www.huijiwiki.com/wiki/sat:%E6%98%9F%E9%93%BE"
+        }
+      ],
+      "15min.lt topic ID": [
+        {
+          "value": "99276",
+          "type": "external-id",
+          "url": "https://www.15min.lt/tema/_-99276"
+        }
+      ]
+    },
+    "property_ids": {
+      "country": "P17",
+      "image": "P18",
+      "instance of": "P31",
+      "operator": "P137",
+      "named after": "P138",
+      "logo image": "P154",
+      "manufacturer": "P176",
+      "part of": "P361",
+      "has use": "P366",
+      "Commons category": "P373",
+      "country of origin": "P495",
+      "inception": "P571",
+      "topic's main category": "P910",
+      "official name": "P1448",
+      "different from": "P1889",
+      "mass": "P2067",
+      "has list": "P2354",
+      "operating area": "P2541",
+      "has part(s) of the class": "P2670",
+      "Google Knowledge Graph ID": "P2671",
+      "NE.se ID": "P3222",
+      "Quora topic ID": "P3417",
+      "subreddit": "P3984",
+      "UK Parliament thesaurus ID": "P4527",
+      "Google News topics ID": "P5337",
+      "Fandom article ID": "P6262",
+      "Lex ID": "P8313",
+      "Namuwiki ID": "P8885",
+      "service status information URL": "P9138",
+      "France 24 topic ID (French)": "P9346",
+      "HuijiWiki article ID": "P10668",
+      "15min.lt topic ID": "P13606"
     },
     "commons_image": "Starlink Mission (47926144123).jpg",
     "url": "https://www.wikidata.org/wiki/Q19867977"

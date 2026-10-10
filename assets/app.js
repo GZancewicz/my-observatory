@@ -12,7 +12,7 @@
   const $ = (s) => document.querySelector(s);
   const state = {
     objects: [], category: "all", query: "", sort: "last", cache: {},
-    seq: 0, overview: false, extraLoads: {}, aladin: null, skyObserver: null,
+    seq: 0, overview: false, extraLoads: {}, aladin: null, skyWatch: null,
   };
 
   // ---------- formatting ----------
@@ -37,12 +37,15 @@
   };
   const compass = (az) => az == null || Number.isNaN(az) ? "" :
     ["N","NNE","NE","ENE","E","ESE","SE","SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"][Math.round(az / 22.5) % 16];
+  // Wikidata units that arrive unresolved as item ids ("Q254532") are mapped or hidden.
+  const UNIT_IDS = { Q254532: "deg²", Q11573: "m", Q828224: "km", Q1811: "AU", Q12129: "pc", Q531: "ly", Q11570: "kg", Q11579: "K" };
+  const unitLabel = (u) => /^Q\d+$/.test(String(u || "")) ? UNIT_IDS[u] || "" : u || "";
   const qty = (q) => {
     if (q == null) return "—";
     if (typeof q !== "object") return esc(q);
-    let s = `${num(q.value, 3)}<span class="u">${esc(q.unit || "")}</span>`;
+    let s = `${num(q.value, 3)}<span class="u">${esc(unitLabel(q.unit))}</span>`;
     if (q.plus != null && (q.plus || q.minus)) {
-      s += q.plus === q.minus ? `<span class="u">± ${num(q.plus, 3)}</span>`
+      s += num(q.plus, 3) === num(q.minus, 3) ? `<span class="u">± ${num(q.plus, 3)}</span>`
         : `<span class="u">+${num(q.plus, 3)} / −${num(q.minus, 3)}</span>`;
     }
     return s;
@@ -285,7 +288,9 @@
     const s = o.summary || {}, g = o.geometry || {}, sb = o.simbad || {};
     const r = s.ra_deg ?? g.ra_deg ?? sb.ra, d = s.dec_deg ?? g.dec_deg ?? sb.dec;
     if (r == null || d == null || Number.isNaN(+r) || Number.isNaN(+d)) return null;
-    let fov = 0.5;
+    // Bright stars saturate the survey plates; a wider field keeps the surroundings visible.
+    const v = s.v_mag;
+    let fov = v == null ? 0.5 : v < 0.5 ? 3 : v < 2 ? 1.5 : v < 4 ? 0.8 : 0.5;
     if (o.category === "constellations") {
       const area = s.area && +s.area.value;
       fov = g.radius_deg ? g.radius_deg * 2.4 : area ? Math.sqrt(area) * 1.8 : 40;
@@ -303,45 +308,60 @@
       <div class="note">DSS2 colour survey through Aladin Lite (CDS), centred on ${esc(o.name)} with a ${num(t.fov, 1)}° field. Drag to pan, scroll or pinch to zoom.</div>`);
   }
 
+  // Aladin Lite v3 has no destroy(), and every instance holds WebGL contexts, so one instance is
+  // created on first use and its element is moved into each object page and re-centred.
   function destroyAladin() {
-    if (state.skyObserver) { state.skyObserver.disconnect(); state.skyObserver = null; }
-    if (state.aladin) {
-      try { if (typeof state.aladin.destroy === "function") state.aladin.destroy(); } catch {}
-      state.aladin = null;
-    }
+    if (state.skyWatch) state.skyWatch();
+    if (state.aladin && state.aladin.el.isConnected) state.aladin.el.remove();   // park it off-page
   }
 
   function mountAladin(o, seq) {
     const host = $("#skyview"), t = skyTarget(o);
     if (!host || !t) return;
     const fail = (msg) => { if (host.isConnected) host.innerHTML = `<div class="sky-msg">${esc(msg)}</div>`; };
+    const place = (A) => {
+      const reticle = o.category !== "constellations";
+      if (state.aladin) {
+        const { inst, el } = state.aladin;
+        host.innerHTML = "";
+        host.appendChild(el);
+        inst.removeOverlays();
+        inst.gotoRaDec(t.ra, t.dec);
+        inst.setFoV(t.fov);
+        if (typeof inst.showReticle === "function") inst.showReticle(reticle);
+        drawBoundary(A, inst, o);
+        return;
+      }
+      host.innerHTML = "";
+      const el = document.createElement("div");
+      el.className = "aladin-el";
+      host.appendChild(el);
+      const inst = A.aladin(el, {
+        survey: "P/DSS2/color", fov: t.fov, target: `${t.ra} ${t.dec}`, cooFrame: "ICRS",
+        showReticle: reticle, showLayersControl: false, showGotoControl: false,
+        showFullscreenControl: true, showFrame: false, showCooGridControl: false,
+        showProjectionControl: false, showZoomControl: true,
+      });
+      state.aladin = { inst, el };
+      drawBoundary(A, inst, o);
+    };
     const start = () => {
       const A = window.A;
       if (!A || !A.init || typeof A.aladin !== "function") return fail("The sky viewer needs an internet connection (Aladin Lite did not load).");
       const ready = typeof A.init === "function" ? A.init() : A.init;
       Promise.resolve(ready).then(() => {
         if (seq !== state.seq || !host.isConnected) return;
-        host.innerHTML = "";
-        const el = document.createElement("div");
-        el.className = "aladin-el";
-        host.appendChild(el);
-        const inst = A.aladin(el, {
-          survey: "P/DSS2/color", fov: t.fov, target: `${t.ra} ${t.dec}`, cooFrame: "ICRS",
-          showReticle: o.category !== "constellations", showLayersControl: false, showGotoControl: false,
-          showFullscreenControl: true, showFrame: false, showCooGridControl: false,
-          showProjectionControl: false, showZoomControl: true,
-        });
-        state.aladin = inst;
-        drawBoundary(A, inst, o);
+        place(A);
       }).catch(() => fail("The sky viewer could not start."));
     };
-    if ("IntersectionObserver" in window) {
-      const io = new IntersectionObserver((entries) => {
-        if (entries.some((e) => e.isIntersecting)) { io.disconnect(); state.skyObserver = null; start(); }
-      }, { rootMargin: "300px" });
-      io.observe(host);
-      state.skyObserver = io;
-    } else start();
+    // Lazy: start once the panel is within 300px of the viewport.
+    const near = () => { const r = host.getBoundingClientRect(); return r.top < innerHeight + 300 && r.bottom > -300; };
+    if (near()) return start();
+    const watch = () => { if (host.isConnected && near()) { stop(); start(); } };
+    const stop = () => { window.removeEventListener("scroll", watch); window.removeEventListener("resize", watch); state.skyWatch = null; };
+    window.addEventListener("scroll", watch, { passive: true });
+    window.addEventListener("resize", watch);
+    state.skyWatch = stop;
   }
 
   // Constellations: outline the IAU boundary when data/sky/boundaries.js is present.
@@ -398,7 +418,7 @@
       return `${p.title ? `<h${h} class="wp-h">${esc(p.title)}</h${h}>` : ""}${paras(p.text)}`;
     }).join("");
     const toc = shown.length > 1 ? `<nav class="toc" aria-label="Article contents"><div class="toc-t">Contents</div><ol>${shown.map((g) =>
-      `<li><button type="button" class="linklike" data-action="jump" data-target="${g.id}">${esc(g.title)}</button>${g.parts.filter((p) => p.title).length ? `<span class="muted"> · ${g.parts.filter((p) => p.title).length}</span>` : ""}</li>`).join("")}</ol></nav>` : "";
+      `<li><button type="button" class="linklike" data-action="jump" data-target="${g.id}">${esc(g.title)}</button></li>`).join("")}</ol></nav>` : "";
     const imgs = asList(art.images).filter((im) => im && safeUrl(im.thumbnail)).slice(0, 12);
     const strip = imgs.length ? `<div class="strip">${imgs.map((im) => {
       const cap = im.caption || String(im.title || "").replace(/^File:/i, "").replace(/\.[a-z0-9]+$/i, "").replace(/_/g, " ");
@@ -416,7 +436,7 @@
     mesSpT: "Spectral type", mesDiameter: "Diameter", mesRot: "Rotation (v sin i)",
     mesFe_h: "Temperature, gravity and metallicity", mesDistance: "Distance", mesVar: "Variability",
     mesIUE: "IUE ultraviolet spectra", mesXmm: "XMM-Newton X-ray observations", mesHerschel: "Herschel observations",
-    mesISO: "ISO observations", mesPos: "Position", mesUncertainty: "Position uncertainty",
+    mesISO: "ISO observations", mesOtype: "Object type history", mesPos: "Position", mesUncertainty: "Position uncertainty",
   };
 
   function simbadSection(o) {
@@ -433,9 +453,9 @@
     }
     const ref = (v, e, u) => v == null ? null : `${rawNum(+v)}${e != null ? ` <span class="muted">± ${rawNum(+e)}</span>` : ""}${u ? ` <span class="muted">${u}</span>` : ""}`;
     const np = paperCount(o);
-    const consumed = new Set(["ra", "ra_deg", "ra_icrs", "dec", "dec_deg", "dec_icrs", "gal_l", "l", "glon", "galactic_l", "lon_gal", "gal_b", "b", "glat", "galactic_b", "lat_gal", "galactic"]);
+    const consumed = new Set(["ra", "ra_deg", "ra_icrs", "dec", "dec_deg", "dec_icrs", "ra_hms", "dec_dms", "gal_l", "l", "glon", "galactic_l", "lon_gal", "gal_b", "b", "glat", "galactic_b", "lat_gal", "galactic"]);
     const otherCoords = Object.entries(co).filter(([k, v]) => !consumed.has(k) && !blank(v))
-      .map(([k, v]) => [colName(k), typeof v === "object" ? esc(JSON.stringify(v)) : typeof v === "number" ? rawNum(v) : esc(v)]);
+      .map(([k, v]) => [/bibcode/i.test(k) ? "Coordinate source" : colName(k), cell(k, v)]);
     const basic = kvTable([
       ["Identifier", sb.main_id ? `<span class="mono">${esc(String(sb.main_id).replace(/\s+/g, " "))}</span>` : null],
       ["Object type", sb.otype || sb.otype_desc ? `${esc(sb.otype_desc || "")}${sb.otype ? ` <span class="muted mono">${esc(sb.otype)}</span>` : ""}` : null],

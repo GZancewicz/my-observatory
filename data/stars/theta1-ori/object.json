@@ -2,22 +2,22 @@
   "name": "θ¹ Ori",
   "category": "stars",
   "app_type": "B-Star",
-  "harvested": "2026-10-10T16:22:47Z",
+  "harvested": "2026-10-10T17:54:11Z",
   "sources": [
     {
       "name": "SIMBAD (CDS)",
       "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=NAME%20Ori%20Trapezium",
-      "retrieved": "2026-10-10T16:22:54Z"
+      "retrieved": "2026-10-10T17:54:24Z"
     },
     {
       "name": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Trapezium_Cluster",
-      "retrieved": "2026-10-10T16:23:10Z"
+      "retrieved": "2026-10-10T17:55:00Z"
     },
     {
       "name": "Wikidata",
       "url": "https://www.wikidata.org/wiki/Q14031",
-      "retrieved": "2026-10-10T16:23:10Z"
+      "retrieved": "2026-10-10T17:55:03Z"
     }
   ],
   "images": {
@@ -40,21 +40,56 @@
   },
   "simbad": {
     "main_id": "NAME Ori Trapezium",
+    "nbref": 1719,
+    "otype": "OpC",
     "ra": 83.81874999999998,
     "dec": -5.3872222222222215,
-    "otype": "OpC",
-    "otype_desc": "Open Cluster",
-    "sp_type": null,
-    "plx_value": 2.557,
-    "plx_err": 0.149,
+    "coo_err_maj": null,
+    "coo_err_min": null,
+    "coo_err_angle": null,
+    "coo_qual": "E",
+    "coo_wavelength": null,
+    "coo_bibcode": "2007A&A...474..515M",
     "pmra": 1.96,
     "pmdec": -0.77,
+    "pm_err_maj": 0.46,
+    "pm_err_min": 0.31,
+    "pm_err_angle": 0,
+    "pm_qual": "D",
+    "pm_bibcode": "2005A&A...438.1163K",
+    "plx_value": 2.557,
+    "plx_err": 0.149,
+    "plx_qual": "D",
+    "plx_bibcode": "2021MNRAS.504..356D",
+    "rvz_type": "v",
     "rvz_radvel": 23.841,
     "rvz_redshift": 7.952817830192416e-05,
+    "rvz_err": 5.161,
+    "rvz_nature": "s",
+    "rvz_qual": "D",
+    "rvz_bibcode": "2021MNRAS.504..356D",
+    "vlsr": null,
+    "vlsr_err": null,
+    "vlsr_wavelength": null,
+    "vlsr_bibcode": null,
+    "vlsr_min": null,
+    "vlsr_max": null,
+    "sp_type": null,
+    "sp_qual": null,
+    "sp_bibcode": null,
+    "morph_type": null,
+    "morph_qual": null,
+    "morph_bibcode": null,
     "galdim_majaxis": null,
     "galdim_minaxis": null,
-    "morph_type": null,
-    "nbref": 1719,
+    "galdim_angle": null,
+    "galdim_qual": null,
+    "galdim_wavelength": null,
+    "galdim_bibcode": null,
+    "update_date": "2026-09-22",
+    "oid": 808485,
+    "rvz_wavelength": "O",
+    "otype_desc": "Open Cluster",
     "identifiers": [
       "[MWC53]    Id Ori",
       "* tet01 Ori",
@@ -78,6 +113,521 @@
       "Ass Ori OB 1d"
     ],
     "fluxes": {},
+    "coordinates": {
+      "frame": "ICRS",
+      "epoch": "J2000",
+      "ra_deg": 83.81874999999998,
+      "dec_deg": -5.3872222222222215,
+      "ra_hms": "05 35 16.500",
+      "dec_dms": "-05 23 14.00",
+      "gal_l": 209.00847,
+      "gal_b": -19.3828,
+      "err_maj_mas": null,
+      "err_min_mas": null,
+      "err_angle_deg": null,
+      "quality": "E",
+      "wavelength": null,
+      "bibcode": "2007A&A...474..515M"
+    },
+    "hierarchy": {
+      "parents": [],
+      "children": [
+        {
+          "main_id": "TCC  75",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "TCC  65",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "TCC  57",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "TCC  74",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "TCC  47",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "TCC  70",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "MLLA  391",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "TCC  61",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "TCC  54",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "Parenago  1866",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "TCC  48",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "TCC  77",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "JW  494",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "* tet01 Ori G",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "* tet01 Ori H",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": null,
+          "bibcode": "2001AJ....122.3466M"
+        },
+        {
+          "main_id": "* tet01 Ori G",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": null,
+          "bibcode": "2001AJ....122.3466M"
+        },
+        {
+          "main_id": "* tet01 Ori D",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": null,
+          "bibcode": "2001AJ....122.3466M"
+        },
+        {
+          "main_id": "NAME tet01 Ori B4",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "NAME tet01 Ori B2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "** GET   40Pb",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "NAME tet01 Ori A1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "** SMN    5Ba",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "NAME tet01 Ori D2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "** GET   40Pa",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "NAME tet01 Ori A2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "NAME TCC 59A",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "NAME TCC 59B",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "NAME tet01 Ori B3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "* tet01 Ori B",
+          "otype": "EB*",
+          "otype_desc": "Eclipsing Binary",
+          "membership": null,
+          "bibcode": "2001AJ....122.3466M"
+        },
+        {
+          "main_id": "* tet01 Ori C",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "* tet01 Ori C",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": null,
+          "bibcode": "2001AJ....122.3466M"
+        },
+        {
+          "main_id": "TCC  43",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "MLLA  430",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "TCC  78",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "TCC  66",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "TCC  71",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "TCC  51",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "TCC  67",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "TCC  58",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "* tet01 Ori F",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "MLLA  394",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "NAME tet01 Ori D1",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "MLLA  367",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "MLLA  493",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "COUP   788",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "* tet01 Ori F",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": null,
+          "bibcode": "2001AJ....122.3466M"
+        },
+        {
+          "main_id": "* tet01 Ori A",
+          "otype": "Ae*",
+          "otype_desc": "Herbig Ae/Be Star",
+          "membership": null,
+          "bibcode": "2001AJ....122.3466M"
+        },
+        {
+          "main_id": "LV 3",
+          "otype": "Or*",
+          "otype_desc": "Orion Variable",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "JW  489",
+          "otype": "Or*",
+          "otype_desc": "Orion Variable",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "V* V348 Ori",
+          "otype": "Or*",
+          "otype_desc": "Orion Variable",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "V* V2299 Ori",
+          "otype": "Or*",
+          "otype_desc": "Orion Variable",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "Parenago  1867",
+          "otype": "Or*",
+          "otype_desc": "Orion Variable",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "* tet01 Ori E",
+          "otype": "Or*",
+          "otype_desc": "Orion Variable",
+          "membership": 100,
+          "bibcode": "2012ApJ...749..180C"
+        },
+        {
+          "main_id": "* tet01 Ori E",
+          "otype": "Or*",
+          "otype_desc": "Orion Variable",
+          "membership": null,
+          "bibcode": "2001AJ....122.3466M"
+        }
+      ]
+    },
+    "measurements": {
+      "mesDistance": [
+        {
+          "bibcode": "2005A&A...438.1163K",
+          "dist": 399,
+          "method": "ST-L    ",
+          "minus_err": null,
+          "plus_err": null,
+          "qual": null,
+          "unit": "pc  "
+        },
+        {
+          "bibcode": "2021MNRAS.504..356D",
+          "dist": 381,
+          "method": "paral   ",
+          "minus_err": -12,
+          "plus_err": 12,
+          "qual": null,
+          "unit": "pc  "
+        }
+      ],
+      "mesFe_h": [
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": -0.146,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2021MNRAS.504..356D"
+        }
+      ],
+      "mesOtype": [
+        {
+          "otype": "*",
+          "comments": "from id * tet01 Ori",
+          "bibcode": null
+        },
+        {
+          "otype": "**",
+          "comments": "from id CCDM J05353-0524",
+          "bibcode": null
+        },
+        {
+          "otype": "As*",
+          "comments": "from basic data",
+          "bibcode": null
+        },
+        {
+          "otype": "Cl*",
+          "comments": "from bibcode",
+          "bibcode": "2013ApJS..207...36H"
+        },
+        {
+          "otype": "OpC",
+          "comments": "from bibcode",
+          "bibcode": "2021MNRAS.504..356D"
+        },
+        {
+          "otype": "X",
+          "comments": "from id 2E  1366",
+          "bibcode": null
+        }
+      ],
+      "mesPLX": [
+        {
+          "bibcode": "2021MNRAS.504..356D",
+          "obscode": null,
+          "plx": 2.557,
+          "plx_err": 0.149
+        }
+      ],
+      "mesPM": [
+        {
+          "bibcode": "2021MNRAS.504..356D",
+          "coosystem": null,
+          "pmde": 0.274,
+          "pmde_err": 0.498,
+          "pmra": 1.262,
+          "pmra_err": 0.449
+        }
+      ],
+      "mesVelocities": [
+        {
+          "bibcode": "2021MNRAS.504..356D",
+          "d": null,
+          "meanerror": 5.161,
+          "nature": "s",
+          "nbmes": 15,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "D",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 23.841,
+          "wdomain": "Opt "
+        }
+      ],
+      "mesXmm": [
+        {
+          "obsid": "0112590401"
+        },
+        {
+          "obsid": "0112590301"
+        },
+        {
+          "obsid": "0112590201"
+        },
+        {
+          "obsid": "0112590101"
+        }
+      ]
+    },
     "atmosphere_measurements": [
       {
         "teff": null,
@@ -114,8 +664,15 @@
       "OpC",
       "X"
     ],
+    "notes": [
+      {
+        "date": "03-Oct-2005",
+        "text": "Trapezium = 4 bright blue stars within 15'': * tet01 Ori A + * tet01 Ori B + * tet01 Ori C + * tet01 Ori D; each star of the Trapezium is multiple."
+      }
+    ],
     "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=NAME%20Ori%20Trapezium"
   },
+  "papers_count": 1719,
   "wikipedia": {
     "title": "Trapezium Cluster",
     "description": "Open cluster in the Orion Nebula in the constellation Orion",
@@ -124,7 +681,8 @@
     "url": "https://en.wikipedia.org/wiki/Trapezium_Cluster",
     "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Trapezium_cluster_optical_and_infrared_comparison.jpg/330px-Trapezium_cluster_optical_and_infrared_comparison.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Trapezium_cluster_optical_and_infrared_comparison.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "wikidata": "Q14031"
+    "wikidata": "Q14031",
+    "sections_count": 6
   },
   "wikidata": {
     "id": "Q14031",
@@ -212,6 +770,300 @@
         }
       ]
     },
+    "all_claims": {
+      "image": [
+        {
+          "value": "Trapezium cluster optical and infrared comparison.jpg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Trapezium_cluster_optical_and_infrared_comparison.jpg"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "asterism",
+          "qid": "Q9262",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "open cluster",
+          "qid": "Q11387",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "star",
+          "qid": "Q523",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "double star",
+          "qid": "Q13890",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "star cluster",
+          "qid": "Q168845",
+          "type": "wikibase-item"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Orion",
+          "qid": "Q8860",
+          "type": "wikibase-item"
+        }
+      ],
+      "discoverer or inventor": [
+        {
+          "value": "Galileo Galilei",
+          "qid": "Q307",
+          "type": "wikibase-item"
+        }
+      ],
+      "GND ID": [
+        {
+          "value": "4517534-2",
+          "type": "external-id",
+          "url": "https://d-nb.info/gnd/4517534-2"
+        }
+      ],
+      "part of": [
+        {
+          "value": "Orion's Sword",
+          "qid": "Q1064187",
+          "type": "wikibase-item"
+        }
+      ],
+      "Commons category": [
+        {
+          "value": "Trapezium (astronomy)",
+          "type": "string"
+        }
+      ],
+      "has part(s)": [
+        {
+          "value": "Theta1 Orionis B",
+          "qid": "Q3990372",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Theta1 Orionis C",
+          "qid": "Q1196181",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Theta1 Orionis E",
+          "qid": "Q30595270",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "tet01 Ori G",
+          "qid": "Q67622016",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "* tet01 Ori F",
+          "qid": "Q78242369",
+          "type": "wikibase-item"
+        }
+      ],
+      "catalog code": [
+        {
+          "value": "1ES 0532-05.4",
+          "type": "string"
+        },
+        {
+          "value": "OCl 528.0",
+          "type": "string"
+        },
+        {
+          "value": "CCDM J05353-0524",
+          "type": "string"
+        },
+        {
+          "value": "C 0532-054",
+          "type": "string"
+        },
+        {
+          "value": "RX J0535.3-0523",
+          "type": "string"
+        },
+        {
+          "value": "PBC J0535.1-0522",
+          "type": "string"
+        },
+        {
+          "value": "2MAXI J0535-052",
+          "type": "string"
+        },
+        {
+          "value": "41 Ori",
+          "type": "string"
+        }
+      ],
+      "Freebase ID": [
+        {
+          "value": "/m/0c4q5n",
+          "type": "external-id",
+          "url": "https://www.google.com/search?kgmid=/m/0c4q5n"
+        }
+      ],
+      "Encyclopædia Britannica Online ID": [
+        {
+          "value": "topic/Trapezium",
+          "type": "external-id",
+          "url": "https://www.britannica.com/topic/Trapezium"
+        }
+      ],
+      "different from": [
+        {
+          "value": "Theta Orionis",
+          "qid": "Q4456503",
+          "type": "wikibase-item"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 2.557,
+          "unit": "mas",
+          "plus": 0.14900000000000002,
+          "minus": 0.14900000000000002,
+          "type": "quantity"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 28.94,
+          "unit": "km/s",
+          "plus": 2.719999999999999,
+          "minus": 2.7200000000000024,
+          "type": "quantity"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.146,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 399.0,
+          "unit": "pc",
+          "type": "quantity"
+        }
+      ],
+      "SIMBAD ID": [
+        {
+          "value": "NAME Ori Trapezium",
+          "type": "external-id",
+          "url": "https://simbad.u-strasbg.fr/simbad/sim-id?Ident=NAME%20Ori%20Trapezium"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 83.81875,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "declination": [
+        {
+          "value": -5.38722,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "epoch": [
+        {
+          "value": "J2000.0",
+          "qid": "Q1264450",
+          "type": "wikibase-item"
+        }
+      ],
+      "WordNet 3.1 Synset ID": [
+        {
+          "value": "09484199-n",
+          "type": "external-id",
+          "url": "https://en-word.net/view/synset/09484199-n"
+        }
+      ],
+      "Encyclopedia of China (Third Edition) old ID (2021)": [
+        {
+          "value": "66202",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/0/https://www.zgbk.com/ecph/words?SiteID=1&ID=66202"
+        }
+      ],
+      "declination component of proper motion": [
+        {
+          "value": -0.77,
+          "unit": "mas/yr",
+          "plus": 0.31,
+          "minus": 0.31000000000000005,
+          "type": "quantity"
+        }
+      ],
+      "right ascension component of proper motion": [
+        {
+          "value": 1.96,
+          "unit": "mas/yr",
+          "plus": 0.45999999999999996,
+          "minus": 0.45999999999999996,
+          "type": "quantity"
+        }
+      ],
+      "Pixiv Encyclopedia ID": [
+        {
+          "value": "トラペジウム星団",
+          "type": "external-id",
+          "url": "https://wikidata-externalid-url.toolforge.org/index.php?p=11408&url_prefix=https://dic.pixiv.net/a/&id=%E3%83%88%E3%83%A9%E3%83%9A%E3%82%B8%E3%82%A6%E3%83%A0%E6%98%9F%E5%9B%A3"
+        }
+      ],
+      "Oxford Reference overview ID": [
+        {
+          "value": "20120106171727203",
+          "type": "external-id",
+          "url": "https://www.oxfordreference.com/display/10.1093/oi/authority.20120106171727203"
+        }
+      ],
+      "Encyclopedia of China (Third Edition) ID (2026)": [
+        {
+          "value": "12Ridz",
+          "type": "external-id",
+          "url": "https://www.zgbk.com/ecph/words?SiteID=1&ID=12Ridz"
+        }
+      ]
+    },
+    "property_ids": {
+      "image": "P18",
+      "instance of": "P31",
+      "constellation": "P59",
+      "discoverer or inventor": "P61",
+      "GND ID": "P227",
+      "part of": "P361",
+      "Commons category": "P373",
+      "has part(s)": "P527",
+      "catalog code": "P528",
+      "Freebase ID": "P646",
+      "Encyclopædia Britannica Online ID": "P1417",
+      "different from": "P1889",
+      "parallax": "P2214",
+      "radial velocity": "P2216",
+      "metallicity": "P2227",
+      "distance from Earth": "P2583",
+      "SIMBAD ID": "P3083",
+      "right ascension": "P6257",
+      "declination": "P6258",
+      "epoch": "P6259",
+      "WordNet 3.1 Synset ID": "P8814",
+      "Encyclopedia of China (Third Edition) old ID (2021)": "P10565",
+      "declination component of proper motion": "P10751",
+      "right ascension component of proper motion": "P10752",
+      "Pixiv Encyclopedia ID": "P11408",
+      "Oxford Reference overview ID": "P12582",
+      "Encyclopedia of China (Third Edition) ID (2026)": "P14541"
+    },
     "commons_image": "Trapezium cluster optical and infrared comparison.jpg",
     "url": "https://www.wikidata.org/wiki/Q14031"
   },
@@ -223,6 +1075,8 @@
     "distance_pc": 391.1,
     "distance_ly": 1275.5,
     "constellation": "Orion",
+    "gal_l": 209.00847,
+    "gal_b": -19.3828,
     "description": "Open cluster in the Orion Nebula in the constellation Orion"
   },
   "id": "theta1-ori",

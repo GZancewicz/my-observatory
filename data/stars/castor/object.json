@@ -2,29 +2,29 @@
   "name": "Castor",
   "category": "stars",
   "app_type": "A-Star",
-  "harvested": "2026-10-10T16:10:23Z",
+  "harvested": "2026-10-10T17:31:40Z",
   "sources": [
     {
       "name": "SIMBAD (CDS)",
       "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20Gem",
-      "retrieved": "2026-10-10T16:10:30Z"
+      "retrieved": "2026-10-10T17:31:53Z"
     },
     {
       "name": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Castor_(star)",
-      "retrieved": "2026-10-10T16:10:31Z"
+      "retrieved": "2026-10-10T17:32:01Z"
     },
     {
       "name": "Wikidata",
       "url": "https://www.wikidata.org/wiki/Q13029",
-      "retrieved": "2026-10-10T16:10:31Z"
+      "retrieved": "2026-10-10T17:32:04Z"
     }
   ],
   "images": {
     "sky": {
       "file": "sky.jpg",
       "credit": "DSS2 colour via CDS hips2fits",
-      "fov_deg": 0.4
+      "fov_deg": 1.5
     },
     "photo": {
       "file": "photo.jpg",
@@ -40,21 +40,56 @@
   },
   "simbad": {
     "main_id": "* alf Gem",
+    "nbref": 279,
+    "otype": "**",
     "ra": 113.64947163976585,
     "dec": 31.88828221646326,
-    "otype": "**",
-    "otype_desc": "Double or Multiple Star",
-    "sp_type": "A1V+A2Vm",
-    "plx_value": 64.12,
-    "plx_err": 3.75,
+    "coo_err_maj": 34.719685,
+    "coo_err_min": 25.946138,
+    "coo_err_angle": 90,
+    "coo_qual": "A",
+    "coo_wavelength": "O",
+    "coo_bibcode": "2007A&A...474..653V",
     "pmra": -191.45,
     "pmdec": -145.19,
+    "pm_err_maj": 3.95,
+    "pm_err_min": 2.95,
+    "pm_err_angle": 0,
+    "pm_qual": "A",
+    "pm_bibcode": "2007A&A...474..653V",
+    "plx_value": 64.12,
+    "plx_err": 3.75,
+    "plx_qual": "A",
+    "plx_bibcode": "2007A&A...474..653V",
+    "rvz_type": "v",
     "rvz_radvel": -11.23,
     "rvz_redshift": -3.7458546319313335e-05,
+    "rvz_err": 0.37,
+    "rvz_nature": null,
+    "rvz_qual": "A",
+    "rvz_bibcode": "2023ApJS..266...11B",
+    "vlsr": null,
+    "vlsr_err": null,
+    "vlsr_wavelength": null,
+    "vlsr_bibcode": null,
+    "vlsr_min": null,
+    "vlsr_max": null,
+    "sp_type": "A1V+A2Vm",
+    "sp_qual": "E",
+    "sp_bibcode": null,
+    "morph_type": null,
+    "morph_qual": null,
+    "morph_bibcode": null,
     "galdim_majaxis": null,
     "galdim_minaxis": null,
-    "morph_type": null,
-    "nbref": 279,
+    "galdim_angle": null,
+    "galdim_qual": null,
+    "galdim_wavelength": null,
+    "galdim_bibcode": null,
+    "update_date": "2026-08-09",
+    "oid": 983633,
+    "rvz_wavelength": "O",
+    "otype_desc": "Double or Multiple Star",
     "identifiers": [
       "TIC 239187687",
       "GJ 278.0",
@@ -138,6 +173,233 @@
         "err": null
       }
     },
+    "coordinates": {
+      "frame": "ICRS",
+      "epoch": "J2000",
+      "ra_deg": 113.64947163976585,
+      "dec_deg": 31.88828221646326,
+      "ra_hms": "07 34 35.873",
+      "dec_dms": "+31 53 17.82",
+      "gal_l": 187.44099,
+      "gal_b": 22.47927,
+      "err_maj_mas": 34.719685,
+      "err_min_mas": 25.946138,
+      "err_angle_deg": 90,
+      "quality": "A",
+      "wavelength": "O",
+      "bibcode": "2007A&A...474..653V"
+    },
+    "hierarchy": {
+      "parents": [],
+      "children": [
+        {
+          "main_id": "* alf Gem B",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": null,
+          "bibcode": "2001AJ....122.3466M"
+        },
+        {
+          "main_id": "* alf Gem A",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": null,
+          "bibcode": "2001AJ....122.3466M"
+        }
+      ]
+    },
+    "measurements": {
+      "mesFe_h": [
+        {
+          "teff": 9031,
+          "log_g": 3.9385,
+          "fe_h": 0.1921,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2023ApJS..266...11B"
+        },
+        {
+          "teff": 9900,
+          "log_g": 4,
+          "fe_h": 0.1,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2016A&A...589A..83G"
+        }
+      ],
+      "mesHerschel": [
+        {
+          "alpha": "07 34 35.87",
+          "delta": "+31 53 17.8",
+          "obsid": "1342196015"
+        },
+        {
+          "alpha": "07 34 35.87",
+          "delta": "+31 53 17.8",
+          "obsid": "1342196014"
+        }
+      ],
+      "mesOtype": [
+        {
+          "otype": "*",
+          "comments": "from id * alf Gem",
+          "bibcode": null
+        },
+        {
+          "otype": "**",
+          "comments": "from id CCDM J07346+3153AB",
+          "bibcode": null
+        },
+        {
+          "otype": "IR",
+          "comments": "from id IRAS 07314+3159",
+          "bibcode": null
+        },
+        {
+          "otype": "NIR",
+          "comments": "from id 2MASS J07343598+3153184",
+          "bibcode": null
+        },
+        {
+          "otype": "PM*",
+          "comments": "from basic data",
+          "bibcode": null
+        },
+        {
+          "otype": "UV",
+          "comments": "from id TD1 10405",
+          "bibcode": null
+        },
+        {
+          "otype": "V*",
+          "comments": "from bibcode",
+          "bibcode": "2012ApJ...756...27L"
+        },
+        {
+          "otype": "X",
+          "comments": "from id 2XMM J073435.6+315318",
+          "bibcode": null
+        }
+      ],
+      "mesPLX": [
+        {
+          "bibcode": "2007A&A...474..653V",
+          "obscode": null,
+          "plx": 64.12,
+          "plx_err": 3.75
+        },
+        {
+          "bibcode": "1997A&A...323L..49P",
+          "obscode": null,
+          "plx": 63.27,
+          "plx_err": 1.23
+        },
+        {
+          "bibcode": "1995GCTP..C......0V",
+          "obscode": null,
+          "plx": 74.7,
+          "plx_err": 2.5
+        }
+      ],
+      "mesPM": [
+        {
+          "bibcode": "1933GCCat.C......0B",
+          "coosystem": "FK4",
+          "pmde": -110,
+          "pmde_err": null,
+          "pmra": -165,
+          "pmra_err": null
+        },
+        {
+          "bibcode": "1971IAUCo...7..153L",
+          "coosystem": "FK4",
+          "pmde": -155,
+          "pmde_err": 12,
+          "pmra": -181,
+          "pmra_err": 14
+        },
+        {
+          "bibcode": "1997A&A...323L..49P",
+          "coosystem": "ICRS",
+          "pmde": -148.18,
+          "pmde_err": 1.47,
+          "pmra": -206.33,
+          "pmra_err": 1.6
+        },
+        {
+          "bibcode": "2007A&A...474..653V",
+          "coosystem": "ICRS",
+          "pmde": -145.19,
+          "pmde_err": 2.95,
+          "pmra": -191.45,
+          "pmra_err": 3.95
+        }
+      ],
+      "mesRot": [
+        {
+          "bibcode": "2016A&A...589A..83G",
+          "nbmes": null,
+          "qual": null,
+          "upvsini": null,
+          "vsini": 20,
+          "vsini_err": null
+        },
+        {
+          "bibcode": "2023ApJS..266...11B",
+          "nbmes": null,
+          "qual": null,
+          "upvsini": null,
+          "vsini": 18.43,
+          "vsini_err": 0.83
+        }
+      ],
+      "mesSpT": [
+        {
+          "bibcode": "2003AJ....126.2048G",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "A1.5 IV+                            "
+        }
+      ],
+      "mesVelocities": [
+        {
+          "bibcode": "2023ApJS..266...11B",
+          "d": null,
+          "meanerror": 0.37,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": -11.23,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2006AstL...32..759G",
+          "d": null,
+          "meanerror": 0.5,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "V  ",
+          "velvalue": 5.4,
+          "wdomain": "O   "
+        }
+      ]
+    },
     "atmosphere_measurements": [
       {
         "teff": 9031,
@@ -178,6 +440,7 @@
     ],
     "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20Gem"
   },
+  "papers_count": 279,
   "wikipedia": {
     "title": "Castor (star)",
     "description": "Sextuple star system in Gemini",
@@ -186,7 +449,8 @@
     "url": "https://en.wikipedia.org/wiki/Castor_(star)",
     "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Gemini_constellation_map.svg/330px-Gemini_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Gemini_constellation_map.svg/330px-Gemini_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "wikidata": "Q13029"
+    "wikidata": "Q13029",
+    "sections_count": 6
   },
   "wikidata": {
     "id": "Q13029",
@@ -385,6 +649,558 @@
         }
       ]
     },
+    "all_claims": {
+      "image": [
+        {
+          "value": "Gemini constellation map.png",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Gemini_constellation_map.png"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "multiple star",
+          "qid": "Q878367",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "near-infrared source",
+          "qid": "Q67206785",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "ultraviolet source",
+          "qid": "Q71798788",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "astrophysical X-ray source",
+          "qid": "Q2154519",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "infrared source",
+          "qid": "Q67206691",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "binary star",
+          "qid": "Q50053",
+          "type": "wikibase-item"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Gemini",
+          "qid": "Q8923",
+          "type": "wikibase-item"
+        }
+      ],
+      "named after": [
+        {
+          "value": "Castor",
+          "qid": "Q11294144",
+          "type": "wikibase-item"
+        }
+      ],
+      "VIAF cluster ID": [
+        {
+          "value": "7831163464619405680006",
+          "type": "external-id",
+          "url": "https://viaf.org/en/viaf/7831163464619405680006"
+        }
+      ],
+      "spectral class": [
+        {
+          "value": "A1.5 IV+",
+          "type": "string"
+        }
+      ],
+      "Commons category": [
+        {
+          "value": "Castor (star)",
+          "type": "string"
+        }
+      ],
+      "has part(s)": [
+        {
+          "value": "Castor A",
+          "qid": "Q12069682",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Castor B",
+          "qid": "Q12069681",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "YY Geminorum",
+          "qid": "Q89177075",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "BD+32 1580",
+          "qid": "Q89177212",
+          "type": "wikibase-item"
+        }
+      ],
+      "catalog code": [
+        {
+          "value": "2MASS J07343598+3153184",
+          "type": "string"
+        },
+        {
+          "value": "HIP 36850",
+          "type": "string"
+        },
+        {
+          "value": "IRAS 07314+3159",
+          "type": "string"
+        },
+        {
+          "value": "SAO 60198",
+          "type": "string"
+        },
+        {
+          "value": "GJ 278.0",
+          "type": "string"
+        },
+        {
+          "value": "α Gem",
+          "type": "string"
+        },
+        {
+          "value": "PLX 1785",
+          "type": "string"
+        },
+        {
+          "value": "CCDM J07346+3153AB",
+          "type": "string"
+        },
+        {
+          "value": "ADS 6175 AB",
+          "type": "string"
+        },
+        {
+          "value": "FK5 287",
+          "type": "string"
+        },
+        {
+          "value": "HIC 36850",
+          "type": "string"
+        },
+        {
+          "value": "IRC +30188",
+          "type": "string"
+        },
+        {
+          "value": "LTT 12038",
+          "type": "string"
+        },
+        {
+          "value": "NLTT 18087",
+          "type": "string"
+        },
+        {
+          "value": "PLX 1785.00",
+          "type": "string"
+        },
+        {
+          "value": "PMC 90-93 208",
+          "type": "string"
+        },
+        {
+          "value": "PPM 72938",
+          "type": "string"
+        },
+        {
+          "value": "RAFGL 1144",
+          "type": "string"
+        },
+        {
+          "value": "SRS 30287",
+          "type": "string"
+        },
+        {
+          "value": "TD1 10405",
+          "type": "string"
+        },
+        {
+          "value": "UBV 7277",
+          "type": "string"
+        },
+        {
+          "value": "WDS J07346+3153AB",
+          "type": "string"
+        },
+        {
+          "value": "AG+31 789",
+          "type": "string"
+        },
+        {
+          "value": "BD+32 1581",
+          "type": "string"
+        },
+        {
+          "value": "66 Gem",
+          "type": "string"
+        },
+        {
+          "value": "TIC 239187687",
+          "type": "string"
+        },
+        {
+          "value": "GC 10120",
+          "type": "string"
+        }
+      ],
+      "Freebase ID": [
+        {
+          "value": "/m/01khk6",
+          "type": "external-id",
+          "url": "https://www.google.com/search?kgmid=/m/01khk6"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 1.58,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 1.62,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 1.51,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 1.52,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 1.53,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 1.52,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 1.52,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 1.68,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 1.51,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 2.66,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 1.64,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "Gran Enciclopèdia Catalana ID (former scheme)": [
+        {
+          "value": "0016325",
+          "type": "external-id",
+          "url": "https://www.enciclopedia.cat/ec-gec-0016325.xml"
+        }
+      ],
+      "depicted by": [
+        {
+          "value": "Birth of the Federation",
+          "qid": "Q1474668",
+          "type": "wikibase-item"
+        }
+      ],
+      "described by source": [
+        {
+          "value": "Brockhaus and Efron Encyclopedic Dictionary",
+          "qid": "Q602358",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Armenian Soviet Encyclopedia, vol. 5",
+          "qid": "Q124737632",
+          "type": "wikibase-item"
+        }
+      ],
+      "Encyclopædia Britannica Online ID": [
+        {
+          "value": "place/Castor-star",
+          "type": "external-id",
+          "url": "https://www.britannica.com/place/Castor-star"
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": 1.332,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 3014.0,
+          "unit": "L☉",
+          "type": "quantity"
+        }
+      ],
+      "mass": [
+        {
+          "value": 2.151,
+          "unit": "M☉",
+          "type": "quantity"
+        }
+      ],
+      "radius": [
+        {
+          "value": 2.31,
+          "unit": "R☉",
+          "type": "quantity"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 64.12,
+          "unit": "mas",
+          "plus": 3.75,
+          "minus": 3.750000000000007,
+          "type": "quantity"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 5.4,
+          "unit": "km/s",
+          "plus": 0.5,
+          "minus": 0.5,
+          "type": "quantity"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.1,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 49.8,
+          "unit": "ly",
+          "type": "quantity"
+        }
+      ],
+      "Great Russian Encyclopedia Online ID (2017)": [
+        {
+          "value": "2051226",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/0/old.bigenc.ru/text/2051226"
+        }
+      ],
+      "SIMBAD ID": [
+        {
+          "value": "* alf Gem",
+          "type": "external-id",
+          "url": "https://simbad.u-strasbg.fr/simbad/sim-id?Ident=%2A%20alf%20Gem"
+        }
+      ],
+      "stellar rotational velocity": [
+        {
+          "value": 20.0,
+          "unit": "km/s",
+          "type": "quantity"
+        }
+      ],
+      "Great Norwegian Encyclopedia ID": [
+        {
+          "value": "Castor",
+          "type": "external-id",
+          "url": "https://wikidata-externalid-url.toolforge.org/?p=4342&url_prefix=https://snl.no/&id=Castor"
+        }
+      ],
+      "Interlingual Index ID": [
+        {
+          "value": "i85173",
+          "type": "external-id",
+          "url": "https://globalwordnet.github.io/cili/i85173"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 113.64947164,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "declination": [
+        {
+          "value": 31.888282216,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "epoch": [
+        {
+          "value": "J2000.0",
+          "qid": "Q1264450",
+          "type": "wikibase-item"
+        }
+      ],
+      "De Agostini ID": [
+        {
+          "value": "Càstore+(astronomia)",
+          "type": "external-id",
+          "url": "https://www.sapere.it/enciclopedia/C%C3%A0store%2B%28astronomia%29.html"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 9900.0,
+          "unit": "K",
+          "type": "quantity"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 10000.0,
+          "unit": "centimetre per square second",
+          "type": "quantity"
+        }
+      ],
+      "Online PWN Encyclopedia ID": [
+        {
+          "value": "3883562",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/2/https://encyklopedia.pwn.pl/haslo/;3883562.html"
+        }
+      ],
+      "Slovak National Library (VIAF) ID": [
+        {
+          "value": "vtls012308441",
+          "type": "external-id",
+          "url": "https://viaf.org/processed/SKMASNL|vtls012308441"
+        }
+      ],
+      "Lex ID": [
+        {
+          "value": "Castor",
+          "type": "external-id",
+          "url": "https://wikidata-externalid-url.toolforge.org/?p=8313&url_prefix=https://lex.dk/&id=Castor"
+        }
+      ],
+      "KBpedia ID": [
+        {
+          "value": "Castor-Star",
+          "type": "external-id",
+          "url": "https://kbpedia.org/knowledge-graph/reference-concept/?uri=Castor-Star"
+        }
+      ],
+      "WordNet 3.1 Synset ID": [
+        {
+          "value": "09260655-n",
+          "type": "external-id",
+          "url": "https://en-word.net/view/synset/09260655-n"
+        }
+      ],
+      "SNK ID": [
+        {
+          "value": "208752",
+          "type": "external-id",
+          "url": "https://autority.snk.sk/vufind/AuthorityRecord/208752"
+        }
+      ],
+      "declination component of proper motion": [
+        {
+          "value": -145.19,
+          "unit": "mas/yr",
+          "plus": 2.9499999999999886,
+          "minus": 2.9499999999999886,
+          "type": "quantity"
+        }
+      ],
+      "right ascension component of proper motion": [
+        {
+          "value": -191.45,
+          "unit": "mas/yr",
+          "plus": 3.9499999999999886,
+          "minus": 3.950000000000017,
+          "type": "quantity"
+        }
+      ],
+      "Gran Enciclopèdia Catalana ID": [
+        {
+          "value": "castor-1",
+          "type": "external-id",
+          "url": "https://www.enciclopedia.cat/gran-enciclopedia-catalana/castor-1"
+        }
+      ]
+    },
+    "property_ids": {
+      "image": "P18",
+      "instance of": "P31",
+      "constellation": "P59",
+      "named after": "P138",
+      "VIAF cluster ID": "P214",
+      "spectral class": "P215",
+      "Commons category": "P373",
+      "has part(s)": "P527",
+      "catalog code": "P528",
+      "Freebase ID": "P646",
+      "apparent magnitude": "P1215",
+      "Gran Enciclopèdia Catalana ID (former scheme)": "P1296",
+      "depicted by": "P1299",
+      "described by source": "P1343",
+      "Encyclopædia Britannica Online ID": "P1417",
+      "absolute magnitude": "P1457",
+      "luminosity": "P2060",
+      "mass": "P2067",
+      "radius": "P2120",
+      "parallax": "P2214",
+      "radial velocity": "P2216",
+      "metallicity": "P2227",
+      "distance from Earth": "P2583",
+      "Great Russian Encyclopedia Online ID (2017)": "P2924",
+      "SIMBAD ID": "P3083",
+      "stellar rotational velocity": "P4296",
+      "Great Norwegian Encyclopedia ID": "P4342",
+      "Interlingual Index ID": "P5063",
+      "right ascension": "P6257",
+      "declination": "P6258",
+      "epoch": "P6259",
+      "De Agostini ID": "P6706",
+      "effective temperature": "P6879",
+      "surface gravity": "P7015",
+      "Online PWN Encyclopedia ID": "P7305",
+      "Slovak National Library (VIAF) ID": "P7700",
+      "Lex ID": "P8313",
+      "KBpedia ID": "P8408",
+      "WordNet 3.1 Synset ID": "P8814",
+      "SNK ID": "P9807",
+      "declination component of proper motion": "P10751",
+      "right ascension component of proper motion": "P10752",
+      "Gran Enciclopèdia Catalana ID": "P12385"
+    },
     "commons_image": "Gemini constellation map.png",
     "url": "https://www.wikidata.org/wiki/Q13029"
   },
@@ -412,6 +1228,11 @@
       "unit": "L☉"
     },
     "constellation": "Gemini",
+    "abs_mag": 0.61,
+    "spectral_class": "A",
+    "luminosity_class": "V",
+    "gal_l": 187.44099,
+    "gal_b": 22.47927,
     "description": "Sextuple star system in Gemini"
   },
   "id": "castor",

@@ -444,6 +444,16 @@
         if (ev.type === "end") S.brushing = false;
         if (ev.selection) {
           const [[x0, y0], [x1, y1]] = ev.selection;
+          // A real click usually moves a pixel or two; treat a tiny "brush" as a click.
+          if (x1 - x0 < 6 && y1 - y0 < 6) {
+            if (ev.type === "end") {
+              bg.call(brush.move, null);
+              const p = nearest(ev.sourceEvent);
+              if (p) open(p);
+              else if (S.selection) setSelection(null, chart.id);
+            }
+            return;
+          }
           const set = new Set(valid.filter((p) => p.px >= x0 && p.px <= x1 && p.py >= y0 && p.py <= y1).map((p) => p.key));
           setSelection(set, chart.id);
         } else if (ev.type === "end") {
@@ -549,8 +559,9 @@
       .fitExtent([[0, 0], [w, h]], { type: "Sphere" });
     const path = d3.geoPath(proj);
     const svg = makeSvg(plot, W, H, "All-sky map");
+    // sphere fill sits in its own layer so the brush (first child of g) stays visible above it
+    svg.append("path").attr("class", "mo-sphere").attr("transform", "translate(" + m.l + "," + m.t + ")").attr("d", path({ type: "Sphere" }));
     const g = svg.append("g").attr("transform", "translate(" + m.l + "," + m.t + ")");
-    g.append("path").attr("class", "mo-sphere").attr("d", path({ type: "Sphere" }));
     g.append("path").attr("class", "mo-graticule").attr("d", path(d3.geoGraticule().step([30, 30])()));
     // constellation boundaries
     const visibleCons = new Set(S.view.objects.map((o) => o.constellation).filter(Boolean).map((n) => n.toLowerCase()));
@@ -577,7 +588,7 @@
     });
     g.append("path").attr("class", "mo-equator").attr("d", path({ type: "LineString", coordinates: eq }));
     g.append("path").attr("class", "mo-ecliptic").attr("d", path({ type: "LineString", coordinates: ecl }));
-    const pEq = proj(lonlat(150, 0)), pEc = proj(lonlat(150, 12.5));
+    const pEq = proj(lonlat(232, 0)), pEc = proj(ecl[121]);
     if (pEq) g.append("text").attr("class", "mo-ref-label").attr("x", pEq[0]).attr("y", pEq[1] - 4).attr("text-anchor", "middle").text("equator");
     if (pEc && w > 420) g.append("text").attr("class", "mo-ref-label").attr("x", pEc[0]).attr("y", pEc[1] - 5).attr("text-anchor", "middle").text("ecliptic");
     // RA hour labels along the equator, Dec labels along the central meridian
@@ -593,7 +604,7 @@
       if (p) ticks.append("text").attr("x", p[0] + 4).attr("y", p[1] - 3).text((dd > 0 ? "+" : "−") + Math.abs(dd) + "°");
     });
     // constellation names for constellations with objects in view
-    if (SK) {
+    if (SK && w >= 520) {
       const cl = g.append("g").attr("class", "mo-cons-names");
       Object.keys(SK.byAbbr).forEach((k) => {
         const c = SK.byAbbr[k];
@@ -607,7 +618,7 @@
     const placed = S.view.objects.filter((o) => o.ra !== null && o.dec !== null);
     const pts = placed.map((o) => {
       const p = proj(lonlat(o.ra, o.dec));
-      return { o, key: o.path, px: p ? p[0] : NaN, py: p ? p[1] : NaN, r: o.category === "constellations" ? 5 : o.v !== null ? rScale(o.v) : 3 };
+      return { o, key: o.path, px: p ? p[0] : NaN, py: p ? p[1] : NaN, r: o.category === "constellations" ? 7 : o.v !== null ? rScale(o.v) : 3 };
     }).sort((a, b) => b.r - a.r);
     const unplaced = S.view.objects.length - placed.length;
     if (unplaced > 0) chart.foot.textContent = (chart.foot.textContent ? chart.foot.textContent + " " : "") + unplaced + " object" + (unplaced > 1 ? "s" : "") + " without a position (satellites) not shown.";
@@ -624,7 +635,7 @@
     const cands = pts.filter((p) => p.o.category === "planets" || p.o.category === "constellations")
       .concat(pts.filter((p) => p.o.category === "stars" && p.o.v !== null).sort((a, b) => a.o.v - b.o.v))
       .map((p) => ({ x: p.px, y: p.py, r: p.r, text: p.o.name }));
-    placeLabels(lab, cands.filter((c) => Number.isFinite(c.x)), w, h, w < 520 ? 5 : 12);
+    placeLabels(lab, cands.filter((c) => Number.isFinite(c.x)), w, h, w < 400 ? 4 : w < 620 ? 6 : 12);
     interact(chart, svg, g, pts, { tip: (p) => objTip(p.o), brush: [[0, 0], [w, h]], radius: 14 });
     chart.applySelection = (sel) => { [stars, planets, cons].forEach((s) => styleMarks(sel, s, (p) => p.key)); };
   }
@@ -651,6 +662,7 @@
     const labs = g.append("g");
     const mAt = (M, ly) => M + 5 * Math.log10(ly / 3.26156) - 5;
     const [d0, d1] = x.domain(), [y0, y1] = y.domain();
+    let lastBottom = -Infinity;
     for (let M = -10; M <= 14; M += 2) {
       const a = mAt(M, d0), b = mAt(M, d1);
       if (b < y0 || a > y1) continue;
@@ -659,7 +671,7 @@
       if (b >= y0 && b <= y1) labs.append("text").attr("class", "mo-ref-label").attr("x", w + 4).attr("y", y(b) + 3).text(label);
       else { // exits through the bottom edge (faint): label where it crosses y1
         const ly = 3.26156 * Math.pow(10, (y1 - M + 5) / 5);
-        if (ly > d0 && ly < d1 && x(ly) < w - 30) labs.append("text").attr("class", "mo-ref-label").attr("x", x(ly) + 3).attr("y", h - 4).text(label);
+        if (ly > d0 && ly < d1 && x(ly) < w - 30 && x(ly) - lastBottom > 40 && (lastBottom = x(ly))) labs.append("text").attr("class", "mo-ref-label").attr("x", x(ly) + 3).attr("y", h - 4).text(label);
       }
     }
     const fmtLy = (d) => (d >= 1000 ? d3.format(",")(d) : String(d));

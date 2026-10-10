@@ -2,17 +2,17 @@
   "name": "Tyc 4885-1567-1",
   "category": "stars",
   "app_type": "K-Star",
-  "harvested": "2026-10-10T16:27:08Z",
+  "harvested": "2026-10-10T17:59:53Z",
   "sources": [
     {
       "name": "SIMBAD (CDS)",
       "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20tau01%20Hya%20B",
-      "retrieved": "2026-10-10T16:27:15Z"
+      "retrieved": "2026-10-10T18:00:18Z"
     },
     {
       "name": "Wikidata",
       "url": "https://www.wikidata.org/wiki/Q66611313",
-      "retrieved": "2026-10-10T16:27:16Z"
+      "retrieved": "2026-10-10T18:00:22Z"
     }
   ],
   "images": {
@@ -30,21 +30,56 @@
   },
   "simbad": {
     "main_id": "* tau01 Hya B",
+    "nbref": 42,
+    "otype": "PM*",
     "ra": 142.28845227882,
     "dec": -2.75079289689,
-    "otype": "PM*",
-    "otype_desc": "High Proper Motion Star",
-    "sp_type": "K0",
-    "plx_value": 55.2676,
-    "plx_err": 0.0249,
+    "coo_err_maj": 0.0246,
+    "coo_err_min": 0.0324,
+    "coo_err_angle": 90,
+    "coo_qual": "A",
+    "coo_wavelength": "O",
+    "coo_bibcode": "2020yCat.1350....0G",
     "pmra": 138.579,
     "pmdec": -17.301,
+    "pm_err_maj": 0.031,
+    "pm_err_min": 0.034,
+    "pm_err_angle": 90,
+    "pm_qual": "A",
+    "pm_bibcode": "2020yCat.1350....0G",
+    "plx_value": 55.2676,
+    "plx_err": 0.0249,
+    "plx_qual": "A",
+    "plx_bibcode": "2020yCat.1350....0G",
+    "rvz_type": "v",
     "rvz_radvel": 11.5,
     "rvz_redshift": 3.836060671580377e-05,
+    "rvz_err": 0.1,
+    "rvz_nature": null,
+    "rvz_qual": "D",
+    "rvz_bibcode": "2004A&A...418..989N",
+    "vlsr": null,
+    "vlsr_err": null,
+    "vlsr_wavelength": null,
+    "vlsr_bibcode": null,
+    "vlsr_min": null,
+    "vlsr_max": null,
+    "sp_type": "K0",
+    "sp_qual": "D",
+    "sp_bibcode": "1985ApJS...59..197B",
+    "morph_type": null,
+    "morph_qual": null,
+    "morph_bibcode": null,
     "galdim_majaxis": null,
     "galdim_minaxis": null,
-    "morph_type": null,
-    "nbref": 42,
+    "galdim_angle": null,
+    "galdim_qual": null,
+    "galdim_wavelength": null,
+    "galdim_bibcode": null,
+    "update_date": "2026-07-24",
+    "oid": 1634077,
+    "rvz_wavelength": null,
+    "otype_desc": "High Proper Motion Star",
     "identifiers": [
       "TIC 77549396",
       "GJ 348 B",
@@ -102,6 +137,163 @@
         "err": null
       }
     },
+    "coordinates": {
+      "frame": "ICRS",
+      "epoch": "J2000",
+      "ra_deg": 142.28845227882,
+      "dec_deg": -2.75079289689,
+      "ra_hms": "09 29 09.229",
+      "dec_dms": "-02 45 02.85",
+      "gal_l": 236.21397,
+      "gal_b": 32.86868,
+      "err_maj_mas": 0.0246,
+      "err_min_mas": 0.0324,
+      "err_angle_deg": 90,
+      "quality": "A",
+      "wavelength": "O",
+      "bibcode": "2020yCat.1350....0G"
+    },
+    "hierarchy": {
+      "parents": [],
+      "children": []
+    },
+    "measurements": {
+      "mesDistance": [
+        {
+          "bibcode": "2018yCat.1345....0G",
+          "dist": 18.0611,
+          "method": "paral   ",
+          "minus_err": -0.0208,
+          "plus_err": 0.0208,
+          "qual": null,
+          "unit": "pc  "
+        },
+        {
+          "bibcode": "2020yCat.1350....0G",
+          "dist": 18.094,
+          "method": "paral   ",
+          "minus_err": -0.0082,
+          "plus_err": 0.0082,
+          "qual": null,
+          "unit": "pc  "
+        }
+      ],
+      "mesFe_h": [
+        {
+          "teff": 5022,
+          "log_g": 4.4818,
+          "fe_h": -0.1696,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2024A&A...681A.107R"
+        }
+      ],
+      "mesOtype": [
+        {
+          "otype": "*",
+          "comments": "from id GJ 348 B",
+          "bibcode": null
+        },
+        {
+          "otype": "**",
+          "comments": "from id **  HJ  1167B",
+          "bibcode": null
+        },
+        {
+          "otype": "NIR",
+          "comments": "from id 2MASS J09290922-0245027",
+          "bibcode": null
+        },
+        {
+          "otype": "PM*",
+          "comments": "from bibcode",
+          "bibcode": "2016A&A...595A...2G"
+        }
+      ],
+      "mesPLX": [
+        {
+          "bibcode": "2020yCat.1350....0G",
+          "obscode": null,
+          "plx": 55.2676,
+          "plx_err": 0.0249
+        },
+        {
+          "bibcode": "2016A&A...595A...2G",
+          "obscode": null,
+          "plx": 54.8,
+          "plx_err": 0.25
+        },
+        {
+          "bibcode": "2018yCat.1345....0G",
+          "obscode": null,
+          "plx": 55.3675,
+          "plx_err": 0.0638
+        }
+      ],
+      "mesPM": [
+        {
+          "bibcode": "2020yCat.1350....0G",
+          "coosystem": "ICRS",
+          "pmde": -17.301,
+          "pmde_err": 0.034,
+          "pmra": 138.579,
+          "pmra_err": 0.031
+        },
+        {
+          "bibcode": "2018yCat.1345....0G",
+          "coosystem": "ICRS",
+          "pmde": -17.371,
+          "pmde_err": 0.092,
+          "pmra": 138.487,
+          "pmra_err": 0.089
+        }
+      ],
+      "mesSpT": [
+        {
+          "bibcode": "1985ApJS...59..197B",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "K0                                  "
+        }
+      ],
+      "mesVelocities": [
+        {
+          "bibcode": "2004A&A...418..989N",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 15,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 11.5,
+          "wdomain": null
+        },
+        {
+          "bibcode": "2018yCat.1345....0G",
+          "d": null,
+          "meanerror": 0.16,
+          "nature": "s",
+          "nbmes": 7,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 11.46,
+          "wdomain": "O   "
+        }
+      ]
+    },
     "atmosphere_measurements": [
       {
         "teff": 5022,
@@ -138,6 +330,7 @@
     ],
     "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20tau01%20Hya%20B"
   },
+  "papers_count": 42,
   "wikidata": {
     "id": "Q66611313",
     "facts": {
@@ -249,6 +442,275 @@
         }
       ]
     },
+    "all_claims": {
+      "instance of": [
+        {
+          "value": "high proper-motion star",
+          "qid": "Q2247863",
+          "type": "wikibase-item"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Hydra",
+          "qid": "Q10578",
+          "type": "wikibase-item"
+        }
+      ],
+      "spectral class": [
+        {
+          "value": "K0",
+          "type": "string"
+        }
+      ],
+      "part of": [
+        {
+          "value": "Tau1 Hydrae",
+          "qid": "Q3232684",
+          "type": "wikibase-item"
+        }
+      ],
+      "catalog code": [
+        {
+          "value": "CCDM J09291-0246B",
+          "type": "string"
+        },
+        {
+          "value": "GJ 348 B",
+          "type": "string"
+        },
+        {
+          "value": "GSC 04885-01567",
+          "type": "string"
+        },
+        {
+          "value": "HD 81997B",
+          "type": "string"
+        },
+        {
+          "value": "IDS 09240-0220 B",
+          "type": "string"
+        },
+        {
+          "value": "2MASS J09290922-0245027",
+          "type": "string"
+        },
+        {
+          "value": "PPM 177881",
+          "type": "string"
+        },
+        {
+          "value": "SAO 136896",
+          "type": "string"
+        },
+        {
+          "value": "UBV 9047",
+          "type": "string"
+        },
+        {
+          "value": "uvby98 100081997 B",
+          "type": "string"
+        },
+        {
+          "value": "WDS J09291-0246B",
+          "type": "string"
+        },
+        {
+          "value": "AG-02 518",
+          "type": "string"
+        },
+        {
+          "value": "BD-02 2902",
+          "type": "string"
+        },
+        {
+          "value": "BDS 5109 B",
+          "type": "string"
+        },
+        {
+          "value": "TYC 4885-1567-1",
+          "type": "string"
+        },
+        {
+          "value": "PMSC 09241-0219B",
+          "type": "string"
+        },
+        {
+          "value": "BD-02 2901B",
+          "type": "string"
+        },
+        {
+          "value": "Gaia DR1 3837746380705638656",
+          "type": "string"
+        },
+        {
+          "value": "Gaia DR2 3837746380705638656",
+          "type": "string"
+        },
+        {
+          "value": "HJ 1167B",
+          "type": "string"
+        },
+        {
+          "value": "GEN# +1.20081997",
+          "type": "string"
+        },
+        {
+          "value": "GEN# +1.00081997B",
+          "type": "string"
+        },
+        {
+          "value": "GEN# -0.00202902",
+          "type": "string"
+        },
+        {
+          "value": "GC 13081",
+          "type": "string"
+        },
+        {
+          "value": "TIC 77549396",
+          "type": "string"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 7.15,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 6.935,
+          "unit": "",
+          "plus": 0.001300000000000523,
+          "minus": 0.0012999999999996348,
+          "type": "quantity"
+        },
+        {
+          "value": 5.694,
+          "unit": "",
+          "plus": 0.028999999999999915,
+          "minus": 0.028999999999999915,
+          "type": "quantity"
+        },
+        {
+          "value": 5.303,
+          "unit": "",
+          "plus": 0.04900000000000038,
+          "minus": 0.04900000000000038,
+          "type": "quantity"
+        },
+        {
+          "value": 5.137,
+          "unit": "",
+          "plus": 0.023000000000000576,
+          "minus": 0.022999999999999687,
+          "type": "quantity"
+        },
+        {
+          "value": 8.02,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 55.3675,
+          "unit": "mas",
+          "plus": 0.06380000000000052,
+          "minus": 0.06380000000000052,
+          "type": "quantity"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 11.46,
+          "unit": "km/s",
+          "plus": 0.15999999999999837,
+          "minus": 0.16000000000000014,
+          "type": "quantity"
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 18.0611,
+          "unit": "pc",
+          "plus": 0.020800000000001262,
+          "minus": 0.020800000000001262,
+          "type": "quantity"
+        }
+      ],
+      "SIMBAD ID": [
+        {
+          "value": "* tau01 Hya B",
+          "type": "external-id",
+          "url": "https://simbad.u-strasbg.fr/simbad/sim-id?Ident=%2A%20tau01%20Hya%20B"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 142.2884526654373,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "declination": [
+        {
+          "value": -2.7507926833886,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "epoch": [
+        {
+          "value": "J2000.0",
+          "qid": "Q1264450",
+          "type": "wikibase-item"
+        }
+      ],
+      "declination component of proper motion": [
+        {
+          "value": -17.371,
+          "unit": "mas/yr",
+          "plus": 0.09199999999999875,
+          "minus": 0.0920000000000023,
+          "type": "quantity"
+        }
+      ],
+      "right ascension component of proper motion": [
+        {
+          "value": 138.487,
+          "unit": "mas/yr",
+          "plus": 0.08899999999999864,
+          "minus": 0.08899999999999864,
+          "type": "quantity"
+        }
+      ],
+      "Gaia ID": [
+        {
+          "value": "3837746380705638656",
+          "type": "external-id",
+          "url": "https://vizier.cds.unistra.fr/viz-bin/VizieR-S?Gaia%20DR3%203837746380705638656"
+        }
+      ]
+    },
+    "property_ids": {
+      "instance of": "P31",
+      "constellation": "P59",
+      "spectral class": "P215",
+      "part of": "P361",
+      "catalog code": "P528",
+      "apparent magnitude": "P1215",
+      "parallax": "P2214",
+      "radial velocity": "P2216",
+      "distance from Earth": "P2583",
+      "SIMBAD ID": "P3083",
+      "right ascension": "P6257",
+      "declination": "P6258",
+      "epoch": "P6259",
+      "declination component of proper motion": "P10751",
+      "right ascension component of proper motion": "P10752",
+      "Gaia ID": "P13228"
+    },
     "commons_image": null,
     "url": "https://www.wikidata.org/wiki/Q66611313"
   },
@@ -263,7 +725,11 @@
     "distance_ly": 59.0,
     "teff_k": 5022,
     "b_minus_v": 0.87,
-    "constellation": "Hydra"
+    "constellation": "Hydra",
+    "abs_mag": 5.86,
+    "spectral_class": "K",
+    "gal_l": 236.21397,
+    "gal_b": 32.86868
   },
   "id": "tyc-4885-1567-1",
   "path": "stars/tyc-4885-1567-1",

@@ -2,22 +2,22 @@
   "name": "Mars",
   "category": "planets",
   "app_type": "Planet",
-  "harvested": "2026-10-10T16:12:12Z",
+  "harvested": "2026-10-10T17:53:06Z",
   "sources": [
     {
       "name": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Mars",
-      "retrieved": "2026-10-10T16:12:13Z"
+      "retrieved": "2026-10-10T17:53:06Z"
     },
     {
       "name": "Wikidata",
       "url": "https://www.wikidata.org/wiki/Q111",
-      "retrieved": "2026-10-10T16:12:14Z"
+      "retrieved": "2026-10-10T17:54:10Z"
     },
     {
       "name": "JPL Horizons",
       "url": "https://ssd.jpl.nasa.gov/horizons/app.html",
-      "retrieved": "2026-10-10T16:12:14Z"
+      "retrieved": "2026-10-10T17:54:10Z"
     }
   ],
   "images": {
@@ -41,7 +41,8 @@
     "url": "https://en.wikipedia.org/wiki/Mars",
     "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png/330px-Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "wikidata": "Q111"
+    "wikidata": "Q111",
+    "sections_count": 37
   },
   "wikidata": {
     "id": "Q111",
@@ -257,6 +258,1820 @@
           "unit": ""
         }
       ]
+    },
+    "all_claims": {
+      "video": [
+        {
+          "value": "Mars.ogv",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Mars.ogv"
+        }
+      ],
+      "image": [
+        {
+          "value": "Mars - August 30 2021 - Flickr - Kevin M. Gill.png",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Mars_-_August_30_2021_-_Flickr_-_Kevin_M._Gill.png"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "inner planet of the Solar System",
+          "qid": "Q3504248",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "superior planet",
+          "qid": "Q844911",
+          "type": "wikibase-item"
+        }
+      ],
+      "named after": [
+        {
+          "value": "Mars",
+          "qid": "Q112",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Ares",
+          "qid": "Q40901",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "fire",
+          "qid": "Q3196",
+          "type": "wikibase-item"
+        }
+      ],
+      "flag": [
+        {
+          "value": "flag of Mars",
+          "qid": "Q950546",
+          "type": "wikibase-item"
+        }
+      ],
+      "VIAF cluster ID": [
+        {
+          "value": "316741886",
+          "type": "external-id",
+          "url": "https://viaf.org/en/viaf/316741886"
+        }
+      ],
+      "GND ID": [
+        {
+          "value": "4037687-4",
+          "type": "external-id",
+          "url": "https://d-nb.info/gnd/4037687-4"
+        }
+      ],
+      "Library of Congress Authorities ID": [
+        {
+          "value": "sh85081548",
+          "type": "external-id",
+          "url": "https://id.loc.gov/authorities/sh85081548"
+        }
+      ],
+      "Bibliothèque nationale de France ID": [
+        {
+          "value": "120752119",
+          "type": "external-id",
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb120752119"
+        }
+      ],
+      "IdRef ID": [
+        {
+          "value": "029043387",
+          "type": "external-id",
+          "url": "https://www.idref.fr/029043387"
+        }
+      ],
+      "location": [
+        {
+          "value": "inner Solar System",
+          "qid": "Q7879772",
+          "type": "wikibase-item"
+        }
+      ],
+      "NDL Authority ID": [
+        {
+          "value": "00565094",
+          "type": "external-id",
+          "url": "https://id.ndl.go.jp/auth/ndlna/00565094"
+        }
+      ],
+      "part of": [
+        {
+          "value": "inner Solar System",
+          "qid": "Q7879772",
+          "type": "wikibase-item"
+        }
+      ],
+      "has use": [
+        {
+          "value": "colonization of Mars",
+          "qid": "Q838950",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "terraforming of Mars",
+          "qid": "Q3063232",
+          "type": "wikibase-item"
+        }
+      ],
+      "astronomic symbol image": [
+        {
+          "value": "Mars symbol (fixed width).svg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Mars_symbol_(fixed_width).svg"
+        }
+      ],
+      "Commons category": [
+        {
+          "value": "Mars (planet)",
+          "type": "string"
+        }
+      ],
+      "parent astronomical body": [
+        {
+          "value": "Sun",
+          "qid": "Q525",
+          "type": "wikibase-item"
+        }
+      ],
+      "child astronomical body": [
+        {
+          "value": "Phobos",
+          "qid": "Q7547",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Deimos",
+          "qid": "Q7548",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Mars Reconnaissance Orbiter",
+          "qid": "Q183160",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Mariner 9",
+          "qid": "Q203801",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Mars Express",
+          "qid": "Q205672",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Mars Global Surveyor",
+          "qid": "Q206300",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "2001 Mars Odyssey",
+          "qid": "Q207164",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Viking 1",
+          "qid": "Q210199",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Viking 2",
+          "qid": "Q212131",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Mars 2",
+          "qid": "Q247305",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "MAVEN",
+          "qid": "Q327075",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Mars 3",
+          "qid": "Q718908",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Mars 5",
+          "qid": "Q1065662",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "ExoMars Trace Gas Orbiter",
+          "qid": "Q2090722",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Phobos 2",
+          "qid": "Q2147975",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Mars Orbiter Mission",
+          "qid": "Q2156739",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Viking 1 Orbiter",
+          "qid": "Q4011610",
+          "type": "wikibase-item"
+        }
+      ],
+      "pronunciation audio": [
+        {
+          "value": "En-us-Mars.ogg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:En-us-Mars.ogg"
+        },
+        {
+          "value": "It-Marte.ogg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:It-Marte.ogg"
+        },
+        {
+          "value": "LL-Q9027 (swe)-Moonhouse-Mars.wav",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:LL-Q9027_(swe)-Moonhouse-Mars.wav"
+        },
+        {
+          "value": "De-Mars2.ogg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:De-Mars2.ogg"
+        }
+      ],
+      "MeSH descriptor ID": [
+        {
+          "value": "D018535",
+          "type": "external-id",
+          "url": "https://meshb.nlm.nih.gov/record/ui?ui=D018535"
+        }
+      ],
+      "Unicode character": [
+        {
+          "value": "♂",
+          "type": "string"
+        }
+      ],
+      "BNCF Thesaurus ID": [
+        {
+          "value": "48527",
+          "type": "external-id",
+          "url": "https://thes.bncf.firenze.sbn.it/termine.php?id=48527"
+        }
+      ],
+      "has part(s)": [
+        {
+          "value": "atmosphere of Mars",
+          "qid": "Q218860",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Martian polar ice caps",
+          "qid": "Q3508956",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "water on Mars",
+          "qid": "Q1985733",
+          "type": "wikibase-item"
+        }
+      ],
+      "inception": [
+        {
+          "value": "-4540000000",
+          "type": "time"
+        }
+      ],
+      "highest point": [
+        {
+          "value": "Olympus Mons",
+          "qid": "Q520",
+          "type": "wikibase-item"
+        }
+      ],
+      "Freebase ID": [
+        {
+          "value": "/m/09cws",
+          "type": "external-id",
+          "url": "https://www.google.com/search?kgmid=/m/09cws"
+        }
+      ],
+      "MeSH tree code": [
+        {
+          "value": "G01.060.075.730.700.625",
+          "type": "external-id",
+          "url": "https://id.nlm.nih.gov/mesh/G01.060.075.730.700.625"
+        }
+      ],
+      "NL CR AUT ID": [
+        {
+          "value": "ph117831",
+          "type": "external-id",
+          "url": "https://aleph.nkp.cz/F/?func=find-c&local_base=aut&ccl_term=ica=ph117831"
+        }
+      ],
+      "IPA transcription": [
+        {
+          "value": "maʁs",
+          "type": "string"
+        }
+      ],
+      "topic's main category": [
+        {
+          "value": "Category:Mars",
+          "qid": "Q6585347",
+          "type": "wikibase-item"
+        }
+      ],
+      "notation": [
+        {
+          "value": "Mars symbol",
+          "qid": "Q498282",
+          "type": "wikibase-item"
+        }
+      ],
+      "Commons gallery": [
+        {
+          "value": "Mars",
+          "type": "string"
+        }
+      ],
+      "page banner": [
+        {
+          "value": "Mars Panorama banner.jpg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Mars_Panorama_banner.jpg"
+        }
+      ],
+      "National Library of Israel ID (old)": [
+        {
+          "value": "000711940",
+          "type": "external-id",
+          "url": "http://olduli.nli.org.il/F/?func=direct&local_base=nlx10&doc_number=000711940"
+        }
+      ],
+      "National Library of Spain SpMaBN ID": [
+        {
+          "value": "XX455441",
+          "type": "external-id",
+          "url": "https://datos.bne.es/resource/XX455441"
+        }
+      ],
+      "Dewey Decimal Classification": [
+        {
+          "value": "523.44",
+          "type": "external-id"
+        },
+        {
+          "value": "133.535",
+          "type": "external-id"
+        },
+        {
+          "value": "2--9923",
+          "type": "external-id"
+        }
+      ],
+      "PSH ID": [
+        {
+          "value": "492",
+          "type": "external-id",
+          "url": "https://psh.techlib.cz/skos/PSH492"
+        }
+      ],
+      "orbital eccentricity": [
+        {
+          "value": 0.0933941,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 0.0935,
+          "unit": "",
+          "plus": 0.00010000000000000286,
+          "minus": 0.00010000000000000286,
+          "type": "quantity"
+        }
+      ],
+      "flattening": [
+        {
+          "value": 0.00589,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "topic's main Wikimedia portal": [
+        {
+          "value": "Portal:Mars",
+          "qid": "Q14615881",
+          "type": "wikibase-item"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": -2.94,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 1.86,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "U.S. National Archives Identifier": [
+        {
+          "value": "10046638",
+          "type": "external-id",
+          "url": "https://catalog.archives.gov/id/10046638"
+        }
+      ],
+      "OmegaWiki Defined Meaning": [
+        {
+          "value": "160405",
+          "type": "external-id",
+          "url": "http://www.omegawiki.org/DefinedMeaning:(160405)"
+        }
+      ],
+      "Iconclass notation": [
+        {
+          "value": "24C13",
+          "type": "external-id",
+          "url": "https://iconclass.org/24C13"
+        }
+      ],
+      "Gran Enciclopèdia Catalana ID (former scheme)": [
+        {
+          "value": "0040593",
+          "type": "external-id",
+          "url": "https://www.enciclopedia.cat/ec-gec-0040593.xml"
+        }
+      ],
+      "described by source": [
+        {
+          "value": "Small Brockhaus and Efron Encyclopedic Dictionary",
+          "qid": "Q19180675",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Brockhaus and Efron Encyclopedic Dictionary",
+          "qid": "Q602358",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Explanatory Dictionary of the Living Great Russian Language",
+          "qid": "Q1970746",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "The Nuttall Encyclopædia",
+          "qid": "Q3181656",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Encyclopædia Britannica 11th edition",
+          "qid": "Q867541",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Great Soviet Encyclopedia (1926–1947)",
+          "qid": "Q20078554",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Meyers Konversations-Lexikon, 4th edition (1885–1890)",
+          "qid": "Q19219752",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Granat Encyclopedic Dictionary",
+          "qid": "Q4532138",
+          "type": "wikibase-item"
+        }
+      ],
+      "Encyclopædia Britannica Online ID": [
+        {
+          "value": "place/Mars-planet",
+          "type": "external-id",
+          "url": "https://www.britannica.com/place/Mars-planet"
+        }
+      ],
+      "topic has template": [
+        {
+          "value": "Template:GeoTemplate/mars",
+          "qid": "Q14334115",
+          "type": "wikibase-item"
+        }
+      ],
+      "nickname": [
+        {
+          "value": "Red Planet",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "Czerwona planeta",
+          "type": "monolingualtext"
+        }
+      ],
+      "Stack Exchange tag": [
+        {
+          "value": "https://astronomy.stackexchange.com/tags/mars",
+          "type": "url"
+        },
+        {
+          "value": "https://space.stackexchange.com/tags/mars",
+          "type": "url"
+        }
+      ],
+      "demonym": [
+        {
+          "value": "Martian",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "مِرِّيخِيّ",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "Marsjanin",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "Marsano",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "mangal",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "Martien",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "marciano",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "marcià",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "Martienne",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "Marsbewoner",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "Marsman",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "Marsvrouw",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "Marspersoon",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "марсианин",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "марсианка",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "марсиане",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "Marsovec",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "Marsovka",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "Marsovci",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "марсіянін",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "марсіянка",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "марсіяне",
+          "type": "monolingualtext"
+        },
+        {
+          "value": "火星人",
+          "type": "monolingualtext"
+        }
+      ],
+      "has characteristic": [
+        {
+          "value": "orbit of Mars",
+          "qid": "Q3895208",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "life on Mars",
+          "qid": "Q601319",
+          "type": "wikibase-item"
+        }
+      ],
+      "lowest point": [
+        {
+          "value": "Valles Marineris",
+          "qid": "Q621110",
+          "type": "wikibase-item"
+        }
+      ],
+      "BBC Things ID": [
+        {
+          "value": "0a2b4f73-bb34-46aa-8b76-2fe7e4125e51",
+          "type": "external-id",
+          "url": "https://www.bbc.co.uk/things/0a2b4f73-bb34-46aa-8b76-2fe7e4125e51"
+        }
+      ],
+      "Getty Thesaurus of Geographic Names ID": [
+        {
+          "value": "7030644",
+          "type": "external-id",
+          "url": "https://vocab.getty.edu/page/tgn/7030644"
+        }
+      ],
+      "different from": [
+        {
+          "value": "Mars",
+          "qid": "Q426315",
+          "type": "wikibase-item"
+        }
+      ],
+      "orbital inclination": [
+        {
+          "value": 1.84969142,
+          "unit": "°",
+          "type": "quantity"
+        },
+        {
+          "value": 5.65,
+          "unit": "°",
+          "type": "quantity"
+        },
+        {
+          "value": 1.67,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "area": [
+        {
+          "value": 144798500.0,
+          "unit": "km²",
+          "type": "quantity"
+        }
+      ],
+      "density": [
+        {
+          "value": 3.9335,
+          "unit": "g/cm³",
+          "plus": 0.00039999999999995595,
+          "minus": 0.00039999999999995595,
+          "type": "quantity"
+        }
+      ],
+      "mass": [
+        {
+          "value": 6.41691e+23,
+          "unit": "kg",
+          "plus": 2.9999999999972717e+19,
+          "minus": 3.00000000000864e+19,
+          "type": "quantity"
+        }
+      ],
+      "temperature": [
+        {
+          "value": -63.0,
+          "unit": "degree Celsius",
+          "type": "quantity"
+        },
+        {
+          "value": -139.0,
+          "unit": "degree Celsius",
+          "type": "quantity"
+        },
+        {
+          "value": 37.0,
+          "unit": "degree Celsius",
+          "type": "quantity"
+        }
+      ],
+      "radius": [
+        {
+          "value": 3389.5,
+          "unit": "km",
+          "plus": 0.1999999999998181,
+          "minus": 0.1999999999998181,
+          "type": "quantity"
+        },
+        {
+          "value": 3396.19,
+          "unit": "km",
+          "plus": 0.09999999999990905,
+          "minus": 0.09999999999990905,
+          "type": "quantity"
+        },
+        {
+          "value": 3379.2,
+          "unit": "km",
+          "type": "quantity"
+        }
+      ],
+      "orbital period": [
+        {
+          "value": 686.98,
+          "unit": "d",
+          "type": "quantity"
+        }
+      ],
+      "rotation period": [
+        {
+          "value": 24.6229633,
+          "unit": "h",
+          "type": "quantity"
+        }
+      ],
+      "FAST ID": [
+        {
+          "value": "1243063",
+          "type": "external-id",
+          "url": "https://id.worldcat.org/fast/1243063"
+        }
+      ],
+      "history of topic": [
+        {
+          "value": "history of Mars observation",
+          "qid": "Q4204270",
+          "type": "wikibase-item"
+        }
+      ],
+      "longitude of ascending node": [
+        {
+          "value": 49.55953892,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "semi-major axis of an orbit": [
+        {
+          "value": 227936636.0,
+          "unit": "km",
+          "type": "quantity"
+        }
+      ],
+      "volume as quantity": [
+        {
+          "value": 163180000000.0,
+          "unit": "cubic kilometre",
+          "plus": 10000000.0,
+          "minus": 10000000.0,
+          "type": "quantity"
+        }
+      ],
+      "apoapsis": [
+        {
+          "value": 249260000.0,
+          "unit": "km",
+          "type": "quantity"
+        }
+      ],
+      "periapsis": [
+        {
+          "value": 206650000.0,
+          "unit": "km",
+          "type": "quantity"
+        }
+      ],
+      "argument of periapsis": [
+        {
+          "value": 336.05637041,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "mean anomaly": [
+        {
+          "value": 19.412,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "YSO ID": [
+        {
+          "value": "20078",
+          "type": "external-id",
+          "url": "https://www.yso.fi/onto/yso/p20078"
+        }
+      ],
+      "hashtag": [
+        {
+          "value": "Mars",
+          "type": "string"
+        }
+      ],
+      "studied by": [
+        {
+          "value": "geology of Mars",
+          "qid": "Q2466",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "exploration of Mars",
+          "qid": "Q716774",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "areology",
+          "qid": "Q126733835",
+          "type": "wikibase-item"
+        }
+      ],
+      "BabelNet ID": [
+        {
+          "value": "00053536n",
+          "type": "external-id",
+          "url": "https://babelnet.org/synset?id=bn%00053536n&lang=EN"
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 54600000.0,
+          "unit": "km",
+          "type": "quantity"
+        },
+        {
+          "value": 401400000.0,
+          "unit": "km",
+          "type": "quantity"
+        }
+      ],
+      "geography of topic": [
+        {
+          "value": "areography",
+          "qid": "Q128621",
+          "type": "wikibase-item"
+        }
+      ],
+      "sectional view": [
+        {
+          "value": "Mars Internal Structure (2024).svg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Mars_Internal_Structure_(2024).svg"
+        }
+      ],
+      "Great Russian Encyclopedia Online ID (2017)": [
+        {
+          "value": "2188212",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/0/old.bigenc.ru/text/2188212"
+        }
+      ],
+      "NAIF ID": [
+        {
+          "value": "499",
+          "type": "external-id"
+        }
+      ],
+      "The Guardian topic ID": [
+        {
+          "value": "science/mars",
+          "type": "external-id",
+          "url": "https://www.theguardian.com/science/mars"
+        }
+      ],
+      "Visual Novel Database ID": [
+        {
+          "value": "g893",
+          "type": "external-id",
+          "url": "https://vndb.org/g893"
+        }
+      ],
+      "Encyclopædia Universalis ID": [
+        {
+          "value": "mars-planete",
+          "type": "external-id",
+          "url": "https://www.universalis.fr/encyclopedie/mars-planete/"
+        }
+      ],
+      "New York Times topic ID": [
+        {
+          "value": "subject/mars",
+          "type": "external-id",
+          "url": "https://www.nytimes.com/topic/subject/mars"
+        }
+      ],
+      "NE.se ID": [
+        {
+          "value": "mars",
+          "type": "external-id",
+          "url": "https://www.ne.se/uppslagsverk/encyklopedi/lång/mars"
+        }
+      ],
+      "National Library of Greece ID": [
+        {
+          "value": "1347",
+          "type": "external-id",
+          "url": "https://catalogue.nlg.gr/cgi-bin/koha/opac-authoritiesdetail.pl?marc=1&authid=1347"
+        }
+      ],
+      "Quora topic ID": [
+        {
+          "value": "Mars-planet",
+          "type": "external-id",
+          "url": "https://www.quora.com/topic/Mars-planet"
+        }
+      ],
+      "Zhihu topic ID": [
+        {
+          "value": "19551496",
+          "type": "external-id",
+          "url": "https://www.zhihu.com/topic/19551496"
+        }
+      ],
+      "Cultureel Woordenboek ID": [
+        {
+          "value": "natuurkunde-scheikunde-en-sterrenkunde/mars",
+          "type": "external-id",
+          "url": "https://www.cultureelwoordenboek.nl/natuurkunde-scheikunde-en-sterrenkunde/mars"
+        }
+      ],
+      "JSTOR topic ID (archived)": [
+        {
+          "value": "mars",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/*/https://www.jstor.org/topic/mars"
+        }
+      ],
+      "Open Library subject ID": [
+        {
+          "value": "place:mars_(planet)",
+          "type": "external-id",
+          "url": "https://openlibrary.org/subjects/place:mars_%28planet%29"
+        },
+        {
+          "value": "mars_(planet)",
+          "type": "external-id",
+          "url": "https://openlibrary.org/subjects/mars_%28planet%29"
+        }
+      ],
+      "subreddit": [
+        {
+          "value": "Mars",
+          "type": "external-id",
+          "url": "https://www.reddit.com/r/Mars/"
+        }
+      ],
+      "synodic period": [
+        {
+          "value": 779.94,
+          "unit": "d",
+          "type": "quantity"
+        }
+      ],
+      "Great Norwegian Encyclopedia ID": [
+        {
+          "value": "Mars",
+          "type": "external-id",
+          "url": "https://wikidata-externalid-url.toolforge.org/?p=4342&url_prefix=https://snl.no/&id=Mars"
+        }
+      ],
+      "Unified Astronomy Thesaurus ID": [
+        {
+          "value": "1007",
+          "type": "external-id",
+          "url": "https://astrothesaurus.org/uat/1007"
+        }
+      ],
+      "albedo": [
+        {
+          "value": 0.17,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 0.25,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "Encyclopedia of Modern Ukraine ID": [
+        {
+          "value": "63812",
+          "type": "external-id",
+          "url": "https://esu.com.ua/search_articles.php?id=63812"
+        }
+      ],
+      "National Library of Brazil ID": [
+        {
+          "value": "000130668",
+          "type": "external-id",
+          "url": "https://acervo.bn.gov.br/sophia_web/autoridade/detalhe/000130668"
+        }
+      ],
+      "LC and MARC vocabularies ID": [
+        {
+          "value": "geographicAreas/zma",
+          "type": "external-id",
+          "url": "https://id.loc.gov/vocabulary/geographicAreas/zma.html"
+        }
+      ],
+      "Wolfram Language entity code": [
+        {
+          "value": "Entity[\"Planet\", \"Mars\"]",
+          "type": "external-id",
+          "url": "https://www.wolframalpha.com/input/?i=Entity%5B%22Planet%22%2C%20%22Mars%22%5D"
+        }
+      ],
+      "3D model": [
+        {
+          "value": "Mars elevation.stl",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Mars_elevation.stl"
+        }
+      ],
+      "on focus list of Wikimedia project": [
+        {
+          "value": "Wikipedia:List of articles all languages should have",
+          "qid": "Q5460604",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Wikipedia:Vital articles/Level/4",
+          "qid": "Q6173448",
+          "type": "wikibase-item"
+        }
+      ],
+      "Brockhaus Enzyklopädie online ID": [
+        {
+          "value": "mars-astronomie",
+          "type": "external-id",
+          "url": "https://brockhaus.de/ecs/enzy/article/mars-astronomie"
+        }
+      ],
+      "Interlingual Index ID": [
+        {
+          "value": "i85750",
+          "type": "external-id",
+          "url": "https://globalwordnet.github.io/cili/i85750"
+        }
+      ],
+      "Wikimedia outline": [
+        {
+          "value": "outline of Mars",
+          "qid": "Q30589069",
+          "type": "wikibase-item"
+        }
+      ],
+      "Giant Bomb ID (former scheme)": [
+        {
+          "value": "3035-4",
+          "type": "external-id",
+          "url": "https://www.giantbomb.com/wd/3035-4/"
+        }
+      ],
+      "Google News topics ID": [
+        {
+          "value": "CAAqJQgKIh9DQkFTRVFvSUwyMHZNRGxqZDNNU0JXVnVMVWRDS0FBUAE",
+          "type": "external-id",
+          "url": "https://news.google.com/topics/CAAqJQgKIh9DQkFTRVFvSUwyMHZNRGxqZDNNU0JXVnVMVWRDS0FBUAE"
+        }
+      ],
+      "angular diameter": [
+        {
+          "value": 3.5,
+          "unit": "arcsecond",
+          "type": "quantity"
+        },
+        {
+          "value": 25.1,
+          "unit": "arcsecond",
+          "type": "quantity"
+        }
+      ],
+      "Comic Vine ID": [
+        {
+          "value": "4020-55781",
+          "type": "external-id",
+          "url": "https://comicvine.gamespot.com/wd/4020-55781/"
+        }
+      ],
+      "Larousse ID": [
+        {
+          "value": "divers/Mars/132039",
+          "type": "external-id",
+          "url": "https://www.larousse.fr/encyclopedie/divers/Mars/132039"
+        },
+        {
+          "value": "images/Mars/1008516",
+          "type": "external-id",
+          "url": "https://www.larousse.fr/encyclopedie/images/Mars/1008516"
+        },
+        {
+          "value": "images/Vue_globale_de_Mars/1316064",
+          "type": "external-id",
+          "url": "https://www.larousse.fr/encyclopedie/images/Vue_globale_de_Mars/1316064"
+        }
+      ],
+      "maintained by WikiProject": [
+        {
+          "value": "WikiProject Mars",
+          "qid": "Q10964915",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "WikiProject Solar System",
+          "qid": "Q11030684",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "WikiProject Astronomical objects",
+          "qid": "Q8502932",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "WikiProject Astronomy",
+          "qid": "Q8493596",
+          "type": "wikibase-item"
+        }
+      ],
+      "BBC News topic ID": [
+        {
+          "value": "c77jz3md7xgt",
+          "type": "external-id",
+          "url": "https://www.bbc.com/news/topics/c77jz3md7xgt"
+        }
+      ],
+      "epoch": [
+        {
+          "value": "J2000.0",
+          "qid": "Q1264450",
+          "type": "wikibase-item"
+        }
+      ],
+      "Fandom article ID": [
+        {
+          "value": "mars:Mars",
+          "type": "external-id",
+          "url": "https://community.fandom.com/wiki/w:c:mars:Mars"
+        },
+        {
+          "value": "planets:Mars",
+          "type": "external-id",
+          "url": "https://community.fandom.com/wiki/w:c:planets:Mars"
+        },
+        {
+          "value": "space:Mars",
+          "type": "external-id",
+          "url": "https://community.fandom.com/wiki/w:c:space:Mars"
+        },
+        {
+          "value": "solarsystem:Mars",
+          "type": "external-id",
+          "url": "https://community.fandom.com/wiki/w:c:solarsystem:Mars"
+        },
+        {
+          "value": "oursolarsystem:Mars",
+          "type": "external-id",
+          "url": "https://community.fandom.com/wiki/w:c:oursolarsystem:Mars"
+        },
+        {
+          "value": "planet:Mars",
+          "type": "external-id",
+          "url": "https://community.fandom.com/wiki/w:c:planet:Mars"
+        },
+        {
+          "value": "astronomical:Mars",
+          "type": "external-id",
+          "url": "https://community.fandom.com/wiki/w:c:astronomical:Mars"
+        }
+      ],
+      "Mindat locality ID": [
+        {
+          "value": "126497",
+          "type": "external-id",
+          "url": "https://www.mindat.org/loc-126497.html"
+        }
+      ],
+      "Krugosvet article (archived)": [
+        {
+          "value": "nauka_i_tehnika/astronomiya/MARS.html",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/2025/https://www.krugosvet.ru/enc/nauka_i_tehnika/astronomiya/MARS.html"
+        }
+      ],
+      "Klexikon article ID": [
+        {
+          "value": "Mars",
+          "type": "external-id",
+          "url": "https://klexikon.zum.de/wiki/Mars"
+        }
+      ],
+      "ProofWiki ID": [
+        {
+          "value": "Definition:Mars",
+          "type": "external-id",
+          "url": "https://proofwiki.org/wiki/Definition:Mars"
+        }
+      ],
+      "TV Tropes ID": [
+        {
+          "value": "UsefulNotes/Mars",
+          "type": "external-id",
+          "url": "https://tvtropes.org/pmwiki/pmwiki.php/UsefulNotes/Mars"
+        }
+      ],
+      "NicoNicoPedia word article ID": [
+        {
+          "value": "火星",
+          "type": "external-id",
+          "url": "https://dic.nicovideo.jp/a/%E7%81%AB%E6%98%9F"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 3.71,
+          "unit": "metre per square second",
+          "type": "quantity"
+        }
+      ],
+      "Australian Educational Vocabulary ID": [
+        {
+          "value": "scot/7752",
+          "type": "external-id",
+          "url": "https://vocabulary.curriculum.edu.au/scot/7752.html"
+        }
+      ],
+      "National Library of Iceland ID": [
+        {
+          "value": "000052072",
+          "type": "external-id",
+          "url": "https://viaf.org/processed/UIY|000052072"
+        }
+      ],
+      "eska.pl topic ID": [
+        {
+          "value": "tg-pghf-EvyF-Jeok",
+          "type": "external-id",
+          "url": "https://www.eska.pl/tag/wd,tg-pghf-EvyF-Jeok"
+        },
+        {
+          "value": "tg-XDW1-Y38M-T4kw",
+          "type": "external-id",
+          "url": "https://www.eska.pl/tag/wd,tg-XDW1-Y38M-T4kw"
+        }
+      ],
+      "Online PWN Encyclopedia ID": [
+        {
+          "value": "3938054",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/2/https://encyklopedia.pwn.pl/haslo/;3938054.html"
+        }
+      ],
+      "National Library of Chile ID": [
+        {
+          "value": "000002879",
+          "type": "external-id",
+          "url": "http://www.bncatalogo.cl/F/?func=direct&local_base=bnc10&doc_number=000002879"
+        }
+      ],
+      "Golden ID (archived)": [
+        {
+          "value": "Mars-N6AWRD",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/0/https://golden.com/wiki/Mars-N6AWRD"
+        }
+      ],
+      "article ID in the Lithuanian Universal Encyclopedia Online": [
+        {
+          "value": "marsas-1",
+          "type": "external-id",
+          "url": "https://www.vle.lt/straipsnis/marsas-1/"
+        }
+      ],
+      "Slovak National Library (VIAF) ID": [
+        {
+          "value": "vtls007420350",
+          "type": "external-id",
+          "url": "https://viaf.org/processed/SKMASNL|vtls007420350"
+        }
+      ],
+      "J-GLOBAL ID": [
+        {
+          "value": "200906098931896772",
+          "type": "external-id",
+          "url": "https://jglobal.jst.go.jp/en/detail?JGLOBAL_ID=200906098931896772"
+        }
+      ],
+      "category for maps or plans": [
+        {
+          "value": "Category:Maps of Mars",
+          "qid": "Q83977688",
+          "type": "wikibase-item"
+        }
+      ],
+      "ToposText person ID": [
+        {
+          "value": "17492",
+          "type": "external-id",
+          "url": "https://topostext.org/people/17492"
+        }
+      ],
+      "J9U entity ID": [
+        {
+          "value": "987007553217705171",
+          "type": "external-id",
+          "url": "https://www.nli.org.il/en/authorities/987007553217705171"
+        }
+      ],
+      "Lex ID": [
+        {
+          "value": "Mars_-_planet",
+          "type": "external-id",
+          "url": "https://wikidata-externalid-url.toolforge.org/?p=8313&url_prefix=https://lex.dk/&id=Mars_-_planet"
+        }
+      ],
+      "KBpedia ID": [
+        {
+          "value": "PlanetMars",
+          "type": "external-id",
+          "url": "https://kbpedia.org/knowledge-graph/reference-concept/?uri=PlanetMars"
+        }
+      ],
+      "WordNet 3.1 Synset ID": [
+        {
+          "value": "09370342-n",
+          "type": "external-id",
+          "url": "https://en-word.net/view/synset/09370342-n"
+        }
+      ],
+      "Namuwiki ID": [
+        {
+          "value": "화성",
+          "type": "external-id",
+          "url": "https://namu.wiki/w/%ED%99%94%EC%84%B1"
+        }
+      ],
+      "category for the view from the item": [
+        {
+          "value": "Category:Views from Mars",
+          "qid": "Q104635433",
+          "type": "wikibase-item"
+        }
+      ],
+      "SVKKL authority ID": [
+        {
+          "value": "0210051-Mars-planeta",
+          "type": "external-id",
+          "url": "https://ipac.svkkl.cz/arl-kl/cs/detail-kl_us_auth-0210051-Mars-planeta"
+        }
+      ],
+      "Encyclopedia of Korean Culture ID": [
+        {
+          "value": "E0064669",
+          "type": "external-id",
+          "url": "http://encykorea.aks.ac.kr/Article/E0064669"
+        }
+      ],
+      "MANTO ID": [
+        {
+          "value": "11293507",
+          "type": "external-id",
+          "url": "https://resource.manto.unh.edu/11293507"
+        }
+      ],
+      "SNK ID": [
+        {
+          "value": "193010",
+          "type": "external-id",
+          "url": "https://autority.snk.sk/vufind/AuthorityRecord/193010"
+        }
+      ],
+      "National Library of Ireland ID": [
+        {
+          "value": "vtls000213920",
+          "type": "external-id",
+          "url": "https://viaf.org/processed/N6Ivtls000213920"
+        }
+      ],
+      "Der Spiegel topic ID": [
+        {
+          "value": "mars",
+          "type": "external-id",
+          "url": "https://www.spiegel.de/thema/mars"
+        }
+      ],
+      "Wikisimpsons article ID": [
+        {
+          "value": "49395",
+          "type": "external-id",
+          "url": "https://simpsonswiki.com/w/index.php?curid=49395"
+        }
+      ],
+      "ScienceDirect topic ID": [
+        {
+          "value": "physics-and-astronomy/mars",
+          "type": "external-id",
+          "url": "https://www.sciencedirect.com/topics/physics-and-astronomy/mars"
+        },
+        {
+          "value": "earth-and-planetary-sciences/mars",
+          "type": "external-id",
+          "url": "https://www.sciencedirect.com/topics/earth-and-planetary-sciences/mars"
+        },
+        {
+          "value": "earth-and-planetary-sciences/mars-planet",
+          "type": "external-id",
+          "url": "https://www.sciencedirect.com/topics/earth-and-planetary-sciences/mars-planet"
+        },
+        {
+          "value": "physics-and-astronomy/mars-planet",
+          "type": "external-id",
+          "url": "https://www.sciencedirect.com/topics/physics-and-astronomy/mars-planet"
+        }
+      ],
+      "Encyclopedia of China (Third Edition) old ID (2021)": [
+        {
+          "value": "580855",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/0/https://www.zgbk.com/ecph/words?SiteID=1&ID=580855"
+        }
+      ],
+      "Süddeutsche Zeitung topic ID": [
+        {
+          "value": "Mars",
+          "type": "external-id",
+          "url": "https://www.sueddeutsche.de/thema/Mars"
+        }
+      ],
+      "Reddit topic ID (obsolete)": [
+        {
+          "value": "mars",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/20251006030159/https://www.reddit.com/t/mars/"
+        }
+      ],
+      "Famous Birthdays ID": [
+        {
+          "value": "planets/mars",
+          "type": "external-id",
+          "url": "https://www.famousbirthdays.com/planets/mars.html"
+        }
+      ],
+      "Pixiv Encyclopedia ID": [
+        {
+          "value": "火星",
+          "type": "external-id",
+          "url": "https://wikidata-externalid-url.toolforge.org/index.php?p=11408&url_prefix=https://dic.pixiv.net/a/&id=%E7%81%AB%E6%98%9F"
+        }
+      ],
+      "IMDb keyword": [
+        {
+          "value": "mars-the-planet",
+          "type": "external-id",
+          "url": "https://www.imdb.com/search/title/?keywords=mars-the-planet"
+        }
+      ],
+      "RAWG tag ID": [
+        {
+          "value": "mars",
+          "type": "external-id",
+          "url": "https://rawg.io/tags/mars"
+        }
+      ],
+      "WikiKids ID": [
+        {
+          "value": "Mars_(planeet)",
+          "type": "external-id",
+          "url": "https://wikikids.nl/Mars_%28planeet%29"
+        }
+      ],
+      "Gran Enciclopèdia Catalana ID": [
+        {
+          "value": "mart-2",
+          "type": "external-id",
+          "url": "https://www.enciclopedia.cat/gran-enciclopedia-catalana/mart-2"
+        }
+      ],
+      "museum-digital tag ID": [
+        {
+          "value": "82577",
+          "type": "external-id",
+          "url": "https://term.museum-digital.de/md-de/tag/82577"
+        }
+      ],
+      "Lille norske leksikon ID": [
+        {
+          "value": "Mars",
+          "type": "external-id",
+          "url": "https://wikidata-externalid-url.toolforge.org/?p=12721&url_prefix=https://lille.snl.no/&id=Mars"
+        }
+      ],
+      "Vikidia article ID": [
+        {
+          "value": "en:Mars_(planet)",
+          "type": "external-id",
+          "url": "https://central.vikidia.org/wiki/en:Mars_%28planet%29"
+        },
+        {
+          "value": "it:Marte_(astronomia)",
+          "type": "external-id",
+          "url": "https://central.vikidia.org/wiki/it:Marte_%28astronomia%29"
+        },
+        {
+          "value": "es:Marte",
+          "type": "external-id",
+          "url": "https://central.vikidia.org/wiki/es:Marte"
+        },
+        {
+          "value": "ca:Mart",
+          "type": "external-id",
+          "url": "https://central.vikidia.org/wiki/ca:Mart"
+        },
+        {
+          "value": "fr:Mars_(planète)",
+          "type": "external-id",
+          "url": "https://central.vikidia.org/wiki/fr:Mars_%28plan%C3%A8te%29"
+        }
+      ],
+      "Steam tag ID": [
+        {
+          "value": "6702",
+          "type": "external-id",
+          "url": "https://store.steampowered.com/tag/browse/#global_6702"
+        }
+      ],
+      "New York Post topic ID": [
+        {
+          "value": "mars",
+          "type": "external-id",
+          "url": "https://nypost.com/tag/mars"
+        }
+      ],
+      "The New Yorker topic ID": [
+        {
+          "value": "mars",
+          "type": "external-id",
+          "url": "https://www.newyorker.com/tag/mars"
+        }
+      ],
+      "LEMAC ID": [
+        {
+          "value": "LEMAC201221499",
+          "type": "external-id",
+          "url": "http://lemac.sgcb.mcu.es/Autoridades/LEMAC201221499/concept"
+        }
+      ],
+      "‎Yale LUX ID": [
+        {
+          "value": "place/a70eb257-9f63-44ec-9e54-8e1d0f47f49d",
+          "type": "external-id",
+          "url": "https://lux.collections.yale.edu/view/place/a70eb257-9f63-44ec-9e54-8e1d0f47f49d"
+        },
+        {
+          "value": "concept/a7cd6ebb-2688-4a35-bc96-e3dcef0535ca",
+          "type": "external-id",
+          "url": "https://lux.collections.yale.edu/view/concept/a7cd6ebb-2688-4a35-bc96-e3dcef0535ca"
+        }
+      ],
+      "Enciclopedia Galega Universal ID": [
+        {
+          "value": "149603",
+          "type": "external-id",
+          "url": "https://egu.xunta.gal/gl/termo/149603"
+        }
+      ],
+      "Harper's tag": [
+        {
+          "value": "mars",
+          "type": "external-id",
+          "url": "https://harpers.org/tag/mars/"
+        },
+        {
+          "value": "mars-planet",
+          "type": "external-id",
+          "url": "https://harpers.org/tag/mars-planet/"
+        }
+      ],
+      "NRK topic ID": [
+        {
+          "value": "1.12639674",
+          "type": "external-id",
+          "url": "https://www.nrk.no/_/1.12639674"
+        }
+      ],
+      "‎Giant Bomb Wiki ID": [
+        {
+          "value": "Locations/Mars",
+          "type": "external-id",
+          "url": "https://giantbomb.com/wiki/Locations/Mars"
+        }
+      ],
+      "Encyclopedia of China (Third Edition) ID (2026)": [
+        {
+          "value": "3EeIIV",
+          "type": "external-id",
+          "url": "https://www.zgbk.com/ecph/words?SiteID=1&ID=3EeIIV"
+        }
+      ]
+    },
+    "property_ids": {
+      "image": "P18",
+      "instance of": "P31",
+      "MeSH descriptor ID": "P486",
+      "Unicode character": "P487",
+      "BNCF Thesaurus ID": "P508",
+      "has part(s)": "P527",
+      "inception": "P571",
+      "highest point": "P610",
+      "Freebase ID": "P646",
+      "MeSH tree code": "P672",
+      "NL CR AUT ID": "P691",
+      "IPA transcription": "P898",
+      "topic's main category": "P910",
+      "notation": "P913",
+      "Commons gallery": "P935",
+      "page banner": "P948",
+      "National Library of Israel ID (old)": "P949",
+      "National Library of Spain SpMaBN ID": "P950",
+      "apparent magnitude": "P1215",
+      "mass": "P2067",
+      "radius": "P2120",
+      "distance from Earth": "P2583",
+      "Unified Astronomy Thesaurus ID": "P4466",
+      "albedo": "P4501",
+      "Encyclopedia of Modern Ukraine ID": "P4613",
+      "National Library of Brazil ID": "P4619",
+      "LC and MARC vocabularies ID": "P4801",
+      "Wolfram Language entity code": "P4839",
+      "3D model": "P4896",
+      "on focus list of Wikimedia project": "P5008",
+      "Brockhaus Enzyklopädie online ID": "P5019",
+      "Interlingual Index ID": "P5063",
+      "Wikimedia outline": "P5125",
+      "Giant Bomb ID (former scheme)": "P5247",
+      "Google News topics ID": "P5337",
+      "angular diameter": "P5348",
+      "Comic Vine ID": "P5905",
+      "Larousse ID": "P6058",
+      "maintained by WikiProject": "P6104",
+      "BBC News topic ID": "P6200",
+      "epoch": "P6259",
+      "Fandom article ID": "P6262",
+      "Mindat locality ID": "P6265",
+      "Krugosvet article (archived)": "P6385",
+      "Klexikon article ID": "P6573",
+      "ProofWiki ID": "P6781",
+      "TV Tropes ID": "P6839",
+      "NicoNicoPedia word article ID": "P6900",
+      "surface gravity": "P7015",
+      "Australian Educational Vocabulary ID": "P7033",
+      "National Library of Iceland ID": "P7039",
+      "eska.pl topic ID": "P7185",
+      "Online PWN Encyclopedia ID": "P7305",
+      "National Library of Chile ID": "P7369",
+      "Golden ID (archived)": "P7502",
+      "article ID in the Lithuanian Universal Encyclopedia Online": "P7666",
+      "Slovak National Library (VIAF) ID": "P7700",
+      "J-GLOBAL ID": "P7783",
+      "category for maps or plans": "P7867",
+      "ToposText person ID": "P8069",
+      "J9U entity ID": "P8189",
+      "Lex ID": "P8313",
+      "KBpedia ID": "P8408",
+      "WordNet 3.1 Synset ID": "P8814",
+      "Namuwiki ID": "P8885",
+      "category for the view from the item": "P8933",
+      "SVKKL authority ID": "P9322",
+      "Encyclopedia of Korean Culture ID": "P9475",
+      "MANTO ID": "P9736",
+      "SNK ID": "P9807",
+      "video": "P10",
+      "named after": "P138",
+      "flag": "P163",
+      "VIAF cluster ID": "P214",
+      "GND ID": "P227",
+      "Library of Congress Authorities ID": "P244",
+      "Bibliothèque nationale de France ID": "P268",
+      "IdRef ID": "P269",
+      "location": "P276",
+      "NDL Authority ID": "P349",
+      "part of": "P361",
+      "has use": "P366",
+      "astronomic symbol image": "P367",
+      "Commons category": "P373",
+      "parent astronomical body": "P397",
+      "child astronomical body": "P398",
+      "pronunciation audio": "P443",
+      "Dewey Decimal Classification": "P1036",
+      "PSH ID": "P1051",
+      "orbital eccentricity": "P1096",
+      "flattening": "P1102",
+      "topic's main Wikimedia portal": "P1151",
+      "U.S. National Archives Identifier": "P1225",
+      "OmegaWiki Defined Meaning": "P1245",
+      "Iconclass notation": "P1256",
+      "Gran Enciclopèdia Catalana ID (former scheme)": "P1296",
+      "described by source": "P1343",
+      "Encyclopædia Britannica Online ID": "P1417",
+      "topic has template": "P1424",
+      "nickname": "P1449",
+      "Stack Exchange tag": "P1482",
+      "demonym": "P1549",
+      "has characteristic": "P1552",
+      "lowest point": "P1589",
+      "BBC Things ID": "P1617",
+      "Getty Thesaurus of Geographic Names ID": "P1667",
+      "different from": "P1889",
+      "orbital inclination": "P2045",
+      "area": "P2046",
+      "density": "P2054",
+      "temperature": "P2076",
+      "orbital period": "P2146",
+      "rotation period": "P2147",
+      "FAST ID": "P2163",
+      "history of topic": "P2184",
+      "longitude of ascending node": "P2213",
+      "semi-major axis of an orbit": "P2233",
+      "volume as quantity": "P2234",
+      "apoapsis": "P2243",
+      "periapsis": "P2244",
+      "argument of periapsis": "P2248",
+      "mean anomaly": "P2325",
+      "YSO ID": "P2347",
+      "hashtag": "P2572",
+      "studied by": "P2579",
+      "BabelNet ID": "P2581",
+      "geography of topic": "P2633",
+      "sectional view": "P2713",
+      "Great Russian Encyclopedia Online ID (2017)": "P2924",
+      "NAIF ID": "P2956",
+      "The Guardian topic ID": "P3106",
+      "Visual Novel Database ID": "P3180",
+      "Encyclopædia Universalis ID": "P3219",
+      "New York Times topic ID": "P3221",
+      "NE.se ID": "P3222",
+      "National Library of Greece ID": "P3348",
+      "Quora topic ID": "P3417",
+      "Zhihu topic ID": "P3553",
+      "Cultureel Woordenboek ID": "P3569",
+      "JSTOR topic ID (archived)": "P3827",
+      "Open Library subject ID": "P3847",
+      "subreddit": "P3984",
+      "synodic period": "P4341",
+      "Great Norwegian Encyclopedia ID": "P4342",
+      "National Library of Ireland ID": "P10227",
+      "Der Spiegel topic ID": "P10234",
+      "Wikisimpsons article ID": "P10291",
+      "ScienceDirect topic ID": "P10376",
+      "Encyclopedia of China (Third Edition) old ID (2021)": "P10565",
+      "Süddeutsche Zeitung topic ID": "P10916",
+      "Reddit topic ID (obsolete)": "P11137",
+      "Famous Birthdays ID": "P11194",
+      "Pixiv Encyclopedia ID": "P11408",
+      "IMDb keyword": "P11924",
+      "RAWG tag ID": "P12043",
+      "WikiKids ID": "P12086",
+      "Gran Enciclopèdia Catalana ID": "P12385",
+      "museum-digital tag ID": "P12596",
+      "Lille norske leksikon ID": "P12721",
+      "Vikidia article ID": "P12800",
+      "Steam tag ID": "P13084",
+      "New York Post topic ID": "P13300",
+      "The New Yorker topic ID": "P13317",
+      "LEMAC ID": "P13346",
+      "‎Yale LUX ID": "P13591",
+      "Enciclopedia Galega Universal ID": "P13613",
+      "Harper's tag": "P13772",
+      "NRK topic ID": "P13869",
+      "‎Giant Bomb Wiki ID": "P14470",
+      "Encyclopedia of China (Third Edition) ID (2026)": "P14541"
     },
     "commons_image": "Mars - August 30 2021 - Flickr - Kevin M. Gill.png",
     "url": "https://www.wikidata.org/wiki/Q111"

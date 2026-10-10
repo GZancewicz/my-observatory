@@ -2,29 +2,29 @@
   "name": "Canopus",
   "category": "stars",
   "app_type": "F-Star",
-  "harvested": "2026-10-10T16:32:42Z",
+  "harvested": "2026-10-10T17:38:53Z",
   "sources": [
     {
       "name": "SIMBAD (CDS)",
       "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20Car",
-      "retrieved": "2026-10-10T16:32:50Z"
+      "retrieved": "2026-10-10T17:39:07Z"
     },
     {
       "name": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Canopus",
-      "retrieved": "2026-10-10T16:33:06Z"
+      "retrieved": "2026-10-10T17:39:11Z"
     },
     {
       "name": "Wikidata",
       "url": "https://www.wikidata.org/wiki/Q12189",
-      "retrieved": "2026-10-10T16:33:07Z"
+      "retrieved": "2026-10-10T17:39:12Z"
     }
   ],
   "images": {
     "sky": {
       "file": "sky.jpg",
       "credit": "DSS2 colour via CDS hips2fits",
-      "fov_deg": 0.4
+      "fov_deg": 3.0
     },
     "photo": {
       "file": "photo.jpg",
@@ -40,21 +40,56 @@
   },
   "simbad": {
     "main_id": "* alf Car",
+    "nbref": 461,
+    "otype": "*",
     "ra": 95.98795782918306,
     "dec": -52.69566138386201,
-    "otype": "*",
-    "otype_desc": "Star",
-    "sp_type": "A9II",
-    "plx_value": 10.55,
-    "plx_err": 0.56,
+    "coo_err_maj": 6.060718,
+    "coo_err_min": 4.5752482,
+    "coo_err_angle": 90,
+    "coo_qual": "A",
+    "coo_wavelength": "O",
+    "coo_bibcode": "2007A&A...474..653V",
     "pmra": 19.93,
     "pmdec": 23.24,
+    "pm_err_maj": 0.52,
+    "pm_err_min": 0.69,
+    "pm_err_angle": 0,
+    "pm_qual": "A",
+    "pm_bibcode": "2007A&A...474..653V",
+    "plx_value": 10.55,
+    "plx_err": 0.56,
+    "plx_qual": "A",
+    "plx_bibcode": "2007A&A...474..653V",
+    "rvz_type": "v",
     "rvz_radvel": 20.3,
     "rvz_redshift": 6.771580404030253e-05,
+    "rvz_err": 0.5,
+    "rvz_nature": null,
+    "rvz_qual": "A",
+    "rvz_bibcode": "2006AstL...32..759G",
+    "vlsr": null,
+    "vlsr_err": null,
+    "vlsr_wavelength": null,
+    "vlsr_bibcode": null,
+    "vlsr_min": null,
+    "vlsr_max": null,
+    "sp_type": "A9II",
+    "sp_qual": "C",
+    "sp_bibcode": "1989ApJS...69..301G",
+    "morph_type": null,
+    "morph_qual": null,
+    "morph_bibcode": null,
     "galdim_majaxis": null,
     "galdim_minaxis": null,
-    "morph_type": null,
-    "nbref": 461,
+    "galdim_angle": null,
+    "galdim_qual": null,
+    "galdim_wavelength": null,
+    "galdim_bibcode": null,
+    "update_date": "2026-02-17",
+    "oid": 2997002,
+    "rvz_wavelength": null,
+    "otype_desc": "Star",
     "identifiers": [
       "TIC 255559489",
       "HIP 30438",
@@ -130,6 +165,1097 @@
         "mag": -1.13,
         "err": null
       }
+    },
+    "coordinates": {
+      "frame": "ICRS",
+      "epoch": "J2000",
+      "ra_deg": 95.98795782918306,
+      "dec_deg": -52.69566138386201,
+      "ra_hms": "06 23 57.110",
+      "dec_dms": "-52 41 44.38",
+      "gal_l": 261.2121,
+      "gal_b": -25.2922,
+      "err_maj_mas": 6.060718,
+      "err_min_mas": 4.5752482,
+      "err_angle_deg": 90,
+      "quality": "A",
+      "wavelength": "O",
+      "bibcode": "2007A&A...474..653V"
+    },
+    "hierarchy": {
+      "parents": [],
+      "children": []
+    },
+    "measurements": {
+      "mesFe_h": [
+        {
+          "teff": 6904,
+          "log_g": null,
+          "fe_h": -0.15,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": "F238 ",
+          "bibcode": "1974AcA....24..275P"
+        },
+        {
+          "teff": 7522,
+          "log_g": 1.9,
+          "fe_h": 0.35,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": "F333 ",
+          "bibcode": "1979ApJ...232..797L"
+        },
+        {
+          "teff": 7304,
+          "log_g": 1.8,
+          "fe_h": -0.14,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "1982MNRAS.201..707D"
+        },
+        {
+          "teff": 7500,
+          "log_g": 1.2,
+          "fe_h": 0,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "1991A&A...249..192A"
+        },
+        {
+          "teff": 7522,
+          "log_g": 1.9,
+          "fe_h": 0.35,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "1979ApJ...232..797L"
+        },
+        {
+          "teff": 7304,
+          "log_g": 1.8,
+          "fe_h": -0.14,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": "F372 ",
+          "bibcode": "1982MNRAS.201..707D"
+        },
+        {
+          "teff": 7304,
+          "log_g": 1.5,
+          "fe_h": -0.07,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": "F464 ",
+          "bibcode": "1985ApJ...298..782L"
+        },
+        {
+          "teff": 7412,
+          "log_g": 1.9,
+          "fe_h": -0.11,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": "F525 ",
+          "bibcode": "1988ApJ...332..410B"
+        },
+        {
+          "teff": 7412,
+          "log_g": 1.9,
+          "fe_h": -0.12,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": "F559 ",
+          "bibcode": "1989ApJS...70..865R"
+        },
+        {
+          "teff": 7522,
+          "log_g": 1.2,
+          "fe_h": -0.03,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": "F561 ",
+          "bibcode": "1989A&A...210...25S"
+        },
+        {
+          "teff": 7500,
+          "log_g": 1.2,
+          "fe_h": 0,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": "F581 ",
+          "bibcode": "1991A&A...249..192A"
+        },
+        {
+          "teff": 7500,
+          "log_g": 1.5,
+          "fe_h": -0.06,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": "F685 ",
+          "bibcode": "1995A&A...293..347H"
+        },
+        {
+          "teff": 6904,
+          "log_g": null,
+          "fe_h": -0.15,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "1974AcA....24..275P"
+        },
+        {
+          "teff": 7304,
+          "log_g": 1.5,
+          "fe_h": -0.07,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "1985ApJ...298..782L"
+        },
+        {
+          "teff": 7304,
+          "log_g": 1.8,
+          "fe_h": -0.14,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "1981MNRAS.201..707D"
+        },
+        {
+          "teff": 7412,
+          "log_g": 1.9,
+          "fe_h": -0.11,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "1988ApJ...332..410B"
+        },
+        {
+          "teff": 7412,
+          "log_g": 1.9,
+          "fe_h": -0.12,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "1989ApJS...70..865R"
+        },
+        {
+          "teff": 7500,
+          "log_g": 1.5,
+          "fe_h": -0.06,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "1995A&A...293..347H"
+        },
+        {
+          "teff": 7522,
+          "log_g": 1.2,
+          "fe_h": -0.03,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "1989A&A...210...25S"
+        },
+        {
+          "teff": 7000,
+          "log_g": 1.12,
+          "fe_h": -0.272,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2023ApJS..266...11B"
+        },
+        {
+          "teff": 7557,
+          "log_g": null,
+          "fe_h": null,
+          "flag": null,
+          "compstar": null,
+          "catno": null,
+          "bibcode": "2007MNRAS.378..617K"
+        }
+      ],
+      "mesISO": [
+        {
+          "dec": -52.6958,
+          "obsid": "89202101",
+          "ra": 95.9877
+        },
+        {
+          "dec": -52.6957,
+          "obsid": "72902207",
+          "ra": 95.9879
+        }
+      ],
+      "mesIUE": [
+        {
+          "abnormcode": null,
+          "aperture": "L",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "LWR",
+          "classcode": 40,
+          "comments": null,
+          "complid": null,
+          "dispcode": "H",
+          "expqualcode": null,
+          "exptime": 40,
+          "fescount": 28507,
+          "fesmode": "FU",
+          "flag": "*",
+          "image": 2083,
+          "name": "HD 45348        ",
+          "obsdate": "780815",
+          "obstime": "173400",
+          "progid": "CEJLL",
+          "station": "G"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "L",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "LWR",
+          "classcode": 40,
+          "comments": null,
+          "complid": null,
+          "dispcode": "H",
+          "expqualcode": "60 ",
+          "exptime": 15,
+          "fescount": 23000,
+          "fesmode": "FU",
+          "flag": "*",
+          "image": 2916,
+          "name": "HD 45348        ",
+          "obsdate": "781111",
+          "obstime": "184600",
+          "progid": "FP047",
+          "station": "V"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "S",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "LWR",
+          "classcode": 40,
+          "comments": null,
+          "complid": null,
+          "dispcode": "H",
+          "expqualcode": null,
+          "exptime": 20,
+          "fescount": null,
+          "fesmode": "FU",
+          "flag": "*",
+          "image": 2968,
+          "name": "HD 45348        ",
+          "obsdate": "781118",
+          "obstime": "210000",
+          "progid": "ES2AS",
+          "station": "G"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "L",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "LWR",
+          "classcode": 40,
+          "comments": null,
+          "complid": null,
+          "dispcode": "H",
+          "expqualcode": null,
+          "exptime": 10,
+          "fescount": null,
+          "fesmode": "FU",
+          "flag": "*",
+          "image": 2969,
+          "name": "HD 45348        ",
+          "obsdate": "781118",
+          "obstime": "215400",
+          "progid": "ES2AS",
+          "station": "G"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "L",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "LWR",
+          "classcode": 40,
+          "comments": null,
+          "complid": null,
+          "dispcode": "H",
+          "expqualcode": null,
+          "exptime": 5,
+          "fescount": null,
+          "fesmode": "BO",
+          "flag": "*",
+          "image": 2988,
+          "name": "HD 45348        ",
+          "obsdate": "781121",
+          "obstime": "025300",
+          "progid": "ES2AS",
+          "station": "G"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "S",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "LWR",
+          "classcode": 40,
+          "comments": "MAXDN=255           ",
+          "complid": null,
+          "dispcode": "H",
+          "expqualcode": null,
+          "exptime": 45,
+          "fescount": 16460,
+          "fesmode": "FU",
+          "flag": "*",
+          "image": 3268,
+          "name": "HD 45348        ",
+          "obsdate": "781225",
+          "obstime": "010900",
+          "progid": "SGSBP",
+          "station": "G"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "L",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "LWR",
+          "classcode": 40,
+          "comments": null,
+          "complid": null,
+          "dispcode": "H",
+          "expqualcode": "50 ",
+          "exptime": 9,
+          "fescount": null,
+          "fesmode": "FU",
+          "flag": "*",
+          "image": 3919,
+          "name": "HD 45348        ",
+          "obsdate": "790303",
+          "obstime": "071900",
+          "progid": "FM050",
+          "station": "V"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "L",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "LWR",
+          "classcode": 40,
+          "comments": "C=10X,B=160         ",
+          "complid": null,
+          "dispcode": "H",
+          "expqualcode": "?09",
+          "exptime": 180,
+          "fescount": null,
+          "fesmode": "FU",
+          "flag": "*",
+          "image": 4703,
+          "name": "HD 45348        ",
+          "obsdate": "790605",
+          "obstime": "214600",
+          "progid": "CMBRS",
+          "station": "G"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "L",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "LWR",
+          "classcode": 40,
+          "comments": "E=219,C=1.5X,B=26   ",
+          "complid": null,
+          "dispcode": "H",
+          "expqualcode": "X51",
+          "exptime": 12,
+          "fescount": null,
+          "fesmode": null,
+          "flag": "*",
+          "image": 7234,
+          "name": "HD 45348        ",
+          "obsdate": "800318",
+          "obstime": "234000",
+          "progid": "MLBSL",
+          "station": "G"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "L",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "SWP",
+          "classcode": 40,
+          "comments": "MAX DN = 30X-40X    ",
+          "complid": null,
+          "dispcode": "H",
+          "expqualcode": null,
+          "exptime": 1800,
+          "fescount": 28507,
+          "fesmode": "FU",
+          "flag": "*",
+          "image": 2302,
+          "name": "HD 45348        ",
+          "obsdate": "780815",
+          "obstime": "163600",
+          "progid": "CEJLL",
+          "station": "G"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "L",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "SWP",
+          "classcode": 40,
+          "comments": null,
+          "complid": null,
+          "dispcode": "H",
+          "expqualcode": "60 ",
+          "exptime": 45,
+          "fescount": 23000,
+          "fesmode": "FU",
+          "flag": "*",
+          "image": 3308,
+          "name": "HD 45348        ",
+          "obsdate": "781111",
+          "obstime": "182600",
+          "progid": "RB041",
+          "station": "V"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "L",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "SWP",
+          "classcode": 40,
+          "comments": "OK ONLY NEAR 1550A  ",
+          "complid": null,
+          "dispcode": "H",
+          "expqualcode": "80 ",
+          "exptime": 1800,
+          "fescount": 28000,
+          "fesmode": "FU",
+          "flag": "*",
+          "image": 3309,
+          "name": "HD 45348        ",
+          "obsdate": "781111",
+          "obstime": "191700",
+          "progid": "RB041",
+          "station": "V"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "S",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "SWP",
+          "classcode": 40,
+          "comments": "MAX DN = 240        ",
+          "complid": null,
+          "dispcode": "H",
+          "expqualcode": null,
+          "exptime": 120,
+          "fescount": 17000,
+          "fesmode": "FU",
+          "flag": "*",
+          "image": 3696,
+          "name": "HD 45348        ",
+          "obsdate": "781225",
+          "obstime": "011400",
+          "progid": "SGSBP",
+          "station": "G"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "2",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "FES",
+          "classcode": 40,
+          "comments": null,
+          "complid": null,
+          "dispcode": null,
+          "expqualcode": null,
+          "exptime": 9600,
+          "fescount": null,
+          "fesmode": null,
+          "flag": "*",
+          "image": 1075,
+          "name": "HD 45348        ",
+          "obsdate": "790605",
+          "obstime": "210300",
+          "progid": "CMBRS",
+          "station": "G"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "S",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "SWP",
+          "classcode": 40,
+          "comments": "C=3-4X,B=24         ",
+          "complid": null,
+          "dispcode": "H",
+          "expqualcode": "X01",
+          "exptime": 100,
+          "fescount": 28000,
+          "fesmode": "FU",
+          "flag": "*",
+          "image": 8290,
+          "name": "HD 45348        ",
+          "obsdate": "800319",
+          "obstime": "001300",
+          "progid": "MLBSL",
+          "station": "G"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "L",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "SWP",
+          "classcode": 40,
+          "comments": "C=10X,B=15          ",
+          "complid": null,
+          "dispcode": "L",
+          "expqualcode": "?00",
+          "exptime": 60,
+          "fescount": null,
+          "fesmode": "BO",
+          "flag": "*",
+          "image": 5439,
+          "name": "HD 45348        ",
+          "obsdate": "790605",
+          "obstime": "215400",
+          "progid": "CMBRS",
+          "station": "G"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "L",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "SWP",
+          "classcode": 40,
+          "comments": "MAX DN = 10X        ",
+          "complid": null,
+          "dispcode": "L",
+          "expqualcode": null,
+          "exptime": 50,
+          "fescount": null,
+          "fesmode": null,
+          "flag": "*",
+          "image": 3382,
+          "name": "HD 45348        ",
+          "obsdate": "781118",
+          "obstime": "220000",
+          "progid": "ES2AS",
+          "station": "G"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "L",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "SWP",
+          "classcode": 40,
+          "comments": "MAX DN = 240        ",
+          "complid": null,
+          "dispcode": "L",
+          "expqualcode": null,
+          "exptime": 1,
+          "fescount": null,
+          "fesmode": null,
+          "flag": "*",
+          "image": 3397,
+          "name": "HD 45348        ",
+          "obsdate": "781121",
+          "obstime": "025000",
+          "progid": "ES2AS",
+          "station": "G"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "S",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "SWP",
+          "classcode": 40,
+          "comments": "MAX DN = 2X         ",
+          "complid": null,
+          "dispcode": "L",
+          "expqualcode": null,
+          "exptime": 3,
+          "fescount": null,
+          "fesmode": null,
+          "flag": "*",
+          "image": 3397,
+          "name": "HD 45348        ",
+          "obsdate": "781121",
+          "obstime": "024700",
+          "progid": "ES2AS",
+          "station": "G"
+        }
+      ],
+      "mesOtype": [
+        {
+          "otype": "*",
+          "comments": "from basic data",
+          "bibcode": null
+        },
+        {
+          "otype": "IR",
+          "comments": "from id IRAS 06228-5240",
+          "bibcode": null
+        },
+        {
+          "otype": "NIR",
+          "comments": "from id 2MASS J06235709-5241441",
+          "bibcode": null
+        },
+        {
+          "otype": "UV",
+          "comments": "from id CEL   1228",
+          "bibcode": null
+        },
+        {
+          "otype": "X",
+          "comments": "from id 1AXG J062403-5241",
+          "bibcode": null
+        }
+      ],
+      "mesPLX": [
+        {
+          "bibcode": "2007A&A...474..653V",
+          "obscode": null,
+          "plx": 10.55,
+          "plx_err": 0.56
+        },
+        {
+          "bibcode": "1997A&A...323L..49P",
+          "obscode": null,
+          "plx": 10.43,
+          "plx_err": 0.53
+        },
+        {
+          "bibcode": "1995GCTP..C......0V",
+          "obscode": null,
+          "plx": 17.8,
+          "plx_err": 6.5
+        }
+      ],
+      "mesPM": [
+        {
+          "bibcode": "1933GCCat.C......0B",
+          "coosystem": "FK4",
+          "pmde": 17,
+          "pmde_err": null,
+          "pmra": 18,
+          "pmra_err": null
+        },
+        {
+          "bibcode": "1952N30...C......0M",
+          "coosystem": "FK4",
+          "pmde": 17,
+          "pmde_err": null,
+          "pmra": 21,
+          "pmra_err": null
+        },
+        {
+          "bibcode": "1997A&A...323L..49P",
+          "coosystem": "ICRS",
+          "pmde": 23.67,
+          "pmde_err": 0.56,
+          "pmra": 19.99,
+          "pmra_err": 0.53
+        },
+        {
+          "bibcode": "2007A&A...474..653V",
+          "coosystem": "ICRS",
+          "pmde": 23.24,
+          "pmde_err": 0.69,
+          "pmra": 19.93,
+          "pmra_err": 0.52
+        }
+      ],
+      "mesRot": [
+        {
+          "bibcode": "2005yCat.3244....0G",
+          "nbmes": null,
+          "qual": null,
+          "upvsini": null,
+          "vsini": 9,
+          "vsini_err": 1
+        },
+        {
+          "bibcode": "2002A&A...393..897R",
+          "nbmes": null,
+          "qual": "D",
+          "upvsini": null,
+          "vsini": 9,
+          "vsini_err": null
+        },
+        {
+          "bibcode": "2023ApJS..266...11B",
+          "nbmes": null,
+          "qual": null,
+          "upvsini": null,
+          "vsini": 0.165,
+          "vsini_err": null
+        }
+      ],
+      "mesSpT": [
+        {
+          "bibcode": "1962MtSOM...4....1B",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "F0Ib                                "
+        },
+        {
+          "bibcode": "1955MmMtS..12..125W",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "F0Ia                                "
+        },
+        {
+          "bibcode": "1961RGOB...36..131W",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "F0II                                "
+        },
+        {
+          "bibcode": "1948ApJ...107..151G",
+          "dispsystem": "P ",
+          "mssnote": null,
+          "sptype": "F0II                                "
+        },
+        {
+          "bibcode": "1950MNRAS.110...15G",
+          "dispsystem": "P ",
+          "mssnote": null,
+          "sptype": "F0Ia                                "
+        },
+        {
+          "bibcode": "1954MNRAS.114..490W",
+          "dispsystem": "P ",
+          "mssnote": null,
+          "sptype": "F0Ia                                "
+        },
+        {
+          "bibcode": "1956MNRAS.116..277D",
+          "dispsystem": "OP",
+          "mssnote": null,
+          "sptype": "F0Ia                                "
+        },
+        {
+          "bibcode": "1962MtSOM...4....1B",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "F0Iab                               "
+        },
+        {
+          "bibcode": "1957MNRAS.117..449D",
+          "dispsystem": "P ",
+          "mssnote": null,
+          "sptype": "F0Iab                               "
+        },
+        {
+          "bibcode": "1993yCat.3135....0C",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "F0                                  "
+        }
+      ],
+      "mesVelocities": [
+        {
+          "bibcode": "1911AnCap..10a...1H",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 6,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 19.5,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1911PLicO...9...71W",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 10,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 20.5,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1913LicOB...7..113C",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 1,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 20.799999237060547,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1918ApJ....48..261L",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 13,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 19.700000762939453,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1928AnCap..10h...1J",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 14,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 19.5,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1928PLicO..16....1C",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 128,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 20.700000762939453,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1961MNRAS.123..233B",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 7,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 18,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1979IAUS...30...57E",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 121,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": "##",
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 20.5,
+          "wdomain": null
+        },
+        {
+          "bibcode": "2023ApJS..266...11B",
+          "d": null,
+          "meanerror": 0.9,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 20.63,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "1907PASP...19..259.",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": "O",
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 23.299999237060547,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1995A&AS..114..269D",
+          "d": null,
+          "meanerror": null,
+          "nature": "s",
+          "nbmes": 121,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 20.5,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1999VeARI..35....1W",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 20.5,
+          "wdomain": null
+        },
+        {
+          "bibcode": "2006AstL...32..759G",
+          "d": null,
+          "meanerror": 0.5,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "V  ",
+          "velvalue": 20.3,
+          "wdomain": "O   "
+        },
+        {
+          "bibcode": "1953GCRV..C......0W",
+          "d": null,
+          "meanerror": 0.9,
+          "nature": "s",
+          "nbmes": 114,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "E",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 20.5,
+          "wdomain": null
+        }
+      ],
+      "mesXmm": [
+        {
+          "obsid": "0132721501"
+        },
+        {
+          "obsid": "0132721401"
+        },
+        {
+          "obsid": "0132721301"
+        },
+        {
+          "obsid": "0132721201"
+        },
+        {
+          "obsid": "0122901801"
+        },
+        {
+          "obsid": "0122901701"
+        },
+        {
+          "obsid": "0122901401"
+        },
+        {
+          "obsid": "0122901301"
+        },
+        {
+          "obsid": "0122901201"
+        },
+        {
+          "obsid": "0122901101"
+        },
+        {
+          "obsid": "0122901001"
+        },
+        {
+          "obsid": "0122900801"
+        },
+        {
+          "obsid": "0122900701"
+        },
+        {
+          "obsid": "0122900601"
+        },
+        {
+          "obsid": "0122900501"
+        },
+        {
+          "obsid": "0122900401"
+        },
+        {
+          "obsid": "0122900301"
+        },
+        {
+          "obsid": "0122900101"
+        }
+      ]
     },
     "atmosphere_measurements": [
       {
@@ -285,8 +1411,15 @@
       "UV",
       "X"
     ],
+    "notes": [
+      {
+        "date": "13-Jul-2023",
+        "text": "Not recovered in Gaia DR2 (I/345/gaia2) nor in Gaia DR3 (I/350/gaiaedr3)"
+      }
+    ],
     "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20Car"
   },
+  "papers_count": 461,
   "wikipedia": {
     "title": "Canopus",
     "description": "Brightest star in the constellation of Carina",
@@ -295,7 +1428,8 @@
     "url": "https://en.wikipedia.org/wiki/Canopus",
     "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Canopus.jpg/330px-Canopus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Canopus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "wikidata": "Q12189"
+    "wikidata": "Q12189",
+    "sections_count": 20
   },
   "wikidata": {
     "id": "Q12189",
@@ -572,6 +1706,550 @@
         }
       ]
     },
+    "all_claims": {
+      "image": [
+        {
+          "value": "Canopus.jpg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Canopus.jpg"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star",
+          "qid": "Q523",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "near-infrared source",
+          "qid": "Q67206785",
+          "type": "wikibase-item"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Carina",
+          "qid": "Q10470",
+          "type": "wikibase-item"
+        }
+      ],
+      "spectral class": [
+        {
+          "value": "A9II",
+          "type": "string"
+        }
+      ],
+      "Commons category": [
+        {
+          "value": "Canopus",
+          "type": "string"
+        }
+      ],
+      "said to be the same as": [
+        {
+          "value": "Atutahi",
+          "qid": "Q4818816",
+          "type": "wikibase-item"
+        }
+      ],
+      "catalog code": [
+        {
+          "value": "HR 2326",
+          "type": "string"
+        },
+        {
+          "value": "SAO 234480",
+          "type": "string"
+        },
+        {
+          "value": "IRAS 06228-5240",
+          "type": "string"
+        },
+        {
+          "value": "2MASS J06235709-5241441",
+          "type": "string"
+        },
+        {
+          "value": "HD 45348",
+          "type": "string"
+        },
+        {
+          "value": "HIP 30438",
+          "type": "string"
+        },
+        {
+          "value": "α Car",
+          "type": "string"
+        },
+        {
+          "value": "1ES 0622-52.6",
+          "type": "string"
+        },
+        {
+          "value": "1RXS J062357.2-524139",
+          "type": "string"
+        },
+        {
+          "value": "2EUVE J0624-52.6",
+          "type": "string"
+        },
+        {
+          "value": "CEL 1228",
+          "type": "string"
+        },
+        {
+          "value": "CPC 19 2125",
+          "type": "string"
+        },
+        {
+          "value": "EUVE J0624-52.6",
+          "type": "string"
+        },
+        {
+          "value": "FK5 245",
+          "type": "string"
+        },
+        {
+          "value": "GC 8302",
+          "type": "string"
+        },
+        {
+          "value": "GCRV 4091",
+          "type": "string"
+        },
+        {
+          "value": "HIC 30438",
+          "type": "string"
+        },
+        {
+          "value": "JP11 1384",
+          "type": "string"
+        },
+        {
+          "value": "N30 1391",
+          "type": "string"
+        },
+        {
+          "value": "PLX 1497",
+          "type": "string"
+        },
+        {
+          "value": "PLX 1497.00",
+          "type": "string"
+        },
+        {
+          "value": "PPM 335149",
+          "type": "string"
+        },
+        {
+          "value": "ROT 1039",
+          "type": "string"
+        },
+        {
+          "value": "SRS 30245",
+          "type": "string"
+        },
+        {
+          "value": "TD1 7115",
+          "type": "string"
+        },
+        {
+          "value": "TYC 8534-2277-1",
+          "type": "string"
+        },
+        {
+          "value": "UBV 6431",
+          "type": "string"
+        },
+        {
+          "value": "uvby98 100045348",
+          "type": "string"
+        },
+        {
+          "value": "EXSS 0622.7-5240",
+          "type": "string"
+        },
+        {
+          "value": "WEB 6060",
+          "type": "string"
+        },
+        {
+          "value": "TIC 255559489",
+          "type": "string"
+        },
+        {
+          "value": "UBV M 12094",
+          "type": "string"
+        }
+      ],
+      "Freebase ID": [
+        {
+          "value": "/m/04pzrh",
+          "type": "external-id",
+          "url": "https://www.google.com/search?kgmid=/m/04pzrh"
+        }
+      ],
+      "topic's main category": [
+        {
+          "value": "Category:Canopus",
+          "qid": "Q21708923",
+          "type": "wikibase-item"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": -0.74,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": -0.49,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": -0.59,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": -0.96,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": -1.13,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": -1.15,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": -1.25,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": -1.35,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "Gran Enciclopèdia Catalana ID (former scheme)": [
+        {
+          "value": "0014398",
+          "type": "external-id",
+          "url": "https://www.enciclopedia.cat/ec-gec-0014398.xml"
+        }
+      ],
+      "described by source": [
+        {
+          "value": "Armenian Soviet Encyclopedia",
+          "qid": "Q2657718",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Great Soviet Encyclopedia (1926–1947)",
+          "qid": "Q20078554",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Brockhaus and Efron Encyclopedic Dictionary",
+          "qid": "Q602358",
+          "type": "wikibase-item"
+        }
+      ],
+      "Encyclopædia Britannica Online ID": [
+        {
+          "value": "topic/Canopus-star",
+          "type": "external-id",
+          "url": "https://www.britannica.com/topic/Canopus-star"
+        }
+      ],
+      "present in work": [
+        {
+          "value": "Birth of the Federation",
+          "qid": "Q1474668",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Canopus in Argos",
+          "qid": "Q3312043",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Dune",
+          "qid": "Q190192",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Star Trek: The Original Series Core Game Book",
+          "qid": "Q115519946",
+          "type": "wikibase-item"
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -5.71,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 13300.0,
+          "unit": "L☉",
+          "type": "quantity"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 10.55,
+          "unit": "mas",
+          "plus": 0.5599999999999987,
+          "minus": 0.5600000000000005,
+          "type": "quantity"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 20.3,
+          "unit": "km/s",
+          "plus": 0.5,
+          "minus": 0.5,
+          "type": "quantity"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.06,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 310.0,
+          "unit": "ly",
+          "plus": 20.0,
+          "minus": 20.0,
+          "type": "quantity"
+        }
+      ],
+      "Great Russian Encyclopedia Online ID (2017)": [
+        {
+          "value": "2042041",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/0/old.bigenc.ru/text/2042041"
+        }
+      ],
+      "SIMBAD ID": [
+        {
+          "value": "* alf Car",
+          "type": "external-id",
+          "url": "https://simbad.u-strasbg.fr/simbad/sim-id?Ident=%2A%20alf%20Car"
+        }
+      ],
+      "stellar rotational velocity": [
+        {
+          "value": 9.0,
+          "unit": "km/s",
+          "type": "quantity"
+        }
+      ],
+      "Great Norwegian Encyclopedia ID": [
+        {
+          "value": "Canopus",
+          "type": "external-id",
+          "url": "https://wikidata-externalid-url.toolforge.org/?p=4342&url_prefix=https://snl.no/&id=Canopus"
+        }
+      ],
+      "on focus list of Wikimedia project": [
+        {
+          "value": "Wikipedia:Vital articles/Level/4",
+          "qid": "Q6173448",
+          "type": "wikibase-item"
+        }
+      ],
+      "Interlingual Index ID": [
+        {
+          "value": "i85149",
+          "type": "external-id",
+          "url": "https://globalwordnet.github.io/cili/i85149"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 95.987957829,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "declination": [
+        {
+          "value": -52.695661384,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "epoch": [
+        {
+          "value": "J2000.0",
+          "qid": "Q1264450",
+          "type": "wikibase-item"
+        }
+      ],
+      "Fandom article ID": [
+        {
+          "value": "memory-beta:Canopus",
+          "type": "external-id",
+          "url": "https://community.fandom.com/wiki/w:c:memory-beta:Canopus"
+        }
+      ],
+      "Microsoft Academic ID (discontinued)": [
+        {
+          "value": "2779852333",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/https://academic.microsoft.com/v2/detail/2779852333"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 7557.0,
+          "unit": "K",
+          "type": "quantity"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 32.0,
+          "unit": "centimetre per square second",
+          "type": "quantity"
+        }
+      ],
+      "Online PWN Encyclopedia ID": [
+        {
+          "value": "3883042",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/2/https://encyklopedia.pwn.pl/haslo/;3883042.html"
+        }
+      ],
+      "Hrvatska enciklopedija ID": [
+        {
+          "value": "10666",
+          "type": "external-id",
+          "url": "https://www.enciklopedija.hr/clanak/10666"
+        }
+      ],
+      "Lex ID": [
+        {
+          "value": "Canopus",
+          "type": "external-id",
+          "url": "https://wikidata-externalid-url.toolforge.org/?p=8313&url_prefix=https://lex.dk/&id=Canopus"
+        }
+      ],
+      "KBpedia ID": [
+        {
+          "value": "Canopus-Star",
+          "type": "external-id",
+          "url": "https://kbpedia.org/knowledge-graph/reference-concept/?uri=Canopus-Star"
+        }
+      ],
+      "WordNet 3.1 Synset ID": [
+        {
+          "value": "09256041-n",
+          "type": "external-id",
+          "url": "https://en-word.net/view/synset/09256041-n"
+        }
+      ],
+      "Encyclopedia of China (Third Edition) old ID (2021)": [
+        {
+          "value": "66184",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/0/https://www.zgbk.com/ecph/words?SiteID=1&ID=66184"
+        }
+      ],
+      "declination component of proper motion": [
+        {
+          "value": 23.24,
+          "unit": "mas/yr",
+          "plus": 0.6900000000000013,
+          "minus": 0.6899999999999977,
+          "type": "quantity"
+        }
+      ],
+      "right ascension component of proper motion": [
+        {
+          "value": 19.93,
+          "unit": "mas/yr",
+          "plus": 0.5199999999999996,
+          "minus": 0.5199999999999996,
+          "type": "quantity"
+        }
+      ],
+      "Gran Enciclopèdia Catalana ID": [
+        {
+          "value": "canop-1",
+          "type": "external-id",
+          "url": "https://www.enciclopedia.cat/gran-enciclopedia-catalana/canop-1"
+        }
+      ],
+      "Encyclopedia of China (Third Edition) ID (2026)": [
+        {
+          "value": "3axhU3",
+          "type": "external-id",
+          "url": "https://www.zgbk.com/ecph/words?SiteID=1&ID=3axhU3"
+        }
+      ]
+    },
+    "property_ids": {
+      "image": "P18",
+      "instance of": "P31",
+      "constellation": "P59",
+      "spectral class": "P215",
+      "Commons category": "P373",
+      "said to be the same as": "P460",
+      "catalog code": "P528",
+      "Freebase ID": "P646",
+      "topic's main category": "P910",
+      "apparent magnitude": "P1215",
+      "Gran Enciclopèdia Catalana ID (former scheme)": "P1296",
+      "described by source": "P1343",
+      "Encyclopædia Britannica Online ID": "P1417",
+      "present in work": "P1441",
+      "absolute magnitude": "P1457",
+      "luminosity": "P2060",
+      "parallax": "P2214",
+      "radial velocity": "P2216",
+      "metallicity": "P2227",
+      "distance from Earth": "P2583",
+      "Great Russian Encyclopedia Online ID (2017)": "P2924",
+      "SIMBAD ID": "P3083",
+      "stellar rotational velocity": "P4296",
+      "Great Norwegian Encyclopedia ID": "P4342",
+      "on focus list of Wikimedia project": "P5008",
+      "Interlingual Index ID": "P5063",
+      "right ascension": "P6257",
+      "declination": "P6258",
+      "epoch": "P6259",
+      "Fandom article ID": "P6262",
+      "Microsoft Academic ID (discontinued)": "P6366",
+      "effective temperature": "P6879",
+      "surface gravity": "P7015",
+      "Online PWN Encyclopedia ID": "P7305",
+      "Hrvatska enciklopedija ID": "P7982",
+      "Lex ID": "P8313",
+      "KBpedia ID": "P8408",
+      "WordNet 3.1 Synset ID": "P8814",
+      "Encyclopedia of China (Third Edition) old ID (2021)": "P10565",
+      "declination component of proper motion": "P10751",
+      "right ascension component of proper motion": "P10752",
+      "Gran Enciclopèdia Catalana ID": "P12385",
+      "Encyclopedia of China (Third Edition) ID (2026)": "P14541"
+    },
     "commons_image": "Canopus.jpg",
     "url": "https://www.wikidata.org/wiki/Q12189"
   },
@@ -591,6 +2269,11 @@
       "unit": "L☉"
     },
     "constellation": "Carina",
+    "abs_mag": -5.62,
+    "spectral_class": "A",
+    "luminosity_class": "II",
+    "gal_l": 261.2121,
+    "gal_b": -25.2922,
     "description": "Brightest star in the constellation of Carina"
   },
   "id": "canopus",

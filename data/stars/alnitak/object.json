@@ -2,29 +2,29 @@
   "name": "Alnitak",
   "category": "stars",
   "app_type": "O-Star",
-  "harvested": "2026-10-10T16:24:18Z",
+  "harvested": "2026-10-10T18:13:03Z",
   "sources": [
     {
       "name": "SIMBAD (CDS)",
       "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20zet%20Ori",
-      "retrieved": "2026-10-10T16:24:25Z"
+      "retrieved": "2026-10-10T18:13:16Z"
     },
     {
       "name": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Alnitak",
-      "retrieved": "2026-10-10T16:24:26Z"
+      "retrieved": "2026-10-10T18:14:01Z"
     },
     {
       "name": "Wikidata",
       "url": "https://www.wikidata.org/wiki/Q13076",
-      "retrieved": "2026-10-10T16:24:27Z"
+      "retrieved": "2026-10-10T18:15:00Z"
     }
   ],
   "images": {
     "sky": {
       "file": "sky.jpg",
       "credit": "DSS2 colour via CDS hips2fits",
-      "fov_deg": 0.4
+      "fov_deg": 1.5
     },
     "photo": {
       "file": "photo.jpg",
@@ -40,21 +40,56 @@
   },
   "simbad": {
     "main_id": "* zet Ori",
+    "nbref": 376,
+    "otype": "**",
     "ra": 85.18969442793068,
     "dec": -1.9425735859722049,
-    "otype": "**",
-    "otype_desc": "Double or Multiple Star",
-    "sp_type": "O9.7Ib+B0III",
-    "plx_value": 4.43,
-    "plx_err": 0.64,
+    "coo_err_maj": 5.1886225,
+    "coo_err_min": 2.2886949,
+    "coo_err_angle": 90,
+    "coo_qual": "A",
+    "coo_wavelength": "O",
+    "coo_bibcode": "2007A&A...474..653V",
     "pmra": 3.19,
     "pmdec": 2.03,
+    "pm_err_maj": 0.59,
+    "pm_err_min": 0.26,
+    "pm_err_angle": 0,
+    "pm_qual": "A",
+    "pm_bibcode": "2007A&A...474..653V",
+    "plx_value": 4.43,
+    "plx_err": 0.64,
+    "plx_qual": "A",
+    "plx_bibcode": "2007A&A...474..653V",
+    "rvz_type": "v",
     "rvz_radvel": 18.5,
     "rvz_redshift": 6.17112617515847e-05,
+    "rvz_err": 1.3,
+    "rvz_nature": null,
+    "rvz_qual": "B",
+    "rvz_bibcode": "2007AN....328..889K",
+    "vlsr": null,
+    "vlsr_err": null,
+    "vlsr_wavelength": null,
+    "vlsr_bibcode": null,
+    "vlsr_min": null,
+    "vlsr_max": null,
+    "sp_type": "O9.7Ib+B0III",
+    "sp_qual": "C",
+    "sp_bibcode": "2014yCat....1.2023S",
+    "morph_type": null,
+    "morph_qual": null,
+    "morph_bibcode": null,
     "galdim_majaxis": null,
     "galdim_minaxis": null,
-    "morph_type": null,
-    "nbref": 376,
+    "galdim_angle": null,
+    "galdim_qual": null,
+    "galdim_wavelength": null,
+    "galdim_bibcode": null,
+    "update_date": "2026-05-04",
+    "oid": 827058,
+    "rvz_wavelength": null,
+    "otype_desc": "Double or Multiple Star",
     "identifiers": [
       "TIC 11360636",
       "HIP 26727",
@@ -155,6 +190,163 @@
         "err": null
       }
     },
+    "coordinates": {
+      "frame": "ICRS",
+      "epoch": "J2000",
+      "ra_deg": 85.18969442793068,
+      "dec_deg": -1.9425735859722049,
+      "ra_hms": "05 40 45.527",
+      "dec_dms": "-01 56 33.26",
+      "gal_l": 206.45218,
+      "gal_b": -16.58517,
+      "err_maj_mas": 5.1886225,
+      "err_min_mas": 2.2886949,
+      "err_angle_deg": 90,
+      "quality": "A",
+      "wavelength": "O",
+      "bibcode": "2007A&A...474..653V"
+    },
+    "hierarchy": {
+      "parents": [
+        {
+          "main_id": "NAME Orion X",
+          "otype": "As*",
+          "otype_desc": "Association of Stars",
+          "membership": 100,
+          "bibcode": "2015A&A...584A..26B"
+        }
+      ],
+      "children": [
+        {
+          "main_id": "* zet Ori B",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2001AJ....122.3466M"
+        },
+        {
+          "main_id": "* zet Ori A",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": null,
+          "bibcode": "2001AJ....122.3466M"
+        }
+      ]
+    },
+    "measurements": {
+      "mesOtype": [
+        {
+          "otype": "*",
+          "comments": "from id * zet Ori",
+          "bibcode": null
+        },
+        {
+          "otype": "**",
+          "comments": "from id CCDM J05408-0156AB",
+          "bibcode": null
+        },
+        {
+          "otype": "Em*",
+          "comments": "from id EM* MWC  509",
+          "bibcode": null
+        },
+        {
+          "otype": "IR",
+          "comments": "from id IRC +00081",
+          "bibcode": null
+        },
+        {
+          "otype": "NIR",
+          "comments": "from id 2MASS J05404553-0156336",
+          "bibcode": null
+        },
+        {
+          "otype": "UV",
+          "comments": "from id EUVE J0540-01.9",
+          "bibcode": null
+        },
+        {
+          "otype": "V*",
+          "comments": "from id AAVSO 0535-02",
+          "bibcode": null
+        },
+        {
+          "otype": "X",
+          "comments": "from id 2E  1500",
+          "bibcode": null
+        }
+      ],
+      "mesPLX": [
+        {
+          "bibcode": "1997A&A...323L..49P",
+          "obscode": null,
+          "plx": 3.99,
+          "plx_err": 0.79
+        },
+        {
+          "bibcode": "2007A&A...474..653V",
+          "obscode": null,
+          "plx": 4.43,
+          "plx_err": 0.64
+        },
+        {
+          "bibcode": "1995GCTP..C......0V",
+          "obscode": null,
+          "plx": 23.9,
+          "plx_err": 15
+        }
+      ],
+      "mesPM": [
+        {
+          "bibcode": "1997A&A...323L..49P",
+          "coosystem": "ICRS",
+          "pmde": 2.54,
+          "pmde_err": 0.4,
+          "pmra": 3.99,
+          "pmra_err": 0.74
+        },
+        {
+          "bibcode": "2007A&A...474..653V",
+          "coosystem": "ICRS",
+          "pmde": 2.03,
+          "pmde_err": 0.26,
+          "pmra": 3.19,
+          "pmra_err": 0.59
+        }
+      ],
+      "mesSpT": [
+        {
+          "bibcode": "1976AJ.....81..245E",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "O9.5Ib                              "
+        }
+      ],
+      "mesVelocities": [
+        {
+          "bibcode": "2007AN....328..889K",
+          "d": null,
+          "meanerror": 1.3,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "B",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "V  ",
+          "velvalue": 18.5,
+          "wdomain": "O   "
+        }
+      ],
+      "mesXmm": [
+        {
+          "obsid": "0112530101"
+        }
+      ]
+    },
     "atmosphere_measurements": [],
     "teff_median": null,
     "vsini_measurements": [],
@@ -171,6 +363,7 @@
     ],
     "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20zet%20Ori"
   },
+  "papers_count": 376,
   "wikipedia": {
     "title": "Alnitak",
     "description": "Triple star system in the constellation Orion",
@@ -179,7 +372,8 @@
     "url": "https://en.wikipedia.org/wiki/Alnitak",
     "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Star-Alnitak.png/330px-Star-Alnitak.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Star-Alnitak.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "wikidata": "Q13076"
+    "wikidata": "Q13076",
+    "sections_count": 7
   },
   "wikidata": {
     "id": "Q13076",
@@ -354,6 +548,435 @@
         }
       ]
     },
+    "all_claims": {
+      "image": [
+        {
+          "value": "Alnitak sun comparison.svg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Alnitak_sun_comparison.svg"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star",
+          "qid": "Q523",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "binary star",
+          "qid": "Q50053",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "double star",
+          "qid": "Q13890",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "near-infrared source",
+          "qid": "Q67206785",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "ultraviolet source",
+          "qid": "Q71798788",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "multiple star",
+          "qid": "Q878367",
+          "type": "wikibase-item"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Orion",
+          "qid": "Q8860",
+          "type": "wikibase-item"
+        }
+      ],
+      "spectral class": [
+        {
+          "value": "O9.7Ib+B0III",
+          "type": "string"
+        }
+      ],
+      "part of": [
+        {
+          "value": "Orion's Belt",
+          "qid": "Q324312",
+          "type": "wikibase-item"
+        }
+      ],
+      "Commons category": [
+        {
+          "value": "Alnitak",
+          "type": "string"
+        }
+      ],
+      "has part(s)": [
+        {
+          "value": "Zeta Orionis A",
+          "qid": "Q66477108",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Zeta Orionis B",
+          "qid": "Q66476707",
+          "type": "wikibase-item"
+        }
+      ],
+      "catalog code": [
+        {
+          "value": "HIP 26727",
+          "type": "string"
+        },
+        {
+          "value": "2MASS J05404553-0156336",
+          "type": "string"
+        },
+        {
+          "value": "GSC 04771-01188",
+          "type": "string"
+        },
+        {
+          "value": "ζ Ori",
+          "type": "string"
+        },
+        {
+          "value": "ADS 4263 AB",
+          "type": "string"
+        },
+        {
+          "value": "1ES 0538-01.9",
+          "type": "string"
+        },
+        {
+          "value": "uvby98 100037742",
+          "type": "string"
+        },
+        {
+          "value": "CCDM J05408-0156AB",
+          "type": "string"
+        },
+        {
+          "value": "HIC 26727",
+          "type": "string"
+        },
+        {
+          "value": "IRC +00081",
+          "type": "string"
+        },
+        {
+          "value": "JP11 1219",
+          "type": "string"
+        },
+        {
+          "value": "PPM 400076",
+          "type": "string"
+        },
+        {
+          "value": "UBV 5783",
+          "type": "string"
+        },
+        {
+          "value": "PLX 1301.00",
+          "type": "string"
+        },
+        {
+          "value": "PLX 1301",
+          "type": "string"
+        },
+        {
+          "value": "1RXS J054045.4-015631",
+          "type": "string"
+        },
+        {
+          "value": "EUVE J0540-01.9",
+          "type": "string"
+        },
+        {
+          "value": "WDS J05407-0157AB",
+          "type": "string"
+        },
+        {
+          "value": "IRAS 05381-0158",
+          "type": "string"
+        },
+        {
+          "value": "CEL 921",
+          "type": "string"
+        },
+        {
+          "value": "ROT 907",
+          "type": "string"
+        },
+        {
+          "value": "TD1 5127",
+          "type": "string"
+        },
+        {
+          "value": "GC 7089",
+          "type": "string"
+        },
+        {
+          "value": "SAO 132444",
+          "type": "string"
+        },
+        {
+          "value": "XSS J05421-0225",
+          "type": "string"
+        },
+        {
+          "value": "HGAM 467",
+          "type": "string"
+        },
+        {
+          "value": "50 Ori",
+          "type": "string"
+        },
+        {
+          "value": "TIC 11360636",
+          "type": "string"
+        },
+        {
+          "value": "AAVSO 0535-02",
+          "type": "string"
+        },
+        {
+          "value": "HD 37742J",
+          "type": "string"
+        }
+      ],
+      "Freebase ID": [
+        {
+          "value": "/m/03nb16",
+          "type": "external-id",
+          "url": "https://www.google.com/search?kgmid=/m/03nb16"
+        }
+      ],
+      "type of variable star": [
+        {
+          "value": "Beta Cephei variable",
+          "qid": "Q764463",
+          "type": "wikibase-item"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 1.77,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 2.25,
+          "unit": "",
+          "plus": 0.31000000000000005,
+          "minus": 0.31000000000000005,
+          "type": "quantity"
+        },
+        {
+          "value": 2.35,
+          "unit": "",
+          "plus": 0.22999999999999998,
+          "minus": 0.22999999999999998,
+          "type": "quantity"
+        },
+        {
+          "value": 2.4,
+          "unit": "",
+          "plus": 0.28000000000000025,
+          "minus": 0.2799999999999998,
+          "type": "quantity"
+        },
+        {
+          "value": 2.53,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 2.3,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 1.97,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 1.56,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 1.25,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 2.05,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 1.85,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 1.56,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 0.5,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 100000.0,
+          "unit": "L☉",
+          "type": "quantity"
+        }
+      ],
+      "radius": [
+        {
+          "value": 20.0,
+          "unit": "R☉",
+          "type": "quantity"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 4.43,
+          "unit": "mas",
+          "plus": 0.6400000000000006,
+          "minus": 0.6399999999999997,
+          "type": "quantity"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 18.5,
+          "unit": "km/s",
+          "plus": 1.3000000000000007,
+          "minus": 1.3000000000000007,
+          "type": "quantity"
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 1260.0,
+          "unit": "ly",
+          "type": "quantity"
+        }
+      ],
+      "SIMBAD ID": [
+        {
+          "value": "* zet Ori",
+          "type": "external-id",
+          "url": "https://simbad.u-strasbg.fr/simbad/sim-id?Ident=%2A%20zet%20Ori"
+        }
+      ],
+      "Treccani ID": [
+        {
+          "value": "alnitak",
+          "type": "external-id",
+          "url": "https://www.treccani.it/enciclopedia/alnitak"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 85.189694428,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "declination": [
+        {
+          "value": -1.942573586,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "epoch": [
+        {
+          "value": "J2000.0",
+          "qid": "Q1264450",
+          "type": "wikibase-item"
+        }
+      ],
+      "Online PWN Encyclopedia ID": [
+        {
+          "value": "3868117",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/2/https://encyklopedia.pwn.pl/haslo/;3868117.html"
+        }
+      ],
+      "age estimated by a dating method": [
+        {
+          "value": 6.4,
+          "unit": "Myr",
+          "type": "quantity"
+        }
+      ],
+      "Hrvatska enciklopedija ID": [
+        {
+          "value": "68924",
+          "type": "external-id",
+          "url": "https://www.enciklopedija.hr/clanak/68924"
+        }
+      ],
+      "declination component of proper motion": [
+        {
+          "value": 2.03,
+          "unit": "mas/yr",
+          "plus": 0.26000000000000023,
+          "minus": 0.2599999999999998,
+          "type": "quantity"
+        }
+      ],
+      "right ascension component of proper motion": [
+        {
+          "value": 3.19,
+          "unit": "mas/yr",
+          "plus": 0.5899999999999999,
+          "minus": 0.5899999999999999,
+          "type": "quantity"
+        }
+      ]
+    },
+    "property_ids": {
+      "image": "P18",
+      "instance of": "P31",
+      "constellation": "P59",
+      "spectral class": "P215",
+      "part of": "P361",
+      "Commons category": "P373",
+      "has part(s)": "P527",
+      "catalog code": "P528",
+      "Freebase ID": "P646",
+      "type of variable star": "P881",
+      "apparent magnitude": "P1215",
+      "luminosity": "P2060",
+      "radius": "P2120",
+      "parallax": "P2214",
+      "radial velocity": "P2216",
+      "distance from Earth": "P2583",
+      "SIMBAD ID": "P3083",
+      "Treccani ID": "P3365",
+      "right ascension": "P6257",
+      "declination": "P6258",
+      "epoch": "P6259",
+      "Online PWN Encyclopedia ID": "P7305",
+      "age estimated by a dating method": "P7584",
+      "Hrvatska enciklopedija ID": "P7982",
+      "declination component of proper motion": "P10751",
+      "right ascension component of proper motion": "P10752"
+    },
     "commons_image": "Alnitak sun comparison.svg",
     "url": "https://www.wikidata.org/wiki/Q13076"
   },
@@ -380,6 +1003,11 @@
       "unit": "Myr"
     },
     "constellation": "Orion",
+    "abs_mag": -5.0,
+    "spectral_class": "O",
+    "luminosity_class": "Ib",
+    "gal_l": 206.45218,
+    "gal_b": -16.58517,
     "description": "Triple star system in the constellation Orion"
   },
   "id": "alnitak",

@@ -2,29 +2,29 @@
   "name": "ι Hya",
   "category": "stars",
   "app_type": "K-Star",
-  "harvested": "2026-10-10T16:06:09Z",
+  "harvested": "2026-10-10T17:59:53Z",
   "sources": [
     {
       "name": "SIMBAD (CDS)",
       "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20iot%20Hya",
-      "retrieved": "2026-10-10T16:06:16Z"
+      "retrieved": "2026-10-10T18:00:19Z"
     },
     {
       "name": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/Iota_Hydrae",
-      "retrieved": "2026-10-10T16:06:17Z"
+      "retrieved": "2026-10-10T18:00:22Z"
     },
     {
       "name": "Wikidata",
       "url": "https://www.wikidata.org/wiki/Q942373",
-      "retrieved": "2026-10-10T16:06:18Z"
+      "retrieved": "2026-10-10T18:00:25Z"
     }
   ],
   "images": {
     "sky": {
       "file": "sky.jpg",
       "credit": "DSS2 colour via CDS hips2fits",
-      "fov_deg": 0.4
+      "fov_deg": 0.8
     },
     "photo": {
       "file": "photo.jpg",
@@ -40,21 +40,56 @@
   },
   "simbad": {
     "main_id": "* iot Hya",
+    "nbref": 192,
+    "otype": "PM*",
     "ra": 144.96400613436165,
     "dec": -1.142810731513889,
-    "otype": "PM*",
-    "otype_desc": "High Proper Motion Star",
-    "sp_type": "K2.5III",
-    "plx_value": 12.9055,
-    "plx_err": 0.1751,
+    "coo_err_maj": 0.1196,
+    "coo_err_min": 0.1329,
+    "coo_err_angle": 90,
+    "coo_qual": "A",
+    "coo_wavelength": "O",
+    "coo_bibcode": "2020yCat.1350....0G",
     "pmra": 46.27,
     "pmdec": -62.544,
+    "pm_err_maj": 0.148,
+    "pm_err_min": 0.147,
+    "pm_err_angle": 90,
+    "pm_qual": "A",
+    "pm_bibcode": "2020yCat.1350....0G",
+    "plx_value": 12.9055,
+    "plx_err": 0.1751,
+    "plx_qual": "A",
+    "plx_bibcode": "2020yCat.1350....0G",
+    "rvz_type": "v",
     "rvz_radvel": 24.19,
     "rvz_redshift": 8.069241026098517e-05,
+    "rvz_err": 0.36,
+    "rvz_nature": null,
+    "rvz_qual": "A",
+    "rvz_bibcode": "2008AJ....135..209M",
+    "vlsr": null,
+    "vlsr_err": null,
+    "vlsr_wavelength": null,
+    "vlsr_bibcode": null,
+    "vlsr_min": null,
+    "vlsr_max": null,
+    "sp_type": "K2.5III",
+    "sp_qual": "B",
+    "sp_bibcode": "1989ApJS...71..245K",
+    "morph_type": null,
+    "morph_qual": null,
+    "morph_bibcode": null,
     "galdim_majaxis": null,
     "galdim_minaxis": null,
-    "morph_type": null,
-    "nbref": 192,
+    "galdim_angle": null,
+    "galdim_qual": null,
+    "galdim_wavelength": null,
+    "galdim_bibcode": null,
+    "update_date": "2026-05-26",
+    "oid": 1646438,
+    "rvz_wavelength": null,
+    "otype_desc": "High Proper Motion Star",
     "identifiers": [
       "TIC 62730206",
       "HIP 47431",
@@ -138,6 +173,621 @@
         "mag": 0.874,
         "err": 0.26
       }
+    },
+    "coordinates": {
+      "frame": "ICRS",
+      "epoch": "J2000",
+      "ra_deg": 144.96400613436165,
+      "dec_deg": -1.142810731513889,
+      "ra_hms": "09 39 51.361",
+      "dec_dms": "-01 08 34.12",
+      "gal_l": 236.4895,
+      "gal_b": 35.98057,
+      "err_maj_mas": 0.1196,
+      "err_min_mas": 0.1329,
+      "err_angle_deg": 90,
+      "quality": "A",
+      "wavelength": "O",
+      "bibcode": "2020yCat.1350....0G"
+    },
+    "hierarchy": {
+      "parents": [],
+      "children": []
+    },
+    "measurements": {
+      "mesDiameter": [
+        {
+          "bibcode": "2018AJ....155...30B",
+          "diameter": 41800000.0,
+          "error": null,
+          "filter": null,
+          "method": "Interfer",
+          "qual": null,
+          "unit": "km  "
+        }
+      ],
+      "mesDistance": [
+        {
+          "bibcode": "2018yCat.1345....0G",
+          "dist": 73.6589,
+          "method": "paral   ",
+          "minus_err": -2.1659,
+          "plus_err": 2.1659,
+          "qual": null,
+          "unit": "pc  "
+        },
+        {
+          "bibcode": "2020yCat.1350....0G",
+          "dist": 77.4863,
+          "method": "paral   ",
+          "minus_err": -1.0513,
+          "plus_err": 1.0513,
+          "qual": null,
+          "unit": "pc  "
+        }
+      ],
+      "mesFe_h": [
+        {
+          "teff": 4238,
+          "log_g": 1.78,
+          "fe_h": -0.06,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2024A&A...682A.145S"
+        },
+        {
+          "teff": 4200,
+          "log_g": 1.8,
+          "fe_h": 0.05,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": "F569 ",
+          "bibcode": "1990AJ.....99.1961F"
+        },
+        {
+          "teff": 4220,
+          "log_g": 2.21,
+          "fe_h": -0.14,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": "F574 ",
+          "bibcode": "1990ApJS...74.1075M"
+        },
+        {
+          "teff": 4231,
+          "log_g": 1.74,
+          "fe_h": -0.08,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2007MNRAS.374..664C"
+        },
+        {
+          "teff": 4200,
+          "log_g": 1.8,
+          "fe_h": 0.05,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": "F    ",
+          "bibcode": "1990AJ.....99.1961F"
+        },
+        {
+          "teff": 4220,
+          "log_g": 2.21,
+          "fe_h": -0.14,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": "F    ",
+          "bibcode": "1990ApJS...74.1075M"
+        },
+        {
+          "teff": 4275,
+          "log_g": 1.96,
+          "fe_h": -0.07,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2011A&A...531A.165P"
+        },
+        {
+          "teff": 4231,
+          "log_g": 1.74,
+          "fe_h": -0.08,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2013MNRAS.435..952S"
+        },
+        {
+          "teff": 4200,
+          "log_g": 1.8,
+          "fe_h": 0.05,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "1990AJ.....99.1961F"
+        },
+        {
+          "teff": 4220,
+          "log_g": 2.21,
+          "fe_h": -0.14,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "1990ApJS...74.1075M"
+        },
+        {
+          "teff": 4400,
+          "log_g": 2.35,
+          "fe_h": -0.07,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2007A&A...475.1003H"
+        },
+        {
+          "teff": 4256,
+          "log_g": 2.2,
+          "fe_h": -0.14,
+          "flag": null,
+          "compstar": "Sun      ",
+          "catno": null,
+          "bibcode": "2008AJ....135..209M"
+        },
+        {
+          "teff": 4266,
+          "log_g": 1.91,
+          "fe_h": -0.06,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2022A&A...663A...4S"
+        },
+        {
+          "teff": 4193,
+          "log_g": 1.31,
+          "fe_h": -0.23,
+          "flag": null,
+          "compstar": null,
+          "catno": null,
+          "bibcode": "2021MNRAS.505.4496G"
+        }
+      ],
+      "mesIUE": [
+        {
+          "abnormcode": null,
+          "aperture": "L",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "LWR",
+          "classcode": 39,
+          "comments": "E=91,C=100,B=25     ",
+          "complid": null,
+          "dispcode": "L",
+          "expqualcode": "331",
+          "exptime": 138,
+          "fescount": 622,
+          "fesmode": "FU",
+          "flag": "*",
+          "image": 13170,
+          "name": "HD 83618        ",
+          "obsdate": "820504",
+          "obstime": "233600",
+          "progid": "HCETA",
+          "station": "G"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "L",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "LWR",
+          "classcode": 39,
+          "comments": "E=225,C=200,B=20    ",
+          "complid": null,
+          "dispcode": "L",
+          "expqualcode": "550",
+          "exptime": 360,
+          "fescount": 613,
+          "fesmode": "FU",
+          "flag": "*",
+          "image": 15279,
+          "name": "HD 83618        ",
+          "obsdate": "830213",
+          "obstime": "151900",
+          "progid": "HCETA",
+          "station": "G"
+        },
+        {
+          "abnormcode": null,
+          "aperture": "L",
+          "bibcode": "1996IUEML.C......0I",
+          "camid": "SWP",
+          "classcode": 39,
+          "comments": "E=34,B=20           ",
+          "complid": null,
+          "dispcode": "L",
+          "expqualcode": "20 ",
+          "exptime": 1200,
+          "fescount": 607,
+          "fesmode": "FU",
+          "flag": "*",
+          "image": 19242,
+          "name": "HD 83618        ",
+          "obsdate": "830213",
+          "obstime": "152900",
+          "progid": "HCETA",
+          "station": "G"
+        }
+      ],
+      "mesOtype": [
+        {
+          "otype": "*",
+          "comments": "from id * iot Hya",
+          "bibcode": null
+        },
+        {
+          "otype": "IR",
+          "comments": "from id IRAS 09372-0054",
+          "bibcode": null
+        },
+        {
+          "otype": "MIR",
+          "comments": "from id WISE J093951.42-010834.6",
+          "bibcode": null
+        },
+        {
+          "otype": "NIR",
+          "comments": "from id 2MASS J09395135-0108341",
+          "bibcode": null
+        },
+        {
+          "otype": "PM*",
+          "comments": "from bibcode",
+          "bibcode": "2007A&A...474..653V"
+        },
+        {
+          "otype": "UV",
+          "comments": "from id TD1 14155",
+          "bibcode": null
+        },
+        {
+          "otype": "V*",
+          "comments": "from basic data",
+          "bibcode": null
+        }
+      ],
+      "mesPLX": [
+        {
+          "bibcode": "1997A&A...323L..49P",
+          "obscode": null,
+          "plx": 11.83,
+          "plx_err": 0.8
+        },
+        {
+          "bibcode": "2007A&A...474..653V",
+          "obscode": null,
+          "plx": 12.39,
+          "plx_err": 0.14
+        },
+        {
+          "bibcode": "1995GCTP..C......0V",
+          "obscode": null,
+          "plx": 23.2,
+          "plx_err": 9.6
+        },
+        {
+          "bibcode": "2018yCat.1345....0G",
+          "obscode": null,
+          "plx": 13.5761,
+          "plx_err": 0.3992
+        },
+        {
+          "bibcode": "2020yCat.1350....0G",
+          "obscode": null,
+          "plx": 12.9055,
+          "plx_err": 0.1751
+        }
+      ],
+      "mesPM": [
+        {
+          "bibcode": "1933GCCat.C......0B",
+          "coosystem": "FK4",
+          "pmde": -69,
+          "pmde_err": null,
+          "pmra": 46,
+          "pmra_err": null
+        },
+        {
+          "bibcode": "1952N30...C......0M",
+          "coosystem": "FK4",
+          "pmde": -66,
+          "pmde_err": null,
+          "pmra": 46,
+          "pmra_err": null
+        },
+        {
+          "bibcode": "1971IAUCo...7..153L",
+          "coosystem": "FK4",
+          "pmde": -59,
+          "pmde_err": 8,
+          "pmra": 68,
+          "pmra_err": 9
+        },
+        {
+          "bibcode": "1997A&A...323L..49P",
+          "coosystem": "ICRS",
+          "pmde": -62.92,
+          "pmde_err": 0.5,
+          "pmra": 47.81,
+          "pmra_err": 0.9
+        },
+        {
+          "bibcode": "2007A&A...474..653V",
+          "coosystem": "ICRS",
+          "pmde": -62.39,
+          "pmde_err": 0.1,
+          "pmra": 46.96,
+          "pmra_err": 0.14
+        },
+        {
+          "bibcode": "2018yCat.1345....0G",
+          "coosystem": "ICRS",
+          "pmde": -61.05,
+          "pmde_err": 0.692,
+          "pmra": 45.029,
+          "pmra_err": 0.676
+        },
+        {
+          "bibcode": "2020yCat.1350....0G",
+          "coosystem": "ICRS",
+          "pmde": -62.544,
+          "pmde_err": 0.147,
+          "pmra": 46.27,
+          "pmra_err": 0.148
+        }
+      ],
+      "mesRot": [
+        {
+          "bibcode": "1970CoAsi.239....1B",
+          "nbmes": 7,
+          "qual": "D",
+          "upvsini": null,
+          "vsini": 8,
+          "vsini_err": null
+        },
+        {
+          "bibcode": "1970CoKwa.189....0U",
+          "nbmes": null,
+          "qual": "D",
+          "upvsini": "<",
+          "vsini": 17,
+          "vsini_err": null
+        },
+        {
+          "bibcode": "2008AJ....135..209M",
+          "nbmes": 4,
+          "qual": null,
+          "upvsini": null,
+          "vsini": 4.5,
+          "vsini_err": null
+        }
+      ],
+      "mesSpT": [
+        {
+          "bibcode": "1952ApJ...116..122R",
+          "dispsystem": "P ",
+          "mssnote": null,
+          "sptype": "K3IIIvar                            "
+        },
+        {
+          "bibcode": "1955ApJ...121..118H",
+          "dispsystem": "P ",
+          "mssnote": null,
+          "sptype": "K3IIIvar                            "
+        },
+        {
+          "bibcode": "1962MtSOM...4....1B",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "K3IIIvar                            "
+        },
+        {
+          "bibcode": "1999MSS...C05....0H",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "K2III                               "
+        },
+        {
+          "bibcode": "1989ApJS...71..245K",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "K2.5III                             "
+        },
+        {
+          "bibcode": "1993yCat.3135....0C",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "K0                                  "
+        },
+        {
+          "bibcode": "2020MNRAS.491.2280S",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "K3III                               "
+        }
+      ],
+      "mesVelocities": [
+        {
+          "bibcode": "1995A&AS..114..269D",
+          "d": null,
+          "meanerror": null,
+          "nature": "s",
+          "nbmes": 13,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 23.2,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1913LicOB...7..113C",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 1,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 24.600000381469727,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1919ApJ....50..161L",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 3,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 20.299999237060547,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1928AnCap..10h...1J",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 3,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 20.200000762939453,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1928PLicO..16....1C",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 4,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 24.299999237060547,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1952ApJ...115..157W",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 3,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 25.5,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1999VeARI..35....1W",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 23.200000762939453,
+          "wdomain": null
+        },
+        {
+          "bibcode": "2006AstL...32..759G",
+          "d": null,
+          "meanerror": 0.8,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "V  ",
+          "velvalue": 23.3,
+          "wdomain": "O   "
+        },
+        {
+          "bibcode": "2008AJ....135..209M",
+          "d": null,
+          "meanerror": 0.36,
+          "nature": "s",
+          "nbmes": 4,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 24.19,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "1953GCRV..C......0W",
+          "d": null,
+          "meanerror": 0.9,
+          "nature": "s",
+          "nbmes": 13,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "E",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 23.2,
+          "wdomain": null
+        }
+      ]
     },
     "atmosphere_measurements": [
       {
@@ -272,6 +922,7 @@
     ],
     "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20iot%20Hya"
   },
+  "papers_count": 192,
   "wikipedia": {
     "title": "Iota Hydrae",
     "description": "Star in the constellation Hydra",
@@ -280,7 +931,8 @@
     "url": "https://en.wikipedia.org/wiki/Iota_Hydrae",
     "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Hydra_constellation_map.svg/330px-Hydra_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Hydra_constellation_map.svg/330px-Hydra_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "wikidata": "Q942373"
+    "wikidata": "Q942373",
+    "sections_count": 3
   },
   "wikidata": {
     "id": "Q942373",
@@ -575,6 +1227,412 @@
         }
       ]
     },
+    "all_claims": {
+      "instance of": [
+        {
+          "value": "high proper-motion star",
+          "qid": "Q2247863",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "near-infrared source",
+          "qid": "Q67206785",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "ultraviolet source",
+          "qid": "Q71798788",
+          "type": "wikibase-item"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Hydra",
+          "qid": "Q10578",
+          "type": "wikibase-item"
+        }
+      ],
+      "spectral class": [
+        {
+          "value": "K2III",
+          "type": "string"
+        }
+      ],
+      "catalog code": [
+        {
+          "value": "HD 83618",
+          "type": "string"
+        },
+        {
+          "value": "HIP 47431",
+          "type": "string"
+        },
+        {
+          "value": "HR 3845",
+          "type": "string"
+        },
+        {
+          "value": "IRAS 09372-0054",
+          "type": "string"
+        },
+        {
+          "value": "SAO 137035",
+          "type": "string"
+        },
+        {
+          "value": "2MASS J09395135-0108341",
+          "type": "string"
+        },
+        {
+          "value": "GSC 04894-02529",
+          "type": "string"
+        },
+        {
+          "value": "ι Hya",
+          "type": "string"
+        },
+        {
+          "value": "CSV 101070",
+          "type": "string"
+        },
+        {
+          "value": "FK5 1250",
+          "type": "string"
+        },
+        {
+          "value": "GC 13341",
+          "type": "string"
+        },
+        {
+          "value": "GCRV 6229",
+          "type": "string"
+        },
+        {
+          "value": "HIC 47431",
+          "type": "string"
+        },
+        {
+          "value": "IRC +00190",
+          "type": "string"
+        },
+        {
+          "value": "JP11 1842",
+          "type": "string"
+        },
+        {
+          "value": "N30 2309",
+          "type": "string"
+        },
+        {
+          "value": "NSV 4568",
+          "type": "string"
+        },
+        {
+          "value": "PLX 2293",
+          "type": "string"
+        },
+        {
+          "value": "PLX 2293.00",
+          "type": "string"
+        },
+        {
+          "value": "PMC 90-93 856",
+          "type": "string"
+        },
+        {
+          "value": "PPM 177936",
+          "type": "string"
+        },
+        {
+          "value": "RAFGL 1369",
+          "type": "string"
+        },
+        {
+          "value": "ROT 1497",
+          "type": "string"
+        },
+        {
+          "value": "TD1 14155",
+          "type": "string"
+        },
+        {
+          "value": "TYC 4894-2529-1",
+          "type": "string"
+        },
+        {
+          "value": "UBV 9185",
+          "type": "string"
+        },
+        {
+          "value": "uvby98 100083618",
+          "type": "string"
+        },
+        {
+          "value": "YZ 90 2908",
+          "type": "string"
+        },
+        {
+          "value": "WEB 8903",
+          "type": "string"
+        },
+        {
+          "value": "Gaia DR2 3827873938814719616",
+          "type": "string"
+        },
+        {
+          "value": "35 Hya",
+          "type": "string"
+        },
+        {
+          "value": "TIC 62730206",
+          "type": "string"
+        },
+        {
+          "value": "Gaia DR3 3827873938815011200",
+          "type": "string"
+        },
+        {
+          "value": "UBV M 15620",
+          "type": "string"
+        }
+      ],
+      "Freebase ID": [
+        {
+          "value": "/m/0n4c1hx",
+          "type": "external-id",
+          "url": "https://www.google.com/search?kgmid=/m/0n4c1hx"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 3.91,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 6.68,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 5.23,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 2.92,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 2.25,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 1.73,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 0.953,
+          "unit": "",
+          "plus": 0.2400000000000001,
+          "minus": 0.24,
+          "type": "quantity"
+        },
+        {
+          "value": 0.9,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 3.466299,
+          "unit": "",
+          "plus": 0.002915000000000223,
+          "minus": 0.002914999999999779,
+          "type": "quantity"
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -0.63,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 83.0,
+          "unit": "L☉",
+          "type": "quantity"
+        }
+      ],
+      "mass": [
+        {
+          "value": 1.92,
+          "unit": "M☉",
+          "type": "quantity"
+        }
+      ],
+      "radius": [
+        {
+          "value": 33.0,
+          "unit": "R☉",
+          "type": "quantity"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 13.5761,
+          "unit": "mas",
+          "plus": 0.39920000000000044,
+          "minus": 0.39920000000000044,
+          "type": "quantity"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 24.19,
+          "unit": "km/s",
+          "plus": 0.35999999999999943,
+          "minus": 0.360000000000003,
+          "type": "quantity"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.07,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "diameter": [
+        {
+          "value": 41800000.0,
+          "unit": "km",
+          "type": "quantity"
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 77.4863,
+          "unit": "pc",
+          "plus": 1.0512999999999977,
+          "minus": 1.0512999999999977,
+          "type": "quantity"
+        }
+      ],
+      "SIMBAD ID": [
+        {
+          "value": "* iot Hya",
+          "type": "external-id",
+          "url": "https://simbad.u-strasbg.fr/simbad/sim-id?Ident=%2A%20iot%20Hya"
+        }
+      ],
+      "stellar rotational velocity": [
+        {
+          "value": 4.5,
+          "unit": "km/s",
+          "type": "quantity"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 144.96400602375,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "declination": [
+        {
+          "value": -1.14280930306,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "epoch": [
+        {
+          "value": "J2000.0",
+          "qid": "Q1264450",
+          "type": "wikibase-item"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 4275.0,
+          "unit": "K",
+          "type": "quantity"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 91.0,
+          "unit": "centimetre per square second",
+          "type": "quantity"
+        }
+      ],
+      "age estimated by a dating method": [
+        {
+          "value": 2.47,
+          "unit": "Gyr",
+          "type": "quantity"
+        }
+      ],
+      "declination component of proper motion": [
+        {
+          "value": -61.05,
+          "unit": "mas/yr",
+          "plus": 0.6920000000000002,
+          "minus": 0.6920000000000002,
+          "type": "quantity"
+        }
+      ],
+      "right ascension component of proper motion": [
+        {
+          "value": 45.029,
+          "unit": "mas/yr",
+          "plus": 0.6759999999999948,
+          "minus": 0.6760000000000019,
+          "type": "quantity"
+        }
+      ],
+      "Gaia ID": [
+        {
+          "value": "3827873938815011200",
+          "type": "external-id",
+          "url": "https://vizier.cds.unistra.fr/viz-bin/VizieR-S?Gaia%20DR3%203827873938815011200"
+        }
+      ]
+    },
+    "property_ids": {
+      "instance of": "P31",
+      "constellation": "P59",
+      "spectral class": "P215",
+      "catalog code": "P528",
+      "Freebase ID": "P646",
+      "apparent magnitude": "P1215",
+      "absolute magnitude": "P1457",
+      "luminosity": "P2060",
+      "mass": "P2067",
+      "radius": "P2120",
+      "parallax": "P2214",
+      "radial velocity": "P2216",
+      "metallicity": "P2227",
+      "diameter": "P2386",
+      "distance from Earth": "P2583",
+      "SIMBAD ID": "P3083",
+      "stellar rotational velocity": "P4296",
+      "right ascension": "P6257",
+      "declination": "P6258",
+      "epoch": "P6259",
+      "effective temperature": "P6879",
+      "surface gravity": "P7015",
+      "age estimated by a dating method": "P7584",
+      "declination component of proper motion": "P10751",
+      "right ascension component of proper motion": "P10752",
+      "Gaia ID": "P13228"
+    },
     "commons_image": null,
     "url": "https://www.wikidata.org/wiki/Q942373"
   },
@@ -606,6 +1664,11 @@
       "unit": "Gyr"
     },
     "constellation": "Hydra",
+    "abs_mag": -0.54,
+    "spectral_class": "K",
+    "luminosity_class": "III",
+    "gal_l": 236.4895,
+    "gal_b": 35.98057,
     "description": "Star in the constellation Hydra"
   },
   "id": "iota-hya",

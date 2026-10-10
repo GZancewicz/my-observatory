@@ -2,22 +2,22 @@
   "name": "77 Psc",
   "category": "stars",
   "app_type": "F-Star",
-  "harvested": "2026-10-10T16:31:14Z",
+  "harvested": "2026-10-10T18:05:05Z",
   "sources": [
     {
       "name": "SIMBAD (CDS)",
       "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=RX%20J0105.8%2B0454",
-      "retrieved": "2026-10-10T16:31:21Z"
+      "retrieved": "2026-10-10T18:05:30Z"
     },
     {
       "name": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/77_Piscium",
-      "retrieved": "2026-10-10T16:31:22Z"
+      "retrieved": "2026-10-10T18:06:00Z"
     },
     {
       "name": "Wikidata",
       "url": "https://www.wikidata.org/wiki/Q89981410",
-      "retrieved": "2026-10-10T16:31:23Z"
+      "retrieved": "2026-10-10T18:06:02Z"
     }
   ],
   "images": {
@@ -35,21 +35,56 @@
   },
   "simbad": {
     "main_id": "RX J0105.8+0454",
+    "nbref": 3,
+    "otype": "**",
     "ra": 16.458749999999995,
     "dec": 4.905833333333334,
-    "otype": "**",
-    "otype_desc": "Double or Multiple Star",
-    "sp_type": null,
-    "plx_value": null,
-    "plx_err": null,
+    "coo_err_maj": null,
+    "coo_err_min": null,
+    "coo_err_angle": null,
+    "coo_qual": "E",
+    "coo_wavelength": "X",
+    "coo_bibcode": "1999A&A...349..389V",
     "pmra": null,
     "pmdec": null,
+    "pm_err_maj": null,
+    "pm_err_min": null,
+    "pm_err_angle": null,
+    "pm_qual": null,
+    "pm_bibcode": null,
+    "plx_value": null,
+    "plx_err": null,
+    "plx_qual": null,
+    "plx_bibcode": null,
+    "rvz_type": null,
     "rvz_radvel": null,
     "rvz_redshift": null,
+    "rvz_err": null,
+    "rvz_nature": null,
+    "rvz_qual": null,
+    "rvz_bibcode": null,
+    "vlsr": null,
+    "vlsr_err": null,
+    "vlsr_wavelength": null,
+    "vlsr_bibcode": null,
+    "vlsr_min": null,
+    "vlsr_max": null,
+    "sp_type": null,
+    "sp_qual": null,
+    "sp_bibcode": null,
+    "morph_type": null,
+    "morph_qual": null,
+    "morph_bibcode": null,
     "galdim_majaxis": null,
     "galdim_minaxis": null,
-    "morph_type": null,
-    "nbref": 3,
+    "galdim_angle": null,
+    "galdim_qual": null,
+    "galdim_wavelength": null,
+    "galdim_bibcode": null,
+    "update_date": "2025-11-04",
+    "oid": 1405592,
+    "rvz_wavelength": null,
+    "otype_desc": "Double or Multiple Star",
     "identifiers": [
       "IRAS 01031+0438",
       "*  77 Psc",
@@ -60,6 +95,65 @@
       "RX J0105.8+0454"
     ],
     "fluxes": {},
+    "coordinates": {
+      "frame": "ICRS",
+      "epoch": "J2000",
+      "ra_deg": 16.458749999999995,
+      "dec_deg": 4.905833333333334,
+      "ra_hms": "01 05 50.100",
+      "dec_dms": "+04 54 21.00",
+      "gal_l": 129.66849,
+      "gal_b": -57.77748,
+      "err_maj_mas": null,
+      "err_min_mas": null,
+      "err_angle_deg": null,
+      "quality": "E",
+      "wavelength": "X",
+      "bibcode": "1999A&A...349..389V"
+    },
+    "hierarchy": {
+      "parents": [],
+      "children": [
+        {
+          "main_id": "*  77 Psc A",
+          "otype": "PM*",
+          "otype_desc": "High Proper Motion Star",
+          "membership": null,
+          "bibcode": "2001AJ....122.3466M"
+        },
+        {
+          "main_id": "*  77 Psc B",
+          "otype": "**",
+          "otype_desc": "Double or Multiple Star",
+          "membership": null,
+          "bibcode": "2001AJ....122.3466M"
+        }
+      ]
+    },
+    "measurements": {
+      "mesOtype": [
+        {
+          "otype": "*",
+          "comments": "from id *  77 Psc",
+          "bibcode": null
+        },
+        {
+          "otype": "**",
+          "comments": "from id ** STF   90AB",
+          "bibcode": null
+        },
+        {
+          "otype": "IR",
+          "comments": "from basic data",
+          "bibcode": null
+        },
+        {
+          "otype": "X",
+          "comments": "from basic data",
+          "bibcode": null
+        }
+      ]
+    },
     "atmosphere_measurements": [],
     "teff_median": null,
     "vsini_measurements": [],
@@ -72,6 +166,7 @@
     ],
     "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=RX%20J0105.8%2B0454"
   },
+  "papers_count": 3,
   "wikipedia": {
     "title": "77 Piscium",
     "description": "Star system in the constellation Pisces",
@@ -80,7 +175,8 @@
     "url": "https://en.wikipedia.org/wiki/77_Piscium",
     "thumbnail": null,
     "image": null,
-    "wikidata": "Q10932310"
+    "wikidata": "Q10932310",
+    "sections_count": 2
   },
   "wikidata": {
     "id": "Q89981410",
@@ -111,6 +207,89 @@
         }
       ]
     },
+    "all_claims": {
+      "instance of": [
+        {
+          "value": "double star",
+          "qid": "Q13890",
+          "type": "wikibase-item"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Pisces",
+          "qid": "Q8679",
+          "type": "wikibase-item"
+        }
+      ],
+      "has part(s)": [
+        {
+          "value": "77 Piscium",
+          "qid": "Q10932310",
+          "type": "wikibase-item"
+        }
+      ],
+      "catalog code": [
+        {
+          "value": "IRAS 01031+0438",
+          "type": "string"
+        },
+        {
+          "value": "WDS J01058+0455AB",
+          "type": "string"
+        },
+        {
+          "value": "CCDM J01058+0455AB",
+          "type": "string"
+        },
+        {
+          "value": "1RXS J010550.1+045421",
+          "type": "string"
+        },
+        {
+          "value": "RX J0105.8+0454",
+          "type": "string"
+        }
+      ],
+      "SIMBAD ID": [
+        {
+          "value": "RX J0105.8+0454",
+          "type": "external-id",
+          "url": "https://simbad.u-strasbg.fr/simbad/sim-id?Ident=RX%20J0105.8%2B0454"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 16.455083,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "declination": [
+        {
+          "value": 4.908667,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "epoch": [
+        {
+          "value": "J2000.0",
+          "qid": "Q1264450",
+          "type": "wikibase-item"
+        }
+      ]
+    },
+    "property_ids": {
+      "instance of": "P31",
+      "constellation": "P59",
+      "has part(s)": "P527",
+      "catalog code": "P528",
+      "SIMBAD ID": "P3083",
+      "right ascension": "P6257",
+      "declination": "P6258",
+      "epoch": "P6259"
+    },
     "commons_image": null,
     "url": "https://www.wikidata.org/wiki/Q89981410"
   },
@@ -120,6 +299,8 @@
     "ra_deg": 16.458749999999995,
     "dec_deg": 4.905833333333334,
     "constellation": "Pisces",
+    "gal_l": 129.66849,
+    "gal_b": -57.77748,
     "description": "Star system in the constellation Pisces"
   },
   "id": "77-psc",

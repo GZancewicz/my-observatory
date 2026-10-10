@@ -2,22 +2,22 @@
   "name": "29 Hya",
   "category": "stars",
   "app_type": "A-Star",
-  "harvested": "2026-10-10T16:27:31Z",
+  "harvested": "2026-10-10T18:00:24Z",
   "sources": [
     {
       "name": "SIMBAD (CDS)",
-      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2029%20Hya",
-      "retrieved": "2026-10-10T16:27:39Z"
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%2029%20Hya",
+      "retrieved": "2026-10-10T18:00:37Z"
     },
     {
       "name": "Wikipedia",
       "url": "https://en.wikipedia.org/wiki/List_of_stars_in_Hydra",
-      "retrieved": "2026-10-10T16:27:40Z"
+      "retrieved": "2026-10-10T18:02:00Z"
     },
     {
       "name": "Wikidata",
       "url": "https://www.wikidata.org/wiki/Q11088457",
-      "retrieved": "2026-10-10T16:27:41Z"
+      "retrieved": "2026-10-10T18:03:00Z"
     }
   ],
   "images": {
@@ -29,27 +29,62 @@
   },
   "resolved": {
     "method": "sesame:29 Hya",
-    "simbad_id": "*  29 Hya",
+    "simbad_id": "* 29 Hya",
     "wikidata": "Q11088457",
     "wikipedia": "List of stars in Hydra"
   },
   "simbad": {
     "main_id": "*  29 Hya",
+    "nbref": 54,
+    "otype": "**",
     "ra": 141.81100381779314,
     "dec": -9.223710965553149,
-    "otype": "**",
-    "otype_desc": "Double or Multiple Star",
-    "sp_type": "A0V",
-    "plx_value": 4.26,
-    "plx_err": 0.82,
+    "coo_err_maj": 8.254733,
+    "coo_err_min": 6.500925,
+    "coo_err_angle": 90,
+    "coo_qual": "A",
+    "coo_wavelength": "O",
+    "coo_bibcode": "2007A&A...474..653V",
     "pmra": -16.96,
     "pmdec": -3.52,
+    "pm_err_maj": 0.94,
+    "pm_err_min": 0.74,
+    "pm_err_angle": 0,
+    "pm_qual": "A",
+    "pm_bibcode": "2007A&A...474..653V",
+    "plx_value": 4.26,
+    "plx_err": 0.82,
+    "plx_qual": "A",
+    "plx_bibcode": "2007A&A...474..653V",
+    "rvz_type": "v",
     "rvz_radvel": 42.8,
     "rvz_redshift": 0.0001427756251841661,
+    "rvz_err": 1.9,
+    "rvz_nature": null,
+    "rvz_qual": "B",
+    "rvz_bibcode": "2006AstL...32..759G",
+    "vlsr": null,
+    "vlsr_err": null,
+    "vlsr_wavelength": null,
+    "vlsr_bibcode": null,
+    "vlsr_min": null,
+    "vlsr_max": null,
+    "sp_type": "A0V",
+    "sp_qual": "C",
+    "sp_bibcode": "1999MSS...C05....0H",
+    "morph_type": null,
+    "morph_qual": null,
+    "morph_bibcode": null,
     "galdim_majaxis": null,
     "galdim_minaxis": null,
-    "morph_type": null,
-    "nbref": 54,
+    "galdim_angle": null,
+    "galdim_qual": null,
+    "galdim_wavelength": null,
+    "galdim_bibcode": null,
+    "update_date": "2024-08-26",
+    "oid": 1634894,
+    "rvz_wavelength": null,
+    "otype_desc": "Double or Multiple Star",
     "identifiers": [
       "TIC 46799491",
       "WISEA J092714.62-091325.5",
@@ -99,6 +134,180 @@
         "err": 0.31
       }
     },
+    "coordinates": {
+      "frame": "ICRS",
+      "epoch": "J2000",
+      "ra_deg": 141.81100381779314,
+      "dec_deg": -9.223710965553149,
+      "ra_hms": "09 27 14.641",
+      "dec_dms": "-09 13 25.36",
+      "gal_l": 241.93815,
+      "gal_b": 28.63176,
+      "err_maj_mas": 8.254733,
+      "err_min_mas": 6.500925,
+      "err_angle_deg": 90,
+      "quality": "A",
+      "wavelength": "O",
+      "bibcode": "2007A&A...474..653V"
+    },
+    "hierarchy": {
+      "parents": [],
+      "children": [
+        {
+          "main_id": "*  29 Hya B",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2002A&A...384..180F"
+        },
+        {
+          "main_id": "*  29 Hya A",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2002A&A...384..180F"
+        }
+      ]
+    },
+    "measurements": {
+      "mesFe_h": [
+        {
+          "teff": 9333,
+          "log_g": null,
+          "fe_h": null,
+          "flag": null,
+          "compstar": null,
+          "catno": null,
+          "bibcode": "2012A&A...537A.120Z"
+        }
+      ],
+      "mesOtype": [
+        {
+          "otype": "*",
+          "comments": "from id *  29 Hya",
+          "bibcode": null
+        },
+        {
+          "otype": "**",
+          "comments": "from id ** A 1588",
+          "bibcode": null
+        },
+        {
+          "otype": "MIR",
+          "comments": "from id WISE J092714.63-091325.6",
+          "bibcode": null
+        },
+        {
+          "otype": "NIR",
+          "comments": "from id 2MASS J09271465-0913255",
+          "bibcode": null
+        },
+        {
+          "otype": "UV",
+          "comments": "from id TD1 13925",
+          "bibcode": null
+        }
+      ],
+      "mesPLX": [
+        {
+          "bibcode": "2007A&A...474..653V",
+          "obscode": null,
+          "plx": 4.26,
+          "plx_err": 0.82
+        },
+        {
+          "bibcode": "1997A&A...323L..49P",
+          "obscode": null,
+          "plx": 2.5,
+          "plx_err": 1.46
+        }
+      ],
+      "mesPM": [
+        {
+          "bibcode": "1997A&A...323L..49P",
+          "coosystem": "ICRS",
+          "pmde": -3.87,
+          "pmde_err": 1.09,
+          "pmra": -17.11,
+          "pmra_err": 1.55
+        },
+        {
+          "bibcode": "2007A&A...474..653V",
+          "coosystem": "ICRS",
+          "pmde": -3.52,
+          "pmde_err": 0.74,
+          "pmra": -16.96,
+          "pmra_err": 0.94
+        }
+      ],
+      "mesRot": [
+        {
+          "bibcode": "1995ApJS...99..135A",
+          "nbmes": null,
+          "qual": "D",
+          "upvsini": null,
+          "vsini": 45,
+          "vsini_err": null
+        },
+        {
+          "bibcode": "2002A&A...393..897R",
+          "nbmes": null,
+          "qual": "D",
+          "upvsini": null,
+          "vsini": 54,
+          "vsini_err": null
+        },
+        {
+          "bibcode": "2007A&A...463..671R",
+          "nbmes": 0,
+          "qual": "D",
+          "upvsini": null,
+          "vsini": 54,
+          "vsini_err": null
+        },
+        {
+          "bibcode": "2005yCat.3244....0G",
+          "nbmes": null,
+          "qual": null,
+          "upvsini": null,
+          "vsini": 45,
+          "vsini_err": 8
+        }
+      ],
+      "mesSpT": [
+        {
+          "bibcode": "1999MSS...C05....0H",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "A0V                                 "
+        },
+        {
+          "bibcode": "1993yCat.3135....0C",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "A0                                  "
+        }
+      ],
+      "mesVelocities": [
+        {
+          "bibcode": "2006AstL...32..759G",
+          "d": null,
+          "meanerror": 1.9,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "B",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "V  ",
+          "velvalue": 42.8,
+          "wdomain": "O   "
+        }
+      ]
+    },
     "atmosphere_measurements": [
       {
         "teff": 9333,
@@ -138,8 +347,9 @@
       "NIR",
       "UV"
     ],
-    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2029%20Hya"
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%2029%20Hya"
   },
+  "papers_count": 54,
   "wikipedia": {
     "title": "List of stars in Hydra",
     "description": "",
@@ -148,7 +358,8 @@
     "url": "https://en.wikipedia.org/wiki/List_of_stars_in_Hydra",
     "thumbnail": null,
     "image": null,
-    "wikidata": "Q1070454"
+    "wikidata": "Q1070454",
+    "sections_count": 3
   },
   "wikidata": {
     "id": "Q11088457",
@@ -262,6 +473,297 @@
         }
       ]
     },
+    "all_claims": {
+      "instance of": [
+        {
+          "value": "star",
+          "qid": "Q523",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "binary star",
+          "qid": "Q50053",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "double star",
+          "qid": "Q13890",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "near-infrared source",
+          "qid": "Q67206785",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "ultraviolet source",
+          "qid": "Q71798788",
+          "type": "wikibase-item"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Hydra",
+          "qid": "Q10578",
+          "type": "wikibase-item"
+        }
+      ],
+      "spectral class": [
+        {
+          "value": "A0V",
+          "type": "string"
+        }
+      ],
+      "has part(s)": [
+        {
+          "value": "BD-08 2678A",
+          "qid": "Q66481607",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "BD-08 2678B",
+          "qid": "Q66656253",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "TYC 5460-1593-2",
+          "qid": "Q92360335",
+          "type": "wikibase-item"
+        }
+      ],
+      "catalog code": [
+        {
+          "value": "ADS 7382 AB",
+          "type": "string"
+        },
+        {
+          "value": "2MASS J09271465-0913255",
+          "type": "string"
+        },
+        {
+          "value": "CCDM J09272-0913AB",
+          "type": "string"
+        },
+        {
+          "value": "GC 13039",
+          "type": "string"
+        },
+        {
+          "value": "GSC 05460-01593",
+          "type": "string"
+        },
+        {
+          "value": "HD 81728",
+          "type": "string"
+        },
+        {
+          "value": "HIC 46365",
+          "type": "string"
+        },
+        {
+          "value": "HIP 46365",
+          "type": "string"
+        },
+        {
+          "value": "HR 3744",
+          "type": "string"
+        },
+        {
+          "value": "IDS 09224-0847 AB",
+          "type": "string"
+        },
+        {
+          "value": "PPM 192386",
+          "type": "string"
+        },
+        {
+          "value": "SAO 136861",
+          "type": "string"
+        },
+        {
+          "value": "TD1 13925",
+          "type": "string"
+        },
+        {
+          "value": "UBV 9019",
+          "type": "string"
+        },
+        {
+          "value": "uvby98 100081728",
+          "type": "string"
+        },
+        {
+          "value": "WDS J09272-0913AB",
+          "type": "string"
+        },
+        {
+          "value": "YZ 99 3680",
+          "type": "string"
+        },
+        {
+          "value": "UCAC4 404-048050",
+          "type": "string"
+        },
+        {
+          "value": "29 Hya",
+          "type": "string"
+        },
+        {
+          "value": "TIC 46799491",
+          "type": "string"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 7.58,
+          "unit": "",
+          "plus": 0.3099999999999996,
+          "minus": 0.3100000000000005,
+          "type": "quantity"
+        },
+        {
+          "value": 6.363,
+          "unit": "",
+          "plus": 0.019999999999999574,
+          "minus": 0.020000000000000462,
+          "type": "quantity"
+        },
+        {
+          "value": 6.41,
+          "unit": "",
+          "plus": 0.030999999999999694,
+          "minus": 0.031000000000000583,
+          "type": "quantity"
+        },
+        {
+          "value": 6.358,
+          "unit": "",
+          "plus": 0.020000000000000462,
+          "minus": 0.019999999999999574,
+          "type": "quantity"
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -0.32,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "radius": [
+        {
+          "value": 4.53,
+          "unit": "R☉",
+          "type": "quantity"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 4.26,
+          "unit": "mas",
+          "plus": 0.8200000000000003,
+          "minus": 0.8199999999999998,
+          "type": "quantity"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 42.8,
+          "unit": "km/s",
+          "plus": 1.9000000000000057,
+          "minus": 1.8999999999999986,
+          "type": "quantity"
+        }
+      ],
+      "Google Knowledge Graph ID": [
+        {
+          "value": "/g/11x1n_1m9",
+          "type": "external-id",
+          "url": "https://www.google.com/search?kgmid=/g/11x1n_1m9"
+        }
+      ],
+      "SIMBAD ID": [
+        {
+          "value": "* 29 Hya",
+          "type": "external-id",
+          "url": "https://simbad.u-strasbg.fr/simbad/sim-id?Ident=%2A%2029%20Hya"
+        }
+      ],
+      "stellar rotational velocity": [
+        {
+          "value": 54.0,
+          "unit": "km/s",
+          "type": "quantity"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 141.811003818,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "declination": [
+        {
+          "value": -9.223710966,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "epoch": [
+        {
+          "value": "J2000.0",
+          "qid": "Q1264450",
+          "type": "wikibase-item"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 9333.0,
+          "unit": "K",
+          "type": "quantity"
+        }
+      ],
+      "declination component of proper motion": [
+        {
+          "value": -3.52,
+          "unit": "mas/yr",
+          "plus": 0.7400000000000002,
+          "minus": 0.7399999999999998,
+          "type": "quantity"
+        }
+      ],
+      "right ascension component of proper motion": [
+        {
+          "value": -16.96,
+          "unit": "mas/yr",
+          "plus": 0.9400000000000013,
+          "minus": 0.9399999999999977,
+          "type": "quantity"
+        }
+      ]
+    },
+    "property_ids": {
+      "instance of": "P31",
+      "constellation": "P59",
+      "spectral class": "P215",
+      "has part(s)": "P527",
+      "catalog code": "P528",
+      "apparent magnitude": "P1215",
+      "absolute magnitude": "P1457",
+      "radius": "P2120",
+      "parallax": "P2214",
+      "radial velocity": "P2216",
+      "Google Knowledge Graph ID": "P2671",
+      "SIMBAD ID": "P3083",
+      "stellar rotational velocity": "P4296",
+      "right ascension": "P6257",
+      "declination": "P6258",
+      "epoch": "P6259",
+      "effective temperature": "P6879",
+      "declination component of proper motion": "P10751",
+      "right ascension component of proper motion": "P10752"
+    },
     "commons_image": null,
     "url": "https://www.wikidata.org/wiki/Q11088457"
   },
@@ -279,7 +781,12 @@
       "value": 4.53,
       "unit": "R☉"
     },
-    "constellation": "Hydra"
+    "constellation": "Hydra",
+    "abs_mag": 0.73,
+    "spectral_class": "A",
+    "luminosity_class": "V",
+    "gal_l": 241.93815,
+    "gal_b": 28.63176
   },
   "id": "29-hya",
   "path": "stars/29-hya",
