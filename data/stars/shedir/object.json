@@ -1,0 +1,794 @@
+{
+  "name": "Shedir",
+  "category": "stars",
+  "app_type": "K-Star",
+  "harvested": "2026-10-10T16:18:49Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20Cas",
+      "retrieved": "2026-10-10T16:18:56Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alpha_Cassiopeiae",
+      "retrieved": "2026-10-10T16:19:02Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q13108",
+      "retrieved": "2026-10-10T16:19:02Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cassiopeia_constellation_map.svg/330px-Cassiopeia_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "wikipedia-redirect",
+    "simbad_id": "* alf Cas",
+    "wikidata": "Q13108",
+    "wikipedia": "Alpha Cassiopeiae"
+  },
+  "simbad": {
+    "main_id": "* alf Cas",
+    "ra": 10.126846007691249,
+    "dec": 56.537329217042775,
+    "otype": "PM*",
+    "otype_desc": "High Proper Motion Star",
+    "sp_type": "K0-IIIa",
+    "plx_value": 14.091,
+    "plx_err": 0.4988,
+    "pmra": 49.126,
+    "pmdec": -31.595,
+    "rvz_radvel": -4.204,
+    "rvz_redshift": -1.4022936240754014e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 351,
+    "identifiers": [
+      "TIC 312141546",
+      "IDS 00348+5559 A",
+      "HIP 3179",
+      "Gaia DR3 418551920284673408",
+      "2MASS J00403044+5632145",
+      "PLX  114",
+      "* alf Cas",
+      "*  18 Cas",
+      "AAVSO 0034+55",
+      "ADS   561 A",
+      "AG+56   65",
+      "BD+55   139",
+      "CCDM J00405+5632A",
+      "CSI+55   139  1",
+      "FK5   21",
+      "GC   792",
+      "GCRV   364",
+      "GEN# +1.00003712",
+      "GSC 03663-02668",
+      "HD   3712",
+      "HIC   3179",
+      "HR   168",
+      "IRAS 00376+5615",
+      "IRC +60017",
+      "JP11   402",
+      "N30  133",
+      "NAME Schedar",
+      "PMC 90-93    15",
+      "PPM  25578",
+      "RAFGL  100",
+      "ROT   121",
+      "SAO  21609",
+      "SKY#  1065",
+      "TD1   360",
+      "TYC 3663-2668-1",
+      "UBV     517",
+      "UBV M   7548",
+      "V* alf Cas",
+      "PLX  114.00",
+      "WDS J00405+5632A",
+      "WEB   569",
+      "Gaia DR2 418551920279473536"
+    ],
+    "fluxes": {
+      "H": {
+        "mag": -0.21,
+        "err": 0.16
+      },
+      "J": {
+        "mag": 0.42,
+        "err": null
+      },
+      "K": {
+        "mag": -0.25,
+        "err": null
+      },
+      "B": {
+        "mag": 3.4,
+        "err": null
+      },
+      "V": {
+        "mag": 2.23,
+        "err": null
+      },
+      "U": {
+        "mag": 4.52,
+        "err": null
+      },
+      "R": {
+        "mag": 1.45,
+        "err": null
+      },
+      "I": {
+        "mag": 0.85,
+        "err": null
+      },
+      "G": {
+        "mag": 1.942524,
+        "err": 0.003938
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 4755,
+        "log_g": 2.01,
+        "fe_h": -0.18,
+        "bibcode": "1981ApJ...248..228L"
+      },
+      {
+        "teff": 4710,
+        "log_g": 1.12,
+        "fe_h": -0.03,
+        "bibcode": "1982MNRAS.201..807G"
+      },
+      {
+        "teff": 4610,
+        "log_g": 2.71,
+        "fe_h": -0.09,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4594,
+        "log_g": 2.14,
+        "fe_h": -0.1,
+        "bibcode": "2008A&A...480...91S"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": -0.1,
+        "bibcode": "2008A&A...480...91S"
+      },
+      {
+        "teff": 4755,
+        "log_g": 2.01,
+        "fe_h": -0.18,
+        "bibcode": "1981ApJ...248..228L"
+      },
+      {
+        "teff": 4710,
+        "log_g": 1.12,
+        "fe_h": -0.03,
+        "bibcode": "1982MNRAS.201..807G"
+      },
+      {
+        "teff": 4610,
+        "log_g": 2.71,
+        "fe_h": -0.09,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4778,
+        "log_g": 2.06,
+        "fe_h": 0.15,
+        "bibcode": "2012A&A...538A.143K"
+      },
+      {
+        "teff": 4663,
+        "log_g": 1.93,
+        "fe_h": -0.1,
+        "bibcode": "2016A&A...587A...2B"
+      },
+      {
+        "teff": 4666,
+        "log_g": 1.96,
+        "fe_h": -0.1,
+        "bibcode": "2016A&A...587A...2B"
+      },
+      {
+        "teff": 4553,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2005ApJ...626..446R"
+      },
+      {
+        "teff": 4582,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1999A&AS..139..335A"
+      },
+      {
+        "teff": 4582,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1998A&A...339..858D"
+      },
+      {
+        "teff": 4600,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2009A&A...497..497G"
+      },
+      {
+        "teff": 4610,
+        "log_g": 2.71,
+        "fe_h": -0.09,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4625,
+        "log_g": 2.3,
+        "fe_h": -0.2,
+        "bibcode": "2007A&A...475.1003H"
+      },
+      {
+        "teff": 4710,
+        "log_g": 1.12,
+        "fe_h": -0.03,
+        "bibcode": "1982MNRAS.201..807G"
+      },
+      {
+        "teff": 4755,
+        "log_g": 2.01,
+        "fe_h": -0.18,
+        "bibcode": "1981ApJ...248..228L"
+      },
+      {
+        "teff": 4510,
+        "log_g": null,
+        "fe_h": -0.4,
+        "bibcode": "2020A&A...633A..34C"
+      },
+      {
+        "teff": 4539,
+        "log_g": 2.7,
+        "fe_h": -0.09,
+        "bibcode": "2008AJ....135..209M"
+      },
+      {
+        "teff": 4597,
+        "log_g": 2.08,
+        "fe_h": -0.13,
+        "bibcode": "2022A&A...663A...4S"
+      },
+      {
+        "teff": 4778,
+        "log_g": 2.06,
+        "fe_h": 0.15,
+        "bibcode": "2023ApJS..266...41P"
+      }
+    ],
+    "teff_median": 4625,
+    "vsini_measurements": [
+      {
+        "vsini": 8.5,
+        "vsini_err": null,
+        "bibcode": "2008AJ....135..209M"
+      },
+      {
+        "vsini": 18,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 17,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 20,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 4.9,
+        "vsini_err": 0.4,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 5.1,
+        "vsini_err": 1,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 70.9673,
+        "unit": "pc  ",
+        "plus_err": 2.5121,
+        "minus_err": -2.5121,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "NIR",
+      "PM*",
+      "UV",
+      "V*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20Cas"
+  },
+  "wikipedia": {
+    "title": "Alpha Cassiopeiae",
+    "description": "Star in the constellation Cassiopeia",
+    "summary": "Alpha Cassiopeiae is a star in the northern constellation of Cassiopeia. It has the proper name Schedar, pronounced ); Alpha Cassiopeiae is its Bayer designation, which is Latinized from α Cassiopeiae and abbreviated Alpha Cas or α Cas. Though listed as the \"alpha star\" by Johann Bayer, α Cas's visual brightness closely matches the 'beta' (β) star in the constellation and it may appear marginally brighter or dimmer, depending on which passband is used. However, recent calculations from NASA's WISE telescope confirm that α Cas is the brightest in Cassiopeia, with an apparent magnitude of 2.240. Its absolute magnitude is 18 times greater than β Cas, and it is located over four times farther away from the Sun.",
+    "intro": "Alpha Cassiopeiae is a star in the northern constellation of Cassiopeia. It has the proper name Schedar, pronounced ); Alpha Cassiopeiae is its Bayer designation, which is Latinized from α Cassiopeiae and abbreviated Alpha Cas or α Cas. Though listed as the \"alpha star\" by Johann Bayer, α Cas's visual brightness closely matches the 'beta' (β) star in the constellation (Beta Cassiopeiae) and it may appear marginally brighter or dimmer, depending on which passband is used. However, recent calculations from NASA's WISE telescope confirm that α Cas is the brightest in Cassiopeia, with an apparent magnitude of 2.240. Its absolute magnitude is 18 times greater than β Cas, and it is located over four times farther away from the Sun.\n\n",
+    "url": "https://en.wikipedia.org/wiki/Alpha_Cassiopeiae",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cassiopeia_constellation_map.svg/330px-Cassiopeia_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cassiopeia_constellation_map.svg/330px-Cassiopeia_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q13108"
+  },
+  "wikidata": {
+    "id": "Q13108",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "K0/2III"
+        },
+        {
+          "value": "G7III"
+        },
+        {
+          "value": "K0II-III"
+        },
+        {
+          "value": "G7II-III"
+        },
+        {
+          "value": "K0I/II"
+        },
+        {
+          "value": "K2II"
+        },
+        {
+          "value": "K0-IIIa"
+        },
+        {
+          "value": "K0IIICN+1"
+        },
+        {
+          "value": "K1II-III"
+        },
+        {
+          "value": "K0"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Cassiopeia"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 2.23,
+          "unit": ""
+        },
+        {
+          "value": 4.52,
+          "unit": ""
+        },
+        {
+          "value": 3.4,
+          "unit": ""
+        },
+        {
+          "value": 1.45,
+          "unit": ""
+        },
+        {
+          "value": 0.85,
+          "unit": ""
+        },
+        {
+          "value": 0.42,
+          "unit": ""
+        },
+        {
+          "value": -0.21,
+          "unit": "",
+          "plus": 0.15999999999999998,
+          "minus": 0.16
+        },
+        {
+          "value": -0.25,
+          "unit": ""
+        },
+        {
+          "value": 1.942524,
+          "unit": "",
+          "plus": 0.003937999999999997,
+          "minus": 0.003937999999999997
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -1.99,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 229.0,
+          "unit": "ly",
+          "plus": 9.0,
+          "minus": 9.0
+        },
+        {
+          "value": 70.9673,
+          "unit": "pc",
+          "plus": 2.5121000000000038,
+          "minus": 2.5120999999999896
+        }
+      ],
+      "mass": [
+        {
+          "value": 4.5,
+          "unit": "M☉",
+          "plus": 0.5,
+          "minus": 0.5
+        }
+      ],
+      "radius": [
+        {
+          "value": 37.0,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 676.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 4539.0,
+          "unit": "K"
+        },
+        {
+          "value": 4594.0,
+          "unit": "K"
+        },
+        {
+          "value": 4610.0,
+          "unit": "K"
+        },
+        {
+          "value": 4625.0,
+          "unit": "K"
+        },
+        {
+          "value": 4663.0,
+          "unit": "K"
+        },
+        {
+          "value": 4666.0,
+          "unit": "K"
+        },
+        {
+          "value": 4778.0,
+          "unit": "K"
+        },
+        {
+          "value": 4755.0,
+          "unit": "K"
+        },
+        {
+          "value": 4710.0,
+          "unit": "K"
+        },
+        {
+          "value": 4600.0,
+          "unit": "K"
+        },
+        {
+          "value": 4582.0,
+          "unit": "K"
+        },
+        {
+          "value": 4553.0,
+          "unit": "K"
+        },
+        {
+          "value": 4510.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 1054.5,
+          "unit": "yr",
+          "plus": 1053.5,
+          "minus": 1053.5
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.2,
+          "unit": ""
+        },
+        {
+          "value": -0.1,
+          "unit": ""
+        },
+        {
+          "value": -0.09,
+          "unit": ""
+        },
+        {
+          "value": 0.15,
+          "unit": ""
+        },
+        {
+          "value": -0.18,
+          "unit": ""
+        },
+        {
+          "value": -0.03,
+          "unit": ""
+        },
+        {
+          "value": -0.1,
+          "unit": ""
+        },
+        {
+          "value": -0.2,
+          "unit": ""
+        },
+        {
+          "value": -0.4,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 85.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 91.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 115.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 138.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 200.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 500.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 510.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 102.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 13.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 13.2,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -3.8,
+          "unit": "km/s",
+          "plus": 0.8999999999999999,
+          "minus": 0.9000000000000004
+        },
+        {
+          "value": -4.03,
+          "unit": "km/s",
+          "plus": 0.10000000000000009,
+          "minus": 0.09999999999999964
+        },
+        {
+          "value": -4.31,
+          "unit": "km/s",
+          "plus": 0.019999999999999574,
+          "minus": 0.020000000000000462
+        },
+        {
+          "value": -4.31,
+          "unit": "km/s"
+        },
+        {
+          "value": -3.7,
+          "unit": "km/s"
+        },
+        {
+          "value": -3.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -0.1,
+          "unit": "km/s"
+        },
+        {
+          "value": -6.9,
+          "unit": "km/s"
+        },
+        {
+          "value": -4.1,
+          "unit": "km/s"
+        },
+        {
+          "value": -5.9,
+          "unit": "km/s"
+        },
+        {
+          "value": -3.8,
+          "unit": "km/s"
+        },
+        {
+          "value": -2.5,
+          "unit": "km/s"
+        },
+        {
+          "value": -1.5,
+          "unit": "km/s"
+        },
+        {
+          "value": -4.204,
+          "unit": "km/s",
+          "plus": 0.0005999999999994898,
+          "minus": 0.000600000000000378
+        }
+      ],
+      "parallax": [
+        {
+          "value": 1.6949,
+          "unit": "mas",
+          "plus": 1.2847,
+          "minus": 1.2847
+        },
+        {
+          "value": 12.7,
+          "unit": "mas",
+          "plus": 6.100000000000001,
+          "minus": 6.1
+        },
+        {
+          "value": 14.29,
+          "unit": "mas",
+          "plus": 0.15000000000000036,
+          "minus": 0.14999999999999858
+        },
+        {
+          "value": 14.27,
+          "unit": "mas",
+          "plus": 0.5700000000000003,
+          "minus": 0.5700000000000003
+        },
+        {
+          "value": 14.091,
+          "unit": "mas",
+          "plus": 0.498800000000001,
+          "minus": 0.49879999999999924
+        }
+      ],
+      "instance of": [
+        {
+          "value": "double star"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "navigational star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 10.12683778292,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 56.53733115833,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Cassiopeia starfield.jpg",
+    "url": "https://www.wikidata.org/wiki/Q13108"
+  },
+  "summary": {
+    "designation": "alf Cas",
+    "object_type": "High Proper Motion Star",
+    "spectral_type": "K0-IIIa",
+    "ra_deg": 10.126846007691249,
+    "dec_deg": 56.537329217042775,
+    "v_mag": 2.23,
+    "distance_pc": 71.0,
+    "distance_ly": 231.5,
+    "teff_k": 4625,
+    "b_minus_v": 1.17,
+    "mass": {
+      "value": 4.5,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 37.0,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 676.0,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 1054.5,
+      "unit": "yr"
+    },
+    "constellation": "Cassiopeia",
+    "description": "Star in the constellation Cassiopeia"
+  },
+  "id": "shedir",
+  "path": "stars/shedir",
+  "observations": [
+    {
+      "datetime": "2026-10-07 20:24",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-08 01:24",
+      "altitude_deg": 38.4,
+      "azimuth_deg": 41.0
+    }
+  ]
+}

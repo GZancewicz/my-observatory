@@ -1,0 +1,679 @@
+{
+  "name": "Alpheratz",
+  "category": "stars",
+  "app_type": "B-Star",
+  "harvested": "2026-10-10T16:19:30Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20And",
+      "retrieved": "2026-10-10T16:19:37Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alpheratz",
+      "retrieved": "2026-10-10T16:20:17Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q13039",
+      "retrieved": "2026-10-10T16:20:38Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Andromeda_constellation_map.svg/330px-Andromeda_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Alpheratz",
+    "simbad_id": "* alf And",
+    "wikidata": "Q13039",
+    "wikipedia": "Alpheratz"
+  },
+  "simbad": {
+    "main_id": "* alf And",
+    "ra": 2.0969161856756404,
+    "dec": 29.090431118059698,
+    "otype": "a2*",
+    "otype_desc": "alpha2 CVn Variable",
+    "sp_type": "B8IV-VHgMn",
+    "plx_value": 33.62,
+    "plx_err": 0.35,
+    "pmra": 137.46,
+    "pmdec": -163.44,
+    "rvz_radvel": -10.1,
+    "rvz_redshift": -3.368940612702431e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 483,
+    "identifiers": [
+      "TIC 427733653",
+      "HIP 677",
+      "2MASS J00082326+2905253",
+      "LSPM J0008+2905",
+      "ASCC  647497",
+      "USNO-B1.0 1190-00002295",
+      "PLX   12",
+      "SBC9 4",
+      "* alf And",
+      "* del Peg",
+      "*  21 And",
+      "ADS    94 A",
+      "AG+28   11",
+      "BD+28     4",
+      "CCDM J00083+2905A",
+      "CSI+28     4  1",
+      "EUVE J0008+29.0",
+      "FK5    1",
+      "GC   127",
+      "GCRV    62",
+      "GEN# +1.00000358",
+      "HD    358",
+      "HGAM      2",
+      "HIC    677",
+      "HR    15",
+      "IDS 00032+2832 A",
+      "TIC 471011200",
+      "IRC +30004",
+      "JP11   345",
+      "LTT 10039",
+      "N30   16",
+      "NAME Alpheratz",
+      "NAME Sirrah",
+      "NLTT   346",
+      "PMC 90-93     1",
+      "PPM  89441",
+      "ROT    58",
+      "SAO  73765",
+      "SBC7     4",
+      "SKY#   244",
+      "SRS  30001",
+      "TD1    31",
+      "UBV M   7157",
+      "UBV      52",
+      "V* alf And",
+      "YPAC   1",
+      "[HFE83]    4",
+      "ALS 16723",
+      "WDS J00084+2905Aa,Ab",
+      "TYC 1735-3180-1",
+      "GSC 01735-03180",
+      "UCAC3 239-808",
+      "Renson 50",
+      "AKARI-IRC-V1 J0008233+290524",
+      "IRAS 00057+2848",
+      "** MKT   11",
+      "WDS J00084+2905A",
+      "** H  532A",
+      "** JNN    1A",
+      "uvby98 100000358",
+      "WEB   113"
+    ],
+    "fluxes": {
+      "B": {
+        "mag": 1.95,
+        "err": null
+      },
+      "V": {
+        "mag": 2.06,
+        "err": null
+      },
+      "I": {
+        "mag": 2.19,
+        "err": null
+      },
+      "U": {
+        "mag": 1.48,
+        "err": null
+      },
+      "J": {
+        "mag": 2.3,
+        "err": null
+      },
+      "K": {
+        "mag": 2.37,
+        "err": null
+      },
+      "H": {
+        "mag": 2.33,
+        "err": null
+      },
+      "R": {
+        "mag": 2.09,
+        "err": null
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 14000,
+        "log_g": 3.5,
+        "fe_h": -1.5,
+        "bibcode": "1969IzKry..40...65K"
+      },
+      {
+        "teff": 14400,
+        "log_g": 3.8,
+        "fe_h": 0.4,
+        "bibcode": "1976IAUCo..32..521K"
+      },
+      {
+        "teff": 13622,
+        "log_g": 4,
+        "fe_h": -0.3,
+        "bibcode": "1979ApJS...41..675H"
+      },
+      {
+        "teff": 12938,
+        "log_g": 4.19,
+        "fe_h": 0.42,
+        "bibcode": "2012A&A...538A.143K"
+      },
+      {
+        "teff": 13098,
+        "log_g": 3.91,
+        "fe_h": null,
+        "bibcode": "2003AJ....126.2048G"
+      },
+      {
+        "teff": 12750,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2009A&A...501..297Z"
+      },
+      {
+        "teff": 13622,
+        "log_g": 4,
+        "fe_h": -0.3,
+        "bibcode": "1979ApJS...41..675H"
+      },
+      {
+        "teff": 14000,
+        "log_g": 3.5,
+        "fe_h": -1.5,
+        "bibcode": "1969IzKry..40...65K"
+      },
+      {
+        "teff": 14400,
+        "log_g": 3.8,
+        "fe_h": 0.4,
+        "bibcode": "1976IAUCo..32..521K"
+      },
+      {
+        "teff": 13076,
+        "log_g": 3.46,
+        "fe_h": 0.43,
+        "bibcode": "2019A&A...627A.138A"
+      },
+      {
+        "teff": 12938,
+        "log_g": 4.19,
+        "fe_h": 0.42,
+        "bibcode": "2023ApJS..266...41P"
+      },
+      {
+        "teff": 14000,
+        "log_g": 4.5,
+        "fe_h": null,
+        "bibcode": "2023MNRAS.519.5472M"
+      }
+    ],
+    "teff_median": 13622,
+    "vsini_measurements": [
+      {
+        "vsini": 50,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 55,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 53,
+        "vsini_err": 11,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 50,
+        "vsini_err": 16,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "a2*",
+      "IR",
+      "NIR",
+      "PM*",
+      "SB*",
+      "UV",
+      "V*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20And"
+  },
+  "wikipedia": {
+    "title": "Alpheratz",
+    "description": "Binary star in the constellation of Andromeda",
+    "summary": "Alpheratz is a prominent star system in the constellation of Andromeda. Pronounced, it has the Bayer designation Alpha Andromedae, Latinised from α Andromedae, and abbreviated Alpha And or α And, respectively. Alpheratz is the brightest star in the constellation when Mirach undergoes its periodical dimming. Immediately northeast of the constellation of Pegasus, it is the upper left star of the Great Square of Pegasus. It is located at a distance of 97 light-years from Earth.",
+    "intro": null,
+    "url": "https://en.wikipedia.org/wiki/Alpheratz",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Andromeda_constellation_map.svg/330px-Andromeda_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Andromeda_constellation_map.svg/330px-Andromeda_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q13039"
+  },
+  "wikidata": {
+    "id": "Q13039",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "B9p"
+        },
+        {
+          "value": "B8IVp"
+        },
+        {
+          "value": "B8III"
+        },
+        {
+          "value": "A0p"
+        },
+        {
+          "value": "B8 . P,SB"
+        },
+        {
+          "value": "B8IV-VHgMn"
+        },
+        {
+          "value": "B8. P,SB"
+        },
+        {
+          "value": "B8IV-V Hg Mn"
+        },
+        {
+          "value": "B9III"
+        },
+        {
+          "value": "B8.P,SB"
+        },
+        {
+          "value": "B8IVpHgMn"
+        },
+        {
+          "value": "B8IVP"
+        },
+        {
+          "value": "A0"
+        },
+        {
+          "value": "B9 Mn Hg"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Andromeda"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 2.06,
+          "unit": ""
+        },
+        {
+          "value": 1.48,
+          "unit": ""
+        },
+        {
+          "value": 1.95,
+          "unit": ""
+        },
+        {
+          "value": 2.09,
+          "unit": ""
+        },
+        {
+          "value": 2.19,
+          "unit": ""
+        },
+        {
+          "value": 2.3,
+          "unit": ""
+        },
+        {
+          "value": 2.33,
+          "unit": ""
+        },
+        {
+          "value": 2.37,
+          "unit": ""
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -0.3,
+          "unit": ""
+        },
+        {
+          "value": -0.307,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 97.0,
+          "unit": "ly",
+          "plus": 2.0,
+          "minus": 2.0
+        }
+      ],
+      "mass": [
+        {
+          "value": 3.6,
+          "unit": "M☉",
+          "plus": 0.19999999999999973,
+          "minus": 0.20000000000000018
+        }
+      ],
+      "radius": [
+        {
+          "value": 2.8,
+          "unit": "R☉"
+        }
+      ],
+      "diameter": [
+        {
+          "value": 3450000.0,
+          "unit": "km"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 200.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 14400.0,
+          "unit": "K"
+        },
+        {
+          "value": 14000.0,
+          "unit": "K"
+        },
+        {
+          "value": 13622.0,
+          "unit": "K"
+        },
+        {
+          "value": 12750.0,
+          "unit": "K"
+        },
+        {
+          "value": 13098.0,
+          "unit": "K"
+        },
+        {
+          "value": 12938.0,
+          "unit": "K"
+        },
+        {
+          "value": 13076.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 60.0,
+          "unit": "Myr"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.4,
+          "unit": ""
+        },
+        {
+          "value": 0.42,
+          "unit": ""
+        },
+        {
+          "value": -1.5,
+          "unit": ""
+        },
+        {
+          "value": -0.3,
+          "unit": ""
+        },
+        {
+          "value": 0.43,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 6000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 15500.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 8100.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 3160.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 6300.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 2900.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 10000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 3000.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -11.6,
+          "unit": "km/s"
+        },
+        {
+          "value": -11.7,
+          "unit": "km/s",
+          "plus": 0.8999999999999986,
+          "minus": 0.9000000000000004
+        },
+        {
+          "value": -10.1,
+          "unit": "km/s",
+          "plus": 0.1999999999999993,
+          "minus": 0.20000000000000107
+        },
+        {
+          "value": -11.7,
+          "unit": "km/s"
+        },
+        {
+          "value": -16.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -30.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -10.6,
+          "unit": "km/s"
+        },
+        {
+          "value": 1.2,
+          "unit": "km/s"
+        },
+        {
+          "value": -19.7,
+          "unit": "km/s"
+        },
+        {
+          "value": -17.4,
+          "unit": "km/s"
+        },
+        {
+          "value": 4.5,
+          "unit": "km/s"
+        },
+        {
+          "value": -22.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 6.1,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 33.6,
+          "unit": "mas",
+          "plus": 0.7299999999999969,
+          "minus": 0.730000000000004
+        },
+        {
+          "value": 33.62,
+          "unit": "mas",
+          "plus": 0.3500000000000014,
+          "minus": 0.3499999999999943
+        },
+        {
+          "value": 33.6,
+          "unit": "mas",
+          "plus": 0.7299999999999969,
+          "minus": 0.730000000000004
+        }
+      ],
+      "instance of": [
+        {
+          "value": "spectroscopic binary"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "Alpha² Canum Venaticorum variable"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "navigational star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "rotating variable star"
+        },
+        {
+          "value": "star"
+        },
+        {
+          "value": "peculiar star"
+        },
+        {
+          "value": "mercury-manganese star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 2.096916186,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 29.090431118,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Alpheratz.gif",
+    "url": "https://www.wikidata.org/wiki/Q13039"
+  },
+  "summary": {
+    "designation": "alf And",
+    "object_type": "alpha2 CVn Variable",
+    "spectral_type": "B8IV-VHgMn",
+    "ra_deg": 2.0969161856756404,
+    "dec_deg": 29.090431118059698,
+    "v_mag": 2.06,
+    "distance_pc": 29.7,
+    "distance_ly": 97.0,
+    "teff_k": 13622,
+    "b_minus_v": -0.11,
+    "mass": {
+      "value": 3.6,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 2.8,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 200.0,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 60.0,
+      "unit": "Myr"
+    },
+    "constellation": "Andromeda",
+    "description": "Binary star in the constellation of Andromeda"
+  },
+  "id": "alpheratz",
+  "path": "stars/alpheratz",
+  "observations": [
+    {
+      "datetime": "2026-10-07 20:18",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-08 01:18",
+      "altitude_deg": 37.3,
+      "azimuth_deg": 76.5
+    }
+  ]
+}

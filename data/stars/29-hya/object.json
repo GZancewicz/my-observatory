@@ -1,0 +1,300 @@
+{
+  "name": "29 Hya",
+  "category": "stars",
+  "app_type": "A-Star",
+  "harvested": "2026-10-10T16:27:31Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2029%20Hya",
+      "retrieved": "2026-10-10T16:27:39Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_stars_in_Hydra",
+      "retrieved": "2026-10-10T16:27:40Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q11088457",
+      "retrieved": "2026-10-10T16:27:41Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    }
+  },
+  "resolved": {
+    "method": "sesame:29 Hya",
+    "simbad_id": "*  29 Hya",
+    "wikidata": "Q11088457",
+    "wikipedia": "List of stars in Hydra"
+  },
+  "simbad": {
+    "main_id": "*  29 Hya",
+    "ra": 141.81100381779314,
+    "dec": -9.223710965553149,
+    "otype": "**",
+    "otype_desc": "Double or Multiple Star",
+    "sp_type": "A0V",
+    "plx_value": 4.26,
+    "plx_err": 0.82,
+    "pmra": -16.96,
+    "pmdec": -3.52,
+    "rvz_radvel": 42.8,
+    "rvz_redshift": 0.0001427756251841661,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 54,
+    "identifiers": [
+      "TIC 46799491",
+      "WISEA J092714.62-091325.5",
+      "GEN# +1.00081728",
+      "HIP 46365",
+      "*  29 Hya",
+      "ADS  7382 AB",
+      "BD-08  2678",
+      "CCDM J09272-0913AB",
+      "CSI-08  2678  1",
+      "GC 13039",
+      "GSC 05460-01593",
+      "HD  81728",
+      "HERZ 13306",
+      "HIC  46365",
+      "HR  3744",
+      "IDS 09224-0847 AB",
+      "PPM 192386",
+      "SAO 136861",
+      "SKY# 18260",
+      "TD1 13925",
+      "UBV    9019",
+      "YZ  99  3680",
+      "2MASS J09271465-0913255",
+      "WDS J09272-0913AB",
+      "** A 1588",
+      "uvby98 100081728",
+      "** BU  590AB",
+      "UCAC4 404-048050",
+      "WISE J092714.63-091325.6"
+    ],
+    "fluxes": {
+      "J": {
+        "mag": 6.363,
+        "err": 0.02
+      },
+      "H": {
+        "mag": 6.41,
+        "err": 0.031
+      },
+      "K": {
+        "mag": 6.358,
+        "err": 0.02
+      },
+      "R": {
+        "mag": 7.58,
+        "err": 0.31
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 9333,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2012A&A...537A.120Z"
+      }
+    ],
+    "teff_median": 9333,
+    "vsini_measurements": [
+      {
+        "vsini": 45,
+        "vsini_err": null,
+        "bibcode": "1995ApJS...99..135A"
+      },
+      {
+        "vsini": 54,
+        "vsini_err": null,
+        "bibcode": "2002A&A...393..897R"
+      },
+      {
+        "vsini": 54,
+        "vsini_err": null,
+        "bibcode": "2007A&A...463..671R"
+      },
+      {
+        "vsini": 45,
+        "vsini_err": 8,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "MIR",
+      "NIR",
+      "UV"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2029%20Hya"
+  },
+  "wikipedia": {
+    "title": "List of stars in Hydra",
+    "description": "",
+    "summary": "\nThis is the list of notable stars in the constellation Hydra, sorted by decreasing brightness.",
+    "intro": "This is the list of notable stars in the constellation Hydra, sorted by decreasing brightness.\n\nNotes\n\n",
+    "url": "https://en.wikipedia.org/wiki/List_of_stars_in_Hydra",
+    "thumbnail": null,
+    "image": null,
+    "wikidata": "Q1070454"
+  },
+  "wikidata": {
+    "id": "Q11088457",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "A0V"
+        },
+        {
+          "value": "A0"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Hydra"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 7.58,
+          "unit": "",
+          "plus": 0.3099999999999996,
+          "minus": 0.3100000000000005
+        },
+        {
+          "value": 6.363,
+          "unit": "",
+          "plus": 0.019999999999999574,
+          "minus": 0.020000000000000462
+        },
+        {
+          "value": 6.41,
+          "unit": "",
+          "plus": 0.030999999999999694,
+          "minus": 0.031000000000000583
+        },
+        {
+          "value": 6.358,
+          "unit": "",
+          "plus": 0.020000000000000462,
+          "minus": 0.019999999999999574
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -0.32,
+          "unit": ""
+        }
+      ],
+      "radius": [
+        {
+          "value": 4.53,
+          "unit": "R☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 9333.0,
+          "unit": "K"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 42.8,
+          "unit": "km/s",
+          "plus": 1.9000000000000057,
+          "minus": 1.8999999999999986
+        }
+      ],
+      "parallax": [
+        {
+          "value": 2.5,
+          "unit": "mas",
+          "plus": 1.46,
+          "minus": 1.46
+        },
+        {
+          "value": 4.26,
+          "unit": "mas",
+          "plus": 0.8200000000000003,
+          "minus": 0.8199999999999998
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "binary star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 141.811003818,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -9.223710966,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q11088457"
+  },
+  "summary": {
+    "designation": "29 Hya",
+    "object_type": "Double or Multiple Star",
+    "spectral_type": "A0V",
+    "ra_deg": 141.81100381779314,
+    "dec_deg": -9.223710965553149,
+    "v_mag": 7.58,
+    "distance_pc": 234.7,
+    "distance_ly": 765.6,
+    "teff_k": 9333,
+    "radius": {
+      "value": 4.53,
+      "unit": "R☉"
+    },
+    "constellation": "Hydra"
+  },
+  "id": "29-hya",
+  "path": "stars/29-hya",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:26",
+      "location": "Royse City, Texas",
+      "rating": 1.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 10:26",
+      "altitude_deg": 17.1,
+      "azimuth_deg": 113.5
+    }
+  ]
+}

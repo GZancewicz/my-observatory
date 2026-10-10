@@ -1,0 +1,474 @@
+{
+  "name": "25 Cet",
+  "category": "stars",
+  "app_type": "K-Star",
+  "harvested": "2026-10-10T16:32:30Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2025%20Cet",
+      "retrieved": "2026-10-10T16:32:37Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_stars_in_Cetus",
+      "retrieved": "2026-10-10T16:32:39Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q3598282",
+      "retrieved": "2026-10-10T16:32:40Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    }
+  },
+  "resolved": {
+    "method": "sesame:25 Cet",
+    "simbad_id": "*  25 Cet",
+    "wikidata": "Q3598282",
+    "wikipedia": "List of stars in Cetus"
+  },
+  "simbad": {
+    "main_id": "*  25 Cet",
+    "ra": 15.76057062535,
+    "dec": -4.836599219039999,
+    "otype": "PM*",
+    "otype_desc": "High Proper Motion Star",
+    "sp_type": "K0/1III",
+    "plx_value": 9.5083,
+    "plx_err": 0.0851,
+    "pmra": -116.585,
+    "pmdec": -102.608,
+    "rvz_radvel": 15.3,
+    "rvz_redshift": 5.103660893301942e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 78,
+    "identifiers": [
+      "TIC 269570953",
+      "HIP 4914",
+      "Gaia DR3 2525049829240950144",
+      "2MASS J01030253-0450114",
+      "*  25 Cet",
+      "BD-05   177",
+      "CCDM J01030-0451A",
+      "CSI-05   177  1",
+      "GC  1262",
+      "GCRV   597",
+      "GEN# +1.00006203",
+      "GSC 04683-02266",
+      "HD   6203",
+      "HIC   4914",
+      "HR   296",
+      "IDS 00580-0522 A",
+      "IRAS 01005-0506",
+      "IRC -10017",
+      "PPM 182973",
+      "SAO 129094",
+      "SKY#  1603",
+      "TYC 4683-2266-1",
+      "UBV    1015",
+      "UBV M   7876",
+      "YZ  95   230",
+      "uvby98 100006203",
+      "WDS J01030-0450A",
+      "WEB   971",
+      "Gaia DR2 2525049824945015552"
+    ],
+    "fluxes": {
+      "J": {
+        "mag": 3.509,
+        "err": 0.216
+      },
+      "H": {
+        "mag": 2.798,
+        "err": 0.192
+      },
+      "K": {
+        "mag": 2.638,
+        "err": 0.214
+      },
+      "V": {
+        "mag": 5.408,
+        "err": 0.009
+      },
+      "B": {
+        "mag": 6.517,
+        "err": 0.015
+      },
+      "G": {
+        "mag": 5.078527,
+        "err": 0.002827
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 4560,
+        "log_g": 2.96,
+        "fe_h": -0.35,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4496,
+        "log_g": 2.47,
+        "fe_h": -0.29,
+        "bibcode": "2007MNRAS.374..664C"
+      },
+      {
+        "teff": 4560,
+        "log_g": 2.96,
+        "fe_h": -0.35,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4565,
+        "log_g": 2.28,
+        "fe_h": -0.32,
+        "bibcode": "2011A&A...531A.165P"
+      },
+      {
+        "teff": 4560,
+        "log_g": 2.96,
+        "fe_h": -0.35,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4650,
+        "log_g": 2.6,
+        "fe_h": -0.27,
+        "bibcode": "2007A&A...475.1003H"
+      },
+      {
+        "teff": 4570,
+        "log_g": 2.45,
+        "fe_h": -0.31,
+        "bibcode": "2022A&A...663A...4S"
+      },
+      {
+        "teff": 4650,
+        "log_g": 2.6,
+        "fe_h": -0.27,
+        "bibcode": "2023ApJS..266...41P"
+      },
+      {
+        "teff": 4533,
+        "log_g": 2.11,
+        "fe_h": -0.19,
+        "bibcode": "2021MNRAS.505.4496G"
+      }
+    ],
+    "teff_median": 4560,
+    "vsini_measurements": [],
+    "distance_measurements": [
+      {
+        "dist": 105.1204,
+        "unit": "pc  ",
+        "plus_err": 1.431,
+        "minus_err": -1.431,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 105.171,
+        "unit": "pc  ",
+        "plus_err": 0.9413,
+        "minus_err": -0.9413,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "NIR",
+      "PM*",
+      "RG*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2025%20Cet"
+  },
+  "wikipedia": {
+    "title": "List of stars in Cetus",
+    "description": "",
+    "summary": "\nThis is the list of notable stars in the constellation Cetus, sorted by decreasing brightness.",
+    "intro": "This is the list of notable stars in the constellation Cetus, sorted by decreasing brightness.\n\nNotes",
+    "url": "https://en.wikipedia.org/wiki/List_of_stars_in_Cetus",
+    "thumbnail": null,
+    "image": null,
+    "wikidata": "Q730815"
+  },
+  "wikidata": {
+    "id": "Q3598282",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "K0III-IV"
+        },
+        {
+          "value": "K0/1III"
+        },
+        {
+          "value": "G5"
+        },
+        {
+          "value": "K0III"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Cetus"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 5.408,
+          "unit": "",
+          "plus": 0.008999999999999453,
+          "minus": 0.009000000000000341
+        },
+        {
+          "value": 6.517,
+          "unit": "",
+          "plus": 0.01499999999999968,
+          "minus": 0.015000000000000568
+        },
+        {
+          "value": 3.509,
+          "unit": "",
+          "plus": 0.2160000000000002,
+          "minus": 0.21599999999999975
+        },
+        {
+          "value": 2.798,
+          "unit": "",
+          "plus": 0.19200000000000017,
+          "minus": 0.19200000000000017
+        },
+        {
+          "value": 2.638,
+          "unit": "",
+          "plus": 0.21399999999999997,
+          "minus": 0.21399999999999997
+        },
+        {
+          "value": 5.078527,
+          "unit": "",
+          "plus": 0.002826999999999913,
+          "minus": 0.002826999999999913
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": 0.35,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 105.1204,
+          "unit": "pc",
+          "plus": 1.4309999999999974,
+          "minus": 1.4309999999999974
+        },
+        {
+          "value": 105.171,
+          "unit": "pc",
+          "plus": 0.9412999999999982,
+          "minus": 0.9413000000000125
+        }
+      ],
+      "radius": [
+        {
+          "value": 12.17,
+          "unit": "R☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 4496.0,
+          "unit": "K"
+        },
+        {
+          "value": 4560.0,
+          "unit": "K"
+        },
+        {
+          "value": 4565.0,
+          "unit": "K"
+        },
+        {
+          "value": 4650.0,
+          "unit": "K"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.35,
+          "unit": ""
+        },
+        {
+          "value": -0.32,
+          "unit": ""
+        },
+        {
+          "value": -0.29,
+          "unit": ""
+        },
+        {
+          "value": -0.27,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 191.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 295.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 398.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 910.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 190.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 400.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 14.09,
+          "unit": "km/s",
+          "plus": 0.1899999999999995,
+          "minus": 0.1899999999999995
+        },
+        {
+          "value": 15.3,
+          "unit": "km/s"
+        },
+        {
+          "value": 15.3,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0
+        },
+        {
+          "value": 15.3,
+          "unit": "km/s",
+          "plus": 2.8000000000000007,
+          "minus": 2.8000000000000007
+        },
+        {
+          "value": 15.8,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 9.5129,
+          "unit": "mas",
+          "plus": 0.12950000000000017,
+          "minus": 0.12950000000000017
+        },
+        {
+          "value": 7.95,
+          "unit": "mas",
+          "plus": 0.8600000000000003,
+          "minus": 0.8600000000000003
+        },
+        {
+          "value": 9.78,
+          "unit": "mas",
+          "plus": 0.27000000000000135,
+          "minus": 0.2699999999999996
+        },
+        {
+          "value": 9.5083,
+          "unit": "mas",
+          "plus": 0.08510000000000062,
+          "minus": 0.08510000000000062
+        }
+      ],
+      "instance of": [
+        {
+          "value": "optical double"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "near-infrared source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 15.76057062535,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -4.83659921904,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q3598282"
+  },
+  "summary": {
+    "designation": "25 Cet",
+    "object_type": "High Proper Motion Star",
+    "spectral_type": "K0/1III",
+    "ra_deg": 15.76057062535,
+    "dec_deg": -4.836599219039999,
+    "v_mag": 5.408,
+    "distance_pc": 105.2,
+    "distance_ly": 343.0,
+    "teff_k": 4560,
+    "b_minus_v": 1.11,
+    "radius": {
+      "value": 12.17,
+      "unit": "R☉"
+    },
+    "constellation": "Cetus"
+  },
+  "id": "25-cet",
+  "path": "stars/25-cet",
+  "observations": [
+    {
+      "datetime": "2026-10-09 20:59",
+      "location": "Royse City, Texas",
+      "rating": 1.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 01:59",
+      "altitude_deg": 19.0,
+      "azimuth_deg": 109.2
+    }
+  ]
+}

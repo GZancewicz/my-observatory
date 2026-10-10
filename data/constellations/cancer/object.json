@@ -1,0 +1,106 @@
+{
+  "name": "Cancer",
+  "category": "constellations",
+  "app_type": "Constellation",
+  "harvested": "2026-10-10T16:10:47Z",
+  "sources": [
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cancer_(constellation)",
+      "retrieved": "2026-10-10T16:11:03Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q8849",
+      "retrieved": "2026-10-10T16:11:03Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "Mellinger colour mosaic via CDS hips2fits",
+      "fov_deg": 37
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Cancer_IAU.svg/330px-Cancer_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "wikipedia",
+    "simbad_id": null,
+    "wikidata": "Q8849",
+    "wikipedia": "Cancer (constellation)"
+  },
+  "wikipedia": {
+    "title": "Cancer (constellation)",
+    "description": "Zodiac constellation in the northern hemisphere",
+    "summary": "Cancer is one of the twelve constellations of the zodiac and is located in the northern celestial hemisphere. Its name is Latin for crab and it is commonly represented as one. Cancer is a medium-size constellation with an area of 506 square degrees and its stars are rather faint, its brightest star Beta Cancri having an apparent magnitude of 3.5. It contains ten stars with known planets, including 55 Cancri, which has five: one super-Earth and four gas giants, one of which is in the habitable zone and as such has expected temperatures similar to Earth. At the (angular) heart of this sector of our celestial sphere is Praesepe, one of the closest open clusters to Earth and a popular target for amateur astronomers.",
+    "intro": "Cancer is one of the twelve constellations of the zodiac and is located in the northern celestial hemisphere. Its name is Latin for crab and it is commonly represented as one. Cancer is a medium-size constellation with an area of 506 square degrees and its stars are rather faint, its brightest star Beta Cancri having an apparent magnitude of 3.5. It contains ten stars with known planets, including 55 Cancri, which has five: one super-Earth and four gas giants, one of which is in the habitable zone and as such has expected temperatures similar to Earth. At the (angular) heart of this sector of our celestial sphere is Praesepe (Messier 44), one of the closest open clusters to Earth and a popular target for amateur astronomers.",
+    "url": "https://en.wikipedia.org/wiki/Cancer_(constellation)",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Cancer_IAU.svg/330px-Cancer_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Cancer_IAU.svg/960px-Cancer_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q8849"
+  },
+  "wikidata": {
+    "id": "Q8849",
+    "facts": {
+      "area": [
+        {
+          "value": 506.0,
+          "unit": "deg²"
+        }
+      ],
+      "short name": [
+        {
+          "value": "Cnc"
+        }
+      ],
+      "named after": [
+        {
+          "value": "Karkinos"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "zodiacal constellation"
+        }
+      ]
+    },
+    "commons_image": "CancerCC.jpg",
+    "url": "https://www.wikidata.org/wiki/Q8849"
+  },
+  "geometry": {
+    "ra_deg": 129.709,
+    "dec_deg": 19.674,
+    "radius_deg": 16.8,
+    "source": "IAU boundaries, VizieR VI/49"
+  },
+  "summary": {
+    "area": {
+      "value": 506.0,
+      "unit": "deg²"
+    },
+    "abbreviation": "Cnc",
+    "ra_deg": 129.709,
+    "dec_deg": 19.674,
+    "description": "Zodiac constellation in the northern hemisphere"
+  },
+  "id": "cancer",
+  "path": "constellations/cancer",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:10",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 10:10",
+      "altitude_deg": 39.9,
+      "azimuth_deg": 91.1
+    }
+  ]
+}

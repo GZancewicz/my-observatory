@@ -1,0 +1,562 @@
+{
+  "name": "θ Hya",
+  "category": "stars",
+  "app_type": "B-Star",
+  "harvested": "2026-10-10T16:05:37Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20tet%20Hya",
+      "retrieved": "2026-10-10T16:05:45Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Theta_Hydrae",
+      "retrieved": "2026-10-10T16:05:46Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1029146",
+      "retrieved": "2026-10-10T16:06:02Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Hydra_constellation_map.svg/330px-Hydra_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:tet Hya",
+    "simbad_id": "* tet Hya",
+    "wikidata": "Q1029146",
+    "wikipedia": "Theta Hydrae"
+  },
+  "simbad": {
+    "main_id": "* tet Hya",
+    "ra": 138.5910836298175,
+    "dec": 2.3143199766405553,
+    "otype": "SB*",
+    "otype_desc": "Spectroscopic Binary",
+    "sp_type": "B9.5V+DA1.6",
+    "plx_value": 27.0704,
+    "plx_err": 0.6164,
+    "pmra": 134.386,
+    "pmdec": -322.143,
+    "rvz_radvel": -10.7,
+    "rvz_redshift": -3.56907212724078e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 226,
+    "identifiers": [
+      "TIC 430415842",
+      "HIP 45336",
+      "Gaia DR3 3845263368043470080",
+      "PLX 2200",
+      "LSPM J0914+0218",
+      "ASCC 1130574",
+      "USNO-B1.0 0923-00221992",
+      "* tet Hya",
+      "*  22 Hya",
+      "2RE J091421+021825",
+      "2RE J0914+021",
+      "ADS  7253 A",
+      "AG+02 1244",
+      "BD+02  2167",
+      "CCDM J09144+0219A",
+      "CSI+02  2167  1",
+      "FK5  347",
+      "GC 12743",
+      "GCRV  6036",
+      "GEN# +1.00079469",
+      "GSC 00227-02544",
+      "HD  79469",
+      "HIC  45336",
+      "HR  3665",
+      "IDS 09092+0244 A",
+      "JP11  1787",
+      "LTT 12431",
+      "N30 2190",
+      "NLTT 21281",
+      "PMC 90-93   250",
+      "PPM 155592",
+      "RE J0914+021",
+      "RE J091420+021830",
+      "ROT  1453",
+      "SAO 117527",
+      "SKY# 17821",
+      "TD1 13698",
+      "TYC  227-2544-1",
+      "UBV    8842",
+      "UBV M  15207",
+      "YZ   2  3711",
+      "[HFE83]  646",
+      "uvby98 100079469",
+      "2MASS J09142189+0218511",
+      "PLX 2200.00",
+      "2EUVE J0914+02.3",
+      "EUVE J0914+02.3",
+      "RX J0914.3+0219",
+      "1RXS J091422.0+021916",
+      "WDS J09144+0219A",
+      "Renson 22550",
+      "AKARI-IRC-V1 J0914219+021849",
+      "IRAS 09117+0231",
+      "[ZEH2003] RX J0914.3+0219  1",
+      "WD 0911+023",
+      "WEB  8635",
+      "Gaia DR2 3845263368043086080"
+    ],
+    "fluxes": {
+      "H": {
+        "mag": 4.04,
+        "err": 0.02
+      },
+      "K": {
+        "mag": 3.943,
+        "err": 0.016
+      },
+      "J": {
+        "mag": 3.455,
+        "err": 0.182
+      },
+      "R": {
+        "mag": 3.9,
+        "err": null
+      },
+      "B": {
+        "mag": 3.82,
+        "err": null
+      },
+      "G": {
+        "mag": 3.881346,
+        "err": 0.00353
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 11200,
+        "log_g": 4.2,
+        "fe_h": 0.4,
+        "bibcode": "1969ApJ...155..537B"
+      },
+      {
+        "teff": 8691,
+        "log_g": 3.23,
+        "fe_h": -1.48,
+        "bibcode": "2012A&A...538A.143K"
+      },
+      {
+        "teff": 8691,
+        "log_g": 3.23,
+        "fe_h": -1.48,
+        "bibcode": "2023ApJS..266...41P"
+      },
+      {
+        "teff": 10304,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2012A&A...537A.120Z"
+      },
+      {
+        "teff": 10980,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2009A&A...501..297Z"
+      }
+    ],
+    "teff_median": 10304,
+    "vsini_measurements": [
+      {
+        "vsini": 97,
+        "vsini_err": null,
+        "bibcode": "2007A&A...463..671R"
+      },
+      {
+        "vsini": 100,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 86,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 85,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 80,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 85,
+        "vsini_err": 16,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 35.2089,
+        "unit": "pc  ",
+        "plus_err": 0.4564,
+        "minus_err": -0.4564,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 36.9407,
+        "unit": "pc  ",
+        "plus_err": 0.8411,
+        "minus_err": -0.8411,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "NIR",
+      "PM*",
+      "SB*",
+      "UV",
+      "WD*",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20tet%20Hya"
+  },
+  "wikipedia": {
+    "title": "Theta Hydrae",
+    "description": "Binary star system in the constellation Hydra",
+    "summary": "Theta Hydrae, Latinized from θ Hydrae, is a binary star system in the constellation Hydra. It is visible to the naked eye with an apparent visual magnitude of 3.9. The star system has a high proper motion with an annual parallax shift of 28.4 mas, indicating a distance of about 115 light years. Theta Hydrae forms a double with a magnitude 9.9 star located at an angular separation of 29 arcseconds.",
+    "intro": "Theta Hydrae, Latinized from θ Hydrae, is a binary star system in the constellation Hydra. It is visible to the naked eye with an apparent visual magnitude of 3.9. The star system has a high proper motion with an annual parallax shift of 28.4 mas, indicating a distance of about 115 light years. Theta Hydrae forms a double with a magnitude 9.9 star located at an angular separation of 29 arcseconds.\nThe primary component of this system is a B-type main sequence star with a stellar classification of B9.5 V. It is a candidate Lambda Boötis star, indicating it displays an underabundance of iron peak elements. However, it is also underabundant in oxygen, a characteristic not shared by other Lambda Boötis stars. Instead, it may be a peculiar B star.\nAn orbiting white dwarf companion was discovered in 1998 from its X-ray emission. This degenerate star must have evolved from a progenitor that was once more massive than the current primary. Burleigh and Barstow (1999) gave a mass estimate of 0.68 times the mass of the Sun, whereas Holberg  et al. (2013) put it as high as 1.21 times the Sun's mass. The latter would put it beyond the theoretical upper limit for white dwarf remnants of typical single stars that did not undergo a merger or mass loss.",
+    "url": "https://en.wikipedia.org/wiki/Theta_Hydrae",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Hydra_constellation_map.svg/330px-Hydra_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Hydra_constellation_map.svg/330px-Hydra_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q1029146"
+  },
+  "wikidata": {
+    "id": "Q1029146",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "B9.5V"
+        },
+        {
+          "value": "A 0 VP(WK LIN)"
+        },
+        {
+          "value": "B8V"
+        },
+        {
+          "value": "A0Vp"
+        },
+        {
+          "value": "B9.5 V SB"
+        },
+        {
+          "value": "A0p"
+        },
+        {
+          "value": "A0V"
+        },
+        {
+          "value": "B9.5V+DA1.6"
+        },
+        {
+          "value": "A0"
+        },
+        {
+          "value": "A0VP(WKLIN)"
+        },
+        {
+          "value": "B9.5VSB"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Hydra"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 3.9,
+          "unit": ""
+        },
+        {
+          "value": 3.82,
+          "unit": ""
+        },
+        {
+          "value": 3.455,
+          "unit": "",
+          "plus": 0.18199999999999994,
+          "minus": 0.18199999999999994
+        },
+        {
+          "value": 4.04,
+          "unit": "",
+          "plus": 0.019999999999999574,
+          "minus": 0.020000000000000462
+        },
+        {
+          "value": 3.943,
+          "unit": "",
+          "plus": 0.016000000000000014,
+          "minus": 0.016000000000000014
+        },
+        {
+          "value": 3.881347,
+          "unit": "",
+          "plus": 0.003530000000000033,
+          "minus": 0.003530000000000033
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": 0.92,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 35.2089,
+          "unit": "pc",
+          "plus": 0.45640000000000214,
+          "minus": 0.45640000000000214
+        },
+        {
+          "value": 36.9407,
+          "unit": "pc",
+          "plus": 0.8410999999999973,
+          "minus": 0.8410999999999973
+        }
+      ],
+      "mass": [
+        {
+          "value": 2.52,
+          "unit": "M☉"
+        }
+      ],
+      "radius": [
+        {
+          "value": 1.6,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 52.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 10980.0,
+          "unit": "K"
+        },
+        {
+          "value": 10304.0,
+          "unit": "K"
+        },
+        {
+          "value": 8691.0,
+          "unit": "K"
+        },
+        {
+          "value": 11200.0,
+          "unit": "K"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.4,
+          "unit": ""
+        },
+        {
+          "value": -1.48,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 16000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 1700.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -10.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -8.0,
+          "unit": "km/s",
+          "plus": 5.0,
+          "minus": 5.0
+        },
+        {
+          "value": -10.7,
+          "unit": "km/s",
+          "plus": 0.29999999999999893,
+          "minus": 0.3000000000000007
+        },
+        {
+          "value": -10.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -16.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -23.4,
+          "unit": "km/s"
+        },
+        {
+          "value": -8.6,
+          "unit": "km/s"
+        },
+        {
+          "value": -6.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 6.7,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 28.4019,
+          "unit": "mas",
+          "plus": 0.3681999999999981,
+          "minus": 0.36820000000000164
+        },
+        {
+          "value": 24.3,
+          "unit": "mas",
+          "plus": 7.599999999999998,
+          "minus": 7.600000000000001
+        },
+        {
+          "value": 28.74,
+          "unit": "mas",
+          "plus": 1.5500000000000007,
+          "minus": 1.5499999999999972
+        },
+        {
+          "value": 25.34,
+          "unit": "mas",
+          "plus": 0.9699999999999989,
+          "minus": 0.9699999999999989
+        },
+        {
+          "value": 27.0704,
+          "unit": "mas",
+          "plus": 0.6164000000000023,
+          "minus": 0.6163999999999987
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "spectroscopic binary"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "white dwarf"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 138.5910836298175,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 2.31431997664056,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q1029146"
+  },
+  "summary": {
+    "designation": "tet Hya",
+    "object_type": "Spectroscopic Binary",
+    "spectral_type": "B9.5V+DA1.6",
+    "ra_deg": 138.5910836298175,
+    "dec_deg": 2.3143199766405553,
+    "v_mag": 3.9,
+    "distance_pc": 36.9,
+    "distance_ly": 120.5,
+    "teff_k": 10304,
+    "mass": {
+      "value": 2.52,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 1.6,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 52.0,
+      "unit": "L☉"
+    },
+    "constellation": "Hydra",
+    "description": "Binary star system in the constellation Hydra"
+  },
+  "id": "theta-hya",
+  "path": "stars/theta-hya",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:34",
+      "location": "Royse City, Texas",
+      "rating": 2.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 10:34",
+      "altitude_deg": 28.3,
+      "azimuth_deg": 107.1
+    }
+  ]
+}

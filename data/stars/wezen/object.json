@@ -1,0 +1,587 @@
+{
+  "name": "Wezen",
+  "category": "stars",
+  "app_type": "F-Star",
+  "harvested": "2026-10-10T16:09:16Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20del%20CMa",
+      "retrieved": "2026-10-10T16:09:24Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Delta_Canis_Majoris",
+      "retrieved": "2026-10-10T16:09:24Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q13411",
+      "retrieved": "2026-10-10T16:09:25Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/330px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Wezen",
+    "simbad_id": "* del CMa",
+    "wikidata": "Q13411",
+    "wikipedia": "Delta Canis Majoris"
+  },
+  "simbad": {
+    "main_id": "* del CMa",
+    "ra": 107.09785021416667,
+    "dec": -26.39319957888889,
+    "otype": "s*y",
+    "otype_desc": "Yellow Supergiant",
+    "sp_type": "F8Ia",
+    "plx_value": 2.03,
+    "plx_err": 0.38,
+    "pmra": -3.12,
+    "pmdec": 3.31,
+    "rvz_radvel": 33.67,
+    "rvz_redshift": 0.00011231733844541125,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 349,
+    "identifiers": [
+      "TIC 64602863",
+      "HIP 34444",
+      "2MASS J07082348-2623354",
+      "Cl* Collinder  121    MMU      31",
+      "Cl Collinder  121    31",
+      "PLX 1673",
+      "*  25 CMa",
+      "* del CMa",
+      "CD-26  3916",
+      "CPD-26  1793",
+      "FK5  273",
+      "GC  9443",
+      "GCRV  4704",
+      "GEN# +5.11210031",
+      "GSC 06532-05001",
+      "HD  54605",
+      "HIC  34444",
+      "HR  2693",
+      "IRAS 07063-2618",
+      "IRC -30076",
+      "JP11  4547",
+      "N30 1568",
+      "NSV  3424",
+      "PMC 90-93   196",
+      "PPM 251718",
+      "RAFGL 1078",
+      "ROT  1146",
+      "SACS 156",
+      "SAO 173047",
+      "SKY# 12832",
+      "SRS  30273",
+      "TD1  9243",
+      "TYC 6532-5001-1",
+      "UBV    6983",
+      "UBV M  12924",
+      "UBV M  40652",
+      "uvby98 511210031",
+      "PLX 1673.00",
+      "NAME Wezen",
+      "WEB  6902"
+    ],
+    "fluxes": {
+      "B": {
+        "mag": 2.52,
+        "err": null
+      },
+      "V": {
+        "mag": 1.84,
+        "err": null
+      },
+      "U": {
+        "mag": 3.06,
+        "err": null
+      },
+      "R": {
+        "mag": 1.33,
+        "err": null
+      },
+      "I": {
+        "mag": 1,
+        "err": null
+      },
+      "J": {
+        "mag": 0.77,
+        "err": null
+      },
+      "K": {
+        "mag": 0.39,
+        "err": null
+      },
+      "H": {
+        "mag": 0.51,
+        "err": null
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 6476,
+        "log_g": 0.89,
+        "fe_h": 0.28,
+        "bibcode": "2014AJ....147..137L"
+      },
+      {
+        "teff": 5850,
+        "log_g": 1,
+        "fe_h": 0.01,
+        "bibcode": "2010MNRAS.402.1369L"
+      },
+      {
+        "teff": 6380,
+        "log_g": null,
+        "fe_h": 0.01,
+        "bibcode": "1965MNRAS.129..127B"
+      },
+      {
+        "teff": 6380,
+        "log_g": null,
+        "fe_h": 0.01,
+        "bibcode": "1965MNRAS.129..127B"
+      },
+      {
+        "teff": 6222,
+        "log_g": 1,
+        "fe_h": 0.52,
+        "bibcode": "1979ApJ...232..797L"
+      },
+      {
+        "teff": 6222,
+        "log_g": 0.6,
+        "fe_h": 0.19,
+        "bibcode": "1981ApJ...245.1018L"
+      },
+      {
+        "teff": 6222,
+        "log_g": 0.6,
+        "fe_h": 0.19,
+        "bibcode": "1981ApJ...245.1018L"
+      },
+      {
+        "teff": 7035,
+        "log_g": 0.69,
+        "fe_h": 0.24,
+        "bibcode": "2011A&A...531A.165P"
+      },
+      {
+        "teff": 6222,
+        "log_g": 0.6,
+        "fe_h": 0.19,
+        "bibcode": "1981ApJ...245.1018L"
+      },
+      {
+        "teff": 6222,
+        "log_g": 1,
+        "fe_h": 0.52,
+        "bibcode": "1979ApJ...232..797L"
+      },
+      {
+        "teff": 5439,
+        "log_g": 0.453,
+        "fe_h": -0.55,
+        "bibcode": "2023ApJS..266...11B"
+      },
+      {
+        "teff": 6460,
+        "log_g": 1,
+        "fe_h": -0.03,
+        "bibcode": "2021MNRAS.505.4496G"
+      },
+      {
+        "teff": 5653,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2012A&A...542A.116A"
+      },
+      {
+        "teff": 6443,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2007MNRAS.378..617K"
+      }
+    ],
+    "teff_median": 6222,
+    "vsini_measurements": [
+      {
+        "vsini": 13.4,
+        "vsini_err": 1.9,
+        "bibcode": "2012A&A...542A.116A"
+      },
+      {
+        "vsini": 28,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 25,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 25,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 20.5,
+        "vsini_err": 5.6,
+        "bibcode": "2023ApJS..266...11B"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "IR",
+      "NIR",
+      "s*y",
+      "UV",
+      "V*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20del%20CMa"
+  },
+  "wikipedia": {
+    "title": "Delta Canis Majoris",
+    "description": "Star in the constellation Canis Major",
+    "summary": "Delta Canis Majoris is a supergiant star in the constellation of Canis Major. It is formally named Wezen ; Delta Canis Majoris is its Bayer designation. At an apparent magnitude of +1.83, it is the third-brightest star in the constellation. Based on parallax measurements, it is located at a distance of approximately 1,600 light years. Since 1943, the spectrum of this star has served as one of the stable anchor points by which other stars are classified.",
+    "intro": "Delta Canis Majoris is a supergiant star in the constellation of Canis Major. It is formally named Wezen (); Delta Canis Majoris is its Bayer designation. At an apparent magnitude of +1.83, it is the third-brightest star in the constellation. Based on parallax measurements, it is located at a distance of approximately 1,600 light years. Since 1943, the spectrum of this star has served as one of the stable anchor points by which other stars are classified.",
+    "url": "https://en.wikipedia.org/wiki/Delta_Canis_Majoris",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/330px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/250px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q13411"
+  },
+  "wikidata": {
+    "id": "Q13411",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "F8Ia"
+        },
+        {
+          "value": "F8 IA SB"
+        },
+        {
+          "value": "F8I"
+        },
+        {
+          "value": "G3I"
+        },
+        {
+          "value": "F7.5Ia"
+        },
+        {
+          "value": "F8p"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Canis Major"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 1.84,
+          "unit": ""
+        },
+        {
+          "value": 3.06,
+          "unit": ""
+        },
+        {
+          "value": 2.52,
+          "unit": ""
+        },
+        {
+          "value": 1.33,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 10.2275,
+          "unit": "",
+          "plus": 0.2701000000000011,
+          "minus": 0.27009999999999934
+        },
+        {
+          "value": 0.77,
+          "unit": ""
+        },
+        {
+          "value": 0.51,
+          "unit": ""
+        },
+        {
+          "value": 0.39,
+          "unit": ""
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -6.86,
+          "unit": ""
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 82000.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 6443.0,
+          "unit": "K"
+        },
+        {
+          "value": 5850.0,
+          "unit": "K"
+        },
+        {
+          "value": 5653.0,
+          "unit": "K"
+        },
+        {
+          "value": 6476.0,
+          "unit": "K"
+        },
+        {
+          "value": 7035.0,
+          "unit": "K"
+        },
+        {
+          "value": 6222.0,
+          "unit": "K"
+        },
+        {
+          "value": 6380.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 12.0,
+          "unit": "Myr"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.52,
+          "unit": ""
+        },
+        {
+          "value": 0.19,
+          "unit": ""
+        },
+        {
+          "value": 0.01,
+          "unit": ""
+        },
+        {
+          "value": 0.28,
+          "unit": ""
+        },
+        {
+          "value": 0.24,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 8.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 5.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 7.8,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 10.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 4.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 4.9,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 34.3,
+          "unit": "km/s",
+          "plus": 0.9000000000000057,
+          "minus": 0.8999999999999986
+        },
+        {
+          "value": 33.67,
+          "unit": "km/s",
+          "plus": 0.23999999999999488,
+          "minus": 0.240000000000002
+        },
+        {
+          "value": 33.67,
+          "unit": "km/s"
+        },
+        {
+          "value": 34.3,
+          "unit": "km/s"
+        },
+        {
+          "value": 34.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 34.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 33.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 35.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 34.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 33.6,
+          "unit": "km/s"
+        },
+        {
+          "value": 34.7,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 1.82,
+          "unit": "mas",
+          "plus": 0.5599999999999998,
+          "minus": 0.56
+        },
+        {
+          "value": 2.03,
+          "unit": "mas",
+          "plus": 0.38000000000000034,
+          "minus": 0.3799999999999999
+        }
+      ],
+      "instance of": [
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "yellow supergiant"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "star"
+        },
+        {
+          "value": "suspected variable"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 107.09785021417,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -26.39319957889,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Canis major constellation map.png",
+    "url": "https://www.wikidata.org/wiki/Q13411"
+  },
+  "summary": {
+    "designation": "del CMa",
+    "object_type": "Yellow Supergiant",
+    "spectral_type": "F8Ia",
+    "ra_deg": 107.09785021416667,
+    "dec_deg": -26.39319957888889,
+    "v_mag": 1.84,
+    "distance_pc": 492.6,
+    "distance_ly": 1606.7,
+    "teff_k": 6222,
+    "b_minus_v": 0.68,
+    "luminosity": {
+      "value": 82000.0,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 12.0,
+      "unit": "Myr"
+    },
+    "constellation": "Canis Major",
+    "description": "Star in the constellation Canis Major"
+  },
+  "id": "wezen",
+  "path": "stars/wezen",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:13",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 10:13",
+      "altitude_deg": 23.7,
+      "azimuth_deg": 149.6
+    },
+    {
+      "datetime": "2026-10-07 06:17",
+      "location": "",
+      "rating": null,
+      "seeing": "",
+      "transparency": "",
+      "bortle": "",
+      "incomplete": true,
+      "location_assumed": "Royse City, Texas",
+      "utc": "2026-10-07 11:17",
+      "altitude_deg": 28.2,
+      "azimuth_deg": 161.6
+    }
+  ]
+}

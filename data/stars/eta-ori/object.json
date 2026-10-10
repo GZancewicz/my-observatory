@@ -1,0 +1,482 @@
+{
+  "name": "η Ori",
+  "category": "stars",
+  "app_type": "B-Star",
+  "harvested": "2026-10-10T16:23:26Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20eta%20Ori",
+      "retrieved": "2026-10-10T16:23:34Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eta_Orionis",
+      "retrieved": "2026-10-10T16:23:36Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q14217",
+      "retrieved": "2026-10-10T16:23:37Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:eta Ori",
+    "simbad_id": "* eta Ori",
+    "wikidata": "Q14217",
+    "wikipedia": "Eta Orionis"
+  },
+  "simbad": {
+    "main_id": "* eta Ori",
+    "ra": 81.11923634279408,
+    "dec": -2.3971475397222215,
+    "otype": "bC*",
+    "otype_desc": "beta Cep Variable",
+    "sp_type": "B1V+B2:",
+    "plx_value": 3.34,
+    "plx_err": 1.07,
+    "pmra": -0.71,
+    "pmdec": -3.46,
+    "rvz_radvel": 19.8,
+    "rvz_redshift": 6.604787200981121e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 413,
+    "identifiers": [
+      "TIC 4254645",
+      "GEN# +1.00035411",
+      "HIP 25281",
+      "2MASS J05242864-0223497",
+      "PLX 1228",
+      "[JE82]  161",
+      "*  28 Ori",
+      "* eta Ori",
+      "2E  1268",
+      "BD-02  1235",
+      "CCDM J05245-0223AB",
+      "CEL    676",
+      "CSI-02  1235  1",
+      "EM* CDS  494",
+      "GC  6655",
+      "GCRV  3247",
+      "GSC 04757-01588",
+      "HD  35411",
+      "HGAM    396",
+      "HIC  25281",
+      "HR  1788",
+      "IDS 05194-0229 AB",
+      "IRAS 05219-0226",
+      "JP11  1066",
+      "MCW  306",
+      "N30 1160",
+      "PPM 188024",
+      "ROT   791",
+      "SAO 132071",
+      "SKY#  8588",
+      "TD1  4551",
+      "UBV   21599",
+      "UBV M  10928",
+      "V* eta Ori",
+      "WH  37",
+      "YPAC 118",
+      "ALS 14775",
+      "1RXS J052429.7-022403",
+      "2E 0521.9-0226",
+      "[KSP2003] J052428.84-022349.9",
+      "PMSC 05194-0229Aabc",
+      "WDS J05245-0224AB",
+      "ADS  4002 AB",
+      "** DA    5",
+      "WEB  4903",
+      "WEB  4904"
+    ],
+    "fluxes": {
+      "U": {
+        "mag": 2.25,
+        "err": null
+      },
+      "B": {
+        "mag": 3.18,
+        "err": null
+      },
+      "V": {
+        "mag": 3.35,
+        "err": null
+      },
+      "R": {
+        "mag": 3.44,
+        "err": null
+      },
+      "I": {
+        "mag": 3.65,
+        "err": null
+      },
+      "J": {
+        "mag": 3.967,
+        "err": 0.232
+      },
+      "H": {
+        "mag": 3.997,
+        "err": 0.164
+      },
+      "K": {
+        "mag": 3.9,
+        "err": 0.036
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 25900,
+        "log_g": 4.5,
+        "fe_h": null,
+        "bibcode": "2018MNRAS.474.5287A"
+      },
+      {
+        "teff": 18608,
+        "log_g": 3.6154,
+        "fe_h": 0.7833,
+        "bibcode": "2024A&A...681A.107R"
+      },
+      {
+        "teff": 18197,
+        "log_g": 4,
+        "fe_h": null,
+        "bibcode": "2001A&A...378..861C"
+      }
+    ],
+    "teff_median": 18608,
+    "vsini_measurements": [
+      {
+        "vsini": 53,
+        "vsini_err": 1,
+        "bibcode": "2018MNRAS.474.5287A"
+      },
+      {
+        "vsini": 28,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 47,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 35,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 140,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 170,
+        "vsini_err": 17,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 65,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 35,
+        "vsini_err": 9,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 140,
+        "vsini_err": 16,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "bC*",
+      "EB*",
+      "Em*",
+      "IR",
+      "NIR",
+      "UV",
+      "V*",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20eta%20Ori"
+  },
+  "wikipedia": {
+    "title": "Eta Orionis",
+    "description": "Star in the constellation Orion",
+    "summary": "Eta Orionis is a multiple star in the constellation Orion. It lies a little to the west of Orion's Belt between Delta Orionis and Rigel, being closer to Delta Orionis than to Rigel. It lies at a distance of around 1,000 light-years from Earth and is part of the Orion OB1 association.",
+    "intro": "Eta Orionis is a multiple star in the constellation Orion. It lies a little to the west of Orion's Belt between Delta Orionis and Rigel, being closer to Delta Orionis than to Rigel. It lies at a distance of around 1,000 light-years from Earth and is part of the Orion OB1 association.",
+    "url": "https://en.wikipedia.org/wiki/Eta_Orionis",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q14217"
+  },
+  "wikidata": {
+    "id": "Q14217",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "B0.5Vnn"
+        },
+        {
+          "value": "B1V"
+        },
+        {
+          "value": "B0.5 V SB"
+        },
+        {
+          "value": "B1V+B2:"
+        },
+        {
+          "value": "B 1 V +B2."
+        },
+        {
+          "value": "B1"
+        },
+        {
+          "value": "B0V"
+        },
+        {
+          "value": "B0.5VSB"
+        },
+        {
+          "value": "B1V+B2."
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Orion"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 3.35,
+          "unit": ""
+        },
+        {
+          "value": 2.25,
+          "unit": ""
+        },
+        {
+          "value": 3.18,
+          "unit": ""
+        },
+        {
+          "value": 3.44,
+          "unit": ""
+        },
+        {
+          "value": 3.65,
+          "unit": ""
+        },
+        {
+          "value": 3.76,
+          "unit": ""
+        },
+        {
+          "value": 3.84,
+          "unit": ""
+        },
+        {
+          "value": 3.9,
+          "unit": "",
+          "plus": 0.03600000000000003,
+          "minus": 0.03600000000000003
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 29476.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 18197.0,
+          "unit": "K"
+        },
+        {
+          "value": 25900.0,
+          "unit": "K"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 31600.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 10000.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 35.9,
+          "unit": "km/s"
+        },
+        {
+          "value": 19.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 19.5,
+          "unit": "km/s",
+          "plus": 7.399999999999999,
+          "minus": 7.4
+        },
+        {
+          "value": -53.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 35.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 27.6,
+          "unit": "km/s"
+        },
+        {
+          "value": 7.2,
+          "unit": "km/s"
+        },
+        {
+          "value": 19.8,
+          "unit": "km/s",
+          "plus": 0.8999999999999986,
+          "minus": 0.9000000000000021
+        },
+        {
+          "value": 35.5,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 3.34,
+          "unit": "mas",
+          "plus": 1.0700000000000003,
+          "minus": 1.0699999999999998
+        },
+        {
+          "value": 3.62,
+          "unit": "mas",
+          "plus": 0.8799999999999999,
+          "minus": 0.8799999999999999
+        }
+      ],
+      "instance of": [
+        {
+          "value": "multiple star"
+        },
+        {
+          "value": "eclipsing binary"
+        },
+        {
+          "value": "Beta Cephei variable"
+        },
+        {
+          "value": "emission-line star"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "binary star"
+        },
+        {
+          "value": "Algol variable"
+        },
+        {
+          "value": "star"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "pulsating variable star"
+        },
+        {
+          "value": "double star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 81.119236343,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -2.39714754,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Orion constellation map.svg",
+    "url": "https://www.wikidata.org/wiki/Q14217"
+  },
+  "summary": {
+    "designation": "eta Ori",
+    "object_type": "beta Cep Variable",
+    "spectral_type": "B1V+B2:",
+    "ra_deg": 81.11923634279408,
+    "dec_deg": -2.3971475397222215,
+    "v_mag": 3.35,
+    "distance_pc": 299.4,
+    "distance_ly": 976.5,
+    "teff_k": 18608,
+    "b_minus_v": -0.17,
+    "luminosity": {
+      "value": 29476.0,
+      "unit": "L☉"
+    },
+    "constellation": "Orion",
+    "description": "Star in the constellation Orion"
+  },
+  "id": "eta-ori",
+  "path": "stars/eta-ori",
+  "observations": [
+    {
+      "datetime": "2026-10-07 05:16",
+      "location": "Royse City, Texas",
+      "rating": 4.0,
+      "seeing": "4/5",
+      "transparency": "4/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-07 10:16",
+      "altitude_deg": 53.9,
+      "azimuth_deg": 167.4
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "name": "73 Psc",
+  "category": "stars",
+  "app_type": "K-Star",
+  "harvested": "2026-10-10T16:31:25Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2073%20Psc",
+      "retrieved": "2026-10-10T16:31:32Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_stars_in_Pisces",
+      "retrieved": "2026-10-10T16:31:34Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q10932312",
+      "retrieved": "2026-10-10T16:31:35Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    }
+  },
+  "resolved": {
+    "method": "sesame:73 Psc",
+    "simbad_id": "*  73 Psc",
+    "wikidata": "Q10932312",
+    "wikipedia": "List of stars in Pisces"
+  },
+  "simbad": {
+    "main_id": "*  73 Psc",
+    "ra": 16.21932463518,
+    "dec": 5.65626473416,
+    "otype": "*",
+    "otype_desc": "Star",
+    "sp_type": "K5III",
+    "plx_value": 4.8225,
+    "plx_err": 0.0611,
+    "pmra": 29.332,
+    "pmdec": -14.9,
+    "rvz_radvel": -9.53,
+    "rvz_redshift": -3.1788153028955435e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 23,
+    "identifiers": [
+      "TIC 344753584",
+      "HIP 5074",
+      "Gaia DR3 2576354759779353088",
+      "*  73 Psc",
+      "AG+05  127",
+      "BD+04   172",
+      "GC  1301",
+      "GCRV   615",
+      "GEN# +1.00006386",
+      "GSC 00025-01372",
+      "HD   6386",
+      "HIC   5074",
+      "HR   307",
+      "IRC +10010",
+      "JP11   453",
+      "PPM 144243",
+      "SAO 109656",
+      "SKY#  1653",
+      "TYC   25-1372-1",
+      "UBV    1055",
+      "UBV M   7906",
+      "YZ   0  2303",
+      "YZ   5   391",
+      "2MASS J01045264+0539227",
+      "IRAS 01022+0523",
+      "AKARI-IRC-V1 J0104526+053921",
+      "WEB  1041",
+      "Gaia DR2 2576354759779353088"
+    ],
+    "fluxes": {
+      "J": {
+        "mag": 3.567,
+        "err": 0.27
+      },
+      "H": {
+        "mag": 2.764,
+        "err": 0.224
+      },
+      "K": {
+        "mag": 2.561,
+        "err": 0.266
+      },
+      "V": {
+        "mag": 6.007,
+        "err": 0.01
+      },
+      "B": {
+        "mag": 7.535,
+        "err": 0.016
+      },
+      "G": {
+        "mag": 5.452981,
+        "err": 0.002799
+      }
+    },
+    "atmosphere_measurements": [],
+    "teff_median": null,
+    "vsini_measurements": [],
+    "distance_measurements": [
+      {
+        "dist": 216.1181,
+        "unit": "pc  ",
+        "plus_err": 8.3652,
+        "minus_err": -8.3652,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 207.361,
+        "unit": "pc  ",
+        "plus_err": 2.6272,
+        "minus_err": -2.6272,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "IR",
+      "NIR"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2073%20Psc"
+  },
+  "wikipedia": {
+    "title": "List of stars in Pisces",
+    "description": "",
+    "summary": "\nThis is the list of notable stars in the constellation Pisces, sorted by decreasing brightness.",
+    "intro": "This is the list of notable stars in the constellation Pisces, sorted by decreasing brightness.",
+    "url": "https://en.wikipedia.org/wiki/List_of_stars_in_Pisces",
+    "thumbnail": null,
+    "image": null,
+    "wikidata": "Q1076234"
+  },
+  "wikidata": {
+    "id": "Q10932312",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "K5III"
+        },
+        {
+          "value": "K2"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Pisces"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 6.007,
+          "unit": "",
+          "plus": 0.010000000000000675,
+          "minus": 0.009999999999999787
+        },
+        {
+          "value": 7.535,
+          "unit": "",
+          "plus": 0.016000000000000014,
+          "minus": 0.016000000000000014
+        },
+        {
+          "value": 3.567,
+          "unit": "",
+          "plus": 0.27,
+          "minus": 0.27
+        },
+        {
+          "value": 2.764,
+          "unit": "",
+          "plus": 0.2240000000000002,
+          "minus": 0.22399999999999975
+        },
+        {
+          "value": 2.561,
+          "unit": "",
+          "plus": 0.266,
+          "minus": 0.266
+        },
+        {
+          "value": 5.452981,
+          "unit": "",
+          "plus": 0.002798999999999552,
+          "minus": 0.00279900000000044
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -0.47,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 216.1181,
+          "unit": "pc",
+          "plus": 8.365200000000016,
+          "minus": 8.365199999999987
+        },
+        {
+          "value": 207.361,
+          "unit": "pc",
+          "plus": 2.627200000000016,
+          "minus": 2.6271999999999878
+        }
+      ],
+      "radius": [
+        {
+          "value": 24.28,
+          "unit": "R☉"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -9.53,
+          "unit": "km/s",
+          "plus": 0.16000000000000014,
+          "minus": 0.16000000000000014
+        },
+        {
+          "value": -15.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -15.0,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0
+        },
+        {
+          "value": -10.29,
+          "unit": "km/s",
+          "plus": 0.1999999999999993,
+          "minus": 0.20000000000000107
+        },
+        {
+          "value": -10.29,
+          "unit": "km/s"
+        },
+        {
+          "value": -14.5,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 4.6271,
+          "unit": "mas",
+          "plus": 0.17909999999999915,
+          "minus": 0.17910000000000004
+        },
+        {
+          "value": 4.52,
+          "unit": "mas",
+          "plus": 0.8700000000000001,
+          "minus": 0.8699999999999997
+        },
+        {
+          "value": 5.01,
+          "unit": "mas",
+          "plus": 0.5,
+          "minus": 0.5
+        },
+        {
+          "value": 4.8225,
+          "unit": "mas",
+          "plus": 0.0611000000000006,
+          "minus": 0.06109999999999971
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 16.21932463518,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 5.65626473416,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q10932312"
+  },
+  "summary": {
+    "designation": "73 Psc",
+    "object_type": "Star",
+    "spectral_type": "K5III",
+    "ra_deg": 16.21932463518,
+    "dec_deg": 5.65626473416,
+    "v_mag": 6.007,
+    "distance_pc": 207.4,
+    "distance_ly": 676.3,
+    "b_minus_v": 1.53,
+    "radius": {
+      "value": 24.28,
+      "unit": "R☉"
+    },
+    "constellation": "Pisces"
+  },
+  "id": "73-psc",
+  "path": "stars/73-psc",
+  "observations": [
+    {
+      "datetime": "2026-10-09 21:09",
+      "location": "Royse City, Texas",
+      "rating": 2.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 02:09",
+      "altitude_deg": 26.8,
+      "azimuth_deg": 101.3
+    }
+  ]
+}

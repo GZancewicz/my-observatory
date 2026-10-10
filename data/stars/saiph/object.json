@@ -1,0 +1,538 @@
+{
+  "name": "Saiph",
+  "category": "stars",
+  "app_type": "B-Star",
+  "harvested": "2026-10-10T16:22:22Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20kap%20Ori",
+      "retrieved": "2026-10-10T16:22:29Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Saiph",
+      "retrieved": "2026-10-10T16:22:29Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q14028",
+      "retrieved": "2026-10-10T16:22:30Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Saiph",
+    "simbad_id": "* kap Ori",
+    "wikidata": "Q14028",
+    "wikipedia": "Saiph"
+  },
+  "simbad": {
+    "main_id": "* kap Ori",
+    "ra": 86.93912016833333,
+    "dec": -9.66960491861111,
+    "otype": "s*b",
+    "otype_desc": "Blue Supergiant",
+    "sp_type": "B0.5Ia",
+    "plx_value": 5.04,
+    "plx_err": 0.22,
+    "pmra": 1.46,
+    "pmdec": -1.28,
+    "rvz_radvel": 20.5,
+    "rvz_redshift": 6.838297763134271e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 590,
+    "identifiers": [
+      "EUVE J0547-09.6",
+      "TIC 66651575",
+      "HIP 27366",
+      "Gaia DR3 3011968416163350272",
+      "2MASS J05474538-0940105",
+      "PLX 1330",
+      "*  53 Ori",
+      "* kap Ori",
+      "2E  1562",
+      "AAVSO 0543-09",
+      "BD-09  1235",
+      "CEL    976",
+      "CSV 100683",
+      "FK5  220",
+      "GC  7264",
+      "GCRV  3603",
+      "GEN# +1.00038771",
+      "GSC 05351-00760",
+      "HD  38771",
+      "HGAM    477",
+      "HIC  27366",
+      "HR  2004",
+      "IRAS 05453-0941",
+      "IRC -10098",
+      "JP11  1262",
+      "KMS 121",
+      "MCW  363",
+      "N30 1242",
+      "NAME Saiph",
+      "NSV  2641",
+      "PMC 90-93   158",
+      "PPM 188455",
+      "ROT   929",
+      "SAO 132542",
+      "SKY#  9544",
+      "SV* ZI   484",
+      "TD1  5371",
+      "TYC 5351-760-1",
+      "UBV    5932",
+      "UBV M  11510",
+      "WH 507",
+      "[HFE83]  401",
+      "[SC93b] 444",
+      "uvby98 100038771",
+      "ALS 14795",
+      "PLX 1330.00",
+      "1E 0545.4-0940",
+      "1RXS J054745.2-094013",
+      "2E 0545.3-0941",
+      "WEB  5378"
+    ],
+    "fluxes": {
+      "H": {
+        "mag": 2.686,
+        "err": 0.218
+      },
+      "J": {
+        "mag": 2.47,
+        "err": null
+      },
+      "K": {
+        "mag": 2.6,
+        "err": null
+      },
+      "B": {
+        "mag": 1.88,
+        "err": null
+      },
+      "V": {
+        "mag": 2.06,
+        "err": null
+      },
+      "U": {
+        "mag": 0.87,
+        "err": null
+      },
+      "R": {
+        "mag": 2.09,
+        "err": null
+      },
+      "I": {
+        "mag": 2.27,
+        "err": null
+      },
+      "G": {
+        "mag": 2.077826,
+        "err": 0.005736
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 26000,
+        "log_g": 3.5,
+        "fe_h": null,
+        "bibcode": "2024ApJ...971..166M"
+      },
+      {
+        "teff": 23170,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2009A&A...501..297Z"
+      },
+      {
+        "teff": 26500,
+        "log_g": 2.7,
+        "fe_h": null,
+        "bibcode": "2006A&A...446..279C"
+      },
+      {
+        "teff": 27500,
+        "log_g": 3,
+        "fe_h": null,
+        "bibcode": "2000A&A...357..597V"
+      },
+      {
+        "teff": 26700,
+        "log_g": 2.95,
+        "fe_h": null,
+        "bibcode": "2024A&A...687A.228D"
+      }
+    ],
+    "teff_median": 26500,
+    "vsini_measurements": [
+      {
+        "vsini": 54,
+        "vsini_err": null,
+        "bibcode": "2014A&A...562A.135S"
+      },
+      {
+        "vsini": 49,
+        "vsini_err": null,
+        "bibcode": "2014A&A...562A.135S"
+      },
+      {
+        "vsini": 80,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 81,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 65,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 43,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 53,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 53,
+        "vsini_err": null,
+        "bibcode": "2020A&A...639A..81B"
+      },
+      {
+        "vsini": 80,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 83,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 65,
+        "vsini_err": 16,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 47,
+        "vsini_err": null,
+        "bibcode": "2024A&A...687A.228D"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 245,
+        "unit": "pc  ",
+        "plus_err": 40,
+        "minus_err": -40,
+        "method": "CaIIHK  ",
+        "bibcode": "2009A&A...507..833M"
+      }
+    ],
+    "types": [
+      "*",
+      "IR",
+      "NIR",
+      "s*b",
+      "UV",
+      "V*",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20kap%20Ori"
+  },
+  "wikipedia": {
+    "title": "Saiph",
+    "description": "Blue supergiant in the constellation of Orion",
+    "summary": "Saiph, designation Kappa Orionis and 53 Orionis, is a blue supergiant star and the sixth-brightest star in the constellation of Orion. Of the four bright stars that compose Orion's main quadrangle, it is the star at the south-eastern corner. A northern-hemisphere observer facing south would see it at the lower left of Orion, and a southern-hemisphere observer facing north would see it at the upper right. Parallax measurements yield an estimated distance of 650 light-years from the Sun. It is smaller, less luminous but hotter at its surface than Rigel with an apparent visual magnitude of 2.1. The luminosity of this star changes slightly, varying by 0.04 magnitudes.",
+    "intro": "Saiph , designation Kappa Orionis (κ Orionis, abbreviated Kappa Ori, κ Ori) and 53 Orionis (53 Ori), is a blue supergiant star and the sixth-brightest star in the constellation of Orion. Of the four bright stars that compose Orion's main quadrangle, it is the star at the south-eastern corner. A northern-hemisphere observer facing south would see it at the lower left of Orion, and a southern-hemisphere observer facing north would see it at the upper right. Parallax measurements yield an estimated distance of 650 light-years (200 parsecs) from the Sun. It is smaller, less luminous but hotter at its surface than Rigel with an apparent visual magnitude of 2.1. The luminosity of this star changes slightly, varying by 0.04 magnitudes.",
+    "url": "https://en.wikipedia.org/wiki/Saiph",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q14028"
+  },
+  "wikidata": {
+    "id": "Q14028",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "B0.5Ia"
+        },
+        {
+          "value": "B0.5Iavar"
+        },
+        {
+          "value": "B0II"
+        },
+        {
+          "value": "B0.5Ib"
+        },
+        {
+          "value": "B0"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Orion"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 2.06,
+          "unit": ""
+        },
+        {
+          "value": 0.87,
+          "unit": ""
+        },
+        {
+          "value": 1.88,
+          "unit": ""
+        },
+        {
+          "value": 2.09,
+          "unit": ""
+        },
+        {
+          "value": 2.27,
+          "unit": ""
+        },
+        {
+          "value": 2.47,
+          "unit": ""
+        },
+        {
+          "value": 2.686,
+          "unit": "",
+          "plus": 0.21799999999999997,
+          "minus": 0.21799999999999997
+        },
+        {
+          "value": 2.6,
+          "unit": ""
+        },
+        {
+          "value": 2.077826,
+          "unit": "",
+          "plus": 0.005736000000000185,
+          "minus": 0.005735999999999741
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -6.1,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 245.0,
+          "unit": "pc",
+          "plus": 40.0,
+          "minus": 40.0
+        }
+      ],
+      "radius": [
+        {
+          "value": 22.2,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 56.881,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 27500.0,
+          "unit": "K"
+        },
+        {
+          "value": 26500.0,
+          "unit": "K"
+        },
+        {
+          "value": 23170.0,
+          "unit": "K"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 500.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 1000.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 20.6,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0
+        },
+        {
+          "value": 20.9,
+          "unit": "km/s",
+          "plus": 2.3000000000000007,
+          "minus": 2.299999999999997
+        },
+        {
+          "value": 20.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 21.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 18.4,
+          "unit": "km/s"
+        },
+        {
+          "value": 11.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 18.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 17.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 20.5,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0
+        }
+      ],
+      "parallax": [
+        {
+          "value": 13.2,
+          "unit": "mas",
+          "plus": 15.0,
+          "minus": 15.0
+        },
+        {
+          "value": 5.04,
+          "unit": "mas",
+          "plus": 0.21999999999999975,
+          "minus": 0.21999999999999975
+        },
+        {
+          "value": 4.52,
+          "unit": "mas",
+          "plus": 0.7700000000000005,
+          "minus": 0.7699999999999996
+        }
+      ],
+      "instance of": [
+        {
+          "value": "blue supergiant"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "suspected variable"
+        },
+        {
+          "value": "star"
+        },
+        {
+          "value": "hypergiant"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 86.93912016833,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -9.66960491861,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Orion constellation map.png",
+    "url": "https://www.wikidata.org/wiki/Q14028"
+  },
+  "summary": {
+    "designation": "kap Ori",
+    "object_type": "Blue Supergiant",
+    "spectral_type": "B0.5Ia",
+    "ra_deg": 86.93912016833333,
+    "dec_deg": -9.66960491861111,
+    "v_mag": 2.06,
+    "distance_pc": 198.4,
+    "distance_ly": 647.1,
+    "teff_k": 26500,
+    "b_minus_v": -0.18,
+    "radius": {
+      "value": 22.2,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 56.881,
+      "unit": "L☉"
+    },
+    "constellation": "Orion",
+    "description": "Blue supergiant in the constellation of Orion"
+  },
+  "id": "saiph",
+  "path": "stars/saiph",
+  "observations": [
+    {
+      "datetime": "2026-10-07 05:18",
+      "location": "Royse City, Texas",
+      "rating": 5.0,
+      "seeing": "4/5",
+      "transparency": "4/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-07 10:18",
+      "altitude_deg": 45.7,
+      "azimuth_deg": 161.9
+    }
+  ]
+}

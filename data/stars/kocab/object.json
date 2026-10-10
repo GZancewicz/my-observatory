@@ -1,0 +1,628 @@
+{
+  "name": "Kocab",
+  "category": "stars",
+  "app_type": "K-Star",
+  "harvested": "2026-10-10T16:02:29Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20bet%20UMi",
+      "retrieved": "2026-10-10T16:02:36Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kochab",
+      "retrieved": "2026-10-10T16:02:37Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q14059",
+      "retrieved": "2026-10-10T16:02:38Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Ursa_Minor_constellation_map.svg/330px-Ursa_Minor_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "wikipedia-redirect",
+    "simbad_id": "* bet UMi",
+    "wikidata": "Q14059",
+    "wikipedia": "Kochab"
+  },
+  "simbad": {
+    "main_id": "* bet UMi",
+    "ra": 222.67635749796767,
+    "dec": 74.15550393675127,
+    "otype": "*",
+    "otype_desc": "Star",
+    "sp_type": "K4-III",
+    "plx_value": 24.91,
+    "plx_err": 0.12,
+    "pmra": -32.61,
+    "pmdec": 11.42,
+    "rvz_radvel": 16.96,
+    "rvz_redshift": 5.657407085846167e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 347,
+    "identifiers": [
+      "TIC 229540730",
+      "HIP 72607",
+      "PLX 3373",
+      "*   7 UMi",
+      "* bet UMi",
+      "AG+74  412",
+      "BD+74   595",
+      "CCDM J14506+7410A",
+      "CSI+74   595  1",
+      "CSV 101477",
+      "FK5  550",
+      "GC 20029",
+      "GCRV  8646",
+      "GSC 04416-01799",
+      "HD 131873",
+      "HIC  72607",
+      "HR  5563",
+      "IDS 14510+7434 A",
+      "IRAS 14508+7421",
+      "IRC +70125",
+      "JP11  2549",
+      "N30 3361",
+      "NAME Kochab",
+      "NSV  6846",
+      "PMC 90-93   390",
+      "PPM   8758",
+      "RAFGL 1740",
+      "ROT  2127",
+      "SAO   8102",
+      "SKY# 26960",
+      "SV* ZI  1097",
+      "TD1 17825",
+      "TYC 4416-1799-1",
+      "UBV   12983",
+      "UBV M  20451",
+      "USNO 853",
+      "[HFE83] 1055",
+      "[L91b] 244",
+      "2MASS J14504235+7409199",
+      "PLX 3373.00",
+      "WDS J14507+7409A",
+      "uvby98 100131873",
+      "WEB 12482",
+      "** BUP  159A",
+      "GEN# +1.00131873"
+    ],
+    "fluxes": {
+      "B": {
+        "mag": 3.55,
+        "err": null
+      },
+      "V": {
+        "mag": 2.08,
+        "err": null
+      },
+      "H": {
+        "mag": -1.225,
+        "err": 0.184
+      },
+      "J": {
+        "mag": -0.45,
+        "err": null
+      },
+      "K": {
+        "mag": -1.39,
+        "err": null
+      },
+      "U": {
+        "mag": 5.32,
+        "err": null
+      },
+      "R": {
+        "mag": 0.97,
+        "err": null
+      },
+      "I": {
+        "mag": 0.21,
+        "err": null
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 4345,
+        "log_g": 1.86,
+        "fe_h": -0.23,
+        "bibcode": "1981ApJ...248..228L"
+      },
+      {
+        "teff": 4030,
+        "log_g": 1.83,
+        "fe_h": -0.29,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4345,
+        "log_g": 1.86,
+        "fe_h": -0.23,
+        "bibcode": "1981ApJ...248..228L"
+      },
+      {
+        "teff": 4030,
+        "log_g": 1.83,
+        "fe_h": -0.29,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4077,
+        "log_g": 1.7,
+        "fe_h": -0.1,
+        "bibcode": "2012A&A...538A.143K"
+      },
+      {
+        "teff": 4030,
+        "log_g": 1.83,
+        "fe_h": -0.29,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4345,
+        "log_g": 1.86,
+        "fe_h": -0.23,
+        "bibcode": "1981ApJ...248..228L"
+      },
+      {
+        "teff": 3992,
+        "log_g": 1.32,
+        "fe_h": -0.2,
+        "bibcode": "2019A&A...625A.141L"
+      },
+      {
+        "teff": 3938,
+        "log_g": null,
+        "fe_h": -0.24,
+        "bibcode": "2020A&A...633A..34C"
+      },
+      {
+        "teff": 4149,
+        "log_g": 1.71,
+        "fe_h": -0.57,
+        "bibcode": "2022ApJS..259...45T"
+      },
+      {
+        "teff": 4086,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1998AJ....116..981V"
+      },
+      {
+        "teff": 3992,
+        "log_g": 1.32,
+        "fe_h": -0.23,
+        "bibcode": "2017A&A...598A.100J"
+      },
+      {
+        "teff": 3992,
+        "log_g": 1.32,
+        "fe_h": -0.2,
+        "bibcode": "2022A&A...666A.125F"
+      },
+      {
+        "teff": 4043,
+        "log_g": 1.3,
+        "fe_h": -0.24,
+        "bibcode": "2022A&A...663A...4S"
+      },
+      {
+        "teff": 4077,
+        "log_g": 1.7,
+        "fe_h": -0.1,
+        "bibcode": "2023ApJS..266...41P"
+      },
+      {
+        "teff": 4150,
+        "log_g": 1.4,
+        "fe_h": -0.08,
+        "bibcode": "2024MNRAS.534.3104Y"
+      },
+      {
+        "teff": 4030,
+        "log_g": 1.83,
+        "fe_h": -0.29,
+        "bibcode": "2025A&A...698A..93J"
+      },
+      {
+        "teff": 4126,
+        "log_g": 1.5,
+        "fe_h": -0.27,
+        "bibcode": "2024A&A...691A..53S"
+      }
+    ],
+    "teff_median": 4077,
+    "vsini_measurements": [
+      {
+        "vsini": 8,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 17,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 1.7,
+        "vsini_err": 1.4,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 8,
+        "vsini_err": null,
+        "bibcode": "2025A&A...698A..93J"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "NIR",
+      "UV",
+      "V*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20bet%20UMi"
+  },
+  "wikipedia": {
+    "title": "Kochab",
+    "description": "Star in the constellation Ursa Minor",
+    "summary": "Kochab, Bayer designation Beta Ursae Minoris, is the brightest star in the bowl of the Little Dipper asterism, and only slightly fainter than Polaris, the northern pole star and brightest star in Ursa Minor. Kochab is 16 degrees from Polaris and has an apparent visual magnitude of 2.08. The distance to this star from the Sun can be deduced from the parallax measurements made during the Hipparcos mission, yielding a value of 130.9 light-years.",
+    "intro": "Kochab , Bayer designation Beta Ursae Minoris (β Ursae Minoris, abbreviated β UMi, Beta UMi), is the brightest star in the bowl of the Little Dipper asterism (which is part of the constellation of Ursa Minor), and only slightly fainter than Polaris, the northern pole star and brightest star in Ursa Minor. Kochab is 16 degrees from Polaris and has an apparent visual magnitude of 2.08. The distance to this star from the Sun can be deduced from the parallax measurements made during the Hipparcos mission, yielding a value of 130.9 light-years (40.1 parsecs).\nAmateur astronomers can use Kochab as a precise guide for equatorial mount alignment: The celestial north pole is located 38 arcminutes away from Polaris, very close to the line connecting Polaris with Kochab.",
+    "url": "https://en.wikipedia.org/wiki/Kochab",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Ursa_Minor_constellation_map.svg/330px-Ursa_Minor_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Ursa_Minor_constellation_map.svg/250px-Ursa_Minor_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q14059"
+  },
+  "wikidata": {
+    "id": "Q14059",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "K4III"
+        },
+        {
+          "value": "K4-III"
+        },
+        {
+          "value": "K4IIIvar"
+        },
+        {
+          "value": "K5III"
+        },
+        {
+          "value": "K5"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Ursa Minor"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 2.08,
+          "unit": ""
+        },
+        {
+          "value": 5.32,
+          "unit": ""
+        },
+        {
+          "value": 3.55,
+          "unit": ""
+        },
+        {
+          "value": 0.97,
+          "unit": ""
+        },
+        {
+          "value": 0.21,
+          "unit": ""
+        },
+        {
+          "value": -0.45,
+          "unit": ""
+        },
+        {
+          "value": -1.225,
+          "unit": "",
+          "plus": 0.18400000000000016,
+          "minus": 0.18399999999999994
+        },
+        {
+          "value": -1.39,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 126.0,
+          "unit": "ly"
+        },
+        {
+          "value": 40.14,
+          "unit": "pc",
+          "plus": 0.20000000000000284,
+          "minus": 0.20000000000000284
+        }
+      ],
+      "mass": [
+        {
+          "value": 1.4,
+          "unit": "M☉",
+          "plus": 0.20000000000000018,
+          "minus": 0.19999999999999996
+        }
+      ],
+      "radius": [
+        {
+          "value": 42.06,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 500.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 3992.0,
+          "unit": "K"
+        },
+        {
+          "value": 4345.0,
+          "unit": "K"
+        },
+        {
+          "value": 4086.0,
+          "unit": "K"
+        },
+        {
+          "value": 4030.0,
+          "unit": "K"
+        },
+        {
+          "value": 4077.0,
+          "unit": "K"
+        },
+        {
+          "value": 4149.0,
+          "unit": "K"
+        },
+        {
+          "value": 3938.0,
+          "unit": "K"
+        },
+        {
+          "value": 4126.0,
+          "unit": "K",
+          "plus": 25.0,
+          "minus": 25.0
+        }
+      ],
+      "age": [
+        {
+          "value": 2.95,
+          "unit": "gigaannum"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.23,
+          "unit": ""
+        },
+        {
+          "value": -0.29,
+          "unit": ""
+        },
+        {
+          "value": -0.1,
+          "unit": ""
+        },
+        {
+          "value": -0.2,
+          "unit": ""
+        },
+        {
+          "value": -0.57,
+          "unit": ""
+        },
+        {
+          "value": -0.24,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 72.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 68.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 50.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 21.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 51.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 16.58,
+          "unit": "kilometre per second"
+        },
+        {
+          "value": 16.9,
+          "unit": "kilometre per second",
+          "plus": 0.9000000000000021,
+          "minus": 0.8999999999999986
+        },
+        {
+          "value": 16.96,
+          "unit": "kilometre per second"
+        },
+        {
+          "value": 16.96,
+          "unit": "kilometre per second",
+          "plus": 0.18999999999999773,
+          "minus": 0.19000000000000128
+        },
+        {
+          "value": 16.8,
+          "unit": "kilometre per second"
+        },
+        {
+          "value": 15.0,
+          "unit": "kilometre per second"
+        },
+        {
+          "value": 9.8,
+          "unit": "kilometre per second"
+        },
+        {
+          "value": 16.9,
+          "unit": "kilometre per second"
+        },
+        {
+          "value": 16.4,
+          "unit": "kilometre per second"
+        },
+        {
+          "value": 17.2,
+          "unit": "kilometre per second"
+        },
+        {
+          "value": 18.3,
+          "unit": "kilometre per second"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 22.0,
+          "unit": "mas",
+          "plus": 3.3999999999999986,
+          "minus": 3.3999999999999986
+        },
+        {
+          "value": 24.91,
+          "unit": "mas",
+          "plus": 0.120000000000001,
+          "minus": 0.120000000000001
+        },
+        {
+          "value": 25.79,
+          "unit": "mas",
+          "plus": 0.5199999999999996,
+          "minus": 0.5199999999999996
+        }
+      ],
+      "child astronomical body": [
+        {
+          "value": "Beta Ursae Minoris b"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "orange giant"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "navigational star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "suspected variable"
+        }
+      ]
+    },
+    "commons_image": "Ursa Minor constellation map.png",
+    "url": "https://www.wikidata.org/wiki/Q14059"
+  },
+  "summary": {
+    "designation": "bet UMi",
+    "object_type": "Star",
+    "spectral_type": "K4-III",
+    "ra_deg": 222.67635749796767,
+    "dec_deg": 74.15550393675127,
+    "v_mag": 2.08,
+    "distance_pc": 40.1,
+    "distance_ly": 130.9,
+    "teff_k": 4077,
+    "b_minus_v": 1.47,
+    "mass": {
+      "value": 1.4,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 42.06,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 500.0,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 2.95,
+      "unit": "gigaannum"
+    },
+    "constellation": "Ursa Minor",
+    "description": "Star in the constellation Ursa Minor"
+  },
+  "id": "kocab",
+  "path": "stars/kocab",
+  "observations": [
+    {
+      "datetime": "2026-10-07 06:24",
+      "location": "",
+      "rating": null,
+      "seeing": "",
+      "transparency": "",
+      "bortle": "",
+      "incomplete": true,
+      "location_assumed": "Royse City, Texas",
+      "utc": "2026-10-07 11:24",
+      "altitude_deg": 21.8,
+      "azimuth_deg": 12.6
+    }
+  ]
+}

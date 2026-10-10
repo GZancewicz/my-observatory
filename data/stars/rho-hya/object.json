@@ -1,0 +1,479 @@
+{
+  "name": "ρ Hya",
+  "category": "stars",
+  "app_type": "A-Star",
+  "harvested": "2026-10-10T16:05:01Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20rho%20Hya",
+      "retrieved": "2026-10-10T16:05:08Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rho_Hydrae",
+      "retrieved": "2026-10-10T16:05:09Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1028713",
+      "retrieved": "2026-10-10T16:05:10Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Hydra_IAU.svg/330px-Hydra_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:rho Hya",
+    "simbad_id": "* rho Hya",
+    "wikidata": "Q1028713",
+    "wikipedia": "Rho Hydrae"
+  },
+  "simbad": {
+    "main_id": "* rho Hya",
+    "ra": 132.10821118485208,
+    "dec": 5.837812490561667,
+    "otype": "*",
+    "otype_desc": "Star",
+    "sp_type": "A0Vn",
+    "plx_value": 10.4431,
+    "plx_err": 0.1778,
+    "pmra": -18.871,
+    "pmdec": -29.454,
+    "rvz_radvel": 30.85,
+    "rvz_redshift": 0.00010290981858385173,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 64,
+    "identifiers": [
+      "TIC 262580321",
+      "GEN# +1.00075137",
+      "Gaia DR3 582791194797052416",
+      "HIP 43234",
+      "PLX 2105",
+      "IRAS 08457+0601",
+      "AKARI-IRC-V1 J0848259+055015",
+      "* rho Hya",
+      "*  13 Hya",
+      "ADS  7006 A",
+      "AG+06 1139",
+      "BD+06  2040",
+      "CCDM J08484+0550A",
+      "CSI+06  2040  1",
+      "CSI+06  2040  3",
+      "GC 12148",
+      "GCRV  5801",
+      "GSC 00224-01334",
+      "HD  75137",
+      "HIC  43234",
+      "HR  3492",
+      "IDS 08431+0612 A",
+      "JP11  1721",
+      "PPM 155024",
+      "ROT  1386",
+      "SAO 117146",
+      "SKY# 16932",
+      "TD1 13097",
+      "TYC  224-1334-1",
+      "UBV    8529",
+      "UBV M  14734",
+      "YPAC 469",
+      "YZ   6  4810",
+      "2MASS J08482598+0550161",
+      "PLX 2105.00",
+      "WDS J08484+0550A",
+      "uvby98 100075137",
+      "WEB  8335",
+      "Gaia DR2 582791194796026752"
+    ],
+    "fluxes": {
+      "V": {
+        "mag": 4.337,
+        "err": 0.009
+      },
+      "B": {
+        "mag": 4.309,
+        "err": 0.014
+      },
+      "H": {
+        "mag": 4.508,
+        "err": 0.076
+      },
+      "K": {
+        "mag": 4.36,
+        "err": 0.026
+      },
+      "J": {
+        "mag": 4.496,
+        "err": 0.256
+      },
+      "G": {
+        "mag": 4.339961,
+        "err": 0.003024
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 10700,
+        "log_g": 4.2,
+        "fe_h": 0.1,
+        "bibcode": "2016A&A...589A..83G"
+      },
+      {
+        "teff": 9795,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2012A&A...537A.120Z"
+      }
+    ],
+    "teff_median": 10700,
+    "vsini_measurements": [
+      {
+        "vsini": 128,
+        "vsini_err": null,
+        "bibcode": "2007A&A...463..671R"
+      },
+      {
+        "vsini": 142,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 150,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 115,
+        "vsini_err": null,
+        "bibcode": "1995ApJS...99..135A"
+      },
+      {
+        "vsini": 128,
+        "vsini_err": null,
+        "bibcode": "2002A&A...393..897R"
+      },
+      {
+        "vsini": 140,
+        "vsini_err": null,
+        "bibcode": "2016A&A...589A..83G"
+      },
+      {
+        "vsini": 135,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 115,
+        "vsini_err": 10,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 95.757,
+        "unit": "pc  ",
+        "plus_err": 1.6303,
+        "minus_err": -1.6303,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "NIR",
+      "UV"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20rho%20Hya"
+  },
+  "wikipedia": {
+    "title": "Rho Hydrae",
+    "description": "Binary star in the constellation Hydra",
+    "summary": "Rho Hydrae, equally written ρ Hydrae, is a binary star in the equatorial constellation of Hydra. It is visible to the naked eye with an apparent visual magnitude of 4.34. The distance to this system, based upon an annual parallax shift of 9.21 mas, is about 354 light years. At that distance, the visual magnitude is diminished by an interstellar extinction of 0.06 magnitudes, due to intervening dust.",
+    "intro": "Rho Hydrae, equally written ρ Hydrae, is a binary star in the equatorial constellation of Hydra. It is visible to the naked eye with an apparent visual magnitude of 4.34. The distance to this system, based upon an annual parallax shift of 9.21 mas, is about 354 light years. At that distance, the visual magnitude is diminished by an interstellar extinction of 0.06 magnitudes, due to intervening dust.\nThe primary component has an stellar classification of A0 Vn, suggesting that it is an A-type main sequence star, but stellar evolution models indicate it has left the main sequence and is thus a subgiant star. It has 5.04 the radius of the Sun and 3.2 times the Sun's mass. Rho Hydrae is around 350 million years old and has a high rate of spin, with a projected rotational velocity of 128 km/s. It radiates 242 times the solar luminosity from its outer atmosphere at an effective temperature of 9,795 K. The companion is a magnitude 11.9 star at an angular separation of 12.1 arc seconds along a position angle of 146°, as of 2000.",
+    "url": "https://en.wikipedia.org/wiki/Rho_Hydrae",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Hydra_IAU.svg/330px-Hydra_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Hydra_IAU.svg/960px-Hydra_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q1028713"
+  },
+  "wikidata": {
+    "id": "Q1028713",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "A0Vn"
+        },
+        {
+          "value": "A0V"
+        },
+        {
+          "value": "A0 V SB"
+        },
+        {
+          "value": "A0"
+        },
+        {
+          "value": "A0VSB"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Hydra"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 4.337,
+          "unit": "",
+          "plus": 0.009000000000000341,
+          "minus": 0.008999999999999453
+        },
+        {
+          "value": 4.309,
+          "unit": "",
+          "plus": 0.014000000000000234,
+          "minus": 0.014000000000000234
+        },
+        {
+          "value": 4.496,
+          "unit": "",
+          "plus": 0.25599999999999934,
+          "minus": 0.2560000000000002
+        },
+        {
+          "value": 4.508,
+          "unit": "",
+          "plus": 0.07599999999999962,
+          "minus": 0.07599999999999962
+        },
+        {
+          "value": 4.36,
+          "unit": "",
+          "plus": 0.0259999999999998,
+          "minus": 0.02600000000000069
+        },
+        {
+          "value": 4.339961,
+          "unit": "",
+          "plus": 0.0030239999999999156,
+          "minus": 0.0030239999999999156
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -0.83,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 95.757,
+          "unit": "pc",
+          "plus": 1.6302999999999912,
+          "minus": 1.6303000000000054
+        }
+      ],
+      "radius": [
+        {
+          "value": 2.0,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 242.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 9795.0,
+          "unit": "K"
+        },
+        {
+          "value": 10700.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 350.0,
+          "unit": "Myr"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.1,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 16000.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 32.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 32.8,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 1.9999999999999964
+        },
+        {
+          "value": 32.8,
+          "unit": "km/s",
+          "plus": 2.700000000000003,
+          "minus": 2.6999999999999957
+        },
+        {
+          "value": 12.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 20.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 33.6,
+          "unit": "km/s"
+        },
+        {
+          "value": 14.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 30.85,
+          "unit": "km/s",
+          "plus": 0.629999999999999,
+          "minus": 0.6300000000000026
+        },
+        {
+          "value": 35.5,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 3.934,
+          "unit": "mas",
+          "plus": 1.9245999999999999,
+          "minus": 1.9246000000000003
+        },
+        {
+          "value": 12.5,
+          "unit": "mas",
+          "plus": 6.100000000000001,
+          "minus": 6.1
+        },
+        {
+          "value": 9.21,
+          "unit": "mas",
+          "plus": 0.20999999999999908,
+          "minus": 0.21000000000000085
+        },
+        {
+          "value": 9.67,
+          "unit": "mas",
+          "plus": 1.0,
+          "minus": 1.0
+        },
+        {
+          "value": 10.4431,
+          "unit": "mas",
+          "plus": 0.1778000000000013,
+          "minus": 0.17779999999999951
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "binary star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 132.10821118485208,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 5.83781249056167,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q1028713"
+  },
+  "summary": {
+    "designation": "rho Hya",
+    "object_type": "Star",
+    "spectral_type": "A0Vn",
+    "ra_deg": 132.10821118485208,
+    "dec_deg": 5.837812490561667,
+    "v_mag": 4.337,
+    "distance_pc": 95.8,
+    "distance_ly": 312.3,
+    "teff_k": 10700,
+    "b_minus_v": -0.03,
+    "radius": {
+      "value": 2.0,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 242.0,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 350.0,
+      "unit": "Myr"
+    },
+    "constellation": "Hydra",
+    "description": "Binary star in the constellation Hydra"
+  },
+  "id": "rho-hya",
+  "path": "stars/rho-hya",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:37",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 10:37",
+      "altitude_deg": 36.2,
+      "azimuth_deg": 108.9
+    }
+  ]
+}

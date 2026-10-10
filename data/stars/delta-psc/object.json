@@ -1,0 +1,554 @@
+{
+  "name": "δ Psc",
+  "category": "stars",
+  "app_type": "K-Star",
+  "harvested": "2026-10-10T16:15:23Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20del%20Psc",
+      "retrieved": "2026-10-10T16:15:29Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Delta_Piscium",
+      "retrieved": "2026-10-10T16:15:31Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q5177086",
+      "retrieved": "2026-10-10T16:15:32Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Pisces_IAU.svg/330px-Pisces_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:del Psc",
+    "simbad_id": "* del Psc",
+    "wikidata": "Q5177086",
+    "wikipedia": "Delta Piscium"
+  },
+  "simbad": {
+    "main_id": "* del Psc",
+    "ra": 12.170601310553335,
+    "dec": 7.585081917256668,
+    "otype": "PM*",
+    "otype_desc": "High Proper Motion Star",
+    "sp_type": "K5-III",
+    "plx_value": 10.8577,
+    "plx_err": 0.1787,
+    "pmra": 81.994,
+    "pmdec": -50.232,
+    "rvz_radvel": 32.45,
+    "rvz_redshift": 0.00010824740764237006,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 197,
+    "identifiers": [
+      "TIC 293407726",
+      "Gaia DR3 2556759229189045632",
+      "HIP 3786",
+      "2MASS J00484094+0735058",
+      "PLX  158",
+      "* del Psc",
+      "*  63 Psc",
+      "AG+07   86",
+      "BD+06   107",
+      "CCDM J00487+0736A",
+      "CSI+06   107  1",
+      "FK5   28",
+      "GC   963",
+      "GCRV   449",
+      "GEN# +1.00004656",
+      "GSC 00604-01301",
+      "HD   4656",
+      "HIC   3786",
+      "HR   224",
+      "IDS 00434+0703 A",
+      "IRAS 00460+0718",
+      "IRC +10007",
+      "JP11   423",
+      "N30  164",
+      "PMC 90-93    20",
+      "PPM 143916",
+      "RAFGL  111",
+      "ROT   141",
+      "SAO 109474",
+      "SKY#  1249",
+      "TYC  604-1301-1",
+      "UBV     662",
+      "UBV M   7668",
+      "YZ   7   268",
+      "PLX  158.00",
+      "WDS J00487+0735A",
+      "WEB   672",
+      "Gaia DR2 2556759229189596032"
+    ],
+    "fluxes": {
+      "B": {
+        "mag": 5.95,
+        "err": null
+      },
+      "J": {
+        "mag": 1.75,
+        "err": null
+      },
+      "K": {
+        "mag": 0.83,
+        "err": null
+      },
+      "H": {
+        "mag": 1,
+        "err": null
+      },
+      "V": {
+        "mag": 4.44,
+        "err": null
+      },
+      "U": {
+        "mag": 7.83,
+        "err": null
+      },
+      "R": {
+        "mag": 3.27,
+        "err": null
+      },
+      "I": {
+        "mag": 2.4,
+        "err": null
+      },
+      "G": {
+        "mag": 3.836345,
+        "err": 0.002911
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 3956,
+        "log_g": 1.85,
+        "fe_h": -0.09,
+        "bibcode": "2011A&A...531A.165P"
+      },
+      {
+        "teff": 3920,
+        "log_g": 1.65,
+        "fe_h": -0.2,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 3852,
+        "log_g": 1.07,
+        "fe_h": -0.66,
+        "bibcode": "2021MNRAS.505.4496G"
+      },
+      {
+        "teff": 3920,
+        "log_g": 1.65,
+        "fe_h": -0.2,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 3912,
+        "log_g": 1.45,
+        "fe_h": -0.14,
+        "bibcode": "2007MNRAS.374..664C"
+      },
+      {
+        "teff": 3920,
+        "log_g": 1.65,
+        "fe_h": -0.2,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4297,
+        "log_g": 1.72,
+        "fe_h": -0.12,
+        "bibcode": "2007AJ....133.2464L"
+      },
+      {
+        "teff": 3963,
+        "log_g": 1,
+        "fe_h": -0.2,
+        "bibcode": "2008AJ....135..209M"
+      },
+      {
+        "teff": 3927,
+        "log_g": 1.36,
+        "fe_h": -0.11,
+        "bibcode": "2024A&A...689A.120B"
+      }
+    ],
+    "teff_median": 3920,
+    "vsini_measurements": [
+      {
+        "vsini": 5.5,
+        "vsini_err": null,
+        "bibcode": "2008AJ....135..209M"
+      },
+      {
+        "vsini": 10,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 19,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 1.4,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 92.1005,
+        "unit": "pc  ",
+        "plus_err": 1.5158,
+        "minus_err": -1.5158,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "NIR",
+      "PM*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20del%20Psc"
+  },
+  "wikipedia": {
+    "title": "Delta Piscium",
+    "description": "Star in the constellation Pisces",
+    "summary": "Delta Piscium, also named Waiping, is a solitary, orange-hued star in the zodiac constellation of Pisces. It has an apparent visual magnitude of +4.4, so it is bright enough to be faintly visible to the naked eye. Based upon an annual parallax shift of 10.86 mas, it is around 300 light-years from the Sun. The visual magnitude of the star is diminished by an interstellar absorption factor of 0.08 due to interstellar dust.",
+    "intro": "Delta Piscium, also named Waiping, is a solitary, orange-hued star in the zodiac constellation of Pisces. It has an apparent visual magnitude of +4.4, so it is bright enough to be faintly visible to the naked eye. Based upon an annual parallax shift of 10.86 mas, it is around 300 light-years (92 parsecs) from the Sun. The visual magnitude of the star is diminished by an interstellar absorption factor of 0.08 due to interstellar dust.",
+    "url": "https://en.wikipedia.org/wiki/Delta_Piscium",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Pisces_IAU.svg/330px-Pisces_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Pisces_IAU.svg/960px-Pisces_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q5177086"
+  },
+  "wikidata": {
+    "id": "Q5177086",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "K5-III"
+        },
+        {
+          "value": "K5III"
+        },
+        {
+          "value": "K5"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Pisces"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 4.44,
+          "unit": ""
+        },
+        {
+          "value": 7.83,
+          "unit": ""
+        },
+        {
+          "value": 5.95,
+          "unit": ""
+        },
+        {
+          "value": 3.27,
+          "unit": ""
+        },
+        {
+          "value": 2.4,
+          "unit": ""
+        },
+        {
+          "value": 1.75,
+          "unit": ""
+        },
+        {
+          "value": 1.0,
+          "unit": ""
+        },
+        {
+          "value": 0.83,
+          "unit": ""
+        },
+        {
+          "value": 3.836345,
+          "unit": "",
+          "plus": 0.002910999999999664,
+          "minus": 0.002911000000000108
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 92.1005,
+          "unit": "pc",
+          "plus": 1.5157999999999987,
+          "minus": 1.5157999999999987
+        }
+      ],
+      "radius": [
+        {
+          "value": 23.72,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 32.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 3912.0,
+          "unit": "K"
+        },
+        {
+          "value": 3920.0,
+          "unit": "K"
+        },
+        {
+          "value": 3956.0,
+          "unit": "K"
+        },
+        {
+          "value": 3963.0,
+          "unit": "K"
+        },
+        {
+          "value": 4297.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 2.98,
+          "unit": "Myr"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.2,
+          "unit": ""
+        },
+        {
+          "value": -0.14,
+          "unit": ""
+        },
+        {
+          "value": -0.09,
+          "unit": ""
+        },
+        {
+          "value": -0.2,
+          "unit": ""
+        },
+        {
+          "value": -0.12,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 10.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 28.2,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 44.7,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 71.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 45.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 28.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 52.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 70.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 32.3,
+          "unit": "km/s"
+        },
+        {
+          "value": 32.3,
+          "unit": "km/s",
+          "plus": 0.9000000000000057,
+          "minus": 0.8999999999999986
+        },
+        {
+          "value": 32.45,
+          "unit": "km/s",
+          "plus": 0.17999999999999972,
+          "minus": 0.17999999999999972
+        },
+        {
+          "value": 32.4,
+          "unit": "km/s"
+        },
+        {
+          "value": 32.4,
+          "unit": "km/s",
+          "plus": 0.3299999999999983,
+          "minus": 0.3299999999999983
+        },
+        {
+          "value": 31.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 31.9,
+          "unit": "km/s"
+        },
+        {
+          "value": 32.2,
+          "unit": "km/s"
+        },
+        {
+          "value": 32.6,
+          "unit": "km/s"
+        },
+        {
+          "value": 32.0,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 17.6,
+          "unit": "mas",
+          "plus": 9.399999999999999,
+          "minus": 9.400000000000002
+        },
+        {
+          "value": 10.48,
+          "unit": "mas",
+          "plus": 0.21999999999999886,
+          "minus": 0.22000000000000064
+        },
+        {
+          "value": 10.69,
+          "unit": "mas",
+          "plus": 0.7800000000000011,
+          "minus": 0.7799999999999994
+        },
+        {
+          "value": 10.8577,
+          "unit": "mas",
+          "plus": 0.17870000000000097,
+          "minus": 0.1786999999999992
+        }
+      ],
+      "instance of": [
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "optical double"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 12.17060131055334,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 7.58508191725667,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q5177086"
+  },
+  "summary": {
+    "designation": "del Psc",
+    "object_type": "High Proper Motion Star",
+    "spectral_type": "K5-III",
+    "ra_deg": 12.170601310553335,
+    "dec_deg": 7.585081917256668,
+    "v_mag": 4.44,
+    "distance_pc": 92.1,
+    "distance_ly": 300.4,
+    "teff_k": 3920,
+    "b_minus_v": 1.51,
+    "radius": {
+      "value": 23.72,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 32.0,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 2.98,
+      "unit": "Myr"
+    },
+    "constellation": "Pisces",
+    "description": "Star in the constellation Pisces"
+  },
+  "id": "delta-psc",
+  "path": "stars/delta-psc",
+  "observations": [
+    {
+      "datetime": "2026-10-09 21:03",
+      "location": "",
+      "rating": null,
+      "seeing": "",
+      "transparency": "",
+      "bortle": "",
+      "incomplete": true,
+      "location_assumed": "Royse City, Texas",
+      "utc": "2026-10-10 02:03",
+      "altitude_deg": 30.0,
+      "azimuth_deg": 101.1
+    }
+  ]
+}

@@ -1,0 +1,460 @@
+{
+  "name": "Aludra",
+  "category": "stars",
+  "app_type": "B-Star",
+  "harvested": "2026-10-10T16:08:47Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20eta%20CMa",
+      "retrieved": "2026-10-10T16:08:54Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eta_Canis_Majoris",
+      "retrieved": "2026-10-10T16:09:10Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q13416",
+      "retrieved": "2026-10-10T16:09:11Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/330px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Aludra",
+    "simbad_id": "* eta CMa",
+    "wikidata": "Q13416",
+    "wikipedia": "Eta Canis Majoris"
+  },
+  "simbad": {
+    "main_id": "* eta CMa",
+    "ra": 111.02375950100142,
+    "dec": -29.303105508471724,
+    "otype": "s*b",
+    "otype_desc": "Blue Supergiant",
+    "sp_type": "B5Ia",
+    "plx_value": 1.64,
+    "plx_err": 0.4,
+    "pmra": -4.14,
+    "pmdec": 5.81,
+    "rvz_radvel": 41.1,
+    "rvz_redshift": 0.00013710424191293313,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 379,
+    "identifiers": [
+      "TIC 107415639",
+      "HIP 35904",
+      "Gaia DR3 5605797194566011520",
+      "* eta CMa",
+      "*  31 CMa",
+      "CCDM J07240-2918A",
+      "CD-29  4328",
+      "CEL   1826",
+      "CPD-29  1680",
+      "FK5  283",
+      "GC  9886",
+      "GCRV  4922",
+      "GEN# +5.11210034",
+      "GSC 06550-04525",
+      "Glazar Pup   9",
+      "HD  58350",
+      "HIC  35904",
+      "HR  2827",
+      "IDS 07201-2907 A",
+      "IRC -30091",
+      "JP11  4549",
+      "MCW  530",
+      "N30 1652",
+      "PMC 90-93   204",
+      "PPM 252311",
+      "ROT  1197",
+      "SAO 173651",
+      "SKY# 13479",
+      "SRS  30283",
+      "UBV    7173",
+      "UBV M  40655",
+      "V* eta CMa",
+      "uvby98 511210034",
+      "Cl Collinder  121    34",
+      "ALS 14888",
+      "WDS J07241-2918A",
+      "TYC 6550-4525-1",
+      "AKARI-IRC-V1 J0724057-291811",
+      "IRAS 07221-2912",
+      "2MASS J07240570-2918113",
+      "NAME Aludra",
+      "WEB  7150"
+    ],
+    "fluxes": {
+      "B": {
+        "mag": 2.37,
+        "err": null
+      },
+      "V": {
+        "mag": 2.45,
+        "err": null
+      },
+      "U": {
+        "mag": 1.65,
+        "err": null
+      },
+      "R": {
+        "mag": 2.38,
+        "err": null
+      },
+      "I": {
+        "mag": 2.44,
+        "err": null
+      },
+      "J": {
+        "mag": 2.57,
+        "err": null
+      },
+      "K": {
+        "mag": 2.61,
+        "err": null
+      },
+      "H": {
+        "mag": 2.56,
+        "err": null
+      },
+      "G": {
+        "mag": 2.450408,
+        "err": 0.0075
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 16000,
+        "log_g": 2.5,
+        "fe_h": null,
+        "bibcode": "2024ApJ...971..166M"
+      },
+      {
+        "teff": 12670,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2009A&A...501..297Z"
+      },
+      {
+        "teff": 14700,
+        "log_g": 1.97,
+        "fe_h": null,
+        "bibcode": "2024A&A...687A.228D"
+      }
+    ],
+    "teff_median": 14700,
+    "vsini_measurements": [
+      {
+        "vsini": 57,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 50,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 50,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 41,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 36,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 50,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 50,
+        "vsini_err": 16,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 40,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 32,
+        "vsini_err": null,
+        "bibcode": "2024A&A...687A.228D"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "NIR",
+      "Pu*",
+      "s*b",
+      "UV",
+      "V*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20eta%20CMa"
+  },
+  "wikipedia": {
+    "title": "Eta Canis Majoris",
+    "description": "Blue supergiant star in the constellation Canis Major",
+    "summary": "Eta Canis Majoris is a blue supergiant star in the constellation of Canis Major. It has the proper name Aludra, pronounced ; Eta Canis Majoris is its Bayer designation. This star has an apparent visual magnitude that varies between 2.38 and 2.48, which makes it the fifth-brightest in the constellation. Parallax measurements from the Hipparcos mission estimate a large distance of 2,000 light-years. It is drifting further away from the Sun with a line of sight velocity of 41 km/s.",
+    "intro": "Eta Canis Majoris is a blue supergiant star in the constellation of Canis Major. It has the proper name Aludra, pronounced ; Eta Canis Majoris is its Bayer designation. This star has an apparent visual magnitude that varies between 2.38 and 2.48, which makes it the fifth-brightest in the constellation. Parallax measurements from the Hipparcos mission estimate a large distance of 2,000 light-years. It is drifting further away from the Sun with a line of sight velocity of 41 km/s.",
+    "url": "https://en.wikipedia.org/wiki/Eta_Canis_Majoris",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/330px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/250px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q13416"
+  },
+  "wikidata": {
+    "id": "Q13416",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "B5Ia"
+        },
+        {
+          "value": "B5Iab:"
+        },
+        {
+          "value": "B5p"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Canis Major"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 2.45,
+          "unit": ""
+        },
+        {
+          "value": 1.65,
+          "unit": ""
+        },
+        {
+          "value": 2.37,
+          "unit": ""
+        },
+        {
+          "value": 2.38,
+          "unit": ""
+        },
+        {
+          "value": 2.44,
+          "unit": ""
+        },
+        {
+          "value": 2.57,
+          "unit": ""
+        },
+        {
+          "value": 2.56,
+          "unit": ""
+        },
+        {
+          "value": 2.61,
+          "unit": ""
+        },
+        {
+          "value": 2.450408,
+          "unit": "",
+          "plus": 0.007500000000000284,
+          "minus": 0.00749999999999984
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -7.0,
+          "unit": ""
+        }
+      ],
+      "radius": [
+        {
+          "value": 56.3,
+          "unit": "R☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 12670.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 8.3,
+          "unit": "Myr"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 41.1,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0
+        },
+        {
+          "value": 41.1,
+          "unit": "km/s",
+          "plus": 2.5,
+          "minus": 2.5
+        },
+        {
+          "value": 41.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 37.3,
+          "unit": "km/s"
+        },
+        {
+          "value": 49.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 42.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 39.0,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 1.02,
+          "unit": "mas",
+          "plus": 0.5700000000000001,
+          "minus": 0.5700000000000001
+        },
+        {
+          "value": 1.64,
+          "unit": "mas",
+          "plus": 0.40000000000000013,
+          "minus": 0.3999999999999999
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "blue supergiant"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "pulsating variable star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "Alpha Cygni variable"
+        },
+        {
+          "value": "optical double"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 111.023759501,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -29.303105508,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Eta CMa.jpg",
+    "url": "https://www.wikidata.org/wiki/Q13416"
+  },
+  "summary": {
+    "designation": "eta CMa",
+    "object_type": "Blue Supergiant",
+    "spectral_type": "B5Ia",
+    "ra_deg": 111.02375950100142,
+    "dec_deg": -29.303105508471724,
+    "v_mag": 2.45,
+    "distance_pc": 609.8,
+    "distance_ly": 1988.8,
+    "teff_k": 14700,
+    "b_minus_v": -0.08,
+    "radius": {
+      "value": 56.3,
+      "unit": "R☉"
+    },
+    "age": {
+      "value": 8.3,
+      "unit": "Myr"
+    },
+    "constellation": "Canis Major",
+    "description": "Blue supergiant star in the constellation Canis Major"
+  },
+  "id": "aludra",
+  "path": "stars/aludra",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:15",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 10:15",
+      "altitude_deg": 19.6,
+      "azimuth_deg": 148.3
+    },
+    {
+      "datetime": "2026-10-07 06:17",
+      "location": "Royse City, Texas",
+      "rating": null,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-07 11:17",
+      "altitude_deg": 24.3,
+      "azimuth_deg": 159.0
+    }
+  ]
+}

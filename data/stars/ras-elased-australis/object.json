@@ -1,0 +1,797 @@
+{
+  "name": "Ras Elased Australis",
+  "category": "stars",
+  "app_type": "G-Star",
+  "harvested": "2026-10-10T16:21:17Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20eps%20Leo",
+      "retrieved": "2026-10-10T16:21:24Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Epsilon_Leonis",
+      "retrieved": "2026-10-10T16:21:25Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q14205",
+      "retrieved": "2026-10-10T16:21:26Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leo_constellation_map.svg/330px-Leo_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "wikipedia-redirect",
+    "simbad_id": "* eps Leo",
+    "wikidata": "Q14205",
+    "wikipedia": "Epsilon Leonis"
+  },
+  "simbad": {
+    "main_id": "* eps Leo",
+    "ra": 146.46280673687792,
+    "dec": 23.77425377711222,
+    "otype": "*",
+    "otype_desc": "Star",
+    "sp_type": "G1IIIa",
+    "plx_value": 14.3394,
+    "plx_err": 0.3209,
+    "pmra": -46.154,
+    "pmdec": -10.799,
+    "rvz_radvel": 4.322,
+    "rvz_redshift": 1.441674411561955e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 355,
+    "identifiers": [
+      "TIC 87974462",
+      "Gaia DR3 641662895638787584",
+      "HIP 47908",
+      "PLX 2310",
+      "*  17 Leo",
+      "* eps Leo",
+      "AG+24 1096",
+      "BD+24  2129",
+      "FK5  367",
+      "GC 13443",
+      "GCRV  6274",
+      "GEN# +1.00084441",
+      "GSC 01960-01550",
+      "HD  84441",
+      "HIC  47908",
+      "HR  3873",
+      "IRAS 09430+2400",
+      "IRC +20215",
+      "JP11  1858",
+      "N30 2334",
+      "NSV  4613",
+      "PMC 90-93   263",
+      "PPM  99836",
+      "ROT  1507",
+      "SAO  81004",
+      "SKY# 18864",
+      "SRS  30367",
+      "TD1 14240",
+      "TYC 1960-1550-1",
+      "UBV    9223",
+      "UBV M  15683",
+      "UBV M  16006",
+      "YPAC  42",
+      "[HFE83]  681",
+      "2MASS J09455108+2346273",
+      "PLX 2310.00",
+      "uvby98 100084441",
+      "WEB  8962",
+      "Gaia DR2 641662895637218304"
+    ],
+    "fluxes": {
+      "J": {
+        "mag": 1.63,
+        "err": null
+      },
+      "K": {
+        "mag": 1.15,
+        "err": null
+      },
+      "H": {
+        "mag": 1.23,
+        "err": null
+      },
+      "B": {
+        "mag": 3.79,
+        "err": null
+      },
+      "V": {
+        "mag": 2.98,
+        "err": null
+      },
+      "U": {
+        "mag": 4.23,
+        "err": null
+      },
+      "R": {
+        "mag": 2.36,
+        "err": null
+      },
+      "I": {
+        "mag": 1.93,
+        "err": null
+      },
+      "G": {
+        "mag": 2.783956,
+        "err": 0.003125
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 5310,
+        "log_g": 2.04,
+        "fe_h": -0.28,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 5300,
+        "log_g": 1.7,
+        "fe_h": 0.17,
+        "bibcode": "1995AJ....110.2425L"
+      },
+      {
+        "teff": 5394,
+        "log_g": 1.87,
+        "fe_h": -0.05,
+        "bibcode": "2008A&A...480...91S"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.02,
+        "bibcode": "2008A&A...480...91S"
+      },
+      {
+        "teff": 5314,
+        "log_g": 2.36,
+        "fe_h": -0.03,
+        "bibcode": "2024A&A...682A.145S"
+      },
+      {
+        "teff": 5367,
+        "log_g": 2,
+        "fe_h": -0.03,
+        "bibcode": "2022A&A...663A...4S"
+      },
+      {
+        "teff": 5337,
+        "log_g": 1.85,
+        "fe_h": -0.16,
+        "bibcode": "2021MNRAS.505.4496G"
+      },
+      {
+        "teff": 5419,
+        "log_g": 2.4,
+        "fe_h": -0.13,
+        "bibcode": "1973MNRAS.162..235W"
+      },
+      {
+        "teff": 5310,
+        "log_g": 1.81,
+        "fe_h": -0.13,
+        "bibcode": "2007MNRAS.374..664C"
+      },
+      {
+        "teff": 5310,
+        "log_g": 2.04,
+        "fe_h": -0.28,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 5300,
+        "log_g": 1.7,
+        "fe_h": 0.17,
+        "bibcode": "1995AJ....110.2425L"
+      },
+      {
+        "teff": 5398,
+        "log_g": 2.02,
+        "fe_h": -0.06,
+        "bibcode": "2011A&A...531A.165P"
+      },
+      {
+        "teff": 5383,
+        "log_g": 2.17,
+        "fe_h": 0.04,
+        "bibcode": "2014AJ....147..137L"
+      },
+      {
+        "teff": 5385,
+        "log_g": 2.18,
+        "fe_h": -0.09,
+        "bibcode": "2014ApJ...785...94L"
+      },
+      {
+        "teff": 5300,
+        "log_g": 1.7,
+        "fe_h": 0.17,
+        "bibcode": "1995AJ....110.2425L"
+      },
+      {
+        "teff": 5310,
+        "log_g": 2.04,
+        "fe_h": -0.28,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 5419,
+        "log_g": 2.4,
+        "fe_h": -0.13,
+        "bibcode": "1973MNRAS.162..235W"
+      },
+      {
+        "teff": 5350,
+        "log_g": null,
+        "fe_h": -0.23,
+        "bibcode": "2020A&A...633A..34C"
+      },
+      {
+        "teff": 5248,
+        "log_g": 2.2,
+        "fe_h": -0.28,
+        "bibcode": "2008AJ....135..209M"
+      },
+      {
+        "teff": 5440,
+        "log_g": 2.31,
+        "fe_h": -0.05,
+        "bibcode": "2025A&A...696A..23B"
+      },
+      {
+        "teff": 5296,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2007MNRAS.378..617K"
+      },
+      {
+        "teff": 5483,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2006MNRAS.371..879K"
+      }
+    ],
+    "teff_median": 5337,
+    "vsini_measurements": [
+      {
+        "vsini": 8.1,
+        "vsini_err": null,
+        "bibcode": "2008AJ....135..209M"
+      },
+      {
+        "vsini": 8,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 17,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 10,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 4.2,
+        "vsini_err": 0.4,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 6,
+        "vsini_err": 2,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 5.7,
+        "vsini_err": 1,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 5.9,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 89.4783,
+        "unit": "pc  ",
+        "plus_err": 7.3386,
+        "minus_err": -7.3386,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 69.7379,
+        "unit": "pc  ",
+        "plus_err": 1.5606,
+        "minus_err": -1.5606,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "IR",
+      "NIR",
+      "UV",
+      "V*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20eps%20Leo"
+  },
+  "wikipedia": {
+    "title": "Epsilon Leonis",
+    "description": "Star in the constellation Leo",
+    "summary": "Epsilon Leonis is the fifth-brightest star in the constellation Leo, consistent with its Bayer designation Epsilon. It is known as Algenubi or Ras Elased Australis. Both names mean \"the southern star of the lion's head\". Australis is Latin for \"southern\" and Genubi is Arabic for \"south\".",
+    "intro": "Epsilon Leonis (ε Leo, ε Leonis) is the fifth-brightest star in the constellation Leo, consistent with its Bayer designation Epsilon. It is known as Algenubi or Ras Elased Australis. Both names mean \"the southern star of the lion's head\". Australis is Latin for \"southern\" and Genubi is Arabic for \"south\".",
+    "url": "https://en.wikipedia.org/wiki/Epsilon_Leonis",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leo_constellation_map.svg/330px-Leo_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leo_constellation_map.svg/330px-Leo_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q14205"
+  },
+  "wikidata": {
+    "id": "Q14205",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "G1II"
+        },
+        {
+          "value": "G1IIIa"
+        },
+        {
+          "value": "G0II"
+        },
+        {
+          "value": "G0Iab:"
+        },
+        {
+          "value": "G5Ib"
+        },
+        {
+          "value": "G0p"
+        },
+        {
+          "value": "G3III"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Leo"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 2.98,
+          "unit": ""
+        },
+        {
+          "value": 4.23,
+          "unit": ""
+        },
+        {
+          "value": 3.79,
+          "unit": ""
+        },
+        {
+          "value": 2.36,
+          "unit": ""
+        },
+        {
+          "value": 1.93,
+          "unit": ""
+        },
+        {
+          "value": 1.63,
+          "unit": ""
+        },
+        {
+          "value": 1.23,
+          "unit": ""
+        },
+        {
+          "value": 1.15,
+          "unit": ""
+        },
+        {
+          "value": 2.783956,
+          "unit": "",
+          "plus": 0.0031250000000002665,
+          "minus": 0.0031249999999998224
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -1.49,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 89.4783,
+          "unit": "pc",
+          "plus": 7.3386,
+          "minus": 7.3386
+        },
+        {
+          "value": 69.7379,
+          "unit": "pc",
+          "plus": 1.560600000000008,
+          "minus": 1.5605999999999938
+        }
+      ],
+      "mass": [
+        {
+          "value": 4.01,
+          "unit": "M☉"
+        }
+      ],
+      "radius": [
+        {
+          "value": 21.0,
+          "unit": "R☉"
+        }
+      ],
+      "diameter": [
+        {
+          "value": 29300000.0,
+          "unit": "km"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 288.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 5483.0,
+          "unit": "K"
+        },
+        {
+          "value": 5296.0,
+          "unit": "K"
+        },
+        {
+          "value": 5385.0,
+          "unit": "K"
+        },
+        {
+          "value": 5383.0,
+          "unit": "K"
+        },
+        {
+          "value": 5398.0,
+          "unit": "K"
+        },
+        {
+          "value": 5248.0,
+          "unit": "K"
+        },
+        {
+          "value": 5310.0,
+          "unit": "K"
+        },
+        {
+          "value": 5394.0,
+          "unit": "K"
+        },
+        {
+          "value": 5300.0,
+          "unit": "K"
+        },
+        {
+          "value": 5419.0,
+          "unit": "K"
+        },
+        {
+          "value": 5350.0,
+          "unit": "K"
+        },
+        {
+          "value": 5440.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 162.0,
+          "unit": "Myr"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.17,
+          "unit": ""
+        },
+        {
+          "value": 0.04,
+          "unit": ""
+        },
+        {
+          "value": -0.13,
+          "unit": ""
+        },
+        {
+          "value": -0.28,
+          "unit": ""
+        },
+        {
+          "value": -0.05,
+          "unit": ""
+        },
+        {
+          "value": 0.02,
+          "unit": ""
+        },
+        {
+          "value": -0.06,
+          "unit": ""
+        },
+        {
+          "value": -0.09,
+          "unit": ""
+        },
+        {
+          "value": -0.23,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 250.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 110.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 50.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 74.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 65.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 160.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 105.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 148.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 150.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 5.0,
+          "unit": "km/s",
+          "plus": 0.9000000000000004,
+          "minus": 0.9000000000000004
+        },
+        {
+          "value": 4.86,
+          "unit": "km/s",
+          "plus": 0.33000000000000007,
+          "minus": 0.33000000000000007
+        },
+        {
+          "value": 4.48,
+          "unit": "km/s",
+          "plus": 0.08999999999999986,
+          "minus": 0.09000000000000075
+        },
+        {
+          "value": 4.3,
+          "unit": "km/s"
+        },
+        {
+          "value": 3.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 4.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 5.2,
+          "unit": "km/s"
+        },
+        {
+          "value": 3.2,
+          "unit": "km/s"
+        },
+        {
+          "value": 4.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 4.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 5.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 5.9,
+          "unit": "km/s"
+        },
+        {
+          "value": 3.3,
+          "unit": "km/s"
+        },
+        {
+          "value": 5.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 5.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 7.8,
+          "unit": "km/s"
+        },
+        {
+          "value": -1.9,
+          "unit": "km/s"
+        },
+        {
+          "value": 4.322,
+          "unit": "km/s",
+          "plus": 0.0011999999999998678,
+          "minus": 0.0011999999999998678
+        }
+      ],
+      "parallax": [
+        {
+          "value": 11.1759,
+          "unit": "mas",
+          "plus": 0.916599999999999,
+          "minus": 0.9166000000000007
+        },
+        {
+          "value": 6.5,
+          "unit": "mas",
+          "plus": 11.100000000000001,
+          "minus": 11.1
+        },
+        {
+          "value": 13.22,
+          "unit": "mas",
+          "plus": 0.14999999999999858,
+          "minus": 0.15000000000000036
+        },
+        {
+          "value": 13.01,
+          "unit": "mas",
+          "plus": 0.8800000000000008,
+          "minus": 0.879999999999999
+        },
+        {
+          "value": 14.3394,
+          "unit": "mas",
+          "plus": 0.32089999999999996,
+          "minus": 0.32089999999999996
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "bright giant"
+        },
+        {
+          "value": "suspected variable"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 146.46280673688,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 23.77425377711,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q14205"
+  },
+  "summary": {
+    "designation": "eps Leo",
+    "object_type": "Star",
+    "spectral_type": "G1IIIa",
+    "ra_deg": 146.46280673687792,
+    "dec_deg": 23.77425377711222,
+    "v_mag": 2.98,
+    "distance_pc": 69.7,
+    "distance_ly": 227.5,
+    "teff_k": 5337,
+    "b_minus_v": 0.81,
+    "mass": {
+      "value": 4.01,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 21.0,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 288.0,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 162.0,
+      "unit": "Myr"
+    },
+    "constellation": "Leo",
+    "description": "Star in the constellation Leo"
+  },
+  "id": "ras-elased-australis",
+  "path": "stars/ras-elased-australis",
+  "observations": [
+    {
+      "datetime": "2026-10-07 06:10",
+      "location": "Royse City, Texas",
+      "rating": 1.0,
+      "seeing": "2/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-07 11:10",
+      "altitude_deg": 37.8,
+      "azimuth_deg": 84.0
+    }
+  ]
+}

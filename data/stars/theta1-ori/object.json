@@ -1,0 +1,245 @@
+{
+  "name": "θ¹ Ori",
+  "category": "stars",
+  "app_type": "B-Star",
+  "harvested": "2026-10-10T16:22:47Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=NAME%20Ori%20Trapezium",
+      "retrieved": "2026-10-10T16:22:54Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Trapezium_Cluster",
+      "retrieved": "2026-10-10T16:23:10Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q14031",
+      "retrieved": "2026-10-10T16:23:10Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Trapezium_cluster_optical_and_infrared_comparison.jpg/330px-Trapezium_cluster_optical_and_infrared_comparison.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:tet01 Ori",
+    "simbad_id": "NAME Ori Trapezium",
+    "wikidata": "Q14031",
+    "wikipedia": "Trapezium Cluster"
+  },
+  "simbad": {
+    "main_id": "NAME Ori Trapezium",
+    "ra": 83.81874999999998,
+    "dec": -5.3872222222222215,
+    "otype": "OpC",
+    "otype_desc": "Open Cluster",
+    "sp_type": null,
+    "plx_value": 2.557,
+    "plx_err": 0.149,
+    "pmra": 1.96,
+    "pmdec": -0.77,
+    "rvz_radvel": 23.841,
+    "rvz_redshift": 7.952817830192416e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 1719,
+    "identifiers": [
+      "[MWC53]    Id Ori",
+      "* tet01 Ori",
+      "2E  1366",
+      "C 0532-054",
+      "OCl  528.0",
+      "[BDB2003] G209.01-19.36",
+      "[KPR2004b]  74",
+      "1ES 0532-05.4",
+      "2E 0532.6-0526",
+      "RX J0535.3-0523",
+      "CCDM J05353-0524",
+      "PBC J0535.1-0522",
+      "NAME Ori Trapezium",
+      "NAME Trapezium",
+      "NAME Ori Id",
+      "NAME Trapezium Cluster",
+      "BD-05  1315",
+      "SWIFT J0535.3-0520",
+      "2MAXI J0535-052",
+      "Ass Ori OB 1d"
+    ],
+    "fluxes": {},
+    "atmosphere_measurements": [
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": -0.146,
+        "bibcode": "2021MNRAS.504..356D"
+      }
+    ],
+    "teff_median": null,
+    "vsini_measurements": [],
+    "distance_measurements": [
+      {
+        "dist": 399,
+        "unit": "pc  ",
+        "plus_err": null,
+        "minus_err": null,
+        "method": "ST-L    ",
+        "bibcode": "2005A&A...438.1163K"
+      },
+      {
+        "dist": 381,
+        "unit": "pc  ",
+        "plus_err": 12,
+        "minus_err": -12,
+        "method": "paral   ",
+        "bibcode": "2021MNRAS.504..356D"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "As*",
+      "Cl*",
+      "OpC",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=NAME%20Ori%20Trapezium"
+  },
+  "wikipedia": {
+    "title": "Trapezium Cluster",
+    "description": "Open cluster in the Orion Nebula in the constellation Orion",
+    "summary": "The Trapezium or Orion Trapezium Cluster, also known by its Bayer designation of Theta1 Orionis, is a tight open cluster of stars in the heart of the Orion Nebula, in the constellation of Orion. It was discovered by Galileo Galilei. On 4 February 1617 he sketched three of the stars, but missed the surrounding nebulosity. A fourth component (B) was identified by several observers in 1673, and several more components were discovered later like E, for a total of eight by 1888. Subsequently, several of the stars were determined to be binaries. Telescopes of amateur astronomers from about 5-inch (130 mm) aperture can resolve six stars under good seeing conditions.",
+    "intro": "The Trapezium or Orion Trapezium Cluster, also known by its Bayer designation of Theta1 Orionis (θ1 Orionis), is a tight open cluster of stars in the heart of the Orion Nebula, in the constellation of Orion. It was discovered by Galileo Galilei. On 4 February 1617 he sketched three of the stars (A, C and D), but missed the surrounding nebulosity. A fourth component (B) was identified by several observers in 1673, and several more components were discovered later like E, for a total of eight by 1888. Subsequently, several of the stars were determined to be binaries. Telescopes of amateur astronomers from about 5-inch (130 mm) aperture can resolve six stars under good seeing conditions.\nThe Trapezium is a relatively young cluster that has formed directly out of the parent nebula. The five brightest stars are on the order of 15 to 30 solar masses in size. They are within a diameter of 1.5 light-years of each other and are responsible for much of the illumination of the surrounding nebula. The Trapezium may be a sub-component of the larger Orion Nebula Cluster, a grouping of about 2,000 stars within a diameter of 20 light-years.",
+    "url": "https://en.wikipedia.org/wiki/Trapezium_Cluster",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Trapezium_cluster_optical_and_infrared_comparison.jpg/330px-Trapezium_cluster_optical_and_infrared_comparison.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Trapezium_cluster_optical_and_infrared_comparison.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikidata": "Q14031"
+  },
+  "wikidata": {
+    "id": "Q14031",
+    "facts": {
+      "constellation": [
+        {
+          "value": "Orion"
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 399.0,
+          "unit": "pc"
+        },
+        {
+          "value": 381.0,
+          "unit": "pc",
+          "plus": 12.0,
+          "minus": 12.0
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.146,
+          "unit": ""
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 28.94,
+          "unit": "km/s",
+          "plus": 2.719999999999999,
+          "minus": 2.7200000000000024
+        },
+        {
+          "value": 23.841,
+          "unit": "km/s",
+          "plus": 5.160999999999998,
+          "minus": 5.161000000000001
+        }
+      ],
+      "parallax": [
+        {
+          "value": 2.557,
+          "unit": "mas",
+          "plus": 0.14900000000000002,
+          "minus": 0.14900000000000002
+        }
+      ],
+      "discoverer or inventor": [
+        {
+          "value": "Galileo Galilei"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "asterism"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "open cluster"
+        },
+        {
+          "value": "star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "star cluster"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 83.81875,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -5.38722,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Trapezium cluster optical and infrared comparison.jpg",
+    "url": "https://www.wikidata.org/wiki/Q14031"
+  },
+  "summary": {
+    "designation": "Ori Trapezium",
+    "object_type": "Open Cluster",
+    "ra_deg": 83.81874999999998,
+    "dec_deg": -5.3872222222222215,
+    "distance_pc": 391.1,
+    "distance_ly": 1275.5,
+    "constellation": "Orion",
+    "description": "Open cluster in the Orion Nebula in the constellation Orion"
+  },
+  "id": "theta1-ori",
+  "path": "stars/theta1-ori",
+  "observations": [
+    {
+      "datetime": "2026-10-07 05:17",
+      "location": "",
+      "rating": null,
+      "seeing": "",
+      "transparency": "",
+      "bortle": "",
+      "incomplete": true,
+      "location_assumed": "Royse City, Texas",
+      "utc": "2026-10-07 10:17",
+      "altitude_deg": 50.5,
+      "azimuth_deg": 164.5
+    }
+  ]
+}

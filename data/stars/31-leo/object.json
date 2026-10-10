@@ -1,0 +1,477 @@
+{
+  "name": "31 Leo",
+  "category": "stars",
+  "app_type": "K-Star",
+  "harvested": "2026-10-10T16:17:34Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2031%20Leo",
+      "retrieved": "2026-10-10T16:17:41Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/31_Leonis",
+      "retrieved": "2026-10-10T16:17:42Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q4634782",
+      "retrieved": "2026-10-10T16:17:43Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leo_constellation_map.svg/330px-Leo_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:31 Leo",
+    "simbad_id": "*  31 Leo",
+    "wikidata": "Q4634782",
+    "wikipedia": "31 Leonis"
+  },
+  "simbad": {
+    "main_id": "*  31 Leo",
+    "ra": 151.9761254861525,
+    "dec": 9.997506874934166,
+    "otype": "PM*",
+    "otype_desc": "High Proper Motion Star",
+    "sp_type": "K3.5IIIbFe-1:",
+    "plx_value": 11.0209,
+    "plx_err": 0.1661,
+    "pmra": -82.021,
+    "pmdec": -64.844,
+    "rvz_radvel": 39.84,
+    "rvz_redshift": 0.00013290076683381002,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 150,
+    "identifiers": [
+      "TIC 411154189",
+      "HIP 49637",
+      "Gaia DR3 3879879704937353984",
+      "*  31 Leo",
+      "ADS  7649 A",
+      "AG+10 1297",
+      "BD+10  2112",
+      "CCDM J10079+1000A",
+      "CSI+10  2112  1",
+      "GC 13911",
+      "GCRV  6412",
+      "GSC 00830-01496",
+      "HD  87837",
+      "HIC  49637",
+      "HR  3980",
+      "IDS 10026+1029 A",
+      "IRAS 10052+1014",
+      "IRC +10225",
+      "JP11  1893",
+      "PPM 156539",
+      "RAFGL 1399",
+      "ROT  1533",
+      "SAO  98964",
+      "SKY# 19500",
+      "TD1 14579",
+      "TYC  830-1496-1",
+      "UBV    9447",
+      "UBV M  15953",
+      "YPAC 160",
+      "YZ  10  3952",
+      "2MASS J10075427+0959510",
+      "WDS J10079+1000A",
+      "WEB  9155",
+      "Gaia DR2 3879879704937169024",
+      "GEN# +1.00087837",
+      "** GAN    5A",
+      "NAME-IAU Yunu"
+    ],
+    "fluxes": {
+      "H": {
+        "mag": 1.18,
+        "err": null
+      },
+      "J": {
+        "mag": 1.89,
+        "err": null
+      },
+      "B": {
+        "mag": 5.82,
+        "err": null
+      },
+      "V": {
+        "mag": 4.38,
+        "err": null
+      },
+      "U": {
+        "mag": 7.57,
+        "err": null
+      },
+      "R": {
+        "mag": 3.26,
+        "err": null
+      },
+      "I": {
+        "mag": 2.49,
+        "err": null
+      },
+      "K": {
+        "mag": 1.04,
+        "err": null
+      },
+      "G": {
+        "mag": 3.838813,
+        "err": 0.0031
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 4040,
+        "log_g": 1.81,
+        "fe_h": -0.02,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4040,
+        "log_g": 1.81,
+        "fe_h": -0.02,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4040,
+        "log_g": 1.81,
+        "fe_h": -0.02,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4074,
+        "log_g": 1.5,
+        "fe_h": -0.02,
+        "bibcode": "2008AJ....135..209M"
+      },
+      {
+        "teff": 4040,
+        "log_g": 1.81,
+        "fe_h": -0.02,
+        "bibcode": "2022A&A...663A...4S"
+      },
+      {
+        "teff": 4106,
+        "log_g": 1.59,
+        "fe_h": -0.02,
+        "bibcode": "2024A&A...682A.145S"
+      }
+    ],
+    "teff_median": 4040,
+    "vsini_measurements": [
+      {
+        "vsini": 5.1,
+        "vsini_err": null,
+        "bibcode": "2008AJ....135..209M"
+      },
+      {
+        "vsini": 19,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 10,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 88.5638,
+        "unit": "pc  ",
+        "plus_err": 2.9029,
+        "minus_err": -2.9029,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 90.7367,
+        "unit": "pc  ",
+        "plus_err": 1.3675,
+        "minus_err": -1.3675,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "NIR",
+      "PM*",
+      "UV"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2031%20Leo"
+  },
+  "wikipedia": {
+    "title": "31 Leonis",
+    "description": "Binary star system in the constellation Leo",
+    "summary": "31 Leonis, also named Yunü, is a binary star system in the equatorial constellation of Leo. The system is visible to the naked eye in unresolved form, having a combined apparent visual magnitude of 4.39. An estimated distance of around 300 light years is obtained from the annual parallax shift of 11.02 mas as seen from Earth's orbit. At the current distance, interstellar extinction between Earth and 31 Leo diminished the apparent brightness by 0.12 magnitudes. It is moving away from the Sun with a radial velocity of +39.8 km/s.",
+    "intro": "31 Leonis, also named Yunü, is a binary star system in the equatorial constellation of Leo. The system is visible to the naked eye in unresolved form, having a combined apparent visual magnitude of 4.39. An estimated distance of around 300 light years is obtained from the annual parallax shift of 11.02 mas as seen from Earth's orbit. At the current distance, interstellar extinction between Earth and 31 Leo diminished the apparent brightness by 0.12 magnitudes. It is moving away from the Sun with a radial velocity of +39.8 km/s.\nThe primary member of 31 Leonis, component A, is an evolved K-type red giant with a stellar classification of K3.5 IIIb Fe-1:, where the suffix notation indicates an underabundance of iron in the spectrum. It has expanded to 34 times the Solar radius and is radiating around 283 times the Sun's luminosity from its photosphere at an effective temperature of 4,066 K. The magnitude 13.6 secondary, component B, lies at an angular separation of 7.9 arcseconds, as of 2008.\nThis star has the traditional Chinese name Yunü (御女); it is in the middle of the southernmost stars of the Xuanyuan (轩辕) constellation (ο Leonis and ρ Leonis). The IAU Working Group on Star Names approved the name Yunü for 31 Leonis A on 18 July 2024 and it is now so entered in the IAU Catalog of Star Names.",
+    "url": "https://en.wikipedia.org/wiki/31_Leonis",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leo_constellation_map.svg/330px-Leo_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leo_constellation_map.svg/330px-Leo_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q4634782"
+  },
+  "wikidata": {
+    "id": "Q4634782",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "K4III"
+        },
+        {
+          "value": "K3.5IIIbFe-1:"
+        },
+        {
+          "value": "K2"
+        },
+        {
+          "value": "K3.5IIIbFe-1"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Leo"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 4.38,
+          "unit": ""
+        },
+        {
+          "value": 7.57,
+          "unit": ""
+        },
+        {
+          "value": 5.82,
+          "unit": ""
+        },
+        {
+          "value": 3.26,
+          "unit": ""
+        },
+        {
+          "value": 2.49,
+          "unit": ""
+        },
+        {
+          "value": 1.89,
+          "unit": ""
+        },
+        {
+          "value": 1.18,
+          "unit": ""
+        },
+        {
+          "value": 1.04,
+          "unit": ""
+        },
+        {
+          "value": 3.838813,
+          "unit": "",
+          "plus": 0.0030999999999998806,
+          "minus": 0.0030999999999998806
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -0.39,
+          "unit": ""
+        },
+        {
+          "value": -0.23,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 88.5638,
+          "unit": "pc",
+          "plus": 2.9029000000000025,
+          "minus": 2.9029000000000025
+        },
+        {
+          "value": 90.7367,
+          "unit": "pc",
+          "plus": 1.3675000000000068,
+          "minus": 1.3674999999999926
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 4074.0,
+          "unit": "K"
+        },
+        {
+          "value": 4040.0,
+          "unit": "K"
+        },
+        {
+          "value": 4106.0,
+          "unit": "K"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.02,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 65.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 30.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 41.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 41.1,
+          "unit": "km/s",
+          "plus": 0.8999999999999986,
+          "minus": 0.8999999999999986
+        },
+        {
+          "value": 40.53,
+          "unit": "km/s",
+          "plus": 0.3299999999999983,
+          "minus": 0.3299999999999983
+        },
+        {
+          "value": 39.84,
+          "unit": "km/s",
+          "plus": 0.19999999999999574,
+          "minus": 0.20000000000000284
+        },
+        {
+          "value": 39.84,
+          "unit": "km/s"
+        },
+        {
+          "value": 40.2,
+          "unit": "km/s"
+        },
+        {
+          "value": 40.8,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 11.2913,
+          "unit": "mas",
+          "plus": 0.37010000000000076,
+          "minus": 0.370099999999999
+        },
+        {
+          "value": 11.89,
+          "unit": "mas",
+          "plus": 0.7199999999999989,
+          "minus": 0.7200000000000006
+        },
+        {
+          "value": 11.04,
+          "unit": "mas",
+          "plus": 0.2400000000000002,
+          "minus": 0.23999999999999844
+        },
+        {
+          "value": 11.0209,
+          "unit": "mas",
+          "plus": 0.16610000000000014,
+          "minus": 0.16610000000000014
+        }
+      ],
+      "instance of": [
+        {
+          "value": "binary star"
+        },
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 151.97612548615,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 9.99750687493,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q4634782"
+  },
+  "summary": {
+    "designation": "31 Leo",
+    "object_type": "High Proper Motion Star",
+    "spectral_type": "K3.5IIIbFe-1:",
+    "ra_deg": 151.9761254861525,
+    "dec_deg": 9.997506874934166,
+    "v_mag": 4.38,
+    "distance_pc": 90.7,
+    "distance_ly": 295.9,
+    "teff_k": 4040,
+    "b_minus_v": 1.44,
+    "constellation": "Leo",
+    "description": "Binary star system in the constellation Leo"
+  },
+  "id": "31-leo",
+  "path": "stars/31-leo",
+  "observations": [
+    {
+      "datetime": "2026-10-08 06:35",
+      "location": "",
+      "rating": null,
+      "seeing": "",
+      "transparency": "",
+      "bortle": "",
+      "incomplete": true,
+      "location_assumed": "Royse City, Texas",
+      "utc": "2026-10-08 11:35",
+      "altitude_deg": 32.6,
+      "azimuth_deg": 99.8
+    }
+  ]
+}

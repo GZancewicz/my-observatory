@@ -1,0 +1,587 @@
+{
+  "name": "Betelgeuse",
+  "category": "stars",
+  "app_type": "M-Star",
+  "harvested": "2026-10-10T16:24:37Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20Ori",
+      "retrieved": "2026-10-10T16:24:45Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Betelgeuse",
+      "retrieved": "2026-10-10T16:25:01Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q12124",
+      "retrieved": "2026-10-10T16:25:02Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/A_bubbling_Betelgeuse_%28potw2634a%29.jpg/330px-A_bubbling_Betelgeuse_%28potw2634a%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Betelgeuse",
+    "simbad_id": "* alf Ori",
+    "wikidata": "Q12124",
+    "wikipedia": "Betelgeuse"
+  },
+  "simbad": {
+    "main_id": "* alf Ori",
+    "ra": 88.79293899077537,
+    "dec": 7.407063995272694,
+    "otype": "s*r",
+    "otype_desc": "Red Supergiant",
+    "sp_type": "M1-M2Ia-Iab",
+    "plx_value": 6.55,
+    "plx_err": 0.83,
+    "pmra": 27.54,
+    "pmdec": 11.3,
+    "rvz_radvel": 21.91,
+    "rvz_redshift": 7.308656408078207e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 1804,
+    "identifiers": [
+      "TIC 269273552",
+      "GEN# +1.00039801",
+      "HIP 27989",
+      "2MASS J05551028+0724255",
+      "PLX 1362",
+      "*  58 Ori",
+      "* alf Ori",
+      "AAVSO 0549+07",
+      "ADS  4506 AP",
+      "AG+07  681",
+      "BD+07  1055",
+      "CCDM J05552+0724AP",
+      "CSI+07  1055  1",
+      "EIC   108",
+      "FK5  224",
+      "GC  7451",
+      "GCRV  3679",
+      "GSC 00129-01873",
+      "HD  39801",
+      "HIC  27989",
+      "HR  2061",
+      "IRAS 05524+0723",
+      "IRC +10100",
+      "JP11  1282",
+      "N30 1266",
+      "NAME Betelgeuse",
+      "PMC 90-93   162",
+      "PPM 149643",
+      "RAFGL  836",
+      "SAO 113271",
+      "SKY#  9804",
+      "TD1  5587",
+      "TYC  129-1873-1",
+      "UBV   21314",
+      "V* alf Ori",
+      "YZ   7  2503",
+      "[LFO93] 0552+07",
+      "JCMTSE J055510.1+072426",
+      "PLX 1362.00",
+      "JCMTSF J055510.1+072426",
+      "WDS J05552+0724Aa,Ab",
+      "** H  639A",
+      "WDS J05552+0724Aa,Ac",
+      "WDS J05552+0724A",
+      "** KAR    1",
+      "WEB  5485"
+    ],
+    "fluxes": {
+      "V": {
+        "mag": 0.42,
+        "err": null
+      },
+      "B": {
+        "mag": 2.27,
+        "err": null
+      },
+      "U": {
+        "mag": 4.38,
+        "err": null
+      },
+      "J": {
+        "mag": -3,
+        "err": null
+      },
+      "K": {
+        "mag": -4.05,
+        "err": null
+      },
+      "H": {
+        "mag": -3.73,
+        "err": null
+      },
+      "R": {
+        "mag": -1.17,
+        "err": null
+      },
+      "I": {
+        "mag": -2.45,
+        "err": null
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 3633,
+        "log_g": 0.4,
+        "fe_h": 0.01,
+        "bibcode": "2011A&A...531A.165P"
+      },
+      {
+        "teff": 3540,
+        "log_g": 0,
+        "fe_h": 0,
+        "bibcode": "2000ApJ...530..307C"
+      },
+      {
+        "teff": 3540,
+        "log_g": 0,
+        "fe_h": 0.05,
+        "bibcode": "2000ApJ...537..205R"
+      },
+      {
+        "teff": 3540,
+        "log_g": 0,
+        "fe_h": 0,
+        "bibcode": "2000ApJ...530..307C"
+      },
+      {
+        "teff": 3540,
+        "log_g": 0,
+        "fe_h": 0.05,
+        "bibcode": "2000ApJ...537..205R"
+      },
+      {
+        "teff": 3605,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1998AJ....116..981V"
+      },
+      {
+        "teff": 3654,
+        "log_g": 0.43,
+        "fe_h": -0.21,
+        "bibcode": "2019A&A...627A.138A"
+      },
+      {
+        "teff": 3779,
+        "log_g": -0.462,
+        "fe_h": -0.126,
+        "bibcode": "2023ApJS..266...11B"
+      },
+      {
+        "teff": 4039,
+        "log_g": 4.24,
+        "fe_h": 0.75,
+        "bibcode": "2021MNRAS.505.4496G"
+      },
+      {
+        "teff": 3633,
+        "log_g": -0.06,
+        "fe_h": -0.111,
+        "bibcode": "2025A&A...693A.163T"
+      },
+      {
+        "teff": 3633,
+        "log_g": -0.06,
+        "fe_h": -0.064,
+        "bibcode": "2025A&A...693A.163T"
+      },
+      {
+        "teff": 4250,
+        "log_g": 1.5,
+        "fe_h": null,
+        "bibcode": "2023MNRAS.519.5472M"
+      }
+    ],
+    "teff_median": 3633,
+    "vsini_measurements": [
+      {
+        "vsini": 14.3,
+        "vsini_err": 3.8,
+        "bibcode": "2023ApJS..266...11B"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "AB*",
+      "IR",
+      "LP*",
+      "NIR",
+      "smm",
+      "s*r",
+      "UV",
+      "V*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20Ori"
+  },
+  "wikipedia": {
+    "title": "Betelgeuse",
+    "description": "Red supergiant star in the constellation Orion",
+    "summary": "Betelgeuse is a red supergiant star in the equatorial constellation of Orion. It is usually the tenth-brightest star in the night sky and, after Rigel, the second brightest in its constellation. It is a distinctly reddish, semiregular variable star whose apparent magnitude, varying between +0.0 and +1.6, with a main period near 400 days, has the widest range displayed by any first-magnitude star. Betelgeuse is the brightest star in the night sky at near-infrared wavelengths. Its Bayer designation is α Orionis, Latinised to Alpha Orionis and abbreviated Alpha Ori or α Ori.",
+    "intro": "Betelgeuse is a red supergiant star in the equatorial constellation of Orion. It is usually the tenth-brightest star in the night sky and, after Rigel, the second brightest in its constellation. It is a distinctly reddish, semiregular variable star whose apparent magnitude, varying between +0.0 and +1.6, with a main period near 400 days, has the widest range displayed by any first-magnitude star. Betelgeuse is the brightest star in the night sky at near-infrared wavelengths. Its Bayer designation is α Orionis, Latinised to Alpha Orionis and abbreviated Alpha Ori or α Ori.\nWith a radius between 640 and 764 times that of the Sun, if it were at the center of the Solar System, its surface would lie beyond the asteroid belt and it would engulf the orbits of Mercury, Venus, Earth, and Mars. Calculations of Betelgeuse's mass range from slightly under ten to a little over twenty times that of the Sun. For various reasons, its distance has been quite difficult to measure; current best estimates are of the order of 400–600 light-years from the Sun – a comparatively wide uncertainty for a relatively nearby star. Its absolute magnitude is about −6. With an age of less than 10 million years, Betelgeuse has evolved rapidly because of its large mass, and is expected to end its evolution with a supernova explosion, most likely within 100,000 years. When Betelgeuse detonates as a brilliant type II supernova, it will shine as bright as the half-Moon for more than three months; life on Earth will be unharmed. Having been ejected from its birthplace in the Orion OB1 association – which includes the stars in Orion's Belt – this runaway star has been observed to be moving through the interstellar medium at a speed of 30 km/s, creating a bow shock over four light-years wide.\nBetelgeuse became the first extrasolar star whose photosphere's angular size was measured in 1920, and subsequent studies have reported an angular diameter (i.e., apparent size) ranging from 0.042 to 0.056 arcseconds; that range of determinations is ascribed to non-sphericity, limb darkening, pulsations and varying appearance at different wavelengths. It is also surrounded by a complex, asymmetric envelope, roughly 250 times the size of the star, caused by mass loss from the star itself. The Earth-observed angular diameter of Betelgeuse is exceeded only by those of R Doradus and the Sun.\nStarting in October 2019, Betelgeuse began to dim noticeably, and by mid-February 2020 its brightness had dropped by a factor of approximately 3, from magnitude 0.5 to 1.7. It then returned to a more normal brightness range, reaching a peak of 0.0 visual and 0.1 V-band magnitude in April 2023. Infrared observations found no significant change in luminosity over the last 50 years, suggesting that the dimming was due to a change in extinction around the star rather than a more fundamental change. A study using the Hubble Space Telescope suggests that occluding dust was created by a surface mass ejection; this material was cast millions of miles from the star, and then cooled to form the dust that caused the dimming.\nBetelgeuse is likely a binary star. The companion star, named Betelgeuse B or Siwarha, is not yet fully confirmed to be gravitionally bound to Betelgeuse, but likely is given other, indirect evidence for a companion. It would be much smaller and fainter than the red supergiant and is believed to orbit at a distance only a few times greater than the size of Betelgeuse.\n\n",
+    "url": "https://en.wikipedia.org/wiki/Betelgeuse",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/A_bubbling_Betelgeuse_%28potw2634a%29.jpg/330px-A_bubbling_Betelgeuse_%28potw2634a%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/84/A_bubbling_Betelgeuse_%28potw2634a%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikidata": "Q12124"
+  },
+  "wikidata": {
+    "id": "Q12124",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "M2Iab"
+        },
+        {
+          "value": "M1-M2Ia-Iab"
+        },
+        {
+          "value": "M2I"
+        },
+        {
+          "value": "M1.5Iab"
+        },
+        {
+          "value": "M2Ib"
+        },
+        {
+          "value": "M2 IA SB"
+        },
+        {
+          "value": "Ma"
+        },
+        {
+          "value": "M2II"
+        },
+        {
+          "value": "M2IASB"
+        },
+        {
+          "value": "M1-M2Ia-Ibe"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Orion"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 0.42,
+          "unit": ""
+        },
+        {
+          "value": 4.38,
+          "unit": ""
+        },
+        {
+          "value": 2.27,
+          "unit": ""
+        },
+        {
+          "value": -1.17,
+          "unit": ""
+        },
+        {
+          "value": -2.45,
+          "unit": ""
+        },
+        {
+          "value": -3.0,
+          "unit": ""
+        },
+        {
+          "value": -3.73,
+          "unit": ""
+        },
+        {
+          "value": -4.05,
+          "unit": ""
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -5.14,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 548.0,
+          "unit": "ly"
+        }
+      ],
+      "mass": [
+        {
+          "value": 14.0,
+          "unit": "M☉"
+        },
+        {
+          "value": 17.8,
+          "unit": "M☉",
+          "plus": 1.1999999999999993,
+          "minus": 1.1999999999999993
+        }
+      ],
+      "radius": [
+        {
+          "value": 768.0,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 60000.0,
+          "unit": "L☉",
+          "plus": 20000.0,
+          "minus": 20000.0
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 3605.0,
+          "unit": "K"
+        },
+        {
+          "value": 3633.0,
+          "unit": "K"
+        },
+        {
+          "value": 3540.0,
+          "unit": "K"
+        },
+        {
+          "value": 3654.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 10000000.0,
+          "unit": "yr"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.05,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": ""
+        },
+        {
+          "value": 0.01,
+          "unit": ""
+        },
+        {
+          "value": -0.21,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 2.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 2.7,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 1.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 2.5,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 21.0,
+          "unit": "km/s",
+          "plus": 0.8999999999999986,
+          "minus": 0.8999999999999986
+        },
+        {
+          "value": 21.91,
+          "unit": "km/s",
+          "plus": 0.5100000000000016,
+          "minus": 0.5100000000000016
+        },
+        {
+          "value": 22.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 10.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 20.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 21.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 20.3,
+          "unit": "km/s"
+        },
+        {
+          "value": 17.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 20.9,
+          "unit": "km/s"
+        },
+        {
+          "value": 21.3,
+          "unit": "km/s"
+        },
+        {
+          "value": 10.6,
+          "unit": "km/s"
+        },
+        {
+          "value": 26.6,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 9.8,
+          "unit": "mas",
+          "plus": 4.699999999999999,
+          "minus": 4.700000000000001
+        },
+        {
+          "value": 6.55,
+          "unit": "mas",
+          "plus": 0.8300000000000001,
+          "minus": 0.8300000000000001
+        },
+        {
+          "value": 7.63,
+          "unit": "mas",
+          "plus": 1.6399999999999997,
+          "minus": 1.6399999999999997
+        }
+      ],
+      "instance of": [
+        {
+          "value": "red supergiant"
+        },
+        {
+          "value": "long-period variable star"
+        },
+        {
+          "value": "navigational star"
+        },
+        {
+          "value": "semiregular variable star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "sub-millimetric radio source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "pulsating variable star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 88.792938991,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 7.407063995,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Position Alpha Ori.png",
+    "url": "https://www.wikidata.org/wiki/Q12124"
+  },
+  "summary": {
+    "designation": "alf Ori",
+    "object_type": "Red Supergiant",
+    "spectral_type": "M1-M2Ia-Iab",
+    "ra_deg": 88.79293899077537,
+    "dec_deg": 7.407063995272694,
+    "v_mag": 0.42,
+    "distance_pc": 152.7,
+    "distance_ly": 497.9,
+    "teff_k": 3633,
+    "b_minus_v": 1.85,
+    "mass": {
+      "value": 14.0,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 768.0,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 60000.0,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 10000000.0,
+      "unit": "yr"
+    },
+    "constellation": "Orion",
+    "description": "Red supergiant star in the constellation Orion"
+  },
+  "id": "betelgeuse",
+  "path": "stars/betelgeuse",
+  "observations": [
+    {
+      "datetime": "2026-10-06 05:45",
+      "location": "Royse City, Texas",
+      "rating": 5.0,
+      "seeing": "4/5",
+      "transparency": "4/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-06 10:45",
+      "altitude_deg": 63.2,
+      "azimuth_deg": 160.4
+    }
+  ]
+}

@@ -1,0 +1,659 @@
+{
+  "name": "Fomalhaut",
+  "category": "stars",
+  "app_type": "A-Star",
+  "harvested": "2026-10-10T16:29:28Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20PsA",
+      "retrieved": "2026-10-10T16:29:36Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fomalhaut",
+      "retrieved": "2026-10-10T16:29:37Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q76446963",
+      "retrieved": "2026-10-10T16:29:38Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    }
+  },
+  "resolved": {
+    "method": "sesame:Fomalhaut",
+    "simbad_id": "* alf PsA",
+    "wikidata": "Q76446963",
+    "wikipedia": "Fomalhaut"
+  },
+  "simbad": {
+    "main_id": "* alf PsA",
+    "ra": 344.4126927211701,
+    "dec": -29.622237033389442,
+    "otype": "PM*",
+    "otype_desc": "High Proper Motion Star",
+    "sp_type": "A4V",
+    "plx_value": 129.81,
+    "plx_err": 0.47,
+    "pmra": 328.95,
+    "pmdec": -164.67,
+    "rvz_radvel": 6.5,
+    "rvz_redshift": 2.168190124041125e-05,
+    "galdim_majaxis": 0.212,
+    "galdim_minaxis": 0,
+    "morph_type": null,
+    "nbref": 1320,
+    "identifiers": [
+      "TIC 47552789",
+      "GJ 881",
+      "GJ 881.0",
+      "PLX 5565",
+      "CNS5 5665",
+      "* alf PsA",
+      "*  24 PsA",
+      "8pc 130.08",
+      "CD-30 19370",
+      "CEL   5549",
+      "CPC 17 12409",
+      "CPD-30  6685",
+      "FK5  867",
+      "GC 32000",
+      "GCRV 14409",
+      "GEN# +1.00216956",
+      "HD 216956",
+      "HIC 113368",
+      "HIP 113368",
+      "HR  8728",
+      "IRAS 22549-2953",
+      "IRC -30458",
+      "JP11  3556",
+      "LTT  9292",
+      "N30 5050",
+      "NLTT 55380",
+      "NSV 14372",
+      "PMC 90-93   611",
+      "PPM 274426",
+      "RAFGL 2995",
+      "ROT  3340",
+      "SAO 191524",
+      "SKY# 43608",
+      "SRS  30867",
+      "TD1 29476",
+      "UBV   19672",
+      "UBV M  26732",
+      "Zkh 345",
+      "[PS72]  89",
+      "uvby98 100216956",
+      "JCMTSE J225739.4-293726",
+      "JCMTSF J225738.9-293714",
+      "PLX 5565.00",
+      "WDS J22577-2937A",
+      "** SHY  106A",
+      "2MASS J22573901-2937193",
+      "NAME Fomalhaut",
+      "** MAM    1A",
+      "H-ATLAS J225739.6-293730",
+      "TYC 6977-1267-1",
+      "[DML87] 545",
+      "WEB 20167",
+      "*  79 Aqr"
+    ],
+    "fluxes": {
+      "B": {
+        "mag": 1.25,
+        "err": null
+      },
+      "J": {
+        "mag": 1.06,
+        "err": null
+      },
+      "K": {
+        "mag": 1.05,
+        "err": null
+      },
+      "H": {
+        "mag": 1.05,
+        "err": null
+      },
+      "V": {
+        "mag": 1.16,
+        "err": null
+      },
+      "U": {
+        "mag": 1.31,
+        "err": null
+      },
+      "R": {
+        "mag": 1.11,
+        "err": null
+      },
+      "I": {
+        "mag": 1.09,
+        "err": null
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 8689,
+        "log_g": 4.22,
+        "fe_h": 0.43,
+        "bibcode": "2003A&A...398.1121E"
+      },
+      {
+        "teff": 8689,
+        "log_g": 4.22,
+        "fe_h": 0.61,
+        "bibcode": "2003A&A...398.1121E"
+      },
+      {
+        "teff": 8900,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1995A&AS..110..553S"
+      },
+      {
+        "teff": 8500,
+        "log_g": 4.1,
+        "fe_h": -0.03,
+        "bibcode": "1997MNRAS.286..604D"
+      },
+      {
+        "teff": 8399,
+        "log_g": 4.14,
+        "fe_h": null,
+        "bibcode": "2003AJ....125.1598L"
+      },
+      {
+        "teff": 7671,
+        "log_g": 4.03,
+        "fe_h": 0.31,
+        "bibcode": "2017AJ....153...21L"
+      },
+      {
+        "teff": 8622,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1998A&AS..129..505B"
+      },
+      {
+        "teff": 8459,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2013ApJ...771...40B"
+      },
+      {
+        "teff": 8610,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2012A&A...537A.120Z"
+      },
+      {
+        "teff": 8745,
+        "log_g": 4.17,
+        "fe_h": null,
+        "bibcode": "2021A&A...647A..49S"
+      }
+    ],
+    "teff_median": 8622,
+    "vsini_measurements": [
+      {
+        "vsini": 82,
+        "vsini_err": 3.2,
+        "bibcode": "2021A&A...647A..49S"
+      },
+      {
+        "vsini": 85,
+        "vsini_err": null,
+        "bibcode": "1995ApJS...99..135A"
+      },
+      {
+        "vsini": 93,
+        "vsini_err": null,
+        "bibcode": "2002A&A...393..897R"
+      },
+      {
+        "vsini": 93,
+        "vsini_err": null,
+        "bibcode": "2007A&A...463..671R"
+      },
+      {
+        "vsini": 91.6,
+        "vsini_err": 0.5,
+        "bibcode": "2011A&A...531A.143D"
+      },
+      {
+        "vsini": 95.4,
+        "vsini_err": null,
+        "bibcode": "2017AJ....153...21L"
+      },
+      {
+        "vsini": 95.4,
+        "vsini_err": null,
+        "bibcode": "2017AJ....153...21L"
+      },
+      {
+        "vsini": 100,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 85,
+        "vsini_err": 17,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 85,
+        "vsini_err": 9,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 75,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 85,
+        "vsini_err": 8,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 88,
+        "vsini_err": 2,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 93,
+        "vsini_err": 9,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 93,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 97,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "NIR",
+      "PM*",
+      "smm",
+      "UV",
+      "V*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20PsA"
+  },
+  "wikipedia": {
+    "title": "Fomalhaut",
+    "description": "Triple star system in the constellation Piscis Austrinus",
+    "summary": "Fomalhaut is the brightest star in the southern constellation of Piscis Austrinus, the Southern Fish, and one of the brightest stars in the night sky. It has the Bayer designation Alpha Piscis Austrini, which is an alternative form of α Piscis Austrini, and is abbreviated Alpha PsA or α PsA. This is a class A star on the main sequence approximately 25 light-years (7.7 pc) from the Sun as measured by the Hipparcos astrometry satellite. Since 1943, the spectrum of this star has served as one of the stable anchor points by which other stars are classified.",
+    "intro": "Fomalhaut (UK: , US: ) is the brightest star in the southern constellation of Piscis Austrinus, the Southern Fish, and one of the brightest stars in the night sky. It has the Bayer designation Alpha Piscis Austrini, which is an alternative form of α Piscis Austrini, and is abbreviated Alpha PsA or α PsA. This is a class A star on the main sequence approximately 25 light-years (7.7 pc) from the Sun as measured by the Hipparcos astrometry satellite. Since 1943, the spectrum of this star has served as one of the stable anchor points by which other stars are classified.\nIt is classified as a Vega-like star that emits excess infrared radiation, indicating it is surrounded by a circumstellar disk.\nTogether with the K-type main-sequence star TW Piscis Austrini, and the red dwarf star LP 876-10, Fomalhaut constitutes a triple star system, even though the companions are separated by approximately 8 degrees.\nFomalhaut was the first stellar system with an extrasolar planet candidate imaged at visible wavelengths, designated Fomalhaut b. However, analyses in 2019 and 2023 of existing and new observations indicate that Fomalhaut b is not a planet, but rather an expanding region of debris from a massive planetesimal collision.\n\n",
+    "url": "https://en.wikipedia.org/wiki/Fomalhaut",
+    "thumbnail": null,
+    "image": null,
+    "wikidata": "Q13169"
+  },
+  "wikidata": {
+    "id": "Q76446963",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "Ap"
+        },
+        {
+          "value": "A3V"
+        },
+        {
+          "value": "A3"
+        },
+        {
+          "value": "A4V"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Piscis Austrinus"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 1.16,
+          "unit": ""
+        },
+        {
+          "value": 1.05,
+          "unit": ""
+        },
+        {
+          "value": 1.06,
+          "unit": ""
+        },
+        {
+          "value": 1.09,
+          "unit": ""
+        },
+        {
+          "value": 1.11,
+          "unit": ""
+        },
+        {
+          "value": 1.25,
+          "unit": ""
+        },
+        {
+          "value": 1.31,
+          "unit": ""
+        },
+        {
+          "value": 1.05,
+          "unit": ""
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": 1.73,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 25.0,
+          "unit": "ly"
+        },
+        {
+          "value": 7.704,
+          "unit": "pc",
+          "plus": 0.02800000000000047,
+          "minus": 0.02799999999999958
+        }
+      ],
+      "mass": [
+        {
+          "value": 1.92,
+          "unit": "M☉",
+          "plus": 0.020000000000000018,
+          "minus": 0.020000000000000018
+        }
+      ],
+      "radius": [
+        {
+          "value": 1.85,
+          "unit": "R☉"
+        },
+        {
+          "value": 1.842,
+          "unit": "R☉",
+          "plus": 0.018999999999999906,
+          "minus": 0.019000000000000128
+        }
+      ],
+      "diameter": [
+        {
+          "value": 1260000.0,
+          "unit": "km"
+        },
+        {
+          "value": 2520000.0,
+          "unit": "km"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 16.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 7671.0,
+          "unit": "K"
+        },
+        {
+          "value": 8459.0,
+          "unit": "K"
+        },
+        {
+          "value": 8500.0,
+          "unit": "K"
+        },
+        {
+          "value": 8610.0,
+          "unit": "K"
+        },
+        {
+          "value": 8622.0,
+          "unit": "K"
+        },
+        {
+          "value": 8689.0,
+          "unit": "K"
+        },
+        {
+          "value": 8900.0,
+          "unit": "K"
+        },
+        {
+          "value": 8399.0,
+          "unit": "K"
+        },
+        {
+          "value": 8745.0,
+          "unit": "K"
+        },
+        {
+          "value": 8590.0,
+          "unit": "K",
+          "plus": 73.0,
+          "minus": 73.0
+        }
+      ],
+      "age": [
+        {
+          "value": 0.44,
+          "unit": "Gyr",
+          "plus": 0.03999999999999998,
+          "minus": 0.03999999999999998
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 7.76,
+          "unit": ""
+        },
+        {
+          "value": -0.03,
+          "unit": ""
+        },
+        {
+          "value": 0.43,
+          "unit": ""
+        },
+        {
+          "value": 0.61,
+          "unit": ""
+        },
+        {
+          "value": 0.31,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 10700.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 13800.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 16600.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 12600.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 14800.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 6.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 6.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 5.3,
+          "unit": "km/s"
+        },
+        {
+          "value": 6.2,
+          "unit": "km/s",
+          "plus": 0.5999999999999996,
+          "minus": 0.6000000000000005
+        },
+        {
+          "value": 6.5,
+          "unit": "km/s",
+          "plus": 0.5,
+          "minus": 0.5
+        },
+        {
+          "value": 6.5,
+          "unit": "km/s",
+          "plus": 0.9000000000000004,
+          "minus": 0.9000000000000004
+        }
+      ],
+      "parallax": [
+        {
+          "value": 130.08,
+          "unit": "mas",
+          "plus": 0.9199999999999875,
+          "minus": 0.9200000000000159
+        },
+        {
+          "value": 129.81,
+          "unit": "mas",
+          "plus": 0.46999999999999886,
+          "minus": 0.46999999999999886
+        },
+        {
+          "value": 145.5,
+          "unit": "mas",
+          "plus": 9.099999999999994,
+          "minus": 9.099999999999994
+        }
+      ],
+      "instance of": [
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "sub-millimetric radio source"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "A-type main sequence star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 344.412692721,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -29.622237033,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Fomalhaut schijf zichtbaar licht.jpg",
+    "url": "https://www.wikidata.org/wiki/Q76446963"
+  },
+  "summary": {
+    "designation": "alf PsA",
+    "object_type": "High Proper Motion Star",
+    "spectral_type": "A4V",
+    "ra_deg": 344.4126927211701,
+    "dec_deg": -29.622237033389442,
+    "v_mag": 1.16,
+    "distance_pc": 7.7,
+    "distance_ly": 25.1,
+    "teff_k": 8622,
+    "b_minus_v": 0.09,
+    "mass": {
+      "value": 1.92,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 1.85,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 16.0,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 0.44,
+      "unit": "Gyr"
+    },
+    "constellation": "Piscis Austrinus",
+    "description": "Triple star system in the constellation Piscis Austrinus"
+  },
+  "id": "fomalhaut",
+  "path": "stars/fomalhaut",
+  "observations": [
+    {
+      "datetime": "2026-10-09 21:32",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 02:32",
+      "altitude_deg": 23.4,
+      "azimuth_deg": 157.3
+    }
+  ]
+}

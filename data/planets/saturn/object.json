@@ -1,0 +1,855 @@
+{
+  "name": "Saturn",
+  "category": "planets",
+  "app_type": "Planet",
+  "harvested": "2026-10-10T16:16:18Z",
+  "sources": [
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Saturn",
+      "retrieved": "2026-10-10T16:16:18Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q193",
+      "retrieved": "2026-10-10T16:16:21Z"
+    },
+    {
+      "name": "JPL Horizons",
+      "url": "https://ssd.jpl.nasa.gov/horizons/app.html",
+      "retrieved": "2026-10-10T16:16:22Z"
+    }
+  ],
+  "images": {
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Saturn_global_view_from_Cassini%2C_rings_open_Better_Colour.png/330px-Saturn_global_view_from_Cassini%2C_rings_open_Better_Colour.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "wikipedia",
+    "simbad_id": null,
+    "wikidata": "Q193",
+    "wikipedia": "Saturn"
+  },
+  "wikipedia": {
+    "title": "Saturn",
+    "description": "Sixth planet from the Sun",
+    "summary": "Saturn is the sixth planet from the Sun, and is the second largest planet in the Solar System, after Jupiter. It is a gas giant, with an average radius of about 9 times that of Earth. It has an eighth of the average density of Earth, but is over 95 times more massive. Even though Saturn is almost as big as Jupiter, it has less than a third of its mass. Saturn orbits the Sun at a distance of 9.59 AU (1,434 million km), with an orbital period of 29.45 years.",
+    "intro": "Saturn is the sixth planet from the Sun, and is the second largest planet in the Solar System, after Jupiter. It is a gas giant, with an average radius of about 9 times that of Earth. It has an eighth of the average density of Earth, but is over 95 times more massive. Even though Saturn is almost as big as Jupiter, it has less than a third of its mass. Saturn orbits the Sun at a distance of 9.59 AU (1,434 million km), with an orbital period of 29.45 years.\nSaturn's interior is thought to be composed of a rocky core, surrounded by a deep layer of metallic hydrogen, an intermediate layer of liquid hydrogen and liquid helium, and an outer layer of gas. Saturn has a pale yellow hue, due to ammonia crystals in its upper atmosphere. An electrical current in the metallic hydrogen layer is thought to give rise to Saturn's planetary magnetic field, which is weaker than Earth's, but has a magnetic moment 580 times that of Earth because of Saturn's greater size. Saturn's magnetic field strength is about a twentieth that of Jupiter. The outer atmosphere is generally bland and lacking in contrast, although long-lived features can appear. Wind speeds on Saturn can reach 1,800 kilometers per hour (1,100 miles per hour).\nThe planet has a bright and extensive system of rings, composed mainly of ice particles, with a smaller amount of rocky debris and dust. At least 293 moons orbit the planet, of which 63 are officially named; these do not include the hundreds of moonlets in the rings. Titan, Saturn's largest moon and the second largest in the Solar System, is larger (but less massive) than the planet Mercury and is the only moon in the Solar System that has a substantial atmosphere.\n\n",
+    "url": "https://en.wikipedia.org/wiki/Saturn",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Saturn_global_view_from_Cassini%2C_rings_open_Better_Colour.png/330px-Saturn_global_view_from_Cassini%2C_rings_open_Better_Colour.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Saturn_global_view_from_Cassini%2C_rings_open_Better_Colour.png/3840px-Saturn_global_view_from_Cassini%2C_rings_open_Better_Colour.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q193"
+  },
+  "wikidata": {
+    "id": "Q193",
+    "facts": {
+      "apparent magnitude": [
+        {
+          "value": 1.2,
+          "unit": ""
+        },
+        {
+          "value": -0.24,
+          "unit": ""
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": 28.0,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 1195000000.0,
+          "unit": "km"
+        },
+        {
+          "value": 1660000000.0,
+          "unit": "km"
+        }
+      ],
+      "mass": [
+        {
+          "value": 5.6836e+26,
+          "unit": "kg",
+          "plus": 1e+22,
+          "minus": 1e+22
+        }
+      ],
+      "radius": [
+        {
+          "value": 58232.0,
+          "unit": "km",
+          "plus": 6.0,
+          "minus": 6.0
+        },
+        {
+          "value": 60268.0,
+          "unit": "km",
+          "plus": 4.0,
+          "minus": 4.0
+        },
+        {
+          "value": 54364.0,
+          "unit": "km",
+          "plus": 10.0,
+          "minus": 10.0
+        }
+      ],
+      "diameter": [
+        {
+          "value": 120536.0,
+          "unit": "km"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 8.96,
+          "unit": "metre per square second"
+        }
+      ],
+      "density": [
+        {
+          "value": 0.19,
+          "unit": "kilogram per cubic metre"
+        },
+        {
+          "value": 0.867,
+          "unit": "g/cm³"
+        }
+      ],
+      "rotation period": [
+        {
+          "value": 10.7,
+          "unit": "h"
+        }
+      ],
+      "orbital period": [
+        {
+          "value": 10757.7365,
+          "unit": "d"
+        }
+      ],
+      "semi-major axis": [
+        {
+          "value": 1429394069.0,
+          "unit": "km",
+          "plus": 1.0,
+          "minus": 1.0
+        },
+        {
+          "value": 9.53667594,
+          "unit": "AU"
+        },
+        {
+          "value": 9.554909,
+          "unit": "AU"
+        }
+      ],
+      "orbital eccentricity": [
+        {
+          "value": 0.05386179,
+          "unit": ""
+        }
+      ],
+      "orbital inclination": [
+        {
+          "value": 2.48599187,
+          "unit": "°"
+        },
+        {
+          "value": 5.51,
+          "unit": "°"
+        },
+        {
+          "value": 0.93,
+          "unit": "°"
+        }
+      ],
+      "area": [
+        {
+          "value": 42700000000.0,
+          "unit": "km²"
+        }
+      ],
+      "parent astronomical body": [
+        {
+          "value": "Sun"
+        }
+      ],
+      "child astronomical body": [
+        {
+          "value": "Titan"
+        },
+        {
+          "value": "Pan"
+        },
+        {
+          "value": "Daphnis"
+        },
+        {
+          "value": "Atlas"
+        },
+        {
+          "value": "Prometheus"
+        },
+        {
+          "value": "Pandora"
+        },
+        {
+          "value": "Epimetheus"
+        },
+        {
+          "value": "Janus"
+        },
+        {
+          "value": "Aegaeon"
+        },
+        {
+          "value": "Mimas"
+        },
+        {
+          "value": "Methone"
+        },
+        {
+          "value": "Anthe"
+        },
+        {
+          "value": "Pallene"
+        },
+        {
+          "value": "Enceladus"
+        },
+        {
+          "value": "Tethys"
+        },
+        {
+          "value": "Telesto"
+        },
+        {
+          "value": "Calypso"
+        },
+        {
+          "value": "Kiviuq"
+        },
+        {
+          "value": "Helene"
+        },
+        {
+          "value": "Dione"
+        },
+        {
+          "value": "Polydeuces"
+        },
+        {
+          "value": "Rhea"
+        },
+        {
+          "value": "Hyperion"
+        },
+        {
+          "value": "Iapetus"
+        },
+        {
+          "value": "Ijiraq"
+        },
+        {
+          "value": "Phoebe"
+        },
+        {
+          "value": "Skathi"
+        },
+        {
+          "value": "Albiorix"
+        },
+        {
+          "value": "Bebhionn"
+        },
+        {
+          "value": "Skoll"
+        },
+        {
+          "value": "Tarqeq"
+        },
+        {
+          "value": "Greip"
+        },
+        {
+          "value": "Siarnaq"
+        },
+        {
+          "value": "Hyrrokkin"
+        },
+        {
+          "value": "Tarvos"
+        },
+        {
+          "value": "S/2004 S 13"
+        },
+        {
+          "value": "Jarnsaxa"
+        },
+        {
+          "value": "S/2004 S 17"
+        },
+        {
+          "value": "Mundilfari"
+        },
+        {
+          "value": "Bergelmir"
+        },
+        {
+          "value": "S/2006 S 1"
+        },
+        {
+          "value": "Aegir"
+        },
+        {
+          "value": "Narvi"
+        },
+        {
+          "value": "S/2004 S 12"
+        },
+        {
+          "value": "Bestla"
+        },
+        {
+          "value": "Suttungr"
+        },
+        {
+          "value": "Farbauti"
+        },
+        {
+          "value": "S/2004 S 7"
+        },
+        {
+          "value": "Hati"
+        },
+        {
+          "value": "Thrymr"
+        },
+        {
+          "value": "S/2006 S 3"
+        },
+        {
+          "value": "Fenrir"
+        },
+        {
+          "value": "Fornjot"
+        },
+        {
+          "value": "Surtur"
+        },
+        {
+          "value": "Kari"
+        },
+        {
+          "value": "Ymir"
+        },
+        {
+          "value": "Loge"
+        },
+        {
+          "value": "rings of Saturn"
+        },
+        {
+          "value": "S/2009 S 1"
+        },
+        {
+          "value": "S/2007 S 2"
+        },
+        {
+          "value": "S/2007 S 3"
+        },
+        {
+          "value": "Themis"
+        },
+        {
+          "value": "E Ring"
+        },
+        {
+          "value": "G ring"
+        },
+        {
+          "value": "C ring"
+        },
+        {
+          "value": "F ring"
+        },
+        {
+          "value": "B ring"
+        },
+        {
+          "value": "A ring"
+        },
+        {
+          "value": "D ring"
+        },
+        {
+          "value": "Phoebe ring"
+        },
+        {
+          "value": "S/2004 S 6"
+        },
+        {
+          "value": "S/2004 S 4"
+        },
+        {
+          "value": "S/2004 S 3"
+        },
+        {
+          "value": "Paaliaq"
+        },
+        {
+          "value": "Erriapus"
+        },
+        {
+          "value": "Earhart"
+        },
+        {
+          "value": "Blériot"
+        },
+        {
+          "value": "Santos-Dumont"
+        },
+        {
+          "value": "Curtiss"
+        },
+        {
+          "value": "Hinkler"
+        },
+        {
+          "value": "Kingsford Smith"
+        },
+        {
+          "value": "Lindbergh"
+        },
+        {
+          "value": "Post"
+        },
+        {
+          "value": "Richthofen"
+        },
+        {
+          "value": "Sikorsky"
+        },
+        {
+          "value": "Wright"
+        },
+        {
+          "value": "Peggy"
+        },
+        {
+          "value": "Gridr"
+        },
+        {
+          "value": "S/2004 S 21"
+        },
+        {
+          "value": "Angrboda"
+        },
+        {
+          "value": "Skrymir"
+        },
+        {
+          "value": "S/2004 S 24"
+        },
+        {
+          "value": "Gerd"
+        },
+        {
+          "value": "S/2004 S 26"
+        },
+        {
+          "value": "Eggther"
+        },
+        {
+          "value": "S/2004 S 28"
+        },
+        {
+          "value": "S/2004 S 29"
+        },
+        {
+          "value": "Beli"
+        },
+        {
+          "value": "Alvaldi"
+        },
+        {
+          "value": "S/1995 S 8"
+        },
+        {
+          "value": "S/1995 S 6"
+        },
+        {
+          "value": "S/1995 S 4"
+        },
+        {
+          "value": "S/1995 S 1"
+        },
+        {
+          "value": "S/1995 S 3"
+        },
+        {
+          "value": "S/1995 S 5"
+        },
+        {
+          "value": "S/1995 S 7"
+        },
+        {
+          "value": "S/2019 S 1"
+        },
+        {
+          "value": "Chrysalis"
+        },
+        {
+          "value": "S/2005 S 4"
+        },
+        {
+          "value": "S/2020 S 1"
+        },
+        {
+          "value": "S/2006 S 20"
+        },
+        {
+          "value": "S/2019 S 14"
+        },
+        {
+          "value": "S/2020 S 3"
+        },
+        {
+          "value": "S/2020 S 5"
+        },
+        {
+          "value": "S/2004 S 41"
+        },
+        {
+          "value": "S/2004 S 40"
+        },
+        {
+          "value": "S/2004 S 43"
+        },
+        {
+          "value": "S/2004 S 42"
+        },
+        {
+          "value": "S/2004 S 44"
+        },
+        {
+          "value": "S/2004 S 46"
+        },
+        {
+          "value": "S/2004 S 45"
+        },
+        {
+          "value": "S/2004 S 48"
+        },
+        {
+          "value": "S/2004 S 47"
+        },
+        {
+          "value": "S/2004 S 50"
+        },
+        {
+          "value": "S/2004 S 51"
+        },
+        {
+          "value": "S/2004 S 49"
+        },
+        {
+          "value": "S/2004 S 53"
+        },
+        {
+          "value": "S/2004 S 52"
+        },
+        {
+          "value": "S/2006 S 9"
+        },
+        {
+          "value": "S/2005 S 5"
+        },
+        {
+          "value": "S/2006 S 11"
+        },
+        {
+          "value": "S/2006 S 12"
+        },
+        {
+          "value": "S/2006 S 10"
+        },
+        {
+          "value": "S/2006 S 14"
+        },
+        {
+          "value": "S/2006 S 13"
+        },
+        {
+          "value": "S/2006 S 15"
+        },
+        {
+          "value": "S/2006 S 16"
+        },
+        {
+          "value": "S/2006 S 18"
+        },
+        {
+          "value": "S/2006 S 17"
+        },
+        {
+          "value": "S/2006 S 19"
+        },
+        {
+          "value": "S/2007 S 5"
+        },
+        {
+          "value": "S/2007 S 7"
+        },
+        {
+          "value": "S/2007 S 6"
+        },
+        {
+          "value": "S/2007 S 9"
+        },
+        {
+          "value": "S/2007 S 8"
+        },
+        {
+          "value": "S/2019 S 2"
+        },
+        {
+          "value": "S/2019 S 3"
+        },
+        {
+          "value": "S/2019 S 4"
+        },
+        {
+          "value": "S/2019 S 5"
+        },
+        {
+          "value": "S/2019 S 6"
+        },
+        {
+          "value": "S/2019 S 7"
+        },
+        {
+          "value": "S/2019 S 8"
+        },
+        {
+          "value": "S/2019 S 9"
+        },
+        {
+          "value": "S/2019 S 11"
+        },
+        {
+          "value": "S/2019 S 10"
+        },
+        {
+          "value": "S/2019 S 12"
+        },
+        {
+          "value": "S/2019 S 13"
+        },
+        {
+          "value": "S/2019 S 15"
+        },
+        {
+          "value": "S/2019 S 16"
+        },
+        {
+          "value": "S/2019 S 18"
+        },
+        {
+          "value": "S/2019 S 17"
+        },
+        {
+          "value": "S/2019 S 19"
+        },
+        {
+          "value": "S/2019 S 20"
+        },
+        {
+          "value": "S/2020 S 2"
+        },
+        {
+          "value": "S/2019 S 21"
+        },
+        {
+          "value": "S/2020 S 4"
+        },
+        {
+          "value": "S/2020 S 6"
+        },
+        {
+          "value": "S/2020 S 7"
+        },
+        {
+          "value": "S/2020 S 8"
+        },
+        {
+          "value": "S/2020 S 9"
+        },
+        {
+          "value": "S/2020 S10"
+        }
+      ],
+      "named after": [
+        {
+          "value": "Saturn"
+        },
+        {
+          "value": "Wu Xing"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "gas giant"
+        },
+        {
+          "value": "outer planet"
+        }
+      ],
+      "temperature": [
+        {
+          "value": 134.0,
+          "unit": "K"
+        }
+      ],
+      "albedo": [
+        {
+          "value": 0.47,
+          "unit": ""
+        },
+        {
+          "value": 0.342,
+          "unit": ""
+        }
+      ],
+      "speed": [
+        {
+          "value": 9.6446,
+          "unit": "km/s"
+        },
+        {
+          "value": 10.183,
+          "unit": "km/s"
+        },
+        {
+          "value": 9.137,
+          "unit": "kilometre per hour"
+        }
+      ]
+    },
+    "commons_image": "Saturn, Four Years On, by ISS.tif",
+    "url": "https://www.wikidata.org/wiki/Q193"
+  },
+  "horizons": {
+    "physical_data": "PHYSICAL DATA:\n  Mass x10^26 (kg)      = 5.6834          Density (g/cm^3)       =  0.687+-.001\n  Equat. radius (1 bar) = 60268+-4 km     Polar radius (km)      = 54364+-10\n  Vol. Mean Radius (km) = 58232+-6        Flattening             =  0.09796\n  Geometric Albedo      = 0.47            Rocky core mass (Mc/M) =  0.1027\n  Sid. rot. period (III)= 10h 39m 22.4s   Sid. rot. rate (rad/s) =  0.000163785 \n  Mean solar day, hrs   =~10.656         \n  GM (km^3/s^2)         = 37931206.234    GM 1-sigma (km^3/s^2)  = +- 98\n  Equ. grav, ge (m/s^2) = 10.44           Pol. grav, gp (m/s^2)  = 12.14+-0.01\n  Vis. magnitude V(1,0) = -8.88          \n  Vis. mag. (opposition)= +0.67           Obliquity to orbit     = 26.73 deg\n  Sidereal orbit period = 29.447498 yr    Sidereal orbit period  = 10755.698 d\n  Mean daily motion     = 0.0334979 deg/d Mean orbit velocity    =  9.68 km/s\n  Atmos. temp. (1 bar)  = 134+-4 K        Escape speed, km/s    =  35.5          \n  Aroche(ice)/Rp        =  2.71           Hill's sphere rad. Rp  = 1100\n                                 Perihelion  Aphelion    Mean\n  Solar Constant (W/m^2)         16.8        13.6        15.1\n  Maximum Planetary IR (W/m^2)    4.7         4.5         4.6\n  Minimum Planetary IR (W/m^2)    4.7         4.5         4.6",
+    "ephemeris": [
+      {
+        "Date__(UT)__HR:MN:SC.fff": "2026-Oct-08 01:16:59.981",
+        "": "",
+        "R.A._(ICRF)": "10.84637",
+        "DEC_(ICRF)": "1.71425",
+        "Azi_(a-app)": "98.668297",
+        "Elev_(a-app)": "16.415195",
+        "APmag": "0.347",
+        "S-brt": "6.554",
+        "Illu%": "99.99817",
+        "Ang-diam": "19.70040",
+        "delta": "8.43609582802992",
+        "deldot": "1.4826374",
+        "S-O-T": "175.3626",
+        "/r": "/T",
+        "S-T-O": "0.4857"
+      },
+      {
+        "Date__(UT)__HR:MN:SC.fff": "2026-Oct-10 01:50:59.971",
+        "": "",
+        "R.A._(ICRF)": "10.70054",
+        "DEC_(ICRF)": "1.65267",
+        "Azi_(a-app)": "105.227097",
+        "Elev_(a-app)": "25.110057",
+        "APmag": "0.359",
+        "S-brt": "6.566",
+        "Illu%": "99.99640",
+        "Ang-diam": "19.69388",
+        "delta": "8.43888797205373",
+        "deldot": "2.5937190",
+        "S-O-T": "173.4912",
+        "/r": "/T",
+        "S-T-O": "0.6820"
+      }
+    ],
+    "url": "https://ssd.jpl.nasa.gov/horizons/app.html"
+  },
+  "summary": {
+    "mass": {
+      "value": 5.6836e+26,
+      "unit": "kg"
+    },
+    "radius": {
+      "value": 58232.0,
+      "unit": "km"
+    },
+    "area": {
+      "value": 42700000000.0,
+      "unit": "km²"
+    },
+    "orbital_period": {
+      "value": 10757.7365,
+      "unit": "d"
+    },
+    "rotation_period": {
+      "value": 10.7,
+      "unit": "h"
+    },
+    "v_mag": 1.2,
+    "description": "Sixth planet from the Sun"
+  },
+  "id": "saturn",
+  "path": "planets/saturn",
+  "observations": [
+    {
+      "datetime": "2026-10-09 20:51",
+      "location": "Royse City, Texas",
+      "rating": null,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 01:51",
+      "altitude_deg": 25.110057,
+      "azimuth_deg": 105.227097,
+      "ephemeris": {
+        "mag": "0.359",
+        "illuminated_pct": "99.99640",
+        "angular_diameter_arcsec": "19.69388",
+        "distance_au": "8.43888797205373",
+        "elongation_deg": "173.4912"
+      }
+    },
+    {
+      "datetime": "2026-10-07 20:17",
+      "location": "Royse City, Texas",
+      "rating": 5.0,
+      "seeing": "4/5",
+      "transparency": "4/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-08 01:17",
+      "altitude_deg": 16.415195,
+      "azimuth_deg": 98.668297,
+      "ephemeris": {
+        "mag": "0.347",
+        "illuminated_pct": "99.99817",
+        "angular_diameter_arcsec": "19.70040",
+        "distance_au": "8.43609582802992",
+        "elongation_deg": "175.3626"
+      }
+    }
+  ]
+}

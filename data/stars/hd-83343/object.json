@@ -1,0 +1,384 @@
+{
+  "name": "HD 83343",
+  "category": "stars",
+  "app_type": "F-Star",
+  "harvested": "2026-10-10T16:28:09Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2011%20Leo",
+      "retrieved": "2026-10-10T16:28:16Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_stars_in_Leo",
+      "retrieved": "2026-10-10T16:28:17Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q66491569",
+      "retrieved": "2026-10-10T16:28:18Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    }
+  },
+  "resolved": {
+    "method": "sesame:HD 83343",
+    "simbad_id": "*  11 Leo",
+    "wikidata": "Q66491569",
+    "wikipedia": "List of stars in Leo"
+  },
+  "simbad": {
+    "main_id": "*  11 Leo",
+    "ra": 144.50522875292,
+    "dec": 14.34729754123,
+    "otype": "PM*",
+    "otype_desc": "High Proper Motion Star",
+    "sp_type": "F2",
+    "plx_value": 13.9144,
+    "plx_err": 0.3183,
+    "pmra": -54.722,
+    "pmdec": -90.019,
+    "rvz_radvel": 23,
+    "rvz_redshift": 7.672268508085445e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 37,
+    "identifiers": [
+      "TIC 263540687",
+      "HIP 47266",
+      "Gaia DR3 617879393977221504",
+      "*  11 Leo",
+      "AG+14 1034",
+      "BD+15  2087",
+      "GC 13303",
+      "GCRV  6216",
+      "GEN# +1.00083343",
+      "GSC 00827-00839",
+      "HD  83343",
+      "HIC  47266",
+      "PPM 126643",
+      "SAO  98683",
+      "SKY# 18623",
+      "TD1 14119",
+      "TYC  827-839-1",
+      "UBV    9161",
+      "UBV M  15589",
+      "YZ   0  1346",
+      "YZ  14  3813",
+      "uvby98 100083343",
+      "2MASS J09380128+1420501",
+      "Gaia DR1 617879389686723456",
+      "WEB  8886",
+      "Gaia DR2 617879393977221504"
+    ],
+    "fluxes": {
+      "V": {
+        "mag": 6.614,
+        "err": 0.01
+      },
+      "B": {
+        "mag": 7.057,
+        "err": 0.016
+      },
+      "J": {
+        "mag": 5.669,
+        "err": 0.023
+      },
+      "H": {
+        "mag": 5.457,
+        "err": 0.038
+      },
+      "K": {
+        "mag": 5.428,
+        "err": 0.024
+      },
+      "G": {
+        "mag": 6.516264,
+        "err": 0.002763
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 6287,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2006A&A...450..735M"
+      },
+      {
+        "teff": 6476,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2011A&A...530A.138C"
+      }
+    ],
+    "teff_median": 6476,
+    "vsini_measurements": [
+      {
+        "vsini": 45,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 64.007,
+        "unit": "pc  ",
+        "plus_err": 0.4765,
+        "minus_err": -0.4765,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 71.868,
+        "unit": "pc  ",
+        "plus_err": 1.644,
+        "minus_err": -1.644,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "NIR",
+      "PM*",
+      "UV"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2011%20Leo"
+  },
+  "wikipedia": {
+    "title": "List of stars in Leo",
+    "description": "",
+    "summary": "\nThis is the list of notable stars in the constellation Leo, sorted by decreasing brightness.",
+    "intro": "This is the list of notable stars in the constellation Leo, sorted by decreasing brightness.",
+    "url": "https://en.wikipedia.org/wiki/List_of_stars_in_Leo",
+    "thumbnail": null,
+    "image": null,
+    "wikidata": "Q644361"
+  },
+  "wikidata": {
+    "id": "Q66491569",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "F2"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Leo"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 6.614,
+          "unit": "",
+          "plus": 0.009999999999999787,
+          "minus": 0.009999999999999787
+        },
+        {
+          "value": 7.057,
+          "unit": "",
+          "plus": 0.016000000000000014,
+          "minus": 0.016000000000000014
+        },
+        {
+          "value": 5.669,
+          "unit": "",
+          "plus": 0.023000000000000576,
+          "minus": 0.022999999999999687
+        },
+        {
+          "value": 5.457,
+          "unit": "",
+          "plus": 0.038000000000000256,
+          "minus": 0.038000000000000256
+        },
+        {
+          "value": 5.428,
+          "unit": "",
+          "plus": 0.02400000000000002,
+          "minus": 0.02400000000000002
+        },
+        {
+          "value": 6.516264,
+          "unit": "",
+          "plus": 0.002763000000000737,
+          "minus": 0.002762999999999849
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": 1.67,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 64.007,
+          "unit": "pc",
+          "plus": 0.4765000000000015,
+          "minus": 0.4765000000000015
+        },
+        {
+          "value": 71.868,
+          "unit": "pc",
+          "plus": 1.6440000000000055,
+          "minus": 1.6439999999999912
+        }
+      ],
+      "radius": [
+        {
+          "value": 3.63,
+          "unit": "R☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 6476.0,
+          "unit": "K"
+        },
+        {
+          "value": 6287.0,
+          "unit": "K"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 28.51,
+          "unit": "km/s",
+          "plus": 0.889999999999997,
+          "minus": 0.8900000000000006
+        },
+        {
+          "value": 23.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 23.0,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0
+        },
+        {
+          "value": 24.7,
+          "unit": "km/s",
+          "plus": 2.3000000000000007,
+          "minus": 2.3000000000000007
+        },
+        {
+          "value": 27.6,
+          "unit": "km/s"
+        },
+        {
+          "value": 26.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 23.6,
+          "unit": "km/s"
+        },
+        {
+          "value": 20.0,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 15.6233,
+          "unit": "mas",
+          "plus": 0.11629999999999896,
+          "minus": 0.11630000000000074
+        },
+        {
+          "value": 15.51,
+          "unit": "mas",
+          "plus": 1.2700000000000014,
+          "minus": 1.2699999999999996
+        },
+        {
+          "value": 10.18,
+          "unit": "mas",
+          "plus": 1.4399999999999995,
+          "minus": 1.4399999999999995
+        },
+        {
+          "value": 13.04,
+          "unit": "mas",
+          "plus": 0.370000000000001,
+          "minus": 0.3699999999999992
+        },
+        {
+          "value": 13.9144,
+          "unit": "mas",
+          "plus": 0.3182999999999989,
+          "minus": 0.3183000000000007
+        }
+      ],
+      "instance of": [
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 144.50522875292,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 14.34729754123,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q66491569"
+  },
+  "summary": {
+    "designation": "11 Leo",
+    "object_type": "High Proper Motion Star",
+    "spectral_type": "F2",
+    "ra_deg": 144.50522875292,
+    "dec_deg": 14.34729754123,
+    "v_mag": 6.614,
+    "distance_pc": 71.9,
+    "distance_ly": 234.4,
+    "teff_k": 6476,
+    "b_minus_v": 0.44,
+    "radius": {
+      "value": 3.63,
+      "unit": "R☉"
+    },
+    "constellation": "Leo"
+  },
+  "id": "hd-83343",
+  "path": "stars/hd-83343",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:20",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 10:20",
+      "altitude_deg": 27.1,
+      "azimuth_deg": 90.0
+    }
+  ]
+}

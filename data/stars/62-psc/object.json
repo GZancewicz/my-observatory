@@ -1,0 +1,470 @@
+{
+  "name": "62 Psc",
+  "category": "stars",
+  "app_type": "G-Star",
+  "harvested": "2026-10-10T16:32:18Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2062%20Psc",
+      "retrieved": "2026-10-10T16:32:25Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_stars_in_Pisces",
+      "retrieved": "2026-10-10T16:32:26Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q10932311",
+      "retrieved": "2026-10-10T16:32:27Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    }
+  },
+  "resolved": {
+    "method": "sesame:62 Psc",
+    "simbad_id": "*  62 Psc",
+    "wikidata": "Q10932311",
+    "wikipedia": "List of stars in Pisces"
+  },
+  "simbad": {
+    "main_id": "*  62 Psc",
+    "ra": 12.07254060673,
+    "dec": 7.29993047065,
+    "otype": "PM*",
+    "otype_desc": "High Proper Motion Star",
+    "sp_type": "G8III",
+    "plx_value": 5.4954,
+    "plx_err": 0.0371,
+    "pmra": 111.178,
+    "pmdec": 4.443,
+    "rvz_radvel": 2.0229,
+    "rvz_redshift": 6.74769084740845e-06,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 52,
+    "identifiers": [
+      "TIC 293407810",
+      "AP J00481742+0717596",
+      "HIP 3760",
+      "Gaia DR3 2556745141696841984",
+      "2MASS J00481742+0717596",
+      "*  62 Psc",
+      "AG+07   85",
+      "AGKR   663",
+      "BD+06   105",
+      "GC   958",
+      "GCRV   444",
+      "GEN# +1.00004627",
+      "GSC 00017-01413",
+      "HD   4627",
+      "HIC   3760",
+      "HR   221",
+      "PPM 143908",
+      "SAO 109470",
+      "SKY#  1243",
+      "TYC   17-1413-1",
+      "UBV     654",
+      "UBV M   7660",
+      "YZ   7   267",
+      "IRAS 00456+0701",
+      "AKARI-IRC-V1 J0048174+071759",
+      "Gaia DR1 2556745137401200128",
+      "WEB   669",
+      "Gaia DR2 2556745141696841984"
+    ],
+    "fluxes": {
+      "V": {
+        "mag": 5.912,
+        "err": 0.01
+      },
+      "H": {
+        "mag": 3.749,
+        "err": 0.246
+      },
+      "J": {
+        "mag": 4.413,
+        "err": 0.334
+      },
+      "K": {
+        "mag": 3.58,
+        "err": 0.344
+      },
+      "B": {
+        "mag": 7.026,
+        "err": 0.015
+      },
+      "G": {
+        "mag": 5.613682,
+        "err": 0.002774
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 4599,
+        "log_g": 2.05,
+        "fe_h": -0.2,
+        "bibcode": "2014ApJ...785...94L"
+      },
+      {
+        "teff": 4651,
+        "log_g": 2.3568,
+        "fe_h": -0.174,
+        "bibcode": "2020AJ....160..120J"
+      },
+      {
+        "teff": 4524,
+        "log_g": 2.192,
+        "fe_h": -0.199,
+        "bibcode": "2019ApJ...879...69T"
+      },
+      {
+        "teff": 4600,
+        "log_g": 2.17,
+        "fe_h": -0.22,
+        "bibcode": "2022A&A...663A...4S"
+      },
+      {
+        "teff": 4696,
+        "log_g": 2.46,
+        "fe_h": -0.07,
+        "bibcode": "2016ApJ...817...40F"
+      },
+      {
+        "teff": 4600,
+        "log_g": 2.3,
+        "fe_h": -0.25,
+        "bibcode": "2007A&A...475.1003H"
+      },
+      {
+        "teff": 4643,
+        "log_g": 2.29,
+        "fe_h": -0.1946,
+        "bibcode": "2022ApJS..259...35A"
+      },
+      {
+        "teff": 5636,
+        "log_g": 2.395,
+        "fe_h": -0.175,
+        "bibcode": "2022AJ....163..152S"
+      }
+    ],
+    "teff_median": 4643,
+    "vsini_measurements": [
+      {
+        "vsini": 1.2,
+        "vsini_err": 1,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 184.213,
+        "unit": "pc  ",
+        "plus_err": 2.8132,
+        "minus_err": -2.8132,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 181.97,
+        "unit": "pc  ",
+        "plus_err": 1.2285,
+        "minus_err": -1.2285,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "*",
+      "IR",
+      "NIR",
+      "PM*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2062%20Psc"
+  },
+  "wikipedia": {
+    "title": "List of stars in Pisces",
+    "description": "",
+    "summary": "\nThis is the list of notable stars in the constellation Pisces, sorted by decreasing brightness.",
+    "intro": "This is the list of notable stars in the constellation Pisces, sorted by decreasing brightness.",
+    "url": "https://en.wikipedia.org/wiki/List_of_stars_in_Pisces",
+    "thumbnail": null,
+    "image": null,
+    "wikidata": "Q1076234"
+  },
+  "wikidata": {
+    "id": "Q10932311",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "G8III"
+        },
+        {
+          "value": "K0"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Pisces"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 5.912,
+          "unit": "",
+          "plus": 0.009999999999999787,
+          "minus": 0.009999999999999787
+        },
+        {
+          "value": 7.026,
+          "unit": "",
+          "plus": 0.015000000000000568,
+          "minus": 0.01499999999999968
+        },
+        {
+          "value": 4.413,
+          "unit": "",
+          "plus": 0.33399999999999963,
+          "minus": 0.3340000000000005
+        },
+        {
+          "value": 3.749,
+          "unit": "",
+          "plus": 0.246,
+          "minus": 0.246
+        },
+        {
+          "value": 3.58,
+          "unit": "",
+          "plus": 0.34399999999999986,
+          "minus": 0.34399999999999986
+        },
+        {
+          "value": 5.613682,
+          "unit": "",
+          "plus": 0.0027740000000004983,
+          "minus": 0.00277399999999961
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -0.33,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 184.213,
+          "unit": "pc",
+          "plus": 2.813199999999995,
+          "minus": 2.813199999999995
+        },
+        {
+          "value": 181.97,
+          "unit": "pc",
+          "plus": 1.2284999999999968,
+          "minus": 1.2284999999999968
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 4599.0,
+          "unit": "K"
+        },
+        {
+          "value": 4600.0,
+          "unit": "K"
+        },
+        {
+          "value": 4696.0,
+          "unit": "K"
+        },
+        {
+          "value": 4524.0,
+          "unit": "K"
+        },
+        {
+          "value": 4651.0,
+          "unit": "K"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.25,
+          "unit": ""
+        },
+        {
+          "value": -0.2,
+          "unit": ""
+        },
+        {
+          "value": -0.2,
+          "unit": ""
+        },
+        {
+          "value": -0.07,
+          "unit": ""
+        },
+        {
+          "value": -0.199,
+          "unit": ""
+        },
+        {
+          "value": -0.174,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 112.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 200.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 290.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 155.6,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 227.4,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 1.78,
+          "unit": "km/s",
+          "plus": 0.11999999999999988,
+          "minus": 0.1200000000000001
+        },
+        {
+          "value": -0.7,
+          "unit": "km/s"
+        },
+        {
+          "value": -0.7,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0
+        },
+        {
+          "value": 1.7,
+          "unit": "km/s",
+          "plus": 0.40000000000000013,
+          "minus": 0.3999999999999999
+        },
+        {
+          "value": -0.2,
+          "unit": "km/s"
+        },
+        {
+          "value": 2.0229,
+          "unit": "km/s",
+          "plus": 0.008960000000000079,
+          "minus": 0.008960000000000079
+        }
+      ],
+      "parallax": [
+        {
+          "value": 5.4285,
+          "unit": "mas",
+          "plus": 0.08290000000000042,
+          "minus": 0.08289999999999953
+        },
+        {
+          "value": 4.93,
+          "unit": "mas",
+          "plus": 0.8200000000000003,
+          "minus": 0.8199999999999994
+        },
+        {
+          "value": 5.63,
+          "unit": "mas",
+          "plus": 0.33000000000000007,
+          "minus": 0.33000000000000007
+        },
+        {
+          "value": 6.11,
+          "unit": "mas",
+          "plus": 0.4399999999999995,
+          "minus": 0.4400000000000004
+        },
+        {
+          "value": 5.4954,
+          "unit": "mas",
+          "plus": 0.03709999999999969,
+          "minus": 0.03709999999999969
+        }
+      ],
+      "instance of": [
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "near-infrared source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 12.07254060673,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 7.29993047065,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q10932311"
+  },
+  "summary": {
+    "designation": "62 Psc",
+    "object_type": "High Proper Motion Star",
+    "spectral_type": "G8III",
+    "ra_deg": 12.07254060673,
+    "dec_deg": 7.29993047065,
+    "v_mag": 5.912,
+    "distance_pc": 182.0,
+    "distance_ly": 593.5,
+    "teff_k": 4643,
+    "b_minus_v": 1.11,
+    "constellation": "Pisces"
+  },
+  "id": "62-psc",
+  "path": "stars/62-psc",
+  "observations": [
+    {
+      "datetime": "2026-10-09 21:03",
+      "location": "Royse City, Texas",
+      "rating": 2.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 02:03",
+      "altitude_deg": 29.9,
+      "azimuth_deg": 101.4
+    }
+  ]
+}

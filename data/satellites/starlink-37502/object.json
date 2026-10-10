@@ -1,0 +1,157 @@
+{
+  "name": "STARLINK-37502",
+  "category": "satellites",
+  "app_type": "ISS/Artificial Satellites",
+  "harvested": "2026-10-10T16:06:05Z",
+  "sources": [
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Starlink",
+      "retrieved": "2026-10-10T16:06:06Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q19867977",
+      "retrieved": "2026-10-10T16:06:07Z"
+    },
+    {
+      "name": "CelesTrak",
+      "url": "https://celestrak.org/satcat/table-satcat.php?CATNR=69263",
+      "retrieved": "2026-10-10T16:06:08Z"
+    }
+  ],
+  "images": {
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Starlink_Logo_2024.svg/330px-Starlink_Logo_2024.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "celestrak",
+    "simbad_id": null,
+    "wikidata": "Q19867977",
+    "wikipedia": "Starlink"
+  },
+  "wikipedia": {
+    "title": "Starlink",
+    "description": "SpaceX satellite Internet constellation",
+    "summary": "Starlink Services, LLC is a telecommunications subsidiary of the American spaceflight company SpaceX, providing broadband Internet service in approximately 160 countries and territories. It also aims to provide global mobile broadband. SpaceX began launching Starlink satellites in 2019. As of June 2026, the network consisted of approximately 10,413 satellites in low Earth orbit (LEO) that communicate with user terminals and gateway ground stations connecting the constellation to terrestrial internet infrastructure. Starlink also provides in-flight internet access for numerous airlines. Starlink accounts for approximately 75% of all active maneuverable satellites in Earth orbit and had more than 12 million subscribers as of June 2026.",
+    "intro": "Starlink Services, LLC is a telecommunications subsidiary of the American spaceflight company SpaceX, providing broadband Internet service in approximately 160 countries and territories. It also aims to provide global mobile broadband. SpaceX began launching Starlink satellites in 2019. As of June 2026, the network consisted of approximately 10,413 satellites (10,397 operational) in low Earth orbit (LEO) that communicate with user terminals and gateway ground stations connecting the constellation to terrestrial internet infrastructure. Starlink also provides in-flight internet access for numerous airlines. Starlink accounts for approximately 75% of all active maneuverable satellites in Earth orbit and had more than 12 million subscribers as of June 2026.\nIn May 2018, SpaceX estimated the cost of designing, building, and deploying the constellation to be at least US$10 billion. By the end of 2025, Starlink had become SpaceX's largest business segment, generating $11.4 billion in revenue and $4.4 billion in operating income.\nIn addition to civilian broadband service, Starlink is also used for government and military communications, including notably in the Russo-Ukrainian war. Its large satellite constellation has been criticized by astronomers for increasing light pollution and orbital congestion.\n\n",
+    "url": "https://en.wikipedia.org/wiki/Starlink",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Starlink_Logo_2024.svg/330px-Starlink_Logo_2024.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Starlink_Logo_2024.svg/960px-Starlink_Logo_2024.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q19867977"
+  },
+  "wikidata": {
+    "id": "Q19867977",
+    "facts": {
+      "mass": [
+        {
+          "value": 227.0,
+          "unit": "kg"
+        },
+        {
+          "value": 260.0,
+          "unit": "kg"
+        },
+        {
+          "value": 295.0,
+          "unit": "kg"
+        },
+        {
+          "value": 800.0,
+          "unit": "kg"
+        },
+        {
+          "value": 1250.0,
+          "unit": "kg"
+        }
+      ],
+      "named after": [
+        {
+          "value": "The Fault in Our Stars"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "satellite internet constellation"
+        },
+        {
+          "value": "ongoing project"
+        }
+      ]
+    },
+    "commons_image": "Starlink Mission (47926144123).jpg",
+    "url": "https://www.wikidata.org/wiki/Q19867977"
+  },
+  "celestrak": {
+    "orbit": {
+      "OBJECT_NAME": "STARLINK-37502",
+      "OBJECT_ID": "2026-117AB",
+      "EPOCH": "2026-10-09T20:07:24.642624",
+      "MEAN_MOTION": 15.34391075,
+      "ECCENTRICITY": 0.00015045,
+      "INCLINATION": 53.1588,
+      "RA_OF_ASC_NODE": 63.5003,
+      "ARG_OF_PERICENTER": 77.9577,
+      "MEAN_ANOMALY": 282.1594,
+      "EPHEMERIS_TYPE": 0,
+      "CLASSIFICATION_TYPE": "U",
+      "NORAD_CAT_ID": 69263,
+      "ELEMENT_SET_NO": 999,
+      "REV_AT_EPOCH": 2063,
+      "BSTAR": 0.00094234534,
+      "MEAN_MOTION_DOT": 0.00031588,
+      "MEAN_MOTION_DDOT": 0
+    },
+    "catalog": {
+      "OBJECT_NAME": "STARLINK-37502",
+      "OBJECT_ID": "2026-117AB",
+      "NORAD_CAT_ID": 69263,
+      "OBJECT_TYPE": "PAY",
+      "OPS_STATUS_CODE": "+",
+      "OWNER": "US",
+      "LAUNCH_DATE": "2026-05-29",
+      "LAUNCH_SITE": "AFETR",
+      "DECAY_DATE": "",
+      "PERIOD": 93.84,
+      "INCLINATION": 53.16,
+      "APOGEE": 463,
+      "PERIGEE": 462,
+      "RCS": null,
+      "DATA_STATUS_CODE": "",
+      "ORBIT_CENTER": "EA",
+      "ORBIT_TYPE": "ORB"
+    },
+    "url": "https://celestrak.org/satcat/table-satcat.php?CATNR=69263"
+  },
+  "summary": {
+    "mass": {
+      "value": 227.0,
+      "unit": "kg"
+    },
+    "description": "SpaceX satellite Internet constellation",
+    "norad_id": 69263,
+    "launch_date": "2026-05-29",
+    "owner": "US",
+    "apogee_km": 463,
+    "perigee_km": 462,
+    "inclination_deg": 53.16,
+    "period_min": 93.84
+  },
+  "id": "starlink-37502",
+  "path": "satellites/starlink-37502",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:31",
+      "location": "Royse City, Texas",
+      "rating": 2.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 10:31"
+    }
+  ]
+}

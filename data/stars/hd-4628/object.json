@@ -1,0 +1,1157 @@
+{
+  "name": "HD 4628",
+  "category": "stars",
+  "app_type": "K-Star",
+  "harvested": "2026-10-10T16:15:34Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HD%20%20%204628",
+      "retrieved": "2026-10-10T16:15:43Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/HD_4628",
+      "retrieved": "2026-10-10T16:15:45Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1327549",
+      "retrieved": "2026-10-10T16:15:46Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Pisces_constellation_map.svg/330px-Pisces_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:HD 4628",
+    "simbad_id": "HD   4628",
+    "wikidata": "Q1327549",
+    "wikipedia": "HD 4628"
+  },
+  "simbad": {
+    "main_id": "HD   4628",
+    "ra": 12.095733229549584,
+    "dec": 5.280613745820556,
+    "otype": "PM*",
+    "otype_desc": "High Proper Motion Star",
+    "sp_type": "K2.5V",
+    "plx_value": 134.4948,
+    "plx_err": 0.0578,
+    "pmra": 755.894,
+    "pmdec": -1141.719,
+    "rvz_radvel": -10.165,
+    "rvz_redshift": -3.390621546117689e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 552,
+    "identifiers": [
+      "1RXS J004822.3+051729",
+      "TIC 257393898",
+      "GJ 33",
+      "HIP 3765",
+      "Gaia DR3 2552925644460225152",
+      "AP J00482303+0516497",
+      "PLX  156",
+      "LSPM J0048+0516",
+      "ASCC 1001742",
+      "2MASS J00482303+0516497",
+      "USNO-B1.0 0952-00007478",
+      "8pc 134.04",
+      "CNS5 233",
+      "AG+05   87",
+      "BD+04   123",
+      "CCDM J00483+0516A",
+      "CSI+04   123  1",
+      "Ci 20   55",
+      "FK5 1019",
+      "GC   959",
+      "GCRV   445",
+      "GEN# +1.00004628",
+      "HD   4628",
+      "HIC   3765",
+      "HR   222",
+      "IDS 00431+0446 A",
+      "IRAS 00457+0500",
+      "JP11   421",
+      "LAL  1299",
+      "LFT   73",
+      "LHS   121",
+      "LTT 10285",
+      "N30  162",
+      "NLTT  2668",
+      "PM 00458+0501",
+      "PMC 90-93   663",
+      "PPM 143910",
+      "SAO 109471",
+      "SKY#  1245",
+      "SPOCS   40",
+      "TD1   447",
+      "TYC   17-1398-1",
+      "UBV     655",
+      "UBV M   7661",
+      "Wolf   25",
+      "YZ   5   204",
+      "Zkh  14",
+      "[HFE83]   28",
+      "uvby98 100004628",
+      "PLX  156.00",
+      "2EUVE J0048+05.2",
+      "EUVE J0048+05.3",
+      "EUVE J0048+05.2",
+      "WDS J00484+0517A",
+      "GAT  131",
+      "** BUP   10A",
+      "WISEA J004823.57+051638.1",
+      "EPIC 220429217",
+      "WEB   670",
+      "Gaia DR2 2552925644460225152"
+    ],
+    "fluxes": {
+      "V": {
+        "mag": 5.74,
+        "err": 0.05
+      },
+      "B": {
+        "mag": 6.64,
+        "err": null
+      },
+      "U": {
+        "mag": 7.22,
+        "err": null
+      },
+      "R": {
+        "mag": 4.99,
+        "err": null
+      },
+      "I": {
+        "mag": 4.52,
+        "err": null
+      },
+      "G": {
+        "mag": 5.467689,
+        "err": 0.002788
+      },
+      "J": {
+        "mag": 4.367,
+        "err": 0.31
+      },
+      "H": {
+        "mag": 3.722,
+        "err": 0.23
+      },
+      "K": {
+        "mag": 3.683,
+        "err": 0.268
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 4941,
+        "log_g": 4.6,
+        "fe_h": -0.29,
+        "bibcode": "1989A&A...218L...9C"
+      },
+      {
+        "teff": 4941,
+        "log_g": 4.6,
+        "fe_h": -0.29,
+        "bibcode": "1989A&A...218...29C"
+      },
+      {
+        "teff": 4941,
+        "log_g": 4.6,
+        "fe_h": -0.29,
+        "bibcode": "1989A&A...218L...9C"
+      },
+      {
+        "teff": 4944,
+        "log_g": 4.51,
+        "fe_h": -0.27,
+        "bibcode": "2005ApJS..159..141V"
+      },
+      {
+        "teff": 4905,
+        "log_g": 4.6,
+        "fe_h": -0.36,
+        "bibcode": "2013A&A...552A.128M"
+      },
+      {
+        "teff": 5035,
+        "log_g": 4.82,
+        "fe_h": null,
+        "bibcode": "2015A&A...579A..20M"
+      },
+      {
+        "teff": 4888,
+        "log_g": 4.45,
+        "fe_h": -0.24,
+        "bibcode": "2016A&A...587A...2B"
+      },
+      {
+        "teff": 4905,
+        "log_g": 4.6,
+        "fe_h": -0.21,
+        "bibcode": "2012A&A...547A.106M"
+      },
+      {
+        "teff": 4905,
+        "log_g": 4.6,
+        "fe_h": -0.36,
+        "bibcode": "2008A&A...489..923M"
+      },
+      {
+        "teff": 4910,
+        "log_g": 4.8,
+        "fe_h": -0.27,
+        "bibcode": "1998MNRAS.299..753Z"
+      },
+      {
+        "teff": 4947,
+        "log_g": 4.64,
+        "fe_h": -0.35,
+        "bibcode": "2007A&A...465..271R"
+      },
+      {
+        "teff": 4980,
+        "log_g": 4.65,
+        "fe_h": -0.25,
+        "bibcode": "2004A&A...420..183A"
+      },
+      {
+        "teff": 5009,
+        "log_g": 4.62,
+        "fe_h": -0.24,
+        "bibcode": "2005PASJ...57...27T"
+      },
+      {
+        "teff": 5080,
+        "log_g": 4.59,
+        "fe_h": -0.3,
+        "bibcode": "2005A&A...433..647A"
+      },
+      {
+        "teff": 5150,
+        "log_g": 4.7,
+        "fe_h": -0.22,
+        "bibcode": "2005AJ....129.1063L"
+      },
+      {
+        "teff": 5150,
+        "log_g": 4.7,
+        "fe_h": -0.22,
+        "bibcode": "2006AJ....131.3069L"
+      },
+      {
+        "teff": 5150,
+        "log_g": 4.6,
+        "fe_h": -0.21,
+        "bibcode": "2003AJ....126.2015H"
+      },
+      {
+        "teff": 4916,
+        "log_g": 4.6,
+        "fe_h": null,
+        "bibcode": "2003AJ....125.1598L"
+      },
+      {
+        "teff": 5035,
+        "log_g": 4.6,
+        "fe_h": -0.27,
+        "bibcode": "2018AJ....155..111L"
+      },
+      {
+        "teff": 5044,
+        "log_g": 4.61,
+        "fe_h": -0.21,
+        "bibcode": "2017AJ....153...21L"
+      },
+      {
+        "teff": 4905,
+        "log_g": 4.6,
+        "fe_h": -0.36,
+        "bibcode": "2015MNRAS.454.1585M"
+      },
+      {
+        "teff": 4976,
+        "log_g": 4.51,
+        "fe_h": -0.2,
+        "bibcode": "2015A&A...573A..67P"
+      },
+      {
+        "teff": 4960,
+        "log_g": 4.7,
+        "fe_h": -0.23,
+        "bibcode": "2021AJ....161..134H"
+      },
+      {
+        "teff": 4997,
+        "log_g": 4.602,
+        "fe_h": -0.235,
+        "bibcode": "2021ApJS..255....8R"
+      },
+      {
+        "teff": 5007,
+        "log_g": 4.62,
+        "fe_h": -0.26,
+        "bibcode": "2022A&A...663A...4S"
+      },
+      {
+        "teff": 5829,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2022AJ....163..152S"
+      },
+      {
+        "teff": 5040,
+        "log_g": 4.64,
+        "fe_h": -0.25,
+        "bibcode": "2008A&A...480...91S"
+      },
+      {
+        "teff": 4960,
+        "log_g": 4.6,
+        "fe_h": -0.29,
+        "bibcode": "2007MNRAS.374..664C"
+      },
+      {
+        "teff": 4941,
+        "log_g": 4.6,
+        "fe_h": -0.29,
+        "bibcode": "1989A&A...218L...9C"
+      },
+      {
+        "teff": 4960,
+        "log_g": 4.6,
+        "fe_h": -0.29,
+        "bibcode": "2009A&A...508.1313F"
+      },
+      {
+        "teff": 5009,
+        "log_g": 4.62,
+        "fe_h": -0.24,
+        "bibcode": "2007PASJ...59..335T"
+      },
+      {
+        "teff": 5014,
+        "log_g": 4.67,
+        "fe_h": -0.24,
+        "bibcode": "2012A&A...541A..40M"
+      },
+      {
+        "teff": 4964,
+        "log_g": 4.65,
+        "fe_h": -0.23,
+        "bibcode": "2011A&A...531A.165P"
+      },
+      {
+        "teff": 5055,
+        "log_g": 4.33,
+        "fe_h": -0.29,
+        "bibcode": "2010ApJ...720.1290G"
+      },
+      {
+        "teff": 5012,
+        "log_g": 4.62,
+        "fe_h": -0.34,
+        "bibcode": "2011AJ....141...90L"
+      },
+      {
+        "teff": 5012,
+        "log_g": 4.68,
+        "fe_h": -0.25,
+        "bibcode": "2011AJ....141...90L"
+      },
+      {
+        "teff": 4980,
+        "log_g": 4.65,
+        "fe_h": 7.24,
+        "bibcode": "2004A&A...420..183A"
+      },
+      {
+        "teff": 4998,
+        "log_g": 4.66,
+        "fe_h": null,
+        "bibcode": "2003AJ....126.2048G"
+      },
+      {
+        "teff": 4905,
+        "log_g": 4.6,
+        "fe_h": -0.21,
+        "bibcode": "2012A&A...547A.106M"
+      },
+      {
+        "teff": 5015,
+        "log_g": 4.6,
+        "fe_h": -0.31,
+        "bibcode": "2012ApJ...756...46R"
+      },
+      {
+        "teff": 5015,
+        "log_g": 4.6,
+        "fe_h": -0.31,
+        "bibcode": "2013ApJ...764...78R"
+      },
+      {
+        "teff": 4850,
+        "log_g": 4.3,
+        "fe_h": -0.32,
+        "bibcode": "2016A&A...587A...2B"
+      },
+      {
+        "teff": 4937,
+        "log_g": 4.54,
+        "fe_h": -0.25,
+        "bibcode": "2016ApJS..225...32B"
+      },
+      {
+        "teff": 4881,
+        "log_g": 4.65,
+        "fe_h": -0.3,
+        "bibcode": "2006ApJ...652.1604B"
+      },
+      {
+        "teff": 5035,
+        "log_g": 4.61,
+        "fe_h": -0.28,
+        "bibcode": "2018A&A...614A..55A"
+      },
+      {
+        "teff": 4962,
+        "log_g": 4.433,
+        "fe_h": -0.338,
+        "bibcode": "2019A&A...629A..80H"
+      },
+      {
+        "teff": 4845,
+        "log_g": 4.65,
+        "fe_h": -0.56,
+        "bibcode": "2021MNRAS.505.4496G"
+      },
+      {
+        "teff": 4960,
+        "log_g": 4.584,
+        "fe_h": -0.2762,
+        "bibcode": "2022ApJS..259...35A"
+      },
+      {
+        "teff": 5093,
+        "log_g": 4.64,
+        "fe_h": -0.26,
+        "bibcode": "2024A&A...682A.145S"
+      },
+      {
+        "teff": 4958,
+        "log_g": 4.408,
+        "fe_h": -0.37,
+        "bibcode": "2024A&A...683A.125P"
+      },
+      {
+        "teff": 4950,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2012ApJ...757..112B"
+      },
+      {
+        "teff": 5111,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2011A&A...530A.138C"
+      }
+    ],
+    "teff_median": 4976,
+    "vsini_measurements": [
+      {
+        "vsini": 4.4,
+        "vsini_err": null,
+        "bibcode": "2009A&A...493.1099S"
+      },
+      {
+        "vsini": 4.78,
+        "vsini_err": null,
+        "bibcode": "2010A&A...520A..79M"
+      },
+      {
+        "vsini": 9.04,
+        "vsini_err": null,
+        "bibcode": "2010A&A...520A..79M"
+      },
+      {
+        "vsini": 6.3,
+        "vsini_err": null,
+        "bibcode": "2010A&A...520A..79M"
+      },
+      {
+        "vsini": 1.5,
+        "vsini_err": null,
+        "bibcode": "2012A&A...547A.106M"
+      },
+      {
+        "vsini": 2,
+        "vsini_err": 0.3,
+        "bibcode": "2014MNRAS.444.3517M"
+      },
+      {
+        "vsini": 3.2,
+        "vsini_err": null,
+        "bibcode": "2017AJ....153...21L"
+      },
+      {
+        "vsini": 3.2,
+        "vsini_err": null,
+        "bibcode": "2017AJ....153...21L"
+      },
+      {
+        "vsini": 0,
+        "vsini_err": 2.5,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 4.9,
+        "vsini_err": 0.8,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 0.3,
+        "vsini_err": 0.6,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 0.7,
+        "vsini_err": 1.5,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 2,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 1.546,
+        "vsini_err": null,
+        "bibcode": "2022ApJS..259...35A"
+      },
+      {
+        "vsini": 2.67,
+        "vsini_err": null,
+        "bibcode": "2025A&A...704A..49B"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 7.46,
+        "unit": "pc  ",
+        "plus_err": 0.048,
+        "minus_err": -0.048,
+        "method": "ST-L    ",
+        "bibcode": "2009ApJ...694.1085V"
+      },
+      {
+        "dist": 7.435,
+        "unit": "pc  ",
+        "plus_err": 0.0049,
+        "minus_err": -0.0049,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 7.4352,
+        "unit": "pc  ",
+        "plus_err": 0.0031,
+        "minus_err": -0.0031,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "*",
+      "**",
+      "IR",
+      "MIR",
+      "NIR",
+      "PM*",
+      "Ro*",
+      "UV",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HD%20%20%204628"
+  },
+  "wikipedia": {
+    "title": "HD 4628",
+    "description": "Star in the constellation Pisces",
+    "summary": "HD 4628 is a main sequence star in the equatorial constellation of Pisces. It has a spectral classification of K2.5 V and an effective temperature of 5,055 K, giving it an orange-red hue with a slightly smaller mass and girth than the Sun. HD 4628 lies at a distance of approximately 24.3 light years from the Sun based on parallax. The apparent magnitude of 5.7 is just sufficient for this star to be viewed with the unaided eye. The star appears to be slightly older than the Sun—approximately 5.4 billion years in age. The surface activity is low and, based upon the detection of UV emission, it may have a relatively cool corona with a temperature of one million K.",
+    "intro": "HD 4628 (96 G. Piscium) is a main sequence star in the equatorial constellation of Pisces. It has a spectral classification of K2.5 V and an effective temperature of 5,055 K, giving it an orange-red hue with a slightly smaller mass and girth than the Sun. HD 4628 lies at a distance of approximately 24.3 light years from the Sun based on parallax. The apparent magnitude of 5.7 is just sufficient for this star to be viewed with the unaided eye. The star appears to be slightly older than the Sun—approximately 5.4 billion years in age. The surface activity is low and, based upon the detection of UV emission, it may have a relatively cool corona with a temperature of one million K.\nThe star has a relatively high proper motion of 1.4″ per year and is moving in our general direction with a radial velocity of −10.4 km/s. HD 4628 will make its closest approach to the Sun in about 32,000 years, when it comes within 20 ly (7.3 pc). No definitive companion has yet been found in orbit around this star. In 1958 it was thought to have stellar companion that was also a flare star, but this was subsequently disproved.",
+    "url": "https://en.wikipedia.org/wiki/HD_4628",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Pisces_constellation_map.svg/330px-Pisces_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Pisces_constellation_map.svg/330px-Pisces_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q1327549"
+  },
+  "wikidata": {
+    "id": "Q1327549",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "K2.5V"
+        },
+        {
+          "value": "K2"
+        },
+        {
+          "value": "K2V"
+        },
+        {
+          "value": "K4V"
+        },
+        {
+          "value": "K1V"
+        },
+        {
+          "value": "G5"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Pisces"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 5.74,
+          "unit": "",
+          "plus": 0.04999999999999982,
+          "minus": 0.04999999999999982
+        },
+        {
+          "value": 7.22,
+          "unit": ""
+        },
+        {
+          "value": 6.64,
+          "unit": ""
+        },
+        {
+          "value": 4.99,
+          "unit": ""
+        },
+        {
+          "value": 4.52,
+          "unit": ""
+        },
+        {
+          "value": 5.4415,
+          "unit": "",
+          "plus": 0.001000000000000334,
+          "minus": 0.0009999999999994458
+        },
+        {
+          "value": 4.37,
+          "unit": "",
+          "plus": 0.3099999999999996,
+          "minus": 0.3100000000000005
+        },
+        {
+          "value": 3.72,
+          "unit": "",
+          "plus": 0.22999999999999998,
+          "minus": 0.22999999999999998
+        },
+        {
+          "value": 3.61,
+          "unit": "",
+          "plus": 0.050000000000000266,
+          "minus": 0.04999999999999982
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": 6.37,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 7.435,
+          "unit": "pc",
+          "plus": 0.0049000000000001265,
+          "minus": 0.004899999999999238
+        },
+        {
+          "value": 7.46,
+          "unit": "pc",
+          "plus": 0.04800000000000004,
+          "minus": 0.04800000000000004
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 0.28,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 4850.0,
+          "unit": "K"
+        },
+        {
+          "value": 4888.0,
+          "unit": "K"
+        },
+        {
+          "value": 4916.0,
+          "unit": "K"
+        },
+        {
+          "value": 4937.0,
+          "unit": "K"
+        },
+        {
+          "value": 4944.0,
+          "unit": "K"
+        },
+        {
+          "value": 4960.0,
+          "unit": "K"
+        },
+        {
+          "value": 4964.0,
+          "unit": "K"
+        },
+        {
+          "value": 4980.0,
+          "unit": "K"
+        },
+        {
+          "value": 4998.0,
+          "unit": "K"
+        },
+        {
+          "value": 5012.0,
+          "unit": "K"
+        },
+        {
+          "value": 5014.0,
+          "unit": "K"
+        },
+        {
+          "value": 5015.0,
+          "unit": "K"
+        },
+        {
+          "value": 5035.0,
+          "unit": "K"
+        },
+        {
+          "value": 5040.0,
+          "unit": "K"
+        },
+        {
+          "value": 5055.0,
+          "unit": "K"
+        },
+        {
+          "value": 5080.0,
+          "unit": "K"
+        },
+        {
+          "value": 5111.0,
+          "unit": "K"
+        },
+        {
+          "value": 5150.0,
+          "unit": "K"
+        },
+        {
+          "value": 5009.0,
+          "unit": "K"
+        },
+        {
+          "value": 4950.0,
+          "unit": "K"
+        },
+        {
+          "value": 4947.0,
+          "unit": "K"
+        },
+        {
+          "value": 4941.0,
+          "unit": "K"
+        },
+        {
+          "value": 4910.0,
+          "unit": "K"
+        },
+        {
+          "value": 4905.0,
+          "unit": "K"
+        },
+        {
+          "value": 4881.0,
+          "unit": "K"
+        },
+        {
+          "value": 5044.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 5.4,
+          "unit": "Gyr"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.34,
+          "unit": ""
+        },
+        {
+          "value": -0.32,
+          "unit": ""
+        },
+        {
+          "value": -0.31,
+          "unit": ""
+        },
+        {
+          "value": -0.3,
+          "unit": ""
+        },
+        {
+          "value": -0.29,
+          "unit": ""
+        },
+        {
+          "value": -0.28,
+          "unit": ""
+        },
+        {
+          "value": -0.27,
+          "unit": ""
+        },
+        {
+          "value": -0.25,
+          "unit": ""
+        },
+        {
+          "value": -0.24,
+          "unit": ""
+        },
+        {
+          "value": -0.23,
+          "unit": ""
+        },
+        {
+          "value": -0.22,
+          "unit": ""
+        },
+        {
+          "value": 7.24,
+          "unit": ""
+        },
+        {
+          "value": -0.21,
+          "unit": ""
+        },
+        {
+          "value": -0.36,
+          "unit": ""
+        },
+        {
+          "value": -0.35,
+          "unit": ""
+        },
+        {
+          "value": 7.25,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 19950.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 21380.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 28180.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 32360.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 34670.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 38900.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 39810.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 40740.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 41700.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 43700.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 44700.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 45700.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 46800.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 47900.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 50100.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 44000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 42000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 47000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 45000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 21400.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 48000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 46000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 66000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 35000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 28000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 63000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 32000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 39000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 50000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 41000.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -10.41,
+          "unit": "km/s",
+          "plus": 0.15000000000000036,
+          "minus": 0.15000000000000036
+        },
+        {
+          "value": -12.6,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0
+        },
+        {
+          "value": -9.9,
+          "unit": "km/s"
+        },
+        {
+          "value": -10.8,
+          "unit": "km/s",
+          "plus": 0.10000000000000142,
+          "minus": 0.09999999999999964
+        },
+        {
+          "value": -10.1,
+          "unit": "km/s",
+          "plus": 0.40000000000000036,
+          "minus": 0.40000000000000036
+        },
+        {
+          "value": -12.6,
+          "unit": "km/s"
+        },
+        {
+          "value": -9.9,
+          "unit": "km/s",
+          "plus": 0.7000000000000011,
+          "minus": 0.6999999999999993
+        },
+        {
+          "value": -10.8,
+          "unit": "km/s"
+        },
+        {
+          "value": -10.14,
+          "unit": "km/s",
+          "plus": 0.08000000000000007,
+          "minus": 0.08000000000000007
+        },
+        {
+          "value": -14.4,
+          "unit": "km/s"
+        },
+        {
+          "value": -11.8,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 134.499,
+          "unit": "mas",
+          "plus": 0.08899999999999864,
+          "minus": 0.08899999999999864
+        },
+        {
+          "value": 136.1,
+          "unit": "mas",
+          "plus": 2.0,
+          "minus": 2.0
+        },
+        {
+          "value": 134.04,
+          "unit": "mas",
+          "plus": 0.8600000000000136,
+          "minus": 0.8599999999999852
+        },
+        {
+          "value": 134.14,
+          "unit": "mas",
+          "plus": 0.5100000000000193,
+          "minus": 0.5099999999999909
+        }
+      ],
+      "instance of": [
+        {
+          "value": "double star"
+        },
+        {
+          "value": "rotating variable star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "K-type main-sequence star"
+        },
+        {
+          "value": "high proper-motion star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 12.0957347661402,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 5.2806137672231,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q1327549"
+  },
+  "summary": {
+    "designation": "HD 4628",
+    "object_type": "High Proper Motion Star",
+    "spectral_type": "K2.5V",
+    "ra_deg": 12.095733229549584,
+    "dec_deg": 5.280613745820556,
+    "v_mag": 5.74,
+    "distance_pc": 7.4,
+    "distance_ly": 24.3,
+    "teff_k": 4976,
+    "b_minus_v": 0.9,
+    "luminosity": {
+      "value": 0.28,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 5.4,
+      "unit": "Gyr"
+    },
+    "constellation": "Pisces",
+    "description": "Star in the constellation Pisces"
+  },
+  "id": "hd-4628",
+  "path": "stars/hd-4628",
+  "observations": [
+    {
+      "datetime": "2026-10-09 21:02",
+      "location": "Royse City, Texas",
+      "rating": 1.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 02:02",
+      "altitude_deg": 28.5,
+      "azimuth_deg": 103.2
+    }
+  ]
+}

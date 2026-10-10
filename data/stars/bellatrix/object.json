@@ -1,0 +1,591 @@
+{
+  "name": "Bellatrix",
+  "category": "stars",
+  "app_type": "B-Star",
+  "harvested": "2026-10-10T16:25:25Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20gam%20Ori",
+      "retrieved": "2026-10-10T16:25:33Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bellatrix",
+      "retrieved": "2026-10-10T16:25:34Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q13066",
+      "retrieved": "2026-10-10T16:26:04Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Orion_IAU.svg/330px-Orion_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Bellatrix",
+    "simbad_id": "* gam Ori",
+    "wikidata": "Q13066",
+    "wikipedia": "Bellatrix"
+  },
+  "simbad": {
+    "main_id": "* gam Ori",
+    "ra": 81.28276355652378,
+    "dec": 6.3497032644440665,
+    "otype": "*",
+    "otype_desc": "Star",
+    "sp_type": "B2III",
+    "plx_value": 12.92,
+    "plx_err": 0.52,
+    "pmra": -8.11,
+    "pmdec": -12.88,
+    "rvz_radvel": 17.31,
+    "rvz_redshift": 5.774161192562133e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 543,
+    "identifiers": [
+      "TIC 365572007",
+      "HIP 25336",
+      "WISE J052507.87+062058.2",
+      "PLX 1229",
+      "* gam Ori",
+      "*  24 Ori",
+      "AG+06  574",
+      "BD+06   919",
+      "CCDM J05252+0620A",
+      "CSI+06   919  1",
+      "CSV 100483",
+      "FK5  201",
+      "GC  6668",
+      "GCRV  3252",
+      "GEN# +1.00035438",
+      "GEN# +1.00035468",
+      "HD  35468",
+      "HGAM    397",
+      "HIC  25336",
+      "HR  1790",
+      "IDS 05198+0615 A",
+      "IRC +10084",
+      "JP11  1071",
+      "MCW  308",
+      "N30 1162",
+      "NAME Bellatrix",
+      "NSV  1972",
+      "PMC 90-93   144",
+      "PPM 148916",
+      "ROT   793",
+      "SAO 112740",
+      "SKY#  8617",
+      "SV* ZI   374",
+      "TD1  4558",
+      "UBV    5149",
+      "UBV M  10933",
+      "[HFE83]  375",
+      "[SC93b] 179",
+      "uvby98 100035468",
+      "ALS 14777",
+      "PLX 1229.00",
+      "1RXS J052507.7+062103",
+      "EUVE J0525+06.3",
+      "2MASS J05250786+0620589",
+      "WDS J05251+0621A",
+      "TYC  113-1856-1",
+      "IRAS 05224+0618",
+      "AKARI-IRC-V1 J0525078+062058",
+      "WEB  4913"
+    ],
+    "fluxes": {
+      "U": {
+        "mag": 0.54,
+        "err": null
+      },
+      "B": {
+        "mag": 1.42,
+        "err": null
+      },
+      "V": {
+        "mag": 1.64,
+        "err": null
+      },
+      "R": {
+        "mag": 1.73,
+        "err": null
+      },
+      "I": {
+        "mag": 1.95,
+        "err": null
+      },
+      "J": {
+        "mag": 2.149,
+        "err": 0.282
+      },
+      "H": {
+        "mag": 2.357,
+        "err": 0.168
+      },
+      "K": {
+        "mag": 2.375,
+        "err": 0.256
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 22017,
+        "log_g": 3.5093,
+        "fe_h": 0.0093,
+        "bibcode": "2023ApJS..266...11B"
+      },
+      {
+        "teff": 22570,
+        "log_g": 3.72,
+        "fe_h": -0.25,
+        "bibcode": "1992ApJ...387..673G"
+      },
+      {
+        "teff": 21700,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1995A&AS..110..553S"
+      },
+      {
+        "teff": 21700,
+        "log_g": 4,
+        "fe_h": null,
+        "bibcode": "2006MNRAS.371..252L"
+      },
+      {
+        "teff": 21840,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2009A&A...501..297Z"
+      },
+      {
+        "teff": 22570,
+        "log_g": 3.72,
+        "fe_h": -0.25,
+        "bibcode": "1992ApJ...387..673G"
+      },
+      {
+        "teff": 9954,
+        "log_g": 3.8,
+        "fe_h": -0.25,
+        "bibcode": "2008AJ....135..209M"
+      },
+      {
+        "teff": 22000,
+        "log_g": 4,
+        "fe_h": null,
+        "bibcode": "2023MNRAS.519.5472M"
+      }
+    ],
+    "teff_median": 22000,
+    "vsini_measurements": [
+      {
+        "vsini": 0,
+        "vsini_err": null,
+        "bibcode": "2008AJ....135..209M"
+      },
+      {
+        "vsini": 53.92,
+        "vsini_err": 0.84,
+        "bibcode": "2023ApJS..266...11B"
+      },
+      {
+        "vsini": 60,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 64,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 55,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 52,
+        "vsini_err": null,
+        "bibcode": "2014A&A...562A.135S"
+      },
+      {
+        "vsini": 53,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 53,
+        "vsini_err": null,
+        "bibcode": "2020A&A...639A..81B"
+      },
+      {
+        "vsini": 60,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 50,
+        "vsini_err": 10,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 55,
+        "vsini_err": 16,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 121,
+        "unit": "pc  ",
+        "plus_err": 9,
+        "minus_err": -9,
+        "method": "CaIIHK  ",
+        "bibcode": "2009A&A...507..833M"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "MIR",
+      "NIR",
+      "UV",
+      "V*",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20gam%20Ori"
+  },
+  "wikipedia": {
+    "title": "Bellatrix",
+    "description": "Star in the constellation Orion",
+    "summary": "Bellatrix is the third-brightest star in the constellation of Orion, positioned 5° west of the red supergiant Betelgeuse. It has the Bayer designation γ Orionis, which is Latinized to Gamma Orionis. With a slightly variable magnitude of around 1.6, it is typically the 25th-brightest star in the night sky. At only 244.6 light-years from the Solar System, it is the closest major star in Orion.",
+    "intro": "Bellatrix is the third-brightest star in the constellation of Orion, positioned 5° west of the red supergiant Betelgeuse (Alpha Orionis). It has the Bayer designation γ Orionis, which is Latinized to Gamma Orionis. With a slightly variable magnitude of around 1.6, it is typically the 25th-brightest star in the night sky. At only 244.6 light-years from the Solar System, it is the closest major star in Orion.\n\n",
+    "url": "https://en.wikipedia.org/wiki/Bellatrix",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Orion_IAU.svg/330px-Orion_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Orion_IAU.svg/960px-Orion_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q13066"
+  },
+  "wikidata": {
+    "id": "Q13066",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "B2III"
+        },
+        {
+          "value": "B2V"
+        },
+        {
+          "value": "B2 IV SB:"
+        },
+        {
+          "value": "B2"
+        },
+        {
+          "value": "B2IVSB:"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Orion"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 1.64,
+          "unit": ""
+        },
+        {
+          "value": 0.54,
+          "unit": ""
+        },
+        {
+          "value": 1.42,
+          "unit": ""
+        },
+        {
+          "value": 1.73,
+          "unit": ""
+        },
+        {
+          "value": 1.95,
+          "unit": ""
+        },
+        {
+          "value": 2.17,
+          "unit": ""
+        },
+        {
+          "value": 2.24,
+          "unit": ""
+        },
+        {
+          "value": 2.32,
+          "unit": ""
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -2.8,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 121.0,
+          "unit": "pc",
+          "plus": 9.0,
+          "minus": 9.0
+        }
+      ],
+      "mass": [
+        {
+          "value": 8.4,
+          "unit": "M☉"
+        }
+      ],
+      "radius": [
+        {
+          "value": 6.0,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 6400.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 22570.0,
+          "unit": "K"
+        },
+        {
+          "value": 21840.0,
+          "unit": "K"
+        },
+        {
+          "value": 21700.0,
+          "unit": "K"
+        },
+        {
+          "value": 9954.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 25.2,
+          "unit": "Q20764"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.25,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 5200.0,
+          "unit": "Q39699418"
+        },
+        {
+          "value": 6000.0,
+          "unit": "Q39699418"
+        },
+        {
+          "value": 10000.0,
+          "unit": "Q39699418"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 18.2,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 18.2,
+          "unit": "Q3674704",
+          "plus": 0.9000000000000021,
+          "minus": 0.8999999999999986
+        },
+        {
+          "value": 350.42,
+          "unit": "Q3674704",
+          "plus": 1.839999999999975,
+          "minus": 1.8400000000000318
+        },
+        {
+          "value": 18.2,
+          "unit": "Q3674704",
+          "plus": 0.9000000000000021,
+          "minus": 0.8999999999999986
+        },
+        {
+          "value": 20.8,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 18.7,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 17.9,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 18.9,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 14.4,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 18.0,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 18.1,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 5.5,
+          "unit": "Q3674704"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 27.9,
+          "unit": "mas",
+          "plus": 15.0,
+          "minus": 14.999999999999998
+        },
+        {
+          "value": 12.92,
+          "unit": "mas",
+          "plus": 0.5199999999999996,
+          "minus": 0.5199999999999996
+        },
+        {
+          "value": 13.42,
+          "unit": "mas",
+          "plus": 0.9800000000000004,
+          "minus": 0.9800000000000004
+        }
+      ],
+      "instance of": [
+        {
+          "value": "suspected variable"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "optical double"
+        },
+        {
+          "value": "navigational star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "binary star"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 81.282763557,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 6.349703264,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Bellatrix DSS.png",
+    "url": "https://www.wikidata.org/wiki/Q13066"
+  },
+  "summary": {
+    "designation": "gam Ori",
+    "object_type": "Star",
+    "spectral_type": "B2III",
+    "ra_deg": 81.28276355652378,
+    "dec_deg": 6.3497032644440665,
+    "v_mag": 1.64,
+    "distance_pc": 77.4,
+    "distance_ly": 252.4,
+    "teff_k": 22000,
+    "b_minus_v": -0.22,
+    "mass": {
+      "value": 8.4,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 6.0,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 6400.0,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 25.2,
+      "unit": "Q20764"
+    },
+    "constellation": "Orion",
+    "description": "Star in the constellation Orion"
+  },
+  "id": "bellatrix",
+  "path": "stars/bellatrix",
+  "observations": [
+    {
+      "datetime": "2026-10-06 05:28",
+      "location": "Royse City, Texas",
+      "rating": 4.0,
+      "seeing": "4/5",
+      "transparency": "4/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-06 10:28",
+      "altitude_deg": 62.9,
+      "azimuth_deg": 167.9
+    }
+  ]
+}

@@ -1,0 +1,526 @@
+{
+  "name": "Caph",
+  "category": "stars",
+  "app_type": "F-Star",
+  "harvested": "2026-10-10T16:19:05Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20bet%20Cas",
+      "retrieved": "2026-10-10T16:19:12Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Beta_Cassiopeiae",
+      "retrieved": "2026-10-10T16:19:13Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q13594",
+      "retrieved": "2026-10-10T16:19:14Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cassiopeia_constellation_map.svg/330px-Cassiopeia_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Caph",
+    "simbad_id": "* bet Cas",
+    "wikidata": "Q13594",
+    "wikipedia": "Beta Cassiopeiae"
+  },
+  "simbad": {
+    "main_id": "* bet Cas",
+    "ra": 2.2945215777878776,
+    "dec": 59.14978109800713,
+    "otype": "dS*",
+    "otype_desc": "delta Sct Variable",
+    "sp_type": "F2III",
+    "plx_value": 59.58,
+    "plx_err": 0.38,
+    "pmra": 523.5,
+    "pmdec": -179.77,
+    "rvz_radvel": 4.3,
+    "rvz_redshift": 1.4343358959445496e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 556,
+    "identifiers": [
+      "GJ 8",
+      "HIP 746",
+      "Gaia DR3 423018377034969216",
+      "CNS5 43",
+      "2MASS J00091071+5908591",
+      "LSPM J0009+5908",
+      "ASCC  155033",
+      "USNO-B1.0 1491-00004186",
+      "PLX   16",
+      "* bet Cas",
+      "*  11 Cas",
+      "2E    20",
+      "ADS   107 A",
+      "AG+58   16",
+      "BD+58     3",
+      "CCDM J00092+5909A",
+      "CEL     30",
+      "CSI+58     3  1",
+      "Ci 20   10",
+      "FK5    2",
+      "GC   147",
+      "GCRV    69",
+      "GEN# +1.00000432",
+      "HD    432",
+      "HIC    746",
+      "HR    21",
+      "IDS 00038+5836 A",
+      "IRAS 00065+5852",
+      "IRC +60004",
+      "JP11   346",
+      "LFT   15",
+      "LHS  1027",
+      "LTT 10046",
+      "N30   17",
+      "NAME Caph",
+      "TIC 396298498",
+      "NLTT   389",
+      "PMC 90-93     2",
+      "PPM  25054",
+      "RAFGL   21",
+      "ROT    60",
+      "SAO  21133",
+      "SKY#   277",
+      "TD1    38",
+      "UBV      63",
+      "UBV M   7167",
+      "USNO-A2.0 1425-00225287",
+      "V* bet Cas",
+      "[HFE83]    5",
+      "PLX   16.00",
+      "1RXS J000910.1+590903",
+      "2E 0006.5+5851",
+      "WDS J00092+5909A",
+      "TYC 3664-1985-1",
+      "uvby98 100000432",
+      "WEB   125"
+    ],
+    "fluxes": {
+      "I": {
+        "mag": 1.77,
+        "err": null
+      },
+      "K": {
+        "mag": 1.44,
+        "err": null
+      },
+      "H": {
+        "mag": 1.43,
+        "err": null
+      },
+      "J": {
+        "mag": 1.63,
+        "err": null
+      },
+      "B": {
+        "mag": 2.61,
+        "err": null
+      },
+      "V": {
+        "mag": 2.27,
+        "err": null
+      },
+      "U": {
+        "mag": 2.73,
+        "err": null
+      },
+      "R": {
+        "mag": 1.97,
+        "err": null
+      },
+      "G": {
+        "mag": 2.232691,
+        "err": 0.007252
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 6792,
+        "log_g": 3.59,
+        "fe_h": -0.15,
+        "bibcode": "2003A&A...398.1121E"
+      },
+      {
+        "teff": 6915,
+        "log_g": 3.49,
+        "fe_h": null,
+        "bibcode": "2003AJ....126.2048G"
+      },
+      {
+        "teff": 6810,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1995A&AS..110..553S"
+      },
+      {
+        "teff": 6959,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2011A&A...530A.138C"
+      }
+    ],
+    "teff_median": 6915,
+    "vsini_measurements": [
+      {
+        "vsini": 71,
+        "vsini_err": null,
+        "bibcode": "2009A&A...493.1099S"
+      },
+      {
+        "vsini": 85,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 72,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 69,
+        "vsini_err": null,
+        "bibcode": "2000A&AS..144..469R"
+      },
+      {
+        "vsini": 70,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 50,
+        "vsini_err": 10,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 69.1,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 74,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "dS*",
+      "IR",
+      "NIR",
+      "PM*",
+      "UV",
+      "V*",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20bet%20Cas"
+  },
+  "wikipedia": {
+    "title": "Beta Cassiopeiae",
+    "description": "Second-brightest star in the constellation Cassiopeia",
+    "summary": "Beta Cassiopeiae is a Delta Scuti variable star in the constellation of Cassiopeia. It has the proper name Caph, pronounced ; Beta Cassiopeiae is its Bayer designation, which is Latinized from β Cassiopeiae and abbreviated Beta Cas or β Cas. This is a giant star belonging to the spectral class F2. This white star of second magnitude has an absolute magnitude of +1.3 mag.",
+    "intro": "Beta Cassiopeiae is a Delta Scuti variable star in the constellation of Cassiopeia. It has the proper name Caph, pronounced ; Beta Cassiopeiae is its Bayer designation, which is Latinized from β Cassiopeiae and abbreviated Beta Cas or β Cas. This is a giant star belonging to the spectral class F2. This white star of second magnitude (+2.28 mag, variable) has an absolute magnitude of +1.3 mag.",
+    "url": "https://en.wikipedia.org/wiki/Beta_Cassiopeiae",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cassiopeia_constellation_map.svg/330px-Cassiopeia_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cassiopeia_constellation_map.svg/330px-Cassiopeia_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q13594"
+  },
+  "wikidata": {
+    "id": "Q13594",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "F2IV"
+        },
+        {
+          "value": "F2III"
+        },
+        {
+          "value": "F1"
+        },
+        {
+          "value": "F2III-IV"
+        },
+        {
+          "value": "F2 IV SB"
+        },
+        {
+          "value": "F5"
+        },
+        {
+          "value": "F2IVSB"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Cassiopeia"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 2.27,
+          "unit": ""
+        },
+        {
+          "value": 2.73,
+          "unit": ""
+        },
+        {
+          "value": 2.61,
+          "unit": ""
+        },
+        {
+          "value": 1.97,
+          "unit": ""
+        },
+        {
+          "value": 1.77,
+          "unit": ""
+        },
+        {
+          "value": 1.63,
+          "unit": ""
+        },
+        {
+          "value": 1.43,
+          "unit": ""
+        },
+        {
+          "value": 1.44,
+          "unit": ""
+        },
+        {
+          "value": 2.232691,
+          "unit": "",
+          "plus": 0.007251999999999814,
+          "minus": 0.007251999999999814
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": 1.3,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 54.4,
+          "unit": "ly"
+        }
+      ],
+      "diameter": [
+        {
+          "value": 2340000.0,
+          "unit": "km"
+        },
+        {
+          "value": 4680000.0,
+          "unit": "km"
+        },
+        {
+          "value": 5270000.0,
+          "unit": "km",
+          "plus": 55700.0,
+          "minus": 55700.0
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 6915.0,
+          "unit": "K"
+        },
+        {
+          "value": 6959.0,
+          "unit": "K"
+        },
+        {
+          "value": 6810.0,
+          "unit": "K"
+        },
+        {
+          "value": 6792.0,
+          "unit": "K"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.15,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 3100.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 3900.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 4.3,
+          "unit": "km/s",
+          "plus": 0.7999999999999998,
+          "minus": 0.7999999999999998
+        },
+        {
+          "value": 11.3,
+          "unit": "km/s"
+        },
+        {
+          "value": 9.4,
+          "unit": "km/s"
+        },
+        {
+          "value": 14.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 11.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 8.3,
+          "unit": "km/s"
+        },
+        {
+          "value": 11.2,
+          "unit": "km/s"
+        },
+        {
+          "value": 12.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 11.8,
+          "unit": "km/s",
+          "plus": 0.8999999999999986,
+          "minus": 0.9000000000000004
+        }
+      ],
+      "parallax": [
+        {
+          "value": 69.5,
+          "unit": "mas",
+          "plus": 6.599999999999994,
+          "minus": 6.600000000000001
+        },
+        {
+          "value": 59.58,
+          "unit": "mas",
+          "plus": 0.38000000000000256,
+          "minus": 0.37999999999999545
+        },
+        {
+          "value": 59.89,
+          "unit": "mas",
+          "plus": 0.5600000000000023,
+          "minus": 0.5600000000000023
+        }
+      ],
+      "instance of": [
+        {
+          "value": "double star"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "Delta Scuti variable"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 2.294521578,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 59.149781098,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Cassiopeia starfield.jpg",
+    "url": "https://www.wikidata.org/wiki/Q13594"
+  },
+  "summary": {
+    "designation": "bet Cas",
+    "object_type": "delta Sct Variable",
+    "spectral_type": "F2III",
+    "ra_deg": 2.2945215777878776,
+    "dec_deg": 59.14978109800713,
+    "v_mag": 2.27,
+    "distance_pc": 16.8,
+    "distance_ly": 54.7,
+    "teff_k": 6915,
+    "b_minus_v": 0.34,
+    "constellation": "Cassiopeia",
+    "description": "Second-brightest star in the constellation Cassiopeia"
+  },
+  "id": "caph",
+  "path": "stars/caph",
+  "observations": [
+    {
+      "datetime": "2026-10-07 20:23",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-08 01:23",
+      "altitude_deg": 42.4,
+      "azimuth_deg": 37.5
+    },
+    {
+      "datetime": "2026-10-07 20:08",
+      "location": "Royse City, Texas",
+      "rating": 2.0,
+      "seeing": "2/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-08 01:08",
+      "altitude_deg": 40.5,
+      "azimuth_deg": 37.7
+    }
+  ]
+}

@@ -1,0 +1,298 @@
+{
+  "name": "HD 87178",
+  "category": "stars",
+  "app_type": "F-Star",
+  "harvested": "2026-10-10T16:33:20Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HD%20%2087178",
+      "retrieved": "2026-10-10T16:33:27Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q66551937",
+      "retrieved": "2026-10-10T16:33:28Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    }
+  },
+  "resolved": {
+    "method": "sesame:HD 87178",
+    "simbad_id": "HD  87178",
+    "wikidata": "Q66551937",
+    "wikipedia": null
+  },
+  "simbad": {
+    "main_id": "HD  87178",
+    "ra": 150.88842134195,
+    "dec": 9.89899134363,
+    "otype": "*",
+    "otype_desc": "Star",
+    "sp_type": "F6III",
+    "plx_value": 12.0394,
+    "plx_err": 0.0288,
+    "pmra": -23.419,
+    "pmdec": -13.336,
+    "rvz_radvel": -22.66,
+    "rvz_redshift": -7.558276759445093e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 27,
+    "identifiers": [
+      "TIC 411120781",
+      "HIP 49279",
+      "Gaia DR3 3878431854281666816",
+      "AG+10 1292",
+      "AGKR  9050",
+      "BD+10  2100",
+      "GC 13815",
+      "GSC 00830-00317",
+      "HD  87178",
+      "HIC  49279",
+      "PMC 90-93  3141",
+      "PPM 156458",
+      "SAO  98924",
+      "SKY# 19371",
+      "TD1 14520",
+      "TYC  830-317-1",
+      "YZ  10  3933",
+      "uvby98 100087178",
+      "2MASS J10033322+0953563",
+      "Gaia DR1 3878431849986459008",
+      "GEN# +1.00087178",
+      "Gaia DR2 3878431854281666816"
+    ],
+    "fluxes": {
+      "J": {
+        "mag": 6.334,
+        "err": 0.023
+      },
+      "H": {
+        "mag": 6.213,
+        "err": 0.031
+      },
+      "K": {
+        "mag": 6.109,
+        "err": 0.024
+      },
+      "V": {
+        "mag": 7.14,
+        "err": 0.01
+      },
+      "B": {
+        "mag": 7.55,
+        "err": 0.01
+      },
+      "G": {
+        "mag": 7.050406,
+        "err": 0.002764
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 6797,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2011A&A...530A.138C"
+      }
+    ],
+    "teff_median": 6797,
+    "vsini_measurements": [
+      {
+        "vsini": 30,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 83.061,
+        "unit": "pc  ",
+        "plus_err": 0.1987,
+        "minus_err": -0.1987,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      },
+      {
+        "dist": 85.0673,
+        "unit": "pc  ",
+        "plus_err": 0.7533,
+        "minus_err": -0.7533,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "NIR",
+      "UV"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=HD%20%2087178"
+  },
+  "wikidata": {
+    "id": "Q66551937",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "F6III"
+        },
+        {
+          "value": "F2"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 7.14,
+          "unit": "",
+          "plus": 0.010000000000000675,
+          "minus": 0.009999999999999787
+        },
+        {
+          "value": 7.55,
+          "unit": "",
+          "plus": 0.009999999999999787,
+          "minus": 0.009999999999999787
+        },
+        {
+          "value": 7.0348,
+          "unit": "",
+          "plus": 0.00039999999999995595,
+          "minus": 0.00039999999999995595
+        },
+        {
+          "value": 6.334,
+          "unit": "",
+          "plus": 0.023000000000000576,
+          "minus": 0.022999999999999687
+        },
+        {
+          "value": 6.213,
+          "unit": "",
+          "plus": 0.030999999999999694,
+          "minus": 0.030999999999999694
+        },
+        {
+          "value": 6.109,
+          "unit": "",
+          "plus": 0.02400000000000002,
+          "minus": 0.02400000000000002
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 85.0673,
+          "unit": "pc",
+          "plus": 0.7532999999999959,
+          "minus": 0.7533000000000101
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 6797.0,
+          "unit": "K"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -22.66,
+          "unit": "km/s",
+          "plus": 0.75,
+          "minus": 0.75
+        },
+        {
+          "value": -22.3,
+          "unit": "km/s",
+          "plus": 5.0,
+          "minus": 5.0
+        },
+        {
+          "value": -22.0,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 11.7554,
+          "unit": "mas",
+          "plus": 0.10410000000000075,
+          "minus": 0.10409999999999897
+        },
+        {
+          "value": 12.79,
+          "unit": "mas",
+          "plus": 0.8400000000000016,
+          "minus": 0.8399999999999999
+        },
+        {
+          "value": 11.97,
+          "unit": "mas",
+          "plus": 0.6600000000000001,
+          "minus": 0.6600000000000001
+        },
+        {
+          "value": 12.29,
+          "unit": "mas",
+          "plus": 0.23000000000000043,
+          "minus": 0.22999999999999865
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "infrared source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 150.8884184599361,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 9.8989895838664,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q66551937"
+  },
+  "summary": {
+    "designation": "HD 87178",
+    "object_type": "Star",
+    "spectral_type": "F6III",
+    "ra_deg": 150.88842134195,
+    "dec_deg": 9.89899134363,
+    "v_mag": 7.14,
+    "distance_pc": 83.1,
+    "distance_ly": 270.9,
+    "teff_k": 6797,
+    "b_minus_v": 0.41
+  },
+  "id": "hd-87178",
+  "path": "stars/hd-87178",
+  "observations": [
+    {
+      "datetime": "2026-10-08 06:37",
+      "location": "Royse City, Texas",
+      "rating": 2.0,
+      "seeing": "2/5",
+      "transparency": "2/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-08 11:37",
+      "altitude_deg": 33.9,
+      "azimuth_deg": 100.9
+    }
+  ]
+}

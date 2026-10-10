@@ -1,0 +1,1104 @@
+{
+  "name": "Sirius",
+  "category": "stars",
+  "app_type": "A-Star",
+  "harvested": "2026-10-10T16:10:12Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20CMa",
+      "retrieved": "2026-10-10T16:10:19Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sirius",
+      "retrieved": "2026-10-10T16:10:19Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q13415844",
+      "retrieved": "2026-10-10T16:10:20Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/330px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Sirius",
+    "simbad_id": "* alf CMa",
+    "wikidata": "Q13415844",
+    "wikipedia": "Sirius"
+  },
+  "simbad": {
+    "main_id": "* alf CMa",
+    "ra": 101.28715533333335,
+    "dec": -16.71611586111111,
+    "otype": "SB*",
+    "otype_desc": "Spectroscopic Binary",
+    "sp_type": "A0mA1Va",
+    "plx_value": 379.21,
+    "plx_err": 1.58,
+    "pmra": -546.01,
+    "pmdec": -1223.07,
+    "rvz_radvel": -5.5,
+    "rvz_redshift": -1.834585695059676e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 1622,
+    "identifiers": [
+      "** AGC    1A",
+      "PLX 1577",
+      "SBC9 416",
+      "* alf CMa A",
+      "8pc 379.21A",
+      "ADS  5423 A",
+      "CCDM J06451-1643A",
+      "CEL   1368",
+      "CSI-16  1591  1",
+      "Ci 20  396",
+      "FK5  257",
+      "GAT  474",
+      "GCRV  4392",
+      "GEN# +1.00048915A",
+      "HGAM    556",
+      "IDS 06408-1635 A",
+      "JP11  1425",
+      "LFT  486",
+      "LPM 243",
+      "LTT  2638",
+      "N30 1470",
+      "NAME Sirius A",
+      "NLTT 16953",
+      "PM 06430-1639A",
+      "PMC 90-93   186",
+      "PPM 217626",
+      "ROT  1088",
+      "SBC7   288",
+      "SKY# 11855",
+      "UBV M  12413",
+      "USNO 816",
+      "Zkh  91",
+      "uvby98 100048915 A",
+      "WDS J06451-1643A",
+      "TYC 5949-2777-1",
+      "Renson 13090",
+      "BD-16  1591A",
+      "HD  48915A",
+      "TIC 322899250",
+      "GJ 244 A",
+      "HIP 32349",
+      "CNS5 1676",
+      "* alf CMa",
+      "HR  2491",
+      "LHS   219",
+      "GC  8833",
+      "SAO 151881",
+      "*   9 CMa",
+      "BD-16  1591",
+      "HD  48915",
+      "NSV 17173",
+      "TD1  8027",
+      "UBV    6709",
+      "IRC -20105",
+      "RAFGL 1007",
+      "IRAS 06429-1639",
+      "2MASS J06450887-1642566",
+      "NAME Sirius",
+      "HIC  32349",
+      "IRAS S06429-1639",
+      "IRAS S06430-1639",
+      "AKARI-FIS-V1 J0645085-164258",
+      "WEB  6525"
+    ],
+    "fluxes": {
+      "J": {
+        "mag": -1.36,
+        "err": null
+      },
+      "K": {
+        "mag": -1.35,
+        "err": null
+      },
+      "H": {
+        "mag": -1.33,
+        "err": null
+      },
+      "B": {
+        "mag": -1.46,
+        "err": null
+      },
+      "V": {
+        "mag": -1.46,
+        "err": null
+      },
+      "U": {
+        "mag": -1.51,
+        "err": null
+      },
+      "R": {
+        "mag": -1.46,
+        "err": null
+      },
+      "I": {
+        "mag": -1.43,
+        "err": null
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 9333,
+        "log_g": null,
+        "fe_h": 0.7,
+        "bibcode": "1962ApJ...135..459W"
+      },
+      {
+        "teff": 9692,
+        "log_g": 4.3,
+        "fe_h": 0.81,
+        "bibcode": "1964ZA.....60..115K"
+      },
+      {
+        "teff": 9000,
+        "log_g": 4,
+        "fe_h": 0.71,
+        "bibcode": "1966ApJ...146..880S"
+      },
+      {
+        "teff": 10080,
+        "log_g": 4.44,
+        "fe_h": -0.36,
+        "bibcode": "1966MNRAS.133..389W"
+      },
+      {
+        "teff": 10500,
+        "log_g": 3.5,
+        "fe_h": 0.4,
+        "bibcode": "1967cmrs..R....339A"
+      },
+      {
+        "teff": 10080,
+        "log_g": 4.2,
+        "fe_h": 0.8,
+        "bibcode": "1968Obs....88..160S"
+      },
+      {
+        "teff": 9692,
+        "log_g": 4.3,
+        "fe_h": 0.87,
+        "bibcode": "1969A&A.....3..169G"
+      },
+      {
+        "teff": 10286,
+        "log_g": 4.3,
+        "fe_h": 0.82,
+        "bibcode": "1970SAOSR.321....1L"
+      },
+      {
+        "teff": 9882,
+        "log_g": null,
+        "fe_h": 0.4,
+        "bibcode": "1978ApJ...219..515B"
+      },
+      {
+        "teff": 9000,
+        "log_g": null,
+        "fe_h": 0,
+        "bibcode": "1978ApJ...219..515B"
+      },
+      {
+        "teff": 10080,
+        "log_g": 4.3,
+        "fe_h": 0.6,
+        "bibcode": "1981ApJ...248.1031B"
+      },
+      {
+        "teff": 9882,
+        "log_g": 4.3,
+        "fe_h": 0.26,
+        "bibcode": "1989A&A...225..125L"
+      },
+      {
+        "teff": 9870,
+        "log_g": 4.4,
+        "fe_h": 0.25,
+        "bibcode": "1991A&A...249..205B"
+      },
+      {
+        "teff": 9870,
+        "log_g": 4.32,
+        "fe_h": 0.12,
+        "bibcode": "1993A&A...276..142H"
+      },
+      {
+        "teff": 9692,
+        "log_g": 4.3,
+        "fe_h": 0.81,
+        "bibcode": "1964ZA.....60..115K"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.28,
+        "bibcode": "1995A&A...294..536H"
+      },
+      {
+        "teff": 9580,
+        "log_g": 4.2,
+        "fe_h": null,
+        "bibcode": "2003AJ....126.2048G"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.28,
+        "bibcode": "1995A&A...294..536H"
+      },
+      {
+        "teff": 10080,
+        "log_g": 4.2,
+        "fe_h": 0.8,
+        "bibcode": "1968Obs....88..160S"
+      },
+      {
+        "teff": 10080,
+        "log_g": 4.3,
+        "fe_h": 0.6,
+        "bibcode": "1981ApJ...248.1031B"
+      },
+      {
+        "teff": 10080,
+        "log_g": 4.44,
+        "fe_h": -0.36,
+        "bibcode": "1966MNRAS.133..389W"
+      },
+      {
+        "teff": 10286,
+        "log_g": 4.3,
+        "fe_h": 0.82,
+        "bibcode": "1970SAOSR.321....1L"
+      },
+      {
+        "teff": 10500,
+        "log_g": 3.5,
+        "fe_h": 0.4,
+        "bibcode": "1967cmrs..R....339A"
+      },
+      {
+        "teff": 9000,
+        "log_g": null,
+        "fe_h": 0,
+        "bibcode": "1978ApJ...219..515B"
+      },
+      {
+        "teff": 9000,
+        "log_g": 4,
+        "fe_h": 0.71,
+        "bibcode": "1966ApJ...146..880S"
+      },
+      {
+        "teff": 9333,
+        "log_g": null,
+        "fe_h": 0.7,
+        "bibcode": "1962ApJ...135..459W"
+      },
+      {
+        "teff": 9692,
+        "log_g": 4.3,
+        "fe_h": 0.87,
+        "bibcode": "1969A&A.....3..169G"
+      },
+      {
+        "teff": 9705,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2013ApJ...771...40B"
+      },
+      {
+        "teff": 9707,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2013ApJ...771...40B"
+      },
+      {
+        "teff": 9711,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2013ApJ...771...40B"
+      },
+      {
+        "teff": 9744,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2013ApJ...771...40B"
+      },
+      {
+        "teff": 9797,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2013ApJ...771...40B"
+      },
+      {
+        "teff": 9824,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2013ApJ...771...40B"
+      },
+      {
+        "teff": 9870,
+        "log_g": 4.4,
+        "fe_h": 0.49,
+        "bibcode": "1997A&A...323..901H"
+      },
+      {
+        "teff": 9870,
+        "log_g": 4.32,
+        "fe_h": 0.12,
+        "bibcode": "1993A&A...276..142H"
+      },
+      {
+        "teff": 9870,
+        "log_g": 4.4,
+        "fe_h": 0.25,
+        "bibcode": "1991A&A...249..205B"
+      },
+      {
+        "teff": 9880,
+        "log_g": 4.4,
+        "fe_h": 0.5,
+        "bibcode": "2001ApJ...548..953Q"
+      },
+      {
+        "teff": 9882,
+        "log_g": null,
+        "fe_h": 0.4,
+        "bibcode": "1978ApJ...219..515B"
+      },
+      {
+        "teff": 9882,
+        "log_g": 4.3,
+        "fe_h": 0.26,
+        "bibcode": "1989A&A...225..125L"
+      },
+      {
+        "teff": 9800,
+        "log_g": 4.2,
+        "fe_h": 0.2,
+        "bibcode": "2016A&A...589A..83G"
+      },
+      {
+        "teff": 9850,
+        "log_g": 4.3,
+        "fe_h": 0.4,
+        "bibcode": "2018MNRAS.477.3343S"
+      },
+      {
+        "teff": 8829,
+        "log_g": 4.083,
+        "fe_h": 0.045,
+        "bibcode": "2023ApJS..266...11B"
+      },
+      {
+        "teff": 9850,
+        "log_g": 4.3,
+        "fe_h": 0.4,
+        "bibcode": "2025A&A...698A..93J"
+      }
+    ],
+    "teff_median": 9850,
+    "vsini_measurements": [
+      {
+        "vsini": 16.7,
+        "vsini_err": 0.4,
+        "bibcode": "2011A&A...531A.143D"
+      },
+      {
+        "vsini": 16.9,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 5,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 0,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 15,
+        "vsini_err": null,
+        "bibcode": "1995ApJS...99..135A"
+      },
+      {
+        "vsini": 16,
+        "vsini_err": null,
+        "bibcode": "2002A&A...393..897R"
+      },
+      {
+        "vsini": 18,
+        "vsini_err": null,
+        "bibcode": "2016A&A...589A..83G"
+      },
+      {
+        "vsini": 14.41,
+        "vsini_err": 1.59,
+        "bibcode": "2023ApJS..266...11B"
+      },
+      {
+        "vsini": 15,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 10,
+        "vsini_err": 2,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 17,
+        "vsini_err": 1,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 16,
+        "vsini_err": 1,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 19,
+        "vsini_err": 1,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 16,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 15.3,
+        "vsini_err": 0.3,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 16.2,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 15,
+        "vsini_err": 10,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 16.5,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 18,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 17,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 16.2,
+        "vsini_err": 0.6,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 16.7,
+        "vsini_err": null,
+        "bibcode": "2025A&A...698A..93J"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "FIR",
+      "IR",
+      "NIR",
+      "PM*",
+      "SB*",
+      "UV",
+      "V*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20CMa"
+  },
+  "wikipedia": {
+    "title": "Sirius",
+    "description": "Brightest star in Earth's night sky",
+    "summary": "Sirius is the brightest star in the night sky, located in the southern constellation of Canis Major. Its name is derived from the Ancient Greek word Σείριος. The star is designated α Canis Majoris, Romanized to Alpha Canis Majoris, and abbreviated α CMa or Alpha CMa. With a visual apparent magnitude of −1.46, Sirius is almost twice as bright as Canopus, the next brightest star. Sirius is a binary star consisting of a main-sequence star of spectral type A0 or A1, termed Sirius A, and a faint white dwarf companion of spectral type DA2, termed Sirius B. The distance between the two varies between 8.2 and 31.5 astronomical units as they orbit every 50 years.",
+    "intro": "Sirius is the brightest star in the night sky, located in the southern constellation of Canis Major. Its name is derived from the Ancient Greek word Σείριος (Latin script: Seirios; lit. 'glowing' or 'scorching'). The star is designated α Canis Majoris, Romanized to Alpha Canis Majoris, and abbreviated α CMa or Alpha CMa. With a visual apparent magnitude of −1.46, Sirius is almost twice as bright as Canopus, the next brightest star. Sirius is a binary star consisting of a main-sequence star of spectral type A0 or A1, termed Sirius A, and a faint white dwarf companion of spectral type DA2, termed Sirius B. The distance between the two varies between 8.2 and 31.5 astronomical units as they orbit every 50 years.\nSirius appears bright because of its intrinsic luminosity and its proximity to the Solar System. At a distance of 2.64 parsecs (8.6 ly), the Sirius system is one of Earth's nearest neighbours. Sirius is gradually moving closer to the Solar System and it is expected to increase in brightness slightly over the next 60,000 years to reach a peak magnitude of −1.68.\nCoincidentally, at about the same time, Sirius will take its turn as the southern Pole Star, around the year 66,270 AD. In that year, Sirius will come to within 1.6 degrees of the south celestial pole. This is due to axial precession and proper motion of Sirius itself which moves slowly in the SSW direction, so it will be visible from the southern hemisphere only.\n \nAfter that time, its distance will begin to increase, and it will become fainter, but it will continue to be the brightest star in the Earth's night sky for approximately the next 210,000 years, at which point Vega, another A-type star that is intrinsically more luminous than Sirius, becomes the brightest star.\nSirius A is about twice as massive as the Sun (M☉) and has an absolute visual magnitude of +1.43. It is 25 times as luminous as the Sun, but has a significantly lower luminosity than other bright stars such as Canopus, Betelgeuse, and Rigel. The system is between 200 and 300 million years old. It was originally composed of two bright bluish stars. The initially more massive of these, Sirius B, consumed its hydrogen fuel and became a red giant before shedding its outer layers and collapsing into its current state as a white dwarf around 120 million years ago.\nSirius is colloquially known as the \"Dog Star\", reflecting its prominence in its constellation, Canis Major (the Greater Dog). The heliacal rising of Sirius marked the flooding of the Nile in Ancient Egypt and the \"dog days\" of summer for the ancient Greeks, while to the Polynesians, mostly in the Southern Hemisphere, the star marked winter and was an important reference for their navigation around the Pacific Ocean.\n\n",
+    "url": "https://en.wikipedia.org/wiki/Sirius",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/330px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/250px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q3409"
+  },
+  "wikidata": {
+    "id": "Q13415844",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "A1V"
+        },
+        {
+          "value": "A2V"
+        },
+        {
+          "value": "A0V"
+        },
+        {
+          "value": "A1 V COMP,VB"
+        },
+        {
+          "value": "A1V+DA"
+        },
+        {
+          "value": "A0"
+        },
+        {
+          "value": "A1"
+        },
+        {
+          "value": "A0mA1 Va"
+        },
+        {
+          "value": "A1V COMP,VB"
+        },
+        {
+          "value": "A0mA1Va"
+        },
+        {
+          "value": "A1m"
+        },
+        {
+          "value": "A1Vm+DA2"
+        },
+        {
+          "value": "A1V+A5wd"
+        },
+        {
+          "value": "A1Vm"
+        },
+        {
+          "value": "A0m..."
+        },
+        {
+          "value": "Am(B9.5/A0/A1)"
+        },
+        {
+          "value": "A1 V"
+        },
+        {
+          "value": "A5wd"
+        },
+        {
+          "value": "A0-A2"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Canis Major"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": -1.46,
+          "unit": ""
+        },
+        {
+          "value": -1.51,
+          "unit": ""
+        },
+        {
+          "value": -1.46,
+          "unit": ""
+        },
+        {
+          "value": -1.46,
+          "unit": ""
+        },
+        {
+          "value": -1.43,
+          "unit": ""
+        },
+        {
+          "value": -1.36,
+          "unit": ""
+        },
+        {
+          "value": -1.33,
+          "unit": ""
+        },
+        {
+          "value": -1.35,
+          "unit": ""
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": 1.43,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 8.6,
+          "unit": "ly",
+          "plus": 0.03599999999999959,
+          "minus": 0.03599999999999959
+        }
+      ],
+      "mass": [
+        {
+          "value": 2.063,
+          "unit": "M☉",
+          "plus": 0.022999999999999687,
+          "minus": 0.02300000000000013
+        }
+      ],
+      "radius": [
+        {
+          "value": 1.7144,
+          "unit": "R☉",
+          "plus": 0.009000000000000119,
+          "minus": 0.008999999999999897
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 24.74,
+          "unit": "L☉",
+          "plus": 0.7000000000000028,
+          "minus": 0.6999999999999993
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 9870.0,
+          "unit": "K"
+        },
+        {
+          "value": 9882.0,
+          "unit": "K"
+        },
+        {
+          "value": 10080.0,
+          "unit": "K"
+        },
+        {
+          "value": 9000.0,
+          "unit": "K"
+        },
+        {
+          "value": 10286.0,
+          "unit": "K"
+        },
+        {
+          "value": 9692.0,
+          "unit": "K"
+        },
+        {
+          "value": 10500.0,
+          "unit": "K"
+        },
+        {
+          "value": 9333.0,
+          "unit": "K"
+        },
+        {
+          "value": 9880.0,
+          "unit": "K"
+        },
+        {
+          "value": 9580.0,
+          "unit": "K"
+        },
+        {
+          "value": 9705.0,
+          "unit": "K"
+        },
+        {
+          "value": 9744.0,
+          "unit": "K"
+        },
+        {
+          "value": 9707.0,
+          "unit": "K"
+        },
+        {
+          "value": 9711.0,
+          "unit": "K"
+        },
+        {
+          "value": 9797.0,
+          "unit": "K"
+        },
+        {
+          "value": 9824.0,
+          "unit": "K"
+        },
+        {
+          "value": 9850.0,
+          "unit": "K"
+        },
+        {
+          "value": 9800.0,
+          "unit": "K"
+        },
+        {
+          "value": 9845.0,
+          "unit": "K",
+          "plus": 64.0,
+          "minus": 64.0
+        }
+      ],
+      "age": [
+        {
+          "value": 242.0,
+          "unit": "Myr",
+          "plus": 5.0,
+          "minus": 5.0
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.12,
+          "unit": ""
+        },
+        {
+          "value": 0.25,
+          "unit": ""
+        },
+        {
+          "value": 0.26,
+          "unit": ""
+        },
+        {
+          "value": 0.6,
+          "unit": ""
+        },
+        {
+          "value": 0.82,
+          "unit": ""
+        },
+        {
+          "value": 0.87,
+          "unit": ""
+        },
+        {
+          "value": 0.8,
+          "unit": ""
+        },
+        {
+          "value": 0.4,
+          "unit": ""
+        },
+        {
+          "value": 0.71,
+          "unit": ""
+        },
+        {
+          "value": 0.81,
+          "unit": ""
+        },
+        {
+          "value": 0.5,
+          "unit": ""
+        },
+        {
+          "value": 0.49,
+          "unit": ""
+        },
+        {
+          "value": 0.7,
+          "unit": ""
+        },
+        {
+          "value": -0.36,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": ""
+        },
+        {
+          "value": 0.28,
+          "unit": ""
+        },
+        {
+          "value": 0.2,
+          "unit": ""
+        },
+        {
+          "value": 0.045,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 25000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 27500.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 16000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 21000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 3160.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 20000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 10000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 3000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 21400.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 20000.0,
+          "unit": "centimetre per square second",
+          "plus": 500.0,
+          "minus": 500.0
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -7.6,
+          "unit": "km/s",
+          "plus": 0.8999999999999995,
+          "minus": 0.9000000000000004
+        },
+        {
+          "value": -5.5,
+          "unit": "km/s",
+          "plus": 0.40000000000000036,
+          "minus": 0.40000000000000036
+        },
+        {
+          "value": -6.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -4.6,
+          "unit": "km/s"
+        },
+        {
+          "value": -5.4,
+          "unit": "km/s"
+        },
+        {
+          "value": -7.5,
+          "unit": "km/s"
+        },
+        {
+          "value": -7.6,
+          "unit": "km/s"
+        },
+        {
+          "value": -8.2,
+          "unit": "km/s"
+        },
+        {
+          "value": -7.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -5.1,
+          "unit": "km/s"
+        },
+        {
+          "value": -11.9,
+          "unit": "km/s"
+        },
+        {
+          "value": -15.6,
+          "unit": "km/s"
+        },
+        {
+          "value": -7.1,
+          "unit": "km/s"
+        },
+        {
+          "value": -7.4,
+          "unit": "km/s"
+        },
+        {
+          "value": -7.6,
+          "unit": "km/s",
+          "plus": 0.09999999999999964,
+          "minus": 0.10000000000000053
+        },
+        {
+          "value": -8.3,
+          "unit": "km/s"
+        },
+        {
+          "value": -8.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -4.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 15.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 21.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 23.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -21.5,
+          "unit": "km/s"
+        },
+        {
+          "value": -19.4,
+          "unit": "km/s"
+        },
+        {
+          "value": 2.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 11.3,
+          "unit": "km/s"
+        },
+        {
+          "value": -5.41,
+          "unit": "km/s",
+          "plus": 0.5899999999999999,
+          "minus": 0.5899999999999999
+        }
+      ],
+      "parallax": [
+        {
+          "value": 379.21,
+          "unit": "mas",
+          "plus": 1.580000000000041,
+          "minus": 1.579999999999984
+        }
+      ],
+      "instance of": [
+        {
+          "value": "A-type main sequence star"
+        },
+        {
+          "value": "Am star"
+        },
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 101.287155333,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -16.716115861,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Sirius A and B Hubble photo.jpg",
+    "url": "https://www.wikidata.org/wiki/Q13415844"
+  },
+  "summary": {
+    "designation": "alf CMa",
+    "object_type": "Spectroscopic Binary",
+    "spectral_type": "A0mA1Va",
+    "ra_deg": 101.28715533333335,
+    "dec_deg": -16.71611586111111,
+    "v_mag": -1.46,
+    "distance_pc": 2.6,
+    "distance_ly": 8.6,
+    "teff_k": 9850,
+    "b_minus_v": 0.0,
+    "mass": {
+      "value": 2.063,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 1.7144,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 24.74,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 242.0,
+      "unit": "Myr"
+    },
+    "constellation": "Canis Major",
+    "description": "Brightest star in Earth's night sky"
+  },
+  "id": "sirius",
+  "path": "stars/sirius",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:12",
+      "location": "",
+      "rating": null,
+      "seeing": "",
+      "transparency": "",
+      "bortle": "",
+      "incomplete": true,
+      "location_assumed": "Royse City, Texas",
+      "utc": "2026-10-10 10:12",
+      "altitude_deg": 34.6,
+      "azimuth_deg": 149.8
+    }
+  ]
+}

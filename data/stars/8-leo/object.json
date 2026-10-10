@@ -1,0 +1,374 @@
+{
+  "name": "8 Leo",
+  "category": "stars",
+  "app_type": "K-Star",
+  "harvested": "2026-10-10T16:28:21Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%20%208%20Leo",
+      "retrieved": "2026-10-10T16:28:28Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_stars_in_Leo",
+      "retrieved": "2026-10-10T16:28:29Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q66476632",
+      "retrieved": "2026-10-10T16:28:29Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    }
+  },
+  "resolved": {
+    "method": "sesame:8 Leo",
+    "simbad_id": "*   8 Leo",
+    "wikidata": "Q66476632",
+    "wikipedia": "List of stars in Leo"
+  },
+  "simbad": {
+    "main_id": "*   8 Leo",
+    "ra": 144.26075652981,
+    "dec": 16.43795181621,
+    "otype": "*",
+    "otype_desc": "Star",
+    "sp_type": "K1III",
+    "plx_value": 2.9769,
+    "plx_err": 0.0653,
+    "pmra": -14.459,
+    "pmdec": -3.358,
+    "rvz_radvel": 6.41,
+    "rvz_redshift": 2.1381687090427093e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 38,
+    "identifiers": [
+      "TIC 155177829",
+      "HIP 47189",
+      "Gaia DR3 620466991513844096",
+      "*   8 Leo",
+      "AG+16 1024",
+      "AGKR  8658",
+      "BD+17  2109",
+      "FK5 2766",
+      "GC 13277",
+      "GCRV  6209",
+      "GEN# +1.00083189",
+      "GSC 01410-00784",
+      "HD  83189",
+      "HIC  47189",
+      "HR  3826",
+      "IRAS 09342+1639",
+      "IRC +20213",
+      "PPM 126628",
+      "SAO  98673",
+      "SKY# 18597",
+      "TYC 1410-784-1",
+      "UBV M  15578",
+      "YZ  16  3869",
+      "2MASS J09370259+1626166",
+      "WEB  8875",
+      "Gaia DR2 620466991513844096"
+    ],
+    "fluxes": {
+      "J": {
+        "mag": 3.88,
+        "err": 0.246
+      },
+      "H": {
+        "mag": 3.212,
+        "err": 0.216
+      },
+      "K": {
+        "mag": 2.93,
+        "err": 0.302
+      },
+      "V": {
+        "mag": 5.732,
+        "err": 0.009
+      },
+      "B": {
+        "mag": 6.95,
+        "err": 0.015
+      },
+      "G": {
+        "mag": 5.363683,
+        "err": 0.002803
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 4450,
+        "log_g": 2.05,
+        "fe_h": 0.06,
+        "bibcode": "2022A&A...663A...4S"
+      },
+      {
+        "teff": 4450,
+        "log_g": 2.05,
+        "fe_h": 0.06,
+        "bibcode": "2007A&A...475.1003H"
+      }
+    ],
+    "teff_median": 4450,
+    "vsini_measurements": [],
+    "distance_measurements": [
+      {
+        "dist": 342.1143,
+        "unit": "pc  ",
+        "plus_err": 11.5755,
+        "minus_err": -11.5755,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 335.92,
+        "unit": "pc  ",
+        "plus_err": 7.3686,
+        "minus_err": -7.3686,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "IR",
+      "NIR"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%20%208%20Leo"
+  },
+  "wikipedia": {
+    "title": "List of stars in Leo",
+    "description": "",
+    "summary": "\nThis is the list of notable stars in the constellation Leo, sorted by decreasing brightness.",
+    "intro": "This is the list of notable stars in the constellation Leo, sorted by decreasing brightness.",
+    "url": "https://en.wikipedia.org/wiki/List_of_stars_in_Leo",
+    "thumbnail": null,
+    "image": null,
+    "wikidata": "Q644361"
+  },
+  "wikidata": {
+    "id": "Q66476632",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "K1III"
+        },
+        {
+          "value": "K0"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Leo"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 5.732,
+          "unit": "",
+          "plus": 0.008999999999999453,
+          "minus": 0.009000000000000341
+        },
+        {
+          "value": 6.95,
+          "unit": "",
+          "plus": 0.01499999999999968,
+          "minus": 0.015000000000000568
+        },
+        {
+          "value": 3.88,
+          "unit": "",
+          "plus": 0.24600000000000044,
+          "minus": 0.246
+        },
+        {
+          "value": 3.212,
+          "unit": "",
+          "plus": 0.21599999999999975,
+          "minus": 0.2160000000000002
+        },
+        {
+          "value": 2.93,
+          "unit": "",
+          "plus": 0.30200000000000005,
+          "minus": 0.30200000000000005
+        },
+        {
+          "value": 5.363683,
+          "unit": "",
+          "plus": 0.002803000000000111,
+          "minus": 0.002803000000000111
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -2.03,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 342.1143,
+          "unit": "pc",
+          "plus": 11.575499999999977,
+          "minus": 11.575500000000034
+        },
+        {
+          "value": 335.92,
+          "unit": "pc",
+          "plus": 7.368599999999958,
+          "minus": 7.368600000000015
+        }
+      ],
+      "radius": [
+        {
+          "value": 39.92,
+          "unit": "R☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 4450.0,
+          "unit": "K"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.06,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 112.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 6.41,
+          "unit": "km/s",
+          "plus": 0.13999999999999968,
+          "minus": 0.14000000000000057
+        },
+        {
+          "value": 5.9,
+          "unit": "km/s"
+        },
+        {
+          "value": 5.9,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0000000000000004
+        },
+        {
+          "value": 6.23,
+          "unit": "km/s",
+          "plus": 0.40999999999999925,
+          "minus": 0.41000000000000014
+        },
+        {
+          "value": 6.23,
+          "unit": "km/s"
+        },
+        {
+          "value": 6.4,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 2.923,
+          "unit": "mas",
+          "plus": 0.09889999999999999,
+          "minus": 0.09889999999999999
+        },
+        {
+          "value": 3.42,
+          "unit": "mas",
+          "plus": 0.9299999999999997,
+          "minus": 0.9299999999999997
+        },
+        {
+          "value": 2.81,
+          "unit": "mas",
+          "plus": 0.43000000000000016,
+          "minus": 0.43000000000000016
+        },
+        {
+          "value": 2.9769,
+          "unit": "mas",
+          "plus": 0.06529999999999969,
+          "minus": 0.06530000000000014
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 144.26075652981,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 16.43795181621,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q66476632"
+  },
+  "summary": {
+    "designation": "8 Leo",
+    "object_type": "Star",
+    "spectral_type": "K1III",
+    "ra_deg": 144.26075652981,
+    "dec_deg": 16.43795181621,
+    "v_mag": 5.732,
+    "distance_pc": 335.9,
+    "distance_ly": 1095.6,
+    "teff_k": 4450,
+    "b_minus_v": 1.22,
+    "radius": {
+      "value": 39.92,
+      "unit": "R☉"
+    },
+    "constellation": "Leo"
+  },
+  "id": "8-leo",
+  "path": "stars/8-leo",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:19",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 10:19",
+      "altitude_deg": 28.1,
+      "azimuth_deg": 87.9
+    }
+  ]
+}

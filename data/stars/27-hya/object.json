@@ -1,0 +1,553 @@
+{
+  "name": "27 Hya",
+  "category": "stars",
+  "app_type": "F-Star",
+  "harvested": "2026-10-10T16:07:07Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2027%20Hya",
+      "retrieved": "2026-10-10T16:07:16Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/27_Hydrae",
+      "retrieved": "2026-10-10T16:07:17Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q5175237",
+      "retrieved": "2026-10-10T16:07:18Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Hydra_constellation_map.svg/330px-Hydra_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:27 Hya",
+    "simbad_id": "*  27 Hya",
+    "wikidata": "Q5175237",
+    "wikipedia": "27 Hydrae"
+  },
+  "simbad": {
+    "main_id": "*  27 Hya",
+    "ra": 140.1208955833592,
+    "dec": -9.555703357048891,
+    "otype": "*",
+    "otype_desc": "Star",
+    "sp_type": "K0III",
+    "plx_value": 14.6304,
+    "plx_err": 0.1254,
+    "pmra": -13.105,
+    "pmdec": -27.167,
+    "rvz_radvel": 24.59,
+    "rvz_redshift": 8.202677520507962e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 98,
+    "identifiers": [
+      "TIC 60954380",
+      "** SH  105A",
+      "Gaia DR3 5742852762061978880",
+      "HIP 45811",
+      "PLX 2228",
+      "*  27 Hya",
+      "ADS  7311 A",
+      "BD-08  2643",
+      "CCDM J09204-0934A",
+      "GC 12881",
+      "GCRV  6083",
+      "GEN# +1.00080586A",
+      "GSC 05463-01514",
+      "HD  80586",
+      "HIC  45811",
+      "HR  3709",
+      "IDS 09156-0908 A",
+      "IRC -10215",
+      "JP11  1801",
+      "PPM 192278",
+      "ROT  1465",
+      "SAO 136768",
+      "SKY# 18025",
+      "TD1 13817",
+      "TYC 5463-1514-1",
+      "UBV    8911",
+      "UBV M  15309",
+      "YZ  99  3637",
+      "uvby98 100080586 A",
+      "WDS J09205-0933A",
+      "PMSC 09156-0907A",
+      "2MASS J09202901-0933207",
+      "WEB  8687",
+      "IRAS 09180-0920",
+      "AKARI-IRC-V1 J0920290-093319",
+      "Gaia DR2 5742852762061629056"
+    ],
+    "fluxes": {
+      "V": {
+        "mag": 4.811,
+        "err": 0.009
+      },
+      "B": {
+        "mag": 5.75,
+        "err": 0.014
+      },
+      "J": {
+        "mag": 3.249,
+        "err": 0.01
+      },
+      "H": {
+        "mag": 2.824,
+        "err": 0.01
+      },
+      "K": {
+        "mag": 2.709,
+        "err": 0.01
+      },
+      "G": {
+        "mag": 4.564609,
+        "err": 0.002916
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 5010,
+        "log_g": 3.01,
+        "fe_h": -0.07,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": -0.07,
+        "bibcode": "2008A&A...480...91S"
+      },
+      {
+        "teff": 5010,
+        "log_g": 3.01,
+        "fe_h": -0.07,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 5010,
+        "log_g": 3.01,
+        "fe_h": -0.07,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 5030,
+        "log_g": null,
+        "fe_h": -0.2,
+        "bibcode": "2020A&A...633A..34C"
+      },
+      {
+        "teff": 4932,
+        "log_g": 2.9,
+        "fe_h": -0.07,
+        "bibcode": "2008AJ....135..209M"
+      },
+      {
+        "teff": 4988,
+        "log_g": 2.84,
+        "fe_h": -0.05,
+        "bibcode": "2022A&A...663A...4S"
+      }
+    ],
+    "teff_median": 5010,
+    "vsini_measurements": [
+      {
+        "vsini": 6,
+        "vsini_err": null,
+        "bibcode": "2009A&A...493.1099S"
+      },
+      {
+        "vsini": 30,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 13,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 19,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 3.3,
+        "vsini_err": null,
+        "bibcode": "2008AJ....135..209M"
+      },
+      {
+        "vsini": 10,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 4.8,
+        "vsini_err": 0.4,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 68.5392,
+        "unit": "pc  ",
+        "plus_err": 1.7066,
+        "minus_err": -1.7066,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 68.3508,
+        "unit": "pc  ",
+        "plus_err": 0.5858,
+        "minus_err": -0.5858,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "NIR",
+      "UV"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2027%20Hya"
+  },
+  "wikipedia": {
+    "title": "27 Hydrae",
+    "description": "Triple star system in the constellation Hydra",
+    "summary": "27 Hydrae is a triple star system in the equatorial constellation of Hydra, located 222 light years away from the Sun. It is visible to the naked eye as a faint, orange-hued star with a combined apparent visual magnitude of 4.82. The system is moving further from the Earth with a heliocentric radial velocity of +25.6 km/s.",
+    "intro": "27 Hydrae is a triple star system in the equatorial constellation of Hydra, located 222 light years away from the Sun. It is visible to the naked eye as a faint, orange-hued star with a combined apparent visual magnitude of 4.82. The system is moving further from the Earth with a heliocentric radial velocity of +25.6 km/s.\nThe magnitude 4.91 primary, component A, is an aging giant star with a stellar classification of K0 III. It is a red clump giant, which indicates it is on the horizontal branch and is generating energy through helium fusion at its core. The star is 1.9 billion years old with 2.17 times the mass of the Sun. It has swelled to 11 times the Sun's radius and is radiating 57.5 times the Sun's luminosity from its enlarged photosphere at an effective temperature of 4,965 K. The star is suspected to host a low-mass companion.\nThe stellar companions to this star, designated components B and C, lie at an angular separation of 229.10″ from the primary, and form a binary pair with a separation of 9.20″ as of 2015. The brighter member of the pair, component B, is a seventh magnitude F-type main-sequence star with a class of F4 V, while its companion is an eleventh magnitude K-type main-sequence star with a class of K2 V.",
+    "url": "https://en.wikipedia.org/wiki/27_Hydrae",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Hydra_constellation_map.svg/330px-Hydra_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Hydra_constellation_map.svg/330px-Hydra_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q5175237"
+  },
+  "wikidata": {
+    "id": "Q5175237",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "K0III"
+        },
+        {
+          "value": "F2 V COMP"
+        },
+        {
+          "value": "F4 V COMP"
+        },
+        {
+          "value": "F5 V COMP"
+        },
+        {
+          "value": "G8 III-IV SB"
+        },
+        {
+          "value": "G5"
+        },
+        {
+          "value": "G8III"
+        },
+        {
+          "value": "F2VCOMP"
+        },
+        {
+          "value": "G8III-IVSB"
+        },
+        {
+          "value": "F4VCOMP"
+        },
+        {
+          "value": "F5VCOMP"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Hydra"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 4.811,
+          "unit": "",
+          "plus": 0.009000000000000341,
+          "minus": 0.009000000000000341
+        },
+        {
+          "value": 5.75,
+          "unit": "",
+          "plus": 0.014000000000000234,
+          "minus": 0.014000000000000234
+        },
+        {
+          "value": 3.249,
+          "unit": "",
+          "plus": 0.009999999999999787,
+          "minus": 0.010000000000000231
+        },
+        {
+          "value": 2.824,
+          "unit": "",
+          "plus": 0.010000000000000231,
+          "minus": 0.009999999999999787
+        },
+        {
+          "value": 2.709,
+          "unit": "",
+          "plus": 0.009999999999999787,
+          "minus": 0.010000000000000231
+        },
+        {
+          "value": 4.564609,
+          "unit": "",
+          "plus": 0.0029159999999999187,
+          "minus": 0.0029159999999999187
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": 0.63,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 68.5392,
+          "unit": "pc",
+          "plus": 1.7066000000000088,
+          "minus": 1.7065999999999946
+        },
+        {
+          "value": 68.3508,
+          "unit": "pc",
+          "plus": 0.5857999999999919,
+          "minus": 0.5858000000000061
+        }
+      ],
+      "mass": [
+        {
+          "value": 2.17,
+          "unit": "M☉"
+        }
+      ],
+      "radius": [
+        {
+          "value": 11.0,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 57.5,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 4932.0,
+          "unit": "K"
+        },
+        {
+          "value": 5010.0,
+          "unit": "K"
+        },
+        {
+          "value": 5030.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 1.91,
+          "unit": "Gyr"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.07,
+          "unit": ""
+        },
+        {
+          "value": -0.2,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 1020.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 800.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 25.14,
+          "unit": "km/s",
+          "plus": 0.16000000000000014,
+          "minus": 0.16000000000000014
+        },
+        {
+          "value": 24.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 24.5,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0
+        },
+        {
+          "value": 25.6,
+          "unit": "km/s",
+          "plus": 0.129999999999999,
+          "minus": 0.13000000000000256
+        },
+        {
+          "value": 25.0,
+          "unit": "km/s",
+          "plus": 1.0,
+          "minus": 1.0
+        },
+        {
+          "value": 22.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 25.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 26.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 24.59,
+          "unit": "km/s",
+          "plus": 0.120000000000001,
+          "minus": 0.120000000000001
+        }
+      ],
+      "parallax": [
+        {
+          "value": 14.5902,
+          "unit": "mas",
+          "plus": 0.3633000000000006,
+          "minus": 0.36329999999999885
+        },
+        {
+          "value": 13.39,
+          "unit": "mas",
+          "plus": 0.8200000000000003,
+          "minus": 0.8200000000000003
+        },
+        {
+          "value": 14.66,
+          "unit": "mas",
+          "plus": 0.3100000000000005,
+          "minus": 0.3100000000000005
+        },
+        {
+          "value": 14.6304,
+          "unit": "mas",
+          "plus": 0.12540000000000084,
+          "minus": 0.12539999999999907
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "triple star system"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 140.1208955833592,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -9.55570335704889,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q5175237"
+  },
+  "summary": {
+    "designation": "27 Hya",
+    "object_type": "Star",
+    "spectral_type": "K0III",
+    "ra_deg": 140.1208955833592,
+    "dec_deg": -9.555703357048891,
+    "v_mag": 4.811,
+    "distance_pc": 68.4,
+    "distance_ly": 222.9,
+    "teff_k": 5010,
+    "b_minus_v": 0.94,
+    "mass": {
+      "value": 2.17,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 11.0,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 57.5,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 1.91,
+      "unit": "Gyr"
+    },
+    "constellation": "Hydra",
+    "description": "Triple star system in the constellation Hydra"
+  },
+  "id": "27-hya",
+  "path": "stars/27-hya",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:27",
+      "location": "Royse City, Texas",
+      "rating": 2.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 10:27",
+      "altitude_deg": 18.4,
+      "azimuth_deg": 115.1
+    }
+  ]
+}

@@ -1,0 +1,492 @@
+{
+  "name": "ο² CMa",
+  "category": "stars",
+  "app_type": "B-Star",
+  "harvested": "2026-10-10T16:08:24Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20omi02%20CMa",
+      "retrieved": "2026-10-10T16:08:31Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Omicron2_Canis_Majoris",
+      "retrieved": "2026-10-10T16:08:31Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q2716216",
+      "retrieved": "2026-10-10T16:08:32Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/330px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:omi02 CMa",
+    "simbad_id": "* omi02 CMa",
+    "wikidata": "Q2716216",
+    "wikipedia": "Omicron2 Canis Majoris"
+  },
+  "simbad": {
+    "main_id": "* omi02 CMa",
+    "ra": 105.75613058900544,
+    "dec": -23.833293974200288,
+    "otype": "s*b",
+    "otype_desc": "Blue Supergiant",
+    "sp_type": "B3Ia",
+    "plx_value": 0.8715,
+    "plx_err": 0.3319,
+    "pmra": -1.335,
+    "pmdec": 3.803,
+    "rvz_radvel": 48.08,
+    "rvz_redshift": 0.00016039047952398633,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 337,
+    "identifiers": [
+      "TIC 80466973",
+      "HIP 33977",
+      "Gaia DR3 2921635736292220800",
+      "2MASS J07030147-2349598",
+      "* omi02 CMa",
+      "*  24 CMa",
+      "CD-23  4797",
+      "CEL   1535",
+      "CPD-23  1747",
+      "FK5  270",
+      "GC  9307",
+      "GCRV  4636",
+      "GEN# +5.11210029",
+      "GSC 06523-03722",
+      "HD  53138",
+      "HIC  33977",
+      "HR  2653",
+      "IRAS 07009-2345",
+      "JP11  4544",
+      "MCW  501",
+      "N30 1535",
+      "PMC 90-93   194",
+      "PPM 251514",
+      "ROT  1137",
+      "SAO 172839",
+      "SKY# 12624",
+      "SRS  30270",
+      "TD1  8967",
+      "UBV    6934",
+      "UBV M  40650",
+      "V* omi02 CMa",
+      "[GM99b] 20",
+      "uvby98 511210029",
+      "Cl Collinder  121    29",
+      "ALS 14803",
+      "TYC 6523-3722-1",
+      "WEB  6816",
+      "Gaia DR2 2921635736289352192"
+    ],
+    "fluxes": {
+      "B": {
+        "mag": 2.94,
+        "err": null
+      },
+      "V": {
+        "mag": 3.02,
+        "err": null
+      },
+      "J": {
+        "mag": 3.21,
+        "err": null
+      },
+      "H": {
+        "mag": 3.24,
+        "err": null
+      },
+      "U": {
+        "mag": 2.14,
+        "err": null
+      },
+      "R": {
+        "mag": 3.01,
+        "err": null
+      },
+      "I": {
+        "mag": 3.1,
+        "err": null
+      },
+      "K": {
+        "mag": 3.25,
+        "err": null
+      },
+      "G": {
+        "mag": 3.0407,
+        "err": 0.003724
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 16000,
+        "log_g": 2.15,
+        "fe_h": null,
+        "bibcode": "2023A&A...677A..50B"
+      },
+      {
+        "teff": 17000,
+        "log_g": 3,
+        "fe_h": null,
+        "bibcode": "2024ApJ...971..166M"
+      },
+      {
+        "teff": 14920,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2009A&A...501..297Z"
+      },
+      {
+        "teff": 15500,
+        "log_g": 1.75,
+        "fe_h": null,
+        "bibcode": "2006A&A...446..279C"
+      },
+      {
+        "teff": 16800,
+        "log_g": 2.18,
+        "fe_h": null,
+        "bibcode": "2024A&A...687A.228D"
+      }
+    ],
+    "teff_median": 16000,
+    "vsini_measurements": [
+      {
+        "vsini": 55,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 77,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 35,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 38,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 0.4,
+        "vsini_err": null,
+        "bibcode": "2018MNRAS.475.1521M"
+      },
+      {
+        "vsini": 38,
+        "vsini_err": null,
+        "bibcode": "2023A&A...677A..50B"
+      },
+      {
+        "vsini": 37,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 37,
+        "vsini_err": null,
+        "bibcode": "2020A&A...639A..81B"
+      },
+      {
+        "vsini": 35,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 58,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 35,
+        "vsini_err": 9,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 36,
+        "vsini_err": null,
+        "bibcode": "2024A&A...687A.228D"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "IR",
+      "NIR",
+      "Pu*",
+      "s*b",
+      "UV",
+      "V*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20omi02%20CMa"
+  },
+  "wikipedia": {
+    "title": "Omicron2 Canis Majoris",
+    "description": "Variable star in constellation Canis Major",
+    "summary": "Omicron2 Canis Majoris is a massive variable star in the constellation Canis Major. Its name is a Bayer designation that is Latinized from ο2 Canis Majoris, and abbreviated Omicron2 CMa or ο2 CMa. This star has an apparent visual magnitude around 3, making it visible to the naked eye and the sixth-to-seventh brightest star of the constellation, tied with Zeta Canis Majoris. Based upon a distance modulus of 10.2, it is about 3,600 light-years from Earth. It is drifting further away with a line of sight velocity of +55 km/s. Since 1943, the spectrum of this star has served as one of the stable anchor points by which other stars are classified.",
+    "intro": "Omicron2 Canis Majoris is a massive variable star in the constellation Canis Major. Its name is a Bayer designation that is Latinized from ο2 Canis Majoris, and abbreviated Omicron2 CMa or ο2 CMa. This star has an apparent visual magnitude around 3, making it visible to the naked eye and the sixth-to-seventh brightest star of the constellation, tied with Zeta Canis Majoris. Based upon a distance modulus of 10.2, it is about 3,600 light-years from Earth. It is drifting further away with a line of sight velocity of +55 km/s. Since 1943, the spectrum of this star has served as one of the stable anchor points by which other stars are classified.",
+    "url": "https://en.wikipedia.org/wiki/Omicron2_Canis_Majoris",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/330px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/250px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q2716216"
+  },
+  "wikidata": {
+    "id": "Q2716216",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "B3Ia"
+        },
+        {
+          "value": "B5p"
+        },
+        {
+          "value": "B3Iab"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Canis Major"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 3.02,
+          "unit": ""
+        },
+        {
+          "value": 2.14,
+          "unit": ""
+        },
+        {
+          "value": 2.94,
+          "unit": ""
+        },
+        {
+          "value": 3.01,
+          "unit": ""
+        },
+        {
+          "value": 3.1,
+          "unit": ""
+        },
+        {
+          "value": 3.0194,
+          "unit": "",
+          "plus": 0.009999999999999787,
+          "minus": 0.010000000000000231
+        },
+        {
+          "value": 3.21,
+          "unit": ""
+        },
+        {
+          "value": 3.24,
+          "unit": ""
+        },
+        {
+          "value": 3.25,
+          "unit": ""
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -7.3,
+          "unit": ""
+        }
+      ],
+      "radius": [
+        {
+          "value": 65.0,
+          "unit": "R☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 15500.0,
+          "unit": "K"
+        },
+        {
+          "value": 14920.0,
+          "unit": "K"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 56.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 48.4,
+          "unit": "km/s",
+          "plus": 0.8999999999999986,
+          "minus": 0.8999999999999986
+        },
+        {
+          "value": 48.4,
+          "unit": "km/s",
+          "plus": 0.6000000000000014,
+          "minus": 0.6000000000000014
+        },
+        {
+          "value": 38.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 45.2,
+          "unit": "km/s"
+        },
+        {
+          "value": 48.4,
+          "unit": "km/s"
+        },
+        {
+          "value": 49.6,
+          "unit": "km/s"
+        },
+        {
+          "value": 48.9,
+          "unit": "km/s"
+        },
+        {
+          "value": 51.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 48.08,
+          "unit": "km/s",
+          "plus": 0.07000000000000028,
+          "minus": 0.07000000000000028
+        }
+      ],
+      "parallax": [
+        {
+          "value": 0.7928,
+          "unit": "mas",
+          "plus": 0.4478,
+          "minus": 0.4478
+        },
+        {
+          "value": 1.27,
+          "unit": "mas",
+          "plus": 0.56,
+          "minus": 0.56
+        },
+        {
+          "value": 1.18,
+          "unit": "mas",
+          "plus": 0.40000000000000013,
+          "minus": 0.3999999999999999
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "blue supergiant"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "pulsating variable star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "Alpha Cygni variable"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 105.7561338125,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -23.83329230778,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Omicron2CMaLightCurve.png",
+    "url": "https://www.wikidata.org/wiki/Q2716216"
+  },
+  "summary": {
+    "designation": "omi02 CMa",
+    "object_type": "Blue Supergiant",
+    "spectral_type": "B3Ia",
+    "ra_deg": 105.75613058900544,
+    "dec_deg": -23.833293974200288,
+    "v_mag": 3.02,
+    "distance_pc": 1147.4,
+    "distance_ly": 3742.5,
+    "teff_k": 16000,
+    "b_minus_v": -0.08,
+    "radius": {
+      "value": 65.0,
+      "unit": "R☉"
+    },
+    "constellation": "Canis Major",
+    "description": "Variable star in constellation Canis Major"
+  },
+  "id": "omicron2-cma",
+  "path": "stars/omicron2-cma",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:16",
+      "location": "Royse City, Texas",
+      "rating": 1.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 10:16",
+      "altitude_deg": 26.8,
+      "azimuth_deg": 150.2
+    },
+    {
+      "datetime": "2026-10-07 06:19",
+      "location": "Royse City, Texas",
+      "rating": null,
+      "seeing": "2/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-07 11:19",
+      "altitude_deg": 31.1,
+      "azimuth_deg": 162.6
+    }
+  ]
+}

@@ -1,0 +1,529 @@
+{
+  "name": "Murzim",
+  "category": "stars",
+  "app_type": "B-Star",
+  "harvested": "2026-10-10T16:09:28Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20bet%20CMa",
+      "retrieved": "2026-10-10T16:09:38Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Beta_Canis_Majoris",
+      "retrieved": "2026-10-10T16:09:38Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q13415",
+      "retrieved": "2026-10-10T16:10:09Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/330px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "wikipedia-redirect",
+    "simbad_id": "* bet CMa",
+    "wikidata": "Q13415",
+    "wikipedia": "Beta Canis Majoris"
+  },
+  "simbad": {
+    "main_id": "* bet CMa",
+    "ra": 95.67493896958332,
+    "dec": -17.955918708888888,
+    "otype": "bC*",
+    "otype_desc": "beta Cep Variable",
+    "sp_type": "B1II-III",
+    "plx_value": 6.62,
+    "plx_err": 0.22,
+    "pmra": -3.23,
+    "pmdec": -0.78,
+    "rvz_radvel": 33.7,
+    "rvz_redshift": 0.00011241741891976353,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 750,
+    "identifiers": [
+      "TIC 34590771",
+      "HIP 30324",
+      "PLX 1481",
+      "*   2 CMa",
+      "* bet CMa",
+      "1RXS J062242.0-175726",
+      "2E  1637",
+      "2RE J0622-175",
+      "2RE J062240-175711",
+      "BD-17  1467",
+      "CCDM J06227-1757A",
+      "CEL   1207",
+      "CSI-17  1467  1",
+      "FK5  243",
+      "GC  8223",
+      "GCRV  4051",
+      "GEN# +1.00044743",
+      "HD  44743",
+      "HGAM    524",
+      "HIC  30324",
+      "HR  2294",
+      "IDS 06183-1755 A",
+      "IRC -20092",
+      "JP11  1375",
+      "MCW  426",
+      "N30 1376",
+      "NAME Mirzam",
+      "PMC 90-93   175",
+      "PPM 217099",
+      "RE J0622-175",
+      "RE J062240-175703",
+      "ROT  1027",
+      "SACS 140",
+      "SAO 151428",
+      "SKY# 10875",
+      "SRS  30243",
+      "TD1  6953",
+      "UBV    6391",
+      "UBV M  12037",
+      "V* bet CMa",
+      "ALS 15801",
+      "PLX 1481.00",
+      "2E 0620.5-1755",
+      "2EUVE J0622-17.9",
+      "EUVE J0622-17.9",
+      "RX J0622.7-1757",
+      "WDS J06227-1757A",
+      "TYC 5938-2918-1",
+      "IRAS 06204-1755",
+      "AKARI-IRC-V1 J0622419-175721",
+      "2MASS J06224199-1757215",
+      "uvby98 100044743",
+      "WEB  6031"
+    ],
+    "fluxes": {
+      "B": {
+        "mag": 1.73,
+        "err": null
+      },
+      "U": {
+        "mag": 0.77,
+        "err": null
+      },
+      "V": {
+        "mag": 1.97,
+        "err": null
+      },
+      "R": {
+        "mag": 2.11,
+        "err": null
+      },
+      "I": {
+        "mag": 2.35,
+        "err": null
+      },
+      "J": {
+        "mag": 2.53,
+        "err": null
+      },
+      "K": {
+        "mag": 2.65,
+        "err": null
+      },
+      "H": {
+        "mag": 2.62,
+        "err": null
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 25320,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2009A&A...501..297Z"
+      },
+      {
+        "teff": 26630,
+        "log_g": 3.89,
+        "fe_h": -0.41,
+        "bibcode": "1992ApJ...387..673G"
+      },
+      {
+        "teff": 24000,
+        "log_g": 3.43,
+        "fe_h": null,
+        "bibcode": "2006MNRAS.371..252L"
+      },
+      {
+        "teff": 26630,
+        "log_g": 3.89,
+        "fe_h": -0.41,
+        "bibcode": "1992ApJ...387..673G"
+      },
+      {
+        "teff": 25000,
+        "log_g": 3.54,
+        "fe_h": null,
+        "bibcode": "2024A&A...687A.228D"
+      }
+    ],
+    "teff_median": 25320,
+    "vsini_measurements": [
+      {
+        "vsini": 30,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 17,
+        "vsini_err": 9,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 30,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 36,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 17,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 26,
+        "vsini_err": null,
+        "bibcode": "2014A&A...562A.135S"
+      },
+      {
+        "vsini": 25,
+        "vsini_err": null,
+        "bibcode": "2014A&A...562A.135S"
+      },
+      {
+        "vsini": 26,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 24,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 24,
+        "vsini_err": null,
+        "bibcode": "2020A&A...639A..81B"
+      },
+      {
+        "vsini": 26,
+        "vsini_err": null,
+        "bibcode": "2024A&A...687A.228D"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "bC*",
+      "bC?",
+      "IR",
+      "NIR",
+      "UV",
+      "V*",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20bet%20CMa"
+  },
+  "wikipedia": {
+    "title": "Beta Canis Majoris",
+    "description": "Star in the constellation Canis Major",
+    "summary": "Beta Canis Majoris is a star in the southern constellation of Canis Major, the \"Great Dog\". Its name is a Bayer designation; it has the proper name Mirzam, pronounced. Visible to the naked eye, this is a variable star that ranges in apparent visual magnitude from 1.97 to 2.01 over a period of six hours. Based on parallax measurements, it is located at a distance of about 500 light-years (150 parsecs) from the Earth. The star is drifting further away from the Sun with a line of sight velocity of +34 km/s. In the modern constellation it lies at the position of the dog's front leg.",
+    "intro": "Beta Canis Majoris is a star in the southern constellation of Canis Major, the \"Great Dog\". Its name is a Bayer designation; it has the proper name Mirzam, pronounced . Visible to the naked eye, this is a variable star that ranges in apparent visual magnitude from 1.97 to 2.01 over a period of six hours. Based on parallax measurements, it is located at a distance of about 500 light-years (150 parsecs) from the Earth. The star is drifting further away from the Sun with a line of sight velocity of +34 km/s. In the modern constellation it lies at the position of the dog's front leg.",
+    "url": "https://en.wikipedia.org/wiki/Beta_Canis_Majoris",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/330px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/250px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q13415"
+  },
+  "wikidata": {
+    "id": "Q13415",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "B1.5IV"
+        },
+        {
+          "value": "B1II-III"
+        },
+        {
+          "value": "B1II"
+        },
+        {
+          "value": "B8V"
+        },
+        {
+          "value": "B0.5 II-III SB"
+        },
+        {
+          "value": "B1"
+        },
+        {
+          "value": "B0.5II-IIISB"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Canis Major"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 1.97,
+          "unit": ""
+        },
+        {
+          "value": 0.77,
+          "unit": ""
+        },
+        {
+          "value": 1.73,
+          "unit": ""
+        },
+        {
+          "value": 2.11,
+          "unit": ""
+        },
+        {
+          "value": 2.35,
+          "unit": ""
+        },
+        {
+          "value": 9.7849,
+          "unit": "",
+          "plus": 0.24849999999999994,
+          "minus": 0.24849999999999994
+        },
+        {
+          "value": 2.53,
+          "unit": ""
+        },
+        {
+          "value": 2.62,
+          "unit": ""
+        },
+        {
+          "value": 2.65,
+          "unit": ""
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -4.1,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 151.0,
+          "unit": "pc",
+          "plus": 5.0,
+          "minus": 5.0
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 26630.0,
+          "unit": "K"
+        },
+        {
+          "value": 25320.0,
+          "unit": "K"
+        },
+        {
+          "value": 24000.0,
+          "unit": "K"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.41,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 7800.0,
+          "unit": "Q39699418"
+        },
+        {
+          "value": 2700.0,
+          "unit": "Q39699418"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 33.7,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 33.7,
+          "unit": "Q3674704",
+          "plus": 0.8999999999999986,
+          "minus": 0.9000000000000057
+        },
+        {
+          "value": 33.7,
+          "unit": "Q3674704",
+          "plus": 0.5,
+          "minus": 0.5
+        },
+        {
+          "value": 34.2,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 26.7,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 33.0,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 33.2,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 1.9,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 34.0,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 32.6,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 34.5,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 29.3,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 33.1,
+          "unit": "Q3674704"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 18.0,
+          "unit": "mas",
+          "plus": 10.600000000000001,
+          "minus": 10.6
+        },
+        {
+          "value": 6.62,
+          "unit": "mas",
+          "plus": 0.21999999999999975,
+          "minus": 0.21999999999999975
+        },
+        {
+          "value": 6.53,
+          "unit": "mas",
+          "plus": 0.6600000000000001,
+          "minus": 0.6600000000000001
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "Beta Cephei variable"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "pulsating variable star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 95.67493896958,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -17.95591870889,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Position Beta Cma.png",
+    "url": "https://www.wikidata.org/wiki/Q13415"
+  },
+  "summary": {
+    "designation": "bet CMa",
+    "object_type": "beta Cep Variable",
+    "spectral_type": "B1II-III",
+    "ra_deg": 95.67493896958332,
+    "dec_deg": -17.955918708888888,
+    "v_mag": 1.97,
+    "distance_pc": 151.1,
+    "distance_ly": 492.7,
+    "teff_k": 25320,
+    "b_minus_v": -0.24,
+    "constellation": "Canis Major",
+    "description": "Star in the constellation Canis Major"
+  },
+  "id": "murzim",
+  "path": "stars/murzim",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:13",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 10:13",
+      "altitude_deg": 35.7,
+      "azimuth_deg": 156.7
+    }
+  ]
+}

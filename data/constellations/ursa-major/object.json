@@ -1,0 +1,106 @@
+{
+  "name": "Ursa Major",
+  "category": "constellations",
+  "app_type": "Constellation",
+  "harvested": "2026-10-10T16:25:18Z",
+  "sources": [
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ursa_Major",
+      "retrieved": "2026-10-10T16:25:19Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q8918",
+      "retrieved": "2026-10-10T16:25:20Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "Mellinger colour mosaic via CDS hips2fits",
+      "fov_deg": 67
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Ursa_Major_IAU.svg/330px-Ursa_Major_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "wikipedia",
+    "simbad_id": null,
+    "wikidata": "Q8918",
+    "wikipedia": "Ursa Major"
+  },
+  "wikipedia": {
+    "title": "Ursa Major",
+    "description": "Constellation in the northern sky",
+    "summary": "Ursa Major, also known as the Great Bear, is a constellation in the Northern Sky, whose associated mythology likely dates back into prehistory. Its Latin name means \"greater bear\", referring to and contrasting it with nearby Ursa Minor, the lesser bear. In antiquity, it was one of the original 48 constellations listed by Ptolemy in the 2nd century AD, drawing on earlier works by Greek, Egyptian, Babylonian, and Assyrian astronomers. It is the third largest of the 88 modern constellations.",
+    "intro": "Ursa Major, also known as the Great Bear, is a constellation in the Northern Sky, whose associated mythology likely dates back into prehistory. Its Latin name means \"greater (or larger) bear\", referring to and contrasting it with nearby Ursa Minor, the lesser bear. In antiquity, it was one of the original 48 constellations listed by Ptolemy in the 2nd century AD, drawing on earlier works by Greek, Egyptian, Babylonian, and Assyrian astronomers. It is the third largest of the 88 modern constellations.\nUrsa Major is primarily known from the asterism of its main seven stars, which has been called the \"Big Dipper\", \"the Wagon\", \"Charles's Wain\", or \"the Plough\", among other names. In particular, the Big Dipper's stellar configuration mimics the shape of the \"Little Dipper\". Two of its stars, named Dubhe and Merak (α Ursae Majoris and β Ursae Majoris), can be used as the navigational pointer towards the place of the northern pole star, Polaris in Ursa Minor.\nUrsa Major, along with asterisms it contains or overlaps, is significant to numerous world cultures, often as a symbol of the north. Its depiction on the flag of Alaska is a modern example of such symbolism.\nUrsa Major is visible throughout the year from most of the Northern Hemisphere, and appears circumpolar above the mid-northern latitudes. From southern temperate latitudes, the main asterism is invisible, but the southern parts of the constellation can still be viewed.\n\n",
+    "url": "https://en.wikipedia.org/wiki/Ursa_Major",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Ursa_Major_IAU.svg/330px-Ursa_Major_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Ursa_Major_IAU.svg/960px-Ursa_Major_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q8918"
+  },
+  "wikidata": {
+    "id": "Q8918",
+    "facts": {
+      "area": [
+        {
+          "value": 1280.0,
+          "unit": "deg²"
+        }
+      ],
+      "short name": [
+        {
+          "value": "UMa"
+        }
+      ],
+      "named after": [
+        {
+          "value": "Ursidae"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "constellation"
+        }
+      ]
+    },
+    "commons_image": "UrsaMajorCC.jpg",
+    "url": "https://www.wikidata.org/wiki/Q8918"
+  },
+  "geometry": {
+    "ra_deg": 170.466,
+    "dec_deg": 57.63,
+    "radius_deg": 30.3,
+    "source": "IAU boundaries, VizieR VI/49"
+  },
+  "summary": {
+    "area": {
+      "value": 1280.0,
+      "unit": "deg²"
+    },
+    "abbreviation": "UMa",
+    "ra_deg": 170.466,
+    "dec_deg": 57.63,
+    "description": "Constellation in the northern sky"
+  },
+  "id": "ursa-major",
+  "path": "constellations/ursa-major",
+  "observations": [
+    {
+      "datetime": "2026-10-06 05:30",
+      "location": "Royse City, Texas",
+      "rating": 4.0,
+      "seeing": "4/5",
+      "transparency": "4/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-06 10:30",
+      "altitude_deg": 25.3,
+      "azimuth_deg": 36.2
+    }
+  ]
+}

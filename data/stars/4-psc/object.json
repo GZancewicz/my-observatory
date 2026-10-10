@@ -1,0 +1,560 @@
+{
+  "name": "4 Psc",
+  "category": "stars",
+  "app_type": "F-Star",
+  "harvested": "2026-10-10T16:14:39Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20bet%20Psc",
+      "retrieved": "2026-10-10T16:14:46Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Beta_Piscium",
+      "retrieved": "2026-10-10T16:14:48Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1473907",
+      "retrieved": "2026-10-10T16:14:49Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Pisces_IAU.svg/330px-Pisces_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:4 Psc",
+    "simbad_id": "* bet Psc",
+    "wikidata": "Q1473907",
+    "wikipedia": "Beta Piscium"
+  },
+  "simbad": {
+    "main_id": "* bet Psc",
+    "ra": 345.96922173068,
+    "dec": 3.8200456395047224,
+    "otype": "Be*",
+    "otype_desc": "Be Star",
+    "sp_type": "B6Ve",
+    "plx_value": 8.0542,
+    "plx_err": 0.131,
+    "pmra": 12.219,
+    "pmdec": -9.678,
+    "rvz_radvel": 0,
+    "rvz_redshift": 0,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 259,
+    "identifiers": [
+      "TIC 310852121",
+      "Gaia DR3 2662057224398507264",
+      "[JE82] 1141",
+      "* bet Psc",
+      "*   4 Psc",
+      "AG+03 2966",
+      "BD+03  4818",
+      "EM* MWC  396",
+      "FK5 1602",
+      "GC 32134",
+      "GCRV 14467",
+      "GEN# +1.00217891",
+      "GSC 00579-01834",
+      "HD 217891",
+      "HIC 113889",
+      "HIP 113889",
+      "HR  8773",
+      "IRAS 23013+0333",
+      "JP11  3572",
+      "N30 5070",
+      "NSV 14410",
+      "PMC 90-93  1139",
+      "PPM 173700",
+      "ROT  3356",
+      "SAO 127934",
+      "SKY# 43784",
+      "TD1 29572",
+      "TYC  579-1834-1",
+      "UBV   19762",
+      "UBV M  26798",
+      "YZ   3  7957",
+      "uvby98 100217891",
+      "2MASS J23035259+0349119",
+      "WEB 20230",
+      "Gaia DR2 2662057224398507264",
+      "NAME-IAU Fumalsamakah"
+    ],
+    "fluxes": {
+      "B": {
+        "mag": 4.4,
+        "err": null
+      },
+      "U": {
+        "mag": 3.9,
+        "err": null
+      },
+      "J": {
+        "mag": 4.764,
+        "err": 0.037
+      },
+      "H": {
+        "mag": 4.808,
+        "err": 0.026
+      },
+      "K": {
+        "mag": 4.75,
+        "err": 0.02
+      },
+      "V": {
+        "mag": 4.52,
+        "err": null
+      },
+      "R": {
+        "mag": 4.54,
+        "err": null
+      },
+      "I": {
+        "mag": 4.67,
+        "err": null
+      },
+      "G": {
+        "mag": 4.470597,
+        "err": 0.003054
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 16564,
+        "log_g": 4.2,
+        "fe_h": null,
+        "bibcode": "2010ApJ...722..605H"
+      },
+      {
+        "teff": 13428,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2012A&A...537A.120Z"
+      },
+      {
+        "teff": 15453,
+        "log_g": 3.05,
+        "fe_h": null,
+        "bibcode": "2001A&A...378..861C"
+      },
+      {
+        "teff": 15500,
+        "log_g": 4,
+        "fe_h": null,
+        "bibcode": "2006MNRAS.371..252L"
+      },
+      {
+        "teff": 16564,
+        "log_g": 4.195,
+        "fe_h": null,
+        "bibcode": "2010ApJ...722..605H"
+      },
+      {
+        "teff": 16000,
+        "log_g": 3,
+        "fe_h": null,
+        "bibcode": "2018MNRAS.474.5287A"
+      }
+    ],
+    "teff_median": 16000,
+    "vsini_measurements": [
+      {
+        "vsini": 54,
+        "vsini_err": 22,
+        "bibcode": "2010ApJ...722..605H"
+      },
+      {
+        "vsini": 160,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 147,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 75,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 90,
+        "vsini_err": 2,
+        "bibcode": "2018MNRAS.474.5287A"
+      },
+      {
+        "vsini": 130,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 100,
+        "vsini_err": 10,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 95,
+        "vsini_err": 4,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 75,
+        "vsini_err": 16,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 129.7606,
+        "unit": "pc  ",
+        "plus_err": 4.1067,
+        "minus_err": -4.1067,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 129.761,
+        "unit": "pc  ",
+        "plus_err": 4.1067,
+        "minus_err": -4.1067,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 124.159,
+        "unit": "pc  ",
+        "plus_err": 2.0194,
+        "minus_err": -2.0194,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "Be*",
+      "Em*",
+      "IR",
+      "NIR",
+      "UV",
+      "V*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20bet%20Psc"
+  },
+  "wikipedia": {
+    "title": "Beta Piscium",
+    "description": "Star in the constellation Pisces",
+    "summary": "Beta Piscium or β Piscium, formally named Fumalsamakah, is a blue-white hued star in the zodiac constellation of Pisces. Its apparent magnitude is 4.52, meaning it can be faintly seen with the naked eye. Based on parallax measurements taken during the Hipparcos mission, it is about 410 light-years distant from the Sun.",
+    "intro": "Beta Piscium or β Piscium, formally named Fumalsamakah , is a blue-white hued star in the zodiac constellation of Pisces. Its apparent magnitude is 4.52, meaning it can be faintly seen with the naked eye. Based on parallax measurements taken during the Hipparcos mission, it is about 410 light-years (125 parsecs) distant from the Sun.",
+    "url": "https://en.wikipedia.org/wiki/Beta_Piscium",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Pisces_IAU.svg/330px-Pisces_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Pisces_IAU.svg/960px-Pisces_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q1473907"
+  },
+  "wikidata": {
+    "id": "Q1473907",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "B6Ve"
+        },
+        {
+          "value": "B7IV/V"
+        },
+        {
+          "value": "B5Ve"
+        },
+        {
+          "value": "B5:V"
+        },
+        {
+          "value": "B5:Ve"
+        },
+        {
+          "value": "B5pe"
+        },
+        {
+          "value": "B5p"
+        },
+        {
+          "value": "B4V"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Pisces"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 4.52,
+          "unit": ""
+        },
+        {
+          "value": 3.9,
+          "unit": ""
+        },
+        {
+          "value": 4.4,
+          "unit": ""
+        },
+        {
+          "value": 4.54,
+          "unit": ""
+        },
+        {
+          "value": 4.67,
+          "unit": ""
+        },
+        {
+          "value": 4.5014,
+          "unit": "",
+          "plus": 0.012799999999999478,
+          "minus": 0.012800000000000367
+        },
+        {
+          "value": 4.764,
+          "unit": "",
+          "plus": 0.03699999999999992,
+          "minus": 0.03699999999999992
+        },
+        {
+          "value": 4.808,
+          "unit": "",
+          "plus": 0.0259999999999998,
+          "minus": 0.0259999999999998
+        },
+        {
+          "value": 4.75,
+          "unit": "",
+          "plus": 0.019999999999999574,
+          "minus": 0.019999999999999574
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 129.7606,
+          "unit": "pc",
+          "plus": 4.106699999999989,
+          "minus": 4.106700000000018
+        },
+        {
+          "value": 129.761,
+          "unit": "pc",
+          "plus": 4.106700000000018,
+          "minus": 4.106699999999989
+        }
+      ],
+      "mass": [
+        {
+          "value": 4.7,
+          "unit": "M☉"
+        }
+      ],
+      "radius": [
+        {
+          "value": 3.6,
+          "unit": "R☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 15500.0,
+          "unit": "K"
+        },
+        {
+          "value": 15453.0,
+          "unit": "K"
+        },
+        {
+          "value": 13428.0,
+          "unit": "K"
+        },
+        {
+          "value": 16564.0,
+          "unit": "K"
+        },
+        {
+          "value": 16000.0,
+          "unit": "K"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 1120.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 16000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 15670.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 1000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 10000.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 0.3,
+          "unit": "km/s"
+        },
+        {
+          "value": 0.3,
+          "unit": "km/s",
+          "plus": 0.8999999999999999,
+          "minus": 0.8999999999999999
+        },
+        {
+          "value": 6.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 6.6,
+          "unit": "km/s"
+        },
+        {
+          "value": 0.0,
+          "unit": "km/s",
+          "plus": 0.6,
+          "minus": 0.6
+        },
+        {
+          "value": 3.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 2.9,
+          "unit": "km/s"
+        },
+        {
+          "value": 2.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -1.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 2.8,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 7.7065,
+          "unit": "mas",
+          "plus": 0.2439,
+          "minus": 0.2439
+        },
+        {
+          "value": 6.62,
+          "unit": "mas",
+          "plus": 0.8099999999999996,
+          "minus": 0.8100000000000005
+        },
+        {
+          "value": 7.99,
+          "unit": "mas",
+          "plus": 0.22000000000000064,
+          "minus": 0.22000000000000064
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "Be-type star"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "emission-line star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 345.96922288375,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 3.82004617028,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q1473907"
+  },
+  "summary": {
+    "designation": "bet Psc",
+    "object_type": "Be Star",
+    "spectral_type": "B6Ve",
+    "ra_deg": 345.96922173068,
+    "dec_deg": 3.8200456395047224,
+    "v_mag": 4.52,
+    "distance_pc": 124.2,
+    "distance_ly": 405.0,
+    "teff_k": 16000,
+    "b_minus_v": -0.12,
+    "mass": {
+      "value": 4.7,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 3.6,
+      "unit": "R☉"
+    },
+    "constellation": "Pisces",
+    "description": "Star in the constellation Pisces"
+  },
+  "id": "4-psc",
+  "path": "stars/4-psc",
+  "observations": [
+    {
+      "datetime": "2026-10-09 21:08",
+      "location": "Royse City, Texas",
+      "rating": 2.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 02:08",
+      "altitude_deg": 48.5,
+      "azimuth_deg": 127.9
+    }
+  ]
+}

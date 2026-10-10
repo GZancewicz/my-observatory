@@ -1,0 +1,625 @@
+{
+  "name": "Canopus",
+  "category": "stars",
+  "app_type": "F-Star",
+  "harvested": "2026-10-10T16:32:42Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20Car",
+      "retrieved": "2026-10-10T16:32:50Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Canopus",
+      "retrieved": "2026-10-10T16:33:06Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q12189",
+      "retrieved": "2026-10-10T16:33:07Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Canopus.jpg/330px-Canopus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Canopus",
+    "simbad_id": "* alf Car",
+    "wikidata": "Q12189",
+    "wikipedia": "Canopus"
+  },
+  "simbad": {
+    "main_id": "* alf Car",
+    "ra": 95.98795782918306,
+    "dec": -52.69566138386201,
+    "otype": "*",
+    "otype_desc": "Star",
+    "sp_type": "A9II",
+    "plx_value": 10.55,
+    "plx_err": 0.56,
+    "pmra": 19.93,
+    "pmdec": 23.24,
+    "rvz_radvel": 20.3,
+    "rvz_redshift": 6.771580404030253e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 461,
+    "identifiers": [
+      "TIC 255559489",
+      "HIP 30438",
+      "2MASS J06235709-5241441",
+      "PLX 1497",
+      "* alf Car",
+      "1AXG J062403-5241",
+      "2E  1642",
+      "CEL   1228",
+      "CPC 19  2125",
+      "CPD-52   914",
+      "FK5  245",
+      "GC  8302",
+      "GCRV  4091",
+      "GEN# +1.00045348",
+      "HD  45348",
+      "HIC  30438",
+      "HR  2326",
+      "IRAS 06228-5240",
+      "JP11  1384",
+      "N30 1391",
+      "NAME Canopus",
+      "PPM 335149",
+      "ROT  1039",
+      "SAO 234480",
+      "SKY# 10936",
+      "SRS  30245",
+      "TD1  7115",
+      "UBV    6431",
+      "UBV M  12094",
+      "uvby98 100045348",
+      "PLX 1497.00",
+      "1E 0622.8-5239",
+      "1ES 0622-52.6",
+      "1RXS J062357.2-524139",
+      "2E 0622.8-5240",
+      "2EUVE J0624-52.6",
+      "EUVE J0624-52.6",
+      "EXSS 0622.7-5240",
+      "TYC 8534-2277-1",
+      "WEB  6060"
+    ],
+    "fluxes": {
+      "J": {
+        "mag": -1.15,
+        "err": null
+      },
+      "K": {
+        "mag": -1.35,
+        "err": null
+      },
+      "H": {
+        "mag": -1.25,
+        "err": null
+      },
+      "B": {
+        "mag": -0.59,
+        "err": null
+      },
+      "V": {
+        "mag": -0.74,
+        "err": null
+      },
+      "U": {
+        "mag": -0.49,
+        "err": null
+      },
+      "R": {
+        "mag": -0.96,
+        "err": null
+      },
+      "I": {
+        "mag": -1.13,
+        "err": null
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 6904,
+        "log_g": null,
+        "fe_h": -0.15,
+        "bibcode": "1974AcA....24..275P"
+      },
+      {
+        "teff": 7522,
+        "log_g": 1.9,
+        "fe_h": 0.35,
+        "bibcode": "1979ApJ...232..797L"
+      },
+      {
+        "teff": 7304,
+        "log_g": 1.8,
+        "fe_h": -0.14,
+        "bibcode": "1982MNRAS.201..707D"
+      },
+      {
+        "teff": 7500,
+        "log_g": 1.2,
+        "fe_h": 0,
+        "bibcode": "1991A&A...249..192A"
+      },
+      {
+        "teff": 7522,
+        "log_g": 1.9,
+        "fe_h": 0.35,
+        "bibcode": "1979ApJ...232..797L"
+      },
+      {
+        "teff": 7304,
+        "log_g": 1.8,
+        "fe_h": -0.14,
+        "bibcode": "1982MNRAS.201..707D"
+      },
+      {
+        "teff": 7304,
+        "log_g": 1.5,
+        "fe_h": -0.07,
+        "bibcode": "1985ApJ...298..782L"
+      },
+      {
+        "teff": 7412,
+        "log_g": 1.9,
+        "fe_h": -0.11,
+        "bibcode": "1988ApJ...332..410B"
+      },
+      {
+        "teff": 7412,
+        "log_g": 1.9,
+        "fe_h": -0.12,
+        "bibcode": "1989ApJS...70..865R"
+      },
+      {
+        "teff": 7522,
+        "log_g": 1.2,
+        "fe_h": -0.03,
+        "bibcode": "1989A&A...210...25S"
+      },
+      {
+        "teff": 7500,
+        "log_g": 1.2,
+        "fe_h": 0,
+        "bibcode": "1991A&A...249..192A"
+      },
+      {
+        "teff": 7500,
+        "log_g": 1.5,
+        "fe_h": -0.06,
+        "bibcode": "1995A&A...293..347H"
+      },
+      {
+        "teff": 6904,
+        "log_g": null,
+        "fe_h": -0.15,
+        "bibcode": "1974AcA....24..275P"
+      },
+      {
+        "teff": 7304,
+        "log_g": 1.5,
+        "fe_h": -0.07,
+        "bibcode": "1985ApJ...298..782L"
+      },
+      {
+        "teff": 7304,
+        "log_g": 1.8,
+        "fe_h": -0.14,
+        "bibcode": "1981MNRAS.201..707D"
+      },
+      {
+        "teff": 7412,
+        "log_g": 1.9,
+        "fe_h": -0.11,
+        "bibcode": "1988ApJ...332..410B"
+      },
+      {
+        "teff": 7412,
+        "log_g": 1.9,
+        "fe_h": -0.12,
+        "bibcode": "1989ApJS...70..865R"
+      },
+      {
+        "teff": 7500,
+        "log_g": 1.5,
+        "fe_h": -0.06,
+        "bibcode": "1995A&A...293..347H"
+      },
+      {
+        "teff": 7522,
+        "log_g": 1.2,
+        "fe_h": -0.03,
+        "bibcode": "1989A&A...210...25S"
+      },
+      {
+        "teff": 7000,
+        "log_g": 1.12,
+        "fe_h": -0.272,
+        "bibcode": "2023ApJS..266...11B"
+      },
+      {
+        "teff": 7557,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2007MNRAS.378..617K"
+      }
+    ],
+    "teff_median": 7412,
+    "vsini_measurements": [
+      {
+        "vsini": 9,
+        "vsini_err": 1,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 9,
+        "vsini_err": null,
+        "bibcode": "2002A&A...393..897R"
+      },
+      {
+        "vsini": 0.165,
+        "vsini_err": null,
+        "bibcode": "2023ApJS..266...11B"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "IR",
+      "NIR",
+      "UV",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20Car"
+  },
+  "wikipedia": {
+    "title": "Canopus",
+    "description": "Brightest star in the constellation of Carina",
+    "summary": "Canopus is the brightest star in the southern constellation of Carina and the second-brightest star in the night sky. It is designated α Carinae, which is romanized (transliterated) to Alpha Carinae. With a visual apparent magnitude of −0.74, it is outshone only by Sirius.",
+    "intro": "Canopus is the brightest star in the southern constellation of Carina and the second-brightest star in the night sky. It is designated α Carinae, which is romanized (transliterated) to Alpha Carinae. With a visual apparent magnitude of −0.74, it is outshone only by Sirius.\nLocated around 310 light-years from the Sun, Canopus is a bright giant of spectral type A9, so it is essentially white when seen with the naked eye. It has a luminosity over 10,000 times the luminosity of the Sun, is nine to ten times as massive, and has expanded to 71 times the Sun's radius.  Its enlarged photosphere has an effective temperature of around 7400 K.  Canopus is undergoing core helium burning and is currently in the so-called blue loop phase of its evolution, having already passed through the red-giant branch after exhausting the hydrogen in its core. Canopus is a source of X-rays, which are likely being emitted from its corona.\nThe prominent appearance of Canopus means it has been the subject of mythological lore among many ancient peoples. Its proper name is believed to originate from the mythological Canopus, a navigator for Menelaus, the king of Sparta. The acronycal rising marked the date of the Ptolemaia festival in Egypt. In ancient India, it was named Agastya after the revered Vedic sage. For Chinese astronomers, it was known as the Old Man of the South Pole. In Islamic astronomy, it is Suhail or Suhayl, a name that is also commonly used to imply rareness of appearance (as Canopus infrequently appeared to a gazer at Middle Eastern latitudes).\n\n",
+    "url": "https://en.wikipedia.org/wiki/Canopus",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Canopus.jpg/330px-Canopus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Canopus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikidata": "Q12189"
+  },
+  "wikidata": {
+    "id": "Q12189",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "F0II"
+        },
+        {
+          "value": "F0Iab"
+        },
+        {
+          "value": "F0Ia"
+        },
+        {
+          "value": "A9II"
+        },
+        {
+          "value": "F0Ib"
+        },
+        {
+          "value": "F0"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Carina"
+        },
+        {
+          "value": "Argo Navis"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": -0.74,
+          "unit": ""
+        },
+        {
+          "value": -0.49,
+          "unit": ""
+        },
+        {
+          "value": -0.59,
+          "unit": ""
+        },
+        {
+          "value": -0.96,
+          "unit": ""
+        },
+        {
+          "value": -1.13,
+          "unit": ""
+        },
+        {
+          "value": -1.15,
+          "unit": ""
+        },
+        {
+          "value": -1.25,
+          "unit": ""
+        },
+        {
+          "value": -1.35,
+          "unit": ""
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -5.71,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 310.0,
+          "unit": "ly",
+          "plus": 20.0,
+          "minus": 20.0
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 13300.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 7522.0,
+          "unit": "K"
+        },
+        {
+          "value": 7557.0,
+          "unit": "K"
+        },
+        {
+          "value": 7500.0,
+          "unit": "K"
+        },
+        {
+          "value": 7412.0,
+          "unit": "K"
+        },
+        {
+          "value": 7304.0,
+          "unit": "K"
+        },
+        {
+          "value": 6904.0,
+          "unit": "K"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.35,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": ""
+        },
+        {
+          "value": -0.15,
+          "unit": ""
+        },
+        {
+          "value": -0.14,
+          "unit": ""
+        },
+        {
+          "value": -0.07,
+          "unit": ""
+        },
+        {
+          "value": -0.11,
+          "unit": ""
+        },
+        {
+          "value": -0.12,
+          "unit": ""
+        },
+        {
+          "value": -0.03,
+          "unit": ""
+        },
+        {
+          "value": -0.06,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 80.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 63.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 16.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 32.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 30.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 31.6,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 20.5,
+          "unit": "km/s",
+          "plus": 0.8999999999999986,
+          "minus": 0.8999999999999986
+        },
+        {
+          "value": 20.3,
+          "unit": "km/s",
+          "plus": 0.5,
+          "minus": 0.5
+        },
+        {
+          "value": 18.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 20.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 19.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 20.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 20.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 19.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 23.3,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 17.8,
+          "unit": "mas",
+          "plus": 6.5,
+          "minus": 6.5
+        },
+        {
+          "value": 10.43,
+          "unit": "mas",
+          "plus": 0.5300000000000011,
+          "minus": 0.5299999999999994
+        },
+        {
+          "value": 10.55,
+          "unit": "mas",
+          "plus": 0.5599999999999987,
+          "minus": 0.5600000000000005
+        }
+      ],
+      "child astronomical body": [
+        {
+          "value": "Arrakis"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "navigational star"
+        },
+        {
+          "value": "near-infrared source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 95.987957829,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -52.695661384,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Canopus.jpg",
+    "url": "https://www.wikidata.org/wiki/Q12189"
+  },
+  "summary": {
+    "designation": "alf Car",
+    "object_type": "Star",
+    "spectral_type": "A9II",
+    "ra_deg": 95.98795782918306,
+    "dec_deg": -52.69566138386201,
+    "v_mag": -0.74,
+    "distance_pc": 94.8,
+    "distance_ly": 309.2,
+    "teff_k": 7412,
+    "b_minus_v": 0.15,
+    "luminosity": {
+      "value": 13300.0,
+      "unit": "L☉"
+    },
+    "constellation": "Carina",
+    "description": "Brightest star in the constellation of Carina"
+  },
+  "id": "canopus",
+  "path": "stars/canopus",
+  "observations": [
+    {
+      "datetime": "2026-10-08 06:44",
+      "location": "",
+      "rating": null,
+      "seeing": "",
+      "transparency": "",
+      "bortle": "",
+      "incomplete": true,
+      "location_assumed": "Royse City, Texas",
+      "utc": "2026-10-08 11:44",
+      "altitude_deg": 4.3,
+      "azimuth_deg": 180.5
+    },
+    {
+      "datetime": "2026-10-06 05:45",
+      "location": "Royse City, Texas",
+      "rating": 4.0,
+      "seeing": "3/5",
+      "transparency": "4/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-06 10:45",
+      "altitude_deg": 3.2,
+      "azimuth_deg": 170.4
+    }
+  ]
+}

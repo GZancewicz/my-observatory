@@ -1,0 +1,365 @@
+{
+  "name": "20 Cet",
+  "category": "stars",
+  "app_type": "M-Star",
+  "harvested": "2026-10-10T16:16:05Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2020%20Cet",
+      "retrieved": "2026-10-10T16:16:13Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/20_Ceti",
+      "retrieved": "2026-10-10T16:16:14Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q3598071",
+      "retrieved": "2026-10-10T16:16:15Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Cetus_constellation_map.svg/330px-Cetus_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:20 Cet",
+    "simbad_id": "*  20 Cet",
+    "wikidata": "Q3598071",
+    "wikipedia": "20 Ceti"
+  },
+  "simbad": {
+    "main_id": "*  20 Cet",
+    "ra": 13.252059246918751,
+    "dec": -1.1442597826699998,
+    "otype": "*",
+    "otype_desc": "Star",
+    "sp_type": "K5III",
+    "plx_value": 6.0786,
+    "plx_err": 0.1922,
+    "pmra": 5.888,
+    "pmdec": -15.731,
+    "rvz_radvel": 16.22,
+    "rvz_redshift": 5.410555994700417e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 101,
+    "identifiers": [
+      "TIC 333640813",
+      "Gaia DR3 2535891460567764224",
+      "WISE J005300.23-010841.4",
+      "*  20 Cet",
+      "2MASS J00530050-0108395",
+      "PLX  175",
+      "AG-01   73",
+      "BD-01   114",
+      "DO   126",
+      "FK5 1022",
+      "GC  1055",
+      "GCRV   499",
+      "GEN# +1.00005112",
+      "GSC 04674-01183",
+      "HD   5112",
+      "HIC   4147",
+      "HR   248",
+      "IRAS 00504-0124",
+      "IRC +00013",
+      "JP11   433",
+      "N30  179",
+      "PMC 90-93   666",
+      "PPM 174810",
+      "RAFGL  123",
+      "SAO 129009",
+      "SKY#  1363",
+      "TYC 4674-1183-1",
+      "UBV     766",
+      "YZ   0  3328",
+      "YZ  91   163",
+      "[DS98]  12",
+      "uvby98 100005112",
+      "PLX  175.00",
+      "HIP 4147",
+      "WEB   738",
+      "Gaia DR2 2535891460567037184"
+    ],
+    "fluxes": {
+      "B": {
+        "mag": 6.34,
+        "err": null
+      },
+      "V": {
+        "mag": 4.76,
+        "err": null
+      },
+      "K": {
+        "mag": 1.019,
+        "err": 0.3
+      },
+      "U": {
+        "mag": 8.24,
+        "err": null
+      },
+      "R": {
+        "mag": 3.55,
+        "err": null
+      },
+      "I": {
+        "mag": 2.64,
+        "err": null
+      },
+      "G": {
+        "mag": 4.116363,
+        "err": 0.002952
+      },
+      "J": {
+        "mag": 1.94,
+        "err": 0.258
+      },
+      "H": {
+        "mag": 1.176,
+        "err": 0.266
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 3883,
+        "log_g": 1.36,
+        "fe_h": 0.02,
+        "bibcode": "2024A&A...689A.120B"
+      }
+    ],
+    "teff_median": 3883,
+    "vsini_measurements": [],
+    "distance_measurements": [
+      {
+        "dist": 145.9045,
+        "unit": "pc  ",
+        "plus_err": 5.933,
+        "minus_err": -5.933,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 164.512,
+        "unit": "pc  ",
+        "plus_err": 5.2017,
+        "minus_err": -5.2017,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "IR",
+      "MIR",
+      "NIR"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20%2020%20Cet"
+  },
+  "wikipedia": {
+    "title": "20 Ceti",
+    "description": "Star in the constellation Cetus",
+    "summary": "20 Ceti is a single star located around 590 light years away in the equatorial constellation of Cetus. It is faintly visible to the naked eye with apparent magnitude is 4.76. The Bright Star Catalogue has this star classified as M0III, matching an aging red giant star that has consumed the hydrogen at its core and expanded. Houk and Swift (1999) listed an earlier class of K5 III. It has around 66 times the Sun's radius and is radiating about 750 times the Sun's luminosity from its enlarged photosphere at an effective temperature of 4,065 K.",
+    "intro": "20 Ceti is a single star located around 590 light years away in the equatorial constellation of Cetus. It is faintly visible to the naked eye with apparent magnitude is 4.76. The Bright Star Catalogue has this star classified as M0III, matching an aging red giant star that has consumed the hydrogen at its core and expanded. Houk and Swift (1999) listed an earlier class of K5 III. It has around 66 times the Sun's radius and is radiating about 750 times the Sun's luminosity from its enlarged photosphere at an effective temperature of 4,065 K.",
+    "url": "https://en.wikipedia.org/wiki/20_Ceti",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Cetus_constellation_map.svg/330px-Cetus_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Cetus_constellation_map.svg/330px-Cetus_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q3598071"
+  },
+  "wikidata": {
+    "id": "Q3598071",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "K5III"
+        },
+        {
+          "value": "K0"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Cetus"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 4.76,
+          "unit": ""
+        },
+        {
+          "value": 8.24,
+          "unit": ""
+        },
+        {
+          "value": 6.34,
+          "unit": ""
+        },
+        {
+          "value": 3.55,
+          "unit": ""
+        },
+        {
+          "value": 2.64,
+          "unit": ""
+        },
+        {
+          "value": 4.0518,
+          "unit": "",
+          "plus": 0.0030000000000001137,
+          "minus": 0.0030000000000001137
+        },
+        {
+          "value": 2.06,
+          "unit": ""
+        },
+        {
+          "value": 1.19,
+          "unit": ""
+        },
+        {
+          "value": 1.03,
+          "unit": ""
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -1.58,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 145.9045,
+          "unit": "pc",
+          "plus": 5.932999999999993,
+          "minus": 5.933000000000021
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 15.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 15.8,
+          "unit": "km/s",
+          "plus": 0.8999999999999986,
+          "minus": 0.9000000000000004
+        },
+        {
+          "value": 16.22,
+          "unit": "km/s"
+        },
+        {
+          "value": 16.22,
+          "unit": "km/s",
+          "plus": 0.28000000000000114,
+          "minus": 0.27999999999999936
+        },
+        {
+          "value": 16.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 17.4,
+          "unit": "km/s"
+        },
+        {
+          "value": 15.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 16.1,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 6.8538,
+          "unit": "mas",
+          "plus": 0.2787000000000006,
+          "minus": 0.2786999999999997
+        },
+        {
+          "value": 6.28,
+          "unit": "mas",
+          "plus": 0.8499999999999996,
+          "minus": 0.8500000000000005
+        },
+        {
+          "value": 5.56,
+          "unit": "mas",
+          "plus": 0.22000000000000064,
+          "minus": 0.21999999999999975
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 13.25206051042,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -1.14425880361,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q3598071"
+  },
+  "summary": {
+    "designation": "20 Cet",
+    "object_type": "Star",
+    "spectral_type": "K5III",
+    "ra_deg": 13.252059246918751,
+    "dec_deg": -1.1442597826699998,
+    "v_mag": 4.76,
+    "distance_pc": 164.5,
+    "distance_ly": 536.6,
+    "teff_k": 3883,
+    "b_minus_v": 1.58,
+    "constellation": "Cetus",
+    "description": "Star in the constellation Cetus"
+  },
+  "id": "20-cet",
+  "path": "stars/20-cet",
+  "observations": [
+    {
+      "datetime": "2026-10-09 20:57",
+      "location": "Royse City, Texas",
+      "rating": 2.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 01:57",
+      "altitude_deg": 22.8,
+      "azimuth_deg": 107.4
+    }
+  ]
+}

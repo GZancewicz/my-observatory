@@ -1,0 +1,480 @@
+{
+  "name": "Furud",
+  "category": "stars",
+  "app_type": "B-Star",
+  "harvested": "2026-10-10T16:08:11Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20zet%20CMa",
+      "retrieved": "2026-10-10T16:08:19Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zeta_Canis_Majoris",
+      "retrieved": "2026-10-10T16:08:20Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q13418",
+      "retrieved": "2026-10-10T16:08:20Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/330px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Furud",
+    "simbad_id": "* zet CMa",
+    "wikidata": "Q13418",
+    "wikipedia": "Zeta Canis Majoris"
+  },
+  "simbad": {
+    "main_id": "* zet CMa",
+    "ra": 95.07830016583333,
+    "dec": -30.063366733888888,
+    "otype": "Ce*",
+    "otype_desc": "Cepheid Variable",
+    "sp_type": "B2.5V",
+    "plx_value": 9,
+    "plx_err": 0.13,
+    "pmra": 7.32,
+    "pmdec": 4.03,
+    "rvz_radvel": 32.2,
+    "rvz_redshift": 0.00010741340747388861,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 170,
+    "identifiers": [
+      "TIC 124918771",
+      "HIP 30122",
+      "Gaia DR3 2896572746685604480",
+      "PLX 1474",
+      "SBC9 395",
+      "*   1 CMa",
+      "* zet CMa",
+      "CCDM J06203-3003A",
+      "CD-30  3038",
+      "CEL   1191",
+      "CPC 17  2668",
+      "CPD-30  1217",
+      "FK5  240",
+      "GC  8170",
+      "GCRV  4030",
+      "GEN# +1.00044402",
+      "HD  44402",
+      "HIC  30122",
+      "HR  2282",
+      "IDS 06165-3001 A",
+      "JP11  1364",
+      "N30 1365",
+      "NSV  2927",
+      "PMC 90-93   172",
+      "PPM 282532",
+      "ROT  1022",
+      "SAO 196698",
+      "SBC7   275",
+      "SKY# 10777",
+      "SRS  30240",
+      "TD1  6851",
+      "UBV    6372",
+      "UBV M  12008",
+      "YZ 120  2904",
+      "uvby98 100044402",
+      "ALS 14865",
+      "PLX 1474.00",
+      "2MASS J06201879-3003480",
+      "WDS J06203-3004A",
+      "TYC 7073-2426-1",
+      "IRAS 06183-3002",
+      "AKARI-IRC-V1 J0620188-300348",
+      "NAME Furud",
+      "WEB  5991"
+    ],
+    "fluxes": {
+      "U": {
+        "mag": 2.12,
+        "err": null
+      },
+      "J": {
+        "mag": 3.464,
+        "err": 0.26
+      },
+      "H": {
+        "mag": 3.503,
+        "err": 0.242
+      },
+      "K": {
+        "mag": 3.67,
+        "err": 0.272
+      },
+      "G": {
+        "mag": 3.007651,
+        "err": 0.004241
+      },
+      "V": {
+        "mag": 2.99,
+        "err": 0.01
+      },
+      "B": {
+        "mag": 2.82,
+        "err": 0.01
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 20950,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1995A&AS..110..553S"
+      }
+    ],
+    "teff_median": 20950,
+    "vsini_measurements": [
+      {
+        "vsini": 48,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 70,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 25,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 45,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 30,
+        "vsini_err": 6,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 60,
+        "vsini_err": 10,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 25,
+        "vsini_err": 9,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 105.35,
+        "unit": "pc  ",
+        "plus_err": 4.971,
+        "minus_err": -4.971,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "Ce*",
+      "IR",
+      "NIR",
+      "Pu*",
+      "SB*",
+      "UV",
+      "V*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20zet%20CMa"
+  },
+  "wikipedia": {
+    "title": "Zeta Canis Majoris",
+    "description": "Binary star in the constellation Canis Major",
+    "summary": "Zeta Canis Majoris is a binary star system in the southern constellation of Canis Major. Its name is a Bayer designation that is Latinized from ζ Canis Majoris; it has the proper name Furud, pronounced. This system has a combined apparent visual magnitude of +3.0, making it one of the brighter stars in the constellation and hence readily visible to the naked eye. Parallax measurements from the Hipparcos mission yield a distance estimate of around 362 ly (111 pc) from the Sun. It is drifting further away with a radial velocity of +32 km/s.",
+    "intro": "Zeta Canis Majoris is a binary star system in the southern constellation of Canis Major. Its name is a Bayer designation that is Latinized from ζ Canis Majoris; it has the proper name Furud, pronounced . This system has a combined apparent visual magnitude of +3.0, making it one of the brighter stars in the constellation and hence readily visible to the naked eye. Parallax measurements from the Hipparcos mission yield a distance estimate of around 362 ly (111 pc) from the Sun. It is drifting further away with a radial velocity of +32 km/s.",
+    "url": "https://en.wikipedia.org/wiki/Zeta_Canis_Majoris",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/330px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/250px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q13418"
+  },
+  "wikidata": {
+    "id": "Q13418",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "B2.5V"
+        },
+        {
+          "value": "B2.5IV"
+        },
+        {
+          "value": "B2.5 V SB"
+        },
+        {
+          "value": "B3V"
+        },
+        {
+          "value": "B3"
+        },
+        {
+          "value": "B2.5VSB"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Canis Major"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 2.99,
+          "unit": "",
+          "plus": 0.009999999999999787,
+          "minus": 0.010000000000000231
+        },
+        {
+          "value": 2.12,
+          "unit": ""
+        },
+        {
+          "value": 3.464,
+          "unit": "",
+          "plus": 0.26000000000000023,
+          "minus": 0.2599999999999998
+        },
+        {
+          "value": 3.503,
+          "unit": "",
+          "plus": 0.242,
+          "minus": 0.242
+        },
+        {
+          "value": 3.67,
+          "unit": "",
+          "plus": 0.27200000000000024,
+          "minus": 0.2719999999999998
+        },
+        {
+          "value": 2.82,
+          "unit": "",
+          "plus": 0.010000000000000231,
+          "minus": 0.009999999999999787
+        },
+        {
+          "value": 3.007651,
+          "unit": "",
+          "plus": 0.004240999999999939,
+          "minus": 0.004240999999999939
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -2.21,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 100.9622,
+          "unit": "pc",
+          "plus": 7.2964000000000055,
+          "minus": 7.296399999999991
+        },
+        {
+          "value": 105.35,
+          "unit": "pc",
+          "plus": 4.971000000000004,
+          "minus": 4.970999999999989
+        }
+      ],
+      "radius": [
+        {
+          "value": 3.9,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 3603.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 20950.0,
+          "unit": "K"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 32.2,
+          "unit": "km/s",
+          "plus": 0.8999999999999986,
+          "minus": 0.9000000000000021
+        },
+        {
+          "value": 32.2,
+          "unit": "km/s",
+          "plus": 7.399999999999999,
+          "minus": 7.400000000000002
+        },
+        {
+          "value": 32.2,
+          "unit": "km/s"
+        },
+        {
+          "value": 46.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 34.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 29.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 30.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 24.5,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 9.9047,
+          "unit": "mas",
+          "plus": 0.7157999999999998,
+          "minus": 0.7157999999999998
+        },
+        {
+          "value": 2.7,
+          "unit": "mas",
+          "plus": 15.0,
+          "minus": 15.0
+        },
+        {
+          "value": 9.0,
+          "unit": "mas",
+          "plus": 0.13000000000000078,
+          "minus": 0.13000000000000078
+        },
+        {
+          "value": 9.7,
+          "unit": "mas",
+          "plus": 0.5800000000000001,
+          "minus": 0.5800000000000001
+        },
+        {
+          "value": 9.4922,
+          "unit": "mas",
+          "plus": 0.44789999999999885,
+          "minus": 0.44790000000000063
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "spectroscopic binary"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "Cepheid variable"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "pulsating variable star"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "suspected variable"
+        },
+        {
+          "value": "Beta Cephei variable"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 95.07830016583,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -30.06336673389,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Canis Major.png",
+    "url": "https://www.wikidata.org/wiki/Q13418"
+  },
+  "summary": {
+    "designation": "zet CMa",
+    "object_type": "Cepheid Variable",
+    "spectral_type": "B2.5V",
+    "ra_deg": 95.07830016583333,
+    "dec_deg": -30.063366733888888,
+    "v_mag": 2.99,
+    "distance_pc": 111.1,
+    "distance_ly": 362.4,
+    "teff_k": 20950,
+    "b_minus_v": -0.17,
+    "radius": {
+      "value": 3.9,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 3603.0,
+      "unit": "L☉"
+    },
+    "constellation": "Canis Major",
+    "description": "Binary star in the constellation Canis Major"
+  },
+  "id": "furud",
+  "path": "stars/furud",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:17",
+      "location": "Royse City, Texas",
+      "rating": 2.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 10:17",
+      "altitude_deg": 24.7,
+      "azimuth_deg": 162.8
+    }
+  ]
+}

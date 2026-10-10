@@ -1,0 +1,445 @@
+{
+  "name": "Castor",
+  "category": "stars",
+  "app_type": "A-Star",
+  "harvested": "2026-10-10T16:10:23Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20Gem",
+      "retrieved": "2026-10-10T16:10:30Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Castor_(star)",
+      "retrieved": "2026-10-10T16:10:31Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q13029",
+      "retrieved": "2026-10-10T16:10:31Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Gemini_constellation_map.svg/330px-Gemini_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Castor",
+    "simbad_id": "* alf Gem",
+    "wikidata": "Q13029",
+    "wikipedia": "Castor (star)"
+  },
+  "simbad": {
+    "main_id": "* alf Gem",
+    "ra": 113.64947163976585,
+    "dec": 31.88828221646326,
+    "otype": "**",
+    "otype_desc": "Double or Multiple Star",
+    "sp_type": "A1V+A2Vm",
+    "plx_value": 64.12,
+    "plx_err": 3.75,
+    "pmra": -191.45,
+    "pmdec": -145.19,
+    "rvz_radvel": -11.23,
+    "rvz_redshift": -3.7458546319313335e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 279,
+    "identifiers": [
+      "TIC 239187687",
+      "GJ 278.0",
+      "HIP 36850",
+      "WDS J07346+3153AB",
+      "NLTT 18087",
+      "* alf Gem",
+      "*  66 Gem",
+      "ADS  6175 AB",
+      "AG+31  789",
+      "BD+32  1581",
+      "CCDM J07346+3153AB",
+      "CSI+32  1581  1",
+      "FK5  287",
+      "CNS5 1879",
+      "GC 10120",
+      "HIC  36850",
+      "IRAS 07314+3159",
+      "IRC +30188",
+      "LTT 12038",
+      "NAME Castor",
+      "NAME Castor AB",
+      "PMC 90-93   208",
+      "PPM  72938",
+      "RAFGL 1144",
+      "SAO  60198",
+      "SRS  30287",
+      "TD1 10405",
+      "UBV    7277",
+      "[HFE83]  521",
+      "2MASS J07343598+3153184",
+      "** STF 1110AB",
+      "2XMM J073435.6+315318",
+      "PLX 1785",
+      "PLX 1785.00",
+      "GEN# +1.00060179"
+    ],
+    "fluxes": {
+      "J": {
+        "mag": 1.53,
+        "err": null
+      },
+      "K": {
+        "mag": 1.52,
+        "err": null
+      },
+      "H": {
+        "mag": 1.52,
+        "err": null
+      },
+      "R": {
+        "mag": 1.51,
+        "err": null
+      },
+      "I": {
+        "mag": 1.52,
+        "err": null
+      },
+      "V": {
+        "mag": 1.58,
+        "err": null
+      },
+      "U": {
+        "mag": 1.64,
+        "err": null
+      },
+      "B": {
+        "mag": 1.62,
+        "err": null
+      },
+      "u": {
+        "mag": 2.66,
+        "err": null
+      },
+      "g": {
+        "mag": 1.51,
+        "err": null
+      },
+      "r": {
+        "mag": 1.68,
+        "err": null
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 9031,
+        "log_g": 3.9385,
+        "fe_h": 0.1921,
+        "bibcode": "2023ApJS..266...11B"
+      },
+      {
+        "teff": 9900,
+        "log_g": 4,
+        "fe_h": 0.1,
+        "bibcode": "2016A&A...589A..83G"
+      }
+    ],
+    "teff_median": 9900,
+    "vsini_measurements": [
+      {
+        "vsini": 20,
+        "vsini_err": null,
+        "bibcode": "2016A&A...589A..83G"
+      },
+      {
+        "vsini": 18.43,
+        "vsini_err": 0.83,
+        "bibcode": "2023ApJS..266...11B"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "NIR",
+      "PM*",
+      "UV",
+      "V*",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20Gem"
+  },
+  "wikipedia": {
+    "title": "Castor (star)",
+    "description": "Sextuple star system in Gemini",
+    "summary": "Castor is the second-brightest object in the zodiac constellation of Gemini. It has the Bayer designation α Geminorum, which is Latinised to Alpha Geminorum and abbreviated Alpha Gem or α Gem. With an apparent visual magnitude of 1.58, it is one of the brightest stars in the night sky. Castor appears singular to the naked eye, but it is actually a sextuple star system organized into three binary pairs. Although it is the 'α' (alpha) member of the constellation, it is half a magnitude fainter than 'β' (beta) Geminorum, Pollux.",
+    "intro": "Castor is the second-brightest object in the zodiac constellation of Gemini. It has the Bayer designation α Geminorum, which is Latinised to Alpha Geminorum and abbreviated Alpha Gem or α Gem. With an apparent visual magnitude of 1.58, it is one of the brightest stars in the night sky. Castor appears singular to the naked eye, but it is actually a sextuple star system organized into three binary pairs. Although it is the 'α' (alpha) member of the constellation, it is half a magnitude fainter than 'β' (beta) Geminorum, Pollux.",
+    "url": "https://en.wikipedia.org/wiki/Castor_(star)",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Gemini_constellation_map.svg/330px-Gemini_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Gemini_constellation_map.svg/330px-Gemini_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q13029"
+  },
+  "wikidata": {
+    "id": "Q13029",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "A1V+A2Vm"
+        },
+        {
+          "value": "A1.5 IV+"
+        },
+        {
+          "value": "A1.5IV+"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Gemini"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 1.58,
+          "unit": ""
+        },
+        {
+          "value": 1.62,
+          "unit": ""
+        },
+        {
+          "value": 1.51,
+          "unit": ""
+        },
+        {
+          "value": 1.52,
+          "unit": ""
+        },
+        {
+          "value": 1.53,
+          "unit": ""
+        },
+        {
+          "value": 1.52,
+          "unit": ""
+        },
+        {
+          "value": 1.52,
+          "unit": ""
+        },
+        {
+          "value": 1.68,
+          "unit": ""
+        },
+        {
+          "value": 1.51,
+          "unit": ""
+        },
+        {
+          "value": 2.66,
+          "unit": ""
+        },
+        {
+          "value": 1.64,
+          "unit": ""
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": 1.332,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 49.8,
+          "unit": "ly"
+        }
+      ],
+      "mass": [
+        {
+          "value": 2.151,
+          "unit": "M☉"
+        }
+      ],
+      "radius": [
+        {
+          "value": 2.31,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 3014.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 9900.0,
+          "unit": "K"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.1,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 10000.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 5.4,
+          "unit": "km/s",
+          "plus": 0.5,
+          "minus": 0.5
+        }
+      ],
+      "parallax": [
+        {
+          "value": 65.5,
+          "unit": "mas",
+          "plus": 1.0999999999999943,
+          "minus": 1.0999999999999943
+        },
+        {
+          "value": 74.7,
+          "unit": "mas",
+          "plus": 2.5,
+          "minus": 2.5
+        },
+        {
+          "value": 63.27,
+          "unit": "mas",
+          "plus": 1.2299999999999969,
+          "minus": 1.230000000000004
+        },
+        {
+          "value": 64.12,
+          "unit": "mas",
+          "plus": 3.75,
+          "minus": 3.750000000000007
+        }
+      ],
+      "named after": [
+        {
+          "value": "Castor"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "multiple star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "star"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "binary star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 113.64947164,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 31.888282216,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Gemini constellation map.png",
+    "url": "https://www.wikidata.org/wiki/Q13029"
+  },
+  "summary": {
+    "designation": "alf Gem",
+    "object_type": "Double or Multiple Star",
+    "spectral_type": "A1V+A2Vm",
+    "ra_deg": 113.64947163976585,
+    "dec_deg": 31.88828221646326,
+    "v_mag": 1.58,
+    "distance_pc": 15.6,
+    "distance_ly": 50.9,
+    "teff_k": 9900,
+    "b_minus_v": 0.04,
+    "mass": {
+      "value": 2.151,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 2.31,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 3014.0,
+      "unit": "L☉"
+    },
+    "constellation": "Gemini",
+    "description": "Sextuple star system in Gemini"
+  },
+  "id": "castor",
+  "path": "stars/castor",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:11",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 10:11",
+      "altitude_deg": 57.9,
+      "azimuth_deg": 81.3
+    },
+    {
+      "datetime": "2026-09-30 05:02",
+      "location": "Royse City, Texas",
+      "rating": 4.0,
+      "seeing": "4/5",
+      "transparency": "4/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-09-30 10:02",
+      "altitude_deg": 47.9,
+      "azimuth_deg": 77.2
+    }
+  ]
+}

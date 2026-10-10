@@ -1,0 +1,458 @@
+{
+  "name": "Pherkad",
+  "category": "stars",
+  "app_type": "A-Star",
+  "harvested": "2026-10-10T16:20:41Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20gam%20UMi",
+      "retrieved": "2026-10-10T16:20:48Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pherkad",
+      "retrieved": "2026-10-10T16:20:49Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q14061",
+      "retrieved": "2026-10-10T16:20:50Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Ursa_Minor_constellation_map.svg/330px-Ursa_Minor_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Pherkad",
+    "simbad_id": "* gam UMi",
+    "wikidata": "Q14061",
+    "wikipedia": "Pherkad"
+  },
+  "simbad": {
+    "main_id": "* gam UMi",
+    "ra": 230.18209804850082,
+    "dec": 71.83402545491221,
+    "otype": "dS*",
+    "otype_desc": "delta Sct Variable",
+    "sp_type": "A2III",
+    "plx_value": 6.5959,
+    "plx_err": 0.2943,
+    "pmra": -15.908,
+    "pmdec": 17.146,
+    "rvz_radvel": -3.9,
+    "rvz_redshift": -1.3008915096812679e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 157,
+    "identifiers": [
+      "TIC 230065619",
+      "HIP 75097",
+      "Gaia DR3 1696877570753454208",
+      "PLX 3484",
+      "* gam UMi",
+      "*  13 UMi",
+      "AG+72  399",
+      "BD+72   679",
+      "CSV 101502",
+      "FK5  569",
+      "GC 20692",
+      "GCRV  8907",
+      "GEN# +1.00137422",
+      "GSC 04414-02314",
+      "HD 137422",
+      "HIC  75097",
+      "HR  5735",
+      "IRAS 15207+7200",
+      "IRC +70129",
+      "JP11  2602",
+      "N30 3464",
+      "PMC 90-93   403",
+      "PPM   8887",
+      "ROT  2184",
+      "SAO   8220",
+      "SKY# 27791",
+      "TD1 18228",
+      "TYC 4414-2314-1",
+      "UBV   13257",
+      "UBV M  20766",
+      "V* gam UMi",
+      "[HFE83] 1097",
+      "2MASS J15204375+7150024",
+      "SV* ZI  1129",
+      "PLX 3484.00",
+      "NAME Pherkad",
+      "uvby98 100137422",
+      "WEB 12807",
+      "Gaia DR2 1696877570752028288"
+    ],
+    "fluxes": {
+      "V": {
+        "mag": 3.002,
+        "err": 0.009
+      },
+      "J": {
+        "mag": 2.9,
+        "err": 0.228
+      },
+      "H": {
+        "mag": 2.767,
+        "err": 0.254
+      },
+      "K": {
+        "mag": 2.705,
+        "err": 0.326
+      },
+      "B": {
+        "mag": 3.067,
+        "err": 0.014
+      },
+      "G": {
+        "mag": 3.021867,
+        "err": 0.004015
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 8280,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2009A&A...501..297Z"
+      }
+    ],
+    "teff_median": 8280,
+    "vsini_measurements": [
+      {
+        "vsini": 185,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 171,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 165,
+        "vsini_err": null,
+        "bibcode": "1995ApJS...99..135A"
+      },
+      {
+        "vsini": 180,
+        "vsini_err": null,
+        "bibcode": "2002A&A...393..897R"
+      },
+      {
+        "vsini": 160,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 166,
+        "vsini_err": 5,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 165,
+        "vsini_err": 8,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 234.8134,
+        "unit": "pc  ",
+        "plus_err": 23.4389,
+        "minus_err": -23.4389,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 151.609,
+        "unit": "pc  ",
+        "plus_err": 6.7646,
+        "minus_err": -6.7646,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "dS*",
+      "IR",
+      "NIR",
+      "UV",
+      "V*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20gam%20UMi"
+  },
+  "wikipedia": {
+    "title": "Pherkad",
+    "description": "Star in the constellation Ursa Minor",
+    "summary": "Pherkad, Bayer designation Gamma Ursae Minoris, is a star in the northern constellation of Ursa Minor. Together with Beta Ursae Minoris (Kochab), it forms the end of the dipper pan of the \"Little Dipper\", which is an asterism forming the tail of the bear. Based upon parallax measurements obtained during the Hipparcos mission, it is approximately 487 light-years from the Sun.",
+    "intro": "Pherkad , Bayer designation Gamma Ursae Minoris (γ Ursae Minoris, abbreviated Gamma UMi, γ UMi), is a star in the northern constellation of Ursa Minor. Together with Beta Ursae Minoris (Kochab), it forms the end of the dipper pan of the \"Little Dipper\", which is an asterism forming the tail of the bear. Based upon parallax measurements obtained during the Hipparcos mission, it is approximately 487 light-years (149 parsecs) from the Sun.",
+    "url": "https://en.wikipedia.org/wiki/Pherkad",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Ursa_Minor_constellation_map.svg/330px-Ursa_Minor_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Ursa_Minor_constellation_map.svg/250px-Ursa_Minor_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q14061"
+  },
+  "wikidata": {
+    "id": "Q14061",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "A2III"
+        },
+        {
+          "value": "A3III"
+        },
+        {
+          "value": "A3II-III"
+        },
+        {
+          "value": "A2 . P,SB,V"
+        },
+        {
+          "value": "A2"
+        },
+        {
+          "value": "A2.P,SB,V"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Ursa Minor"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 3.002,
+          "unit": "",
+          "plus": 0.009000000000000341,
+          "minus": 0.008999999999999897
+        },
+        {
+          "value": 3.067,
+          "unit": "",
+          "plus": 0.01399999999999979,
+          "minus": 0.014000000000000234
+        },
+        {
+          "value": 2.8756,
+          "unit": "",
+          "plus": 0.0034000000000000696,
+          "minus": 0.0034000000000000696
+        },
+        {
+          "value": 2.9,
+          "unit": "",
+          "plus": 0.2280000000000002,
+          "minus": 0.22799999999999976
+        },
+        {
+          "value": 2.767,
+          "unit": "",
+          "plus": 0.254,
+          "minus": 0.254
+        },
+        {
+          "value": 2.705,
+          "unit": "",
+          "plus": 0.32600000000000007,
+          "minus": 0.32600000000000007
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -2.84,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 234.8134,
+          "unit": "pc",
+          "plus": 23.43889999999999,
+          "minus": 23.43889999999999
+        }
+      ],
+      "mass": [
+        {
+          "value": 8.3,
+          "unit": "M☉"
+        }
+      ],
+      "radius": [
+        {
+          "value": 15.0,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 1100.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 8280.0,
+          "unit": "K"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -3.9,
+          "unit": "km/s"
+        },
+        {
+          "value": -3.9,
+          "unit": "km/s",
+          "plus": 0.8999999999999999,
+          "minus": 0.8999999999999999
+        },
+        {
+          "value": -3.9,
+          "unit": "km/s",
+          "plus": 0.6000000000000001,
+          "minus": 0.6000000000000001
+        },
+        {
+          "value": -16.7,
+          "unit": "km/s"
+        },
+        {
+          "value": -11.1,
+          "unit": "km/s"
+        },
+        {
+          "value": -8.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -20.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -2.9,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 4.2587,
+          "unit": "mas",
+          "plus": 0.4250999999999996,
+          "minus": 0.42510000000000003
+        },
+        {
+          "value": 0.2,
+          "unit": "mas",
+          "plus": 6.8,
+          "minus": 6.8
+        },
+        {
+          "value": 6.79,
+          "unit": "mas",
+          "plus": 0.45999999999999996,
+          "minus": 0.45999999999999996
+        },
+        {
+          "value": 6.7,
+          "unit": "mas",
+          "plus": 0.10999999999999943,
+          "minus": 0.11000000000000032
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "Delta Scuti variable"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "pulsating variable star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 230.18215016292,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 71.83401654472,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Ursa minor constellation map black.png",
+    "url": "https://www.wikidata.org/wiki/Q14061"
+  },
+  "summary": {
+    "designation": "gam UMi",
+    "object_type": "delta Sct Variable",
+    "spectral_type": "A2III",
+    "ra_deg": 230.18209804850082,
+    "dec_deg": 71.83402545491221,
+    "v_mag": 3.002,
+    "distance_pc": 151.6,
+    "distance_ly": 494.5,
+    "teff_k": 8280,
+    "b_minus_v": 0.07,
+    "mass": {
+      "value": 8.3,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 15.0,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 1100.0,
+      "unit": "L☉"
+    },
+    "constellation": "Ursa Minor",
+    "description": "Star in the constellation Ursa Minor"
+  },
+  "id": "pherkad",
+  "path": "stars/pherkad",
+  "observations": [
+    {
+      "datetime": "2026-10-07 06:25",
+      "location": "Royse City, Texas",
+      "rating": 1.0,
+      "seeing": "2/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-07 11:25",
+      "altitude_deg": 18.6,
+      "azimuth_deg": 12.4
+    }
+  ]
+}

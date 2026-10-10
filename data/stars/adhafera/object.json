@@ -1,0 +1,594 @@
+{
+  "name": "Adhafera",
+  "category": "stars",
+  "app_type": "F-Star",
+  "harvested": "2026-10-10T16:21:28Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20zet%20Leo",
+      "retrieved": "2026-10-10T16:21:36Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zeta_Leonis",
+      "retrieved": "2026-10-10T16:22:06Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q14207",
+      "retrieved": "2026-10-10T16:22:07Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leo_constellation_map.svg/330px-Leo_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Adhafera",
+    "simbad_id": "* zet Leo",
+    "wikidata": "Q14207",
+    "wikipedia": "Zeta Leonis"
+  },
+  "simbad": {
+    "main_id": "* zet Leo",
+    "ra": 154.17256318434792,
+    "dec": 23.417316988991107,
+    "otype": "*",
+    "otype_desc": "Star",
+    "sp_type": "F0IIIa",
+    "plx_value": 14.0377,
+    "plx_err": 0.2883,
+    "pmra": 21.161,
+    "pmdec": -8.263,
+    "rvz_radvel": -12.32,
+    "rvz_redshift": -4.109425215959028e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 235,
+    "identifiers": [
+      "TIC 95360236",
+      "Gaia DR3 725422076533653504",
+      "HIP 50335",
+      "PLX 2412",
+      "*  36 Leo",
+      "* zet Leo",
+      "AG+23 1076",
+      "BD+24  2209",
+      "BDS  5368 A",
+      "CCDM J10166+2327A",
+      "CSI+24  2209  1",
+      "FK5  384",
+      "GC 14107",
+      "GCRV  6478",
+      "GEN# +1.00089025",
+      "GSC 01969-01261",
+      "HD  89025",
+      "HIC  50335",
+      "HR  4031",
+      "IDS 10110+2356 A",
+      "IRAS 10139+2340",
+      "IRC +20218",
+      "JP11  1921",
+      "N30 2440",
+      "NSV  4804",
+      "PMC 90-93   277",
+      "PPM 100220",
+      "RAFGL 1404",
+      "ROT  1552",
+      "SAO  81265",
+      "SKY# 19758",
+      "SRS  30384",
+      "TD1 14701",
+      "TYC 1969-1261-1",
+      "UBV    9527",
+      "UBV M  16081",
+      "YZ  23  3973",
+      "[HFE83]  716",
+      "uvby98 100089025",
+      "2MASS J10164142+2325023",
+      "PLX 2412.00",
+      "WDS J10167+2325A",
+      "NAME Adhafera",
+      "WEB  9242",
+      "Gaia DR2 725422076533653504"
+    ],
+    "fluxes": {
+      "H": {
+        "mag": 2.628,
+        "err": 0.208
+      },
+      "J": {
+        "mag": 2.81,
+        "err": null
+      },
+      "B": {
+        "mag": 3.72,
+        "err": null
+      },
+      "V": {
+        "mag": 3.41,
+        "err": null
+      },
+      "U": {
+        "mag": 3.89,
+        "err": null
+      },
+      "R": {
+        "mag": 3.09,
+        "err": null
+      },
+      "I": {
+        "mag": 2.91,
+        "err": null
+      },
+      "K": {
+        "mag": 2.62,
+        "err": null
+      },
+      "G": {
+        "mag": 3.346777,
+        "err": 0.003287
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 6792,
+        "log_g": 3,
+        "fe_h": null,
+        "bibcode": "2008AJ....135..209M"
+      },
+      {
+        "teff": 7194,
+        "log_g": 3.12,
+        "fe_h": 0.77,
+        "bibcode": "2014ApJ...791...58A"
+      },
+      {
+        "teff": 7074,
+        "log_g": 3.12,
+        "fe_h": 0.11,
+        "bibcode": "2014ApJ...791...58A"
+      },
+      {
+        "teff": 7074,
+        "log_g": 3.12,
+        "fe_h": 0.11,
+        "bibcode": "2014ApJ...791...58A"
+      },
+      {
+        "teff": 6953,
+        "log_g": 2.91,
+        "fe_h": null,
+        "bibcode": "2014ApJ...791...58A"
+      }
+    ],
+    "teff_median": 7074,
+    "vsini_measurements": [
+      {
+        "vsini": 72.4,
+        "vsini_err": null,
+        "bibcode": "2008AJ....135..209M"
+      },
+      {
+        "vsini": 83,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 82,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 81,
+        "vsini_err": null,
+        "bibcode": "1995ApJS...99..135A"
+      },
+      {
+        "vsini": 81,
+        "vsini_err": null,
+        "bibcode": "2002A&A...393..897R"
+      },
+      {
+        "vsini": 79,
+        "vsini_err": null,
+        "bibcode": "2002A&A...393..897R"
+      },
+      {
+        "vsini": 80,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 70,
+        "vsini_err": 14,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 81,
+        "vsini_err": 10,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 68,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 79,
+        "vsini_err": 6,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 73.2075,
+        "unit": "pc  ",
+        "plus_err": 2.8871,
+        "minus_err": -2.8871,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 71.2367,
+        "unit": "pc  ",
+        "plus_err": 1.463,
+        "minus_err": -1.463,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "NIR",
+      "UV",
+      "V*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20zet%20Leo"
+  },
+  "wikipedia": {
+    "title": "Zeta Leonis",
+    "description": "Binary star system in the constellation Leo",
+    "summary": "Zeta Leonis, also named Adhafera, is a third-magnitude star in the constellation of Leo, the lion. It forms the second star in the blade of the sickle, which is an asterism formed from the head of Leo.",
+    "intro": null,
+    "url": "https://en.wikipedia.org/wiki/Zeta_Leonis",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leo_constellation_map.svg/330px-Leo_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leo_constellation_map.svg/330px-Leo_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q14207"
+  },
+  "wikidata": {
+    "id": "Q14207",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "F0III"
+        },
+        {
+          "value": "F0IIIa"
+        },
+        {
+          "value": "F0II-III"
+        },
+        {
+          "value": "F0"
+        },
+        {
+          "value": "F2II"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Leo"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 3.41,
+          "unit": ""
+        },
+        {
+          "value": 3.89,
+          "unit": ""
+        },
+        {
+          "value": 3.72,
+          "unit": ""
+        },
+        {
+          "value": 3.09,
+          "unit": ""
+        },
+        {
+          "value": 2.91,
+          "unit": ""
+        },
+        {
+          "value": 2.81,
+          "unit": ""
+        },
+        {
+          "value": 2.628,
+          "unit": "",
+          "plus": 0.20799999999999974,
+          "minus": 0.20800000000000018
+        },
+        {
+          "value": 2.62,
+          "unit": ""
+        },
+        {
+          "value": 3.346777,
+          "unit": "",
+          "plus": 0.003287000000000262,
+          "minus": 0.003286999999999818
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 73.2075,
+          "unit": "pc",
+          "plus": 2.8871000000000038,
+          "minus": 2.8870999999999896
+        },
+        {
+          "value": 71.2367,
+          "unit": "pc",
+          "plus": 1.463000000000008,
+          "minus": 1.4629999999999939
+        }
+      ],
+      "mass": [
+        {
+          "value": 3.0,
+          "unit": "M☉"
+        }
+      ],
+      "radius": [
+        {
+          "value": 6.0,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 85.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 7074.0,
+          "unit": "K"
+        },
+        {
+          "value": 6953.0,
+          "unit": "K"
+        },
+        {
+          "value": 7194.0,
+          "unit": "K"
+        },
+        {
+          "value": 6792.0,
+          "unit": "K"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.11,
+          "unit": ""
+        },
+        {
+          "value": 0.77,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 1320.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 810.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 1000.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -15.0,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0
+        },
+        {
+          "value": -16.88,
+          "unit": "km/s",
+          "plus": 2.1099999999999994,
+          "minus": 2.1099999999999994
+        },
+        {
+          "value": -21.4,
+          "unit": "km/s",
+          "plus": 0.7999999999999972,
+          "minus": 0.8000000000000007
+        },
+        {
+          "value": -15.6,
+          "unit": "km/s"
+        },
+        {
+          "value": -26.2,
+          "unit": "km/s"
+        },
+        {
+          "value": -16.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -19.3,
+          "unit": "km/s"
+        },
+        {
+          "value": -22.6,
+          "unit": "km/s"
+        },
+        {
+          "value": -14.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -39.5,
+          "unit": "km/s"
+        },
+        {
+          "value": -13.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -17.3,
+          "unit": "km/s"
+        },
+        {
+          "value": -12.5,
+          "unit": "km/s"
+        },
+        {
+          "value": -12.32,
+          "unit": "km/s",
+          "plus": 6.23,
+          "minus": 6.23
+        }
+      ],
+      "parallax": [
+        {
+          "value": 13.6598,
+          "unit": "mas",
+          "plus": 0.5386999999999986,
+          "minus": 0.5387000000000004
+        },
+        {
+          "value": 13.2,
+          "unit": "mas",
+          "plus": 8.900000000000002,
+          "minus": 8.899999999999999
+        },
+        {
+          "value": 11.9,
+          "unit": "mas",
+          "plus": 0.17999999999999972,
+          "minus": 0.17999999999999972
+        },
+        {
+          "value": 12.56,
+          "unit": "mas",
+          "plus": 0.7799999999999994,
+          "minus": 0.7800000000000011
+        },
+        {
+          "value": 14.0377,
+          "unit": "mas",
+          "plus": 0.28830000000000133,
+          "minus": 0.28829999999999956
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "suspected variable"
+        },
+        {
+          "value": "optical double"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 154.17256318464,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 23.41731698889,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q14207"
+  },
+  "summary": {
+    "designation": "zet Leo",
+    "object_type": "Star",
+    "spectral_type": "F0IIIa",
+    "ra_deg": 154.17256318434792,
+    "dec_deg": 23.417316988991107,
+    "v_mag": 3.41,
+    "distance_pc": 71.2,
+    "distance_ly": 232.3,
+    "teff_k": 7074,
+    "b_minus_v": 0.31,
+    "mass": {
+      "value": 3.0,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 6.0,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 85.0,
+      "unit": "L☉"
+    },
+    "constellation": "Leo",
+    "description": "Binary star system in the constellation Leo"
+  },
+  "id": "adhafera",
+  "path": "stars/adhafera",
+  "observations": [
+    {
+      "datetime": "2026-10-07 06:05",
+      "location": "Royse City, Texas",
+      "rating": 1.0,
+      "seeing": "2/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-07 11:05",
+      "altitude_deg": 30.2,
+      "azimuth_deg": 80.2
+    }
+  ]
+}

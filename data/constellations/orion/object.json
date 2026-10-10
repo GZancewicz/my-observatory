@@ -1,0 +1,106 @@
+{
+  "name": "Orion",
+  "category": "constellations",
+  "app_type": "Constellation",
+  "harvested": "2026-10-10T16:24:30Z",
+  "sources": [
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Orion_(constellation)",
+      "retrieved": "2026-10-10T16:24:30Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q8860",
+      "retrieved": "2026-10-10T16:24:31Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "Mellinger colour mosaic via CDS hips2fits",
+      "fov_deg": 42
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Orion_IAU.svg/330px-Orion_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "wikipedia",
+    "simbad_id": null,
+    "wikidata": "Q8860",
+    "wikipedia": "Orion (constellation)"
+  },
+  "wikipedia": {
+    "title": "Orion (constellation)",
+    "description": "Constellation straddling the celestial equator",
+    "summary": "Orion is a prominent set of stars visible during winter in the northern celestial hemisphere. It is one of the 88 modern constellations; it was among the 48 constellations listed by the 2nd-century AD astronomer Ptolemy. It is named after a hunter in Greek mythology.",
+    "intro": "Orion is a prominent set of stars visible during winter in the northern celestial hemisphere. It is one of the 88 modern constellations; it was among the 48 constellations listed by the 2nd-century AD astronomer Ptolemy. It is named after a hunter in Greek mythology.\nOrion is most prominent during winter evenings in the Northern Hemisphere, as are five other constellations that have stars in the Winter Hexagon asterism. Orion's two brightest stars, Rigel (β) and Betelgeuse (α), are both among the brightest stars in the night sky; both are supergiants and slightly variable. There are a further six stars brighter than magnitude 3.0, including three making the short straight line of the Orion's Belt asterism. Orion also hosts the radiant of the annual Orionids, the strongest meteor shower associated with Halley's Comet, and the Orion Nebula, one of the brightest nebulae in the sky.\n\n",
+    "url": "https://en.wikipedia.org/wiki/Orion_(constellation)",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Orion_IAU.svg/330px-Orion_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Orion_IAU.svg/960px-Orion_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q8860"
+  },
+  "wikidata": {
+    "id": "Q8860",
+    "facts": {
+      "area": [
+        {
+          "value": 594.0,
+          "unit": "deg²"
+        }
+      ],
+      "short name": [
+        {
+          "value": "Ori"
+        }
+      ],
+      "named after": [
+        {
+          "value": "Orion"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "constellation"
+        }
+      ]
+    },
+    "commons_image": "OrionCC.jpg",
+    "url": "https://www.wikidata.org/wiki/Q8860"
+  },
+  "geometry": {
+    "ra_deg": 84.447,
+    "dec_deg": 6.846,
+    "radius_deg": 18.9,
+    "source": "IAU boundaries, VizieR VI/49"
+  },
+  "summary": {
+    "area": {
+      "value": 594.0,
+      "unit": "deg²"
+    },
+    "abbreviation": "Ori",
+    "ra_deg": 84.447,
+    "dec_deg": 6.846,
+    "description": "Constellation straddling the celestial equator"
+  },
+  "id": "orion",
+  "path": "constellations/orion",
+  "observations": [
+    {
+      "datetime": "2026-10-06 18:29",
+      "location": "Royse City, Texas",
+      "rating": 4.0,
+      "seeing": "4/5",
+      "transparency": "4/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-06 23:29",
+      "altitude_deg": -49.6,
+      "azimuth_deg": 10.9
+    }
+  ]
+}

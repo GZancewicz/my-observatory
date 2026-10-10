@@ -1,0 +1,141 @@
+{
+  "name": "77 Psc",
+  "category": "stars",
+  "app_type": "F-Star",
+  "harvested": "2026-10-10T16:31:14Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=RX%20J0105.8%2B0454",
+      "retrieved": "2026-10-10T16:31:21Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/77_Piscium",
+      "retrieved": "2026-10-10T16:31:22Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q89981410",
+      "retrieved": "2026-10-10T16:31:23Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    }
+  },
+  "resolved": {
+    "method": "sesame:77 Psc",
+    "simbad_id": "RX J0105.8+0454",
+    "wikidata": "Q89981410",
+    "wikipedia": "77 Piscium"
+  },
+  "simbad": {
+    "main_id": "RX J0105.8+0454",
+    "ra": 16.458749999999995,
+    "dec": 4.905833333333334,
+    "otype": "**",
+    "otype_desc": "Double or Multiple Star",
+    "sp_type": null,
+    "plx_value": null,
+    "plx_err": null,
+    "pmra": null,
+    "pmdec": null,
+    "rvz_radvel": null,
+    "rvz_redshift": null,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 3,
+    "identifiers": [
+      "IRAS 01031+0438",
+      "*  77 Psc",
+      "** STF   90AB",
+      "WDS J01058+0455AB",
+      "CCDM J01058+0455AB",
+      "1RXS J010550.1+045421",
+      "RX J0105.8+0454"
+    ],
+    "fluxes": {},
+    "atmosphere_measurements": [],
+    "teff_median": null,
+    "vsini_measurements": [],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=RX%20J0105.8%2B0454"
+  },
+  "wikipedia": {
+    "title": "77 Piscium",
+    "description": "Star system in the constellation Pisces",
+    "summary": "77 Piscium is a multiple star system in the constellation of Pisces. The star system is located at a distance of 144 and 143 light years from the Earth based on parallax, but is drifting closer with a heliocentric radial velocity of \t−7.59 and \t−7.19 km/s.",
+    "intro": "77 Piscium is a multiple star system in the constellation of Pisces. The star system is located at a distance of 144 and 143 light years from the Earth based on parallax, but is drifting closer with a heliocentric radial velocity of \t−7.59 and \t−7.19 km/s.",
+    "url": "https://en.wikipedia.org/wiki/77_Piscium",
+    "thumbnail": null,
+    "image": null,
+    "wikidata": "Q10932310"
+  },
+  "wikidata": {
+    "id": "Q89981410",
+    "facts": {
+      "constellation": [
+        {
+          "value": "Pisces"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "double star"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 16.455083,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 4.908667,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q89981410"
+  },
+  "summary": {
+    "designation": "RX J0105.8+0454",
+    "object_type": "Double or Multiple Star",
+    "ra_deg": 16.458749999999995,
+    "dec_deg": 4.905833333333334,
+    "constellation": "Pisces",
+    "description": "Star system in the constellation Pisces"
+  },
+  "id": "77-psc",
+  "path": "stars/77-psc",
+  "observations": [
+    {
+      "datetime": "2026-10-09 21:09",
+      "location": "Royse City, Texas",
+      "rating": 2.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 02:09",
+      "altitude_deg": 26.2,
+      "azimuth_deg": 101.8
+    }
+  ]
+}

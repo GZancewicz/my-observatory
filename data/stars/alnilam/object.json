@@ -1,0 +1,331 @@
+{
+  "name": "Alnilam",
+  "category": "stars",
+  "app_type": "B-Star",
+  "harvested": "2026-10-10T16:34:13Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20eps%20Ori",
+      "retrieved": "2026-10-10T16:34:20Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alnilam",
+      "retrieved": "2026-10-10T16:34:21Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q78240789",
+      "retrieved": "2026-10-10T16:34:22Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Alnilam",
+    "simbad_id": "* eps Ori",
+    "wikidata": "Q78240789",
+    "wikipedia": "Alnilam"
+  },
+  "simbad": {
+    "main_id": "* eps Ori",
+    "ra": 84.05338894077023,
+    "dec": -1.2019191358333312,
+    "otype": "s*b",
+    "otype_desc": "Blue Supergiant",
+    "sp_type": "B0Ia",
+    "plx_value": 1.65,
+    "plx_err": 0.45,
+    "pmra": 1.44,
+    "pmdec": -0.78,
+    "rvz_radvel": 27.3,
+    "rvz_redshift": 9.106714460149767e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 926,
+    "identifiers": [
+      "TIC 427451176",
+      "1RXS J053619.2-011312",
+      "HIP 26311",
+      "2MASS J05361280-0112070",
+      "PLX 1283",
+      "* eps Ori",
+      "*  46 Ori",
+      "2E  1411",
+      "AG-01  596",
+      "BD-01   969",
+      "CCDM J05363-0112A",
+      "CEL    852",
+      "CSI-01   969  1",
+      "EM* MWC  504",
+      "FK5  210",
+      "GC  6960",
+      "GCRV  3454",
+      "GEN# +1.00037128",
+      "HD  37128",
+      "HGAM    449",
+      "HIC  26311",
+      "HR  1903",
+      "IDS 05311-0116 A",
+      "IRAS 05336-0113",
+      "IRC +00079",
+      "JP11  1181",
+      "MCW  342",
+      "N30 1204",
+      "NAME Alnilam",
+      "PMC 90-93   151",
+      "PPM 175945",
+      "RAFGL 4428S",
+      "ROT   885",
+      "SAO 132346",
+      "SKY#  9067",
+      "TD1  4963",
+      "UBV    5563",
+      "UBV M  11224",
+      "V* eps Ori",
+      "WH 328",
+      "[HFE83]  386",
+      "[SC93b] 326",
+      "ALS 14791",
+      "PLX 1283.00",
+      "1E 0533.6-0113",
+      "1RXS J053612.8-011201",
+      "2E 0533.6-0113",
+      "EUVE J0536-01.1",
+      "[KSP2003] J053612.85-011208.3",
+      "WDS J05362-0112A",
+      "TYC 4766-2450-1",
+      "Ced  55h",
+      "uvby98 100037128",
+      "WEB  5173"
+    ],
+    "fluxes": {
+      "U": {
+        "mag": 0.48,
+        "err": null
+      },
+      "K": {
+        "mag": 2.16,
+        "err": null
+      },
+      "H": {
+        "mag": 2.07,
+        "err": null
+      },
+      "B": {
+        "mag": 1.51,
+        "err": null
+      },
+      "V": {
+        "mag": 1.69,
+        "err": null
+      },
+      "R": {
+        "mag": 1.76,
+        "err": null
+      },
+      "I": {
+        "mag": 1.93,
+        "err": null
+      },
+      "J": {
+        "mag": 2.07,
+        "err": null
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 28000,
+        "log_g": 3,
+        "fe_h": null,
+        "bibcode": "2024ApJ...971..166M"
+      },
+      {
+        "teff": 24670,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2009A&A...501..297Z"
+      },
+      {
+        "teff": 27000,
+        "log_g": 2.85,
+        "fe_h": null,
+        "bibcode": "2006A&A...446..279C"
+      },
+      {
+        "teff": 27100,
+        "log_g": 2.89,
+        "fe_h": null,
+        "bibcode": "2024A&A...687A.228D"
+      }
+    ],
+    "teff_median": 27100,
+    "vsini_measurements": [
+      {
+        "vsini": 85,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 85,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 65,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 60,
+        "vsini_err": null,
+        "bibcode": "2014A&A...562A.135S"
+      },
+      {
+        "vsini": 48,
+        "vsini_err": null,
+        "bibcode": "2014A&A...562A.135S"
+      },
+      {
+        "vsini": 42,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 55,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 55,
+        "vsini_err": null,
+        "bibcode": "2020A&A...639A..81B"
+      },
+      {
+        "vsini": 85,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 91,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 65,
+        "vsini_err": 16,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 52,
+        "vsini_err": null,
+        "bibcode": "2024A&A...687A.228D"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 366,
+        "unit": "pc  ",
+        "plus_err": 70,
+        "minus_err": -70,
+        "method": "CaIIHK  ",
+        "bibcode": "2009A&A...507..833M"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "Em*",
+      "IR",
+      "ISM",
+      "NIR",
+      "Pu*",
+      "s*b",
+      "UV",
+      "V*",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20eps%20Ori"
+  },
+  "wikipedia": {
+    "title": "Alnilam",
+    "description": "Star in the constellation Orion, in the center of the Orion's Belt",
+    "summary": "Alnilam is the central star of Orion's Belt in the equatorial constellation of Orion. It has the Bayer designation ε Orionis, which is Latinised to Epsilon Orionis and abbreviated Epsilon Ori or ε Ori. This is a massive, blue supergiant star some 1,250 light-years distant. It is estimated to be 270,000 times as luminous as the Sun, and 28 times as massive.",
+    "intro": "Alnilam is the central star of Orion's Belt in the equatorial constellation of Orion. It has the Bayer designation ε Orionis, which is Latinised to Epsilon Orionis and abbreviated Epsilon Ori or ε Ori. This is a massive, blue supergiant star some 1,250 light-years distant. It is estimated to be 270,000 times as luminous as the Sun, and 28 times as massive.",
+    "url": "https://en.wikipedia.org/wiki/Alnilam",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q13070"
+  },
+  "wikidata": {
+    "id": "Q78240789",
+    "facts": {
+      "constellation": [
+        {
+          "value": "Orion"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "astrophysical X-ray source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 84.08,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -1.22,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q78240789"
+  },
+  "summary": {
+    "designation": "eps Ori",
+    "object_type": "Blue Supergiant",
+    "spectral_type": "B0Ia",
+    "ra_deg": 84.05338894077023,
+    "dec_deg": -1.2019191358333312,
+    "v_mag": 1.69,
+    "distance_pc": 606.1,
+    "distance_ly": 1976.7,
+    "teff_k": 27100,
+    "b_minus_v": -0.18,
+    "constellation": "Orion",
+    "description": "Star in the constellation Orion, in the center of the Orion's Belt"
+  },
+  "id": "alnilam",
+  "path": "stars/alnilam",
+  "observations": [
+    {
+      "datetime": "2026-10-07 05:15",
+      "location": "Royse City, Texas",
+      "rating": 5.0,
+      "seeing": "4/5",
+      "transparency": "4/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-07 10:15",
+      "altitude_deg": 54.4,
+      "azimuth_deg": 161.7
+    }
+  ]
+}

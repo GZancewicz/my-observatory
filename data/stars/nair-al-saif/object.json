@@ -1,0 +1,648 @@
+{
+  "name": "Nair al Saif",
+  "category": "stars",
+  "app_type": "O-Star",
+  "harvested": "2026-10-10T16:23:13Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20iot%20Ori",
+      "retrieved": "2026-10-10T16:23:21Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Iota_Orionis",
+      "retrieved": "2026-10-10T16:23:21Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q14029",
+      "retrieved": "2026-10-10T16:23:22Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "wikipedia-redirect",
+    "simbad_id": "* iot Ori",
+    "wikidata": "Q14029",
+    "wikipedia": "Iota Orionis"
+  },
+  "simbad": {
+    "main_id": "* iot Ori",
+    "ra": 83.85827580502625,
+    "dec": -5.909888523506666,
+    "otype": "SB*",
+    "otype_desc": "Spectroscopic Binary",
+    "sp_type": "O9IIIvar",
+    "plx_value": 1.9969,
+    "plx_err": 0.7299,
+    "pmra": -2.816,
+    "pmdec": -1.693,
+    "rvz_radvel": 27.6,
+    "rvz_redshift": 9.206792852634038e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 796,
+    "identifiers": [
+      "TIC 427395774",
+      "HIP 26241",
+      "Gaia DR3 3017190546641718144",
+      "2MASS J05352597-0554357",
+      "PLX 1279",
+      "SBC9 343",
+      "* iot Ori",
+      "*  44 Ori",
+      "2E  1377",
+      "ADS  4193 A",
+      "BD-06  1241",
+      "CCDM J05355-0555A",
+      "CEL    829",
+      "CGO 100",
+      "CSI-06  1241  1",
+      "FK5  209",
+      "GC  6937",
+      "GCRV  3425",
+      "GEN# +9.00010721",
+      "GEN# +9.00010721D",
+      "GEN# +2.19760721",
+      "GOS G209.52-19.58 01",
+      "GSC 04778-01401",
+      "HD  37043",
+      "HGAM    444",
+      "HIC  26241",
+      "HR  1899",
+      "IDS 05305-0559 A",
+      "IRAS 05330-0556",
+      "JP11  5722",
+      "JP11  5724",
+      "JP11  5723",
+      "MCW  341",
+      "N30 1201",
+      "NGC  1976   721",
+      "PPM 188225",
+      "Parenago  2037",
+      "ROS -ORI 172",
+      "ROT  3502",
+      "SAO 132323",
+      "SBC7   242",
+      "SKY#  9032",
+      "TD1  4942",
+      "TYC 4778-1401-1",
+      "UBV M  51705",
+      "UBV    5526",
+      "UBV M  51706",
+      "WH 301",
+      "[GC94b] 144",
+      "[HJ56]  70",
+      "[SC93b] 313",
+      "[TVZ96] 226",
+      "uvby98 900010721",
+      "ALS 14790",
+      "PLX 1279.00",
+      "1ES 0532-05.9",
+      "1RXS J053526.3-055436",
+      "2E 0532.9-0556",
+      "EUVE J0535-05.9",
+      "[KSP2003] J053525.80-055436.8",
+      "WDS J05354-0555Aa,Ab",
+      "Brun 721",
+      "WDS J05354-0555A",
+      "** CHR  250",
+      "PMSC 05305-0559AP",
+      "PMSC 05305-0559Aab",
+      "PMSC 05305-0559A",
+      "** STF  752A",
+      "NAME Hatysa",
+      "SOXS 258",
+      "WEB  5136"
+    ],
+    "fluxes": {
+      "G": {
+        "mag": 2.740842,
+        "err": 0.006527
+      },
+      "U": {
+        "mag": 1.45,
+        "err": null
+      },
+      "H": {
+        "mag": 3.36,
+        "err": null
+      },
+      "K": {
+        "mag": 3.46,
+        "err": null
+      },
+      "B": {
+        "mag": 2.53,
+        "err": null
+      },
+      "V": {
+        "mag": 2.77,
+        "err": null
+      },
+      "J": {
+        "mag": 3.27,
+        "err": null
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 18000,
+        "log_g": 4,
+        "fe_h": 0.1,
+        "bibcode": "1970A&A.....8..197C"
+      },
+      {
+        "teff": 35000,
+        "log_g": 3.8374,
+        "fe_h": 0.0539,
+        "bibcode": "2024A&A...681A.107R"
+      },
+      {
+        "teff": 32200,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1995A&AS..110..553S"
+      }
+    ],
+    "teff_median": 32200,
+    "vsini_measurements": [
+      {
+        "vsini": 104,
+        "vsini_err": null,
+        "bibcode": "2014A&A...562A.135S"
+      },
+      {
+        "vsini": 122,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 99,
+        "vsini_err": null,
+        "bibcode": "2014A&A...562A.135S"
+      },
+      {
+        "vsini": 104,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 99,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 125,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 120,
+        "vsini_err": 24,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 121,
+        "vsini_err": 8,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 120,
+        "vsini_err": 10,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 116,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 50,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 80,
+        "vsini_err": 10,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "NIR",
+      "Pu*",
+      "Rad",
+      "SB*",
+      "UV",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20iot%20Ori"
+  },
+  "wikipedia": {
+    "title": "Iota Orionis",
+    "description": "Multiple star system in the constellation Orion",
+    "summary": "Iota Orionis is a multiple star system in the equatorial constellation of Orion the hunter. It is the eighth-brightest member of Orion with an apparent visual magnitude of 2.77 and also the brightest member of the asterism known as Orion's Sword. It is a member of the NGC 1980 open cluster. From parallax measurements, it is located at a distance of roughly 1,340 light-years from the Sun.",
+    "intro": "Iota Orionis (ι Orionis, abbreviated ι Ori) is a multiple star system in the equatorial constellation of Orion the hunter. It is the eighth-brightest member of Orion with an apparent visual magnitude of 2.77 and also the brightest member of the asterism known as Orion's Sword. It is a member of the NGC 1980 open cluster. From parallax measurements, it is located at a distance of roughly 1,340 light-years (412 parsecs) from the Sun.\nThe system has three visible components designated Iota Orionis A, B and C.  Iota Orionis A has also been resolved using speckle interferometry and is also a massive spectroscopic binary, with components Iota Orionis Aa1 (officially named Hatysa ), Aa2, and Ab.",
+    "url": "https://en.wikipedia.org/wiki/Iota_Orionis",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q14029"
+  },
+  "wikidata": {
+    "id": "Q14029",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "O9III"
+        },
+        {
+          "value": "O9IIIvar"
+        },
+        {
+          "value": "O8.5III+B0+"
+        },
+        {
+          "value": "O8.5III"
+        },
+        {
+          "value": "O9V"
+        },
+        {
+          "value": "O8.5 . SB"
+        },
+        {
+          "value": "Oe5"
+        },
+        {
+          "value": "O9III+B1III/IV"
+        },
+        {
+          "value": "O8.5.SB"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Orion"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 2.77,
+          "unit": ""
+        },
+        {
+          "value": 1.45,
+          "unit": ""
+        },
+        {
+          "value": 2.53,
+          "unit": ""
+        },
+        {
+          "value": 9.3925,
+          "unit": "",
+          "plus": 0.21690000000000076,
+          "minus": 0.21690000000000076
+        },
+        {
+          "value": 3.27,
+          "unit": ""
+        },
+        {
+          "value": 3.36,
+          "unit": ""
+        },
+        {
+          "value": 3.46,
+          "unit": ""
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": 3.65,
+          "unit": ""
+        }
+      ],
+      "mass": [
+        {
+          "value": 1.236,
+          "unit": "M☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 32200.0,
+          "unit": "K"
+        },
+        {
+          "value": 18000.0,
+          "unit": "K"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.1,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 10000.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 28.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 21.5,
+          "unit": "km/s",
+          "plus": 0.8999999999999986,
+          "minus": 0.8999999999999986
+        },
+        {
+          "value": 27.6,
+          "unit": "km/s",
+          "plus": 0.29999999999999716,
+          "minus": 0.3000000000000007
+        },
+        {
+          "value": 18.9,
+          "unit": "km/s"
+        },
+        {
+          "value": -59.5,
+          "unit": "km/s",
+          "plus": 4.700000000000003,
+          "minus": 4.700000000000003
+        },
+        {
+          "value": -60.7,
+          "unit": "km/s",
+          "plus": 3.700000000000003,
+          "minus": 3.700000000000003
+        },
+        {
+          "value": 136.4,
+          "unit": "km/s"
+        },
+        {
+          "value": 76.2,
+          "unit": "km/s",
+          "plus": 4.8999999999999915,
+          "minus": 4.900000000000006
+        },
+        {
+          "value": 47.9,
+          "unit": "km/s",
+          "plus": 1.7000000000000028,
+          "minus": 1.6999999999999957
+        },
+        {
+          "value": 27.0,
+          "unit": "km/s",
+          "plus": 1.5,
+          "minus": 1.5
+        },
+        {
+          "value": 30.6,
+          "unit": "km/s",
+          "plus": 4.799999999999997,
+          "minus": 4.800000000000001
+        },
+        {
+          "value": 36.8,
+          "unit": "km/s",
+          "plus": 3.3000000000000043,
+          "minus": 3.299999999999997
+        },
+        {
+          "value": 25.1,
+          "unit": "km/s",
+          "plus": 2.099999999999998,
+          "minus": 2.1000000000000014
+        },
+        {
+          "value": 90.3,
+          "unit": "km/s"
+        },
+        {
+          "value": 90.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -1.6,
+          "unit": "km/s"
+        },
+        {
+          "value": 47.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 42.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 35.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 35.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 57.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 57.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 46.9,
+          "unit": "km/s"
+        },
+        {
+          "value": 40.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 20.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 21.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 74.9,
+          "unit": "km/s"
+        },
+        {
+          "value": 31.3,
+          "unit": "km/s",
+          "plus": 1.1999999999999993,
+          "minus": 1.1999999999999993
+        },
+        {
+          "value": 25.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 28.9,
+          "unit": "km/s"
+        },
+        {
+          "value": 26.4,
+          "unit": "km/s"
+        },
+        {
+          "value": 19.4,
+          "unit": "km/s"
+        },
+        {
+          "value": 21.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 21.3,
+          "unit": "km/s"
+        },
+        {
+          "value": 20.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 47.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 30.1,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 22.8,
+          "unit": "mas",
+          "plus": 16.3,
+          "minus": 16.3
+        },
+        {
+          "value": 1.4,
+          "unit": "mas",
+          "plus": 0.2200000000000002,
+          "minus": 0.21999999999999997
+        },
+        {
+          "value": 2.46,
+          "unit": "mas",
+          "plus": 0.77,
+          "minus": 0.77
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "spectroscopic binary"
+        },
+        {
+          "value": "astronomical radio source"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "pulsating variable star"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "multiple star"
+        },
+        {
+          "value": "binary star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 83.85825794708,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -5.9099009825,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "The Orion Nebula M42.jpg",
+    "url": "https://www.wikidata.org/wiki/Q14029"
+  },
+  "summary": {
+    "designation": "iot Ori",
+    "object_type": "Spectroscopic Binary",
+    "spectral_type": "O9IIIvar",
+    "ra_deg": 83.85827580502625,
+    "dec_deg": -5.909888523506666,
+    "v_mag": 2.77,
+    "distance_pc": 500.8,
+    "distance_ly": 1633.3,
+    "teff_k": 32200,
+    "b_minus_v": -0.24,
+    "mass": {
+      "value": 1.236,
+      "unit": "M☉"
+    },
+    "constellation": "Orion",
+    "description": "Multiple star system in the constellation Orion"
+  },
+  "id": "nair-al-saif",
+  "path": "stars/nair-al-saif",
+  "observations": [
+    {
+      "datetime": "2026-10-07 05:17",
+      "location": "Royse City, Texas",
+      "rating": 5.0,
+      "seeing": "4/5",
+      "transparency": "4/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-07 10:17",
+      "altitude_deg": 50.0,
+      "azimuth_deg": 164.6
+    }
+  ]
+}

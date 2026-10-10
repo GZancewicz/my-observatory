@@ -1,0 +1,574 @@
+{
+  "name": "Regulus",
+  "category": "stars",
+  "app_type": "B-Star",
+  "harvested": "2026-10-10T16:29:16Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20Leo",
+      "retrieved": "2026-10-10T16:29:23Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Regulus",
+      "retrieved": "2026-10-10T16:29:24Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q13013",
+      "retrieved": "2026-10-10T16:29:25Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leo_constellation_map.svg/330px-Leo_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Regulus",
+    "simbad_id": "* alf Leo",
+    "wikidata": "Q13013",
+    "wikipedia": "Regulus"
+  },
+  "simbad": {
+    "main_id": "* alf Leo",
+    "ra": 152.09296243828146,
+    "dec": 11.967208776100023,
+    "otype": "PM*",
+    "otype_desc": "High Proper Motion Star",
+    "sp_type": "B8IVn",
+    "plx_value": 41.13,
+    "plx_err": 0.35,
+    "pmra": -248.73,
+    "pmdec": 5.59,
+    "rvz_radvel": 0.719522,
+    "rvz_redshift": 2.4000699292425764e-06,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 895,
+    "identifiers": [
+      "TIC 357348164",
+      "AP J10082229+1158018",
+      "GJ 9316 A",
+      "HIP 49669",
+      "PLX 2384",
+      "LSPM J1008+1158",
+      "ASCC  949713",
+      "USNO-B1.0 1019-00203254",
+      "* alf Leo",
+      "*  32 Leo",
+      "2E  2231",
+      "ADS  7654 A",
+      "AG+12 1199",
+      "BD+12  2149",
+      "CCDM J10083+1159A",
+      "CSI+12  2149  1",
+      "CSV 101099",
+      "FK5  380",
+      "GC 13926",
+      "GCRV  6417",
+      "GEN# +1.00087901A",
+      "CNS5 2491",
+      "HD  87901",
+      "HGAM    596",
+      "HIC  49669",
+      "HR  3982",
+      "IRAS 10056+1212",
+      "TIC 471011645",
+      "IRC +10226",
+      "JP11  1896",
+      "LTT 12716",
+      "N30 2414",
+      "NAME Regulus",
+      "NLTT 23490",
+      "NSV  4750",
+      "PMC 90-93   274",
+      "PPM 127140",
+      "RAFGL 4771S",
+      "ROT  1536",
+      "SAO  98967",
+      "SKY# 19511",
+      "SRS  30380",
+      "SV* ZI   793",
+      "TD1 14585",
+      "UBV    9452",
+      "UBV M  15960",
+      "YPAC  43",
+      "[HFE83]  708",
+      "uvby98 100087901 A",
+      "2MASS J10082229+1158018",
+      "WDS J10084+1158A",
+      "2E 1005.5+1213",
+      "TYC  833-1381-1",
+      "PMSC 10030+1227A",
+      "** STF 5006A",
+      "WEB  9160"
+    ],
+    "fluxes": {
+      "V": {
+        "mag": 1.4,
+        "err": 0.05
+      },
+      "R": {
+        "mag": 1.37,
+        "err": null
+      },
+      "K": {
+        "mag": 1.62,
+        "err": 0.06
+      },
+      "H": {
+        "mag": 1.57,
+        "err": null
+      },
+      "B": {
+        "mag": 1.24,
+        "err": null
+      },
+      "U": {
+        "mag": 0.88,
+        "err": null
+      },
+      "I": {
+        "mag": 1.47,
+        "err": null
+      },
+      "J": {
+        "mag": 1.54,
+        "err": null
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 11737,
+        "log_g": 3.549,
+        "fe_h": 0.1668,
+        "bibcode": "2023ApJS..266...11B"
+      },
+      {
+        "teff": 11962,
+        "log_g": 3.56,
+        "fe_h": null,
+        "bibcode": "2003AJ....126.2048G"
+      },
+      {
+        "teff": 11535,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2012A&A...537A.120Z"
+      },
+      {
+        "teff": 12540,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1995A&AS..110..553S"
+      }
+    ],
+    "teff_median": 11962,
+    "vsini_measurements": [
+      {
+        "vsini": 353,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 354,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 300,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 330,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 280,
+        "vsini_err": 52,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 280,
+        "vsini_err": 28,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 249,
+        "vsini_err": 9,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 285,
+        "vsini_err": 14,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 320,
+        "vsini_err": 10,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 300,
+        "vsini_err": 24,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 89.866,
+        "vsini_err": null,
+        "bibcode": "2020AJ....160..120J"
+      },
+      {
+        "vsini": 297.35,
+        "vsini_err": 0.56,
+        "bibcode": "2023ApJS..266...11B"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 23.759,
+        "unit": "pc  ",
+        "plus_err": 0.446,
+        "minus_err": -0.446,
+        "method": "ST-L    ",
+        "bibcode": "2009ApJ...694.1085V"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "NIR",
+      "PM*",
+      "UV",
+      "V*",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20Leo"
+  },
+  "wikipedia": {
+    "title": "Regulus",
+    "description": "Brightest star in the constellation Leo",
+    "summary": "Regulus is the brightest object in the constellation Leo and one of the brightest stars in the night sky. It has the Bayer designation designated α Leonis, which is Latinized to Alpha Leonis, and abbreviated Alpha Leo or α Leo. Regulus appears single, but is actually a quadruple star system composed of four stars that are organized into two pairs. The system lies approximately 79 light years from the Solar System.",
+    "intro": "Regulus is the brightest object in the constellation Leo and one of the brightest stars in the night sky. It has the Bayer designation designated α Leonis, which is Latinized to Alpha Leonis, and abbreviated Alpha Leo or α Leo. Regulus appears single, but is actually a quadruple star system composed of four stars that are organized into two pairs. The system lies approximately 79 light years (24.2 parsecs) from the Solar System.\nThe spectroscopic binary Regulus A consists of a blue-white main-sequence star and its companion, a pre-white dwarf.\nRegulus BC, also known as HD 87884, is separated from Regulus A by 176″ and is itself a close pair.\nRegulus and five slightly dimmer stars (Zeta Leonis, Mu Leonis, Gamma Leonis, Epsilon Leonis, and Eta Leonis) have collectively been called 'the Sickle', which is an asterism that marks the head of Leo.",
+    "url": "https://en.wikipedia.org/wiki/Regulus",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leo_constellation_map.svg/330px-Leo_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leo_constellation_map.svg/330px-Leo_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q76493786"
+  },
+  "wikidata": {
+    "id": "Q13013",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "B8IVn"
+        },
+        {
+          "value": "B7Vn"
+        },
+        {
+          "value": "B8V"
+        },
+        {
+          "value": "Am"
+        },
+        {
+          "value": "B7V"
+        },
+        {
+          "value": "B8Vvar"
+        },
+        {
+          "value": "B8"
+        },
+        {
+          "value": "B8III"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Leo"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 1.4,
+          "unit": "",
+          "plus": 0.050000000000000044,
+          "minus": 0.04999999999999982
+        },
+        {
+          "value": 0.88,
+          "unit": ""
+        },
+        {
+          "value": 1.24,
+          "unit": ""
+        },
+        {
+          "value": 1.37,
+          "unit": ""
+        },
+        {
+          "value": 1.47,
+          "unit": ""
+        },
+        {
+          "value": 1.54,
+          "unit": ""
+        },
+        {
+          "value": 1.57,
+          "unit": ""
+        },
+        {
+          "value": 1.62,
+          "unit": "",
+          "plus": 0.05999999999999983,
+          "minus": 0.06000000000000005
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -0.52,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 23.759,
+          "unit": "pc",
+          "plus": 0.44599999999999795,
+          "minus": 0.4460000000000015
+        }
+      ],
+      "mass": [
+        {
+          "value": 3.8,
+          "unit": "M☉"
+        }
+      ],
+      "radius": [
+        {
+          "value": 3.5,
+          "unit": "R☉"
+        }
+      ],
+      "diameter": [
+        {
+          "value": 6050000.0,
+          "unit": "km",
+          "plus": 139000.0,
+          "minus": 139000.0
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 12540.0,
+          "unit": "K"
+        },
+        {
+          "value": 11535.0,
+          "unit": "K"
+        },
+        {
+          "value": 11962.0,
+          "unit": "K"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 3600.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 3.5,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0
+        },
+        {
+          "value": 5.9,
+          "unit": "km/s",
+          "plus": 2.4000000000000004,
+          "minus": 2.4000000000000004
+        },
+        {
+          "value": 5.9,
+          "unit": "km/s"
+        },
+        {
+          "value": 11.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 7.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 3.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 1.2,
+          "unit": "km/s"
+        },
+        {
+          "value": -8.9,
+          "unit": "km/s"
+        },
+        {
+          "value": 5.9,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0000000000000004
+        },
+        {
+          "value": 0.719522,
+          "unit": "km/s",
+          "plus": 0.6145149999999999,
+          "minus": 0.614515
+        },
+        {
+          "value": 0.719522,
+          "unit": "km/s",
+          "plus": 0.6145100000000001,
+          "minus": 0.61451
+        }
+      ],
+      "parallax": [
+        {
+          "value": 41.13,
+          "unit": "mas",
+          "plus": 0.3499999999999943,
+          "minus": 0.3500000000000014
+        },
+        {
+          "value": 42.09,
+          "unit": "mas",
+          "plus": 0.7899999999999991,
+          "minus": 0.7900000000000063
+        }
+      ],
+      "child astronomical body": [
+        {
+          "value": "Deneb Ⅳ"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 152.092962438,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 11.967208776,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Regulus 1.JPG",
+    "url": "https://www.wikidata.org/wiki/Q13013"
+  },
+  "summary": {
+    "designation": "alf Leo",
+    "object_type": "High Proper Motion Star",
+    "spectral_type": "B8IVn",
+    "ra_deg": 152.09296243828146,
+    "dec_deg": 11.967208776100023,
+    "v_mag": 1.4,
+    "distance_pc": 24.3,
+    "distance_ly": 79.3,
+    "teff_k": 11962,
+    "b_minus_v": -0.16,
+    "mass": {
+      "value": 3.8,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 3.5,
+      "unit": "R☉"
+    },
+    "constellation": "Leo",
+    "description": "Brightest star in the constellation Leo"
+  },
+  "id": "regulus",
+  "path": "stars/regulus",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:08",
+      "location": "",
+      "rating": null,
+      "seeing": "",
+      "transparency": "",
+      "bortle": "",
+      "incomplete": true,
+      "location_assumed": "Royse City, Texas",
+      "utc": "2026-10-10 10:08",
+      "altitude_deg": 17.0,
+      "azimuth_deg": 86.5
+    },
+    {
+      "datetime": "2026-10-08 06:32",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-08 11:32",
+      "altitude_deg": 33.0,
+      "azimuth_deg": 97.2
+    },
+    {
+      "datetime": "2026-10-07 06:00",
+      "location": "Royse City, Texas",
+      "rating": 4.0,
+      "seeing": "4/5",
+      "transparency": "4/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-07 11:00",
+      "altitude_deg": 25.4,
+      "azimuth_deg": 92.0
+    }
+  ]
+}

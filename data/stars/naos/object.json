@@ -1,0 +1,494 @@
+{
+  "name": "Naos",
+  "category": "stars",
+  "app_type": "O-Star",
+  "harvested": "2026-10-10T16:21:05Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20zet%20Pup",
+      "retrieved": "2026-10-10T16:21:12Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zeta_Puppis",
+      "retrieved": "2026-10-10T16:21:13Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q13200",
+      "retrieved": "2026-10-10T16:21:14Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Puppis_constellation_map.svg/330px-Puppis_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Naos",
+    "simbad_id": "* zet Pup",
+    "wikidata": "Q13200",
+    "wikipedia": "Zeta Puppis"
+  },
+  "simbad": {
+    "main_id": "* zet Pup",
+    "ra": 120.89603140977576,
+    "dec": -40.003147798268934,
+    "otype": "BY*",
+    "otype_desc": "BY Dra Variable",
+    "sp_type": "O4I(n)fp",
+    "plx_value": 3.01,
+    "plx_err": 0.1,
+    "pmra": -29.71,
+    "pmdec": 16.68,
+    "rvz_radvel": -23.9,
+    "rvz_redshift": -7.971864122147121e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 1199,
+    "identifiers": [
+      "TIC 133422778",
+      "HIP 39429",
+      "Gaia DR3 5534788672055388032",
+      "2MASS J08033506-4000112",
+      "* zet Pup",
+      "2E  1910",
+      "ALS   949",
+      "CD-39  3939",
+      "CEL   2154",
+      "CGO 179",
+      "CMC  198752",
+      "CPC 18  3433",
+      "CPD-39  2011",
+      "EM* CDS  710",
+      "EUVE J0803-40.0",
+      "FK5  306",
+      "GC 10947",
+      "GCRV  5359",
+      "GEN# +1.00066811",
+      "GOS G255.98-04.71 01",
+      "GSC 07663-04093",
+      "HD  66811",
+      "HIC  39429",
+      "HR  3165",
+      "IRAS 08018-3951",
+      "JP11  1626",
+      "LS  949",
+      "MCW  547",
+      "N30 1854",
+      "PMC 90-93   223",
+      "PPM 312524",
+      "ROT  1295",
+      "SACS 175",
+      "SAO 198752",
+      "SKY# 15171",
+      "SRS  30306",
+      "TD1 11723",
+      "TYC 7663-4093-1",
+      "UBV    7751",
+      "UBV M  13965",
+      "[B10]  2141",
+      "[HJ56] 111",
+      "uvby98 100066811",
+      "1ES 0801-39.8",
+      "2E 0801.8-3951",
+      "NAME Naos",
+      "EQ 0801-39.8",
+      "[BVP2003] S2",
+      "1RXS J080335.8-400110",
+      "MOST 0801-398",
+      "V* zet Pup",
+      "2XMM J080335.0-400011",
+      "UCAC4 250-023940",
+      "WEB  7714"
+    ],
+    "fluxes": {
+      "K": {
+        "mag": 2.9,
+        "err": null
+      },
+      "H": {
+        "mag": 2.82,
+        "err": null
+      },
+      "U": {
+        "mag": 0.89,
+        "err": null
+      },
+      "B": {
+        "mag": 1.98,
+        "err": null
+      },
+      "V": {
+        "mag": 2.25,
+        "err": null
+      },
+      "R": {
+        "mag": 2.36,
+        "err": null
+      },
+      "I": {
+        "mag": 2.58,
+        "err": null
+      },
+      "J": {
+        "mag": 2.76,
+        "err": null
+      },
+      "G": {
+        "mag": 2.254294,
+        "err": 0.009032
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 36630,
+        "log_g": 2.567,
+        "fe_h": 0.492,
+        "bibcode": "2023ApJS..266...11B"
+      },
+      {
+        "teff": 45000,
+        "log_g": 3,
+        "fe_h": null,
+        "bibcode": "2024ApJ...971..166M"
+      },
+      {
+        "teff": 37250,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2009A&A...501..297Z"
+      },
+      {
+        "teff": 39000,
+        "log_g": 3.59,
+        "fe_h": null,
+        "bibcode": "2004A&A...415..349R"
+      },
+      {
+        "teff": 40000,
+        "log_g": 3.64,
+        "fe_h": null,
+        "bibcode": "2012A&A...544A..67B"
+      }
+    ],
+    "teff_median": 39000,
+    "vsini_measurements": [
+      {
+        "vsini": 198,
+        "vsini_err": null,
+        "bibcode": "2020A&A...639A..81B"
+      },
+      {
+        "vsini": 230,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 210,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 203,
+        "vsini_err": 15,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 219,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 253.6,
+        "vsini_err": 5.9,
+        "bibcode": "2023ApJS..266...11B"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "BY*",
+      "Em*",
+      "IR",
+      "NIR",
+      "Pu*",
+      "Rad",
+      "UV",
+      "V*",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20zet%20Pup"
+  },
+  "wikipedia": {
+    "title": "Zeta Puppis",
+    "description": "Star in the constellation of Puppis",
+    "summary": "Zeta Puppis, formally named Naos, is the brightest star in the constellation of Puppis.",
+    "intro": "Zeta Puppis (ζ Puppis, abbreviated Zeta Pup, ζ Pup), formally named Naos , is the brightest star in the constellation of Puppis.\nThe spectral class of O4 means this is one of the hottest, and most luminous, stars visible to the naked eye. It is one of the sky's few naked-eye class O-type stars as well as one of the closest to Earth. It is a blue supergiant, one of the most luminous stars in the Milky Way. Visually it is over 10,000 times brighter than the Sun, but its high temperature means that most of its radiation is in the ultraviolet and its bolometric luminosity is over 500,000 times that of the Sun. It is also the 72nd brightest star in terms of apparent magnitude from Earth.  It is a runaway star, meaning it has an unusually large space velocity, probably caused by being ejected from a close binary system when its companion exploded as a supernova.\nZeta Puppis is typical of O-type stars in having an extremely strong stellar wind, measured at 2,500 km/s, which sees the star shed more than a millionth of its mass each year, or about 10 million times that shed by the Sun over a comparable time period.",
+    "url": "https://en.wikipedia.org/wiki/Zeta_Puppis",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Puppis_constellation_map.svg/330px-Puppis_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Puppis_constellation_map.svg/330px-Puppis_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q13200"
+  },
+  "wikidata": {
+    "id": "Q13200",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "O-type star"
+        },
+        {
+          "value": "OB+"
+        },
+        {
+          "value": "O 4 EF"
+        },
+        {
+          "value": "O5e"
+        },
+        {
+          "value": "O 4 I (N) F"
+        },
+        {
+          "value": "O 4 F"
+        },
+        {
+          "value": "O5"
+        },
+        {
+          "value": "O4I(n)fp"
+        },
+        {
+          "value": "Od"
+        },
+        {
+          "value": "O4EF"
+        },
+        {
+          "value": "O4I(N)F"
+        },
+        {
+          "value": "O4F"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Puppis"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 2.25,
+          "unit": ""
+        },
+        {
+          "value": 0.89,
+          "unit": ""
+        },
+        {
+          "value": 1.98,
+          "unit": ""
+        },
+        {
+          "value": 2.36,
+          "unit": ""
+        },
+        {
+          "value": 2.58,
+          "unit": ""
+        },
+        {
+          "value": 2.76,
+          "unit": ""
+        },
+        {
+          "value": 2.82,
+          "unit": ""
+        },
+        {
+          "value": 2.9,
+          "unit": ""
+        },
+        {
+          "value": 2.254294,
+          "unit": "",
+          "plus": 0.009032000000000373,
+          "minus": 0.009031999999999929
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -6.23,
+          "unit": ""
+        }
+      ],
+      "mass": [
+        {
+          "value": 56.1,
+          "unit": "M☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 40000.0,
+          "unit": "K"
+        },
+        {
+          "value": 39000.0,
+          "unit": "K"
+        },
+        {
+          "value": 37250.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 3.2,
+          "unit": "Myr"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 3900.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 4400.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -24.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -24.0,
+          "unit": "km/s",
+          "plus": 5.0,
+          "minus": 5.0
+        },
+        {
+          "value": -23.9,
+          "unit": "km/s",
+          "plus": 2.8999999999999986,
+          "minus": 2.900000000000002
+        },
+        {
+          "value": -24.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -20.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -28.5,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 2.33,
+          "unit": "mas",
+          "plus": 0.5099999999999998,
+          "minus": 0.51
+        },
+        {
+          "value": 3.01,
+          "unit": "mas",
+          "plus": 0.10000000000000009,
+          "minus": 0.09999999999999964
+        }
+      ],
+      "instance of": [
+        {
+          "value": "BY Draconis variable"
+        },
+        {
+          "value": "pulsating variable star"
+        },
+        {
+          "value": "astronomical radio source"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "emission-line star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 120.89603141,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -40.003147798,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Zeta Puppis.png",
+    "url": "https://www.wikidata.org/wiki/Q13200"
+  },
+  "summary": {
+    "designation": "zet Pup",
+    "object_type": "BY Dra Variable",
+    "spectral_type": "O4I(n)fp",
+    "ra_deg": 120.89603140977576,
+    "dec_deg": -40.003147798268934,
+    "v_mag": 2.25,
+    "distance_pc": 332.2,
+    "distance_ly": 1083.6,
+    "teff_k": 39000,
+    "b_minus_v": -0.27,
+    "mass": {
+      "value": 56.1,
+      "unit": "M☉"
+    },
+    "age": {
+      "value": 3.2,
+      "unit": "Myr"
+    },
+    "constellation": "Puppis",
+    "description": "Star in the constellation of Puppis"
+  },
+  "id": "naos",
+  "path": "stars/naos",
+  "observations": [
+    {
+      "datetime": "2026-10-07 06:21",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "2/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-07 11:21",
+      "altitude_deg": 11.6,
+      "azimuth_deg": 156.4
+    }
+  ]
+}

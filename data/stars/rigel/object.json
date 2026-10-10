@@ -1,0 +1,574 @@
+{
+  "name": "Rigel",
+  "category": "stars",
+  "app_type": "B-Star",
+  "harvested": "2026-10-10T16:22:10Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20bet%20Ori",
+      "retrieved": "2026-10-10T16:22:17Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rigel",
+      "retrieved": "2026-10-10T16:22:18Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q12126",
+      "retrieved": "2026-10-10T16:22:19Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Rigel",
+    "simbad_id": "* bet Ori",
+    "wikidata": "Q12126",
+    "wikipedia": "Rigel"
+  },
+  "simbad": {
+    "main_id": "* bet Ori",
+    "ra": 78.63446706693006,
+    "dec": -8.201638364722209,
+    "otype": "s*b",
+    "otype_desc": "Blue Supergiant",
+    "sp_type": "B8Ia",
+    "plx_value": 3.78,
+    "plx_err": 0.34,
+    "pmra": 1.31,
+    "pmdec": 0.5,
+    "rvz_radvel": 17.8,
+    "rvz_redshift": 5.9376171710257e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 789,
+    "identifiers": [
+      "TIC 231308237",
+      "HIP 24436",
+      "2MASS J05143226-0812060",
+      "PLX 1191",
+      "* bet Ori",
+      "*  19 Ori",
+      "* bet Ori A",
+      "2E  1238",
+      "AAVSO 0509-08",
+      "ADS  3823 A",
+      "BD-08  1063",
+      "CCDM J05145-0812A",
+      "CEL    579",
+      "CSI-08  1063  1",
+      "CSV 100463",
+      "EM* MWC  487",
+      "FK5  194",
+      "GC  6410",
+      "GCRV  3110",
+      "GSC 05331-01752",
+      "HD  34085",
+      "HGAM    376",
+      "HIC  24436",
+      "HR  1713",
+      "IDS 05097-0819 A",
+      "IRAS 05121-0815",
+      "IRC -10085",
+      "JP11  1014",
+      "MCW  291",
+      "N30 1120",
+      "NSV  1882",
+      "PMC 90-93   140",
+      "PPM 187839",
+      "RAFGL  710",
+      "ROT   749",
+      "SACS 113",
+      "SAO 131907",
+      "SKY#  8263",
+      "SV* ZI   362",
+      "TD1  4253",
+      "UBV    5016",
+      "UBV M  10750",
+      "V* bet Ori",
+      "VDB  36",
+      "[SC93b] 101",
+      "ALS 14772",
+      "PLX 1191.00",
+      "1RXS J051431.5-081112",
+      "2E 0512.1-0814",
+      "EUVE J0514-08.1",
+      "WDS J05145-0812A",
+      "TYC 5331-1752-1",
+      "PMSC 05097-0819A",
+      "uvby98 100034085",
+      "GN 05.04.0",
+      "NAME Rigel",
+      "WEB  4731"
+    ],
+    "fluxes": {
+      "J": {
+        "mag": 0.22,
+        "err": null
+      },
+      "U": {
+        "mag": -0.56,
+        "err": null
+      },
+      "B": {
+        "mag": 0.1,
+        "err": null
+      },
+      "V": {
+        "mag": 0.13,
+        "err": null
+      },
+      "R": {
+        "mag": 0.13,
+        "err": null
+      },
+      "I": {
+        "mag": 0.15,
+        "err": null
+      },
+      "K": {
+        "mag": 0.18,
+        "err": null
+      },
+      "H": {
+        "mag": 0.2,
+        "err": null
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 12622,
+        "log_g": 1.907,
+        "fe_h": -0.159,
+        "bibcode": "2023ApJS..266...11B"
+      },
+      {
+        "teff": 12100,
+        "log_g": 1.75,
+        "fe_h": null,
+        "bibcode": "2012A&A...543A..80F"
+      },
+      {
+        "teff": 12130,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2009A&A...501..297Z"
+      }
+    ],
+    "teff_median": 12130,
+    "vsini_measurements": [
+      {
+        "vsini": 25,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 42,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 40,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 38,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 20.69,
+        "vsini_err": 2.37,
+        "bibcode": "2023ApJS..266...11B"
+      },
+      {
+        "vsini": 37,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 43,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 40,
+        "vsini_err": 3,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 40,
+        "vsini_err": 9,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 10,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 35,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "Em*",
+      "IR",
+      "ISM",
+      "NIR",
+      "Pu*",
+      "RNe",
+      "s*b",
+      "UV",
+      "V*",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20bet%20Ori"
+  },
+  "wikipedia": {
+    "title": "Rigel",
+    "description": "Brightest star in the constellation Orion",
+    "summary": "Rigel is a blue supergiant star in the equatorial constellation of Orion. It has the Bayer designation β Orionis, which is Latinized to Beta Orionis and abbreviated Beta Ori or β Ori. Rigel is the brightest and most massive component – and the eponym – of a star system of at least four stars that appear as a single blue-white point of light to the naked eye. This system is located at a distance of approximately 850 light-years (260 pc).",
+    "intro": "Rigel is a blue supergiant star in the equatorial constellation of Orion. It has the Bayer designation β Orionis, which is Latinized to Beta Orionis and abbreviated Beta Ori or β Ori. Rigel is the brightest and most massive component – and the eponym – of a star system of at least four stars that appear as a single blue-white point of light to the naked eye. This system is located at a distance of approximately 850 light-years (260 pc).\nA star of spectral type B8Ia, Rigel is calculated to be anywhere from 61,500 to 363,000 times as luminous as the Sun, and 18 to 24 times as massive, depending on the method and assumptions used. Its radius is more than seventy times that of the Sun, and its surface temperature is 12,100 K. Due to its stellar wind, Rigel's mass-loss is estimated to be ten million times that of the Sun. With an estimated age of seven to nine million years, Rigel has exhausted its core hydrogen fuel, expanded, and cooled to become a supergiant. It is expected to end its life as a Type II supernova, leaving a neutron star or a black hole as a final remnant, depending on the initial mass of the star.\nRigel varies slightly in brightness, its apparent magnitude ranging from 0.05 to 0.18. It is classified as an Alpha Cygni variable due to the amplitude and periodicity of its brightness variation, as well as its spectral type. Its intrinsic variability is caused by pulsations in its unstable atmosphere. Rigel is generally the seventh-brightest star in the night sky and the brightest star in Orion, though it is occasionally outshone by Betelgeuse, which varies over a larger range.\nA triple-star system is separated from Rigel by an angle of 9.5 arc seconds. It has an apparent magnitude of 6.7, making it 1/400th as bright as Rigel. Two stars in the system can be seen by large telescopes, and the brighter of the two is a spectroscopic binary. These three stars are all blue-white main-sequence stars, each three to four times as massive as the Sun. Rigel and the triple system orbit a common center of gravity with a period estimated to be 24,000 years. The inner stars of the triple system orbit each other every 10 days, and the outer star orbits the inner pair every 63 years. A much fainter star, separated from Rigel and the others by nearly an arc minute, may be part of the same star system.\n\n",
+    "url": "https://en.wikipedia.org/wiki/Rigel",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q12126"
+  },
+  "wikidata": {
+    "id": "Q12126",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "B8Iae"
+        },
+        {
+          "value": "B8Ia"
+        },
+        {
+          "value": "B8 IA E,SB,VB"
+        },
+        {
+          "value": "B8p"
+        },
+        {
+          "value": "B8IAE,SB,VB"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Orion"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 0.13,
+          "unit": ""
+        },
+        {
+          "value": 0.13,
+          "unit": ""
+        },
+        {
+          "value": -0.56,
+          "unit": ""
+        },
+        {
+          "value": 0.1,
+          "unit": ""
+        },
+        {
+          "value": 0.15,
+          "unit": ""
+        },
+        {
+          "value": 0.22,
+          "unit": ""
+        },
+        {
+          "value": 0.2,
+          "unit": ""
+        },
+        {
+          "value": 0.18,
+          "unit": ""
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -7.84,
+          "unit": "",
+          "plus": 0.2400000000000002,
+          "minus": 0.16000000000000014
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 860.0,
+          "unit": "ly",
+          "plus": 80.0,
+          "minus": 80.0
+        }
+      ],
+      "mass": [
+        {
+          "value": 18.0,
+          "unit": "M☉"
+        }
+      ],
+      "radius": [
+        {
+          "value": 78.9,
+          "unit": "R☉"
+        },
+        {
+          "value": 74.1,
+          "unit": "R☉"
+        }
+      ],
+      "diameter": [
+        {
+          "value": 103000000.0,
+          "unit": "km"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 12130.0,
+          "unit": "K"
+        },
+        {
+          "value": 12100.0,
+          "unit": "K"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 56.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 20.7,
+          "unit": "km/s",
+          "plus": 0.9000000000000021,
+          "minus": 0.8999999999999986
+        },
+        {
+          "value": 17.8,
+          "unit": "km/s",
+          "plus": 0.3999999999999986,
+          "minus": 0.40000000000000213
+        },
+        {
+          "value": 21.6,
+          "unit": "km/s"
+        },
+        {
+          "value": 21.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 26.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 19.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 24.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 17.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 21.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 18.6,
+          "unit": "km/s"
+        },
+        {
+          "value": 20.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 16.3,
+          "unit": "km/s"
+        },
+        {
+          "value": 20.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 0.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 22.4,
+          "unit": "km/s"
+        },
+        {
+          "value": 16.9,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 3.78,
+          "unit": "mas",
+          "plus": 0.3400000000000003,
+          "minus": 0.33999999999999986
+        },
+        {
+          "value": 9.3,
+          "unit": "mas",
+          "plus": 6.199999999999999,
+          "minus": 6.200000000000001
+        },
+        {
+          "value": 4.22,
+          "unit": "mas",
+          "plus": 0.8100000000000005,
+          "minus": 0.8099999999999996
+        }
+      ],
+      "child astronomical body": [
+        {
+          "value": "Rigel Ⅹ"
+        },
+        {
+          "value": "Rigel V"
+        },
+        {
+          "value": "Rigel VI"
+        },
+        {
+          "value": "Rigel VII"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "Alpha Cygni variable"
+        },
+        {
+          "value": "B-type supergiant star"
+        },
+        {
+          "value": "blue supergiant"
+        },
+        {
+          "value": "multiple star"
+        },
+        {
+          "value": "pulsating variable star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "emission-line star"
+        },
+        {
+          "value": "interstellar medium"
+        },
+        {
+          "value": "reflection nebula"
+        },
+        {
+          "value": "navigational star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "suspected variable"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 78.634467067,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -8.201638365,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Rigel & IC 2118 (Orion - Eridanus) (Giuseppe Donatiello).jpg",
+    "url": "https://www.wikidata.org/wiki/Q12126"
+  },
+  "summary": {
+    "designation": "bet Ori",
+    "object_type": "Blue Supergiant",
+    "spectral_type": "B8Ia",
+    "ra_deg": 78.63446706693006,
+    "dec_deg": -8.201638364722209,
+    "v_mag": 0.13,
+    "distance_pc": 264.6,
+    "distance_ly": 862.8,
+    "teff_k": 12130,
+    "b_minus_v": -0.03,
+    "mass": {
+      "value": 18.0,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 78.9,
+      "unit": "R☉"
+    },
+    "constellation": "Orion",
+    "description": "Brightest star in the constellation Orion"
+  },
+  "id": "rigel",
+  "path": "stars/rigel",
+  "observations": [
+    {
+      "datetime": "2026-10-07 05:18",
+      "location": "Royse City, Texas",
+      "rating": 5.0,
+      "seeing": "4/5",
+      "transparency": "4/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-07 10:18",
+      "altitude_deg": 48.6,
+      "azimuth_deg": 173.4
+    }
+  ]
+}

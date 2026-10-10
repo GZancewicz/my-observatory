@@ -1,0 +1,402 @@
+{
+  "name": "Alnitak",
+  "category": "stars",
+  "app_type": "O-Star",
+  "harvested": "2026-10-10T16:24:18Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20zet%20Ori",
+      "retrieved": "2026-10-10T16:24:25Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alnitak",
+      "retrieved": "2026-10-10T16:24:26Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q13076",
+      "retrieved": "2026-10-10T16:24:27Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Star-Alnitak.png/330px-Star-Alnitak.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Alnitak",
+    "simbad_id": "* zet Ori",
+    "wikidata": "Q13076",
+    "wikipedia": "Alnitak"
+  },
+  "simbad": {
+    "main_id": "* zet Ori",
+    "ra": 85.18969442793068,
+    "dec": -1.9425735859722049,
+    "otype": "**",
+    "otype_desc": "Double or Multiple Star",
+    "sp_type": "O9.7Ib+B0III",
+    "plx_value": 4.43,
+    "plx_err": 0.64,
+    "pmra": 3.19,
+    "pmdec": 2.03,
+    "rvz_radvel": 18.5,
+    "rvz_redshift": 6.17112617515847e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 376,
+    "identifiers": [
+      "TIC 11360636",
+      "HIP 26727",
+      "* zet Ori",
+      "*  50 Ori",
+      "2E  1500",
+      "AAVSO 0535-02",
+      "ADS  4263 AB",
+      "BD-02  1338",
+      "CCDM J05408-0156AB",
+      "CSI-02  1338  4",
+      "GSC 04771-01188",
+      "HIC  26727",
+      "IRC +00081",
+      "JP11  1219",
+      "NAME Alnitak",
+      "PPM 400076",
+      "UBV    5783",
+      "XSS J05421-0225",
+      "PLX 1301.00",
+      "PLX 1301",
+      "1ES 0538-01.9",
+      "1RXS J054045.4-015631",
+      "2E 0538.2-0157",
+      "EUVE J0540-01.9",
+      "[KSP2003] J054045.31-015636.8",
+      "2MASS J05404553-0156336",
+      "WDS J05407-0157AB",
+      "** STF  774AB",
+      "AKARI-IRC-V1 J0540454-015633",
+      "IRAS 05381-0158",
+      "HGAM    467",
+      "SKY#  9258",
+      "[HJ56]  71",
+      "CEL    921",
+      "EM* MWC  509",
+      "ROT   907",
+      "TD1  5127",
+      "GC  7089",
+      "MCW  349",
+      "SAO 132444",
+      "WH 460",
+      "[YKK2000] B2",
+      "uvby98 100037742",
+      "GEN# +1.00037742"
+    ],
+    "fluxes": {
+      "H": {
+        "mag": 2.35,
+        "err": 0.23
+      },
+      "K": {
+        "mag": 2.4,
+        "err": 0.28
+      },
+      "J": {
+        "mag": 2.25,
+        "err": 0.31
+      },
+      "V": {
+        "mag": 1.77,
+        "err": null
+      },
+      "U": {
+        "mag": 0.5,
+        "err": null
+      },
+      "B": {
+        "mag": 1.56,
+        "err": null
+      },
+      "R": {
+        "mag": 1.85,
+        "err": null
+      },
+      "I": {
+        "mag": 2.05,
+        "err": null
+      },
+      "u": {
+        "mag": 1.25,
+        "err": null
+      },
+      "g": {
+        "mag": 1.56,
+        "err": null
+      },
+      "r": {
+        "mag": 1.97,
+        "err": null
+      },
+      "i": {
+        "mag": 2.3,
+        "err": null
+      },
+      "z": {
+        "mag": 2.53,
+        "err": null
+      }
+    },
+    "atmosphere_measurements": [],
+    "teff_median": null,
+    "vsini_measurements": [],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "Em*",
+      "IR",
+      "NIR",
+      "UV",
+      "V*",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20zet%20Ori"
+  },
+  "wikipedia": {
+    "title": "Alnitak",
+    "description": "Triple star system in the constellation Orion",
+    "summary": "Alnitak is a triple star system in the constellation of Orion. It has the designations ζ Orionis, which is Latinised to Zeta Orionis and abbreviated Zeta Ori or ζ Ori, and 50 Orionis, abbreviated 50 Ori. The system is located at a distance of several hundred parsecs from the Sun and is one of the three main stars of Orion's Belt along with Alnilam and Mintaka.",
+    "intro": "Alnitak is a triple star system in the constellation of Orion. It has the designations ζ Orionis, which is Latinised to Zeta Orionis and abbreviated Zeta Ori or ζ Ori, and 50 Orionis, abbreviated 50 Ori. The system is located at a distance of several hundred parsecs from the Sun and is one of the three main stars of Orion's Belt along with Alnilam and Mintaka.\nThe primary star, Alnitak Aa, is a hot blue supergiant with an absolute magnitude of −6.0 and is the brightest class O star in the night sky with a visual magnitude of +2.0. It has two companions—Ab and B, the latter known for the longest time and the former discovered recently, producing a combined magnitude for the trio of +1.77. The stars are members of the Orion OB1 association and the Collinder 70 association.",
+    "url": "https://en.wikipedia.org/wiki/Alnitak",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Star-Alnitak.png/330px-Star-Alnitak.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Star-Alnitak.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikidata": "Q13076"
+  },
+  "wikidata": {
+    "id": "Q13076",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "O9.7Ib+B0III"
+        },
+        {
+          "value": "O9.5Ib"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Orion"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 1.77,
+          "unit": ""
+        },
+        {
+          "value": 2.25,
+          "unit": "",
+          "plus": 0.31000000000000005,
+          "minus": 0.31000000000000005
+        },
+        {
+          "value": 2.35,
+          "unit": "",
+          "plus": 0.22999999999999998,
+          "minus": 0.22999999999999998
+        },
+        {
+          "value": 2.4,
+          "unit": "",
+          "plus": 0.28000000000000025,
+          "minus": 0.2799999999999998
+        },
+        {
+          "value": 2.53,
+          "unit": ""
+        },
+        {
+          "value": 2.3,
+          "unit": ""
+        },
+        {
+          "value": 1.97,
+          "unit": ""
+        },
+        {
+          "value": 1.56,
+          "unit": ""
+        },
+        {
+          "value": 1.25,
+          "unit": ""
+        },
+        {
+          "value": 2.05,
+          "unit": ""
+        },
+        {
+          "value": 1.85,
+          "unit": ""
+        },
+        {
+          "value": 1.56,
+          "unit": ""
+        },
+        {
+          "value": 0.5,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 1260.0,
+          "unit": "ly"
+        }
+      ],
+      "radius": [
+        {
+          "value": 20.0,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 100000.0,
+          "unit": "L☉"
+        }
+      ],
+      "age": [
+        {
+          "value": 6.4,
+          "unit": "Myr"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 18.5,
+          "unit": "km/s",
+          "plus": 1.3000000000000007,
+          "minus": 1.3000000000000007
+        }
+      ],
+      "parallax": [
+        {
+          "value": 23.9,
+          "unit": "mas",
+          "plus": 15.0,
+          "minus": 14.999999999999998
+        },
+        {
+          "value": 4.43,
+          "unit": "mas",
+          "plus": 0.6400000000000006,
+          "minus": 0.6399999999999997
+        },
+        {
+          "value": 3.99,
+          "unit": "mas",
+          "plus": 0.79,
+          "minus": 0.79
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "binary star"
+        },
+        {
+          "value": "emission-line star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "multiple star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 85.189694428,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -1.942573586,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Alnitak sun comparison.svg",
+    "url": "https://www.wikidata.org/wiki/Q13076"
+  },
+  "summary": {
+    "designation": "zet Ori",
+    "object_type": "Double or Multiple Star",
+    "spectral_type": "O9.7Ib+B0III",
+    "ra_deg": 85.18969442793068,
+    "dec_deg": -1.9425735859722049,
+    "v_mag": 1.77,
+    "distance_pc": 225.7,
+    "distance_ly": 736.2,
+    "b_minus_v": -0.21,
+    "radius": {
+      "value": 20.0,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 100000.0,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 6.4,
+      "unit": "Myr"
+    },
+    "constellation": "Orion",
+    "description": "Triple star system in the constellation Orion"
+  },
+  "id": "alnitak",
+  "path": "stars/alnitak",
+  "observations": [
+    {
+      "datetime": "2026-10-07 05:14",
+      "location": "",
+      "rating": null,
+      "seeing": "",
+      "transparency": "",
+      "bortle": "",
+      "incomplete": true,
+      "location_assumed": "Royse City, Texas",
+      "utc": "2026-10-07 10:14",
+      "altitude_deg": 53.3,
+      "azimuth_deg": 159.7
+    }
+  ]
+}

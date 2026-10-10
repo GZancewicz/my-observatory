@@ -1,0 +1,545 @@
+{
+  "name": "Mintaka",
+  "category": "stars",
+  "app_type": "O-Star",
+  "harvested": "2026-10-10T16:23:40Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20del%20Ori",
+      "retrieved": "2026-10-10T16:23:47Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mintaka",
+      "retrieved": "2026-10-10T16:24:03Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q680341",
+      "retrieved": "2026-10-10T16:24:04Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Orion_Belt_2009-01-29.jpg/330px-Orion_Belt_2009-01-29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Mintaka",
+    "simbad_id": "* del Ori",
+    "wikidata": "Q680341",
+    "wikipedia": "Mintaka"
+  },
+  "simbad": {
+    "main_id": "* del Ori",
+    "ra": 83.00166705557675,
+    "dec": -0.29909510708333326,
+    "otype": "**",
+    "otype_desc": "Double or Multiple Star",
+    "sp_type": "O9.5IINwk",
+    "plx_value": 4.71,
+    "plx_err": 0.58,
+    "pmra": 0.64,
+    "pmdec": -0.69,
+    "rvz_radvel": 18.5,
+    "rvz_redshift": 6.17112617515847e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 797,
+    "identifiers": [
+      "TIC 50743469",
+      "HIP 25930",
+      "2MASS J05320040-0017566",
+      "SBC9 331",
+      "1E 052926+0020.0",
+      "2E  1293",
+      "ADS  4134 A",
+      "AG-00  648",
+      "BD-00   983",
+      "CEL    764",
+      "CGO  92",
+      "CSI-00   983  3",
+      "CSI-00   983  1",
+      "FK5  206",
+      "GC  6847",
+      "GCRV  3361",
+      "GEN# +1.00036486A",
+      "GSC 04766-02445",
+      "HD  36486",
+      "HGAM    419",
+      "HIC  25930",
+      "HR  1852",
+      "IDS 05269-0022 A",
+      "IRAS 05294-0020",
+      "JP11  1136",
+      "MCW  324",
+      "N30 1185",
+      "PMC 90-93   149",
+      "PPM 175888",
+      "ROT   839",
+      "SAO 132220",
+      "SBC7   233",
+      "SKY#  8880",
+      "UBV   21591",
+      "UBV M  11108",
+      "UBV   21590",
+      "V* del Ori",
+      "WH 141",
+      "ALS 14779",
+      "1ES 0529-00.3",
+      "2E 0529.4-0019",
+      "EUVE J0532-00.2",
+      "Gaia DR3 3220756843825383936",
+      "1RXS J053200.8-001755",
+      "WDS J05320-0018Aa,Ab",
+      "WDS J05320-0018A",
+      "** HEI   42",
+      "** STF 4014A",
+      "PMSC 05269-0022A",
+      "NAME Mintaka",
+      "* del Ori",
+      "*  34 Ori",
+      "WEB  5041",
+      "* del01 Ori"
+    ],
+    "fluxes": {
+      "B": {
+        "mag": 2.02,
+        "err": null
+      },
+      "V": {
+        "mag": 2.41,
+        "err": 0.01
+      },
+      "U": {
+        "mag": 0.96,
+        "err": null
+      },
+      "J": {
+        "mag": 2.72,
+        "err": null
+      },
+      "K": {
+        "mag": 2.88,
+        "err": null
+      },
+      "H": {
+        "mag": 2.84,
+        "err": null
+      },
+      "R": {
+        "mag": 2.32,
+        "err": null
+      },
+      "I": {
+        "mag": 2.54,
+        "err": null
+      },
+      "G": {
+        "mag": 2.248773,
+        "err": 0.014276
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 30100,
+        "log_g": 3.31,
+        "fe_h": null,
+        "bibcode": "2018A&A...613A..65H"
+      },
+      {
+        "teff": 30000,
+        "log_g": 3.5,
+        "fe_h": null,
+        "bibcode": "2024ApJ...971..166M"
+      },
+      {
+        "teff": 30100,
+        "log_g": 3.33,
+        "fe_h": null,
+        "bibcode": "2022A&A...665A.150H"
+      },
+      {
+        "teff": 30300,
+        "log_g": 3.22,
+        "fe_h": null,
+        "bibcode": "2024A&A...687A.228D"
+      }
+    ],
+    "teff_median": 30100,
+    "vsini_measurements": [
+      {
+        "vsini": 133,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 128,
+        "vsini_err": null,
+        "bibcode": "2014A&A...562A.135S"
+      },
+      {
+        "vsini": 122,
+        "vsini_err": null,
+        "bibcode": "2014A&A...562A.135S"
+      },
+      {
+        "vsini": 128,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 121,
+        "vsini_err": null,
+        "bibcode": "2017A&A...597A..22S"
+      },
+      {
+        "vsini": 100,
+        "vsini_err": null,
+        "bibcode": "2018A&A...613A..65H"
+      },
+      {
+        "vsini": 121,
+        "vsini_err": null,
+        "bibcode": "2020A&A...639A..81B"
+      },
+      {
+        "vsini": 100,
+        "vsini_err": null,
+        "bibcode": "2022A&A...665A.150H"
+      },
+      {
+        "vsini": 145,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 140,
+        "vsini_err": 30,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 144,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 133,
+        "vsini_err": 16,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 100,
+        "vsini_err": null,
+        "bibcode": "2025A&A...693L..10M"
+      },
+      {
+        "vsini": 117,
+        "vsini_err": null,
+        "bibcode": "2024A&A...687A.228D"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "EB*",
+      "IR",
+      "NIR",
+      "SB*",
+      "UV",
+      "V*",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20del%20Ori"
+  },
+  "wikipedia": {
+    "title": "Mintaka",
+    "description": "Five-star system in the constellation Orion",
+    "summary": "Mintaka, designation Delta Orionis and 34 Orionis, is a quintuple star system some 1,200 light-years away in the constellation of Orion. Together with Alnitak and Alnilam, the three stars form Orion's Belt, known by many names among ancient cultures. The star is located very close to the celestial equator. When Orion is near the meridian, Mintaka is the rightmost of the Belt's stars when viewed from the Northern Hemisphere facing south.",
+    "intro": "Mintaka , designation Delta Orionis (δ Orionis, abbreviated Delta Ori, δ Ori) and 34 Orionis (34 Ori), is a quintuple star system some 1,200 light-years away in the constellation of Orion. Together with Alnitak (Zeta Orionis) and Alnilam (Epsilon Orionis), the three stars form Orion's Belt, known by many names among ancient cultures. The star is located very close to the celestial equator. When Orion is near the meridian, Mintaka is the rightmost of the Belt's stars when viewed from the Northern Hemisphere facing south.\nThe five stars form a hierarchy:\n\nDelta Ori A\nDelta Ori Aa, an eclipsing binary with an orbital period of 5.7 days\nDelta Ori Aa1\nDelta Ori Aa2\nDelta Ori Ab, which orbits Aa with an orbital period of 152 years\nDelta Ori C, a binary star with an orbital period of 30 days, also known as HD 36485\nDelta Ori Ca\nDelta Ori Cb\nAll five stars are hot and luminous, more massive than the Sun.",
+    "url": "https://en.wikipedia.org/wiki/Mintaka",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Orion_Belt_2009-01-29.jpg/330px-Orion_Belt_2009-01-29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Orion_Belt_2009-01-29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikidata": "Q680341"
+  },
+  "wikidata": {
+    "id": "Q680341",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "O8"
+        },
+        {
+          "value": "O9.5II"
+        },
+        {
+          "value": "O9III"
+        },
+        {
+          "value": "O9.5Iab:"
+        },
+        {
+          "value": "O9.5II-III"
+        },
+        {
+          "value": "O9.5III"
+        },
+        {
+          "value": "O9 II SB"
+        },
+        {
+          "value": "B0"
+        },
+        {
+          "value": "O9.5IINwk"
+        },
+        {
+          "value": "O9IISB"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Orion"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 2.41,
+          "unit": "",
+          "plus": 0.009999999999999787,
+          "minus": 0.010000000000000231
+        },
+        {
+          "value": 0.96,
+          "unit": ""
+        },
+        {
+          "value": 2.02,
+          "unit": ""
+        },
+        {
+          "value": 2.32,
+          "unit": ""
+        },
+        {
+          "value": 2.54,
+          "unit": ""
+        },
+        {
+          "value": 2.72,
+          "unit": ""
+        },
+        {
+          "value": 2.84,
+          "unit": ""
+        },
+        {
+          "value": 2.88,
+          "unit": ""
+        },
+        {
+          "value": 2.248773,
+          "unit": "",
+          "plus": 0.014276000000000177,
+          "minus": 0.014275999999999733
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -4.99,
+          "unit": ""
+        }
+      ],
+      "radius": [
+        {
+          "value": 15.8,
+          "unit": "R☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 30100.0,
+          "unit": "K"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 2140.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 2040.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 20.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 16.0,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0
+        },
+        {
+          "value": 18.5,
+          "unit": "km/s",
+          "plus": 0.5,
+          "minus": 0.5
+        },
+        {
+          "value": 16.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 13.4,
+          "unit": "km/s"
+        },
+        {
+          "value": 12.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -1.6,
+          "unit": "km/s"
+        },
+        {
+          "value": 18.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 50.3,
+          "unit": "km/s"
+        },
+        {
+          "value": -5.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 23.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 36.0,
+          "unit": "km/s",
+          "plus": 6.0,
+          "minus": 6.0
+        }
+      ],
+      "parallax": [
+        {
+          "value": 3.56,
+          "unit": "mas",
+          "plus": 0.8299999999999996,
+          "minus": 0.8300000000000001
+        },
+        {
+          "value": 4.71,
+          "unit": "mas",
+          "plus": 0.5800000000000001,
+          "minus": 0.5800000000000001
+        }
+      ],
+      "child astronomical body": [
+        {
+          "value": "Mintaka Ⅲ"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "multiple star"
+        },
+        {
+          "value": "eclipsing binary"
+        },
+        {
+          "value": "spectroscopic binary"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "Algol variable"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "star"
+        },
+        {
+          "value": "binary star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 83.001667056,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -0.299095107,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Orion Belt.jpg",
+    "url": "https://www.wikidata.org/wiki/Q680341"
+  },
+  "summary": {
+    "designation": "del Ori",
+    "object_type": "Double or Multiple Star",
+    "spectral_type": "O9.5IINwk",
+    "ra_deg": 83.00166705557675,
+    "dec_deg": -0.29909510708333326,
+    "v_mag": 2.41,
+    "distance_pc": 212.3,
+    "distance_ly": 692.5,
+    "teff_k": 30100,
+    "b_minus_v": -0.39,
+    "radius": {
+      "value": 15.8,
+      "unit": "R☉"
+    },
+    "constellation": "Orion",
+    "description": "Five-star system in the constellation Orion"
+  },
+  "id": "mintaka",
+  "path": "stars/mintaka",
+  "observations": [
+    {
+      "datetime": "2026-10-07 05:15",
+      "location": "Royse City, Texas",
+      "rating": 5.0,
+      "seeing": "4/śął",
+      "transparency": "4/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-07 10:15",
+      "altitude_deg": 55.5,
+      "azimuth_deg": 163.0
+    }
+  ]
+}

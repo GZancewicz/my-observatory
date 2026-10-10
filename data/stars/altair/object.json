@@ -1,0 +1,689 @@
+{
+  "name": "Altair",
+  "category": "stars",
+  "app_type": "A-Star",
+  "harvested": "2026-10-10T16:12:25Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20Aql",
+      "retrieved": "2026-10-10T16:12:34Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Altair",
+      "retrieved": "2026-10-10T16:12:34Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q12975",
+      "retrieved": "2026-10-10T16:12:35Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Aquila_constellation_map.svg/330px-Aquila_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Altair",
+    "simbad_id": "* alf Aql",
+    "wikidata": "Q12975",
+    "wikipedia": "Altair"
+  },
+  "simbad": {
+    "main_id": "* alf Aql",
+    "ra": 297.69582729638694,
+    "dec": 8.868321196436963,
+    "otype": "dS*",
+    "otype_desc": "delta Sct Variable",
+    "sp_type": "A7Vn",
+    "plx_value": 194.95,
+    "plx_err": 0.57,
+    "pmra": 536.23,
+    "pmdec": 385.29,
+    "rvz_radvel": -26.6,
+    "rvz_redshift": -8.872411333848973e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 925,
+    "identifiers": [
+      "TIC 70257116",
+      "GJ 768",
+      "HIP 97649",
+      "PLX 4665",
+      "LSPM J1950+0852",
+      "ASCC 1075038",
+      "USNO-B1.0 0988-00511792",
+      "* alf Aql",
+      "*  53 Aql",
+      "2E  4294",
+      "8pc 194.44",
+      "ADS 13009 A",
+      "AG+08 2636",
+      "BD+08  4236",
+      "CCDM J19508+0852A",
+      "CSI+08  4236  1",
+      "Ci 20 1169",
+      "FK5  745",
+      "GAT  549",
+      "GC 27470",
+      "GCRV 12193",
+      "GEN# +1.00187642",
+      "HD 187642",
+      "HIC  97649",
+      "HR  7557",
+      "IDS 19459+0836 A",
+      "TIC 471012052",
+      "IRAS 19483+0844",
+      "IRC +10441",
+      "JP11  3142",
+      "CNS5 4912",
+      "LFT 1499",
+      "LHS  3490",
+      "LTT 15795",
+      "N30 4388",
+      "NAME Altair",
+      "NLTT 48314",
+      "NSV 24910",
+      "PM 19484+0844",
+      "PMC 90-93   530",
+      "PPM 168779",
+      "RAFGL 2463",
+      "ROT  2857",
+      "SAO 125122",
+      "SKY# 37134",
+      "TD1 25537",
+      "UBV M  24205",
+      "UBV   16885",
+      "USNO 891",
+      "Zkh 297",
+      "uvby98 100187642",
+      "2MASS J19504698+0852060",
+      "PLX 4665.00",
+      "1ES 1948+08.7",
+      "2E 1948.3+0844",
+      "1RXS J195047.0+085159",
+      "WDS J19508+0852A",
+      "TYC 1058-3399-1",
+      "GSC 01058-03399",
+      "V* alf Aql",
+      "AKARI-FIS-V1 J1950472+085209",
+      "2XMMi J195047.1+085208",
+      "WEB 17173"
+    ],
+    "fluxes": {
+      "J": {
+        "mag": 0.35,
+        "err": null
+      },
+      "K": {
+        "mag": 0.24,
+        "err": null
+      },
+      "H": {
+        "mag": 0.24,
+        "err": null
+      },
+      "B": {
+        "mag": 0.98,
+        "err": null
+      },
+      "V": {
+        "mag": 0.76,
+        "err": null
+      },
+      "U": {
+        "mag": 1.07,
+        "err": null
+      },
+      "R": {
+        "mag": 0.62,
+        "err": null
+      },
+      "I": {
+        "mag": 0.49,
+        "err": null
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 7485,
+        "log_g": 3.7177,
+        "fe_h": -0.0803,
+        "bibcode": "2023ApJS..266...11B"
+      },
+      {
+        "teff": 7550,
+        "log_g": 4.13,
+        "fe_h": -0.24,
+        "bibcode": "2003A&A...398.1121E"
+      },
+      {
+        "teff": 7727,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2012A&A...537A.120Z"
+      },
+      {
+        "teff": 7568,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1998A&A...339..858D"
+      },
+      {
+        "teff": 8040,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1995A&AS..110..553S"
+      },
+      {
+        "teff": 7377,
+        "log_g": 3.95,
+        "fe_h": 0.48,
+        "bibcode": "2017AJ....153...21L"
+      },
+      {
+        "teff": 6246,
+        "log_g": 4.349,
+        "fe_h": 0.19,
+        "bibcode": "2024A&A...683A.125P"
+      },
+      {
+        "teff": 7646,
+        "log_g": 4.23,
+        "fe_h": null,
+        "bibcode": "2004A&A...420..183A"
+      },
+      {
+        "teff": 7800,
+        "log_g": 3.76,
+        "fe_h": null,
+        "bibcode": "2003AJ....126.2048G"
+      }
+    ],
+    "teff_median": 7568,
+    "vsini_measurements": [
+      {
+        "vsini": 203,
+        "vsini_err": null,
+        "bibcode": "2009A&A...493.1099S"
+      },
+      {
+        "vsini": 245,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 231,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 200,
+        "vsini_err": null,
+        "bibcode": "1995ApJS...99..135A"
+      },
+      {
+        "vsini": 217,
+        "vsini_err": null,
+        "bibcode": "2002A&A...393..897R"
+      },
+      {
+        "vsini": 217,
+        "vsini_err": null,
+        "bibcode": "2007A&A...463..671R"
+      },
+      {
+        "vsini": 90.8,
+        "vsini_err": null,
+        "bibcode": "2017AJ....153...21L"
+      },
+      {
+        "vsini": 240,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 225,
+        "vsini_err": 45,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 204,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 203,
+        "vsini_err": 3,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 225,
+        "vsini_err": 23,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 200,
+        "vsini_err": 15,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 208,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 221,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 90.8,
+        "vsini_err": null,
+        "bibcode": "2017AJ....153...21L"
+      },
+      {
+        "vsini": 216.6,
+        "vsini_err": 2.25,
+        "bibcode": "2023ApJS..266...11B"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "dS*",
+      "FIR",
+      "IR",
+      "NIR",
+      "PM*",
+      "UV",
+      "V*",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20alf%20Aql"
+  },
+  "wikipedia": {
+    "title": "Altair",
+    "description": "Brightest star in the constellation Aquila",
+    "summary": "Altair is the brightest star in the equatorial constellation of Aquila and the twelfth-brightest star in the night sky. It has the Bayer designation Alpha Aquilae, which is Latinised from α Aquilae and abbreviated Alpha Aql or α Aql. Altair is an A-type main-sequence star with an apparent visual magnitude of 0.77 and is one of the vertices of the Summer Triangle asterism; the other two vertices are marked by Deneb and Vega. It is located at a distance of 16.7 light-years from the Sun. Altair is currently in the G-cloud—a nearby interstellar cloud formed from an accumulation of gas and dust.",
+    "intro": "Altair is the brightest star in the equatorial constellation of Aquila and the twelfth-brightest star in the night sky. It has the Bayer designation Alpha Aquilae, which is Latinised from α Aquilae and abbreviated Alpha Aql or α Aql. Altair is an A-type main-sequence star with an apparent visual magnitude of 0.77 and is one of the vertices of the Summer Triangle asterism; the other two vertices are marked by Deneb and Vega. It is located at a distance of 16.7 light-years (5.1 parsecs) from the Sun. Altair is currently in the G-cloud—a nearby interstellar cloud formed from an accumulation of gas and dust.\nAltair rotates rapidly, with a velocity at the equator of approximately 286 km/s. This is a significant fraction of the star's estimated breakup speed of 400 km/s. A study with the Palomar Testbed Interferometer revealed that Altair is not spherical, but is flattened at the poles due to its high rate of rotation. Other interferometric studies with multiple telescopes, operating in the infrared, have imaged and confirmed this phenomenon.",
+    "url": "https://en.wikipedia.org/wiki/Altair",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Aquila_constellation_map.svg/330px-Aquila_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Aquila_constellation_map.svg/330px-Aquila_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q12975"
+  },
+  "wikidata": {
+    "id": "Q12975",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "A7V"
+        },
+        {
+          "value": "A5"
+        },
+        {
+          "value": "A9Vwvar"
+        },
+        {
+          "value": "A7IV-V"
+        },
+        {
+          "value": "A6V"
+        },
+        {
+          "value": "A7IV-Vn"
+        },
+        {
+          "value": "A7Vn"
+        },
+        {
+          "value": "A1n"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Aquila"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 0.76,
+          "unit": ""
+        },
+        {
+          "value": 1.07,
+          "unit": ""
+        },
+        {
+          "value": 0.98,
+          "unit": ""
+        },
+        {
+          "value": 0.62,
+          "unit": ""
+        },
+        {
+          "value": 0.49,
+          "unit": ""
+        },
+        {
+          "value": 0.35,
+          "unit": ""
+        },
+        {
+          "value": 0.24,
+          "unit": ""
+        },
+        {
+          "value": 0.24,
+          "unit": ""
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": 2.22,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 17.0,
+          "unit": "ly"
+        }
+      ],
+      "mass": [
+        {
+          "value": 1.7,
+          "unit": "M☉"
+        }
+      ],
+      "radius": [
+        {
+          "value": 1.7,
+          "unit": "R☉"
+        }
+      ],
+      "diameter": [
+        {
+          "value": 2530000.0,
+          "unit": "km",
+          "plus": 13900.0,
+          "minus": 13900.0
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 10.7,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 8040.0,
+          "unit": "K"
+        },
+        {
+          "value": 7727.0,
+          "unit": "K"
+        },
+        {
+          "value": 7568.0,
+          "unit": "K"
+        },
+        {
+          "value": 7550.0,
+          "unit": "K"
+        },
+        {
+          "value": 7800.0,
+          "unit": "K"
+        },
+        {
+          "value": 7646.0,
+          "unit": "K"
+        },
+        {
+          "value": 7377.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 1000000000.0,
+          "unit": "yr"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.24,
+          "unit": ""
+        },
+        {
+          "value": 7.94,
+          "unit": ""
+        },
+        {
+          "value": 0.48,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 17000.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 5800.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 13500.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 9000.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -26.3,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0
+        },
+        {
+          "value": -26.6,
+          "unit": "km/s",
+          "plus": 0.40000000000000213,
+          "minus": 0.3999999999999986
+        },
+        {
+          "value": -28.1,
+          "unit": "km/s",
+          "plus": 3.5,
+          "minus": 3.5
+        },
+        {
+          "value": -26.1,
+          "unit": "km/s"
+        },
+        {
+          "value": -21.5,
+          "unit": "km/s"
+        },
+        {
+          "value": -27.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -25.4,
+          "unit": "km/s"
+        },
+        {
+          "value": -30.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -20.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -28.9,
+          "unit": "km/s"
+        },
+        {
+          "value": -37.1,
+          "unit": "km/s"
+        },
+        {
+          "value": -32.9,
+          "unit": "km/s"
+        },
+        {
+          "value": -39.1,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 194.95,
+          "unit": "mas",
+          "plus": 0.5700000000000216,
+          "minus": 0.5699999999999932
+        },
+        {
+          "value": 197.9,
+          "unit": "mas",
+          "plus": 2.1999999999999886,
+          "minus": 2.200000000000017
+        },
+        {
+          "value": 194.44,
+          "unit": "mas",
+          "plus": 0.9399999999999977,
+          "minus": 0.9399999999999977
+        },
+        {
+          "value": 0.19,
+          "unit": "arcsecond"
+        }
+      ],
+      "child astronomical body": [
+        {
+          "value": "Altair VI"
+        },
+        {
+          "value": "Altair IV"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "Delta Scuti variable"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "navigational star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "pulsating variable star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 297.695827296,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 8.868321196,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Altair1.jpg",
+    "url": "https://www.wikidata.org/wiki/Q12975"
+  },
+  "summary": {
+    "designation": "alf Aql",
+    "object_type": "delta Sct Variable",
+    "spectral_type": "A7Vn",
+    "ra_deg": 297.69582729638694,
+    "dec_deg": 8.868321196436963,
+    "v_mag": 0.76,
+    "distance_pc": 5.1,
+    "distance_ly": 16.7,
+    "teff_k": 7568,
+    "b_minus_v": 0.22,
+    "mass": {
+      "value": 1.7,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 1.7,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 10.7,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 1000000000.0,
+      "unit": "yr"
+    },
+    "constellation": "Aquila",
+    "description": "Brightest star in the constellation Aquila"
+  },
+  "id": "altair",
+  "path": "stars/altair",
+  "observations": [
+    {
+      "datetime": "2026-10-09 21:31",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 02:31",
+      "altitude_deg": 58.2,
+      "azimuth_deg": 225.7
+    }
+  ]
+}

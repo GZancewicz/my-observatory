@@ -1,0 +1,590 @@
+{
+  "name": "υ¹ Cas",
+  "category": "stars",
+  "app_type": "K-Star",
+  "harvested": "2026-10-10T16:18:13Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20ups01%20Cas",
+      "retrieved": "2026-10-10T16:18:20Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Upsilon1_Cassiopeiae",
+      "retrieved": "2026-10-10T16:18:22Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q5097582",
+      "retrieved": "2026-10-10T16:18:23Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cassiopeia_constellation_map.svg/330px-Cassiopeia_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:ups01 Cas",
+    "simbad_id": "* ups01 Cas",
+    "wikidata": "Q5097582",
+    "wikipedia": "Upsilon1 Cassiopeiae"
+  },
+  "simbad": {
+    "main_id": "* ups01 Cas",
+    "ra": 13.750648761579999,
+    "dec": 58.97269920721,
+    "otype": "PM*",
+    "otype_desc": "High Proper Motion Star",
+    "sp_type": "K2III",
+    "plx_value": 9.062,
+    "plx_err": 0.107,
+    "pmra": -31.2,
+    "pmdec": -44.986,
+    "rvz_radvel": -22.36,
+    "rvz_redshift": -7.458215043776306e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 111,
+    "identifiers": [
+      "TIC 312765934",
+      "WISEA J005500.14+585821.1",
+      "HIP 4292",
+      "Gaia DR3 425955069515091456",
+      "PLX  181",
+      "*  26 Cas",
+      "* ups01 Cas",
+      "ADS   748 A",
+      "AG+58   96",
+      "BD+58   134",
+      "CCDM J00551+5858A",
+      "CSI+58   134  1",
+      "GC  1086",
+      "GCRV   511",
+      "GEN# +1.00005234",
+      "GSC 03680-01840",
+      "HD   5234",
+      "HIC   4292",
+      "HR   253",
+      "IDS 00491+5826 A",
+      "IRC +60027",
+      "JP11   435",
+      "PPM  25833",
+      "ROT   147",
+      "SAO  21832",
+      "SKY#  1406",
+      "TYC 3680-1840-1",
+      "UBV     797",
+      "UBV M   7749",
+      "YZ  58   755",
+      "PLX  181.00",
+      "WDS J00550+5858A",
+      "AKARI-IRC-V1 J0055002+585821",
+      "IRAS 00520+5842",
+      "WISE J005459.75+585823.9",
+      "2MASS J00550016+5858215",
+      "WEB   770",
+      "Gaia DR2 425954863349543040",
+      "BSD   8-22"
+    ],
+    "fluxes": {
+      "V": {
+        "mag": 4.82,
+        "err": 0.009
+      },
+      "B": {
+        "mag": 6.042,
+        "err": 0.014
+      },
+      "J": {
+        "mag": 2.521,
+        "err": 0.182
+      },
+      "H": {
+        "mag": 1.946,
+        "err": 0.158
+      },
+      "K": {
+        "mag": 1.763,
+        "err": 0.2
+      },
+      "G": {
+        "mag": 4.45898,
+        "err": 0.002853
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 4360,
+        "log_g": 2.33,
+        "fe_h": -0.18,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4275,
+        "log_g": 1.2,
+        "fe_h": -0.31,
+        "bibcode": "1995AJ....110.2968L"
+      },
+      {
+        "teff": 4424,
+        "log_g": 1.76,
+        "fe_h": -0.25,
+        "bibcode": "2008A&A...480...91S"
+      },
+      {
+        "teff": 4360,
+        "log_g": 2.33,
+        "fe_h": -0.18,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4275,
+        "log_g": 1.2,
+        "fe_h": -0.31,
+        "bibcode": "1995AJ....110.2968L"
+      },
+      {
+        "teff": 4448,
+        "log_g": 2.1,
+        "fe_h": -0.21,
+        "bibcode": "2016A&A...587A...2B"
+      },
+      {
+        "teff": 4275,
+        "log_g": 1.2,
+        "fe_h": -0.31,
+        "bibcode": "1995AJ....110.2968L"
+      },
+      {
+        "teff": 4360,
+        "log_g": 2.33,
+        "fe_h": -0.18,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4441,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1998A&A...339..858D"
+      },
+      {
+        "teff": 4401,
+        "log_g": 1.7,
+        "fe_h": -0.24,
+        "bibcode": "2022A&A...663A...4S"
+      },
+      {
+        "teff": 4334,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2009A&A...497..497G"
+      },
+      {
+        "teff": 4453,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1999A&AS..139..335A"
+      },
+      {
+        "teff": 4461,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2005ApJ...626..446R"
+      }
+    ],
+    "teff_median": 4360,
+    "vsini_measurements": [
+      {
+        "vsini": 8,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 17,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 1.1,
+        "vsini_err": 1,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 104.1406,
+        "unit": "pc  ",
+        "plus_err": 1.937,
+        "minus_err": -1.937,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 110.351,
+        "unit": "pc  ",
+        "plus_err": 1.303,
+        "minus_err": -1.303,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "MIR",
+      "NIR",
+      "PM*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20ups01%20Cas"
+  },
+  "wikipedia": {
+    "title": "Upsilon1 Cassiopeiae",
+    "description": "Star in the constellation Cassiopeia",
+    "summary": "Upsilon1 Cassiopeiae is an astrometric binary star system in the northern constellation of Cassiopeia. Its name is a Bayer designation that is Latinized from υ1 Cassiopeiae, and abbreviated Upsilon1 Cas or υ1 Cas. This system visible to the naked eye with an apparent visual magnitude of 4.82. Based upon an annual parallax shift of 9.93 mas as seen from Earth, this system is located about 330 light years from the Sun. It is drifting closer to the Sun with a radial velocity of −24 km/s.",
+    "intro": "Upsilon1 Cassiopeiae is an astrometric binary star system in the northern constellation of Cassiopeia. Its name is a Bayer designation that is Latinized from υ1 Cassiopeiae, and abbreviated Upsilon1 Cas or υ1 Cas. This system visible to the naked eye with an apparent visual magnitude of 4.82. Based upon an annual parallax shift of 9.93 mas as seen from Earth, this system is located about 330 light years from the Sun. It is drifting closer to the Sun with a radial velocity of −24 km/s.\nThe visible component is an evolved K-type giant star with a stellar classification of K2 III. With an estimated age of 4.75 billion years, it is a red clump star that is generating energy through the fusion of helium at its core. The measured angular diameter, after correction for limb darkening, is 1.97±0.02 mas. At the estimated distance of the star, this yields a physical size of about 21 times the radius of the Sun. It has 1.39 times the mass of the Sun and is radiating 174 times the Sun's luminosity from its expanded photosphere at an effective temperature of 4,422 K.\nThere is a magnitude 12.50 visual companion at an angular separation of 17.80 arc seconds along a position angle of 61°, as of 2003. A more distant magnitude 12.89 companion lies at a separation of 93.30 arc seconds along a position angle of 125°, as measured in 2003. Neither star appears to be physically associated with υ1 Cas.",
+    "url": "https://en.wikipedia.org/wiki/Upsilon1_Cassiopeiae",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cassiopeia_constellation_map.svg/330px-Cassiopeia_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cassiopeia_constellation_map.svg/330px-Cassiopeia_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q5097582"
+  },
+  "wikidata": {
+    "id": "Q5097582",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "K2III"
+        },
+        {
+          "value": "G8III"
+        },
+        {
+          "value": "K0"
+        },
+        {
+          "value": "K0III"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Cassiopeia"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 4.82,
+          "unit": "",
+          "plus": 0.008999999999999453,
+          "minus": 0.009000000000000341
+        },
+        {
+          "value": 6.042,
+          "unit": "",
+          "plus": 0.014000000000000234,
+          "minus": 0.014000000000000234
+        },
+        {
+          "value": 2.521,
+          "unit": "",
+          "plus": 0.18199999999999994,
+          "minus": 0.18199999999999994
+        },
+        {
+          "value": 1.946,
+          "unit": "",
+          "plus": 0.15800000000000014,
+          "minus": 0.15799999999999992
+        },
+        {
+          "value": 1.763,
+          "unit": "",
+          "plus": 0.20000000000000018,
+          "minus": 0.19999999999999996
+        },
+        {
+          "value": 4.45898,
+          "unit": "",
+          "plus": 0.0028529999999999944,
+          "minus": 0.0028529999999999944
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -0.644,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 104.1406,
+          "unit": "pc",
+          "plus": 1.9369999999999976,
+          "minus": 1.9370000000000118
+        },
+        {
+          "value": 110.351,
+          "unit": "pc",
+          "plus": 1.3029999999999973,
+          "minus": 1.3029999999999973
+        }
+      ],
+      "mass": [
+        {
+          "value": 1.39,
+          "unit": "M☉"
+        }
+      ],
+      "radius": [
+        {
+          "value": 21.0,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 174.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 4275.0,
+          "unit": "K"
+        },
+        {
+          "value": 4360.0,
+          "unit": "K"
+        },
+        {
+          "value": 4424.0,
+          "unit": "K"
+        },
+        {
+          "value": 4448.0,
+          "unit": "K"
+        },
+        {
+          "value": 4461.0,
+          "unit": "K"
+        },
+        {
+          "value": 4453.0,
+          "unit": "K"
+        },
+        {
+          "value": 4441.0,
+          "unit": "K"
+        },
+        {
+          "value": 4334.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 4.75,
+          "unit": "Gyr"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.31,
+          "unit": ""
+        },
+        {
+          "value": -0.25,
+          "unit": ""
+        },
+        {
+          "value": -0.21,
+          "unit": ""
+        },
+        {
+          "value": -0.18,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 15.8,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 58.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 126.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 214.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 16.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -22.36,
+          "unit": "km/s",
+          "plus": 0.18999999999999773,
+          "minus": 0.19000000000000128
+        },
+        {
+          "value": -23.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -23.0,
+          "unit": "km/s",
+          "plus": 0.8999999999999986,
+          "minus": 0.8999999999999986
+        },
+        {
+          "value": -23.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -23.0,
+          "unit": "km/s",
+          "plus": 0.19000000000000128,
+          "minus": 0.19000000000000128
+        },
+        {
+          "value": -23.1,
+          "unit": "km/s"
+        },
+        {
+          "value": -22.3,
+          "unit": "km/s"
+        },
+        {
+          "value": -22.4,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 9.6024,
+          "unit": "mas",
+          "plus": 0.1786000000000012,
+          "minus": 0.17859999999999943
+        },
+        {
+          "value": 5.0,
+          "unit": "mas",
+          "plus": 7.199999999999999,
+          "minus": 7.2
+        },
+        {
+          "value": 9.93,
+          "unit": "mas",
+          "plus": 0.4900000000000002,
+          "minus": 0.4900000000000002
+        },
+        {
+          "value": 8.02,
+          "unit": "mas",
+          "plus": 0.6500000000000004,
+          "minus": 0.6499999999999995
+        },
+        {
+          "value": 9.062,
+          "unit": "mas",
+          "plus": 0.1070000000000011,
+          "minus": 0.10699999999999932
+        }
+      ],
+      "instance of": [
+        {
+          "value": "binary star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "near-infrared source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 13.75064876158,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 58.97269920721,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Upsilon Cassiopeiae.jpg",
+    "url": "https://www.wikidata.org/wiki/Q5097582"
+  },
+  "summary": {
+    "designation": "ups01 Cas",
+    "object_type": "High Proper Motion Star",
+    "spectral_type": "K2III",
+    "ra_deg": 13.750648761579999,
+    "dec_deg": 58.97269920721,
+    "v_mag": 4.82,
+    "distance_pc": 110.4,
+    "distance_ly": 359.9,
+    "teff_k": 4360,
+    "b_minus_v": 1.22,
+    "mass": {
+      "value": 1.39,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 21.0,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 174.0,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 4.75,
+      "unit": "Gyr"
+    },
+    "constellation": "Cassiopeia",
+    "description": "Star in the constellation Cassiopeia"
+  },
+  "id": "upsilon1-cas",
+  "path": "stars/upsilon1-cas",
+  "observations": [
+    {
+      "datetime": "2026-10-07 20:33",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "4/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-08 01:33",
+      "altitude_deg": 37.8,
+      "azimuth_deg": 37.9
+    }
+  ]
+}

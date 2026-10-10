@@ -1,0 +1,536 @@
+{
+  "name": "ω Hya",
+  "category": "stars",
+  "app_type": "K-Star",
+  "harvested": "2026-10-10T16:05:26Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20ome%20Hya",
+      "retrieved": "2026-10-10T16:05:33Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Omega_Hydrae",
+      "retrieved": "2026-10-10T16:05:34Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q941266",
+      "retrieved": "2026-10-10T16:05:35Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Hydra_constellation_map.svg/330px-Hydra_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:ome Hya",
+    "simbad_id": "* ome Hya",
+    "wikidata": "Q941266",
+    "wikipedia": "Omega Hydrae"
+  },
+  "simbad": {
+    "main_id": "* ome Hya",
+    "ra": 136.49320743567,
+    "dec": 5.09232602999,
+    "otype": "*",
+    "otype_desc": "Star",
+    "sp_type": "K2II-III",
+    "plx_value": 5.3609,
+    "plx_err": 0.1211,
+    "pmra": -21.393,
+    "pmdec": -9.59,
+    "rvz_radvel": 26.010401,
+    "rvz_redshift": 8.676512284622184e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 97,
+    "identifiers": [
+      "TIC 270581362",
+      "AP J09055837+0505324",
+      "HIP 44659",
+      "Gaia DR3 580275512191589760",
+      "PLX 2170",
+      "* ome Hya",
+      "*  18 Hya",
+      "AG+05 1351",
+      "BD+05  2116",
+      "FK5 2717",
+      "GC 12564",
+      "GCRV  5959",
+      "GEN# +1.00077996",
+      "GSC 00232-02195",
+      "HD  77996",
+      "HIC  44659",
+      "HR  3613",
+      "IRAS 09033+0517",
+      "IRC +10201",
+      "JP11  1756",
+      "N30 2150",
+      "PPM 155420",
+      "ROT  1430",
+      "SAO 117420",
+      "SKY# 17543",
+      "TYC  232-2195-1",
+      "UBV    8751",
+      "UBV M  15073",
+      "YZ   5  4957",
+      "2MASS J09055837+0505324",
+      "PLX 2170.00",
+      "[ZEH2003] RX J0905.9+0505  1",
+      "RX J0905.9+0505",
+      "1RXS J090558.7+050541",
+      "WEB  8543",
+      "Gaia DR2 580275512191589760"
+    ],
+    "fluxes": {
+      "V": {
+        "mag": 4.981,
+        "err": 0.009
+      },
+      "H": {
+        "mag": 2.589,
+        "err": 0.22
+      },
+      "K": {
+        "mag": 2.402,
+        "err": 0.278
+      },
+      "J": {
+        "mag": 3.133,
+        "err": 0.3
+      },
+      "B": {
+        "mag": 6.219,
+        "err": 0.015
+      },
+      "G": {
+        "mag": 4.634946,
+        "err": 0.00293
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 4810,
+        "log_g": 2.52,
+        "fe_h": 0,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4810,
+        "log_g": 2.52,
+        "fe_h": 0,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4468,
+        "log_g": 1.7,
+        "fe_h": 0.18,
+        "bibcode": "2014AJ....147..137L"
+      },
+      {
+        "teff": 4583,
+        "log_g": 2.2753,
+        "fe_h": 0.031,
+        "bibcode": "2020AJ....160..120J"
+      },
+      {
+        "teff": 4364,
+        "log_g": 1.918,
+        "fe_h": 0.008,
+        "bibcode": "2019ApJ...879...69T"
+      },
+      {
+        "teff": 4567,
+        "log_g": 1.99,
+        "fe_h": 0.02,
+        "bibcode": "2022A&A...663A...4S"
+      },
+      {
+        "teff": 4561,
+        "log_g": 2.173,
+        "fe_h": 0.0154,
+        "bibcode": "2022ApJS..259...35A"
+      },
+      {
+        "teff": 4617,
+        "log_g": 2.26,
+        "fe_h": 0.18,
+        "bibcode": "2016ApJ...817...40F"
+      },
+      {
+        "teff": 4380,
+        "log_g": 1.75,
+        "fe_h": -0.12,
+        "bibcode": "2007A&A...475.1003H"
+      },
+      {
+        "teff": 4810,
+        "log_g": 2.52,
+        "fe_h": 0,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 5595,
+        "log_g": 1.882,
+        "fe_h": -0.015,
+        "bibcode": "2022AJ....163..152S"
+      },
+      {
+        "teff": 4611,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1998A&A...339..858D"
+      }
+    ],
+    "teff_median": 4611,
+    "vsini_measurements": [
+      {
+        "vsini": 2.3,
+        "vsini_err": 1.2,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 168.5715,
+        "unit": "pc  ",
+        "plus_err": 7.1808,
+        "minus_err": -7.1808,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 186.536,
+        "unit": "pc  ",
+        "plus_err": 4.2137,
+        "minus_err": -4.2137,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "IR",
+      "NIR",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20ome%20Hya"
+  },
+  "wikipedia": {
+    "title": "Omega Hydrae",
+    "description": "Star in the constellation Hydra",
+    "summary": "Omega Hydrae, Latinised from ω Hydrae, is a golden-hued star in the equatorial constellation of Hydra, located to the west-southwest of the brighter star Zeta Hydrae. Based upon an annual parallax shift of just 3.64 mas as seen from Earth, it is located roughly 900 light-years from the Sun. It is faintly visible to the naked eye with an apparent visual magnitude of 5.00.",
+    "intro": "Omega Hydrae, Latinised from ω Hydrae, is a golden-hued star in the equatorial constellation of Hydra, located to the west-southwest of the brighter star Zeta Hydrae. Based upon an annual parallax shift of just 3.64 mas as seen from Earth, it is located roughly 900 light-years from the Sun. It is faintly visible to the naked eye with an apparent visual magnitude of 5.00.\nThis is an evolved K-type star with a stellar classification of K2 II-III, which indicates a spectrum showing traits intermediate between the giant and bright giant stages. It is most likely (98% chance) on the horizontal branch, indicating that the star is generating energy through the thermonuclear fusion of helium at its core. With 4.32 times the Sun's mass, it has expanded to around 48 times the radius of the Sun. Omega Hydrae is about 180 million years old and spinning with a leisurely projected rotational velocity of 2.3 km/s. The star is radiating roughly 944 times the solar luminosity from its photosphere at an effective temperature of 4,789 K.",
+    "url": "https://en.wikipedia.org/wiki/Omega_Hydrae",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Hydra_constellation_map.svg/330px-Hydra_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Hydra_constellation_map.svg/330px-Hydra_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q941266"
+  },
+  "wikidata": {
+    "id": "Q941266",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "K2II-III"
+        },
+        {
+          "value": "K0"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Hydra"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 4.981,
+          "unit": "",
+          "plus": 0.009000000000000341,
+          "minus": 0.008999999999999453
+        },
+        {
+          "value": 6.219,
+          "unit": "",
+          "plus": 0.01499999999999968,
+          "minus": 0.015000000000000568
+        },
+        {
+          "value": 3.133,
+          "unit": "",
+          "plus": 0.2999999999999998,
+          "minus": 0.2999999999999998
+        },
+        {
+          "value": 2.589,
+          "unit": "",
+          "plus": 0.2200000000000002,
+          "minus": 0.21999999999999975
+        },
+        {
+          "value": 2.402,
+          "unit": "",
+          "plus": 0.278,
+          "minus": 0.278
+        },
+        {
+          "value": 4.634946,
+          "unit": "",
+          "plus": 0.002930000000000099,
+          "minus": 0.002930000000000099
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -2.19,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 168.5715,
+          "unit": "pc",
+          "plus": 7.180800000000005,
+          "minus": 7.1807999999999765
+        },
+        {
+          "value": 186.536,
+          "unit": "pc",
+          "plus": 4.213699999999989,
+          "minus": 4.213699999999989
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 4810.0,
+          "unit": "K"
+        },
+        {
+          "value": 4611.0,
+          "unit": "K"
+        },
+        {
+          "value": 4380.0,
+          "unit": "K"
+        },
+        {
+          "value": 4617.0,
+          "unit": "K"
+        },
+        {
+          "value": 4468.0,
+          "unit": "K"
+        },
+        {
+          "value": 4364.0,
+          "unit": "K"
+        },
+        {
+          "value": 4583.0,
+          "unit": "K"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.0,
+          "unit": ""
+        },
+        {
+          "value": 0.18,
+          "unit": ""
+        },
+        {
+          "value": -0.12,
+          "unit": ""
+        },
+        {
+          "value": 0.008,
+          "unit": ""
+        },
+        {
+          "value": 0.031,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 330.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 50.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 180.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 56.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 82.8,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 188.5,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 27.32,
+          "unit": "km/s",
+          "plus": 0.17999999999999972,
+          "minus": 0.17999999999999972
+        },
+        {
+          "value": 24.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 24.5,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0
+        },
+        {
+          "value": 24.3,
+          "unit": "km/s",
+          "plus": 0.8000000000000007,
+          "minus": 0.8000000000000007
+        },
+        {
+          "value": 24.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 17.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 25.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 26.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 26.010401,
+          "unit": "km/s",
+          "plus": 0.0036739999999966244,
+          "minus": 0.003674000000000177
+        },
+        {
+          "value": 26.010401,
+          "unit": "km/s",
+          "plus": 0.003669999999999618,
+          "minus": 0.0036700000000031707
+        }
+      ],
+      "parallax": [
+        {
+          "value": 5.9322,
+          "unit": "mas",
+          "plus": 0.2526999999999999,
+          "minus": 0.2526999999999999
+        },
+        {
+          "value": 10.2,
+          "unit": "mas",
+          "plus": 7.5,
+          "minus": 7.499999999999999
+        },
+        {
+          "value": 2.69,
+          "unit": "mas",
+          "plus": 0.9300000000000002,
+          "minus": 0.9299999999999999
+        },
+        {
+          "value": 3.64,
+          "unit": "mas",
+          "plus": 0.31000000000000005,
+          "minus": 0.31000000000000005
+        },
+        {
+          "value": 5.3609,
+          "unit": "mas",
+          "plus": 0.12110000000000021,
+          "minus": 0.12110000000000021
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 136.49320743567,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 5.09232602999,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q941266"
+  },
+  "summary": {
+    "designation": "ome Hya",
+    "object_type": "Star",
+    "spectral_type": "K2II-III",
+    "ra_deg": 136.49320743567,
+    "dec_deg": 5.09232602999,
+    "v_mag": 4.981,
+    "distance_pc": 186.5,
+    "distance_ly": 608.4,
+    "teff_k": 4611,
+    "b_minus_v": 1.24,
+    "constellation": "Hydra",
+    "description": "Star in the constellation Hydra"
+  },
+  "id": "omega-hya",
+  "path": "stars/omega-hya",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:35",
+      "location": "Royse City, Texas",
+      "rating": 2.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 10:35",
+      "altitude_deg": 31.8,
+      "azimuth_deg": 106.1
+    }
+  ]
+}

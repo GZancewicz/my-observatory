@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Observatory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">My Observatory</a>
+    <input id="search" type="search" placeholder="Search objects, designations, constellations…" autocomplete="off">
+    <select id="sort" aria-label="Sort">
+      <option value="last">Last observed</option>
+      <option value="name">Name</option>
+      <option value="mag">Brightest first</option>
+      <option value="dist">Nearest first</option>
+      <option value="rating">Best rated</option>
+      <option value="count">Most observed</option>
+    </select>
+    <button id="night" class="ghost" title="Red night-vision mode">Night</button>
+  </header>
+  <nav id="chips" class="chips" aria-label="Categories"></nav>
+  <main class="layout">
+    <aside id="list" class="list" aria-label="Objects"></aside>
+    <section id="detail" class="detail" aria-live="polite"></section>
+  </main>
+  <script src="data/bundle.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

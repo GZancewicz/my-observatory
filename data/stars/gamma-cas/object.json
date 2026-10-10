@@ -1,0 +1,579 @@
+{
+  "name": "γ Cas",
+  "category": "stars",
+  "app_type": "B-Star",
+  "harvested": "2026-10-10T16:18:36Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20gam%20Cas",
+      "retrieved": "2026-10-10T16:18:43Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gamma_Cassiopeiae",
+      "retrieved": "2026-10-10T16:18:44Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q13584",
+      "retrieved": "2026-10-10T16:18:45Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cassiopeia_constellation_map.svg/330px-Cassiopeia_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:gam Cas",
+    "simbad_id": "* gam Cas",
+    "wikidata": "Q13584",
+    "wikipedia": "Gamma Cassiopeiae"
+  },
+  "simbad": {
+    "main_id": "* gam Cas",
+    "ra": 14.17721289375,
+    "dec": 60.71674002472222,
+    "otype": "HXB",
+    "otype_desc": "High Mass X-ray Binary",
+    "sp_type": "B0.5IVpe",
+    "plx_value": 5.94,
+    "plx_err": 0.12,
+    "pmra": 25.17,
+    "pmdec": -3.92,
+    "rvz_radvel": -6.8,
+    "rvz_redshift": -2.268210123457237e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 1262,
+    "identifiers": [
+      "TIC 51962733",
+      "AT 0037+611",
+      "HIP 4427",
+      "1WGA J0056.7+6042",
+      "4XMM J005642.4+604300",
+      "SRGA J005642.5+604302",
+      "2MASS J00564251+6043002",
+      "[KRL2007b] 9",
+      "PLX  185",
+      "[JE82]   20",
+      "* gam Cas",
+      "*  27 Cas",
+      "1H 0053+604",
+      "1M 0050+592",
+      "1M 0050+60",
+      "1RXS J005642.0+604300",
+      "1XRS 00537+604",
+      "2S 0053+604",
+      "3A 0053+604",
+      "4U 0054+60",
+      "AAVSO 0050+60",
+      "AG+60  106",
+      "ALS  6407",
+      "BD+59   144",
+      "BSD   8-901",
+      "CSI+59   144  1",
+      "EM* MWC    9",
+      "FK5   32",
+      "GC  1117",
+      "GCRV   526",
+      "HD   5394",
+      "HR   264",
+      "INTREF    57",
+      "IRAS 00536+6026",
+      "IRC +60031",
+      "JP11   439",
+      "LS   I +60  133",
+      "MCW   46",
+      "N30  187",
+      "PMC 90-93    23",
+      "PPM  12597",
+      "RAFGL  133",
+      "SAO  11482",
+      "SKY#  1444",
+      "TD1   521",
+      "UBV     833",
+      "V* gam Cas",
+      "VDB   5",
+      "[BM83] X0053+604",
+      "[FS2003] 0031",
+      "[HFE83]   40",
+      "[KW97]  4-31",
+      "PLX  185.00",
+      "1ES 0053+60.4",
+      "EUVE J0056+60.7",
+      "PBC J0056.5+6043",
+      "SWIFT J0056.7+6043",
+      "SWIFT J0056.5+6042",
+      "HIC   4427",
+      "WEB   791",
+      "TYC 4017-2319-1",
+      "Gaia DR2 426558460877467776",
+      "** BU 1028A",
+      "PMSC 00507+6010A",
+      "GEN# +1.00005394",
+      "ADS   782 A",
+      "CCDM J00567+6043A",
+      "uvby98 100005394 A",
+      "WDS J00567+6043A",
+      "Gaia DR3 426558460884582016",
+      "UCAC4 754-011026",
+      "WISE J005642.67+604300.3",
+      "NAME-IAU Tiansi"
+    ],
+    "fluxes": {
+      "V": {
+        "mag": 2.39,
+        "err": null
+      },
+      "U": {
+        "mag": 1.18,
+        "err": null
+      },
+      "B": {
+        "mag": 2.29,
+        "err": null
+      },
+      "R": {
+        "mag": 2.32,
+        "err": null
+      },
+      "I": {
+        "mag": 2.4,
+        "err": null
+      },
+      "G": {
+        "mag": 2.064583,
+        "err": 0.006459
+      },
+      "J": {
+        "mag": 2.039,
+        "err": 0.238
+      },
+      "H": {
+        "mag": 1.993,
+        "err": 0.182
+      },
+      "K": {
+        "mag": 1.756,
+        "err": 0.23
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 27990,
+        "log_g": 3.32,
+        "fe_h": null,
+        "bibcode": "2001A&A...378..861C"
+      },
+      {
+        "teff": 33037,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1999A&A...349..151M"
+      }
+    ],
+    "teff_median": 33037,
+    "vsini_measurements": [
+      {
+        "vsini": 295,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 280,
+        "vsini_err": 30,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 230,
+        "vsini_err": 23,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 221,
+        "vsini_err": 9,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 432,
+        "vsini_err": 11,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 295,
+        "vsini_err": 24,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 0.19,
+        "unit": "kpc ",
+        "plus_err": null,
+        "minus_err": null,
+        "method": null,
+        "bibcode": "2002A&A...391..923G"
+      },
+      {
+        "dist": 117,
+        "unit": "pc  ",
+        "plus_err": 12,
+        "minus_err": -12,
+        "method": "CaIIHK  ",
+        "bibcode": "2009A&A...507..833M"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "Be*",
+      "Em*",
+      "gam",
+      "HXB",
+      "IR",
+      "MIR",
+      "NIR",
+      "UV",
+      "V*",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20gam%20Cas"
+  },
+  "wikipedia": {
+    "title": "Gamma Cassiopeiae",
+    "description": "Star system in the constellation Cassiopeia",
+    "summary": "Gamma Cassiopeiae, also named Tiansi, is a multiple star system at the center of the distinctive \"W\" asterism in the northern circumpolar constellation of Cassiopeia. It was observed in 1866 by Angelo Secchi, the first star ever observed with emission lines. It is now considered a Be star.",
+    "intro": "Gamma Cassiopeiae, also named Tiansi, is a multiple star system at the center of the distinctive \"W\" asterism in the northern circumpolar constellation of Cassiopeia. It was observed in 1866 by Angelo Secchi, the first star ever observed with emission lines. It is now considered a Be star.\nGamma Cassiopeiae is a variable star system. Based upon parallax measurements made by the Hipparcos satellite, it is located at a distance of roughly 550 light-years from Earth. Together with its common-proper-motion companion, HD 5408, the system could contain a total of eight stars. It is one of the highest multiplicity systems known.",
+    "url": "https://en.wikipedia.org/wiki/Gamma_Cassiopeiae",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cassiopeia_constellation_map.svg/330px-Cassiopeia_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Cassiopeia_constellation_map.svg/330px-Cassiopeia_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q13584"
+  },
+  "wikidata": {
+    "id": "Q13584",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "B0.5IVpe"
+        },
+        {
+          "value": "B0.5IVe"
+        },
+        {
+          "value": "B3IVe"
+        },
+        {
+          "value": "B0IV:evar"
+        },
+        {
+          "value": "B0IV"
+        },
+        {
+          "value": "B0IVpe"
+        },
+        {
+          "value": "B0.5 IV P,E,SB"
+        },
+        {
+          "value": "B0IVp"
+        },
+        {
+          "value": "B0p"
+        },
+        {
+          "value": "B0.5V"
+        },
+        {
+          "value": "B0.5II/Ve"
+        },
+        {
+          "value": "B0.5IV(e)"
+        },
+        {
+          "value": "B0.5"
+        },
+        {
+          "value": "B0IV:e"
+        },
+        {
+          "value": "B0e"
+        },
+        {
+          "value": "B0ne"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Cassiopeia"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 2.39,
+          "unit": ""
+        },
+        {
+          "value": 1.18,
+          "unit": ""
+        },
+        {
+          "value": 2.29,
+          "unit": ""
+        },
+        {
+          "value": 2.32,
+          "unit": ""
+        },
+        {
+          "value": 2.4,
+          "unit": ""
+        },
+        {
+          "value": 1.756,
+          "unit": "",
+          "plus": 0.22999999999999998,
+          "minus": 0.22999999999999998
+        },
+        {
+          "value": 1.993,
+          "unit": "",
+          "plus": 0.18199999999999972,
+          "minus": 0.18200000000000016
+        },
+        {
+          "value": 2.039,
+          "unit": "",
+          "plus": 0.238,
+          "minus": 0.2380000000000002
+        },
+        {
+          "value": 2.064583,
+          "unit": "",
+          "plus": 0.0064589999999999925,
+          "minus": 0.0064589999999999925
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -3.98,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 117.0,
+          "unit": "pc",
+          "plus": 12.0,
+          "minus": 12.0
+        },
+        {
+          "value": 0.19,
+          "unit": "kiloparsec"
+        }
+      ],
+      "mass": [
+        {
+          "value": 17.0,
+          "unit": "M☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 33037.0,
+          "unit": "K"
+        },
+        {
+          "value": 27990.0,
+          "unit": "K"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 2100.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -6.8,
+          "unit": "km/s"
+        },
+        {
+          "value": -6.8,
+          "unit": "km/s",
+          "plus": 0.8999999999999995,
+          "minus": 0.9000000000000004
+        },
+        {
+          "value": -4.8,
+          "unit": "km/s",
+          "plus": 1.9,
+          "minus": 1.9000000000000004
+        },
+        {
+          "value": -7.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 6.3,
+          "unit": "km/s"
+        },
+        {
+          "value": -14.4,
+          "unit": "km/s"
+        },
+        {
+          "value": 3.4,
+          "unit": "km/s"
+        },
+        {
+          "value": -3.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 16.1,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 14.8,
+          "unit": "mas",
+          "plus": 8.899999999999999,
+          "minus": 8.9
+        },
+        {
+          "value": 5.32,
+          "unit": "mas",
+          "plus": 0.5599999999999996,
+          "minus": 0.5600000000000005
+        },
+        {
+          "value": 5.94,
+          "unit": "mas",
+          "plus": 0.11999999999999922,
+          "minus": 0.1200000000000001
+        }
+      ],
+      "named after": [
+        {
+          "value": "Gus Grissom"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "Be-type star"
+        },
+        {
+          "value": "shell star"
+        },
+        {
+          "value": "triple star system"
+        },
+        {
+          "value": "emission-line star"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "gamma-ray source"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "star"
+        },
+        {
+          "value": "spectroscopic binary"
+        },
+        {
+          "value": "high-mass X-ray binary"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "variable star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 14.17721289375,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 60.71674002472,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Gamma Cassiopeiae and its associated nebulosity.jpg",
+    "url": "https://www.wikidata.org/wiki/Q13584"
+  },
+  "summary": {
+    "designation": "gam Cas",
+    "object_type": "High Mass X-ray Binary",
+    "spectral_type": "B0.5IVpe",
+    "ra_deg": 14.17721289375,
+    "dec_deg": 60.71674002472222,
+    "v_mag": 2.39,
+    "distance_pc": 168.4,
+    "distance_ly": 549.1,
+    "teff_k": 33037,
+    "b_minus_v": -0.1,
+    "mass": {
+      "value": 17.0,
+      "unit": "M☉"
+    },
+    "constellation": "Cassiopeia",
+    "description": "Star system in the constellation Cassiopeia"
+  },
+  "id": "gamma-cas",
+  "path": "stars/gamma-cas",
+  "observations": [
+    {
+      "datetime": "2026-10-07 20:24",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-08 01:24",
+      "altitude_deg": 36.6,
+      "azimuth_deg": 35.6
+    },
+    {
+      "datetime": "2026-10-07 20:19",
+      "location": "Royse City, Texas",
+      "rating": null,
+      "seeing": "",
+      "transparency": "",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-08 01:19",
+      "altitude_deg": 36.0,
+      "azimuth_deg": 35.5
+    }
+  ]
+}

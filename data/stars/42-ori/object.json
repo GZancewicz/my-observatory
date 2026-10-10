@@ -1,0 +1,511 @@
+{
+  "name": "42 Ori",
+  "category": "stars",
+  "app_type": "B-Star",
+  "harvested": "2026-10-10T16:22:33Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20c%20Ori",
+      "retrieved": "2026-10-10T16:22:43Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/42_Orionis",
+      "retrieved": "2026-10-10T16:22:43Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1749342",
+      "retrieved": "2026-10-10T16:22:44Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:42 Ori",
+    "simbad_id": "* c Ori",
+    "wikidata": "Q1749342",
+    "wikipedia": "42 Orionis"
+  },
+  "simbad": {
+    "main_id": "* c Ori",
+    "ra": 83.846519387785,
+    "dec": -4.838349940276388,
+    "otype": "Y*O",
+    "otype_desc": "Young Stellar Object",
+    "sp_type": "B1V+?",
+    "plx_value": 6.5163,
+    "plx_err": 1.5234,
+    "pmra": -4.124,
+    "pmdec": -1.974,
+    "rvz_radvel": 47.1,
+    "rvz_redshift": 0.0001571210323476624,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 232,
+    "identifiers": [
+      "TIC 427393354",
+      "WISE J053523.16-045018.2",
+      "HIP 26237",
+      "Gaia DR3 3209572852067563392",
+      "PLX 1277",
+      "*  42 Ori",
+      "* c Ori",
+      "2E  1374",
+      "2MASS J05352315-0450180",
+      "BD-04  1185",
+      "CEL    828",
+      "CSV 100593",
+      "GC  6934",
+      "GCRV  3421",
+      "GEN# +9.00010659D",
+      "GEN# +9.00010659",
+      "GSC 04774-00928",
+      "HD  37018",
+      "HGAM    435",
+      "HIC  26237",
+      "HR  1892",
+      "IRAS 05329-0452",
+      "JP11  5700",
+      "JP11  5699",
+      "MCW  336",
+      "NSV  2318",
+      "PPM 188224",
+      "Parenago  1970",
+      "ROT   874",
+      "SAO 132320",
+      "SKY#  9030",
+      "SV* ZI   431",
+      "TYC 4774-928-1",
+      "UBV    5509",
+      "UBV M  51694",
+      "WH 295",
+      "YZ  94  1665",
+      "[B10]  1364",
+      "[GC94b] 138",
+      "[GCS95] 252",
+      "[RRS2004] NOFF W134",
+      "[TVZ96] 223",
+      "ALS 14787",
+      "2E 0532.9-0451",
+      "CXORRS J053523.1-045019",
+      "[KSP2003] J053522.91-045021.8",
+      "UCAC3 171-23405",
+      "Brun 659",
+      "ISOY J053523.15-045018.2",
+      "uvby98 900010659",
+      "GEN# +2.19760659",
+      "WEB  5133",
+      "** DA    4A",
+      "IDS 05304-0454 A",
+      "ADS  4187 A",
+      "CCDM J05354-0450A",
+      "WDS J05354-0450A",
+      "WDS J05354-0450Aa,Ab",
+      "** TOK  430",
+      "Gaia DR2 3209572852067563392"
+    ],
+    "fluxes": {
+      "K": {
+        "mag": 5.056,
+        "err": 0.018
+      },
+      "U": {
+        "mag": 3.46,
+        "err": null
+      },
+      "H": {
+        "mag": 5.05,
+        "err": 0.05
+      },
+      "J": {
+        "mag": 5.361,
+        "err": 0.258
+      },
+      "B": {
+        "mag": 4.4,
+        "err": null
+      },
+      "V": {
+        "mag": 4.59,
+        "err": null
+      },
+      "R": {
+        "mag": 4.67,
+        "err": null
+      },
+      "I": {
+        "mag": 4.85,
+        "err": null
+      },
+      "G": {
+        "mag": 4.48509,
+        "err": 0.00541
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 26935,
+        "log_g": 3.8166,
+        "fe_h": -0.9203,
+        "bibcode": "2024A&A...681A.107R"
+      },
+      {
+        "teff": 27700,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1995A&AS..110..553S"
+      }
+    ],
+    "teff_median": 27700,
+    "vsini_measurements": [
+      {
+        "vsini": 20,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 69,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 20,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 65,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 20,
+        "vsini_err": 9,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "AB?",
+      "IR",
+      "MIR",
+      "NIR",
+      "SB*",
+      "UV",
+      "V*",
+      "X",
+      "Y*O"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20c%20Ori"
+  },
+  "wikipedia": {
+    "title": "42 Orionis",
+    "description": "Star in the constellation of Orion",
+    "summary": "42 Orionis, also known as c Orionis or c Ori, is a triple star system in the constellation Orion. Its apparent magnitude is 4.59 and it is approximately 900 light years away based on parallax.",
+    "intro": "42 Orionis, also known as c Orionis or c Ori, is a triple star system in the constellation Orion. Its apparent magnitude is 4.59 and it is approximately 900 light years away based on parallax.\nThe primary star, Aa, has one spectroscopic companion Ab of magnitude 6.3 and separation 0.16\", and a more distant companion B of 7.5 magnitude at 1.6\" separation. Preliminary results published in 2026 give an orbtal period of 69.2 years, an eccentricity of 0.23 and an inclination of 28.1° for the inner companion.\n42 Orionis is surrounded by NGC 1977 one of a smaller fainter group of named nebulae just north of the Orion Nebula. 42 Ori is the star which excites and illuminates NGC 1977.",
+    "url": "https://en.wikipedia.org/wiki/42_Orionis",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q1749342"
+  },
+  "wikidata": {
+    "id": "Q1749342",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "B1V"
+        },
+        {
+          "value": "B2 III SB"
+        },
+        {
+          "value": "B2IV"
+        },
+        {
+          "value": "B3"
+        },
+        {
+          "value": "B1V+?"
+        },
+        {
+          "value": "B2IIISB"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Orion"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 4.59,
+          "unit": ""
+        },
+        {
+          "value": 3.46,
+          "unit": ""
+        },
+        {
+          "value": 4.4,
+          "unit": ""
+        },
+        {
+          "value": 4.67,
+          "unit": ""
+        },
+        {
+          "value": 4.85,
+          "unit": ""
+        },
+        {
+          "value": 5.361,
+          "unit": "",
+          "plus": 0.258,
+          "minus": 0.258
+        },
+        {
+          "value": 5.05,
+          "unit": "",
+          "plus": 0.04999999999999982,
+          "minus": 0.04999999999999982
+        },
+        {
+          "value": 5.056,
+          "unit": "",
+          "plus": 0.017999999999999794,
+          "minus": 0.017999999999999794
+        },
+        {
+          "value": 4.48509,
+          "unit": "",
+          "plus": 0.005410000000000359,
+          "minus": 0.005409999999999471
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -2.58,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 900.0,
+          "unit": "ly"
+        }
+      ],
+      "mass": [
+        {
+          "value": 16.28,
+          "unit": "M☉"
+        }
+      ],
+      "radius": [
+        {
+          "value": 4.29,
+          "unit": "R☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 27700.0,
+          "unit": "K"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 30.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 30.0,
+          "unit": "km/s",
+          "plus": 5.0,
+          "minus": 5.0
+        },
+        {
+          "value": -2.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 47.1,
+          "unit": "km/s",
+          "plus": 3.0,
+          "minus": 3.0
+        },
+        {
+          "value": 2.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 55.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 58.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 33.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 33.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 48.9,
+          "unit": "km/s"
+        },
+        {
+          "value": 50.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 28.4,
+          "unit": "km/s",
+          "plus": 3.400000000000002,
+          "minus": 3.3999999999999986
+        },
+        {
+          "value": 28.4,
+          "unit": "km/s"
+        },
+        {
+          "value": 0.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 46.2,
+          "unit": "km/s"
+        },
+        {
+          "value": 47.0,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 4.15,
+          "unit": "mas",
+          "plus": 1.5899999999999999,
+          "minus": 1.5900000000000003
+        },
+        {
+          "value": 3.69,
+          "unit": "mas",
+          "plus": 1.1999999999999997,
+          "minus": 1.1999999999999997
+        },
+        {
+          "value": 6.5163,
+          "unit": "mas",
+          "plus": 1.5233999999999996,
+          "minus": 1.5234000000000005
+        }
+      ],
+      "instance of": [
+        {
+          "value": "young stellar object"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "binary star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "spectroscopic binary"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "suspected variable"
+        },
+        {
+          "value": "mid-infrared source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 83.846519387785,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -4.83834994027639,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Orion constellation map ru lite.png",
+    "url": "https://www.wikidata.org/wiki/Q1749342"
+  },
+  "summary": {
+    "designation": "c Ori",
+    "object_type": "Young Stellar Object",
+    "spectral_type": "B1V+?",
+    "ra_deg": 83.846519387785,
+    "dec_deg": -4.838349940276388,
+    "v_mag": 4.59,
+    "distance_pc": 153.5,
+    "distance_ly": 500.5,
+    "teff_k": 27700,
+    "b_minus_v": -0.19,
+    "mass": {
+      "value": 16.28,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 4.29,
+      "unit": "R☉"
+    },
+    "constellation": "Orion",
+    "description": "Star in the constellation of Orion"
+  },
+  "id": "42-ori",
+  "path": "stars/42-ori",
+  "observations": [
+    {
+      "datetime": "2026-10-07 05:18",
+      "location": "Royse City, Texas",
+      "rating": 5.0,
+      "seeing": "4/5",
+      "transparency": "4/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-07 10:18",
+      "altitude_deg": 51.1,
+      "azimuth_deg": 164.7
+    }
+  ]
+}

@@ -1,0 +1,760 @@
+{
+  "name": "ν Psc",
+  "category": "stars",
+  "app_type": "K-Star",
+  "harvested": "2026-10-10T16:12:38Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20nu.%20Psc",
+      "retrieved": "2026-10-10T16:12:46Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nu_Piscium",
+      "retrieved": "2026-10-10T16:13:03Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1069067",
+      "retrieved": "2026-10-10T16:13:04Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Pisces_IAU.svg/330px-Pisces_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:nu. Psc",
+    "simbad_id": "* nu. Psc",
+    "wikidata": "Q1069067",
+    "wikipedia": "Nu Piscium"
+  },
+  "simbad": {
+    "main_id": "* nu. Psc",
+    "ra": 25.357892261787082,
+    "dec": 5.487611634559999,
+    "otype": "*",
+    "otype_desc": "Star",
+    "sp_type": "K3III",
+    "plx_value": 8.9275,
+    "plx_err": 0.1567,
+    "pmra": -23.323,
+    "pmdec": 3.505,
+    "rvz_radvel": 0.482,
+    "rvz_redshift": 1.6077802313940737e-06,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 250,
+    "identifiers": [
+      "TIC 369491985",
+      "HIP 7884",
+      "Gaia DR3 2562091860584132096",
+      "2MASS J01412588+0529156",
+      "PLX  353",
+      "* 106 Psc",
+      "* nu. Psc",
+      "AG+05  186",
+      "BD+04   293",
+      "DO   271",
+      "EIC    26",
+      "FK5   56",
+      "GC  2055",
+      "GCRV   947",
+      "GEN# +1.00010380",
+      "GSC 00035-00435",
+      "HD  10380",
+      "HIC   7884",
+      "HR   489",
+      "IRAS 01388+0514",
+      "IRC +10020",
+      "JP11   525",
+      "N30  343",
+      "PMC 90-93    39",
+      "PPM 144883",
+      "RAFGL  243",
+      "ROT   240",
+      "SAO 110065",
+      "SKY#  2535",
+      "TD1   968",
+      "TYC   35-435-1",
+      "UBV    1727",
+      "UBV M   8361",
+      "YZ   5   474",
+      "[HFE83]   94",
+      "[L91b]  14",
+      "uvby98 100010380",
+      "PLX  353.00",
+      "WEB  1682",
+      "Gaia DR2 2562091860584132096",
+      "*  51 Cet"
+    ],
+    "fluxes": {
+      "B": {
+        "mag": 5.81,
+        "err": null
+      },
+      "V": {
+        "mag": 4.44,
+        "err": null
+      },
+      "U": {
+        "mag": 7.36,
+        "err": null
+      },
+      "R": {
+        "mag": 3.38,
+        "err": null
+      },
+      "I": {
+        "mag": 2.67,
+        "err": null
+      },
+      "G": {
+        "mag": 3.970141,
+        "err": 0.00299
+      },
+      "J": {
+        "mag": 2.195,
+        "err": 0.308
+      },
+      "H": {
+        "mag": 1.495,
+        "err": 0.26
+      },
+      "K": {
+        "mag": 1.357,
+        "err": 0.308
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0,
+        "bibcode": "1957ApJ...125..123S"
+      },
+      {
+        "teff": 4000,
+        "log_g": 1.5,
+        "fe_h": -0.35,
+        "bibcode": "1974PhDT.........8F"
+      },
+      {
+        "teff": 4000,
+        "log_g": 1.5,
+        "fe_h": -0.3,
+        "bibcode": "1980A&A....85..287F"
+      },
+      {
+        "teff": 4110,
+        "log_g": 1.93,
+        "fe_h": -0.27,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4104,
+        "log_g": 1.25,
+        "fe_h": -0.35,
+        "bibcode": "2021MNRAS.505.4496G"
+      },
+      {
+        "teff": 4114,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1999A&AS..139..335A"
+      },
+      {
+        "teff": 4132,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2005ApJ...626..446R"
+      },
+      {
+        "teff": 4173,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1998A&A...339..858D"
+      },
+      {
+        "teff": 4100,
+        "log_g": 0.8,
+        "fe_h": -0.24,
+        "bibcode": "1995AJ....110.2968L"
+      },
+      {
+        "teff": 4127,
+        "log_g": 1.39,
+        "fe_h": -0.26,
+        "bibcode": "2008A&A...480...91S"
+      },
+      {
+        "teff": 4057,
+        "log_g": 1.43,
+        "fe_h": -0.25,
+        "bibcode": "2007MNRAS.374..664C"
+      },
+      {
+        "teff": 4000,
+        "log_g": 1.5,
+        "fe_h": -0.3,
+        "bibcode": "1980A&A....85..287F"
+      },
+      {
+        "teff": 4110,
+        "log_g": 1.93,
+        "fe_h": -0.27,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4100,
+        "log_g": 0.8,
+        "fe_h": -0.24,
+        "bibcode": "1995AJ....110.2968L"
+      },
+      {
+        "teff": 4057,
+        "log_g": 1.43,
+        "fe_h": -0.25,
+        "bibcode": "2009A&A...508.1313F"
+      },
+      {
+        "teff": 4191,
+        "log_g": 1.88,
+        "fe_h": -0.14,
+        "bibcode": "2012A&A...538A.143K"
+      },
+      {
+        "teff": 4170,
+        "log_g": 1.91,
+        "fe_h": -0.16,
+        "bibcode": "2011A&A...531A.165P"
+      },
+      {
+        "teff": 4142,
+        "log_g": 1.53,
+        "fe_h": -0.32,
+        "bibcode": "2016A&A...587A...2B"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0,
+        "bibcode": "1957ApJ...125..123S"
+      },
+      {
+        "teff": 4000,
+        "log_g": 1.5,
+        "fe_h": -0.3,
+        "bibcode": "1980A&A....85..287F"
+      },
+      {
+        "teff": 4000,
+        "log_g": 1.5,
+        "fe_h": -0.35,
+        "bibcode": "1974PhDT.........8F"
+      },
+      {
+        "teff": 4100,
+        "log_g": 0.8,
+        "fe_h": -0.24,
+        "bibcode": "1995AJ....110.2968L"
+      },
+      {
+        "teff": 4110,
+        "log_g": 1.93,
+        "fe_h": -0.27,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4216,
+        "log_g": 1.48,
+        "fe_h": -0.23,
+        "bibcode": "2013A&A...559A.115M"
+      },
+      {
+        "teff": 4300,
+        "log_g": 2.2,
+        "fe_h": -0.27,
+        "bibcode": "2007A&A...475.1003H"
+      },
+      {
+        "teff": 4098,
+        "log_g": null,
+        "fe_h": -0.26,
+        "bibcode": "2020A&A...633A..34C"
+      },
+      {
+        "teff": 4153,
+        "log_g": 1.47,
+        "fe_h": -0.25,
+        "bibcode": "2022A&A...663A...4S"
+      },
+      {
+        "teff": 4191,
+        "log_g": 1.88,
+        "fe_h": -0.14,
+        "bibcode": "2023ApJS..266...41P"
+      },
+      {
+        "teff": 4066,
+        "log_g": 1.42,
+        "fe_h": -0.77,
+        "bibcode": "2024A&A...690A..97C"
+      }
+    ],
+    "teff_median": 4110,
+    "vsini_measurements": [
+      {
+        "vsini": 10,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 19,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 106.743,
+        "unit": "pc  ",
+        "plus_err": 3.3157,
+        "minus_err": -3.3157,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 112.013,
+        "unit": "pc  ",
+        "plus_err": 1.9661,
+        "minus_err": -1.9661,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "IR",
+      "NIR",
+      "UV"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20nu.%20Psc"
+  },
+  "wikipedia": {
+    "title": "Nu Piscium",
+    "description": "Star in the constellation Pisces",
+    "summary": "Nu Piscium is an orange-hued binary star system in the zodiac constellation of Pisces. Prior to the formation of the modern constellation boundaries in 1930, it was designated 51 Ceti in the Cetus constellation. Nu Piscium is visible to the naked eye, having a combined apparent visual magnitude of 4.44. Based upon an annual parallax shift of 8.93 mas as seen from Earth, it is located about 365 light years from the Sun.",
+    "intro": "Nu Piscium (ν Piscium) is an orange-hued binary star system in the zodiac constellation of Pisces. Prior to the formation of the modern constellation boundaries in 1930, it was designated 51 Ceti in the Cetus constellation. Nu Piscium is visible to the naked eye, having a combined apparent visual magnitude of 4.44. Based upon an annual parallax shift of 8.93 mas as seen from Earth, it is located about 365 light years from the Sun.\nThe primary, component A, is an evolved, K-type giant star with a stellar classification of K3 IIIb. It is a weak barium star, indicating that the atmosphere was previously enriched by accretion of s-process elements from what is now a white dwarf companion. The giant has 1.66 times the mass of the Sun and has expanded to about 35 times the Sun's radius. It is about 3.4 billion years old and is radiating 380 times the Sun's luminosity from its photosphere at an effective temperature of 4,154 K.\nIn 2026 the star was discovered to be an ORG (Oscillating Red Giant) variable by the Italian amateur research group GrAG (Gruppo Astrofili Galileo Galilei APS).",
+    "url": "https://en.wikipedia.org/wiki/Nu_Piscium",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Pisces_IAU.svg/330px-Pisces_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Pisces_IAU.svg/960px-Pisces_IAU.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q1069067"
+  },
+  "wikidata": {
+    "id": "Q1069067",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "K3III"
+        },
+        {
+          "value": "K2/3III"
+        },
+        {
+          "value": "K0"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Pisces"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 4.44,
+          "unit": ""
+        },
+        {
+          "value": 7.36,
+          "unit": ""
+        },
+        {
+          "value": 5.81,
+          "unit": ""
+        },
+        {
+          "value": 3.38,
+          "unit": ""
+        },
+        {
+          "value": 2.67,
+          "unit": ""
+        },
+        {
+          "value": 3.8902,
+          "unit": "",
+          "plus": 0.005999999999999783,
+          "minus": 0.006000000000000227
+        },
+        {
+          "value": 2.14,
+          "unit": ""
+        },
+        {
+          "value": 1.41,
+          "unit": ""
+        },
+        {
+          "value": 1.25,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 106.743,
+          "unit": "pc",
+          "plus": 3.3157000000000068,
+          "minus": 3.3156999999999925
+        }
+      ],
+      "mass": [
+        {
+          "value": 1.9,
+          "unit": "M☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 58.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 4057.0,
+          "unit": "K"
+        },
+        {
+          "value": 4100.0,
+          "unit": "K"
+        },
+        {
+          "value": 4110.0,
+          "unit": "K"
+        },
+        {
+          "value": 4127.0,
+          "unit": "K"
+        },
+        {
+          "value": 4142.0,
+          "unit": "K"
+        },
+        {
+          "value": 4170.0,
+          "unit": "K"
+        },
+        {
+          "value": 4191.0,
+          "unit": "K"
+        },
+        {
+          "value": 4300.0,
+          "unit": "K"
+        },
+        {
+          "value": 4216.0,
+          "unit": "K"
+        },
+        {
+          "value": 4173.0,
+          "unit": "K"
+        },
+        {
+          "value": 4132.0,
+          "unit": "K"
+        },
+        {
+          "value": 4114.0,
+          "unit": "K"
+        },
+        {
+          "value": 4000.0,
+          "unit": "K"
+        },
+        {
+          "value": 4098.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 3.41,
+          "unit": "Gyr"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.32,
+          "unit": ""
+        },
+        {
+          "value": -0.27,
+          "unit": ""
+        },
+        {
+          "value": -0.26,
+          "unit": ""
+        },
+        {
+          "value": -0.25,
+          "unit": ""
+        },
+        {
+          "value": -0.24,
+          "unit": ""
+        },
+        {
+          "value": -0.16,
+          "unit": ""
+        },
+        {
+          "value": -0.14,
+          "unit": ""
+        },
+        {
+          "value": 0.0,
+          "unit": ""
+        },
+        {
+          "value": -0.35,
+          "unit": ""
+        },
+        {
+          "value": -0.3,
+          "unit": ""
+        },
+        {
+          "value": -0.23,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 6.3,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 24.5,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 26.9,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 33.9,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 76.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 81.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 85.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 158.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 32.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 6.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 24.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 27.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 34.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 160.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 30.0,
+          "unit": "centimetre per square second"
+        },
+        {
+          "value": 31.6,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 0.4,
+          "unit": "km/s",
+          "plus": 0.9,
+          "minus": 0.9
+        },
+        {
+          "value": 0.76,
+          "unit": "km/s"
+        },
+        {
+          "value": 0.76,
+          "unit": "km/s",
+          "plus": 0.31000000000000005,
+          "minus": 0.31
+        },
+        {
+          "value": 1.9,
+          "unit": "km/s"
+        },
+        {
+          "value": -0.6,
+          "unit": "km/s"
+        },
+        {
+          "value": 0.4,
+          "unit": "km/s"
+        },
+        {
+          "value": 1.2,
+          "unit": "km/s"
+        },
+        {
+          "value": 0.482,
+          "unit": "km/s",
+          "plus": 0.00020000000000003348,
+          "minus": 0.00019999999999997797
+        }
+      ],
+      "parallax": [
+        {
+          "value": 9.3683,
+          "unit": "mas",
+          "plus": 0.29100000000000037,
+          "minus": 0.29100000000000037
+        },
+        {
+          "value": 9.3,
+          "unit": "mas",
+          "plus": 2.0,
+          "minus": 2.000000000000001
+        },
+        {
+          "value": 8.98,
+          "unit": "mas",
+          "plus": 0.23000000000000043,
+          "minus": 0.23000000000000043
+        },
+        {
+          "value": 8.86,
+          "unit": "mas",
+          "plus": 0.7700000000000014,
+          "minus": 0.7699999999999996
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "binary star"
+        },
+        {
+          "value": "near-infrared source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 25.35789129042,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 5.48761284028,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q1069067"
+  },
+  "summary": {
+    "designation": "nu. Psc",
+    "object_type": "Star",
+    "spectral_type": "K3III",
+    "ra_deg": 25.357892261787082,
+    "dec_deg": 5.487611634559999,
+    "v_mag": 4.44,
+    "distance_pc": 112.0,
+    "distance_ly": 365.3,
+    "teff_k": 4110,
+    "b_minus_v": 1.37,
+    "mass": {
+      "value": 1.9,
+      "unit": "M☉"
+    },
+    "luminosity": {
+      "value": 58.0,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 3.41,
+      "unit": "Gyr"
+    },
+    "constellation": "Pisces",
+    "description": "Star in the constellation Pisces"
+  },
+  "id": "nu-psc",
+  "path": "stars/nu-psc",
+  "observations": [
+    {
+      "datetime": "2026-10-09 21:19",
+      "location": "Royse City, Texas",
+      "rating": 2.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 02:19",
+      "altitude_deg": 21.2,
+      "azimuth_deg": 97.4
+    }
+  ]
+}

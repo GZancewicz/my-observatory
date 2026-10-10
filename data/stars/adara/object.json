@@ -1,0 +1,564 @@
+{
+  "name": "Adara",
+  "category": "stars",
+  "app_type": "B-Star",
+  "harvested": "2026-10-10T16:28:32Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20eps%20CMa",
+      "retrieved": "2026-10-10T16:28:41Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Epsilon_Canis_Majoris",
+      "retrieved": "2026-10-10T16:28:42Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q13414",
+      "retrieved": "2026-10-10T16:29:12Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/330px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Adhara",
+    "simbad_id": "* eps CMa",
+    "wikidata": "Q13414",
+    "wikipedia": "Epsilon Canis Majoris"
+  },
+  "simbad": {
+    "main_id": "* eps CMa",
+    "ra": 104.65645315148348,
+    "dec": -28.972086157360806,
+    "otype": "*",
+    "otype_desc": "Star",
+    "sp_type": "B1.5II",
+    "plx_value": 8.05,
+    "plx_err": 0.14,
+    "pmra": 3.24,
+    "pmdec": 1.33,
+    "rvz_radvel": 27.3,
+    "rvz_redshift": 9.106714460149767e-05,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "morph_type": null,
+    "nbref": 520,
+    "identifiers": [
+      "TIC 63198307",
+      "GEN# +1.00052089",
+      "** CPO    7A",
+      "HIP 33579",
+      "* eps CMa",
+      "*  21 CMa",
+      "1AXG J065840-2857",
+      "2RE J065836-285810",
+      "2RE J0658-285",
+      "ADS  5654 A",
+      "CCDM J06586-2858A",
+      "CD-28  3666",
+      "CEL   1473",
+      "CPD-28  1586",
+      "CSI-28  3666 21",
+      "FK5  268",
+      "GC  9188",
+      "GCRV  4590",
+      "GSC 06535-03619",
+      "HD  52089",
+      "HIC  33579",
+      "HR  2618",
+      "IDS 06547-2850 A",
+      "IRC -30071",
+      "JP11  1473",
+      "MCW  492",
+      "N30 1515",
+      "PMC 90-93   192",
+      "PPM 251347",
+      "RE J065836-285811",
+      "RE J0658-285",
+      "ROT  1127",
+      "SACS 151",
+      "SAO 172676",
+      "SKY# 12435",
+      "SRS  30268",
+      "TD1  8751",
+      "TYC 6535-3619-1",
+      "UBV    6891",
+      "UBV M  12697",
+      "ALS 14800",
+      "1RXS J065837.3-285814",
+      "2EUVE J0658-28.9",
+      "EUVE J0658-28.9",
+      "RX J0658.6-2858",
+      "2MASS J06583754-2858197",
+      "2XMM J065837.5-285820",
+      "WDS J06586-2858A",
+      "uvby98 100052089",
+      "NAME Adhara",
+      "WEB  6753",
+      "IRAS 06566-2854",
+      "AKARI-IRC-V1 J0658375-285820"
+    ],
+    "fluxes": {
+      "B": {
+        "mag": 1.29,
+        "err": null
+      },
+      "V": {
+        "mag": 1.5,
+        "err": null
+      },
+      "H": {
+        "mag": 2.16,
+        "err": 0.29
+      },
+      "U": {
+        "mag": 0.36,
+        "err": null
+      },
+      "R": {
+        "mag": 1.59,
+        "err": null
+      },
+      "I": {
+        "mag": 1.8,
+        "err": null
+      },
+      "J": {
+        "mag": 1.97,
+        "err": null
+      },
+      "K": {
+        "mag": 2.15,
+        "err": null
+      }
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 22010,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2009A&A...501..297Z"
+      },
+      {
+        "teff": 24750,
+        "log_g": 3.65,
+        "fe_h": -0.75,
+        "bibcode": "1992ApJ...387..673G"
+      },
+      {
+        "teff": 22205,
+        "log_g": 3.35,
+        "fe_h": 0.01,
+        "bibcode": "2012A&A...538A.143K"
+      },
+      {
+        "teff": 24750,
+        "log_g": 3.65,
+        "fe_h": -0.75,
+        "bibcode": "1992ApJ...387..673G"
+      },
+      {
+        "teff": 22205,
+        "log_g": 3.35,
+        "fe_h": 0.01,
+        "bibcode": "2023ApJS..266...41P"
+      },
+      {
+        "teff": 21000,
+        "log_g": 3.5,
+        "fe_h": null,
+        "bibcode": "2025ApJ...979...21S"
+      },
+      {
+        "teff": 23800,
+        "log_g": 3.29,
+        "fe_h": null,
+        "bibcode": "2024A&A...687A.228D"
+      }
+    ],
+    "teff_median": 22205,
+    "vsini_measurements": [
+      {
+        "vsini": 25,
+        "vsini_err": null,
+        "bibcode": "2002ApJ...573..359A"
+      },
+      {
+        "vsini": 35,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 60,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 26,
+        "vsini_err": null,
+        "bibcode": "2020A&A...639A..81B"
+      },
+      {
+        "vsini": 35,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 30,
+        "vsini_err": 6,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 48,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 25,
+        "vsini_err": 9,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 26,
+        "vsini_err": null,
+        "bibcode": "2024A&A...687A.228D"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 124,
+        "unit": "pc  ",
+        "plus_err": 2,
+        "minus_err": -2,
+        "method": "ST-L    ",
+        "bibcode": "2025ApJ...979...21S"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "NIR",
+      "UV",
+      "X"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20eps%20CMa"
+  },
+  "wikipedia": {
+    "title": "Epsilon Canis Majoris",
+    "description": "Star in the constellation Canis Major",
+    "summary": "Epsilon Canis Majoris is a binary star system and the second-brightest star in the constellation of Canis Major. Its name is a Bayer designation that is Latinised from ε Canis Majoris, and abbreviated Epsilon CMa or ε CMa. This is the 22nd-brightest star in the night sky with an apparent magnitude of 1.50. About 4.7 million years ago, it was the brightest star in the night sky, with an apparent magnitude of −3.99. Based upon parallax measurements obtained during the Hipparcos and the Gaia mission, it is about 405–428 light-years distant.",
+    "intro": "Epsilon Canis Majoris is a binary star system and the second-brightest star in the constellation of Canis Major. Its name is a Bayer designation that is Latinised from ε Canis Majoris, and abbreviated Epsilon CMa or ε CMa. This is the 22nd-brightest star in the night sky with an apparent magnitude of 1.50. About 4.7 million years ago, it was the brightest star in the night sky, with an apparent magnitude of −3.99. Based upon parallax measurements obtained during the Hipparcos and the Gaia mission, it is about 405–428 light-years distant.\nThe two components are designated ε Canis Majoris A, officially named Adhara  – the traditional name of the system, and B.",
+    "url": "https://en.wikipedia.org/wiki/Epsilon_Canis_Majoris",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/330px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/250px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q13414"
+  },
+  "wikidata": {
+    "id": "Q13414",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "B2II"
+        },
+        {
+          "value": "B1II"
+        },
+        {
+          "value": "B2II-III"
+        },
+        {
+          "value": "B1.5II"
+        },
+        {
+          "value": "B1"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Canis Major"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 1.5,
+          "unit": ""
+        },
+        {
+          "value": 0.36,
+          "unit": ""
+        },
+        {
+          "value": 1.29,
+          "unit": ""
+        },
+        {
+          "value": 1.59,
+          "unit": ""
+        },
+        {
+          "value": 1.8,
+          "unit": ""
+        },
+        {
+          "value": 1.97,
+          "unit": ""
+        },
+        {
+          "value": 2.16,
+          "unit": "",
+          "plus": 0.29000000000000004,
+          "minus": 0.29000000000000004
+        },
+        {
+          "value": 2.15,
+          "unit": ""
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": -4.8,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 430.0,
+          "unit": "ly",
+          "plus": 30.0,
+          "minus": 30.0
+        }
+      ],
+      "mass": [
+        {
+          "value": 12.6,
+          "unit": "M☉",
+          "plus": 1.0,
+          "minus": 1.0
+        }
+      ],
+      "radius": [
+        {
+          "value": 13.9,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 38700.0,
+          "unit": "L☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 24750.0,
+          "unit": "K"
+        },
+        {
+          "value": 22010.0,
+          "unit": "K"
+        },
+        {
+          "value": 22205.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 22.5,
+          "unit": "Q20764"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.01,
+          "unit": ""
+        },
+        {
+          "value": -0.75,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 4500.0,
+          "unit": "Q39699418"
+        },
+        {
+          "value": 2240.0,
+          "unit": "Q39699418"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 27.4,
+          "unit": "Q3674704",
+          "plus": 0.9000000000000021,
+          "minus": 0.8999999999999986
+        },
+        {
+          "value": 27.3,
+          "unit": "Q3674704",
+          "plus": 0.3999999999999986,
+          "minus": 0.40000000000000213
+        },
+        {
+          "value": 27.3,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 25.8,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 28.3,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 26.6,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 27.2,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 26.8,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 27.7,
+          "unit": "Q3674704"
+        },
+        {
+          "value": 29.1,
+          "unit": "Q3674704"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 7.57,
+          "unit": "mas",
+          "plus": 0.5700000000000003,
+          "minus": 0.5700000000000003
+        },
+        {
+          "value": 8.05,
+          "unit": "mas",
+          "plus": 0.1399999999999988,
+          "minus": 0.14000000000000057
+        }
+      ],
+      "instance of": [
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "astrophysical X-ray source"
+        },
+        {
+          "value": "navigational star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "star"
+        },
+        {
+          "value": "binary star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 104.656453151,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -28.972086157,
+          "unit": "°"
+        }
+      ]
+    },
+    "commons_image": "Canis major constellation map.png",
+    "url": "https://www.wikidata.org/wiki/Q13414"
+  },
+  "summary": {
+    "designation": "eps CMa",
+    "object_type": "Star",
+    "spectral_type": "B1.5II",
+    "ra_deg": 104.65645315148348,
+    "dec_deg": -28.972086157360806,
+    "v_mag": 1.5,
+    "distance_pc": 124.2,
+    "distance_ly": 405.2,
+    "teff_k": 22205,
+    "b_minus_v": -0.21,
+    "mass": {
+      "value": 12.6,
+      "unit": "M☉"
+    },
+    "radius": {
+      "value": 13.9,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 38700.0,
+      "unit": "L☉"
+    },
+    "age": {
+      "value": 22.5,
+      "unit": "Q20764"
+    },
+    "constellation": "Canis Major",
+    "description": "Star in the constellation Canis Major"
+  },
+  "id": "adara",
+  "path": "stars/adara",
+  "observations": [
+    {
+      "datetime": "2026-10-10 05:14",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-10 10:14",
+      "altitude_deg": 22.4,
+      "azimuth_deg": 153.2
+    },
+    {
+      "datetime": "2026-10-07 06:17",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-07 11:17",
+      "altitude_deg": 26.3,
+      "azimuth_deg": 164.8
+    }
+  ]
+}
