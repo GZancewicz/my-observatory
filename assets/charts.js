@@ -543,8 +543,10 @@
     g.append("clipPath").attr("id", clipId).append("rect").attr("width", w).attr("height", h);
     g.append("path").attr("class", "mo-ref").attr("clip-path", "url(#" + clipId + ")")
       .attr("d", d3.line().curve(d3.curveMonotoneX).x((d) => x(d[0])).y((d) => y(d[1]))(MAIN_SEQ));
-    const msLab = MAIN_SEQ.find((d) => x(d[0]) > w * 0.62 && y(d[1]) < h - 8);
-    if (msLab) g.append("text").attr("class", "mo-ref-label").attr("x", x(msLab[0]) + 8).attr("y", y(msLab[1]) - 6).attr("data-gl", "main sequence").text("main sequence");
+    // label the curve at its last point inside the plot (it often leaves through the bottom edge)
+    const inside = MAIN_SEQ.filter((d) => x(d[0]) >= 0 && x(d[0]) <= w && y(d[1]) >= 0 && y(d[1]) <= h - 8);
+    const msLab = inside[inside.length - 1];
+    if (msLab) g.append("text").attr("class", "mo-ref-label mo-line-label").attr("x", Math.min(x(msLab[0]) + 8, w - 80)).attr("y", y(msLab[1]) - 6).attr("data-gl", "main sequence").text("main sequence");
     g.append("g").attr("transform", "translate(0," + h + ")").call(d3.axisBottom(x).ticks(Math.max(3, Math.floor(w / 70))).tickSizeOuter(0)).call(axisStyle);
     g.append("g").call(d3.axisLeft(y).ticks(6).tickSizeOuter(0)).call(axisStyle);
     axisLabel(g, "B−V colour index  (hotter ←  → cooler)", w / 2, h + 34, null, false, "B−V colour index|B−V|colour index|color index");
@@ -566,6 +568,7 @@
   // Zenith path: the point overhead sits at Dec = site latitude and RA = local sidereal time,
   // so over a night it slides east along that declination. Dashed: the whole path; solid: the
   // stretch it covered during each observing session in view; dot: where it is right now.
+  const zenithBoxes = [];
   function drawZenith(g, proj, path, w) {
     const site = Object.values(LOCATIONS)[0];
     if (!site) return;
@@ -592,7 +595,13 @@
       const ra0 = lstDeg(new Date(r.t0), site.lon), ra1 = lstDeg(new Date(r.t1 + 60000), site.lon);
       zg.append("path").attr("class", "mo-zenith-session").attr("d", path({ type: "LineString", coordinates: arc(ra0, ra1) }))
         .append("title").text("Overhead during your session " + fmt(r.t0) + " – " + fmt(r.t1).split(", ").pop() + " (RA " + (ra0 / 15).toFixed(1) + "h to " + (ra1 / 15).toFixed(1) + "h)");
+      r.xy = arc(ra0, ra1).map((c) => proj(c));
+      r.label = new Date(r.t0).toLocaleDateString("en-US", { timeZone: "America/Chicago", month: "short", day: "numeric" });
     });
+    // longest segments get their labels first; overlapping ones are skipped (hover still shows them)
+    zenithBoxes.length = 0;
+    sessions.slice().sort((p, q) => (q.t1 - q.t0) - (p.t1 - p.t0))
+      .forEach((r) => labelLine(zg, r.xy, "overhead " + r.label, "is-zenith", zenithBoxes, 0.5, 13));
     // right now
     const now = proj(lonlat(lstDeg(new Date(), site.lon), lat));
     if (now) {
@@ -600,6 +609,21 @@
       zg.append("text").attr("class", "mo-ref-label").attr("x", now[0] + 7).attr("y", now[1] - 6).attr("data-gl", "zenith").text("zenith now");
     }
   }
+
+  // Label a projected polyline at a fraction along it, skipping the label if it would overlap
+  // one already placed in the same chart (`boxes` is per-chart state).
+  function labelLine(g, pts, text, cls, boxes, at, dy) {
+    pts = pts.filter((p) => p && Number.isFinite(p[0]) && Number.isFinite(p[1]));
+    if (pts.length < 1) return;
+    const p = pts[Math.min(pts.length - 1, Math.max(0, Math.round((pts.length - 1) * (at == null ? 0.5 : at))))];
+    const wpx = text.length * 5.6, x0 = p[0] - wpx / 2, y0 = p[1] + (dy || -6) - 10;
+    const box = [x0 - 2, y0 - 1, x0 + wpx + 2, y0 + 12];
+    if (boxes.some((b) => !(box[2] < b[0] || box[0] > b[2] || box[3] < b[1] || box[1] > b[3]))) return;
+    boxes.push(box);
+    g.append("text").attr("class", "mo-ref-label mo-line-label " + (cls || "")).attr("x", p[0]).attr("y", p[1] + (dy || -6))
+      .attr("text-anchor", "middle").text(text);
+  }
+  const shortTime = (u) => new Date(u.replace(" ", "T") + ":00Z").toLocaleTimeString("en-US", { timeZone: "America/Chicago", hour: "numeric", minute: "2-digit" });
 
   // Satellite passes (±12 h around each sighting, computed at harvest time with SGP4).
   // project(point) -> [x, y] or a d3 line generator input; seen pass solid, others dashed.
@@ -707,10 +731,14 @@
     const unplaced = S.view.objects.length - placed.length;
     if (unplaced > 0) chart.foot.textContent = (chart.foot.textContent ? chart.foot.textContent + " " : "") + unplaced + " object" + (unplaced > 1 ? "s" : "") + " without a position (satellites) not shown.";
     const sp = g.append("g").attr("class", "mo-passes");
-    satPasses().sort((x, y) => x.q.sighting - y.q.sighting).forEach((x) => {
+    const boxes = S.skyLabelBoxes = [];
+    satPasses().sort((x, y) => y.q.sighting - x.q.sighting).forEach((x) => {
       sp.append("path").attr("class", passClass(x.q))
         .attr("d", path({ type: "LineString", coordinates: x.q.points.map((q) => lonlat(q[1], q[2])) }))
         .append("title").text(passTitle(x));
+      const xy = x.q.points.map((q) => proj(lonlat(q[1], q[2])));
+      if (x.q.sighting) labelLine(sp, xy, x.o.name + " · pass you saw " + shortTime(x.q.start_utc), "is-seen", boxes, 0.35);
+      else labelLine(sp, xy, "pass " + shortTime(x.q.start_utc), "", boxes, 0.15);
     });
     const mk = g.append("g").attr("class", "mo-marks");
     const stars = mk.selectAll("circle").data(pts.filter((p) => p.o.category !== "planets" && p.o.category !== "constellations")).join("circle")
@@ -812,8 +840,14 @@
     passLegend(chart.legend);
     const line = d3.line().x((q) => r(q[3]) * Math.sin(q[4] * RAD)).y((q) => -r(q[3]) * Math.cos(q[4] * RAD)).curve(d3.curveCatmullRom);
     const sp = g.append("g").attr("class", "mo-passes");
-    satPasses().sort((x, y) => x.q.sighting - y.q.sighting).forEach((x) => {
+    const pboxes = [];
+    g.append("text").attr("class", "mo-ref-label").attr("x", 0).attr("y", 12).attr("text-anchor", "middle").attr("data-gl", "zenith").text("zenith");
+    g.append("text").attr("class", "mo-ref-label").attr("x", R * Math.sin(225 * RAD) - 4).attr("y", -R * Math.cos(225 * RAD) + 12).attr("text-anchor", "end").attr("data-gl", "horizon").text("horizon");
+    satPasses().sort((x, y) => y.q.sighting - x.q.sighting).forEach((x) => {
       sp.append("path").attr("class", passClass(x.q)).attr("d", line(x.q.points)).append("title").text(passTitle(x));
+      const xy = x.q.points.map((q) => [r(q[3]) * Math.sin(q[4] * RAD), -r(q[3]) * Math.cos(q[4] * RAD)]);
+      if (x.q.sighting) labelLine(sp, xy, x.o.name + " " + shortTime(x.q.start_utc), "is-seen", pboxes, 0.5);
+      else if (x.q.max_alt >= 10) labelLine(sp, xy, "pass " + shortTime(x.q.start_utc), "", pboxes, 0.5);
       if (x.q.sighting) {   // arrowhead at the end shows the direction of travel
         const [a, b2] = x.q.points.slice(-2);
         const [x1, y1, x2, y2] = [r(a[3]) * Math.sin(a[4] * RAD), -r(a[3]) * Math.cos(a[4] * RAD), r(b2[3]) * Math.sin(b2[4] * RAD), -r(b2[3]) * Math.cos(b2[4] * RAD)];

@@ -208,3 +208,6 @@
 .mo-overview .mo-passes path { pointer-events: stroke; }
 .mo-overview .mo-legend__pass { display: inline-block; width: 18px; height: 0; border-top: 2px dashed var(--muted); margin-right: 4px; vertical-align: middle; }
 .mo-overview .mo-legend__pass.is-seen { border-top: 3px solid var(--good); }
+.mo-overview .mo-line-label { paint-order: stroke; stroke: var(--panel); stroke-width: 3px; stroke-linejoin: round; }
+.mo-overview .mo-line-label.is-seen { fill: var(--good); font-weight: 600; }
+.mo-overview .mo-line-label.is-zenith { fill: var(--accent); }
