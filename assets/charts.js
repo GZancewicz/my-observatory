@@ -75,6 +75,11 @@
     const opts = short ? { day: "numeric", month: "short", timeZone: "UTC" } : { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" };
     return d.toLocaleDateString("en-GB", opts);
   }
+  // Local sidereal time in degrees, which is the RA of the zenith, for a UTC Date and east longitude.
+  function lstDeg(date, lon) {
+    const jd = date.getTime() / 86400000 + 2440587.5;
+    return norm360(280.46061837 + 360.98564736629 * (jd - 2451545) + lon);
+  }
   // Alt/az at a UTC time and site -> RA/Dec (degrees). Az from north through east.
   function altAzToRaDec(alt, az, utc, site) {
     const m = String(utc || "").match(/^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})/);
@@ -149,8 +154,14 @@
           o, path: o.path, name: o.name, datetime: b.datetime, night: nightOf(b.datetime),
           rating: num(b.rating), seeing: scale5(b.seeing), transparency: scale5(b.transparency),
           alt: num(b.altitude_deg), az: num(b.azimuth_deg), incomplete: !!b.incomplete,
-          location: b.location || "", isNew: i === 0,
+          location: b.location || "", utc: b.utc || null, isNew: i === 0, track: b.track || null,
         };
+        const seen = r.track && (r.track.passes || []).find((q) => q.sighting);
+        if (seen) {   // the logged time is often just after the pass; use the pass's highest point
+          const top = seen.points.reduce((m, q) => (q[3] > m[3] ? q : m), seen.points[0]);
+          r.alt = top[3]; r.az = top[4];
+          if (o.ra === null) { o.ra = top[1]; o.dec = top[2]; o.posComputed = true; }
+        }
         o.obs.push(r); obs.push(r);
       });
       const ratings = o.obs.map((b) => b.rating).filter((x) => x !== null);
@@ -552,9 +563,77 @@
   }
   function uniqBy(a, f) { const s = new Set(); return a.filter((x) => { const k = f(x); if (s.has(k)) return false; s.add(k); return true; }); }
 
+  // Zenith path: the point overhead sits at Dec = site latitude and RA = local sidereal time,
+  // so over a night it slides east along that declination. Dashed: the whole path; solid: the
+  // stretch it covered during each observing session in view; dot: where it is right now.
+  function drawZenith(g, proj, path, w) {
+    const site = Object.values(LOCATIONS)[0];
+    if (!site) return;
+    const lat = site.lat;
+    const arc = (ra0, ra1) => {
+      const span = norm360(ra1 - ra0), n = Math.max(2, Math.ceil(span / 2));
+      return d3.range(n + 1).map((i) => lonlat(norm360(ra0 + (span * i) / n), lat));
+    };
+    const zg = g.append("g").attr("class", "mo-zenith");
+    zg.append("path").attr("class", "mo-zenith-path").attr("d", path({ type: "LineString", coordinates: arc(0, 359.9) }));
+    const lp = proj(lonlat(250, lat));
+    if (lp && w > 420) zg.append("text").attr("class", "mo-ref-label mo-zenith-label").attr("x", lp[0]).attr("y", lp[1] - 5)
+      .attr("text-anchor", "middle").attr("data-gl", "zenith").text("zenith path (Dec +" + Math.round(lat) + "°)");
+    // one segment per observing session: consecutive observations less than 90 minutes apart
+    const times = S.view.obs.map((b) => (b.utc ? Date.parse(b.utc.replace(" ", "T") + ":00Z") : NaN))
+      .filter(Number.isFinite).sort((p, q) => p - q);
+    const sessions = [];
+    times.forEach((t) => {
+      const last = sessions[sessions.length - 1];
+      if (last && t - last.t1 <= 90 * 60000) last.t1 = t; else sessions.push({ t0: t, t1: t });
+    });
+    const fmt = (t) => new Date(t).toLocaleString("en-US", { timeZone: "America/Chicago", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+    sessions.forEach((r) => {
+      const ra0 = lstDeg(new Date(r.t0), site.lon), ra1 = lstDeg(new Date(r.t1 + 60000), site.lon);
+      zg.append("path").attr("class", "mo-zenith-session").attr("d", path({ type: "LineString", coordinates: arc(ra0, ra1) }))
+        .append("title").text("Overhead during your session " + fmt(r.t0) + " – " + fmt(r.t1).split(", ").pop() + " (RA " + (ra0 / 15).toFixed(1) + "h to " + (ra1 / 15).toFixed(1) + "h)");
+    });
+    // right now
+    const now = proj(lonlat(lstDeg(new Date(), site.lon), lat));
+    if (now) {
+      zg.append("circle").attr("class", "mo-zenith-now").attr("cx", now[0]).attr("cy", now[1]).attr("r", 4.5);
+      zg.append("text").attr("class", "mo-ref-label").attr("x", now[0] + 7).attr("y", now[1] - 6).attr("data-gl", "zenith").text("zenith now");
+    }
+  }
+
+  // Satellite passes (±12 h around each sighting, computed at harvest time with SGP4).
+  // project(point) -> [x, y] or a d3 line generator input; seen pass solid, others dashed.
+  function satPasses() {
+    const out = [];
+    S.view.objects.filter((o) => o.category === "satellites").forEach((o) => o.obs.forEach((b) => {
+      ((b.track && b.track.passes) || []).forEach((q) => out.push({ o, b, q }));
+    }));
+    return out;
+  }
+  function passTitle(x) {
+    const fmt = (u) => new Date(u.replace(" ", "T") + ":00Z").toLocaleTimeString("en-US", { timeZone: "America/Chicago", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+    return x.o.name + ": pass " + fmt(x.q.start_utc) + " – " + fmt(x.q.end_utc).split(", ").pop() + ", up to " + Math.round(x.q.max_alt) + "° high" +
+      (x.q.sighting ? " (the pass you saw)" : x.q.visible ? " (sunlit in a dark sky: visible)" : " (not visible: in shadow or daylight)");
+  }
+  function passLegend(leg) {
+    if (!satPasses().length) return;
+    const a = gl(el("span", "mo-legend__item"), "satellite pass|artificial satellite");
+    a.appendChild(el("span", "mo-legend__pass is-seen")); a.appendChild(el("span", null, "Satellite pass you saw"));
+    leg.appendChild(a);
+    const b = gl(el("span", "mo-legend__item"), "satellite pass|artificial satellite");
+    b.appendChild(el("span", "mo-legend__pass")); b.appendChild(el("span", null, "Other passes ±12 h"));
+    leg.appendChild(b);
+  }
+  function passClass(q) { return "mo-sat-pass" + (q.sighting ? " is-seen" : q.visible ? " is-visible" : ""); }
+
   // ---- 2. All-sky map
   function drawSky(chart, plot, W) {
     legendTemp(chart.legend, true, true);
+    const zl = gl(el("span", "mo-legend__item"), "zenith");
+    zl.appendChild(el("span", "mo-legend__zenith"));
+    zl.appendChild(el("span", null, "Overhead during my sessions"));
+    chart.legend.appendChild(zl);
+    passLegend(chart.legend);
     const SK = S.skyPrep;
     const m = { t: 8, r: 8, b: 8, l: 8 };
     const w = W - m.l - m.r, h = Math.round(w / 2);
@@ -592,6 +671,7 @@
     });
     g.append("path").attr("class", "mo-equator").attr("d", path({ type: "LineString", coordinates: eq }));
     g.append("path").attr("class", "mo-ecliptic").attr("d", path({ type: "LineString", coordinates: ecl }));
+    drawZenith(g, proj, path, w);
     const pEq = proj(lonlat(232, 0)), pEc = proj(ecl[121]);
     if (pEq) g.append("text").attr("class", "mo-ref-label").attr("x", pEq[0]).attr("y", pEq[1] - 4).attr("text-anchor", "middle").attr("data-gl", "celestial equator|equator").text("equator");
     if (pEc && w > 420) g.append("text").attr("class", "mo-ref-label").attr("x", pEc[0]).attr("y", pEc[1] - 5).attr("text-anchor", "middle").attr("data-gl", "ecliptic").text("ecliptic");
@@ -626,6 +706,12 @@
     }).sort((a, b) => b.r - a.r);
     const unplaced = S.view.objects.length - placed.length;
     if (unplaced > 0) chart.foot.textContent = (chart.foot.textContent ? chart.foot.textContent + " " : "") + unplaced + " object" + (unplaced > 1 ? "s" : "") + " without a position (satellites) not shown.";
+    const sp = g.append("g").attr("class", "mo-passes");
+    satPasses().sort((x, y) => x.q.sighting - y.q.sighting).forEach((x) => {
+      sp.append("path").attr("class", passClass(x.q))
+        .attr("d", path({ type: "LineString", coordinates: x.q.points.map((q) => lonlat(q[1], q[2])) }))
+        .append("title").text(passTitle(x));
+    });
     const mk = g.append("g").attr("class", "mo-marks");
     const stars = mk.selectAll("circle").data(pts.filter((p) => p.o.category !== "planets" && p.o.category !== "constellations")).join("circle")
       .attr("class", "mo-dot").attr("cx", (p) => p.px).attr("cy", (p) => p.py).attr("r", (p) => p.r).attr("fill", (p) => colorOf(p.o));
@@ -723,6 +809,18 @@
     [["N", 0], ["E", 90], ["S", 180], ["W", 270]].forEach(([n, az]) => t.append("text").attr("class", "mo-compass")
       .attr("x", (R + 12) * Math.sin(az * RAD)).attr("y", -(R + 12) * Math.cos(az * RAD) + 4).attr("text-anchor", "middle").attr("data-gl", "azimuth|cardinal direction").text(n));
     const pts = data.map((b) => ({ b, o: b.o, key: b.path, px: r(b.alt) * Math.sin(b.az * RAD), py: -r(b.alt) * Math.cos(b.az * RAD), r: 4.5 }));
+    passLegend(chart.legend);
+    const line = d3.line().x((q) => r(q[3]) * Math.sin(q[4] * RAD)).y((q) => -r(q[3]) * Math.cos(q[4] * RAD)).curve(d3.curveCatmullRom);
+    const sp = g.append("g").attr("class", "mo-passes");
+    satPasses().sort((x, y) => x.q.sighting - y.q.sighting).forEach((x) => {
+      sp.append("path").attr("class", passClass(x.q)).attr("d", line(x.q.points)).append("title").text(passTitle(x));
+      if (x.q.sighting) {   // arrowhead at the end shows the direction of travel
+        const [a, b2] = x.q.points.slice(-2);
+        const [x1, y1, x2, y2] = [r(a[3]) * Math.sin(a[4] * RAD), -r(a[3]) * Math.cos(a[4] * RAD), r(b2[3]) * Math.sin(b2[4] * RAD), -r(b2[3]) * Math.cos(b2[4] * RAD)];
+        sp.append("path").attr("class", "mo-sat-arrow").attr("d", d3.symbol(d3.symbolTriangle, 60)())
+          .attr("transform", "translate(" + x2 + "," + y2 + ") rotate(" + (Math.atan2(y2 - y1, x2 - x1) / RAD + 90) + ")");
+      }
+    });
     const mk = g.append("g").attr("class", "mo-marks");
     const dots = mk.selectAll("circle").data(pts.filter((p) => p.o.category !== "planets")).join("circle")
       .attr("class", "mo-dot").attr("cx", (p) => p.px).attr("cy", (p) => p.py).attr("r", (p) => p.r).attr("fill", (p) => colorOf(p.o));

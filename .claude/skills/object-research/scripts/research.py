@@ -27,7 +27,7 @@ import threading
 import time
 import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
@@ -1174,6 +1174,92 @@ def summarise(obj):
     return {k: v for k, v in s.items() if v not in (None, "")}
 
 
+# ---------- satellite passes ----------
+
+def sun_vector(jd):
+    """Unit vector to the Sun in equatorial coordinates (low precision, ~0.01°)."""
+    n = jd - 2451545.0
+    g = math.radians((357.528 + 0.9856003 * n) % 360)
+    lam = math.radians((280.460 + 0.9856474 * n + 1.915 * math.sin(g) + 0.020 * math.sin(2 * g)) % 360)
+    eps = math.radians(23.439 - 0.0000004 * n)
+    return (math.cos(lam), math.cos(eps) * math.sin(lam), math.sin(eps) * math.sin(lam))
+
+
+def satellite_track(orbit, sighting_utc, site, hours=12, step_s=30):
+    """Passes over the site from `hours` before to `hours` after a sighting.
+
+    Propagates the CelesTrak elements with SGP4. Each pass lists points
+    [seconds from sighting, RA, Dec, alt, az, sunlit] while above the horizon;
+    `visible` means sunlit while the sky at the site was dark (Sun below -6°).
+    """
+    try:
+        from sgp4.api import Satrec
+        from sgp4 import omm
+    except ImportError:
+        return None
+    sat = Satrec()
+    try:
+        omm.initialize(sat, {k: str(v) for k, v in orbit.items()})
+    except (KeyError, ValueError):
+        return None
+    a, f = 6378.137, 1 / 298.257223563
+    e2 = f * (2 - f)
+    phi, lam, h = math.radians(site["lat"]), math.radians(site["lon"]), site.get("elev_m", 0) / 1000
+    nrad = a / math.sqrt(1 - e2 * math.sin(phi) ** 2)
+    ox, oy, oz = ((nrad + h) * math.cos(phi) * math.cos(lam), (nrad + h) * math.cos(phi) * math.sin(lam),
+                  (nrad * (1 - e2) + h) * math.sin(phi))
+    t0 = julian_date(sighting_utc)
+    passes, cur, at = [], None, None
+    for k in range(-hours * 3600 // step_s, hours * 3600 // step_s + 1):
+        jd = t0 + k * step_s / 86400
+        err, r, _ = sat.sgp4(math.floor(jd - 0.5) + 0.5, jd - (math.floor(jd - 0.5) + 0.5))
+        if err:
+            continue
+        theta = math.radians((280.46061837 + 360.98564736629 * (jd - 2451545.0)) % 360)
+        obs = (ox * math.cos(theta) - oy * math.sin(theta), ox * math.sin(theta) + oy * math.cos(theta), oz)
+        rho = [r[i] - obs[i] for i in range(3)]
+        dist = math.sqrt(sum(c * c for c in rho))
+        lst = theta + lam
+        south = (math.sin(phi) * math.cos(lst) * rho[0] + math.sin(phi) * math.sin(lst) * rho[1] - math.cos(phi) * rho[2])
+        east = -math.sin(lst) * rho[0] + math.cos(lst) * rho[1]
+        up = math.cos(phi) * math.cos(lst) * rho[0] + math.cos(phi) * math.sin(lst) * rho[1] + math.sin(phi) * rho[2]
+        alt = math.degrees(math.asin(up / dist))
+        az = math.degrees(math.atan2(east, -south)) % 360
+        ra = math.degrees(math.atan2(rho[1], rho[0])) % 360
+        dec = math.degrees(math.asin(rho[2] / dist))
+        sv = sun_vector(jd)
+        along = sum(r[i] * sv[i] for i in range(3))
+        perp = math.sqrt(max(sum(c * c for c in r) - along * along, 0))
+        lit = along > 0 or perp > 6371.0
+        sun_up = math.cos(phi) * math.cos(lst) * sv[0] + math.cos(phi) * math.sin(lst) * sv[1] + math.sin(phi) * sv[2]
+        dark = math.degrees(math.asin(max(-1, min(1, sun_up)))) < -6
+        if k == 0:
+            at = {"alt": round(alt, 1), "az": round(az, 1), "ra": round(ra, 2), "dec": round(dec, 2),
+                  "sunlit": lit, "dark": dark, "range_km": round(dist)}
+        if alt > 0:
+            if cur is None:
+                cur = {"points": [], "visible": False}
+                passes.append(cur)
+            cur["points"].append([k * step_s, round(ra, 2), round(dec, 2), round(alt, 1), round(az, 1), int(lit)])
+            cur["visible"] |= lit and dark
+        else:
+            cur = None
+    for p in passes:
+        pts = p["points"]
+        top = max(pts, key=lambda q: q[3])
+        stamp = lambda sec: (sighting_utc + timedelta(seconds=sec)).strftime("%Y-%m-%d %H:%M")
+        p.update(start_utc=stamp(pts[0][0]), end_utc=stamp(pts[-1][0]), max_utc=stamp(top[0]),
+                 max_alt=top[3], start_az=pts[0][4], end_az=pts[-1][4], sighting=False,
+                 gap_s=0 if pts[0][0] <= 0 <= pts[-1][0] else min(abs(pts[0][0]), abs(pts[-1][0])))
+    # The logged time is often a few minutes after the pass (time taken to log it):
+    # the nearest pass within 15 minutes is taken as the one seen.
+    near = min(passes, key=lambda q: q["gap_s"], default=None)
+    if near and near["gap_s"] <= 900:
+        near["sighting"] = True
+    return {"hours": hours, "step_s": step_s, "elements_epoch": orbit.get("EPOCH"),
+            "at_sighting": at, "passes": passes}
+
+
 # ---------- observations ----------
 
 def attach_observations(obj, rows, locations):
@@ -1211,6 +1297,17 @@ def attach_observations(obj, rows, locations):
                 entry["ephemeris"] = {"mag": e.get("APmag"), "illuminated_pct": e.get("Illu%"),
                                       "angular_diameter_arcsec": e.get("Ang-diam"),
                                       "distance_au": e.get("delta"), "elongation_deg": e.get("S-O-T")}
+            orbit = (obj.get("celestrak") or {}).get("orbit")
+            if orbit:
+                track = satellite_track(orbit, utc, site)
+                if track:
+                    entry["track"] = track
+                    seen = next((q for q in track["passes"] if q["sighting"]), None)
+                    if seen:   # logged time is usually just after the pass: report the pass's highest point
+                        top = max(seen["points"], key=lambda q: q[3])
+                        entry["altitude_deg"], entry["azimuth_deg"] = top[3], top[4]
+                    else:
+                        entry["altitude_deg"], entry["azimuth_deg"] = track["at_sighting"]["alt"], track["at_sighting"]["az"]
         out.append(entry)
     obj["observations"] = sorted(out, key=lambda e: e["datetime"], reverse=True)
 

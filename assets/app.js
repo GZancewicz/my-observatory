@@ -585,6 +585,17 @@
 
   const median = (xs) => { xs = xs.filter((x) => x != null).sort((a, b) => a - b); return xs.length ? xs[Math.floor(xs.length / 2)] : null; };
 
+  // Satellite passes over the site from 12 h before to 12 h after each sighting (computed with SGP4 at harvest).
+  function passesTable(obs) {
+    const withTrack = obs.filter((x) => x.track && (x.track.passes || []).length);
+    if (!withTrack.length) return "";
+    const local = (u) => new Date(u.replace(" ", "T") + ":00Z").toLocaleString("en-US", { timeZone: "America/Chicago", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+    return withTrack.map((x) => {
+      const rows = x.track.passes.map((q) => `<tr${q.sighting ? ' class="is-seen"' : ""}><td>${esc(local(q.start_utc))}${q.sighting ? ' <span class="pill good">the pass you saw</span>' : ""}</td><td>${esc(local(q.max_utc).split(", ").pop())} · <span data-gl="altitude">${num(q.max_alt, 0)}°</span></td><td>${esc(local(q.end_utc).split(", ").pop())}</td><td><span data-gl="azimuth">${compass(q.start_az)} → ${compass(q.end_az)}</span></td><td>${q.visible ? '<span class="pill good">visible</span>' : '<span class="muted">not visible</span>'}</td></tr>`).join("");
+      return `<h3>Passes over ${esc(x.location || x.location_assumed || "your site")}, 12 hours either side of ${esc(x.datetime)}</h3><div class="tablewrap"><table><thead><tr><th>Rises</th><th data-gl="altitude">Highest</th><th>Sets</th><th data-gl="azimuth">Direction</th><th>Could you see it?</th></tr></thead><tbody>${rows}</tbody></table></div><div class="note">Computed from orbital elements dated ${esc(String(x.track.elements_epoch || "").slice(0, 16).replace("T", " "))} UTC. "Visible" means the satellite was in sunlight while your sky was dark (Sun more than 6° below the horizon). The pass you saw is the nearest one to your logged time, which is often a few minutes after the pass itself.</div>`;
+    }).join("");
+  }
+
   function observationsTable(o) {
     const obs = o.observations || [];
     if (!obs.length) return "";
@@ -598,7 +609,7 @@
       const eph = hasEph ? `<td>${e ? `<span data-gl="apparent magnitude|magnitude" data-vk="mag" data-vv="${esc(e.mag)}">mag ${esc(e.mag)}</span> · <span data-gl="angular diameter|apparent size">${num(e.angular_diameter_arcsec, 1)}″</span> · <span data-gl="illuminated fraction|illumination|phase">${num(e.illuminated_pct, 0)}% lit</span> · <span data-gl="delta|astronomical unit|AU">${num(e.distance_au, 3)} AU</span>` : "—"}</td>` : "";
       return `<tr><td>${esc(x.datetime)}${x.incomplete ? ' <span class="pill warn" title="Card was cut off in the screenshot">partial</span>' : ""}</td><td>${stars(x.rating)}</td><td>${scorePill(x.seeing, "seeing")}</td><td>${scorePill(x.transparency, "transparency")}</td><td>${scorePill(x.bortle, "bortle")}</td><td>${alt}</td>${eph}${hasHow ? `<td>${esc(x.equipment || "—")}${x.notes ? `<div class="muted">${esc(x.notes)}</div>` : ""}</td>` : ""}<td>${loc}</td></tr>`;
     }).join("");
-    return `<section class="sec" id="sec-obs"><h2>My observations · ${obs.length}</h2><div class="tablewrap"><table><thead><tr><th data-gl="local time">Local time</th><th data-gl="rating">Rating</th><th data-gl="seeing">Seeing</th><th data-gl="transparency|Transp.">Transp.</th><th data-gl="Bortle scale|Bortle">Bortle</th><th data-gl="altitude|Altitude / direction">Altitude / direction</th>${hasEph ? '<th data-gl="ephemeris">At that moment</th>' : ""}${hasHow ? "<th>How seen</th>" : ""}<th data-gl="observing location|location">Location</th></tr></thead><tbody>${rows}</tbody></table></div><div class="note">Altitude and direction are computed for the observation time and place.${obs.some((x) => x.location_assumed) ? " * location not visible in the screenshot; assumed." : ""}</div></section>`;
+    return `<section class="sec" id="sec-obs"><h2>My observations · ${obs.length}</h2><div class="tablewrap"><table><thead><tr><th data-gl="local time">Local time</th><th data-gl="rating">Rating</th><th data-gl="seeing">Seeing</th><th data-gl="transparency|Transp.">Transp.</th><th data-gl="Bortle scale|Bortle">Bortle</th><th data-gl="altitude|Altitude / direction">Altitude / direction</th>${hasEph ? '<th data-gl="ephemeris">At that moment</th>' : ""}${hasHow ? "<th>How seen</th>" : ""}<th data-gl="observing location|location">Location</th></tr></thead><tbody>${rows}</tbody></table></div><div class="note">Altitude and direction are computed for the observation time and place.${obs.some((x) => x.location_assumed) ? " * location not visible in the screenshot; assumed." : ""}</div>${passesTable(obs)}</section>`;
   }
 
   function images(o) {
