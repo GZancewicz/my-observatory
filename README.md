@@ -64,6 +64,8 @@ The page has a night mode. It needs an internet connection for D3 and Aladin Lit
 2. Copy the screenshots into `screenshots/`.
 3. In Claude Code, ask Claude to process the new screenshots, for example: *"I added new screenshots; extract them and research the new objects."* The `object-research` skill covers the research and rebuild steps.
 
+Observations marked on MO Pro **Sky View** captures (stars circled by hand) are logged in `observations_manual.csv` rather than read by OCR, because `extract.py` rewrites `observations.csv` on every run and merges that file in. The `log-sky-captures` skill covers reading the captures (including identifying unlabelled circled stars with `fit_chart.py`), writing the rows and rebuilding; `import-mo-observations` covers list screenshots, including downloading them from Google Drive.
+
 To run the same steps by hand:
 
 ```sh

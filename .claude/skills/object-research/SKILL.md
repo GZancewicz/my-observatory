@@ -5,7 +5,7 @@ description: Harvest everything public about the astronomical objects in observa
 
 # object-research
 
-Turns each object in `observations.csv` (written by `extract.py` from MO Pro screenshots) into a folder of details the viewer (`index.html`) reads.
+Turns each object in `observations.csv` (written by `extract.py` from MO Pro screenshots, merged with the hand-entered rows in `observations_manual.csv`) into a folder of details the viewer (`index.html`) reads. Getting observations in is covered by the `import-mo-observations` and `log-sky-captures` skills.
 
 ## Run
 
@@ -21,7 +21,7 @@ python3 .claude/skills/object-research/scripts/research.py --refresh --workers 6
 python3 .claude/skills/object-research/scripts/research.py --sky        # rebuild data/sky/boundaries.*
 ```
 
-Observations are re-attached, `summary` is rebuilt from stored data, and `index.json`, `bundle.js` and every `extra.js` are regenerated on every run, so run it after every `extract.py`. The constellation boundaries are built when missing, on a full `--refresh`, or with `--sky`.
+Observations are re-attached, `summary` is rebuilt from stored data, and `index.json`, `bundle.js` and every `extra.js` are regenerated on every run, so run it after every `extract.py`. Hand-entered rows may carry `equipment` (naked eye / binoculars / telescope) and `notes`; they are copied into each observation and shown in the page's "How seen" column. The constellation boundaries are built when missing, on a full `--refresh`, or with `--sky`.
 
 `--workers N` harvests N objects at once. Requests stay polite per service: request starts to one host are spaced (`PAUSE`, 0.3 s) and at most 2 run at once (3 for SIMBAD); Nominatim is held to one request per 1.1 s, CelesTrak and the Wikidata SPARQL endpoint to one at a time (`HOST_LIMITS`). A full refresh of ~84 objects with `--workers 6` takes roughly 10–20 minutes; run it in the background and watch its output.
 

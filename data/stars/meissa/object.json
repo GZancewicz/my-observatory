@@ -1,0 +1,873 @@
+{
+  "name": "Meissa",
+  "category": "stars",
+  "app_type": "O-Star",
+  "harvested": "2026-10-11T15:34:05Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20lam%20Ori",
+      "retrieved": "2026-10-11T15:34:19Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Meissa",
+      "retrieved": "2026-10-11T15:35:00Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q14219",
+      "retrieved": "2026-10-11T15:36:00Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.8
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Meissa",
+    "simbad_id": "* lam Ori",
+    "wikidata": "Q14219",
+    "wikipedia": "Meissa"
+  },
+  "simbad": {
+    "main_id": "* lam Ori",
+    "nbref": 330,
+    "otype": "**",
+    "ra": 83.78449002103218,
+    "dec": 9.934155874166667,
+    "coo_err_maj": 5.2747135,
+    "coo_err_min": 2.9051776,
+    "coo_err_angle": 90,
+    "coo_qual": "A",
+    "coo_wavelength": "O",
+    "coo_bibcode": "2007A&A...474..653V",
+    "pmra": -0.34,
+    "pmdec": -2.94,
+    "pm_err_maj": 0.6,
+    "pm_err_min": 0.33,
+    "pm_err_angle": 0,
+    "pm_qual": "A",
+    "pm_bibcode": "2007A&A...474..653V",
+    "plx_value": 2.97,
+    "plx_err": 0.55,
+    "plx_qual": "A",
+    "plx_bibcode": "2007A&A...474..653V",
+    "rvz_type": "v",
+    "rvz_radvel": 30.1,
+    "rvz_redshift": 0.00010040783352116556,
+    "rvz_err": 1.4,
+    "rvz_nature": null,
+    "rvz_qual": "B",
+    "rvz_bibcode": "2006AstL...32..759G",
+    "vlsr": null,
+    "vlsr_err": null,
+    "vlsr_wavelength": null,
+    "vlsr_bibcode": null,
+    "vlsr_min": null,
+    "vlsr_max": null,
+    "sp_type": "O8IIIf+B0.5V",
+    "sp_qual": "C",
+    "sp_bibcode": "1971ApJ...170..325C",
+    "morph_type": null,
+    "morph_qual": null,
+    "morph_bibcode": null,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "galdim_angle": 32767,
+    "galdim_qual": null,
+    "galdim_wavelength": null,
+    "galdim_bibcode": null,
+    "update_date": "2026-09-08",
+    "oid": 797122,
+    "rvz_wavelength": null,
+    "otype_desc": "Double or Multiple Star",
+    "identifiers": [
+      "TIC 436103278",
+      "HIP 26207",
+      "PLX 1271",
+      "* lam Ori",
+      "ADS  4179 AB",
+      "AG+09  550",
+      "BD+09   879",
+      "CCDM J05351+0956AB",
+      "CSI+09   879  2",
+      "CSV 100542",
+      "GC  6915",
+      "HIC  26207",
+      "IDS 05296+0952 AB",
+      "PPM 149166",
+      "SAO 112921",
+      "UBV    5449",
+      "EUVE J0535+09.9",
+      "WDS J05351+0956AB",
+      "** STF  738AB",
+      "2MASS J05350831+0956036",
+      "AAVSO 0529+09",
+      "NSV  2240",
+      "NAME Heka",
+      "NAME Meissa",
+      "uvby98 100036861",
+      "GEN# +1.00036861"
+    ],
+    "fluxes": {
+      "B": {
+        "mag": 3.48,
+        "err": null
+      },
+      "V": {
+        "mag": 3.66,
+        "err": null
+      },
+      "U": {
+        "mag": 2.45,
+        "err": null
+      },
+      "R": {
+        "mag": 3.72,
+        "err": null
+      },
+      "I": {
+        "mag": 3.89,
+        "err": null
+      },
+      "J": {
+        "mag": 3.73,
+        "err": 0.42
+      },
+      "H": {
+        "mag": 3.77,
+        "err": 0.37
+      },
+      "K": {
+        "mag": 3.88,
+        "err": 0.43
+      }
+    },
+    "coordinates": {
+      "frame": "ICRS",
+      "epoch": "J2000",
+      "ra_deg": 83.78449002103218,
+      "dec_deg": 9.934155874166667,
+      "ra_hms": "05 35 08.278",
+      "dec_dms": "+09 56 02.96",
+      "gal_l": 195.05189,
+      "gal_b": -11.99506,
+      "err_maj_mas": 5.2747135,
+      "err_min_mas": 2.9051776,
+      "err_angle_deg": 90,
+      "quality": "A",
+      "wavelength": "O",
+      "bibcode": "2007A&A...474..653V"
+    },
+    "hierarchy": {
+      "parents": [],
+      "children": [
+        {
+          "main_id": "* lam Ori A",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": null,
+          "bibcode": "2001AJ....122.3466M"
+        },
+        {
+          "main_id": "* lam Ori B",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": null,
+          "bibcode": "2001AJ....122.3466M"
+        }
+      ]
+    },
+    "measurements": {
+      "mesFe_h": [
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.01,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2011A&A...530A..19B"
+        }
+      ],
+      "mesISO": [
+        {
+          "dec": 9.4873,
+          "obsid": "87102410",
+          "ra": 85.1631
+        },
+        {
+          "dec": 10.0217,
+          "obsid": "87102401",
+          "ra": 83.3508
+        },
+        {
+          "dec": 10.0216,
+          "obsid": "83702802",
+          "ra": 83.3509
+        },
+        {
+          "dec": 10.0217,
+          "obsid": "87102403",
+          "ra": 83.3508
+        }
+      ],
+      "mesOtype": [
+        {
+          "otype": "*",
+          "comments": "from id * lam Ori",
+          "bibcode": null
+        },
+        {
+          "otype": "**",
+          "comments": "from basic data",
+          "bibcode": null
+        },
+        {
+          "otype": "NIR",
+          "comments": "from id 2MASS J05350831+0956036",
+          "bibcode": null
+        },
+        {
+          "otype": "UV",
+          "comments": "from id EUVE J0535+09.9",
+          "bibcode": null
+        },
+        {
+          "otype": "V*",
+          "comments": "from id CSV 100542",
+          "bibcode": null
+        }
+      ],
+      "mesPLX": [
+        {
+          "bibcode": "1997A&A...323L..49P",
+          "obscode": null,
+          "plx": 3.09,
+          "plx_err": 0.78
+        },
+        {
+          "bibcode": "2007A&A...474..653V",
+          "obscode": null,
+          "plx": 2.97,
+          "plx_err": 0.55
+        }
+      ],
+      "mesPM": [
+        {
+          "bibcode": "2007A&A...474..653V",
+          "coosystem": "ICRS",
+          "pmde": -2.94,
+          "pmde_err": 0.33,
+          "pmra": -0.34,
+          "pmra_err": 0.6
+        },
+        {
+          "bibcode": "1997A&A...323L..49P",
+          "coosystem": "ICRS",
+          "pmde": -1.86,
+          "pmde_err": 0.53,
+          "pmra": -1.03,
+          "pmra_err": 0.97
+        },
+        {
+          "bibcode": "1971IAUCo...7..153L",
+          "coosystem": "FK4",
+          "pmde": -60,
+          "pmde_err": 9,
+          "pmra": -33,
+          "pmra_err": 10
+        },
+        {
+          "bibcode": "1933GCCat.C......0B",
+          "coosystem": "FK4",
+          "pmde": -6,
+          "pmde_err": null,
+          "pmra": 1,
+          "pmra_err": null
+        }
+      ],
+      "mesVelocities": [
+        {
+          "bibcode": "2006AstL...32..759G",
+          "d": null,
+          "meanerror": 1.4,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "B",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "V  ",
+          "velvalue": 30.1,
+          "wdomain": "O   "
+        }
+      ]
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.01,
+        "bibcode": "2011A&A...530A..19B"
+      }
+    ],
+    "teff_median": null,
+    "vsini_measurements": [],
+    "distance_measurements": [],
+    "types": [
+      "*",
+      "**",
+      "NIR",
+      "UV",
+      "V*"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20lam%20Ori"
+  },
+  "papers_count": 330,
+  "wikipedia": {
+    "title": "Meissa",
+    "description": "Star in the constellation Orion",
+    "summary": "Meissa, designated Lambda Orionis is a star system in the constellation of Orion. It is a binary star system approximately 1,300 ly away with a combined apparent magnitude of 3.33. The main components are an O9 giant star and a B-class main sequence star, separated by about 4″. Despite Meissa being more luminous and only slightly further away than Rigel, it appears 3 magnitudes dimmer at visual wavelengths, with much of its radiation emitted in the ultraviolet due to its high temperature.",
+    "intro": "Meissa , designated Lambda Orionis (λ Orionis, abbreviated Lambda Ori, λ Ori) is a star system in the constellation of Orion.  It is a binary star system approximately 1,300 ly away with a combined apparent magnitude of 3.33.  The main components are an O9 giant star and a B-class main sequence star, separated by about 4″.  Despite Meissa being more luminous and only slightly further away than Rigel, it appears 3 magnitudes dimmer at visual wavelengths, with much of its radiation emitted in the ultraviolet due to its high temperature.",
+    "url": "https://en.wikipedia.org/wiki/Meissa",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Orion_constellation_map.svg/330px-Orion_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q14219",
+    "sections_count": 6
+  },
+  "wikidata": {
+    "id": "Q14219",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "O8IIIf+B0.5V"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Orion"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 3.66,
+          "unit": ""
+        },
+        {
+          "value": 2.45,
+          "unit": ""
+        },
+        {
+          "value": 3.48,
+          "unit": ""
+        },
+        {
+          "value": 3.72,
+          "unit": ""
+        },
+        {
+          "value": 3.89,
+          "unit": ""
+        },
+        {
+          "value": 3.73,
+          "unit": "",
+          "plus": 0.4200000000000004,
+          "minus": 0.41999999999999993
+        },
+        {
+          "value": 3.77,
+          "unit": "",
+          "plus": 0.36999999999999966,
+          "minus": 0.3700000000000001
+        },
+        {
+          "value": 3.88,
+          "unit": "",
+          "plus": 0.4299999999999997,
+          "minus": 0.4299999999999997
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 320.0,
+          "unit": "pc"
+        }
+      ],
+      "radius": [
+        {
+          "value": 10.0,
+          "unit": "R☉"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 165000.0,
+          "unit": "L☉"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.01,
+          "unit": ""
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 30.1,
+          "unit": "km/s",
+          "plus": 1.3999999999999986,
+          "minus": 1.4000000000000021
+        }
+      ],
+      "parallax": [
+        {
+          "value": 2.97,
+          "unit": "mas",
+          "plus": 0.5499999999999998,
+          "minus": 0.5500000000000003
+        },
+        {
+          "value": 3.09,
+          "unit": "mas",
+          "plus": 0.7800000000000002,
+          "minus": 0.7799999999999998
+        }
+      ],
+      "instance of": [
+        {
+          "value": "binary star"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "suspected variable"
+        },
+        {
+          "value": "star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 83.784490021,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 9.934155874,
+          "unit": "°"
+        }
+      ]
+    },
+    "all_claims": {
+      "image": [
+        {
+          "value": "Meissa.png",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Meissa.png"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "binary star",
+          "qid": "Q50053",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "variable star",
+          "qid": "Q6243",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "double star",
+          "qid": "Q13890",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "near-infrared source",
+          "qid": "Q67206785",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "ultraviolet source",
+          "qid": "Q71798788",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "suspected variable",
+          "qid": "Q66521853",
+          "type": "wikibase-item"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Orion",
+          "qid": "Q8860",
+          "type": "wikibase-item"
+        }
+      ],
+      "spectral class": [
+        {
+          "value": "O8IIIf+B0.5V",
+          "type": "string"
+        }
+      ],
+      "part of": [
+        {
+          "value": "Collinder 69",
+          "qid": "Q1109641",
+          "type": "wikibase-item"
+        }
+      ],
+      "has part(s)": [
+        {
+          "value": "Lambda Orionis A",
+          "qid": "Q66530986",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Lambda Orionis B",
+          "qid": "Q3826290",
+          "type": "wikibase-item"
+        }
+      ],
+      "catalog code": [
+        {
+          "value": "λ Ori",
+          "type": "string"
+        },
+        {
+          "value": "ADS 4179 AB",
+          "type": "string"
+        },
+        {
+          "value": "2MASS J05350831+0956036",
+          "type": "string"
+        },
+        {
+          "value": "BD+09 879",
+          "type": "string"
+        },
+        {
+          "value": "CCDM J05351+0956AB",
+          "type": "string"
+        },
+        {
+          "value": "CSV 100542",
+          "type": "string"
+        },
+        {
+          "value": "EUVE J0535+09.9",
+          "type": "string"
+        },
+        {
+          "value": "GC 6915",
+          "type": "string"
+        },
+        {
+          "value": "HIC 26207",
+          "type": "string"
+        },
+        {
+          "value": "HIP 26207",
+          "type": "string"
+        },
+        {
+          "value": "IDS 05296+0952 AB",
+          "type": "string"
+        },
+        {
+          "value": "NSV 2240",
+          "type": "string"
+        },
+        {
+          "value": "PLX 1271",
+          "type": "string"
+        },
+        {
+          "value": "PPM 149166",
+          "type": "string"
+        },
+        {
+          "value": "SAO 112921",
+          "type": "string"
+        },
+        {
+          "value": "UBV 5449",
+          "type": "string"
+        },
+        {
+          "value": "uvby98 100036861",
+          "type": "string"
+        },
+        {
+          "value": "WDS J05351+0956AB",
+          "type": "string"
+        },
+        {
+          "value": "39 Ori",
+          "type": "string"
+        },
+        {
+          "value": "TIC 436103278",
+          "type": "string"
+        },
+        {
+          "value": "AG+09 550",
+          "type": "string"
+        },
+        {
+          "value": "AAVSO 0529+09",
+          "type": "string"
+        }
+      ],
+      "Freebase ID": [
+        {
+          "value": "/m/04vdsg",
+          "type": "external-id",
+          "url": "https://www.google.com/search?kgmid=/m/04vdsg"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 3.66,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 2.45,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 3.48,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 3.72,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 3.89,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 3.73,
+          "unit": "",
+          "plus": 0.4200000000000004,
+          "minus": 0.41999999999999993,
+          "type": "quantity"
+        },
+        {
+          "value": 3.77,
+          "unit": "",
+          "plus": 0.36999999999999966,
+          "minus": 0.3700000000000001,
+          "type": "quantity"
+        },
+        {
+          "value": 3.88,
+          "unit": "",
+          "plus": 0.4299999999999997,
+          "minus": 0.4299999999999997,
+          "type": "quantity"
+        }
+      ],
+      "different from": [
+        {
+          "value": "Heka",
+          "qid": "Q846113",
+          "type": "wikibase-item"
+        }
+      ],
+      "luminosity": [
+        {
+          "value": 165000.0,
+          "unit": "L☉",
+          "type": "quantity"
+        }
+      ],
+      "radius": [
+        {
+          "value": 10.0,
+          "unit": "R☉",
+          "type": "quantity"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 2.97,
+          "unit": "mas",
+          "plus": 0.5499999999999998,
+          "minus": 0.5500000000000003,
+          "type": "quantity"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 30.1,
+          "unit": "km/s",
+          "plus": 1.3999999999999986,
+          "minus": 1.4000000000000021,
+          "type": "quantity"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.01,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 320.0,
+          "unit": "pc",
+          "type": "quantity"
+        }
+      ],
+      "SIMBAD ID": [
+        {
+          "value": "* lam Ori",
+          "type": "external-id",
+          "url": "https://simbad.u-strasbg.fr/simbad/sim-id?Ident=%2A%20lam%20Ori"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 83.784490021,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "declination": [
+        {
+          "value": 9.934155874,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "epoch": [
+        {
+          "value": "J2000.0",
+          "qid": "Q1264450",
+          "type": "wikibase-item"
+        }
+      ],
+      "declination component of proper motion": [
+        {
+          "value": -2.94,
+          "unit": "mas/yr",
+          "plus": 0.33000000000000007,
+          "minus": 0.33000000000000007,
+          "type": "quantity"
+        }
+      ],
+      "right ascension component of proper motion": [
+        {
+          "value": -0.34,
+          "unit": "mas/yr",
+          "plus": 0.6000000000000001,
+          "minus": 0.5999999999999999,
+          "type": "quantity"
+        }
+      ]
+    },
+    "property_ids": {
+      "image": "P18",
+      "instance of": "P31",
+      "constellation": "P59",
+      "spectral class": "P215",
+      "part of": "P361",
+      "has part(s)": "P527",
+      "catalog code": "P528",
+      "Freebase ID": "P646",
+      "apparent magnitude": "P1215",
+      "different from": "P1889",
+      "luminosity": "P2060",
+      "radius": "P2120",
+      "parallax": "P2214",
+      "radial velocity": "P2216",
+      "metallicity": "P2227",
+      "distance from Earth": "P2583",
+      "SIMBAD ID": "P3083",
+      "right ascension": "P6257",
+      "declination": "P6258",
+      "epoch": "P6259",
+      "declination component of proper motion": "P10751",
+      "right ascension component of proper motion": "P10752"
+    },
+    "commons_image": "Meissa.png",
+    "url": "https://www.wikidata.org/wiki/Q14219"
+  },
+  "summary": {
+    "designation": "lam Ori",
+    "object_type": "Double or Multiple Star",
+    "spectral_type": "O8IIIf+B0.5V",
+    "ra_deg": 83.78449002103218,
+    "dec_deg": 9.934155874166667,
+    "v_mag": 3.66,
+    "distance_pc": 336.7,
+    "distance_ly": 1098.2,
+    "b_minus_v": -0.18,
+    "radius": {
+      "value": 10.0,
+      "unit": "R☉"
+    },
+    "luminosity": {
+      "value": 165000.0,
+      "unit": "L☉"
+    },
+    "constellation": "Orion",
+    "abs_mag": -3.98,
+    "spectral_class": "O",
+    "luminosity_class": "III",
+    "gal_l": 195.05189,
+    "gal_b": -11.99506,
+    "description": "Star in the constellation Orion"
+  },
+  "id": "meissa",
+  "path": "stars/meissa",
+  "observations": [
+    {
+      "datetime": "2026-10-11 02:57",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "equipment": "naked eye",
+      "incomplete": false,
+      "utc": "2026-10-11 07:57",
+      "altitude_deg": 45.9,
+      "azimuth_deg": 112.0
+    }
+  ]
+}

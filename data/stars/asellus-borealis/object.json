@@ -1,0 +1,1365 @@
+{
+  "name": "Asellus Borealis",
+  "category": "stars",
+  "app_type": "A-Star",
+  "harvested": "2026-10-11T15:25:50Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20gam%20Cnc",
+      "retrieved": "2026-10-11T15:26:16Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gamma_Cancri",
+      "retrieved": "2026-10-11T15:26:21Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q15707",
+      "retrieved": "2026-10-11T15:28:00Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Cancer_constellation_map.svg/330px-Cancer_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Asellus Borealis",
+    "simbad_id": "* gam Cnc",
+    "wikidata": "Q15707",
+    "wikipedia": "Gamma Cancri"
+  },
+  "simbad": {
+    "main_id": "* gam Cnc",
+    "nbref": 122,
+    "otype": "PM*",
+    "ra": 130.82144642293792,
+    "dec": 21.468498799990275,
+    "coo_err_maj": 0.1377,
+    "coo_err_min": 0.0561,
+    "coo_err_angle": 90,
+    "coo_qual": "A",
+    "coo_wavelength": "O",
+    "coo_bibcode": "2020yCat.1350....0G",
+    "pmra": -105.76,
+    "pmdec": -39.157,
+    "pm_err_maj": 0.148,
+    "pm_err_min": 0.122,
+    "pm_err_angle": 90,
+    "pm_qual": "A",
+    "pm_bibcode": "2020yCat.1350....0G",
+    "plx_value": 18.6431,
+    "plx_err": 0.19,
+    "plx_qual": "A",
+    "plx_bibcode": "2020yCat.1350....0G",
+    "rvz_type": "v",
+    "rvz_radvel": 36.17,
+    "rvz_redshift": 0.00012065741233868721,
+    "rvz_err": 0.33,
+    "rvz_nature": "s",
+    "rvz_qual": "A",
+    "rvz_bibcode": "2022yCat.1355....0G",
+    "vlsr": null,
+    "vlsr_err": null,
+    "vlsr_wavelength": null,
+    "vlsr_bibcode": null,
+    "vlsr_min": null,
+    "vlsr_max": null,
+    "sp_type": "A1Va",
+    "sp_qual": "C",
+    "sp_bibcode": "1987ApJS...65..581G",
+    "morph_type": null,
+    "morph_qual": null,
+    "morph_bibcode": null,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "galdim_angle": null,
+    "galdim_qual": null,
+    "galdim_wavelength": null,
+    "galdim_bibcode": null,
+    "update_date": "2026-06-26",
+    "oid": 1108592,
+    "rvz_wavelength": "O",
+    "otype_desc": "High Proper Motion Star",
+    "identifiers": [
+      "TIC 184893591",
+      "Gaia DR3 664950414475977728",
+      "HIP 42806",
+      "PLX 2080",
+      "NAME Asellus Borealis",
+      "* gam Cnc",
+      "*  43 Cnc",
+      "AG+21  970",
+      "BD+21  1895",
+      "CCDM J08433+2128A",
+      "CSI+21  1895  1",
+      "FK5 1228",
+      "GC 11982",
+      "GCRV  5751",
+      "GEN# +1.00074198",
+      "GSC 01399-02905",
+      "HD  74198",
+      "HIC  42806",
+      "HR  3449",
+      "IDS 08375+2150 A",
+      "JP11  1699",
+      "N30 2034",
+      "PMC 90-93   836",
+      "PPM  98985",
+      "ROT  1366",
+      "SAO  80378",
+      "SKY# 16737",
+      "SRS  31228",
+      "TD1 12934",
+      "TYC 1399-2905-1",
+      "UBV    8407",
+      "UBV M  14614",
+      "XZ  13242",
+      "YZ  21  3516",
+      "uvby98 100074198",
+      "2MASS J08431716+2128067",
+      "PLX 2080.00",
+      "WDS J08433+2128A",
+      "WEB  8267",
+      "IRAS 08404+2138",
+      "AKARI-IRC-V1 J0843171+212806",
+      "Gaia DR2 664950414475977728"
+    ],
+    "fluxes": {
+      "V": {
+        "mag": 4.652,
+        "err": 0.009
+      },
+      "B": {
+        "mag": 4.67,
+        "err": 0.014
+      },
+      "K": {
+        "mag": 4.638,
+        "err": 0.024
+      },
+      "J": {
+        "mag": 4.799,
+        "err": 0.18
+      },
+      "H": {
+        "mag": 4.788,
+        "err": 0.186
+      },
+      "I": {
+        "mag": 4.64,
+        "err": 0
+      },
+      "G": {
+        "mag": 4.634174,
+        "err": 0.002878
+      }
+    },
+    "coordinates": {
+      "frame": "ICRS",
+      "epoch": "J2000",
+      "ra_deg": 130.82144642293792,
+      "dec_deg": 21.468498799990275,
+      "ra_hms": "08 43 17.147",
+      "dec_dms": "+21 28 06.60",
+      "gal_l": 204.16546,
+      "gal_b": 33.72689,
+      "err_maj_mas": 0.1377,
+      "err_min_mas": 0.0561,
+      "err_angle_deg": 90,
+      "quality": "A",
+      "wavelength": "O",
+      "bibcode": "2020yCat.1350....0G"
+    },
+    "hierarchy": {
+      "parents": [
+        {
+          "main_id": "Cl Melotte   25",
+          "otype": "OpC",
+          "otype_desc": "Open Cluster",
+          "membership": 100,
+          "bibcode": "2019A&A...623A..35L"
+        }
+      ],
+      "children": []
+    },
+    "measurements": {
+      "mesDistance": [
+        {
+          "bibcode": "2018yCat.1345....0G",
+          "dist": 50.8864,
+          "method": "paral   ",
+          "minus_err": -1.1873,
+          "plus_err": 1.1873,
+          "qual": null,
+          "unit": "pc  "
+        },
+        {
+          "bibcode": "2020yCat.1350....0G",
+          "dist": 53.6391,
+          "method": "paral   ",
+          "minus_err": -0.5466,
+          "plus_err": 0.5466,
+          "qual": null,
+          "unit": "pc  "
+        }
+      ],
+      "mesFe_h": [
+        {
+          "teff": 9311,
+          "log_g": null,
+          "fe_h": null,
+          "flag": null,
+          "compstar": null,
+          "catno": null,
+          "bibcode": "2012A&A...537A.120Z"
+        }
+      ],
+      "mesOtype": [
+        {
+          "otype": "*",
+          "comments": "from id * gam Cnc",
+          "bibcode": null
+        },
+        {
+          "otype": "**",
+          "comments": "from id CCDM J08433+2128A",
+          "bibcode": null
+        },
+        {
+          "otype": "IR",
+          "comments": "from id IRAS 08404+2138",
+          "bibcode": null
+        },
+        {
+          "otype": "NIR",
+          "comments": "from id 2MASS J08431716+2128067",
+          "bibcode": null
+        },
+        {
+          "otype": "PM*",
+          "comments": "from bibcode",
+          "bibcode": "2007A&A...474..653V"
+        },
+        {
+          "otype": "UV",
+          "comments": "from id TD1 12934",
+          "bibcode": null
+        }
+      ],
+      "mesPLX": [
+        {
+          "bibcode": "2007A&A...474..653V",
+          "obscode": null,
+          "plx": 18,
+          "plx_err": 0.21
+        },
+        {
+          "bibcode": "1997A&A...323L..49P",
+          "obscode": null,
+          "plx": 20.58,
+          "plx_err": 0.87
+        },
+        {
+          "bibcode": "1995GCTP..C......0V",
+          "obscode": null,
+          "plx": 12.6,
+          "plx_err": 9.8
+        },
+        {
+          "bibcode": "2018yCat.1345....0G",
+          "obscode": null,
+          "plx": 19.6516,
+          "plx_err": 0.4585
+        },
+        {
+          "bibcode": "2020yCat.1350....0G",
+          "obscode": null,
+          "plx": 18.6431,
+          "plx_err": 0.19
+        }
+      ],
+      "mesPM": [
+        {
+          "bibcode": "1997A&A...323L..49P",
+          "coosystem": "ICRS",
+          "pmde": -39.25,
+          "pmde_err": 0.75,
+          "pmra": -106.94,
+          "pmra_err": 1.03
+        },
+        {
+          "bibcode": "2007A&A...474..653V",
+          "coosystem": "ICRS",
+          "pmde": -39.48,
+          "pmde_err": 0.17,
+          "pmra": -103.51,
+          "pmra_err": 0.26
+        },
+        {
+          "bibcode": "2018yCat.1345....0G",
+          "coosystem": "ICRS",
+          "pmde": -40.116,
+          "pmde_err": 0.448,
+          "pmra": -105.536,
+          "pmra_err": 0.587
+        },
+        {
+          "bibcode": "2020yCat.1350....0G",
+          "coosystem": "ICRS",
+          "pmde": -39.157,
+          "pmde_err": 0.122,
+          "pmra": -105.76,
+          "pmra_err": 0.148
+        },
+        {
+          "bibcode": "1933GCCat.C......0B",
+          "coosystem": "FK4",
+          "pmde": -44,
+          "pmde_err": null,
+          "pmra": -103,
+          "pmra_err": null
+        },
+        {
+          "bibcode": "1952N30...C......0M",
+          "coosystem": "FK4",
+          "pmde": -43,
+          "pmde_err": null,
+          "pmra": -109,
+          "pmra_err": null
+        },
+        {
+          "bibcode": "1971IAUCo...7..153L",
+          "coosystem": "FK4",
+          "pmde": -42,
+          "pmde_err": 8,
+          "pmra": -116,
+          "pmra_err": 7
+        }
+      ],
+      "mesRot": [
+        {
+          "bibcode": "2007A&A...463..671R",
+          "nbmes": 0,
+          "qual": "D",
+          "upvsini": null,
+          "vsini": 86,
+          "vsini_err": null
+        },
+        {
+          "bibcode": "1970CoAsi.239....1B",
+          "nbmes": 7,
+          "qual": "D",
+          "upvsini": null,
+          "vsini": 85,
+          "vsini_err": null
+        },
+        {
+          "bibcode": "1970CoKwa.189....0U",
+          "nbmes": null,
+          "qual": "D",
+          "upvsini": null,
+          "vsini": 91,
+          "vsini_err": null
+        },
+        {
+          "bibcode": "1995ApJS...99..135A",
+          "nbmes": null,
+          "qual": "D",
+          "upvsini": null,
+          "vsini": 65,
+          "vsini_err": null
+        },
+        {
+          "bibcode": "2002A&A...393..897R",
+          "nbmes": null,
+          "qual": "D",
+          "upvsini": null,
+          "vsini": 86,
+          "vsini_err": null
+        },
+        {
+          "bibcode": "2002A&A...393..897R",
+          "nbmes": null,
+          "qual": "D",
+          "upvsini": null,
+          "vsini": 91,
+          "vsini_err": null
+        },
+        {
+          "bibcode": "2005yCat.3244....0G",
+          "nbmes": null,
+          "qual": null,
+          "upvsini": null,
+          "vsini": 80,
+          "vsini_err": null
+        },
+        {
+          "bibcode": "2005yCat.3244....0G",
+          "nbmes": null,
+          "qual": null,
+          "upvsini": null,
+          "vsini": 65,
+          "vsini_err": 8
+        },
+        {
+          "bibcode": "2005yCat.3244....0G",
+          "nbmes": null,
+          "qual": null,
+          "upvsini": null,
+          "vsini": 91,
+          "vsini_err": 4
+        }
+      ],
+      "mesSpT": [
+        {
+          "bibcode": "1969AJ.....74..375C",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "A1IV                                "
+        },
+        {
+          "bibcode": "1993yCat.3135....0C",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "A0                                  "
+        },
+        {
+          "bibcode": "1954ApJ...119..146S",
+          "dispsystem": "P ",
+          "mssnote": null,
+          "sptype": "A1V                                 "
+        },
+        {
+          "bibcode": "1959ApJ...130..159O",
+          "dispsystem": "P ",
+          "mssnote": null,
+          "sptype": "A1V                                 "
+        },
+        {
+          "bibcode": "1960MNRAS.120..448E",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "A1V                                 "
+        },
+        {
+          "bibcode": "1961UppAn...4j...1L",
+          "dispsystem": "OP",
+          "mssnote": null,
+          "sptype": "A1V                                 "
+        },
+        {
+          "bibcode": "1987ApJS...65..581G",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "A1Va                                "
+        }
+      ],
+      "mesVelocities": [
+        {
+          "bibcode": "1910ApJ....32..300L",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 5,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": "V",
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 24.200000762939453,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1912PAllO...2..121J",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 7,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 26.5,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1928PLicO..16....1C",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 5,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 36,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1929PYerO...7....1F",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 5,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 24.100000381469727,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1937PDAO....7....1H",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 3,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 29.799999237060547,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1999VeARI..35....1W",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 28.700000762939453,
+          "wdomain": null
+        },
+        {
+          "bibcode": "2006AstL...32..759G",
+          "d": null,
+          "meanerror": 2.8,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "C",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "V  ",
+          "velvalue": 28.7,
+          "wdomain": "O   "
+        },
+        {
+          "bibcode": "1953GCRV..C......0W",
+          "d": null,
+          "meanerror": 2,
+          "nature": "s",
+          "nbmes": 20,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "E",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 28.7,
+          "wdomain": null
+        },
+        {
+          "bibcode": "2022yCat.1355....0G",
+          "d": null,
+          "meanerror": 0.33,
+          "nature": "s",
+          "nbmes": 23,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 36.17,
+          "wdomain": "O   "
+        },
+        {
+          "bibcode": "1995A&AS..114..269D",
+          "d": null,
+          "meanerror": null,
+          "nature": "s",
+          "nbmes": 20,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 28.7,
+          "wdomain": null
+        }
+      ]
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 9311,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "2012A&A...537A.120Z"
+      }
+    ],
+    "teff_median": 9311,
+    "vsini_measurements": [
+      {
+        "vsini": 86,
+        "vsini_err": null,
+        "bibcode": "2007A&A...463..671R"
+      },
+      {
+        "vsini": 85,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      },
+      {
+        "vsini": 91,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 65,
+        "vsini_err": null,
+        "bibcode": "1995ApJS...99..135A"
+      },
+      {
+        "vsini": 86,
+        "vsini_err": null,
+        "bibcode": "2002A&A...393..897R"
+      },
+      {
+        "vsini": 91,
+        "vsini_err": null,
+        "bibcode": "2002A&A...393..897R"
+      },
+      {
+        "vsini": 80,
+        "vsini_err": null,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 65,
+        "vsini_err": 8,
+        "bibcode": "2005yCat.3244....0G"
+      },
+      {
+        "vsini": 91,
+        "vsini_err": 4,
+        "bibcode": "2005yCat.3244....0G"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 50.8864,
+        "unit": "pc  ",
+        "plus_err": 1.1873,
+        "minus_err": -1.1873,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 53.6391,
+        "unit": "pc  ",
+        "plus_err": 0.5466,
+        "minus_err": -0.5466,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "NIR",
+      "PM*",
+      "UV"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20gam%20Cnc"
+  },
+  "papers_count": 122,
+  "wikipedia": {
+    "title": "Gamma Cancri",
+    "description": "Star system in the constellation Cancer",
+    "summary": "Gamma Cancri is a star in the northern constellation of Cancer. Its name is a Bayer designation that is Latinized from γ Cancri, and abbreviated Gamma Cnc or γ Cnc. This star is formally named Asellus Borealis, pronounced, the traditional name of the system. Based on parallax measurements, it is located at a distance of approximately 175 light-years (54 pc) from the Sun. The star is drifting further away with a radial velocity of 29 km/s.",
+    "intro": "Gamma Cancri is a star in the northern constellation of Cancer. Its name is a Bayer designation that is Latinized from γ Cancri, and abbreviated Gamma Cnc or γ Cnc. This star is formally named Asellus Borealis, pronounced , the traditional name of the system. Based on parallax measurements, it is located at a distance of approximately  175 light-years (54 pc) from the Sun. The star is drifting further away with a radial velocity of 29 km/s.\nIn 1910 this star was reported to be a spectroscopic binary by O. J. Lee, but is now considered a single star. Since it is near the ecliptic, it can be occulted by the Moon.",
+    "url": "https://en.wikipedia.org/wiki/Gamma_Cancri",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Cancer_constellation_map.svg/330px-Cancer_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Cancer_constellation_map.svg/330px-Cancer_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q15707",
+    "sections_count": 3
+  },
+  "wikidata": {
+    "id": "Q15707",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "A1IV"
+        },
+        {
+          "value": "A1V"
+        },
+        {
+          "value": "A0"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Cancer"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 4.652,
+          "unit": "",
+          "plus": 0.008999999999999453,
+          "minus": 0.009000000000000341
+        },
+        {
+          "value": 4.67,
+          "unit": "",
+          "plus": 0.014000000000000234,
+          "minus": 0.014000000000000234
+        },
+        {
+          "value": 4.64,
+          "unit": "",
+          "plus": 0.0,
+          "minus": 0.0
+        },
+        {
+          "value": 4.799,
+          "unit": "",
+          "plus": 0.17999999999999972,
+          "minus": 0.1800000000000006
+        },
+        {
+          "value": 4.788,
+          "unit": "",
+          "plus": 0.18599999999999994,
+          "minus": 0.18599999999999994
+        },
+        {
+          "value": 4.638,
+          "unit": "",
+          "plus": 0.02400000000000002,
+          "minus": 0.02400000000000002
+        },
+        {
+          "value": 4.634174,
+          "unit": "",
+          "plus": 0.002877999999999936,
+          "minus": 0.002877999999999936
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": 1.1,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 50.8864,
+          "unit": "pc",
+          "plus": 1.1873000000000005,
+          "minus": 1.1873000000000005
+        },
+        {
+          "value": 53.6391,
+          "unit": "pc",
+          "plus": 0.546599999999998,
+          "minus": 0.546599999999998
+        }
+      ],
+      "radius": [
+        {
+          "value": 2.5,
+          "unit": "R☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 9311.0,
+          "unit": "K"
+        }
+      ],
+      "age": [
+        {
+          "value": 171.0,
+          "unit": "Myr"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 28.7,
+          "unit": "km/s"
+        },
+        {
+          "value": 28.7,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0
+        },
+        {
+          "value": 28.7,
+          "unit": "km/s",
+          "plus": 2.8000000000000007,
+          "minus": 2.8000000000000007
+        },
+        {
+          "value": 29.8,
+          "unit": "km/s"
+        },
+        {
+          "value": 36.0,
+          "unit": "km/s"
+        },
+        {
+          "value": 26.5,
+          "unit": "km/s"
+        },
+        {
+          "value": 24.2,
+          "unit": "km/s"
+        },
+        {
+          "value": 24.1,
+          "unit": "km/s"
+        },
+        {
+          "value": 36.17,
+          "unit": "km/s",
+          "plus": 0.3299999999999983,
+          "minus": 0.3299999999999983
+        }
+      ],
+      "parallax": [
+        {
+          "value": 19.6516,
+          "unit": "mas",
+          "plus": 0.4585000000000008,
+          "minus": 0.45849999999999724
+        },
+        {
+          "value": 12.6,
+          "unit": "mas",
+          "plus": 9.799999999999999,
+          "minus": 9.8
+        },
+        {
+          "value": 20.58,
+          "unit": "mas",
+          "plus": 0.870000000000001,
+          "minus": 0.8699999999999974
+        },
+        {
+          "value": 18.0,
+          "unit": "mas",
+          "plus": 0.21000000000000085,
+          "minus": 0.21000000000000085
+        },
+        {
+          "value": 18.6431,
+          "unit": "mas",
+          "plus": 0.19000000000000128,
+          "minus": 0.19000000000000128
+        }
+      ],
+      "instance of": [
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "double star"
+        },
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 130.82144642293792,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 21.46849879999028,
+          "unit": "°"
+        }
+      ]
+    },
+    "all_claims": {
+      "instance of": [
+        {
+          "value": "high proper-motion star",
+          "qid": "Q2247863",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "near-infrared source",
+          "qid": "Q67206785",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "ultraviolet source",
+          "qid": "Q71798788",
+          "type": "wikibase-item"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Cancer",
+          "qid": "Q8849",
+          "type": "wikibase-item"
+        }
+      ],
+      "spectral class": [
+        {
+          "value": "A1IV",
+          "type": "string"
+        }
+      ],
+      "catalog code": [
+        {
+          "value": "2MASS J08431716+2128067",
+          "type": "string"
+        },
+        {
+          "value": "GSC 01399-02905",
+          "type": "string"
+        },
+        {
+          "value": "HD 74198",
+          "type": "string"
+        },
+        {
+          "value": "HIP 42806",
+          "type": "string"
+        },
+        {
+          "value": "HR 3449",
+          "type": "string"
+        },
+        {
+          "value": "γ Cnc",
+          "type": "string"
+        },
+        {
+          "value": "BD+21 1895",
+          "type": "string"
+        },
+        {
+          "value": "CCDM J08433+2128A",
+          "type": "string"
+        },
+        {
+          "value": "FK5 1228",
+          "type": "string"
+        },
+        {
+          "value": "GC 11982",
+          "type": "string"
+        },
+        {
+          "value": "GCRV 5751",
+          "type": "string"
+        },
+        {
+          "value": "HIC 42806",
+          "type": "string"
+        },
+        {
+          "value": "IDS 08375+2150 A",
+          "type": "string"
+        },
+        {
+          "value": "JP11 1699",
+          "type": "string"
+        },
+        {
+          "value": "N30 2034",
+          "type": "string"
+        },
+        {
+          "value": "PLX 2080",
+          "type": "string"
+        },
+        {
+          "value": "PLX 2080.00",
+          "type": "string"
+        },
+        {
+          "value": "PMC 90-93 836",
+          "type": "string"
+        },
+        {
+          "value": "PPM 98985",
+          "type": "string"
+        },
+        {
+          "value": "ROT 1366",
+          "type": "string"
+        },
+        {
+          "value": "SRS 31228",
+          "type": "string"
+        },
+        {
+          "value": "TD1 12934",
+          "type": "string"
+        },
+        {
+          "value": "TYC 1399-2905-1",
+          "type": "string"
+        },
+        {
+          "value": "UBV 8407",
+          "type": "string"
+        },
+        {
+          "value": "uvby98 100074198",
+          "type": "string"
+        },
+        {
+          "value": "WDS J08433+2128A",
+          "type": "string"
+        },
+        {
+          "value": "YZ 21 3516",
+          "type": "string"
+        },
+        {
+          "value": "IRAS 08404+2138",
+          "type": "string"
+        },
+        {
+          "value": "WEB 8267",
+          "type": "string"
+        },
+        {
+          "value": "Gaia DR2 664950414475977728",
+          "type": "string"
+        },
+        {
+          "value": "43 Cnc",
+          "type": "string"
+        },
+        {
+          "value": "Gaia DR3 664950414475977728",
+          "type": "string"
+        },
+        {
+          "value": "TIC 184893591",
+          "type": "string"
+        },
+        {
+          "value": "AG+21 970",
+          "type": "string"
+        },
+        {
+          "value": "SAO 80378",
+          "type": "string"
+        },
+        {
+          "value": "UBV M 14614",
+          "type": "string"
+        }
+      ],
+      "Freebase ID": [
+        {
+          "value": "/m/06mpdr",
+          "type": "external-id",
+          "url": "https://www.google.com/search?kgmid=/m/06mpdr"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 4.652,
+          "unit": "",
+          "plus": 0.008999999999999453,
+          "minus": 0.009000000000000341,
+          "type": "quantity"
+        },
+        {
+          "value": 4.67,
+          "unit": "",
+          "plus": 0.014000000000000234,
+          "minus": 0.014000000000000234,
+          "type": "quantity"
+        },
+        {
+          "value": 4.64,
+          "unit": "",
+          "plus": 0.0,
+          "minus": 0.0,
+          "type": "quantity"
+        },
+        {
+          "value": 4.799,
+          "unit": "",
+          "plus": 0.17999999999999972,
+          "minus": 0.1800000000000006,
+          "type": "quantity"
+        },
+        {
+          "value": 4.788,
+          "unit": "",
+          "plus": 0.18599999999999994,
+          "minus": 0.18599999999999994,
+          "type": "quantity"
+        },
+        {
+          "value": 4.638,
+          "unit": "",
+          "plus": 0.02400000000000002,
+          "minus": 0.02400000000000002,
+          "type": "quantity"
+        },
+        {
+          "value": 4.634174,
+          "unit": "",
+          "plus": 0.002877999999999936,
+          "minus": 0.002877999999999936,
+          "type": "quantity"
+        }
+      ],
+      "absolute magnitude": [
+        {
+          "value": 1.1,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "radius": [
+        {
+          "value": 2.5,
+          "unit": "R☉",
+          "type": "quantity"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 18.6431,
+          "unit": "mas",
+          "plus": 0.19000000000000128,
+          "minus": 0.19000000000000128,
+          "type": "quantity"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 36.17,
+          "unit": "km/s",
+          "plus": 0.3299999999999983,
+          "minus": 0.3299999999999983,
+          "type": "quantity"
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 53.6391,
+          "unit": "pc",
+          "plus": 0.546599999999998,
+          "minus": 0.546599999999998,
+          "type": "quantity"
+        }
+      ],
+      "SIMBAD ID": [
+        {
+          "value": "* gam Cnc",
+          "type": "external-id",
+          "url": "https://simbad.u-strasbg.fr/simbad/sim-id?Ident=%2A%20gam%20Cnc"
+        }
+      ],
+      "stellar rotational velocity": [
+        {
+          "value": 86.0,
+          "unit": "km/s",
+          "type": "quantity"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 130.82144642293792,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "declination": [
+        {
+          "value": 21.46849879999028,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "epoch": [
+        {
+          "value": "J2000.0",
+          "qid": "Q1264450",
+          "type": "wikibase-item"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 9311.0,
+          "unit": "K",
+          "type": "quantity"
+        }
+      ],
+      "age estimated by a dating method": [
+        {
+          "value": 171.0,
+          "unit": "Myr",
+          "type": "quantity"
+        }
+      ],
+      "declination component of proper motion": [
+        {
+          "value": -39.157,
+          "unit": "mas/yr",
+          "plus": 0.12199999999999989,
+          "minus": 0.12200000000000699,
+          "type": "quantity"
+        }
+      ],
+      "right ascension component of proper motion": [
+        {
+          "value": -105.76,
+          "unit": "mas/yr",
+          "plus": 0.14800000000001035,
+          "minus": 0.14799999999999613,
+          "type": "quantity"
+        }
+      ],
+      "Gaia ID": [
+        {
+          "value": "664950414475977728",
+          "type": "external-id",
+          "url": "https://vizier.cds.unistra.fr/viz-bin/VizieR-S?Gaia%20DR3%20664950414475977728"
+        }
+      ]
+    },
+    "property_ids": {
+      "instance of": "P31",
+      "constellation": "P59",
+      "spectral class": "P215",
+      "catalog code": "P528",
+      "Freebase ID": "P646",
+      "apparent magnitude": "P1215",
+      "absolute magnitude": "P1457",
+      "radius": "P2120",
+      "parallax": "P2214",
+      "radial velocity": "P2216",
+      "distance from Earth": "P2583",
+      "SIMBAD ID": "P3083",
+      "stellar rotational velocity": "P4296",
+      "right ascension": "P6257",
+      "declination": "P6258",
+      "epoch": "P6259",
+      "effective temperature": "P6879",
+      "age estimated by a dating method": "P7584",
+      "declination component of proper motion": "P10751",
+      "right ascension component of proper motion": "P10752",
+      "Gaia ID": "P13228"
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q15707"
+  },
+  "summary": {
+    "designation": "gam Cnc",
+    "object_type": "High Proper Motion Star",
+    "spectral_type": "A1Va",
+    "ra_deg": 130.82144642293792,
+    "dec_deg": 21.468498799990275,
+    "v_mag": 4.652,
+    "distance_pc": 53.6,
+    "distance_ly": 174.9,
+    "teff_k": 9311,
+    "b_minus_v": 0.02,
+    "radius": {
+      "value": 2.5,
+      "unit": "R☉"
+    },
+    "age": {
+      "value": 171.0,
+      "unit": "Myr"
+    },
+    "constellation": "Cancer",
+    "abs_mag": 1.0,
+    "spectral_class": "A",
+    "luminosity_class": "V",
+    "gal_l": 204.16546,
+    "gal_b": 33.72689,
+    "description": "Star system in the constellation Cancer"
+  },
+  "id": "asellus-borealis",
+  "path": "stars/asellus-borealis",
+  "observations": [
+    {
+      "datetime": "2026-10-11 03:21",
+      "location": "Royse City, Texas",
+      "rating": 2.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "equipment": "binoculars",
+      "notes": "very faint in binoculars",
+      "incomplete": false,
+      "utc": "2026-10-11 08:21",
+      "altitude_deg": 18.0,
+      "azimuth_deg": 75.6
+    }
+  ]
+}

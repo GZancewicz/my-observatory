@@ -1191,6 +1191,9 @@ def attach_observations(obj, rows, locations):
         site = locate(r["location"], locations) or default_site
         local = datetime.strptime(r["datetime"], "%Y-%m-%d %H:%M")
         entry = {k: r[k] for k in ("datetime", "location", "rating", "seeing", "transparency", "bortle")}
+        for k in ("equipment", "notes"):   # only hand-entered rows carry these
+            if r.get(k):
+                entry[k] = r[k]
         entry["rating"] = float(r["rating"]) if r["rating"] else None
         entry["incomplete"] = bool(r["check"])
         if not r["location"] and site:

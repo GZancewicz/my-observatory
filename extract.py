@@ -1,5 +1,7 @@
 """Turn MO Pro "My Observations" screenshots into observations.csv.
 
+Rows in observations_manual.csv (same columns plus equipment and notes) are merged in.
+
 Usage: python3 extract.py [screenshots_dir]
 
 Text comes from macOS Vision (./ocr, built from ocr.swift). Vision cannot read
@@ -242,6 +244,15 @@ def main():
             key = (row["datetime"], row["type"], row["object"] if not row["check"].startswith("unknown") else path.name + row["object"])
             if key not in rows or completeness(row) > completeness(rows[key]):
                 rows[key] = row
+
+    for row in rows.values():
+        row.update(equipment="", notes="")
+    # Hand-entered observations (e.g. from sky-chart captures) live in their own file
+    # because this script rewrites observations.csv from the screenshots every run.
+    manual = ROOT / "observations_manual.csv"
+    if manual.exists():
+        for row in csv.DictReader(open(manual, encoding="utf-8")):
+            rows[(row["datetime"], row["type"], row["object"])] = row
 
     out = sorted(rows.values(), key=lambda r: r["datetime"], reverse=True)
     with open(ROOT / "observations.csv", "w", newline="", encoding="utf-8") as f:

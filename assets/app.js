@@ -589,15 +589,16 @@
     const obs = o.observations || [];
     if (!obs.length) return "";
     const hasEph = obs.some((x) => x.ephemeris);
+    const hasHow = obs.some((x) => x.equipment || x.notes);   // hand-entered rows record naked eye / binoculars
     const rows = obs.map((x) => {
       const alt = x.altitude_deg != null && !Number.isNaN(x.altitude_deg)
         ? `<span data-gl="altitude">${num(x.altitude_deg, 1)}°</span> <span class="muted" data-gl="azimuth">${compass(x.azimuth_deg)} ${num(x.azimuth_deg, 0)}°</span>` : '<span class="muted">—</span>';
       const loc = x.location ? esc(x.location) : x.location_assumed ? `<span class="muted" title="Location not visible in screenshot; assumed">${esc(x.location_assumed)}*</span>` : "—";
       const e = x.ephemeris;
       const eph = hasEph ? `<td>${e ? `<span data-gl="apparent magnitude|magnitude" data-vk="mag" data-vv="${esc(e.mag)}">mag ${esc(e.mag)}</span> · <span data-gl="angular diameter|apparent size">${num(e.angular_diameter_arcsec, 1)}″</span> · <span data-gl="illuminated fraction|illumination|phase">${num(e.illuminated_pct, 0)}% lit</span> · <span data-gl="delta|astronomical unit|AU">${num(e.distance_au, 3)} AU</span>` : "—"}</td>` : "";
-      return `<tr><td>${esc(x.datetime)}${x.incomplete ? ' <span class="pill warn" title="Card was cut off in the screenshot">partial</span>' : ""}</td><td>${stars(x.rating)}</td><td>${scorePill(x.seeing, "seeing")}</td><td>${scorePill(x.transparency, "transparency")}</td><td>${scorePill(x.bortle, "bortle")}</td><td>${alt}</td>${eph}<td>${loc}</td></tr>`;
+      return `<tr><td>${esc(x.datetime)}${x.incomplete ? ' <span class="pill warn" title="Card was cut off in the screenshot">partial</span>' : ""}</td><td>${stars(x.rating)}</td><td>${scorePill(x.seeing, "seeing")}</td><td>${scorePill(x.transparency, "transparency")}</td><td>${scorePill(x.bortle, "bortle")}</td><td>${alt}</td>${eph}${hasHow ? `<td>${esc(x.equipment || "—")}${x.notes ? `<div class="muted">${esc(x.notes)}</div>` : ""}</td>` : ""}<td>${loc}</td></tr>`;
     }).join("");
-    return `<section class="sec" id="sec-obs"><h2>My observations · ${obs.length}</h2><div class="tablewrap"><table><thead><tr><th data-gl="local time">Local time</th><th data-gl="rating">Rating</th><th data-gl="seeing">Seeing</th><th data-gl="transparency|Transp.">Transp.</th><th data-gl="Bortle scale|Bortle">Bortle</th><th data-gl="altitude|Altitude / direction">Altitude / direction</th>${hasEph ? '<th data-gl="ephemeris">At that moment</th>' : ""}<th data-gl="observing location|location">Location</th></tr></thead><tbody>${rows}</tbody></table></div><div class="note">Altitude and direction are computed for the observation time and place.${obs.some((x) => x.location_assumed) ? " * location not visible in the screenshot; assumed." : ""}</div></section>`;
+    return `<section class="sec" id="sec-obs"><h2>My observations · ${obs.length}</h2><div class="tablewrap"><table><thead><tr><th data-gl="local time">Local time</th><th data-gl="rating">Rating</th><th data-gl="seeing">Seeing</th><th data-gl="transparency|Transp.">Transp.</th><th data-gl="Bortle scale|Bortle">Bortle</th><th data-gl="altitude|Altitude / direction">Altitude / direction</th>${hasEph ? '<th data-gl="ephemeris">At that moment</th>' : ""}${hasHow ? "<th>How seen</th>" : ""}<th data-gl="observing location|location">Location</th></tr></thead><tbody>${rows}</tbody></table></div><div class="note">Altitude and direction are computed for the observation time and place.${obs.some((x) => x.location_assumed) ? " * location not visible in the screenshot; assumed." : ""}</div></section>`;
   }
 
   function images(o) {
