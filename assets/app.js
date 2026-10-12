@@ -1448,7 +1448,7 @@
     if (seq !== state.seq) return;
     const s = o.summary || {};
     const des = cleanId(s.designation);
-    const tags = [CATEGORIES[o.category] || o.category, o.app_type, des && des !== o.name ? des : null]
+    const tags = [o.gz_id, CATEGORIES[o.category] || o.category, o.app_type, des && des !== o.name ? des : null]
       .filter(Boolean).map((t) => `<span class="tag">${esc(t)}</span>`).join("");
     const body = [keyFacts(o), skySection(o), observationsTable(o), horizonsSection(o), celestrakSection(o),
       articleSection(o), simbadSection(o), wikidataSection(o), sourcesRow(o)].join("");

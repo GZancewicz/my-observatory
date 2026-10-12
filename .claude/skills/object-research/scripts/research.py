@@ -851,6 +851,39 @@ def constellation_geometry(abbr):
             "source": "IAU boundaries, VizieR VI/49"}
 
 
+_SKY = None
+
+
+def constellation_at(ra, dec):
+    """Full name of the IAU constellation containing a J2000 position, from data/sky/boundaries.json.
+
+    A ray runs north along the point's RA; an odd number of boundary crossings means the point
+    and the north celestial pole are on opposite sides of that boundary."""
+    global _SKY
+    if _SKY is None:
+        try:
+            _SKY = json.loads((DATA / "sky" / "boundaries.json").read_text())
+        except (OSError, ValueError):
+            _SKY = {}
+    wrap = lambda a: (a + 180) % 360 - 180
+    for abbr, rings in (_SKY.get("boundaries") or {}).items():
+        rings = rings if isinstance(rings[0][0], list) else [rings]
+        for ring in rings:
+            crossings, winding = 0, 0.0
+            for (a1, d1), (a2, d2) in zip(ring, ring[1:]):
+                da = wrap(a2 - a1)
+                winding += da
+                if da == 0:
+                    continue
+                t = wrap(ra - a1) / da
+                if 0 <= t < 1 and d1 + t * (d2 - d1) > dec:
+                    crossings += 1
+            holds_pole = abs(winding) > 180 and sum(d for _, d in ring) > 0
+            if (crossings % 2 == 1) != holds_pole:
+                return _SKY["names"].get(abbr, abbr)
+    return None
+
+
 # ---------- constellation boundaries for the sky map ----------
 
 def precess(ra, dec, jd0=JD_B1875, jd1=JD_J2000):
@@ -1158,6 +1191,9 @@ def summarise(obj):
             s["distance_ly"] = round(d["value"] * 3.26156, 1)
     if obj.get("geometry"):
         s["ra_deg"], s["dec_deg"] = obj["geometry"]["ra_deg"], obj["geometry"]["dec_deg"]
+    if not s.get("constellation") and obj.get("category") not in ("constellations", "planets", "satellites") \
+            and s.get("ra_deg") is not None and s.get("dec_deg") is not None:
+        s["constellation"] = constellation_at(s["ra_deg"], s["dec_deg"])
     if s.get("v_mag") is not None and (sb.get("plx_value") or 0) > 0:
         s["abs_mag"] = round(s["v_mag"] + 5 * math.log10(sb["plx_value"]) - 10, 2)
     s["spectral_class"], s["luminosity_class"] = spectral_classes(s.get("spectral_type"))
@@ -1292,6 +1328,8 @@ def attach_observations(obj, rows, locations):
             near = min(eph, key=lambda te: abs((te[0] - utc).total_seconds()), default=None)
             e = near[1] if near and abs((near[0] - utc).total_seconds()) < 120 else None
             if e:
+                with contextlib.suppress(TypeError, ValueError):   # planets move between constellations
+                    entry["constellation"] = constellation_at(float(e["R.A._(ICRF)"]), float(e["DEC_(ICRF)"]))
                 entry["altitude_deg"] = float(e.get("Elev_(a-app)") or "nan")
                 entry["azimuth_deg"] = float(e.get("Azi_(a-app)") or "nan")
                 entry["ephemeris"] = {"mag": e.get("APmag"), "illuminated_pct": e.get("Illu%"),
@@ -1306,10 +1344,35 @@ def attach_observations(obj, rows, locations):
                     if seen:   # logged time is usually just after the pass: report the pass's highest point
                         top = max(seen["points"], key=lambda q: q[3])
                         entry["altitude_deg"], entry["azimuth_deg"] = top[3], top[4]
+                        entry["constellation"] = constellation_at(top[1], top[2])
                     else:
                         entry["altitude_deg"], entry["azimuth_deg"] = track["at_sighting"]["alt"], track["at_sighting"]["az"]
         out.append(entry)
     obj["observations"] = sorted(out, key=lambda e: e["datetime"], reverse=True)
+
+
+# ---------- GZ catalogue numbers ----------
+
+def assign_gz_ids(objects):
+    """GZ-1, GZ-2, ... in the order objects were first observed, kept in data/gz_ids.json.
+
+    A number never changes once given: objects new to the file are numbered after every existing
+    one, in order of their earliest observation (then name)."""
+    path = DATA / "gz_ids.json"
+    try:
+        ids = json.loads(path.read_text())
+    except (OSError, ValueError):
+        ids = {}
+    new = sorted((n for n in objects if n not in ids),
+                 key=lambda n: (min(r["datetime"] for r in objects[n]["rows"]), n))
+    nxt = max(ids.values(), default=0) + 1
+    for name in new:
+        ids[name] = nxt
+        nxt += 1
+    if new:
+        write_json(path, dict(sorted(ids.items(), key=lambda kv: kv[1])))
+        print(f"{len(new)} new GZ numbers -> data/gz_ids.json", flush=True)
+    return ids
 
 
 # ---------- main ----------
@@ -1335,6 +1398,7 @@ def main():
         if missing:
             print(f"not in observations.csv: {', '.join(missing)}", flush=True)
 
+    gz = assign_gz_ids(objects)
     jobs, todo = [], []
     for name, info in objects.items():
         if args.only and name not in args.only:
@@ -1382,6 +1446,7 @@ def main():
         relabel(obj)
         obj["summary"] = summarise(obj)   # derived from stored data; cheap to rebuild
         obj["id"], obj["path"] = job["folder"].name, f"{job['cat']}/{job['folder'].name}"
+        obj["gz_id"] = f"GZ-{gz[job['name']]}"
         attach_observations(obj, job["info"]["rows"], locations)
         write_json(job["path"], obj)
 
@@ -1421,7 +1486,7 @@ def write_index():
         ratings = [x["rating"] for x in obs if x.get("rating") is not None]
         s = o.get("summary", {})
         entries.append({
-            "id": o["id"], "path": o["path"], "name": o["name"], "category": o["category"],
+            "id": o["id"], "path": o["path"], "name": o["name"], "gz_id": o.get("gz_id"), "category": o["category"],
             "app_type": o["app_type"], "description": s.get("description"),
             "designation": s.get("designation"), "constellation": s.get("constellation"),
             "v_mag": s.get("v_mag"), "spectral_type": s.get("spectral_type"),

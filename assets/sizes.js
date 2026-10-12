@@ -125,6 +125,13 @@
       if (cat !== "stars" && cat !== "planets" && cat !== "satellites") return;
       const s = raw.summary || {}, sb = raw.simbad || {};
       const o = { path: raw.path, name: raw.name, category: cat, type: s.object_type || raw.app_type || "", spType: s.spectral_type || null };
+      o.gz = raw.gz_id || null;
+      o.cons = s.constellation || null;
+      o.consAtSighting = false;
+      if (!o.cons) {   // planets and satellites: where they were at the latest sighting that has a position
+        const b = (raw.observations || []).find((x) => x.constellation);
+        if (b) { o.cons = b.constellation; o.consAtSighting = true; }
+      }
       o.ly = num(s.distance_ly);
       if (cat === "planets") {   // distance at the latest Horizons ephemeris row, AU -> ly
         const eph = ((raw.horizons || {}).ephemeris || []).filter((e) => num(e.delta) !== null);
@@ -230,7 +237,7 @@
     let x = 16;
     const items = list.map((o) => {
       const d = o.r < Math.pow(10, LOG_MIN) ? SAT_PX : Math.max(2, unit * (Math.log10(o.r) - LOG_MIN));
-      const nameW = 7.2 * o.name.length + 12;
+      const nameW = 7.2 * Math.max(o.name.length, 0.9 * ((o.cons || "").length + (o.consAtSighting ? 14 : 0))) + 12;
       const body = RULER_W + 8 + d;
       const w = Math.max(body, nameW) + 14;
       const left = x + (w - body) / 2;
@@ -291,7 +298,7 @@
   function draw() {
     if (!S) return;
     const plotH = Math.round(Math.max(260, Math.min(460, window.innerHeight * 0.5)));
-    const top = 30, y0 = top + plotH, h = y0 + 86;
+    const top = 30, y0 = top + plotH, h = y0 + 102;
     const L = layout(S.list, plotH);
     S.layout = L;
     const parts = [`<svg class="mo-sz-svg" width="${L.width}" height="${h}" viewBox="0 0 ${L.width} ${h}" role="img" aria-label="Stars and planets ${SORTS[sortKey].order}, with diameters on a logarithmic scale">`];
@@ -303,11 +310,12 @@
       parts.push(sphereSvg(it, y0, k));
       parts.push(`<text class="mo-sz-value" x="${it.cx}" y="${y0 - it.d - 8}">${esc(radiusText(it.o))}</text>`);
       parts.push(`<text class="mo-sz-label" x="${it.mid}" y="${y0 + 20}">${esc(it.o.name)}</text>`);
-      parts.push(`<text class="mo-sz-sublabel" x="${it.mid}" y="${y0 + 36}">${esc(subLabel(it.o))}</text>`);
-      parts.push(`<text class="mo-sz-distance" x="${it.mid}" y="${y0 + 52}">${esc(distanceText(it.o))}</text>`);
+      parts.push(`<text class="mo-sz-cons" x="${it.mid}" y="${y0 + 36}">${esc(it.o.cons ? it.o.cons + (it.o.consAtSighting ? " (at sighting)" : "") : "—")}</text>`);
+      parts.push(`<text class="mo-sz-sublabel" x="${it.mid}" y="${y0 + 52}">${esc([it.o.gz, subLabel(it.o)].filter(Boolean).join(" · "))}</text>`);
+      parts.push(`<text class="mo-sz-distance" x="${it.mid}" y="${y0 + 68}">${esc(distanceText(it.o))}</text>`);
       const vis = visibility(it.o), cls = (on) => "mo-sz-vis" + (on === null ? " is-unknown" : on ? "" : " is-off");
-      parts.push(`<use class="${cls(vis.eye)}" href="#mo-sz-eye" x="${it.mid - 21}" y="${y0 + 62}" width="16" height="16"/>`);
-      parts.push(`<use class="${cls(vis.bino)}" href="#mo-sz-bino" x="${it.mid + 5}" y="${y0 + 62}" width="16" height="16"/>`);
+      parts.push(`<use class="${cls(vis.eye)}" href="#mo-sz-eye" x="${it.mid - 21}" y="${y0 + 78}" width="16" height="16"/>`);
+      parts.push(`<use class="${cls(vis.bino)}" href="#mo-sz-bino" x="${it.mid + 5}" y="${y0 + 78}" width="16" height="16"/>`);
       parts.push("</g>");
     });
     parts.push("</svg>");
@@ -320,7 +328,8 @@
     const how = { catalogue: "catalogue radius (Wikidata)", typical: "typical size for this kind of satellite (body and solar array); no catalogue size", luminosity: "estimated from luminosity and temperature",
       magnitude: "estimated from absolute magnitude and temperature" }[o.how];
     const rows = [
-      `<strong>${esc(o.name)}</strong>`,
+      `<strong>${esc(o.name)}</strong>` + (o.gz ? ` · ${esc(o.gz)}` : ""),
+      o.cons ? esc(o.cons + (o.consAtSighting ? " (at the latest sighting)" : "")) : null,
       esc(o.type + (o.spType ? " · " + o.spType : "")),
       (km < 1 ? `Radius ${esc(radiusText(o))}` : `Radius ${esc(sig(o.r))} R☉ · ${esc(sig(km))} km`) + (o.category === "planets" ? ` · ${esc(sig(km / 6371))} Earth radii` : ""),
       esc(how),
@@ -328,7 +337,7 @@
     rows.push(esc(visText(o)));
     rows.push("Distance from Earth " + esc(distanceText(o)) + (o.category === "planets" ? " (latest ephemeris)" : o.category === "satellites" ? " (line of sight at the sighting)" : ""));
     if (o.category === "stars") rows.push(`Temperature ${Math.round(o.teff).toLocaleString("en-US")} K (${esc(o.teffHow)})`);
-    return rows.join("<br>");
+    return rows.filter(Boolean).join("<br>");
   }
   function scrollToItem(k, smooth) {
     const it = S.layout.items[k];
