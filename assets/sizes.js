@@ -8,6 +8,9 @@
   const R_SUN_KM = 695700;
   const T_SUN = 5772;
   const MBOL_SUN = 4.74;
+  const R_EARTH_KM = 6371;
+  // Catalogues give satellites a mass and an orbit but no size: typical full span in metres.
+  const SAT_SPAN_M = [[/starlink/i, 11]];
   const EYE_LIMIT = 6.0;    // faintest V magnitude seen with the naked eye under a dark sky
   const BINO_LIMIT = 9.5;   // faintest V magnitude seen in typical 10×50 binoculars
   // Effective temperature by spectral type (dwarf scale, Pecaut & Mamajek 2013, rounded).
@@ -26,7 +29,7 @@
     size: { label: "Size", order: "from smallest to largest", cmp: (a, b) => a.r - b.r },
     distance: { label: "Distance from Earth", order: "from nearest to farthest",
       cmp: (a, b) => (a.ly === null) - (b.ly === null) || a.ly - b.ly || a.r - b.r },
-    temperature: { label: "Temperature", order: "from coolest to hottest (the planets, which have no stellar temperature, come first)",
+    temperature: { label: "Temperature", order: "from coolest to hottest (the satellite and planets, which have no stellar temperature, come first)",
       cmp: (a, b) => (a.teff || 0) - (b.teff || 0) || a.r - b.r },
   };
   let S = null;
@@ -119,7 +122,7 @@
     const shown = [], missing = [];
     Object.values((data && data.objects) || {}).forEach((raw) => {
       const cat = raw.category;
-      if (cat !== "stars" && cat !== "planets") return;
+      if (cat !== "stars" && cat !== "planets" && cat !== "satellites") return;
       const s = raw.summary || {}, sb = raw.simbad || {};
       const o = { path: raw.path, name: raw.name, category: cat, type: s.object_type || raw.app_type || "", spType: s.spectral_type || null };
       o.ly = num(s.distance_ly);
@@ -135,6 +138,18 @@
       }
       o.r = radiusSun(s.radius);
       o.how = o.r !== null ? "catalogue" : null;
+      if (cat === "satellites") {
+        o.type = "Satellite";
+        const span = SAT_SPAN_M.find(([re]) => re.test(o.name));
+        if (span) { o.r = span[1] / 2000 / R_SUN_KM; o.how = "typical"; }
+        // slant range at the sighting, from the mean orbit height and the altitude angle
+        const h = (num(s.apogee_km) + num(s.perigee_km)) / 2, b = (raw.observations || []).find((x) => num(x.altitude_deg) !== null);
+        if (h > 0 && b) {
+          const a = num(b.altitude_deg) * Math.PI / 180, R = R_EARTH_KM;
+          const km = Math.sqrt(Math.pow(R + h, 2) - Math.pow(R * Math.cos(a), 2)) - R * Math.sin(a);
+          o.ly = km / 9.4607e12;
+        }
+      }
       if (cat === "stars") {
         o.teff = num(s.teff_k); o.teffHow = "measured";
         if (o.teff === null && o.spType) { o.teff = teffFromSpType(o.spType); o.teffHow = "spectral type"; }
@@ -165,13 +180,25 @@
 
   // ---------------------------------------------------------------- layout
   // Diameters are drawn on a log scale: an object of radius R stands log10(R / 10^LOG_MIN) decades
-  // tall, every object on the same baseline, so the rulers beside them all share one scale.
-  const LOG_MIN = -3;   // 0.001 R☉ (about 700 km) is height zero
+  // tall (LOG_MIN is the decade below the smallest object), every object on the same baseline, so the rulers beside them all share one scale.
   const RULER_W = 40;   // ruler line plus its tick labels, left of each sphere
   function esc(t) { return String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]); }
-  function decadeLabel(e) { return e < 0 ? (+Math.pow(10, e).toFixed(-e)).toString() : Math.pow(10, e).toLocaleString("en-US"); }
+  function decadeLabel(e) {
+    if (e <= -4) return "10" + String(e).replace(/./g, (c) => "⁻⁰¹²³⁴⁵⁶⁷⁸⁹"["-0123456789".indexOf(c)]);
+    return e < 0 ? (+Math.pow(10, e).toFixed(-e)).toString() : Math.pow(10, e).toLocaleString("en-US");
+  }
+  function logRange(list) {
+    const rs = list.map((o) => Math.log10(o.r));
+    return [Math.floor(Math.min.apply(null, rs)), Math.ceil(Math.max.apply(null, rs) - 1e-9)];
+  }
+  function subLabel(o) {
+    if (o.category === "planets") return "planet";
+    if (o.category === "satellites") return "satellite";
+    return o.spType || Math.round(o.teff).toLocaleString("en-US") + " K";
+  }
   function distanceText(o) {
     if (o.ly === null) return "distance unknown";
+    if (o.ly < 1e-9) return sig(o.ly * 9.4607e12) + " km";   // satellites
     if (o.ly < 0.01) return sig(o.ly * 525960) + " light-minutes";   // planets
     return sig(o.ly) + " ly";
   }
@@ -184,10 +211,13 @@
     if (vis.eye === null) return "Visibility unknown (no V magnitude)";
     return "V " + o.v.toFixed(2).replace("-", "−") + " · " + (vis.eye ? "naked eye" : vis.bino ? "binoculars" : "telescope");
   }
-  function radiusText(o) { return (o.how === "catalogue" ? "" : "≈ ") + sig(o.r) + " R☉"; }
+  function radiusText(o) {
+    const km = o.r * R_SUN_KM;
+    return (o.how === "catalogue" ? "" : "≈ ") + (km < 1 ? sig(km * 1000) + " m" : sig(o.r) + " R☉");
+  }
 
   function layout(list, plotH) {
-    const logMax = Math.ceil(Math.log10(Math.max.apply(null, list.map((o) => o.r))) - 1e-9);
+    const [LOG_MIN, logMax] = logRange(list);
     const unit = plotH / (logMax - LOG_MIN);   // pixels per decade
     let x = 16;
     const items = list.map((o) => {
@@ -200,11 +230,11 @@
       x += w;
       return it;
     });
-    return { items, unit, logMax, width: x + 16 };
+    return { items, unit, logMin: LOG_MIN, logMax, width: x + 16 };
   }
 
   // ---------------------------------------------------------------- drawing
-  function rulerSvg(it, y0, unit) {
+  function rulerSvg(it, y0, unit, LOG_MIN) {
     const top = y0 - it.d, x = it.rx, out = [];
     out.push(`<line class="mo-sz-rule" x1="${x}" y1="${y0}" x2="${x}" y2="${top}"/>`);
     const eMax = Math.log10(it.o.r);
@@ -226,13 +256,18 @@
   }
   function sphereSvg(it, y0, k) {
     const o = it.o, r = it.d / 2, cy = y0 - r;
+    if (o.category === "satellites") {   // a grey cube seen corner-on
+      return `<polygon class="mo-sz-ball" data-k="${k}" points="${it.cx},${y0 - 2 * r} ${it.cx + r},${cy} ${it.cx},${y0} ${it.cx - r},${cy}" fill="url(#mo-sz-sat)"/>`;
+    }
     if (o.category === "planets") return `<circle class="mo-sz-ball" data-k="${k}" cx="${it.cx}" cy="${cy}" r="${r}" fill="url(#mo-sz-planet)"/>`;
     return `<circle class="mo-sz-glow" cx="${it.cx}" cy="${cy}" r="${r * 1.12 + 2}" fill="url(#mo-sz-g${k})"/>` +
       `<circle class="mo-sz-ball" data-k="${k}" cx="${it.cx}" cy="${cy}" r="${r}" fill="url(#mo-sz-s${k})"/>`;
   }
   function defsSvg(list) {
     const out = ['<radialGradient id="mo-sz-planet" cx="50%" cy="50%" fx="35%" fy="32%" r="50%">' +
-      '<stop offset="0" stop-color="#ececec"/><stop offset=".45" stop-color="#a4a4a4"/><stop offset="1" stop-color="#2c2c2c"/></radialGradient>'];
+      '<stop offset="0" stop-color="#ececec"/><stop offset=".45" stop-color="#a4a4a4"/><stop offset="1" stop-color="#2c2c2c"/></radialGradient>',
+      '<linearGradient id="mo-sz-sat" x1="0" y1="0" x2="1" y2="1">' +
+      '<stop offset="0" stop-color="#ececec"/><stop offset=".5" stop-color="#b4b4b4"/><stop offset=".5" stop-color="#6c6c6c"/><stop offset="1" stop-color="#2c2c2c"/></linearGradient>'];
     list.forEach((o, k) => {
       if (o.category !== "stars") return;
       const c = o.rgb;   // limb darkening: brighter centre, darker edge
@@ -256,11 +291,11 @@
     parts.push(`<line class="mo-sz-base" x1="0" y1="${y0 + 0.5}" x2="${L.width}" y2="${y0 + 0.5}"/>`);
     L.items.forEach((it, k) => {
       parts.push(`<g class="mo-sz-item" data-k="${k}">`);
-      parts.push(rulerSvg(it, y0, L.unit));
+      parts.push(rulerSvg(it, y0, L.unit, L.logMin));
       parts.push(sphereSvg(it, y0, k));
       parts.push(`<text class="mo-sz-value" x="${it.cx}" y="${y0 - it.d - 8}">${esc(radiusText(it.o))}</text>`);
       parts.push(`<text class="mo-sz-label" x="${it.mid}" y="${y0 + 20}">${esc(it.o.name)}</text>`);
-      parts.push(`<text class="mo-sz-sublabel" x="${it.mid}" y="${y0 + 36}">${it.o.category === "planets" ? "planet" : esc(it.o.spType || Math.round(it.o.teff).toLocaleString("en-US") + " K")}</text>`);
+      parts.push(`<text class="mo-sz-sublabel" x="${it.mid}" y="${y0 + 36}">${esc(subLabel(it.o))}</text>`);
       parts.push(`<text class="mo-sz-distance" x="${it.mid}" y="${y0 + 52}">${esc(distanceText(it.o))}</text>`);
       const vis = visibility(it.o), cls = (on) => "mo-sz-vis" + (on === null ? " is-unknown" : on ? "" : " is-off");
       parts.push(`<use class="${cls(vis.eye)}" href="#mo-sz-eye" x="${it.mid - 21}" y="${y0 + 62}" width="16" height="16"/>`);
@@ -274,16 +309,16 @@
   // ---------------------------------------------------------------- interaction
   function tipHtml(o) {
     const km = o.r * R_SUN_KM;
-    const how = { catalogue: "catalogue radius (Wikidata)", luminosity: "estimated from luminosity and temperature",
+    const how = { catalogue: "catalogue radius (Wikidata)", typical: "typical size for this kind of satellite (body and solar array); no catalogue size", luminosity: "estimated from luminosity and temperature",
       magnitude: "estimated from absolute magnitude and temperature" }[o.how];
     const rows = [
       `<strong>${esc(o.name)}</strong>`,
       esc(o.type + (o.spType ? " · " + o.spType : "")),
-      `Radius ${esc(sig(o.r))} R☉ · ${esc(sig(km))} km` + (o.category === "planets" ? ` · ${esc(sig(km / 6371))} Earth radii` : ""),
+      (km < 1 ? `Radius ${esc(radiusText(o))}` : `Radius ${esc(sig(o.r))} R☉ · ${esc(sig(km))} km`) + (o.category === "planets" ? ` · ${esc(sig(km / 6371))} Earth radii` : ""),
       esc(how),
     ];
     rows.push(esc(visText(o)));
-    rows.push("Distance from Earth " + esc(distanceText(o)) + (o.category === "planets" ? " (latest ephemeris)" : ""));
+    rows.push("Distance from Earth " + esc(distanceText(o)) + (o.category === "planets" ? " (latest ephemeris)" : o.category === "satellites" ? " (line of sight at the sighting)" : ""));
     if (o.category === "stars") rows.push(`Temperature ${Math.round(o.teff).toLocaleString("en-US")} K (${esc(o.teffHow)})`);
     return rows.join("<br>");
   }
@@ -341,8 +376,8 @@
     head.appendChild(el("h1", "mo-sz-title", "Sizes"));
     S.sub = el("p", "mo-sz-sub");
     S.subRest = " Each diameter is drawn on a logarithmic scale " +
-      "from 0.001 to " + decadeLabel(Math.ceil(Math.log10(P.shown[P.shown.length - 1].r) - 1e-9)) + " solar radii (R☉), and the ruler beside each object reads its radius on that scale. " +
-      "Star colours are the blackbody colour of each star's effective temperature; planets are grey.";
+      "from " + decadeLabel(logRange(P.shown)[0]) + " to " + decadeLabel(logRange(P.shown)[1]) + " solar radii (R☉), and the ruler beside each object reads its radius on that scale. " +
+      "Star colours are the blackbody colour of each star's effective temperature; planets are grey spheres and satellites grey diamonds.";
     head.appendChild(S.sub);
     root.appendChild(head);
 
@@ -375,7 +410,7 @@
     root.appendChild(el("p", "mo-sz-hint", "Scroll sideways or drag to move along the row. Hover over an object for its details; click it to open its page. Values marked ≈ are estimates. " +
       "A lit eye means the object is brighter than magnitude " + EYE_LIMIT.toFixed(1) + ", the naked-eye limit under a dark sky; a lit binocular icon means it is brighter than magnitude " + BINO_LIMIT.toFixed(1) + ", the limit of typical 10×50 binoculars."));
     if (P.missing.length) {
-      root.appendChild(el("p", "mo-sz-note", "Not drawn, because no radius, temperature or distance is recorded: " + P.missing.map((o) => o.name).join(", ") + ". Constellations, clusters and satellites are not drawn."));
+      root.appendChild(el("p", "mo-sz-note", "Not drawn, because no radius, temperature or distance is recorded: " + P.missing.map((o) => o.name).join(", ") + ". Constellations and clusters are not drawn."));
     }
     container.replaceChildren(root);
     applySort();
@@ -389,10 +424,10 @@
   function applySort() {
     const so = SORTS[sortKey];
     S.list = S.all.slice().sort(so.cmp);
-    S.sub.textContent = S.list.length + " stars and planets in a row " + so.order + "." + S.subRest;
+    S.sub.textContent = S.list.length + " objects in a row " + so.order + "." + S.subRest;
     S.pick.replaceChildren();
     S.list.forEach((o, k) => {
-      const v = sortKey === "distance" ? distanceText(o) : sortKey === "temperature" ? (o.teff ? Math.round(o.teff).toLocaleString("en-US") + " K" : "planet") : radiusText(o);
+      const v = sortKey === "distance" ? distanceText(o) : sortKey === "temperature" ? (o.teff ? Math.round(o.teff).toLocaleString("en-US") + " K" : subLabel(o)) : radiusText(o);
       const op = el("option", null, o.name + " — " + v); op.value = String(k); S.pick.appendChild(op);
     });
     draw();
