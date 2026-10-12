@@ -33,6 +33,7 @@ View: open `index.html` directly (data reaches the page through the `.js` mirror
 data/
   index.json                    list of objects for the viewer (rebuilt every run)
   gz_ids.json                   object name -> GZ catalogue number (append-only; never renumber)
+  targets.json / targets.js     stars from targets.csv not yet observed (window.MO_TARGETS); summary only
   bundle.js                     window.MO_DATA = {index, objects}: index.json plus every object.json
   locations.json                observing sites: lat, lon, elev_m, tz (edit to add sites)
   sky/
@@ -52,6 +53,8 @@ The `.json` files are the source of truth; `bundle.js`, `extra.js` and `boundari
 Categories come from the MO Pro type line (`CATEGORY_RULES` in the script): `stars`, `planets`, `moons`, `constellations`, `satellites`, `clusters`, `nebulae`, `galaxies`, `comets`, `minor-bodies`, `other`. Slugs spell Greek letters out (`τ² Hya` → `tau2-hya`).
 
 `object.json` keys: `name`, `category`, `app_type`, `resolved` (how the name was matched), `summary` (normalised key facts the viewer shows first), `simbad`, `papers_count` (SIMBAD objects only), `wikipedia`, `wikidata`, `horizons`, `celestrak`, `geometry` (constellations), `images`, `observations` (each with UTC time, altitude/azimuth at that moment, and for planets the Horizons ephemeris), `sources` (with retrieval dates), `harvested`, `id`, `path`, `gz_id`.
+
+`targets.csv` (`object,note`) lists stars to look for. `write_targets()` resolves each through Sesame, SIMBAD and Wikidata (no papers, images or article) and keeps only `name`, `note`, `resolved` and `summary`; existing entries are reused unless the run is a full `--refresh`. A parallax under 5 sigma is not turned into a distance: Wikidata's distance is used if it has one, otherwise the distance is left out. Targets are not in `index.json` and get no GZ number until they are observed.
 
 `gz_id` (`GZ-1`, `GZ-2`, …) numbers objects in the order they were first observed. `assign_gz_ids()` keeps the numbers in `data/gz_ids.json`, keyed by the name as written in observations.csv; an object new to that file gets the next number after every existing one, in order of its earliest observation and then name, so a number never changes once given. Renaming an object in the CSV gives it a new number unless its key in `gz_ids.json` is renamed too.
 

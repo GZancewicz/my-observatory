@@ -118,13 +118,16 @@
     return null;
   }
 
-  function prep(data) {
+  // Targets (data/targets.js, from targets.csv) are stars not yet observed; they are drawn as outlines.
+  function prep(data, targets) {
     const shown = [], missing = [];
-    Object.values((data && data.objects) || {}).forEach((raw) => {
+    const extra = ((targets && targets.targets) || []).map((t) => Object.assign({}, t, {
+      target: true, path: null, name: (t.resolved && t.resolved.wikipedia) || t.name, observations: [] }));
+    Object.values((data && data.objects) || {}).concat(extra).forEach((raw) => {
       const cat = raw.category;
       if (cat !== "stars" && cat !== "planets" && cat !== "satellites") return;
       const s = raw.summary || {}, sb = raw.simbad || {};
-      const o = { path: raw.path, name: raw.name, category: cat, type: s.object_type || raw.app_type || "", spType: s.spectral_type || null };
+      const o = { path: raw.path, name: raw.name, category: cat, target: !!raw.target, note: raw.note || null, type: s.object_type || raw.app_type || "", spType: s.spectral_type || null };
       o.gz = raw.gz_id || null;
       o.cons = s.constellation || null;
       o.consAtSighting = false;
@@ -180,6 +183,7 @@
         }
         o.rgb = o.teff ? blackbody(o.teff) : null;
       }
+      if (o.target) o.type = "Target, not yet observed" + (s.object_type ? " · " + s.object_type : "");
       if (o.r === null || !(o.r > 0) || (cat === "stars" && !o.rgb)) { missing.push(o); return; }
       shown.push(o);
     });
@@ -199,11 +203,13 @@
   }
   const LOG_FLOOR = -3;   // 0.001 R☉ (about 700 km) is height zero
   const SAT_PX = 5;       // satellites sit far below the floor and are drawn as a tiny diamond
-  function logRange(list) {
-    const rs = list.map((o) => Math.log10(o.r));
+  function logRange(list) {   // set by observed objects only, so targets never rescale the spheres
+    const seen = list.filter((o) => !o.target);
+    const rs = (seen.length ? seen : list).map((o) => Math.log10(o.r));
     return [LOG_FLOOR, Math.ceil(Math.max.apply(null, rs) - 1e-9)];
   }
   function subLabel(o) {
+    if (o.target) return "target" + (o.spType ? " · " + o.spType : "");
     if (o.category === "planets") return "planet";
     if (o.category === "satellites") return "satellite";
     return o.spType || Math.round(o.teff).toLocaleString("en-US") + " K";
@@ -275,6 +281,7 @@
       return `<polygon class="mo-sz-ball" data-k="${k}" points="${it.cx},${y0 - 2 * r} ${it.cx + r},${cy} ${it.cx},${y0} ${it.cx - r},${cy}" fill="url(#mo-sz-sat)"/>`;
     }
     if (o.category === "planets") return `<circle class="mo-sz-ball" data-k="${k}" cx="${it.cx}" cy="${cy}" r="${r}" fill="url(#mo-sz-planet)"/>`;
+    if (o.target) return `<circle class="mo-sz-ball mo-sz-outline" data-k="${k}" cx="${it.cx}" cy="${cy}" r="${Math.max(0.5, r - 1)}" fill="none" stroke="${css(o.rgb)}"/>`;
     return `<circle class="mo-sz-glow" cx="${it.cx}" cy="${cy}" r="${r * 1.12 + 2}" fill="url(#mo-sz-g${k})"/>` +
       `<circle class="mo-sz-ball" data-k="${k}" cx="${it.cx}" cy="${cy}" r="${r}" fill="url(#mo-sz-s${k})"/>`;
   }
@@ -298,8 +305,9 @@
   function draw() {
     if (!S) return;
     const plotH = Math.round(Math.max(260, Math.min(460, window.innerHeight * 0.5)));
-    const top = 44, y0 = top + plotH, h = y0 + 102;
     const L = layout(S.list, plotH);
+    const over = Math.max(0, ...L.items.map((it) => it.d)) - plotH;   // targets taller than the scale
+    const top = 44 + Math.max(0, Math.ceil(over)), y0 = top + plotH, h = y0 + 102;
     S.layout = L;
     const parts = [`<svg class="mo-sz-svg" width="${L.width}" height="${h}" viewBox="0 0 ${L.width} ${h}" role="img" aria-label="Stars and planets ${SORTS[sortKey].order}, with diameters on a logarithmic scale">`];
     parts.push(defsSvg(S.list));
@@ -330,7 +338,7 @@
     const how = { catalogue: "catalogue radius (Wikidata)", typical: "typical size for this kind of satellite (body and solar array); no catalogue size", luminosity: "estimated from luminosity and temperature",
       magnitude: "estimated from absolute magnitude and temperature" }[o.how];
     const rows = [
-      `<strong>${esc(o.name)}</strong>` + (o.gz ? ` · ${esc(o.gz)}` : ""),
+      `<strong>${esc(o.name)}</strong>` + (o.gz ? ` · ${esc(o.gz)}` : "") + (o.note ? ` · ${esc(o.note)}` : ""),
       o.cons ? esc(o.cons + (o.consAtSighting ? " (at the latest sighting)" : "")) : null,
       esc(o.type + (o.spType ? " · " + o.spType : "")),
       (km < 1 ? `Radius ${esc(radiusText(o))}` : `Radius ${esc(sig(o.r))} R☉ · ${esc(sig(km))} km`) + (o.category === "planets" ? ` · ${esc(sig(km / 6371))} Earth radii` : ""),
@@ -369,7 +377,7 @@
       const d = S.drag; S.drag = null;
       if (d && d.moved) return;
       const g = e.target.closest && e.target.closest(".mo-sz-item");
-      if (g && st.contains(g)) S.navigate(S.list[+g.dataset.k].path);
+      if (g && st.contains(g) && S.list[+g.dataset.k].path) S.navigate(S.list[+g.dataset.k].path);
     });
     on(st, "pointerleave", () => { S.tip.hidden = true; });
     on(st, "keydown", (e) => {
@@ -385,7 +393,7 @@
   function render(container, opts) {
     destroy();
     opts = opts || {};
-    const P = prep(opts.data || window.MO_DATA);
+    const P = prep(opts.data || window.MO_DATA, opts.targets || window.MO_TARGETS);
     const root = el("div", "mo-sizes");
     if (!P.shown.length) { root.appendChild(el("p", "mo-empty", "No stars or planets with a known size.")); container.replaceChildren(root); return; }
     S = { root, all: P.shown, list: P.shown, listeners: [], observers: [], drag: null,
@@ -396,7 +404,7 @@
     S.sub = el("p", "mo-sz-sub");
     S.subRest = " Each diameter is drawn on a logarithmic scale " +
       "from " + decadeLabel(logRange(P.shown)[0]) + " to " + decadeLabel(logRange(P.shown)[1]) + " solar radii (R☉), and the ruler beside each object reads its radius on that scale. " +
-      "Star colours are the blackbody colour of each star's effective temperature; planets are grey spheres and satellites grey diamonds.";
+      "Star colours are the blackbody colour of each star's effective temperature; planets are grey spheres and satellites grey diamonds. Stars on the target list (targets.csv), not yet observed, are drawn as outlines.";
     head.appendChild(S.sub);
     root.appendChild(head);
 

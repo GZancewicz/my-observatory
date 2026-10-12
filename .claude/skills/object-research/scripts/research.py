@@ -37,6 +37,7 @@ import requests
 ROOT = Path.cwd()
 DATA = ROOT / "data"
 CSV_PATH = ROOT / "observations.csv"
+TARGETS_PATH = ROOT / "targets.csv"
 UA = {"User-Agent": "my-observatory/0.1 (personal observing log)"}
 PAUSE = 0.3  # seconds between requests to the same service
 # host -> (minimum seconds between request starts, requests in flight at once)
@@ -1351,6 +1352,62 @@ def attach_observations(obj, rows, locations):
     obj["observations"] = sorted(out, key=lambda e: e["datetime"], reverse=True)
 
 
+# ---------- targets (not yet observed) ----------
+
+def harvest_target(name, note):
+    """Summary-only record for a star on targets.csv: SIMBAD and Wikidata, no papers, images or article."""
+    simbad_id, qid, wiki_title, method = resolve_star(name)
+    obj = {"name": name, "category": "stars", "note": note or None, "harvested": now_iso(),
+           "resolved": {"method": method, "simbad_id": simbad_id, "wikidata": qid, "wikipedia": wiki_title}}
+    rec = simbad_record(simbad_id) if simbad_id else None
+    if rec:
+        obj["simbad"] = {k: rec.get(k) for k in ("main_id", "otype_desc", "sp_type", "ra", "dec", "plx_value",
+                                                 "plx_err", "fluxes", "teff_median")}
+    if qid:
+        ent = wikidata_entity(qid)
+        if ent:
+            obj["wikidata"] = {"id": qid, "facts": wikidata_facts(ent)[0]}
+    if wiki_title:
+        obj["wikipedia"] = {"title": wiki_title, "description": (wiki_summary(wiki_title) or {}).get("description")}
+    s = summarise(obj)
+    # Red supergiants have poor parallaxes: under 5 sigma, use Wikidata's distance or none at all.
+    sb, d = obj.get("simbad") or {}, first((obj.get("wikidata") or {}).get("facts", {}), "distance from Earth")
+    weak = not sb.get("plx_value") or not sb.get("plx_err") or sb["plx_value"] / sb["plx_err"] < 5
+    if weak:
+        for k in ("distance_ly", "distance_pc", "abs_mag"):
+            s.pop(k, None)
+        if d and d.get("unit") in ("ly", "pc"):
+            s["distance_ly"] = d["value"] if d["unit"] == "ly" else round(d["value"] * 3.26156, 1)
+    obj["summary"] = s
+    obj.pop("simbad", None)
+    obj.pop("wikidata", None)
+    return obj
+
+
+def write_targets(refresh=False):
+    """targets.csv -> data/targets.json and data/targets.js (window.MO_TARGETS)."""
+    if not TARGETS_PATH.exists():
+        return
+    try:
+        old = {t["name"]: t for t in json.loads((DATA / "targets.json").read_text())["targets"]}
+    except (OSError, ValueError, KeyError):
+        old = {}
+    out = []
+    for row in csv.DictReader(open(TARGETS_PATH, encoding="utf-8")):
+        name = row["object"].strip()
+        if not name:
+            continue
+        t = old.get(name) if not refresh else None
+        if t is None:
+            print(f"target {name}", flush=True)
+            t = harvest_target(name, (row.get("note") or "").strip())
+        out.append(t)
+    data = {"generated": now_iso(), "targets": out}
+    write_json(DATA / "targets.json", data)
+    (DATA / "targets.js").write_text("window.MO_TARGETS = " + js_json(data) + ";\n")
+    print(f"{len(out)} targets -> data/targets.json", flush=True)
+
+
 # ---------- GZ catalogue numbers ----------
 
 def assign_gz_ids(objects):
@@ -1452,6 +1509,7 @@ def main():
 
     if args.sky or (args.refresh and not args.only) or not (DATA / "sky" / "boundaries.js").exists():
         build_boundaries()
+    write_targets(refresh=args.refresh and not args.only)
     write_index()
 
 

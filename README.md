@@ -60,6 +60,8 @@ The **Overview** page has linked charts across all observations: an H-R diagram,
 
 The **Sizes** page puts every star, planet and satellite with a known or derivable size in a row, sorted by size, distance from Earth or temperature. Diameters are drawn on a logarithmic scale from 0.001 to 1,000 solar radii, with a ruler beside each object marked on that scale and its constellation, GZ number and distance from Earth underneath (light-years for stars, light-minutes for planets), with an eye icon lit for objects brighter than magnitude 6.0 and a binocular icon lit for objects brighter than magnitude 9.5 or for any icon whose equipment a sighting logged. Stars are coloured by the blackbody colour of their effective temperature; planets are grey spheres. Satellites are far below the bottom of the scale and are shown as a tiny grey diamond without a ruler. A star without a catalogue radius gets one estimated from its luminosity, or from its absolute magnitude and a bolometric correction, together with its temperature, and the estimate is marked ≈.
 
+Stars not yet observed can be listed in `targets.csv` (one name per row, with an optional note). The research script looks them up in SIMBAD and Wikidata and writes `data/targets.json` and `data/targets.js`, and the Sizes page draws them as outlines on the same scale. A target's distance is left blank when its parallax is too uncertain and Wikidata gives none.
+
 The page has a night mode. It needs an internet connection for D3 and Aladin Lite, which load from public CDNs.
 
 ## Adding new observations
