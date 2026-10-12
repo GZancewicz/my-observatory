@@ -298,7 +298,7 @@
   function draw() {
     if (!S) return;
     const plotH = Math.round(Math.max(260, Math.min(460, window.innerHeight * 0.5)));
-    const top = 30, y0 = top + plotH, h = y0 + 102;
+    const top = 44, y0 = top + plotH, h = y0 + 102;
     const L = layout(S.list, plotH);
     S.layout = L;
     const parts = [`<svg class="mo-sz-svg" width="${L.width}" height="${h}" viewBox="0 0 ${L.width} ${h}" role="img" aria-label="Stars and planets ${SORTS[sortKey].order}, with diameters on a logarithmic scale">`];
@@ -308,7 +308,9 @@
       parts.push(`<g class="mo-sz-item" data-k="${k}">`);
       if (it.o.r >= Math.pow(10, L.logMin)) parts.push(rulerSvg(it, y0, L.unit, L.logMin));
       parts.push(sphereSvg(it, y0, k));
-      parts.push(`<text class="mo-sz-value" x="${it.cx}" y="${y0 - it.d - 8}">${esc(radiusText(it.o))}</text>`);
+      const mag = it.o.v === null ? null : "mag " + it.o.v.toFixed(1).replace("-", "−");
+      parts.push(`<text class="mo-sz-value" x="${it.cx}" y="${y0 - it.d - (mag ? 22 : 8)}">${esc(radiusText(it.o))}</text>`);
+      if (mag) parts.push(`<text class="mo-sz-mag" x="${it.cx}" y="${y0 - it.d - 8}">${esc(mag)}</text>`);
       parts.push(`<text class="mo-sz-label" x="${it.mid}" y="${y0 + 20}">${esc(it.o.name)}</text>`);
       parts.push(`<text class="mo-sz-cons" x="${it.mid}" y="${y0 + 36}">${esc(it.o.cons ? it.o.cons + (it.o.consAtSighting ? " (at sighting)" : "") : "—")}</text>`);
       parts.push(`<text class="mo-sz-sublabel" x="${it.mid}" y="${y0 + 52}">${esc([it.o.gz, subLabel(it.o)].filter(Boolean).join(" · "))}</text>`);
