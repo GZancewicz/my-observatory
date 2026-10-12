@@ -44,6 +44,7 @@
 .mo-sizes .mo-sz-value { fill: var(--text); font: 600 12px Inter, system-ui, sans-serif; text-anchor: middle; }
 .mo-sizes .mo-sz-label { fill: var(--text); font: 600 12px Inter, system-ui, sans-serif; text-anchor: middle; }
 .mo-sizes .mo-sz-sublabel { fill: var(--muted); font: 11px Inter, system-ui, sans-serif; text-anchor: middle; }
+.mo-sizes .mo-sz-distance { fill: var(--muted); font: 11px var(--mono); text-anchor: middle; }
 .mo-sizes .mo-sz-item:hover .mo-sz-label,
 .mo-sizes .mo-sz-item:hover .mo-sz-value { fill: var(--accent); }
 .mo-sizes .mo-sz-item:hover .mo-sz-rule,

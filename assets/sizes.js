@@ -111,6 +111,11 @@
       if (cat !== "stars" && cat !== "planets") return;
       const s = raw.summary || {}, sb = raw.simbad || {};
       const o = { path: raw.path, name: raw.name, category: cat, type: s.object_type || raw.app_type || "", spType: s.spectral_type || null };
+      o.ly = num(s.distance_ly);
+      if (cat === "planets") {   // distance at the latest Horizons ephemeris row, AU -> ly
+        const eph = ((raw.horizons || {}).ephemeris || []).filter((e) => num(e.delta) !== null);
+        if (eph.length) o.ly = num(eph[eph.length - 1].delta) * 1.58125e-5;
+      }
       o.r = radiusSun(s.radius);
       o.how = o.r !== null ? "catalogue" : null;
       if (cat === "stars") {
@@ -148,6 +153,11 @@
   const RULER_W = 40;   // ruler line plus its tick labels, left of each sphere
   function esc(t) { return String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]); }
   function decadeLabel(e) { return e < 0 ? (+Math.pow(10, e).toFixed(-e)).toString() : Math.pow(10, e).toLocaleString("en-US"); }
+  function distanceText(o) {
+    if (o.ly === null) return "distance unknown";
+    if (o.ly < 0.01) return sig(o.ly * 525960) + " light-minutes";   // planets
+    return sig(o.ly) + " ly";
+  }
   function radiusText(o) { return (o.how === "catalogue" ? "" : "≈ ") + sig(o.r) + " R☉"; }
 
   function layout(list, plotH) {
@@ -210,7 +220,7 @@
   function draw() {
     if (!S) return;
     const plotH = Math.round(Math.max(260, Math.min(460, window.innerHeight * 0.5)));
-    const top = 30, y0 = top + plotH, h = y0 + 48;
+    const top = 30, y0 = top + plotH, h = y0 + 64;
     const L = layout(S.list, plotH);
     S.layout = L;
     const parts = [`<svg class="mo-sz-svg" width="${L.width}" height="${h}" viewBox="0 0 ${L.width} ${h}" role="img" aria-label="Stars and planets, smallest to largest, with diameters on a logarithmic scale">`];
@@ -223,6 +233,7 @@
       parts.push(`<text class="mo-sz-value" x="${it.cx}" y="${y0 - it.d - 8}">${esc(radiusText(it.o))}</text>`);
       parts.push(`<text class="mo-sz-label" x="${it.mid}" y="${y0 + 20}">${esc(it.o.name)}</text>`);
       parts.push(`<text class="mo-sz-sublabel" x="${it.mid}" y="${y0 + 36}">${it.o.category === "planets" ? "planet" : esc(it.o.spType || Math.round(it.o.teff).toLocaleString("en-US") + " K")}</text>`);
+      parts.push(`<text class="mo-sz-distance" x="${it.mid}" y="${y0 + 52}">${esc(distanceText(it.o))}</text>`);
       parts.push("</g>");
     });
     parts.push("</svg>");
@@ -240,6 +251,7 @@
       `Radius ${esc(sig(o.r))} R☉ · ${esc(sig(km))} km` + (o.category === "planets" ? ` · ${esc(sig(km / 6371))} Earth radii` : ""),
       esc(how),
     ];
+    rows.push("Distance from Earth " + esc(distanceText(o)) + (o.category === "planets" ? " (latest ephemeris)" : ""));
     if (o.category === "stars") rows.push(`Temperature ${Math.round(o.teff).toLocaleString("en-US")} K (${esc(o.teffHow)})`);
     return rows.join("<br>");
   }
