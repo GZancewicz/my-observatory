@@ -8,6 +8,8 @@
   const R_SUN_KM = 695700;
   const T_SUN = 5772;
   const MBOL_SUN = 4.74;
+  const EYE_LIMIT = 6.0;    // faintest V magnitude seen with the naked eye under a dark sky
+  const BINO_LIMIT = 9.5;   // faintest V magnitude seen in typical 10×50 binoculars
   // Effective temperature by spectral type (dwarf scale, Pecaut & Mamajek 2013, rounded).
   const SPT_TEFF = {
     O: [[3, 44900], [5, 41400], [7, 36100], [9, 31900]],
@@ -116,6 +118,12 @@
         const eph = ((raw.horizons || {}).ephemeris || []).filter((e) => num(e.delta) !== null);
         if (eph.length) o.ly = num(eph[eph.length - 1].delta) * 1.58125e-5;
       }
+      o.v = num(s.v_mag);
+      if (o.v === null && sb.fluxes && sb.fluxes.V) o.v = num(sb.fluxes.V.mag);
+      if (o.v === null) {
+        const eph = ((raw.horizons || {}).ephemeris || []).filter((e) => num(e.APmag) !== null);
+        if (eph.length) o.v = num(eph[eph.length - 1].APmag);
+      }
       o.r = radiusSun(s.radius);
       o.how = o.r !== null ? "catalogue" : null;
       if (cat === "stars") {
@@ -157,6 +165,15 @@
     if (o.ly === null) return "distance unknown";
     if (o.ly < 0.01) return sig(o.ly * 525960) + " light-minutes";   // planets
     return sig(o.ly) + " ly";
+  }
+  function visibility(o) {
+    if (o.v === null) return { eye: null, bino: null };
+    return { eye: o.v <= EYE_LIMIT, bino: o.v <= BINO_LIMIT };
+  }
+  function visText(o) {
+    const vis = visibility(o);
+    if (vis.eye === null) return "Visibility unknown (no V magnitude)";
+    return "V " + o.v.toFixed(2).replace("-", "−") + " · " + (vis.eye ? "naked eye" : vis.bino ? "binoculars" : "telescope");
   }
   function radiusText(o) { return (o.how === "catalogue" ? "" : "≈ ") + sig(o.r) + " R☉"; }
 
@@ -214,13 +231,15 @@
         `<stop offset=".88" stop-color="${css(c, 0.85)}"/><stop offset="1" stop-color="${css(c, 0.6)}"/></radialGradient>`);
       out.push(`<radialGradient id="mo-sz-g${k}"><stop offset=".8" stop-color="${css(c, 1, 0.35)}"/><stop offset="1" stop-color="${css(c, 1, 0)}"/></radialGradient>`);
     });
+    out.push('<symbol id="mo-sz-eye" viewBox="0 0 24 24"><path d="M1.5 12C4.5 6.5 8 4.5 12 4.5S19.5 6.5 22.5 12C19.5 17.5 16 19.5 12 19.5S4.5 17.5 1.5 12Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3.6" fill="currentColor"/></symbol>');
+    out.push('<symbol id="mo-sz-bino" viewBox="0 0 24 24"><rect x="2.5" y="3" width="7" height="10" rx="2" fill="currentColor"/><rect x="14.5" y="3" width="7" height="10" rx="2" fill="currentColor"/><rect x="9" y="6.5" width="6" height="3.5" fill="currentColor"/><circle cx="6" cy="16" r="5" fill="currentColor"/><circle cx="18" cy="16" r="5" fill="currentColor"/></symbol>');
     return "<defs>" + out.join("") + "</defs>";
   }
 
   function draw() {
     if (!S) return;
     const plotH = Math.round(Math.max(260, Math.min(460, window.innerHeight * 0.5)));
-    const top = 30, y0 = top + plotH, h = y0 + 64;
+    const top = 30, y0 = top + plotH, h = y0 + 86;
     const L = layout(S.list, plotH);
     S.layout = L;
     const parts = [`<svg class="mo-sz-svg" width="${L.width}" height="${h}" viewBox="0 0 ${L.width} ${h}" role="img" aria-label="Stars and planets, smallest to largest, with diameters on a logarithmic scale">`];
@@ -234,6 +253,9 @@
       parts.push(`<text class="mo-sz-label" x="${it.mid}" y="${y0 + 20}">${esc(it.o.name)}</text>`);
       parts.push(`<text class="mo-sz-sublabel" x="${it.mid}" y="${y0 + 36}">${it.o.category === "planets" ? "planet" : esc(it.o.spType || Math.round(it.o.teff).toLocaleString("en-US") + " K")}</text>`);
       parts.push(`<text class="mo-sz-distance" x="${it.mid}" y="${y0 + 52}">${esc(distanceText(it.o))}</text>`);
+      const vis = visibility(it.o), cls = (on) => "mo-sz-vis" + (on === null ? " is-unknown" : on ? "" : " is-off");
+      parts.push(`<use class="${cls(vis.eye)}" href="#mo-sz-eye" x="${it.mid - 21}" y="${y0 + 62}" width="16" height="16"/>`);
+      parts.push(`<use class="${cls(vis.bino)}" href="#mo-sz-bino" x="${it.mid + 5}" y="${y0 + 62}" width="16" height="16"/>`);
       parts.push("</g>");
     });
     parts.push("</svg>");
@@ -251,6 +273,7 @@
       `Radius ${esc(sig(o.r))} R☉ · ${esc(sig(km))} km` + (o.category === "planets" ? ` · ${esc(sig(km / 6371))} Earth radii` : ""),
       esc(how),
     ];
+    rows.push(esc(visText(o)));
     rows.push("Distance from Earth " + esc(distanceText(o)) + (o.category === "planets" ? " (latest ephemeris)" : ""));
     if (o.category === "stars") rows.push(`Temperature ${Math.round(o.teff).toLocaleString("en-US")} K (${esc(o.teffHow)})`);
     return rows.join("<br>");
@@ -334,7 +357,8 @@
     S.tip = el("div", "mo-sz-tip"); S.tip.hidden = true; S.tip.setAttribute("role", "tooltip");
     S.stage.appendChild(S.strip); S.stage.appendChild(S.tip);
     root.appendChild(S.stage);
-    root.appendChild(el("p", "mo-sz-hint", "Scroll sideways or drag to move along the row. Hover over an object for its details; click it to open its page. Values marked ≈ are estimates."));
+    root.appendChild(el("p", "mo-sz-hint", "Scroll sideways or drag to move along the row. Hover over an object for its details; click it to open its page. Values marked ≈ are estimates. " +
+      "A lit eye means the object is brighter than magnitude " + EYE_LIMIT.toFixed(1) + ", the naked-eye limit under a dark sky; a lit binocular icon means it is brighter than magnitude " + BINO_LIMIT.toFixed(1) + ", the limit of typical 10×50 binoculars."));
     if (P.missing.length) {
       root.appendChild(el("p", "mo-sz-note", "Not drawn, because no radius, temperature or distance is recorded: " + P.missing.map((o) => o.name).join(", ") + ". Constellations, clusters and satellites are not drawn."));
     }

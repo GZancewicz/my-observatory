@@ -45,6 +45,9 @@
 .mo-sizes .mo-sz-label { fill: var(--text); font: 600 12px Inter, system-ui, sans-serif; text-anchor: middle; }
 .mo-sizes .mo-sz-sublabel { fill: var(--muted); font: 11px Inter, system-ui, sans-serif; text-anchor: middle; }
 .mo-sizes .mo-sz-distance { fill: var(--muted); font: 11px var(--mono); text-anchor: middle; }
+.mo-sizes .mo-sz-vis { color: var(--text); }
+.mo-sizes .mo-sz-vis.is-off { color: var(--muted); opacity: .3; }
+.mo-sizes .mo-sz-vis.is-unknown { color: var(--muted); opacity: .12; }
 .mo-sizes .mo-sz-item:hover .mo-sz-label,
 .mo-sizes .mo-sz-item:hover .mo-sz-value { fill: var(--accent); }
 .mo-sizes .mo-sz-item:hover .mo-sz-rule,
