@@ -130,6 +130,9 @@
         const eph = ((raw.horizons || {}).ephemeris || []).filter((e) => num(e.delta) !== null);
         if (eph.length) o.ly = num(eph[eph.length - 1].delta) * 1.58125e-5;
       }
+      const gear = (raw.observations || []).map((b) => String(b.equipment || "").toLowerCase());
+      o.seenEye = gear.some((g) => /naked|eye/.test(g));
+      o.seenBino = gear.some((g) => /binoc/.test(g));
       o.v = num(s.v_mag);
       if (o.v === null && sb.fluxes && sb.fluxes.V) o.v = num(sb.fluxes.V.mag);
       if (o.v === null) {
@@ -204,14 +207,17 @@
     if (o.ly < 0.01) return sig(o.ly * 525960) + " light-minutes";   // planets
     return sig(o.ly) + " ly";
   }
+  // An icon is lit when the magnitude is within that limit or a sighting logged that equipment.
   function visibility(o) {
-    if (o.v === null) return { eye: null, bino: null };
-    return { eye: o.v <= EYE_LIMIT, bino: o.v <= BINO_LIMIT };
+    const eye = o.seenEye || (o.v === null ? null : o.v <= EYE_LIMIT);
+    const bino = o.seenBino || eye === true || (o.v === null ? null : o.v <= BINO_LIMIT);
+    return { eye: eye === null && bino ? false : eye, bino };
   }
   function visText(o) {
-    const vis = visibility(o);
-    if (vis.eye === null) return "Visibility unknown (no V magnitude)";
-    return "V " + o.v.toFixed(2).replace("-", "−") + " · " + (vis.eye ? "naked eye" : vis.bino ? "binoculars" : "telescope");
+    const vis = visibility(o), seen = [o.seenEye && "naked eye", o.seenBino && "binoculars"].filter(Boolean);
+    const logged = seen.length ? "seen with " + seen.join(" and ") + " (logged)" : "";
+    if (o.v === null) return logged ? "No V magnitude · " + logged : "Visibility unknown (no V magnitude)";
+    return "V " + o.v.toFixed(2).replace("-", "−") + " · " + (vis.eye ? "naked eye" : vis.bino ? "binoculars" : "telescope") + (logged ? " · " + logged : "");
   }
   function radiusText(o) {
     const km = o.r * R_SUN_KM;
@@ -410,7 +416,7 @@
     S.stage.appendChild(S.strip); S.stage.appendChild(S.tip);
     root.appendChild(S.stage);
     root.appendChild(el("p", "mo-sz-hint", "Scroll sideways or drag to move along the row. Hover over an object for its details; click it to open its page. Values marked ≈ are estimates. " +
-      "A lit eye means the object is brighter than magnitude " + EYE_LIMIT.toFixed(1) + ", the naked-eye limit under a dark sky; a lit binocular icon means it is brighter than magnitude " + BINO_LIMIT.toFixed(1) + ", the limit of typical 10×50 binoculars."));
+      "A lit eye means the object is brighter than magnitude " + EYE_LIMIT.toFixed(1) + ", the naked-eye limit under a dark sky; a lit binocular icon means it is brighter than magnitude " + BINO_LIMIT.toFixed(1) + ", the limit of typical 10×50 binoculars. An icon is also lit when a sighting was logged with that equipment."));
     if (P.missing.length) {
       root.appendChild(el("p", "mo-sz-note", "Not drawn, because no radius, temperature or distance is recorded: " + P.missing.map((o) => o.name).join(", ") + ". Constellations and clusters are not drawn."));
     }
