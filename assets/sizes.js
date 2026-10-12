@@ -180,16 +180,18 @@
 
   // ---------------------------------------------------------------- layout
   // Diameters are drawn on a log scale: an object of radius R stands log10(R / 10^LOG_MIN) decades
-  // tall (LOG_MIN is the decade below the smallest object), every object on the same baseline, so the rulers beside them all share one scale.
+  // tall, every object on the same baseline, so the rulers beside them all share one scale.
   const RULER_W = 40;   // ruler line plus its tick labels, left of each sphere
   function esc(t) { return String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]); }
   function decadeLabel(e) {
     if (e <= -4) return "10" + String(e).replace(/./g, (c) => "⁻⁰¹²³⁴⁵⁶⁷⁸⁹"["-0123456789".indexOf(c)]);
     return e < 0 ? (+Math.pow(10, e).toFixed(-e)).toString() : Math.pow(10, e).toLocaleString("en-US");
   }
+  const LOG_FLOOR = -3;   // 0.001 R☉ (about 700 km) is height zero
+  const SAT_PX = 5;       // satellites sit far below the floor and are drawn as a tiny diamond
   function logRange(list) {
     const rs = list.map((o) => Math.log10(o.r));
-    return [Math.floor(Math.min.apply(null, rs)), Math.ceil(Math.max.apply(null, rs) - 1e-9)];
+    return [LOG_FLOOR, Math.ceil(Math.max.apply(null, rs) - 1e-9)];
   }
   function subLabel(o) {
     if (o.category === "planets") return "planet";
@@ -221,7 +223,7 @@
     const unit = plotH / (logMax - LOG_MIN);   // pixels per decade
     let x = 16;
     const items = list.map((o) => {
-      const d = Math.max(2, unit * (Math.log10(o.r) - LOG_MIN));
+      const d = o.r < Math.pow(10, LOG_MIN) ? SAT_PX : Math.max(2, unit * (Math.log10(o.r) - LOG_MIN));
       const nameW = 7.2 * o.name.length + 12;
       const body = RULER_W + 8 + d;
       const w = Math.max(body, nameW) + 14;
@@ -291,7 +293,7 @@
     parts.push(`<line class="mo-sz-base" x1="0" y1="${y0 + 0.5}" x2="${L.width}" y2="${y0 + 0.5}"/>`);
     L.items.forEach((it, k) => {
       parts.push(`<g class="mo-sz-item" data-k="${k}">`);
-      parts.push(rulerSvg(it, y0, L.unit, L.logMin));
+      if (it.o.r >= Math.pow(10, L.logMin)) parts.push(rulerSvg(it, y0, L.unit, L.logMin));
       parts.push(sphereSvg(it, y0, k));
       parts.push(`<text class="mo-sz-value" x="${it.cx}" y="${y0 - it.d - 8}">${esc(radiusText(it.o))}</text>`);
       parts.push(`<text class="mo-sz-label" x="${it.mid}" y="${y0 + 20}">${esc(it.o.name)}</text>`);
