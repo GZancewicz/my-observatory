@@ -56,6 +56,8 @@ The skill's [SKILL.md](.claude/skills/object-research/SKILL.md) documents every 
 
 The **Overview** page has linked charts across all observations: an H-R diagram, an all-sky map with constellation boundaries, distance against apparent magnitude, an alt/az plot of where each object was in the sky, conditions against rating, a sessions timeline, and a spectral class breakdown. One filter panel applies to every chart, and brushing a region in one chart highlights the same objects in the others.
 
+The **Sizes** page puts every star and planet with a known or derivable radius in a row from smallest to largest. Diameters are drawn on a logarithmic scale from 0.001 to 1,000 solar radii, with a ruler beside each object marked on that scale. Stars are coloured by the blackbody colour of their effective temperature; planets are grey. A star without a catalogue radius gets one estimated from its luminosity, or from its absolute magnitude and a bolometric correction, together with its temperature, and the estimate is marked ≈.
+
 The page has a night mode. It needs an internet connection for D3 and Aladin Lite, which load from public CDNs.
 
 ## Adding new observations

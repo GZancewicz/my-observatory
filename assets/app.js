@@ -12,7 +12,7 @@
   const $ = (s) => document.querySelector(s);
   const state = {
     objects: [], category: "all", query: "", sort: "last", cache: {},
-    seq: 0, overview: false, extraLoads: {}, aladin: null, skyWatch: null,
+    seq: 0, overview: false, sizes: false, extraLoads: {}, aladin: null, skyWatch: null,
   };
 
   // ---------- formatting ----------
@@ -1392,14 +1392,46 @@
     $("#overview-link").removeAttribute("aria-current");
   }
 
+  function renderSizes() {
+    document.body.classList.add("is-overview");   // same full-width layout as the overview
+    $("#objects-link").removeAttribute("aria-current");
+    $(".layout").classList.add("showing");
+    $("#sizes-link").setAttribute("aria-current", "page");
+    if (state.sizes) return;
+    const detail = $("#detail");
+    if (!window.MO_SIZES || typeof window.MO_SIZES.render !== "function") {
+      detail.innerHTML = '<div class="empty">Sizes not available. The script assets/sizes.js did not load.</div>';
+      return;
+    }
+    state.sizes = true;
+    detail.innerHTML = "";
+    try {
+      window.MO_SIZES.render(detail, { data: window.MO_DATA, navigate: (path) => { location.hash = path; } });
+    } catch (e) {
+      detail.innerHTML = `<div class="empty">The size comparison could not be drawn: ${esc(e.message)}</div>`;
+    }
+    window.scrollTo({ top: 0 });
+  }
+
+  function leaveSizes() {
+    if (state.sizes) {
+      try { window.MO_SIZES && window.MO_SIZES.destroy && window.MO_SIZES.destroy(); } catch {}
+      state.sizes = false;
+    }
+    document.body.classList.remove("is-overview");
+    $("#sizes-link").removeAttribute("aria-current");
+  }
+
   async function renderDetail() {
     const path = decodeURIComponent(location.hash.slice(1));
     const seq = ++state.seq;
     hideTip();
     closeModal();
     destroyAladin();
-    if (!path || path === "overview") return renderOverview();   // the overview is the home page
+    if (!path || path === "overview") { leaveSizes(); return renderOverview(); }   // the overview is the home page
+    if (path === "sizes") { leaveOverview(); return renderSizes(); }
     leaveOverview();
+    leaveSizes();
     const layout = $(".layout");
     if (path === "objects") {
       layout.classList.remove("showing");
@@ -1450,7 +1482,7 @@
     setNight(on); save("night", on ? "1" : "");
   });
   $("#detail").addEventListener("click", (e) => {
-    if (state.overview) return;   // the charts own their clicks
+    if (state.overview || state.sizes) return;   // the charts own their clicks
     const act = e.target.closest("[data-action]");
     if (act) {
       const a = act.dataset.action;
