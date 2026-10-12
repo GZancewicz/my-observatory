@@ -25,6 +25,7 @@ OCR_BIN = ROOT / "ocr"
 CACHE = ROOT / "ocr_cache"
 GLYPHS = ROOT / "glyphs"
 UNLABELED = GLYPHS / "unlabeled"
+LOCATIONS = json.loads((ROOT / "data" / "locations.json").read_text(encoding="utf-8"))
 
 LIST_TOP = 566          # px; everything above is the app header and filter chips
 NAV_TOP = 2265          # px; Android navigation bar
@@ -218,7 +219,7 @@ def parse_card(card, img, refs, source):
         "object": name,
         "type": clean(card["kind"]),
         "datetime": when.strftime("%Y-%m-%d %H:%M"),
-        "location": clean(card["loc"]),
+        "location": full_location(clean(card["loc"])),
         "rating": stars,
         "seeing": badges.get("S", ""),
         "transparency": badges.get("T", ""),
@@ -226,6 +227,12 @@ def parse_card(card, img, refs, source):
         "source": source,
         "check": "; ".join(check),
     }
+
+
+def full_location(loc):
+    """Vision sometimes drops the end of the line ("Royse City,"); complete it from the known sites."""
+    matches = [k for k in LOCATIONS if loc and k.startswith(loc)]
+    return matches[0] if len(matches) == 1 else loc
 
 
 def completeness(row):

@@ -1,0 +1,1249 @@
+{
+  "name": "ν³ CMa",
+  "category": "stars",
+  "app_type": "K-Star",
+  "harvested": "2026-10-12T15:22:02Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20nu.03%20CMa",
+      "retrieved": "2026-10-12T15:22:14Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nu3_Canis_Majoris",
+      "retrieved": "2026-10-12T15:23:04Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q66476691",
+      "retrieved": "2026-10-12T15:24:04Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/330px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:nu.03 CMa",
+    "simbad_id": "* nu.03 CMa",
+    "wikidata": "Q66476691",
+    "wikipedia": "Nu3 Canis Majoris"
+  },
+  "simbad": {
+    "main_id": "* nu.03 CMa",
+    "nbref": 93,
+    "otype": "*",
+    "ra": 99.47258909203,
+    "dec": -18.23748068501,
+    "coo_err_maj": 0.0505,
+    "coo_err_min": 0.0731,
+    "coo_err_angle": 90,
+    "coo_qual": "A",
+    "coo_wavelength": "O",
+    "coo_bibcode": "2020yCat.1350....0G",
+    "pmra": -7.166,
+    "pmdec": -8.777,
+    "pm_err_maj": 0.091,
+    "pm_err_min": 0.131,
+    "pm_err_angle": 90,
+    "pm_qual": "A",
+    "pm_bibcode": "2020yCat.1350....0G",
+    "plx_value": 6.7876,
+    "plx_err": 0.1054,
+    "plx_qual": "A",
+    "plx_bibcode": "2020yCat.1350....0G",
+    "rvz_type": "v",
+    "rvz_radvel": -1.09,
+    "rvz_redshift": -3.63584202800471e-06,
+    "rvz_err": 0.43,
+    "rvz_nature": "s",
+    "rvz_qual": "A",
+    "rvz_bibcode": "2018yCat.1345....0G",
+    "vlsr": null,
+    "vlsr_err": null,
+    "vlsr_wavelength": null,
+    "vlsr_bibcode": null,
+    "vlsr_min": null,
+    "vlsr_max": null,
+    "sp_type": "K1-III",
+    "sp_qual": "C",
+    "sp_bibcode": "1989ApJS...71..245K",
+    "morph_type": null,
+    "morph_qual": null,
+    "morph_bibcode": null,
+    "galdim_majaxis": null,
+    "galdim_minaxis": null,
+    "galdim_angle": null,
+    "galdim_qual": null,
+    "galdim_wavelength": null,
+    "galdim_bibcode": null,
+    "update_date": "2026-01-15",
+    "oid": 914323,
+    "rvz_wavelength": "O",
+    "otype_desc": "Star",
+    "identifiers": [
+      "TIC 48394292",
+      "WISEA J063753.42-181415.1",
+      "HIP 31700",
+      "Gaia DR3 2940472157174944128",
+      "2MASS J06375342-1814146",
+      "PLX 1549",
+      "*   8 CMa",
+      "* nu.03 CMa",
+      "BD-18  1492",
+      "GC  8660",
+      "GCRV  4295",
+      "GEN# +1.00047442",
+      "HD  47442",
+      "HIC  31700",
+      "HR  2443",
+      "IRAS 06356-1811",
+      "IRC -20098",
+      "JP11  1415",
+      "PPM 217460",
+      "RAFGL  980",
+      "ROT  1069",
+      "SAO 151730",
+      "SKY# 11567",
+      "TD1  7675",
+      "UBV    6595",
+      "UBV M  12304",
+      "YZ   0  6208",
+      "YZ 108  2178",
+      "PLX 1549.00",
+      "** HDS  915",
+      "WEB  6359",
+      "*   8 CMa A",
+      "** HDS  915A",
+      "BD-18  1492A",
+      "HD  47442A",
+      "* nu.03 CMa A",
+      "CCDM J06379-1814A",
+      "WDS J06379-1814A",
+      "TYC 5952-2800-1",
+      "Gaia DR2 2940472157174944128",
+      "WISE J063753.45-181416.6"
+    ],
+    "fluxes": {
+      "V": {
+        "mag": 4.43,
+        "err": 0.01
+      },
+      "U": {
+        "mag": 6.61,
+        "err": null
+      },
+      "R": {
+        "mag": 3.56,
+        "err": null
+      },
+      "I": {
+        "mag": 2.97,
+        "err": null
+      },
+      "B": {
+        "mag": 5.6,
+        "err": 0.01
+      },
+      "J": {
+        "mag": 2.5,
+        "err": 0.278
+      },
+      "H": {
+        "mag": 1.9,
+        "err": 0.226
+      },
+      "K": {
+        "mag": 1.783,
+        "err": 0.22
+      },
+      "G": {
+        "mag": 4.103014,
+        "err": 0.002847
+      }
+    },
+    "coordinates": {
+      "frame": "ICRS",
+      "epoch": "J2000",
+      "ra_deg": 99.47258909203,
+      "dec_deg": -18.23748068501,
+      "ra_hms": "06 37 53.421",
+      "dec_dms": "-18 14 14.93",
+      "gal_l": 227.86971,
+      "gal_b": -11.10692,
+      "err_maj_mas": 0.0505,
+      "err_min_mas": 0.0731,
+      "err_angle_deg": 90,
+      "quality": "A",
+      "wavelength": "O",
+      "bibcode": "2020yCat.1350....0G"
+    },
+    "hierarchy": {
+      "parents": [],
+      "children": []
+    },
+    "measurements": {
+      "mesDistance": [
+        {
+          "bibcode": "2018yCat.1345....0G",
+          "dist": 146.774,
+          "method": "paral   ",
+          "minus_err": -5.0991,
+          "plus_err": 5.0991,
+          "qual": null,
+          "unit": "pc  "
+        },
+        {
+          "bibcode": "2020yCat.1350....0G",
+          "dist": 147.327,
+          "method": "paral   ",
+          "minus_err": -2.2877,
+          "plus_err": 2.2877,
+          "qual": null,
+          "unit": "pc  "
+        }
+      ],
+      "mesFe_h": [
+        {
+          "teff": 4510,
+          "log_g": 2.34,
+          "fe_h": -0.24,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": "F574 ",
+          "bibcode": "1990ApJS...74.1075M"
+        },
+        {
+          "teff": 4510,
+          "log_g": 2.34,
+          "fe_h": -0.24,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": "F    ",
+          "bibcode": "1990ApJS...74.1075M"
+        },
+        {
+          "teff": 4510,
+          "log_g": 2.34,
+          "fe_h": -0.24,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "1990ApJS...74.1075M"
+        },
+        {
+          "teff": 4550,
+          "log_g": 2.3,
+          "fe_h": -0.09,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2007A&A...475.1003H"
+        },
+        {
+          "teff": 4443,
+          "log_g": null,
+          "fe_h": -0.34,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2020A&A...633A..34C"
+        },
+        {
+          "teff": 4564,
+          "log_g": 2.32,
+          "fe_h": -0.17,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2022A&A...663A...4S"
+        },
+        {
+          "teff": 4633,
+          "log_g": null,
+          "fe_h": null,
+          "flag": null,
+          "compstar": null,
+          "catno": null,
+          "bibcode": "1998A&AS..129..505B"
+        }
+      ],
+      "mesOtype": [
+        {
+          "otype": "*",
+          "comments": "from id TYC 5952-2800-1",
+          "bibcode": null
+        },
+        {
+          "otype": "**",
+          "comments": "from id CCDM J06379-1814A",
+          "bibcode": null
+        },
+        {
+          "otype": "IR",
+          "comments": "from id IRAS 06356-1811",
+          "bibcode": null
+        },
+        {
+          "otype": "MIR",
+          "comments": "from id WISE J063753.45-181416.6",
+          "bibcode": null
+        },
+        {
+          "otype": "NIR",
+          "comments": "from id 2MASS J06375342-1814146",
+          "bibcode": null
+        },
+        {
+          "otype": "UV",
+          "comments": "from id TD1  7675",
+          "bibcode": null
+        }
+      ],
+      "mesPLX": [
+        {
+          "bibcode": "1997A&A...323L..49P",
+          "obscode": null,
+          "plx": 7.03,
+          "plx_err": 0.62
+        },
+        {
+          "bibcode": "2007A&A...474..653V",
+          "obscode": null,
+          "plx": 7.74,
+          "plx_err": 0.43
+        },
+        {
+          "bibcode": "1995GCTP..C......0V",
+          "obscode": null,
+          "plx": 11.4,
+          "plx_err": 14.9
+        },
+        {
+          "bibcode": "2018yCat.1345....0G",
+          "obscode": null,
+          "plx": 6.8132,
+          "plx_err": 0.2367
+        },
+        {
+          "bibcode": "2020yCat.1350....0G",
+          "obscode": null,
+          "plx": 6.7876,
+          "plx_err": 0.1054
+        }
+      ],
+      "mesPM": [
+        {
+          "bibcode": "2007A&A...474..653V",
+          "coosystem": "ICRS",
+          "pmde": -8.72,
+          "pmde_err": 0.35,
+          "pmra": -7.32,
+          "pmra_err": 0.32
+        },
+        {
+          "bibcode": "2018yCat.1345....0G",
+          "coosystem": "ICRS",
+          "pmde": -9.844,
+          "pmde_err": 0.433,
+          "pmra": -7.406,
+          "pmra_err": 0.461
+        },
+        {
+          "bibcode": "1933GCCat.C......0B",
+          "coosystem": "FK4",
+          "pmde": -7,
+          "pmde_err": null,
+          "pmra": -9,
+          "pmra_err": null
+        },
+        {
+          "bibcode": "1997A&A...323L..49P",
+          "coosystem": "ICRS",
+          "pmde": -8.47,
+          "pmde_err": 0.49,
+          "pmra": -6.86,
+          "pmra_err": 0.53
+        },
+        {
+          "bibcode": "2020yCat.1350....0G",
+          "coosystem": "ICRS",
+          "pmde": -8.777,
+          "pmde_err": 0.131,
+          "pmra": -7.166,
+          "pmra_err": 0.091
+        }
+      ],
+      "mesRot": [
+        {
+          "bibcode": "1970CoKwa.189....0U",
+          "nbmes": null,
+          "qual": "D",
+          "upvsini": "<",
+          "vsini": 17,
+          "vsini_err": null
+        },
+        {
+          "bibcode": "1970CoAsi.239....1B",
+          "nbmes": 7,
+          "qual": "D",
+          "upvsini": null,
+          "vsini": 8,
+          "vsini_err": null
+        }
+      ],
+      "mesSpT": [
+        {
+          "bibcode": "1988MSS...C04....0H",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "K0II/III                            "
+        },
+        {
+          "bibcode": "1989ApJS...71..245K",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "K1-III                              "
+        },
+        {
+          "bibcode": "1952ApJ...116..122R",
+          "dispsystem": "P ",
+          "mssnote": null,
+          "sptype": "K1III                               "
+        },
+        {
+          "bibcode": "1993yCat.3135....0C",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "K0                                  "
+        },
+        {
+          "bibcode": "1961CapMi..12....1:",
+          "dispsystem": null,
+          "mssnote": null,
+          "sptype": "K1III                               "
+        },
+        {
+          "bibcode": "1956ApJ...123..440S",
+          "dispsystem": "P ",
+          "mssnote": null,
+          "sptype": "K1II-III                            "
+        },
+        {
+          "bibcode": "1955ApJ...121..118H",
+          "dispsystem": "P ",
+          "mssnote": null,
+          "sptype": "K1III                               "
+        },
+        {
+          "bibcode": "1949ApJ...110..205R",
+          "dispsystem": "P ",
+          "mssnote": null,
+          "sptype": "G5III                               "
+        }
+      ],
+      "mesVelocities": [
+        {
+          "bibcode": "2018yCat.1345....0G",
+          "d": null,
+          "meanerror": 0.43,
+          "nature": "s",
+          "nbmes": 8,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": -1.09,
+          "wdomain": "O   "
+        },
+        {
+          "bibcode": "1953GCRV..C......0W",
+          "d": null,
+          "meanerror": 0.9,
+          "nature": "s",
+          "nbmes": 5,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "E",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": -1.5,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1995A&AS..114..269D",
+          "d": null,
+          "meanerror": null,
+          "nature": "s",
+          "nbmes": 5,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": -1.5,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1913LicOB...7..113C",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 1,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": -1.2000000476837158,
+          "wdomain": null
+        },
+        {
+          "bibcode": "1928PLicO..16....1C",
+          "d": null,
+          "meanerror": null,
+          "nature": null,
+          "nbmes": 5,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": -1.5,
+          "wdomain": null
+        },
+        {
+          "bibcode": "2006AstL...32..759G",
+          "d": null,
+          "meanerror": 0.7,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "V  ",
+          "velvalue": -1.5,
+          "wdomain": "O   "
+        }
+      ]
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": 4510,
+        "log_g": 2.34,
+        "fe_h": -0.24,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4510,
+        "log_g": 2.34,
+        "fe_h": -0.24,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4510,
+        "log_g": 2.34,
+        "fe_h": -0.24,
+        "bibcode": "1990ApJS...74.1075M"
+      },
+      {
+        "teff": 4550,
+        "log_g": 2.3,
+        "fe_h": -0.09,
+        "bibcode": "2007A&A...475.1003H"
+      },
+      {
+        "teff": 4443,
+        "log_g": null,
+        "fe_h": -0.34,
+        "bibcode": "2020A&A...633A..34C"
+      },
+      {
+        "teff": 4564,
+        "log_g": 2.32,
+        "fe_h": -0.17,
+        "bibcode": "2022A&A...663A...4S"
+      },
+      {
+        "teff": 4633,
+        "log_g": null,
+        "fe_h": null,
+        "bibcode": "1998A&AS..129..505B"
+      }
+    ],
+    "teff_median": 4510,
+    "vsini_measurements": [
+      {
+        "vsini": 17,
+        "vsini_err": null,
+        "bibcode": "1970CoKwa.189....0U"
+      },
+      {
+        "vsini": 8,
+        "vsini_err": null,
+        "bibcode": "1970CoAsi.239....1B"
+      }
+    ],
+    "distance_measurements": [
+      {
+        "dist": 146.774,
+        "unit": "pc  ",
+        "plus_err": 5.0991,
+        "minus_err": -5.0991,
+        "method": "paral   ",
+        "bibcode": "2018yCat.1345....0G"
+      },
+      {
+        "dist": 147.327,
+        "unit": "pc  ",
+        "plus_err": 2.2877,
+        "minus_err": -2.2877,
+        "method": "paral   ",
+        "bibcode": "2020yCat.1350....0G"
+      }
+    ],
+    "types": [
+      "*",
+      "**",
+      "IR",
+      "MIR",
+      "NIR",
+      "UV"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=%2A%20nu.03%20CMa"
+  },
+  "papers_count": 93,
+  "wikipedia": {
+    "title": "Nu3 Canis Majoris",
+    "description": "Star in the constellation Canis Major",
+    "summary": "Nu3 Canis Majoris is a binary star system in the southern constellation of Canis Major. Its name is a Bayer designation that is Latinized from ν3 Canis Majoris, and abbreviated Nu3 CMa or ν3 CMa. The star system, appearing as one star, is deemed visible to the naked eye with its combined apparent visual magnitude of 4.41. Based upon an annual parallax shift of 6.79 mas as seen from Earth, this system is approximately 481 light-years (147 pc) distant from the Sun.",
+    "intro": "Nu3 Canis Majoris is a binary star system in the southern constellation of Canis Major.  Its name is a Bayer designation that is Latinized from ν3 Canis Majoris, and abbreviated Nu3 CMa or ν3 CMa. The star system, appearing as one star, is deemed visible to the naked eye with its combined apparent visual magnitude of 4.41. Based upon an annual parallax shift of 6.79 mas as seen from Earth, this system is approximately 481 light-years (147 pc) distant from the Sun.",
+    "url": "https://en.wikipedia.org/wiki/Nu3_Canis_Majoris",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/330px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Canis_Major_constellation_map.svg/250px-Canis_Major_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q2279616",
+    "sections_count": 2
+  },
+  "wikidata": {
+    "id": "Q66476691",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "K1-III"
+        },
+        {
+          "value": "K0"
+        },
+        {
+          "value": "K0II/III"
+        },
+        {
+          "value": "K1II-III"
+        },
+        {
+          "value": "K1III"
+        },
+        {
+          "value": "G5III"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Canis Major"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 4.43,
+          "unit": "",
+          "plus": 0.010000000000000675,
+          "minus": 0.009999999999999787
+        },
+        {
+          "value": 5.6,
+          "unit": "",
+          "plus": 0.010000000000000675,
+          "minus": 0.009999999999999787
+        },
+        {
+          "value": 1.783,
+          "unit": "",
+          "plus": 0.2200000000000002,
+          "minus": 0.21999999999999997
+        },
+        {
+          "value": 1.9,
+          "unit": "",
+          "plus": 0.22599999999999998,
+          "minus": 0.22599999999999998
+        },
+        {
+          "value": 2.5,
+          "unit": "",
+          "plus": 0.278,
+          "minus": 0.278
+        },
+        {
+          "value": 4.0158,
+          "unit": "",
+          "plus": 0.003100000000000769,
+          "minus": 0.0030999999999998806
+        },
+        {
+          "value": 6.61,
+          "unit": ""
+        },
+        {
+          "value": 3.56,
+          "unit": ""
+        },
+        {
+          "value": 2.97,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 146.774,
+          "unit": "pc",
+          "plus": 5.0989999999999895,
+          "minus": 5.0989999999999895
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 4510.0,
+          "unit": "K"
+        },
+        {
+          "value": 4550.0,
+          "unit": "K"
+        },
+        {
+          "value": 4633.0,
+          "unit": "K"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.24,
+          "unit": ""
+        },
+        {
+          "value": -0.09,
+          "unit": ""
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 220.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -1.09,
+          "unit": "km/s",
+          "plus": 0.43000000000000005,
+          "minus": 0.42999999999999994
+        },
+        {
+          "value": -1.5,
+          "unit": "km/s"
+        },
+        {
+          "value": -1.5,
+          "unit": "km/s",
+          "plus": 0.9,
+          "minus": 0.8999999999999999
+        },
+        {
+          "value": -1.5,
+          "unit": "km/s",
+          "plus": 0.7,
+          "minus": 0.7000000000000002
+        },
+        {
+          "value": -1.2,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 6.8132,
+          "unit": "mas",
+          "plus": 0.2366999999999999,
+          "minus": 0.2366999999999999
+        },
+        {
+          "value": 11.4,
+          "unit": "mas",
+          "plus": 14.9,
+          "minus": 14.9
+        },
+        {
+          "value": 7.74,
+          "unit": "mas",
+          "plus": 0.4299999999999997,
+          "minus": 0.4300000000000006
+        },
+        {
+          "value": 7.03,
+          "unit": "mas",
+          "plus": 0.6200000000000001,
+          "minus": 0.6200000000000001
+        }
+      ],
+      "instance of": [
+        {
+          "value": "star"
+        },
+        {
+          "value": "double star"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 99.47259001999291,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": -18.23747614679278,
+          "unit": "°"
+        }
+      ]
+    },
+    "all_claims": {
+      "instance of": [
+        {
+          "value": "star",
+          "qid": "Q523",
+          "type": "wikibase-item"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Canis Major",
+          "qid": "Q10538",
+          "type": "wikibase-item"
+        }
+      ],
+      "spectral class": [
+        {
+          "value": "K1-III",
+          "type": "string"
+        }
+      ],
+      "part of": [
+        {
+          "value": "Nu3 Canis Majoris",
+          "qid": "Q2279616",
+          "type": "wikibase-item"
+        }
+      ],
+      "companion of": [
+        {
+          "value": "Nu3 Canis Majoris B",
+          "qid": "Q77993224",
+          "type": "wikibase-item"
+        }
+      ],
+      "catalog code": [
+        {
+          "value": "CCDM J06379-1814A",
+          "type": "string"
+        },
+        {
+          "value": "HD 47442A",
+          "type": "string"
+        },
+        {
+          "value": "WDS J06379-1814A",
+          "type": "string"
+        },
+        {
+          "value": "BD-18 1492A",
+          "type": "string"
+        },
+        {
+          "value": "TYC 5952-2800-1",
+          "type": "string"
+        },
+        {
+          "value": "** HDS 915A",
+          "type": "string"
+        },
+        {
+          "value": "WISE J063753.45-181416.6",
+          "type": "string"
+        },
+        {
+          "value": "Gaia DR2 2940472157174944128",
+          "type": "string"
+        },
+        {
+          "value": "2MASS J06375342-1814146",
+          "type": "string"
+        },
+        {
+          "value": "PLX 1549",
+          "type": "string"
+        },
+        {
+          "value": "BD-18 1492",
+          "type": "string"
+        },
+        {
+          "value": "GC 8660",
+          "type": "string"
+        },
+        {
+          "value": "GCRV 4295",
+          "type": "string"
+        },
+        {
+          "value": "GEN# +1.00047442",
+          "type": "string"
+        },
+        {
+          "value": "HD 47442",
+          "type": "string"
+        },
+        {
+          "value": "HIC 31700",
+          "type": "string"
+        },
+        {
+          "value": "HIP 31700",
+          "type": "string"
+        },
+        {
+          "value": "HR 2443",
+          "type": "string"
+        },
+        {
+          "value": "IRAS 06356-1811",
+          "type": "string"
+        },
+        {
+          "value": "IRC -20098",
+          "type": "string"
+        },
+        {
+          "value": "JP11 1415",
+          "type": "string"
+        },
+        {
+          "value": "PPM 217460",
+          "type": "string"
+        },
+        {
+          "value": "RAFGL 980",
+          "type": "string"
+        },
+        {
+          "value": "ROT 1069",
+          "type": "string"
+        },
+        {
+          "value": "SAO 151730",
+          "type": "string"
+        },
+        {
+          "value": "SKY# 11567",
+          "type": "string"
+        },
+        {
+          "value": "TD1 7675",
+          "type": "string"
+        },
+        {
+          "value": "UBV 6595",
+          "type": "string"
+        },
+        {
+          "value": "UBV M 12304",
+          "type": "string"
+        },
+        {
+          "value": "YZ 0 6208",
+          "type": "string"
+        },
+        {
+          "value": "YZ 108 2178",
+          "type": "string"
+        },
+        {
+          "value": "PLX 1549.00",
+          "type": "string"
+        },
+        {
+          "value": "** HDS 915",
+          "type": "string"
+        },
+        {
+          "value": "WEB 6359",
+          "type": "string"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 4.43,
+          "unit": "",
+          "plus": 0.010000000000000675,
+          "minus": 0.009999999999999787,
+          "type": "quantity"
+        },
+        {
+          "value": 5.6,
+          "unit": "",
+          "plus": 0.010000000000000675,
+          "minus": 0.009999999999999787,
+          "type": "quantity"
+        },
+        {
+          "value": 1.783,
+          "unit": "",
+          "plus": 0.2200000000000002,
+          "minus": 0.21999999999999997,
+          "type": "quantity"
+        },
+        {
+          "value": 1.9,
+          "unit": "",
+          "plus": 0.22599999999999998,
+          "minus": 0.22599999999999998,
+          "type": "quantity"
+        },
+        {
+          "value": 2.5,
+          "unit": "",
+          "plus": 0.278,
+          "minus": 0.278,
+          "type": "quantity"
+        },
+        {
+          "value": 4.0158,
+          "unit": "",
+          "plus": 0.003100000000000769,
+          "minus": 0.0030999999999998806,
+          "type": "quantity"
+        },
+        {
+          "value": 6.61,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 3.56,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 2.97,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 6.8132,
+          "unit": "mas",
+          "plus": 0.2366999999999999,
+          "minus": 0.2366999999999999,
+          "type": "quantity"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -1.09,
+          "unit": "km/s",
+          "plus": 0.43000000000000005,
+          "minus": 0.42999999999999994,
+          "type": "quantity"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": -0.09,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 146.774,
+          "unit": "pc",
+          "plus": 5.0989999999999895,
+          "minus": 5.0989999999999895,
+          "type": "quantity"
+        }
+      ],
+      "SIMBAD ID": [
+        {
+          "value": "* nu.03 CMa",
+          "type": "external-id",
+          "url": "https://simbad.u-strasbg.fr/simbad/sim-id?Ident=%2A%20nu.03%20CMa"
+        }
+      ],
+      "stellar rotational velocity": [
+        {
+          "value": 17.0,
+          "unit": "km/s",
+          "type": "quantity"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 99.47259001999291,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "declination": [
+        {
+          "value": -18.23747614679278,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "epoch": [
+        {
+          "value": "J2000.0",
+          "qid": "Q1264450",
+          "type": "wikibase-item"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 4550.0,
+          "unit": "K",
+          "type": "quantity"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 220.0,
+          "unit": "centimetre per square second",
+          "type": "quantity"
+        }
+      ],
+      "declination component of proper motion": [
+        {
+          "value": -9.844,
+          "unit": "mas/yr",
+          "plus": 0.43299999999999983,
+          "minus": 0.43299999999999983,
+          "type": "quantity"
+        }
+      ],
+      "right ascension component of proper motion": [
+        {
+          "value": -7.406,
+          "unit": "mas/yr",
+          "plus": 0.4609999999999994,
+          "minus": 0.4610000000000003,
+          "type": "quantity"
+        }
+      ],
+      "Gaia ID": [
+        {
+          "value": "2940472157174944128",
+          "type": "external-id",
+          "url": "https://vizier.cds.unistra.fr/viz-bin/VizieR-S?Gaia%20DR3%202940472157174944128"
+        }
+      ]
+    },
+    "property_ids": {
+      "instance of": "P31",
+      "constellation": "P59",
+      "spectral class": "P215",
+      "part of": "P361",
+      "companion of": "P399",
+      "catalog code": "P528",
+      "apparent magnitude": "P1215",
+      "parallax": "P2214",
+      "radial velocity": "P2216",
+      "metallicity": "P2227",
+      "distance from Earth": "P2583",
+      "SIMBAD ID": "P3083",
+      "stellar rotational velocity": "P4296",
+      "right ascension": "P6257",
+      "declination": "P6258",
+      "epoch": "P6259",
+      "effective temperature": "P6879",
+      "surface gravity": "P7015",
+      "declination component of proper motion": "P10751",
+      "right ascension component of proper motion": "P10752",
+      "Gaia ID": "P13228"
+    },
+    "commons_image": null,
+    "url": "https://www.wikidata.org/wiki/Q66476691"
+  },
+  "summary": {
+    "designation": "nu.03 CMa",
+    "object_type": "Star",
+    "spectral_type": "K1-III",
+    "ra_deg": 99.47258909203,
+    "dec_deg": -18.23748068501,
+    "v_mag": 4.43,
+    "distance_pc": 147.3,
+    "distance_ly": 480.5,
+    "teff_k": 4510,
+    "b_minus_v": 1.17,
+    "constellation": "Canis Major",
+    "abs_mag": -1.41,
+    "spectral_class": "K",
+    "luminosity_class": "III",
+    "gal_l": 227.86971,
+    "gal_b": -11.10692,
+    "description": "Star in the constellation Canis Major"
+  },
+  "id": "nu3-cma",
+  "path": "stars/nu3-cma",
+  "observations": [
+    {
+      "datetime": "2026-10-11 03:28",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-11 08:28",
+      "altitude_deg": 20.7,
+      "azimuth_deg": 130.1
+    }
+  ]
+}

@@ -1,0 +1,4800 @@
+{
+  "name": "Praesepe",
+  "category": "other",
+  "app_type": "DeepSky",
+  "harvested": "2026-10-12T15:21:07Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=NGC%20%202632",
+      "retrieved": "2026-10-12T15:21:31Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Beehive_Cluster",
+      "retrieved": "2026-10-12T15:22:02Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q13760",
+      "retrieved": "2026-10-12T15:24:01Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/M44-Star-Cluster.png/330px-M44-Star-Cluster.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Praesepe",
+    "simbad_id": "NGC  2632",
+    "wikidata": "Q13760",
+    "wikipedia": "Beehive Cluster"
+  },
+  "simbad": {
+    "main_id": "NGC  2632",
+    "nbref": 1769,
+    "otype": "OpC",
+    "ra": 130.05416666666665,
+    "dec": 19.62111111111111,
+    "coo_err_maj": null,
+    "coo_err_min": null,
+    "coo_err_angle": null,
+    "coo_qual": "E",
+    "coo_wavelength": "O",
+    "coo_bibcode": "2021A&A...647A..19T",
+    "pmra": -36.047,
+    "pmdec": -12.917,
+    "pm_err_maj": 0.11,
+    "pm_err_min": 0.066,
+    "pm_err_angle": 90,
+    "pm_qual": "B",
+    "pm_bibcode": "2018A&A...616A..10G",
+    "plx_value": 5.371,
+    "plx_err": 0.003,
+    "plx_qual": "B",
+    "plx_bibcode": "2018A&A...616A..10G",
+    "rvz_type": "v",
+    "rvz_radvel": 34.94,
+    "rvz_redshift": 0.00011655408728983296,
+    "rvz_err": 0.08,
+    "rvz_nature": "s",
+    "rvz_qual": "A",
+    "rvz_bibcode": "2021A&A...647A..19T",
+    "vlsr": null,
+    "vlsr_err": null,
+    "vlsr_wavelength": null,
+    "vlsr_bibcode": null,
+    "vlsr_min": null,
+    "vlsr_max": null,
+    "sp_type": null,
+    "sp_qual": null,
+    "sp_bibcode": null,
+    "morph_type": null,
+    "morph_qual": null,
+    "morph_bibcode": null,
+    "galdim_majaxis": 118.2,
+    "galdim_minaxis": 118.2,
+    "galdim_angle": 0,
+    "galdim_qual": "D",
+    "galdim_wavelength": "O",
+    "galdim_bibcode": "2020A&A...633A..99C",
+    "update_date": "2026-10-09",
+    "oid": 1110595,
+    "rvz_wavelength": "O",
+    "otype_desc": "Open Cluster",
+    "identifiers": [
+      "[KC2019] Theia 1184",
+      "C 0837+201",
+      "M  44",
+      "NAME Beehive",
+      "NAME Praesepe",
+      "NGC  2632",
+      "OCl  507.0",
+      "[KPR2004b] 201",
+      "Cl Melotte   88",
+      "[KPS2012] MWSC 1527",
+      "NAME Praesepe Cluster"
+    ],
+    "fluxes": {},
+    "coordinates": {
+      "frame": "ICRS",
+      "epoch": "J2000",
+      "ra_deg": 130.05416666666665,
+      "dec_deg": 19.62111111111111,
+      "ra_hms": "08 40 13.000",
+      "dec_dms": "+19 37 16.00",
+      "gal_l": 205.95244,
+      "gal_b": 32.428,
+      "err_maj_mas": null,
+      "err_min_mas": null,
+      "err_angle_deg": null,
+      "quality": "E",
+      "wavelength": "O",
+      "bibcode": "2021A&A...647A..19T"
+    },
+    "hierarchy": {
+      "parents": [],
+      "children": [
+        {
+          "main_id": "HD  73710",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2008A&A...485..303M"
+        },
+        {
+          "main_id": "HD  73974",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": 100,
+          "bibcode": "2008A&A...485..303M"
+        },
+        {
+          "main_id": "HD  73598",
+          "otype": "**",
+          "otype_desc": "Double or Multiple Star",
+          "membership": 100,
+          "bibcode": "2008A&A...485..303M"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     246",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08393959+1947543",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08432345+2017384",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     141",
+          "otype": "**",
+          "otype_desc": "Double or Multiple Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     215",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08391157+1856188",
+          "otype": "PM*",
+          "otype_desc": "High Proper Motion Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08424470+1919341",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "SDSS J084301.23+195000.0",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08421572+1945194",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "PSO J130.0007+19.5075",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "[BBG2010] 927",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08425225+2008306",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08365563+1936151",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08420932+1855490",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     506",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08421149+1952499",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "UGCS J083951.67+193510.1",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "[BBG2010] 916",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08405363+1940580",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08411093+1938042",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08413425+1925255",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08431593+2020145",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08393743+2000250",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "SDSS J084300.72+193736.6",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08381695+2019549",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08432676+1956465",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "UGCS J084104.52+201458.1",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "[BBG2010] 71",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08380242+1939583",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08431705+2024406",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08411308+2007008",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08392244+2004548",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     121",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08364491+1859136",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08411217+1952484",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08382139+2026531",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08392556+1900022",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08420117+1906285",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     417",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08414773+1948377",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "UGCS J083955.84+195314.4",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "SDSS J084104.15+193127.5",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08382956+1945118",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08413847+1919498",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08414725+2009139",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     333",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08364501+2008459",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "UGCS J083811.15+190145.7",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08422634+1938245",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "[BBG2010] 910",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "[BBG2010] 922",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08410163+1952024",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     233",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632    PHJ       2",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08384287+1903384",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     344",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08430351+1902450",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08410889+1943272",
+          "otype": "**",
+          "otype_desc": "Double or Multiple Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632    WRS       4",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08411167+1928518",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08433226+2029126",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08414843+2010025",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08431076+2001291",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08401025+2023130",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632    PHJ       4",
+          "otype": "PM*",
+          "otype_desc": "High Proper Motion Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "UGCS J083822.22+195909.2",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08390793+1856136",
+          "otype": "PM*",
+          "otype_desc": "High Proper Motion Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     445",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "[BBG2010] 911",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "[BBG2010] 923",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08421966+1905037",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08430186+1954046",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "UGCS J084135.50+194000.4",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "SDSS J084327.03+200020.6",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "[BBG2010] 919",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     255",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "SDSS J083755.82+185348.9",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08430905+1943119",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08422626+1956494",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08425461+2003361",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08432915+2009000",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08390876+2022579",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08382272+1943550",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     158",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08401076+1940498",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     235",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08422296+2007241",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "UGCS J084112.39+202800.1",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08405987+2001568",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08385206+2026272",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08371143+2013459",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08380530+1946209",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     513",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "SDSS J083923.71+195201.7",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "[BBG2010] 914",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "[BBG2010] 926",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08390695+1947080",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "SDSS J083824.44+202847.5",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     195",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08382186+2005356",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08374428+1940582",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "UGCS J083929.94+201140.2",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "[BBG2010] 921",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08365989+2024234",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08383028+2009358",
+          "otype": "PM*",
+          "otype_desc": "High Proper Motion Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "UGCS J084113.48+185905.3",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08412034+1857430",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "SDSS J084241.73+201127.5",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "[BBG2010] 918",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08405826+1926524",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08431576+2028326",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08420770+2006195",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08405953+2002502",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08373473+2027300",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "SDSS J083851.77+190021.5",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "UGCS J084028.16+185724.9",
+          "otype": "G",
+          "otype_desc": "Galaxy",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "SDSS J084145.15+191807.7",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08422138+1903123",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     521",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08381244+2008026",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08365500+1903130",
+          "otype": "**",
+          "otype_desc": "Double or Multiple Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     291",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08425052+2020039",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08395328+2007099",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08373490+2001295",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "[BBG2010] 908",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "SDSS J084006.23+190146.0",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632    PHJ      18",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08392443+1925365",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08411457+2018289",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08425197+2005194",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     411",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "V* AY Cnc",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08395840+2011586",
+          "otype": "PM*",
+          "otype_desc": "High Proper Motion Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08395940+1943371",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "[BBG2010] 913",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "SDSS J084118.62+195644.0",
+          "otype": "mul",
+          "otype_desc": "Composite Object, Blend",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08394339+1948458",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08394781+1928033",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08401640+2014002",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08384955+2019401",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08380586+2007221",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08425197+1905173",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08422717+1944346",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     476",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "2MASS J08401060+2020505",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "UCAC4 553-044448",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2010A&A...510A..27B"
+        },
+        {
+          "main_id": "*  39 Cnc",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2008A&A...485..303M"
+        },
+        {
+          "main_id": "BD+20  2170",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl* NGC 2632      S     148",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "HD  73641",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "BD+20  2183",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "BD+19  2074",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "HD  73994",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     470",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 70,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08410926+1734170",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "K2-103",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     372",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "BD+18  2026",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     416",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     466",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 80,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "UCAC4 538-047707",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "UCAC4 538-047708",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632    ANM     748",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08383287+1723380",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "UCAC4 540-047427",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08372283+1741152",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     197",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     110",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "BD+18  1989",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     175",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08403626+1757003",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "UCAC4 539-046246",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     271",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     343",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     355",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     462",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "V* CI Cnc",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     341",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     242",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     230",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     169",
+          "otype": "Pu*",
+          "otype_desc": "Pulsating Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "NGC  2632  4745",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08392745+1814556",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "V* AW Cnc A",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     130",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     136",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     351",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     233",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     326",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "HD  73620",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     322",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     205",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     258",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     229",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     282",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     310",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     221",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     216",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS      70",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      65",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     105",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     103",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     144",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      87",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      94",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     686",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     694",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      62",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      37",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 70,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS      87",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      54",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS      62",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     109",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      78",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      71",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 70,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     106",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      87",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     164",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     159",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     159B",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     242",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     708",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632      S      79",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     269",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08383233+1846528",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     230",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     260",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08381655+1859287",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     131",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS      95",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     108",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      57",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      79",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     138",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      70",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      80",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      68",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      48",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     124",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      49",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     104",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "K2-95",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     208",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 70,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     102",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      97",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08381343+1908299",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     114",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "BD+19  2052",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08374691+1910558",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     118",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      76",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      85",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      68",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     111",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      61",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "UCAC4 547-045493",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     107",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "HD  73210",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     105",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     163",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 80,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "V* CD Cnc",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     178",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08460002+1749387",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 70,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08460817+1802272",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     644",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 80,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     633",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "V* CS Cnc",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 80,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     565",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     582",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     483",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     757",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08453688+1843251",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     660",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     761",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "V* FV Cnc",
+          "otype": "CV*",
+          "otype_desc": "Cataclysmic Binary",
+          "membership": 80,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "UCAC4 544-046891",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 80,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "HD  74780",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     631",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08470496+1855428",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08474180+1856287",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08465370+1902569",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 70,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08495937+1910010",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08482544+1909394",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08475384+1907533",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08475052+1909110",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 70,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "BD+18  2020",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     544",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     525",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08424461+1828000",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     488",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     534",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     571",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     563",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08451494+1845399",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08452116+1853035",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "HD  74589",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "BD+19  2093",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08433462+1845138",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "BD+19  2089",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     KW     551",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     745",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     568",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     560",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08421272+1841011",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     439",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "V* CK Cnc",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08421029+1846003",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     505",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     738",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     426",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08405326+1844540",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     KW     401",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "** BOV   49B",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     219",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     338",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     343",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632      S     145",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     346",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     443",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "K2-101",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08412034+1857430",
+          "otype": "BD?",
+          "otype_desc": "Brown Dwarf Candidate",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     245",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "V* BC Cnc",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     259",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "HD  74186",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08431586+1906331",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     550",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     547",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "V* CP Cnc",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ     417",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08423074+1906578",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632      S     199",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     511",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     496",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     282",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     279",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08430744+1914192",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     519",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     514",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08453218+1857521",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     591",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "HD  74656",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08463486+1915260",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08464032+1916304",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 70,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08452663+1914127",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "UCAC4 547-045897",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     613",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     759",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     656",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08464281+1925343",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08463894+1937088",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     638",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08450590+1917575",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     557",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "V* DR Cnc",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08433550+1927234",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     521",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "BD+20  2201",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": 90,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     620",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     618",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08463042+1938553",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08454796+1936187",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "HD  74718",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     608",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     634",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "K2-264",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "UCAC4 549-045711",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08445724+1948559",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08462388+1958043",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     211",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "EGGR  61",
+          "otype": "WD*",
+          "otype_desc": "White Dwarf",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "BD+20  2157",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     194",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "*  42 Cnc",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     230",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "HD  73620",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 92,
+          "bibcode": "2007AJ....134.2340K"
+        },
+        {
+          "main_id": "2MASS J08254162+1930425",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08271165+1936543",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "UCAC4 552-043636",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     200",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 80,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08261745+1943357",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08262329+1933039",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08270502+1845111",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08271204+1929434",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "UCAC4 552-043620",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08274956+1834333",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "UCAC4 550-045342",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08275885+1907541",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08275941+1801258",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08280099+1954172",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "UCAC4 547-045053",
+          "otype": "**",
+          "otype_desc": "Double or Multiple Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08281588+1812280",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC     195",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "main_id": "2MASS J08282020+1915307",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08284122+2018563",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "BD+20  2090",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08282693+2006171",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08282969+2015323",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08285027+2107411",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08292058+1810459",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ       1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ       5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08304851+2136453",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "UCAC4 536-047678",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      13",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08311399+2108149",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08314044+2116245",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      19",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08321067+2120296",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS      10",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "UCAC4 541-046409",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      15",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS      19",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      33",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08331393+2042483",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08331663+2120204",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08332348+2018032",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      44",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08333838+2028525",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      52",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      32",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08340669+2049468",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08342092+2031444",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      55",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      57",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      62",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08345495+2138544",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      68",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      70",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08351703+2058108",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      75",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      48",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS      95",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      50",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      86",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS     103",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08284865+1858359",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08291780+1742115",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08292796+2108383",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ       3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08304258+1922308",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ       7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      11",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "BD+18  1959",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08313281+2101280",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      17",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      21",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      23",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08323551+1736328",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      26",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08325907+1718235",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS      22",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      34",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS      27",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      37",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08284992+1959203",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08291886+2043048",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "UCAC4 543-047420",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ       4",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08304270+2202538",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ       8",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08310663+2113463",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08311310+2054003",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08313595+2024192",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08314836+1957160",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08320795+1844267",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS       8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      10",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      13",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08325958+2007149",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS      23",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "UCAC4 553-044208",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS      25",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08332193+2205344",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      41",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS      41",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS      45",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08340314+2020305",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08291526+1753302",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08292737+1740201",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08300265+1956111",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ       6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08304887+1957213",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      10",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "UCAC4 558-046399",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08312690+1840564",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      16",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08320273+2046207",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      22",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JS      12",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632   HSHJ      25",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08325808+2212203",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      16",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "UCAC4 553-044201",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "2MASS J08331425+2036212",
+          "otype": "Er*",
+          "otype_desc": "Eruptive Variable",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        },
+        {
+          "main_id": "Cl* NGC 2632     JC      18",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2013MNRAS.434.3236K"
+        }
+      ],
+      "children_total": 27966
+    },
+    "measurements": {
+      "mesDistance": [
+        {
+          "bibcode": "2005A&A...438.1163K",
+          "dist": 187,
+          "method": "ST-L    ",
+          "minus_err": null,
+          "plus_err": null,
+          "qual": null,
+          "unit": "pc  "
+        },
+        {
+          "bibcode": "2018MNRAS.473..849D",
+          "dist": 187,
+          "method": null,
+          "minus_err": null,
+          "plus_err": null,
+          "qual": null,
+          "unit": "pc  "
+        },
+        {
+          "bibcode": "2021MNRAS.504..356D",
+          "dist": 186,
+          "method": "paral   ",
+          "minus_err": 0,
+          "plus_err": 0,
+          "qual": null,
+          "unit": "pc  "
+        },
+        {
+          "bibcode": "2017AstBu..72..257L",
+          "dist": 186,
+          "method": null,
+          "minus_err": null,
+          "plus_err": null,
+          "qual": null,
+          "unit": "pc  "
+        },
+        {
+          "bibcode": "2021A&A...651A.104P",
+          "dist": 183,
+          "method": "paral   ",
+          "minus_err": null,
+          "plus_err": null,
+          "qual": null,
+          "unit": "pc  "
+        },
+        {
+          "bibcode": "2021MNRAS.503.3279S",
+          "dist": 0.186,
+          "method": null,
+          "minus_err": -0.006,
+          "plus_err": 0.006,
+          "qual": null,
+          "unit": "kpc "
+        },
+        {
+          "bibcode": "2022MNRAS.509..421N",
+          "dist": 0.18,
+          "method": "paral   ",
+          "minus_err": null,
+          "plus_err": null,
+          "qual": null,
+          "unit": "kpc "
+        },
+        {
+          "bibcode": "2022ApJ...931..156P",
+          "dist": 185,
+          "method": null,
+          "minus_err": null,
+          "plus_err": null,
+          "qual": null,
+          "unit": "pc  "
+        }
+      ],
+      "mesFe_h": [
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.2,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2014A&A...561A..93H"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.16,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2016A&A...585A.150N"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.133,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2021MNRAS.503.3279S"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.242,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2022A&A...668A...4F"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.16,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2022MNRAS.509..421N"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.22,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2020A&A...640A.127Z"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.2344,
+          "flag": null,
+          "compstar": null,
+          "catno": null,
+          "bibcode": "2024A&A...687A.239C"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.196,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2021MNRAS.504..356D"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.118,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2021A&A...652A..25C"
+        }
+      ],
+      "mesOtype": [
+        {
+          "otype": "As*",
+          "comments": "from bibcode",
+          "bibcode": "2019AJ....158..122K"
+        },
+        {
+          "otype": "As*",
+          "comments": "from id [KC2019] Theia 1184",
+          "bibcode": null
+        },
+        {
+          "otype": "Cl*",
+          "comments": "from id C 0837+201",
+          "bibcode": null
+        },
+        {
+          "otype": "Cl*",
+          "comments": "from bibcode",
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "otype": "OpC",
+          "comments": "from bibcode",
+          "bibcode": "2022ApJ...931..156P"
+        },
+        {
+          "otype": "OpC",
+          "comments": "from bibcode",
+          "bibcode": "2013A&A...558A..53K"
+        },
+        {
+          "otype": "OpC",
+          "comments": "from bibcode",
+          "bibcode": "2020A&A...633A..99C"
+        },
+        {
+          "otype": "OpC",
+          "comments": "from bibcode",
+          "bibcode": "2021MNRAS.504..356D"
+        },
+        {
+          "otype": "OpC",
+          "comments": "from bibcode",
+          "bibcode": "2017AstBu..72..257L"
+        },
+        {
+          "otype": "OpC",
+          "comments": "from bibcode",
+          "bibcode": "2022ApJS..262....7H"
+        }
+      ],
+      "mesPLX": [
+        {
+          "bibcode": "2018A&A...616A..10G",
+          "obscode": null,
+          "plx": 5.371,
+          "plx_err": 0.003
+        },
+        {
+          "bibcode": "2018A&A...618A..93C",
+          "obscode": null,
+          "plx": 5.361,
+          "plx_err": 0.129
+        },
+        {
+          "bibcode": "2019AJ....158..122K",
+          "obscode": null,
+          "plx": 4.87001,
+          "plx_err": null
+        },
+        {
+          "bibcode": "2020A&A...633A..99C",
+          "obscode": null,
+          "plx": 5.361,
+          "plx_err": 0.005
+        },
+        {
+          "bibcode": "2020A&A...640A...1C",
+          "obscode": null,
+          "plx": 5.361,
+          "plx_err": 0.129
+        },
+        {
+          "bibcode": "2021MNRAS.504..356D",
+          "obscode": null,
+          "plx": 5.349,
+          "plx_err": 0.144
+        },
+        {
+          "bibcode": "2021A&A...651A.104P",
+          "obscode": null,
+          "plx": 5.411,
+          "plx_err": 0.1
+        },
+        {
+          "bibcode": "2021MNRAS.503.3279S",
+          "obscode": null,
+          "plx": 5.347,
+          "plx_err": 0.155
+        },
+        {
+          "bibcode": "2022A&A...659A..59T",
+          "obscode": null,
+          "plx": 5.416,
+          "plx_err": 0.164
+        },
+        {
+          "bibcode": "2022ApJS..262....7H",
+          "obscode": null,
+          "plx": 5.41,
+          "plx_err": 0.128
+        },
+        {
+          "bibcode": "2023A&A...674A..37G",
+          "obscode": null,
+          "plx": 5.436,
+          "plx_err": 0.121
+        }
+      ],
+      "mesPM": [
+        {
+          "bibcode": "2018A&A...616A..10G",
+          "coosystem": "ICRS",
+          "pmde": -12.917,
+          "pmde_err": 0.066,
+          "pmra": -36.047,
+          "pmra_err": 0.11
+        },
+        {
+          "bibcode": "2018A&A...618A..93C",
+          "coosystem": "ICRS",
+          "pmde": -12.919,
+          "pmde_err": 0.997,
+          "pmra": -36.09,
+          "pmra_err": 1.115
+        },
+        {
+          "bibcode": "2020A&A...633A..99C",
+          "coosystem": "ICRS",
+          "pmde": -12.919,
+          "pmde_err": 0.037,
+          "pmra": -36.09,
+          "pmra_err": 0.046
+        },
+        {
+          "bibcode": "2020A&A...640A...1C",
+          "coosystem": "ICRS",
+          "pmde": -12.919,
+          "pmde_err": 0.997,
+          "pmra": -36.09,
+          "pmra_err": 1.115
+        },
+        {
+          "bibcode": "2021MNRAS.504..356D",
+          "coosystem": null,
+          "pmde": -12.95,
+          "pmde_err": 0.959,
+          "pmra": -36.148,
+          "pmra_err": 1.21
+        },
+        {
+          "bibcode": "2017AstBu..72..257L",
+          "coosystem": "ICRS",
+          "pmde": -12.9,
+          "pmde_err": 0.19,
+          "pmra": -35.58,
+          "pmra_err": 0.19
+        },
+        {
+          "bibcode": "2021A&A...651A.104P",
+          "coosystem": null,
+          "pmde": -12.884,
+          "pmde_err": 0.97,
+          "pmra": -35.949,
+          "pmra_err": 1.105
+        },
+        {
+          "bibcode": "2021MNRAS.503.3279S",
+          "coosystem": null,
+          "pmde": -12.951,
+          "pmde_err": 0.942,
+          "pmra": -36.142,
+          "pmra_err": 1.174
+        },
+        {
+          "bibcode": "2022A&A...659A..59T",
+          "coosystem": null,
+          "pmde": -12.896,
+          "pmde_err": 0.672,
+          "pmra": -35.911,
+          "pmra_err": 0.772
+        },
+        {
+          "bibcode": "2022ApJ...931..156P",
+          "coosystem": "ICRS",
+          "pmde": -12.864,
+          "pmde_err": null,
+          "pmra": -35.904,
+          "pmra_err": null
+        },
+        {
+          "bibcode": "2022ApJS..262....7H",
+          "coosystem": null,
+          "pmde": -12.879,
+          "pmde_err": 1.095,
+          "pmra": -35.902,
+          "pmra_err": 1.319
+        },
+        {
+          "bibcode": "2023A&A...674A..37G",
+          "coosystem": null,
+          "pmde": -12.884,
+          "pmde_err": 1.05,
+          "pmra": -35.916,
+          "pmra_err": 1.251
+        }
+      ],
+      "mesVelocities": [
+        {
+          "bibcode": "2017A&A...600A.106C",
+          "d": null,
+          "meanerror": 0.1,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 34.5,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2018A&A...616A..10G",
+          "d": null,
+          "meanerror": 0.1,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 35.64,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2018A&A...619A.155S",
+          "d": null,
+          "meanerror": 0.08,
+          "nature": "s",
+          "nbmes": 186,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 34.72,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2021MNRAS.504..356D",
+          "d": null,
+          "meanerror": 0.836,
+          "nature": "s",
+          "nbmes": 183,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 34.892,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2017AstBu..72..257L",
+          "d": null,
+          "meanerror": 0.52,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 33.4,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2021A&A...647A..19T",
+          "d": null,
+          "meanerror": 0.08,
+          "nature": "s",
+          "nbmes": 219,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 34.94,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2022A&A...658A..14C",
+          "d": null,
+          "meanerror": 0.15,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "C",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 28.84,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2022A&A...668A...4F",
+          "d": null,
+          "meanerror": 0.19912,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "C",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 30.483034,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2022ApJ...931..156P",
+          "d": null,
+          "meanerror": null,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": "D",
+          "quality": null,
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 35,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2023A&A...674A..37G",
+          "d": null,
+          "meanerror": 0.501,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": "A",
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 34.685,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2014A&A...562A..54C",
+          "d": null,
+          "meanerror": 0.285,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": "A",
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 34.001,
+          "wdomain": "Opt "
+        }
+      ],
+      "mesXmm": [
+        {
+          "obsid": "0132122101"
+        },
+        {
+          "obsid": "0101440401"
+        }
+      ]
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.2,
+        "bibcode": "2014A&A...561A..93H"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.16,
+        "bibcode": "2016A&A...585A.150N"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.133,
+        "bibcode": "2021MNRAS.503.3279S"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.242,
+        "bibcode": "2022A&A...668A...4F"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.16,
+        "bibcode": "2022MNRAS.509..421N"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.22,
+        "bibcode": "2020A&A...640A.127Z"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.2344,
+        "bibcode": "2024A&A...687A.239C"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.196,
+        "bibcode": "2021MNRAS.504..356D"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.118,
+        "bibcode": "2021A&A...652A..25C"
+      }
+    ],
+    "teff_median": null,
+    "vsini_measurements": [],
+    "distance_measurements": [
+      {
+        "dist": 187,
+        "unit": "pc  ",
+        "plus_err": null,
+        "minus_err": null,
+        "method": "ST-L    ",
+        "bibcode": "2005A&A...438.1163K"
+      },
+      {
+        "dist": 187,
+        "unit": "pc  ",
+        "plus_err": null,
+        "minus_err": null,
+        "method": null,
+        "bibcode": "2018MNRAS.473..849D"
+      },
+      {
+        "dist": 186,
+        "unit": "pc  ",
+        "plus_err": 0,
+        "minus_err": 0,
+        "method": "paral   ",
+        "bibcode": "2021MNRAS.504..356D"
+      },
+      {
+        "dist": 186,
+        "unit": "pc  ",
+        "plus_err": null,
+        "minus_err": null,
+        "method": null,
+        "bibcode": "2017AstBu..72..257L"
+      },
+      {
+        "dist": 183,
+        "unit": "pc  ",
+        "plus_err": null,
+        "minus_err": null,
+        "method": "paral   ",
+        "bibcode": "2021A&A...651A.104P"
+      },
+      {
+        "dist": 0.186,
+        "unit": "kpc ",
+        "plus_err": 0.006,
+        "minus_err": -0.006,
+        "method": null,
+        "bibcode": "2021MNRAS.503.3279S"
+      },
+      {
+        "dist": 0.18,
+        "unit": "kpc ",
+        "plus_err": null,
+        "minus_err": null,
+        "method": "paral   ",
+        "bibcode": "2022MNRAS.509..421N"
+      },
+      {
+        "dist": 185,
+        "unit": "pc  ",
+        "plus_err": null,
+        "minus_err": null,
+        "method": null,
+        "bibcode": "2022ApJ...931..156P"
+      }
+    ],
+    "types": [
+      "As*",
+      "Cl*",
+      "OpC",
+      "OpC"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=NGC%20%202632"
+  },
+  "papers_count": 1769,
+  "wikipedia": {
+    "title": "Beehive Cluster",
+    "description": "Open cluster in the constellation Cancer",
+    "summary": "The Beehive Cluster is an open cluster in the constellation Cancer. One of the nearest open clusters to Earth, it contains a larger population of stars than other nearby bright open clusters holding around 1,000 stars. Under dark skies, the Beehive Cluster looks like a small nebulous object to the naked eye, and has been known since ancient times. Classical astronomer Ptolemy described it as a \"nebulous mass in the breast of Cancer\". It was among the first objects that Galileo studied with his\ntelescope.",
+    "intro": "The Beehive Cluster (also known as Praesepe (Latin for \"manger\", \"cot\" or \"crib\"), M44, NGC 2632, or Cr 189) is an open cluster in the constellation Cancer. One of the nearest open clusters to Earth, it contains a larger population of stars than other nearby bright open clusters holding around 1,000 stars. Under dark skies, the Beehive Cluster looks like a small nebulous object to the naked eye, and has been known since ancient times. Classical astronomer Ptolemy described it as a \"nebulous mass in the breast of Cancer\". It was among the first objects that Galileo studied with his\ntelescope.\nIts age and proper motion coincide with those of the Hyades, suggesting they may share similar origins. Both clusters also contain red giants and white dwarfs, which represent later stages of stellar evolution, along with many main sequence stars.\nThe distance to M44 is often cited to be between 160 and 187 parsecs (520–610 light years), but the revised Hipparcos parallaxes (2009) for Praesepe members and the latest infrared color-magnitude diagram favors an analogous distance of 182 pc. There are better age estimates of around 600 million years (compared to about 625 million years for the Hyades). The diameter of the bright inner cluster core is about 7.0 parsecs (23 light years).\nAt 1.5° across, the cluster easily fits within the field of view of binoculars or low-powered small telescopes. Regulus, Castor, and Pollux are guide stars.",
+    "url": "https://en.wikipedia.org/wiki/Beehive_Cluster",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/M44-Star-Cluster.png/330px-M44-Star-Cluster.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/99/M44-Star-Cluster.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikidata": "Q13760",
+    "sections_count": 7
+  },
+  "wikidata": {
+    "id": "Q13760",
+    "facts": {
+      "constellation": [
+        {
+          "value": "Cancer"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 3.1,
+          "unit": ""
+        },
+        {
+          "value": 3.46,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 607.0,
+          "unit": "ly"
+        },
+        {
+          "value": 187.0,
+          "unit": "pc"
+        }
+      ],
+      "radius": [
+        {
+          "value": 7.5,
+          "unit": "ly"
+        }
+      ],
+      "age": [
+        {
+          "value": 0.7,
+          "unit": "Gyr"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.2,
+          "unit": ""
+        },
+        {
+          "value": 0.16,
+          "unit": ""
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 34.001,
+          "unit": "km/s",
+          "plus": 0.2850000000000037,
+          "minus": 0.2849999999999966
+        },
+        {
+          "value": 34.5,
+          "unit": "km/s",
+          "plus": 0.10000000000000142,
+          "minus": 0.10000000000000142
+        },
+        {
+          "value": 35.64,
+          "unit": "km/s",
+          "plus": 0.10000000000000142,
+          "minus": 0.10000000000000142
+        }
+      ],
+      "parallax": [
+        {
+          "value": 5.371,
+          "unit": "mas",
+          "plus": 0.0029999999999992255,
+          "minus": 0.0030000000000001137
+        }
+      ],
+      "discoverer or inventor": [
+        {
+          "value": "Aratus"
+        }
+      ],
+      "time of discovery": [
+        {
+          "value": "-260"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "open cluster"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 130.1,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 19.6667,
+          "unit": "°"
+        }
+      ]
+    },
+    "all_claims": {
+      "image": [
+        {
+          "value": "Messier 44 2018.jpg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Messier_44_2018.jpg"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "open cluster",
+          "qid": "Q11387",
+          "type": "wikibase-item"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Cancer",
+          "qid": "Q8849",
+          "type": "wikibase-item"
+        }
+      ],
+      "discoverer or inventor": [
+        {
+          "value": "Aratus",
+          "qid": "Q180671",
+          "type": "wikibase-item"
+        }
+      ],
+      "GND ID": [
+        {
+          "value": "128338325X",
+          "type": "external-id",
+          "url": "https://d-nb.info/gnd/128338325X"
+        }
+      ],
+      "part of": [
+        {
+          "value": "Orion Arm",
+          "qid": "Q33187",
+          "type": "wikibase-item"
+        }
+      ],
+      "Commons category": [
+        {
+          "value": "Beehive Cluster",
+          "type": "string"
+        }
+      ],
+      "catalog code": [
+        {
+          "value": "M 44",
+          "type": "string"
+        },
+        {
+          "value": "NGC 2632",
+          "type": "string"
+        },
+        {
+          "value": "OCl 507.0",
+          "type": "string"
+        },
+        {
+          "value": "Collinder 189",
+          "type": "string"
+        },
+        {
+          "value": "Melotte 88",
+          "type": "string"
+        },
+        {
+          "value": "C 0837+201",
+          "type": "string"
+        },
+        {
+          "value": "[KPS2012] MWSC 1527",
+          "type": "string"
+        }
+      ],
+      "time of discovery or invention": [
+        {
+          "value": "-260",
+          "type": "time"
+        }
+      ],
+      "Freebase ID": [
+        {
+          "value": "/m/03tq4b",
+          "type": "external-id",
+          "url": "https://www.google.com/search?kgmid=/m/03tq4b"
+        }
+      ],
+      "topic's main category": [
+        {
+          "value": "Category:Beehive Cluster",
+          "qid": "Q32754454",
+          "type": "wikibase-item"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 3.1,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 3.46,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "described by source": [
+        {
+          "value": "Brockhaus and Efron Encyclopedic Dictionary",
+          "qid": "Q602358",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Meyers Konversations-Lexikon, 4th edition (1885–1890)",
+          "qid": "Q19219752",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Great Soviet Encyclopedia (1926–1947)",
+          "qid": "Q20078554",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "Small Soviet Encyclopedia",
+          "qid": "Q66386517",
+          "type": "wikibase-item"
+        }
+      ],
+      "Encyclopædia Britannica Online ID": [
+        {
+          "value": "place/Praesepe",
+          "type": "external-id",
+          "url": "https://www.britannica.com/place/Praesepe"
+        }
+      ],
+      "radius": [
+        {
+          "value": 7.5,
+          "unit": "ly",
+          "type": "quantity"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 5.371,
+          "unit": "mas",
+          "plus": 0.0029999999999992255,
+          "minus": 0.0030000000000001137,
+          "type": "quantity"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": 35.64,
+          "unit": "km/s",
+          "plus": 0.10000000000000142,
+          "minus": 0.10000000000000142,
+          "type": "quantity"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.16,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 607.0,
+          "unit": "ly",
+          "type": "quantity"
+        },
+        {
+          "value": 187.0,
+          "unit": "pc",
+          "type": "quantity"
+        }
+      ],
+      "SIMBAD ID": [
+        {
+          "value": "NGC 2632",
+          "type": "external-id",
+          "url": "https://simbad.u-strasbg.fr/simbad/sim-id?Ident=NGC%202632"
+        }
+      ],
+      "New General Catalogue ID": [
+        {
+          "value": "2632",
+          "type": "external-id",
+          "url": "http://spider.seds.org/ngc/ngc.cgi?2632"
+        }
+      ],
+      "Great Norwegian Encyclopedia ID": [
+        {
+          "value": "Praesepe",
+          "type": "external-id",
+          "url": "https://wikidata-externalid-url.toolforge.org/?p=4342&url_prefix=https://snl.no/&id=Praesepe"
+        }
+      ],
+      "angular diameter": [
+        {
+          "value": 95.0,
+          "unit": "arcminute",
+          "type": "quantity"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 130.1,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "declination": [
+        {
+          "value": 19.6667,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "epoch": [
+        {
+          "value": "J2000.0",
+          "qid": "Q1264450",
+          "type": "wikibase-item"
+        }
+      ],
+      "age estimated by a dating method": [
+        {
+          "value": 0.7,
+          "unit": "Gyr",
+          "type": "quantity"
+        }
+      ],
+      "Encyclopedia of China (Third Edition) old ID (2021)": [
+        {
+          "value": "203178",
+          "type": "external-id",
+          "url": "https://web.archive.org/web/0/https://www.zgbk.com/ecph/words?SiteID=1&ID=203178"
+        }
+      ],
+      "declination component of proper motion": [
+        {
+          "value": -12.917,
+          "unit": "mas/yr",
+          "plus": 0.06599999999999895,
+          "minus": 0.06600000000000072,
+          "type": "quantity"
+        }
+      ],
+      "right ascension component of proper motion": [
+        {
+          "value": -36.047,
+          "unit": "mas/yr",
+          "plus": 0.10999999999999943,
+          "minus": 0.10999999999999943,
+          "type": "quantity"
+        }
+      ],
+      "Encyclopedia of China (Third Edition) ID (2026)": [
+        {
+          "value": "2iXcFX",
+          "type": "external-id",
+          "url": "https://www.zgbk.com/ecph/words?SiteID=1&ID=2iXcFX"
+        }
+      ]
+    },
+    "property_ids": {
+      "image": "P18",
+      "instance of": "P31",
+      "constellation": "P59",
+      "discoverer or inventor": "P61",
+      "GND ID": "P227",
+      "part of": "P361",
+      "Commons category": "P373",
+      "catalog code": "P528",
+      "time of discovery or invention": "P575",
+      "Freebase ID": "P646",
+      "topic's main category": "P910",
+      "apparent magnitude": "P1215",
+      "described by source": "P1343",
+      "Encyclopædia Britannica Online ID": "P1417",
+      "radius": "P2120",
+      "parallax": "P2214",
+      "radial velocity": "P2216",
+      "metallicity": "P2227",
+      "distance from Earth": "P2583",
+      "SIMBAD ID": "P3083",
+      "New General Catalogue ID": "P3208",
+      "Great Norwegian Encyclopedia ID": "P4342",
+      "angular diameter": "P5348",
+      "right ascension": "P6257",
+      "declination": "P6258",
+      "epoch": "P6259",
+      "age estimated by a dating method": "P7584",
+      "Encyclopedia of China (Third Edition) old ID (2021)": "P10565",
+      "declination component of proper motion": "P10751",
+      "right ascension component of proper motion": "P10752",
+      "Encyclopedia of China (Third Edition) ID (2026)": "P14541"
+    },
+    "commons_image": "Messier 44 2018.jpg",
+    "url": "https://www.wikidata.org/wiki/Q13760"
+  },
+  "summary": {
+    "designation": "NGC 2632",
+    "object_type": "Open Cluster",
+    "ra_deg": 130.05416666666665,
+    "dec_deg": 19.62111111111111,
+    "v_mag": 3.1,
+    "distance_pc": 186.2,
+    "distance_ly": 607.3,
+    "radius": {
+      "value": 7.5,
+      "unit": "ly"
+    },
+    "age": {
+      "value": 0.7,
+      "unit": "Gyr"
+    },
+    "constellation": "Cancer",
+    "abs_mag": -3.25,
+    "gal_l": 205.95244,
+    "gal_b": 32.428,
+    "description": "Open cluster in the constellation Cancer"
+  },
+  "id": "praesepe",
+  "path": "other/praesepe",
+  "observations": [
+    {
+      "datetime": "2026-10-12 05:15",
+      "location": "Royse City, Texas",
+      "rating": 3.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-10-12 10:15",
+      "altitude_deg": 42.3,
+      "azimuth_deg": 92.8
+    }
+  ]
+}
