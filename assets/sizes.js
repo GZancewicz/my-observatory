@@ -1,5 +1,5 @@
 // Size comparison page (#sizes): every star and planet with a known or derivable radius,
-// in a row from smallest to largest, diameters on a logarithmic scale with a ruler beside each. Stars take their blackbody colour from
+// in a row (by size, distance or temperature), diameters on a logarithmic scale with a ruler beside each. Stars take their blackbody colour from
 // the effective temperature; planets are plain grey spheres.
 // window.MO_SIZES = { render(container, {data, navigate}), destroy(), prep(data), blackbody(t) }
 (function () {
@@ -21,7 +21,16 @@
     M: [[0, 3850], [2, 3560], [4, 3210], [6, 2810], [9, 2400]],
   };
 
+  // Row orders. Every order keeps the same log size scale; only the left-to-right sequence changes.
+  const SORTS = {
+    size: { label: "Size", order: "from smallest to largest", cmp: (a, b) => a.r - b.r },
+    distance: { label: "Distance from Earth", order: "from nearest to farthest",
+      cmp: (a, b) => (a.ly === null) - (b.ly === null) || a.ly - b.ly || a.r - b.r },
+    temperature: { label: "Temperature", order: "from coolest to hottest (the planets, which have no stellar temperature, come first)",
+      cmp: (a, b) => (a.teff || 0) - (b.teff || 0) || a.r - b.r },
+  };
   let S = null;
+  let sortKey = "size";   // kept between visits to #sizes
 
   // ---------------------------------------------------------------- helpers
   function num(x) {
@@ -178,7 +187,7 @@
   function radiusText(o) { return (o.how === "catalogue" ? "" : "≈ ") + sig(o.r) + " R☉"; }
 
   function layout(list, plotH) {
-    const logMax = Math.ceil(Math.log10(list[list.length - 1].r) - 1e-9);
+    const logMax = Math.ceil(Math.log10(Math.max.apply(null, list.map((o) => o.r))) - 1e-9);
     const unit = plotH / (logMax - LOG_MIN);   // pixels per decade
     let x = 16;
     const items = list.map((o) => {
@@ -242,7 +251,7 @@
     const top = 30, y0 = top + plotH, h = y0 + 86;
     const L = layout(S.list, plotH);
     S.layout = L;
-    const parts = [`<svg class="mo-sz-svg" width="${L.width}" height="${h}" viewBox="0 0 ${L.width} ${h}" role="img" aria-label="Stars and planets, smallest to largest, with diameters on a logarithmic scale">`];
+    const parts = [`<svg class="mo-sz-svg" width="${L.width}" height="${h}" viewBox="0 0 ${L.width} ${h}" role="img" aria-label="Stars and planets ${SORTS[sortKey].order}, with diameters on a logarithmic scale">`];
     parts.push(defsSvg(S.list));
     parts.push(`<line class="mo-sz-base" x1="0" y1="${y0 + 0.5}" x2="${L.width}" y2="${y0 + 0.5}"/>`);
     L.items.forEach((it, k) => {
@@ -315,6 +324,7 @@
       e.preventDefault(); st.scrollBy({ left: step, behavior: "smooth" });
     });
     on(S.pick, "change", () => scrollToItem(+S.pick.value, true));
+    on(S.sort, "change", () => { sortKey = S.sort.value; applySort(); });
   }
 
   // ---------------------------------------------------------------- entry points
@@ -324,20 +334,25 @@
     const P = prep(opts.data || window.MO_DATA);
     const root = el("div", "mo-sizes");
     if (!P.shown.length) { root.appendChild(el("p", "mo-empty", "No stars or planets with a known size.")); container.replaceChildren(root); return; }
-    S = { root, list: P.shown, listeners: [], observers: [], drag: null,
+    S = { root, all: P.shown, list: P.shown, listeners: [], observers: [], drag: null,
       navigate: opts.navigate || ((p) => { location.hash = p; }) };
 
     const head = el("header", "mo-sz-head");
     head.appendChild(el("h1", "mo-sz-title", "Sizes"));
-    head.appendChild(el("p", "mo-sz-sub",
-      P.shown.length + " stars and planets in a row from smallest to largest. Each diameter is drawn on a logarithmic scale " +
+    S.sub = el("p", "mo-sz-sub");
+    S.subRest = " Each diameter is drawn on a logarithmic scale " +
       "from 0.001 to " + decadeLabel(Math.ceil(Math.log10(P.shown[P.shown.length - 1].r) - 1e-9)) + " solar radii (R☉), and the ruler beside each object reads its radius on that scale. " +
-      "Star colours are the blackbody colour of each star's effective temperature; planets are grey."));
+      "Star colours are the blackbody colour of each star's effective temperature; planets are grey.";
+    head.appendChild(S.sub);
     root.appendChild(head);
 
     const controls = el("div", "mo-sz-controls");
+    S.sort = el("select", "mo-sz-pick"); S.sort.setAttribute("aria-label", "Sort by");
+    Object.keys(SORTS).forEach((k) => { const op = el("option", null, SORTS[k].label); op.value = k; S.sort.appendChild(op); });
+    S.sort.value = sortKey;
+    controls.appendChild(el("span", "mo-sz-controls__label", "Sort by"));
+    controls.appendChild(S.sort);
     S.pick = el("select", "mo-sz-pick"); S.pick.setAttribute("aria-label", "Jump to object");
-    P.shown.forEach((o, k) => { const op = el("option", null, o.name + " — " + radiusText(o)); op.value = String(k); S.pick.appendChild(op); });
     controls.appendChild(el("span", "mo-sz-controls__label", "Jump to"));
     controls.appendChild(S.pick);
     const legend = el("div", "mo-sz-legend");
@@ -363,12 +378,25 @@
       root.appendChild(el("p", "mo-sz-note", "Not drawn, because no radius, temperature or distance is recorded: " + P.missing.map((o) => o.name).join(", ") + ". Constellations, clusters and satellites are not drawn."));
     }
     container.replaceChildren(root);
-    draw();
+    applySort();
     bind();
     let lastH = window.innerHeight, rt = null;
     const onResize = () => { clearTimeout(rt); rt = setTimeout(() => { if (S && Math.abs(window.innerHeight - lastH) > 40) { lastH = window.innerHeight; draw(); } }, 150); };
     window.addEventListener("resize", onResize);
     S.listeners.push(() => { window.removeEventListener("resize", onResize); clearTimeout(rt); });
+  }
+
+  function applySort() {
+    const so = SORTS[sortKey];
+    S.list = S.all.slice().sort(so.cmp);
+    S.sub.textContent = S.list.length + " stars and planets in a row " + so.order + "." + S.subRest;
+    S.pick.replaceChildren();
+    S.list.forEach((o, k) => {
+      const v = sortKey === "distance" ? distanceText(o) : sortKey === "temperature" ? (o.teff ? Math.round(o.teff).toLocaleString("en-US") + " K" : "planet") : radiusText(o);
+      const op = el("option", null, o.name + " — " + v); op.value = String(k); S.pick.appendChild(op);
+    });
+    draw();
+    S.strip.scrollLeft = 0;
   }
 
   function destroy() {
