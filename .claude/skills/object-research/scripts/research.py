@@ -91,7 +91,7 @@ SUPER = str.maketrans("⁰¹²³⁴⁵⁶⁷⁸⁹", "0123456789")
 GREEK_FROM_ABBR = {abbr.rstrip("."): full for abbr, full in GREEK.values()}
 
 # MO Pro spellings that neither SIMBAD nor Wikipedia know
-ALIASES = {"Adara": "Adhara"}
+ALIASES = {"Adara": "Adhara", "Almaak": "Almach", "Alpha Persei Moving Clus...": "Melotte 20"}
 
 GENITIVE = dict(x.split(":") for x in """And:Andromedae Ant:Antliae Aps:Apodis Aqr:Aquarii Aql:Aquilae Ara:Arae
 Ari:Arietis Aur:Aurigae Boo:Boötis Cae:Caeli Cam:Camelopardalis Cnc:Cancri CVn:Canum_Venaticorum

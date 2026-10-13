@@ -1,0 +1,4697 @@
+{
+  "name": "Alpha Persei Moving Clus...",
+  "category": "other",
+  "app_type": "DeepSky",
+  "harvested": "2026-10-13T13:03:33Z",
+  "sources": [
+    {
+      "name": "SIMBAD (CDS)",
+      "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Cl%20Melotte%20%20%2020",
+      "retrieved": "2026-10-13T13:03:47Z"
+    },
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alpha_Persei_Cluster",
+      "retrieved": "2026-10-13T13:03:51Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q1072618",
+      "retrieved": "2026-10-13T13:04:01Z"
+    }
+  ],
+  "images": {
+    "sky": {
+      "file": "sky.jpg",
+      "credit": "DSS2 colour via CDS hips2fits",
+      "fov_deg": 0.4
+    },
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Melotte_20.jpg/330px-Melotte_20.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "sesame:Melotte 20",
+    "simbad_id": "Cl Melotte   20",
+    "wikidata": "Q1072618",
+    "wikipedia": "Alpha Persei Cluster"
+  },
+  "simbad": {
+    "main_id": "Cl Melotte   20",
+    "nbref": 948,
+    "otype": "MGr",
+    "ra": 51.61708333333334,
+    "dec": 48.974999999999994,
+    "coo_err_maj": null,
+    "coo_err_min": null,
+    "coo_err_angle": null,
+    "coo_qual": "E",
+    "coo_wavelength": "O",
+    "coo_bibcode": "2021A&A...647A..19T",
+    "pmra": 22.929,
+    "pmdec": -25.556,
+    "pm_err_maj": 0.071,
+    "pm_err_min": 0.095,
+    "pm_err_angle": 90,
+    "pm_qual": "B",
+    "pm_bibcode": "2018A&A...616A..10G",
+    "plx_value": 5.718,
+    "plx_err": 0.005,
+    "plx_qual": "B",
+    "plx_bibcode": "2018A&A...616A..10G",
+    "rvz_type": "v",
+    "rvz_radvel": 0.72,
+    "rvz_redshift": 2.4016643693780537e-06,
+    "rvz_err": 0.16,
+    "rvz_nature": "s",
+    "rvz_qual": "A",
+    "rvz_bibcode": "2021A&A...647A..19T",
+    "vlsr": null,
+    "vlsr_err": null,
+    "vlsr_wavelength": null,
+    "vlsr_bibcode": null,
+    "vlsr_min": null,
+    "vlsr_max": null,
+    "sp_type": null,
+    "sp_qual": null,
+    "sp_bibcode": null,
+    "morph_type": null,
+    "morph_qual": null,
+    "morph_bibcode": null,
+    "galdim_majaxis": 243.2,
+    "galdim_minaxis": 243.2,
+    "galdim_angle": 0,
+    "galdim_qual": "D",
+    "galdim_wavelength": "O",
+    "galdim_bibcode": "2020A&A...633A..99C",
+    "update_date": "2026-10-08",
+    "oid": 151300,
+    "rvz_wavelength": "O",
+    "otype_desc": "Moving Group",
+    "identifiers": [
+      "[KC2019] Theia  133",
+      "C 0318+484",
+      "OCl  392.0",
+      "[KPR2004b]  42",
+      "[MGC2022] Crius 229",
+      "Cl Melotte   20",
+      "[KPS2012] MWSC 0274",
+      "Cl Collinder   39",
+      "NAME Alpha Per Cluster",
+      "NAME Alpha Persei Cluster",
+      "NAME alf Per Cluster"
+    ],
+    "fluxes": {},
+    "coordinates": {
+      "frame": "ICRS",
+      "epoch": "J2000",
+      "ra_deg": 51.61708333333334,
+      "dec_deg": 48.974999999999994,
+      "ra_hms": "03 26 28.100",
+      "dec_dms": "+48 58 30.00",
+      "gal_l": 147.35661,
+      "gal_b": -6.40397,
+      "err_maj_mas": null,
+      "err_min_mas": null,
+      "err_angle_deg": null,
+      "quality": "E",
+      "wavelength": "O",
+      "bibcode": "2021A&A...647A..19T"
+    },
+    "hierarchy": {
+      "parents": [],
+      "children": [
+        {
+          "main_id": "* alf Per",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": 100,
+          "bibcode": "2008A&A...485..303M"
+        },
+        {
+          "main_id": "Cl Melotte   20  1100",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20    90",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "BD+49   863",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "TYC 3315-1781-1",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "BD+49   905",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20   767",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20   771",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "HD  19539",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20    68",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "BD+49   914",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "2MASS J03241706+4939002",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "BD+46   745",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "V* OT Tau",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20   828",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20   917",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "HD  22326",
+          "otype": "**",
+          "otype_desc": "Double or Multiple Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20    43",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20   105",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "HD  19538",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20   600",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "* alf Per",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "BD+48   923",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "BD+48   929",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "BD+49   868",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "V* V484 Per",
+          "otype": "BY*",
+          "otype_desc": "BY Dra Variable",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "BD+49   925",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20   457",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "BD+48   892",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "HIP 14629",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20    33",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20    38",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20    51",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "HD  19636",
+          "otype": "RG*",
+          "otype_desc": "Red Giant Branch star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "BD+49   892",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20   444",
+          "otype": "SB*",
+          "otype_desc": "Spectroscopic Binary",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "HIP 14697",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20    65",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20    70",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20    78",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20   106",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20    37",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20   107",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20   114",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20   493",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20    98",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20   101",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20    19",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "Cl Melotte   20    79",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "BD+47   772",
+          "otype": "**",
+          "otype_desc": "Double or Multiple Star",
+          "membership": 75,
+          "bibcode": "2012ApJ...752...58Z"
+        },
+        {
+          "main_id": "BD+49   896",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "2001A&A...373..159C"
+        },
+        {
+          "main_id": "V* V625 Per",
+          "otype": "BY*",
+          "otype_desc": "BY Dra Variable",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 111C",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "TYC 3320-102-1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "2MASS J03274852+4954183",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX  87G",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "2MASS J03244321+5015164",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 156C",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 160A",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "2MASS J03163395+5229507",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 77,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031648.48+455723.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 49,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      70",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 70,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      73",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      77",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 74,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03173879+4850489",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 60,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      81",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03180446+5019485",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 74,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      86",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     387",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 48,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031825.27+493712.7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 48,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "ATO J049.6200+45.1858",
+          "otype": "EB?",
+          "otype_desc": "Eclipsing Binary Candidate",
+          "membership": 75,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03183059+4637270",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 76,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      90",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 84,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031900.32+455214.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 84,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03192064+5000016",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 48,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03192494+4859402",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 79,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03193068+4903021",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 65,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031939.17+493650.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 48,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03194775+4547096",
+          "otype": "PM*",
+          "otype_desc": "High Proper Motion Star",
+          "membership": 50,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03195729+4904215",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 59,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03201212+4856412",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 53,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03202852+4757202",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 50,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03203401+4745397",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032036.85+490746.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 47,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     270",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 54,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032054.76+485833.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     308",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 47,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03210639+5141411",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 53,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     133",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03211479+4940543",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 81,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     134",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 66,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032125.02+482219.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 42,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03213646+4923187",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": 66,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     111",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 82,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032149.68+521550.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 41,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032204.98+515415.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 68,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032212.59+491039.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 54,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032223.81+475700.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 71,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03222776+4613305",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 76,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032234.84+471953.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 62,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     145",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": 79,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032254.31+451714.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 54,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03225733+5148159",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 55,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032304.21+505537.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032311.24+462157.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 58,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032320.37+505724.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 44,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "APX 115A",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 124A",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 142A",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "UGCS J030804.23+512232.4",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 71,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030830.57+453932.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 43,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     295",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 68,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     236",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 83,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J033242.23+465249.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 62,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03324548+4802582",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 83,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03325215+4716240",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 78,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03325598+5150459",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 79,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03332398+5007466",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 84,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03333062+4941405",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 82,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J033336.07+503545.4",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 54,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     245",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 67,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03334879+4812588",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 75,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "ZTF J032359.93+495801.3",
+          "otype": "BY*",
+          "otype_desc": "BY Dra Variable",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 150A",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 157D",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 166A",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 202A",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "UGCS J030907.81+485503.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 67,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030921.36+460741.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 65,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030936.60+510640.9",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 47,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      36",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 54,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031032.05+521609.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 50,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031055.44+501603.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 64,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031119.80+495951.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 73,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      43",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03121859+4633515",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 56,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03130599+5217171",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 59,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "APX 109A",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 151A",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "2MASS J03301892+4943348",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "ATO J052.4324+49.8014",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      50",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031454.79+513038.7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03155782+4941154",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03163264+5035125",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031704.50+504825.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031744.93+490605.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03181332+4856396",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031840.74+505601.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03192064+5000016",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03220975+4834024",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "ZTF J032615.88+500656.0",
+          "otype": "BY*",
+          "otype_desc": "BY Dra Variable",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     315",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     166",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     169",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032659.90+510225.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03270360+4748474",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03272491+4858118",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     287",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J033125.88+514914.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J033148.37+482820.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03321754+4844553",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     295",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03324849+4941098",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J033733.87+483539.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03380879+4622228",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03391595+4810097",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J033940.48+473600.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J034534.27+462243.9",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J035018.90+482459.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030202.64+493656.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 45,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03063789+4849271",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 84,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030704.99+481207.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 57,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030750.01+502425.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 70,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030801.52+500111.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 61,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031019.98+483818.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 49,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031045.42+494417.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031120.99+491256.4",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 74,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031217.48+484320.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 51,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031307.39+494438.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 74,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03145236+5121174",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": 77,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03151225+4906505",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 58,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031538.03+483247.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 74,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "APX 111A",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 156A",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "UCAC4 695-022580",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "ZTF J033158.68+500655.5",
+          "otype": "RS*",
+          "otype_desc": "RS CVn Variable",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "UCAC4 699-025239",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "UGCS J031022.81+502916.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 61,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03103454+4926406",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 44,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03105591+4917125",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 53,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031120.99+491256.4",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 74,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      44",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 83,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031233.20+515913.7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 59,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031307.39+494438.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 74,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      47",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031343.23+455424.7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 44,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03140100+4935121",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 81,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031402.29+501909.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 41,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03141085+5010294",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 52,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031426.33+492108.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 44,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031443.35+481525.9",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 54,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031456.43+462633.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 61,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03151225+4906505",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 58,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031530.06+453301.7",
+          "otype": "PM*",
+          "otype_desc": "High Proper Motion Star",
+          "membership": 47,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031542.56+472108.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 43,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      59",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 83,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031600.55+483052.9",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 47,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03161594+4841210",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 82,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      63",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 67,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03322379+4742355",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 83,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     235",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 68,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     237",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 75,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J033243.72+474129.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 72,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03324849+4941098",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J033254.85+481102.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 50,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     323",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 42,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03332557+4820124",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 81,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03333534+4902133",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 78,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J033339.76+481808.4",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 42,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     208",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": 56,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03022645+5024207",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030521.30+480954.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03063789+4849271",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030758.47+465729.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03140581+5054284",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03145236+5121174",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031530.06+453301.7",
+          "otype": "PM*",
+          "otype_desc": "High Proper Motion Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03161594+4841210",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031640.78+455454.4",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": null,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "APX 148A",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 157B",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     109",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "ZTF J032458.96+495014.7",
+          "otype": "BY*",
+          "otype_desc": "BY Dra Variable",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "Koenig 54",
+          "otype": "PM*",
+          "otype_desc": "High Proper Motion Star",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX  89A",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 141",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 124B",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 156B",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 161I",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 173A",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "2MASS J03204185+4824375",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     129",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "2MASS J03245868+5016465",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 147B",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "Ass Per OB 3",
+          "otype": "As*",
+          "otype_desc": "Association of Stars",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "APX 182A",
+          "otype": "X",
+          "otype_desc": "X-ray Source",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "2MASS J03332398+5007466",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 100,
+          "bibcode": "1998AN....319..215P"
+        },
+        {
+          "main_id": "UGCS J025852.51+494032.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 71,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J025857.10+504441.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 61,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J025952.64+495939.7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 67,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J02595597+4937271",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 42,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030050.13+490159.7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 50,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030106.98+503824.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 83,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      15",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 77,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      16",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 68,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030202.64+493656.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 45,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030207.84+492904.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 46,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03022445+5030071",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 83,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      23",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 45,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030355.32+454622.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 56,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030408.35+493736.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 47,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030415.08+471553.9",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 46,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030416.98+460303.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 44,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030456.93+490240.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 64,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03050651+4803387",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030522.99+502624.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 44,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030526.53+500926.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 44,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03060325+4953124",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": 63,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      29",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 44,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030655.39+502338.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 78,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030658.83+461203.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 67,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030700.75+462600.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 63,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030704.99+481207.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 57,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030736.76+500406.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 58,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030738.01+472810.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 63,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030750.01+502425.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 70,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030757.60+502436.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 49,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030758.10+502436.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 46,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030801.52+500111.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 61,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030826.67+504634.7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 45,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      34",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 61,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030916.84+510333.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 42,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03092551+4825510",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 47,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030938.59+512548.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 76,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031019.98+483818.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 49,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      37",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 79,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031045.42+494417.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      40",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 64,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031127.77+505703.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 71,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031217.48+484320.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 51,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031256.29+454059.9",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 42,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031312.51+510528.7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031334.27+512113.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 67,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031343.55+455426.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 58,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031401.48+512416.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 61,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      50",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 78,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "ZTF J031415.91+500611.6",
+          "otype": "EB*",
+          "otype_desc": "Eclipsing Binary",
+          "membership": 57,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03143659+4958418",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 50,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03145236+5121174",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": 77,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031502.40+483056.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 57,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03152726+4940303",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 67,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      57",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 71,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03154269+5100242",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 79,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03155782+4941154",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": 54,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031603.07+495738.9",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 41,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      62",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 76,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03271370+4914363",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 73,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03272491+4858118",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 84,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032726.83+494409.4",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 57,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03272970+4723435",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 55,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J025946.42+492815.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 46,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030044.73+504157.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 58,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030108.67+503229.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 77,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030144.00+493626.7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 74,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      20",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 68,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030345.11+513704.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030408.87+493515.9",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030442.78+475128.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 40,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030522.49+464910.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 41,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030600.29+490012.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 40,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03063789+4849271",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 84,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03070056+5029201",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030736.74+484133.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 70,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030741.43+512941.4",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 52,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      31",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 45,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030759.05+461106.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 76,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030818.85+501742.7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 64,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030831.53+473211.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 52,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030859.98+460851.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 60,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03091696+5007361",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": 45,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030928.70+484943.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 50,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J030959.89+480358.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 58,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      67",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031650.01+493556.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 66,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03170231+4832427",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 84,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      74",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031722.77+515345.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 65,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03174412+4833287",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 67,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031747.74+493858.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 72,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031806.98+514436.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 47,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     122",
+          "otype": "Pu*",
+          "otype_desc": "Pulsating Variable",
+          "membership": 71,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03182118+5033012",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03182654+4648017",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 77,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031829.46+522826.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 45,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03183676+4727278",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03185315+4842541",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 74,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03191463+5020408",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031922.03+500523.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 46,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031928.79+515004.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 45,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03193117+4941171",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 40,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031940.20+515544.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 63,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03195472+4816311",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 58,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      98",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 41,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     307",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 57,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032029.92+475642.7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 67,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03203570+5217060",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 56,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20    LMB    9480",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 68,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     102",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 44,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     131",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 60,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03210233+4947035",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 60,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032107.46+465615.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 42,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032112.78+474601.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 73,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     106",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 56,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032121.97+482727.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 83,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     346",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 53,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     272",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": 52,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032147.36+513538.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 64,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     103",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": 80,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03220975+4834024",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 63,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032219.59+512811.7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 51,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03222574+4912066",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 64,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     142",
+          "otype": "BY*",
+          "otype_desc": "BY Dra Variable",
+          "membership": 58,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     273",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 62,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032253.07+450733.9",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 45,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032255.70+460654.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 82,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032258.44+494647.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 60,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032306.46+493805.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 48,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     146",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": 40,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03232271+4929395",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 84,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032325.75+495613.0",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 49,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03233236+4811136",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 61,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03234570+4919527",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 76,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     329",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 82,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03240337+4737051",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 82,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP       8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 83,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03240984+4845558",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 53,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03241936+4625357",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     282",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 84,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032425.42+502954.4",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 55,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     140",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 72,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032446.08+521753.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 79,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032448.54+484333.4",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 47,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032452.43+473453.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03245868+5016465",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 82,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032500.81+450505.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 56,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03250682+4935238",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 72,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03250785+4928039",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 54,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "APX  31",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 76,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     332",
+          "otype": "EB*",
+          "otype_desc": "Eclipsing Binary",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032534.05+444858.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 53,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032544.56+480958.4",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 56,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03255361+4900582",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 64,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     161",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 84,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     162",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 47,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03262841+4941292",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 68,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     339",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 68,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032635.95+512229.7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 50,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     166",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03264032+5023418",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 67,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     349",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 73,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     344",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 59,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032655.41+482843.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 44,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03270241+4850193",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 75,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03270360+4748474",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 59,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J033222.76+485407.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 47,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J033231.67+473509.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 43,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03323834+4746332",
+          "otype": "Y*?",
+          "otype_desc": "Young Stellar Object Candidate",
+          "membership": 71,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     357",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 48,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J033246.02+470111.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03325223+5151003",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 84,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03330943+5050428",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 66,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03332423+4738190",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": 82,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     242",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 59,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03333734+5022529",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 79,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     345",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 75,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UCAC4 699-025239",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 71,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J033355.19+463759.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 58,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031320.09+472515.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 45,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03133687+5007152",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031358.02+495704.3",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 47,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      49",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 76,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UCAC4 698-023069",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 70,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031416.91+493711.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 59,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      53",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 58,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031454.79+513038.7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 70,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      54",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 83,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      56",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 82,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031538.03+483247.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 74,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031543.27+502259.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 44,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03155871+4827039",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 71,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031604.82+460656.4",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 42,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03161891+4904533",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 76,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03163264+5035125",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 80,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      68",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 57,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03165087+4930057",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 77,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031713.70+491237.8",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03172007+5031430",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     300",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 63,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031744.93+490605.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 53,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      82",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": 79,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      85",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 58,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03181332+4856396",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 74,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03182214+5147456",
+          "otype": "V*",
+          "otype_desc": "Variable Star",
+          "membership": 67,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031828.48+482815.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 42,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03183051+5012042",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031842.03+511717.4",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 71,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20    LMB   10859",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 43,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031918.08+491755.7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 70,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J031924.77+502417.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      93",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 62,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "ZTF J031932.64+513137.2",
+          "otype": "BY*",
+          "otype_desc": "BY Dra Variable",
+          "membership": 52,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     268",
+          "otype": "LM*",
+          "otype_desc": "Low-mass Star",
+          "membership": 68,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20    LMB    9366",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 53,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH      99",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 84,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03202305+5019171",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 82,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     100",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 63,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     101",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03204286+4645152",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 65,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03204583+5114075",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 59,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032058.95+473245.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 48,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03210315+4858113",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 76,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03211101+4819491",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 47,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP      99",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 43,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032119.40+491936.9",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 49,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     135",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 72,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     109",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 55,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03214593+4645481",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 84,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032149.11+483252.1",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 59,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03220476+4911544",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 79,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032210.67+483532.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 46,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032223.75+510541.6",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 78,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032225.92+481349.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 70,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     355",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 65,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     334",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 65,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03225419+4849446",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 82,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     121",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 74,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     DH     122",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03230978+4814426",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 80,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032313.15+454413.9",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 80,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03232505+4754379",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 83,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032326.18+472210.0",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 50,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032336.77+521216.2",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 48,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03234653+4759206",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 69,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     371",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 54,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032403.88+491512.5",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 67,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03240597+4831278",
+          "otype": "Em*",
+          "otype_desc": "Emission-line Star",
+          "membership": 83,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "UGCS J032411.39+521145.7",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 50,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "Cl* Melotte   20     AP     370",
+          "otype": "*",
+          "otype_desc": "Star",
+          "membership": 52,
+          "bibcode": "2012MNRAS.426.3403L"
+        },
+        {
+          "main_id": "2MASS J03242273+4820011",
+          "otype": "Y*O",
+          "otype_desc": "Young Stellar Object",
+          "membership": 84,
+          "bibcode": "2012MNRAS.426.3403L"
+        }
+      ],
+      "children_total": 19225
+    },
+    "measurements": {
+      "mesDistance": [
+        {
+          "bibcode": "2005A&A...438.1163K",
+          "dist": 190,
+          "method": "ST-L    ",
+          "minus_err": null,
+          "plus_err": null,
+          "qual": null,
+          "unit": "pc  "
+        },
+        {
+          "bibcode": "2018MNRAS.473..849D",
+          "dist": 175,
+          "method": null,
+          "minus_err": null,
+          "plus_err": null,
+          "qual": null,
+          "unit": "pc  "
+        },
+        {
+          "bibcode": "2021MNRAS.504..356D",
+          "dist": 177,
+          "method": "paral   ",
+          "minus_err": -2,
+          "plus_err": 2,
+          "qual": null,
+          "unit": "pc  "
+        },
+        {
+          "bibcode": "2017AstBu..72..257L",
+          "dist": 184,
+          "method": null,
+          "minus_err": null,
+          "plus_err": null,
+          "qual": null,
+          "unit": "pc  "
+        },
+        {
+          "bibcode": "2021A&A...651A.104P",
+          "dist": 171,
+          "method": "paral   ",
+          "minus_err": null,
+          "plus_err": null,
+          "qual": null,
+          "unit": "pc  "
+        },
+        {
+          "bibcode": "2021MNRAS.503.3279S",
+          "dist": 0.177,
+          "method": null,
+          "minus_err": -0.008,
+          "plus_err": 0.008,
+          "qual": null,
+          "unit": "kpc "
+        },
+        {
+          "bibcode": "2022MNRAS.509..421N",
+          "dist": 0.17,
+          "method": "paral   ",
+          "minus_err": null,
+          "plus_err": null,
+          "qual": null,
+          "unit": "kpc "
+        },
+        {
+          "bibcode": "2022ApJ...939...94M",
+          "dist": 166.2,
+          "method": "paral   ",
+          "minus_err": null,
+          "plus_err": null,
+          "qual": null,
+          "unit": "pc  "
+        }
+      ],
+      "mesFe_h": [
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.073,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2022A&A...668A...4F"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.01,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2022MNRAS.509..421N"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.14,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2014A&A...561A..93H"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.14,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2016A&A...585A.150N"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.013,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2020A&A...640A.127Z"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.08,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2019A&A...623A..80C"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": -0.1,
+          "flag": null,
+          "compstar": null,
+          "catno": null,
+          "bibcode": "2024A&A...691A.317A"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.158,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2021MNRAS.504..356D"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": -0.013,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2021MNRAS.503.3279S"
+        },
+        {
+          "teff": null,
+          "log_g": null,
+          "fe_h": 0.01,
+          "flag": null,
+          "compstar": "SUN      ",
+          "catno": null,
+          "bibcode": "2020AJ....159..199D"
+        }
+      ],
+      "mesOtype": [
+        {
+          "otype": "As*",
+          "comments": "from bibcode",
+          "bibcode": "2019AJ....158..122K"
+        },
+        {
+          "otype": "As*",
+          "comments": "from id [KC2019] Theia  133",
+          "bibcode": null
+        },
+        {
+          "otype": "Cl*",
+          "comments": "from id C 0318+484",
+          "bibcode": null
+        },
+        {
+          "otype": "Cl*",
+          "comments": "from bibcode",
+          "bibcode": "2020A&A...640A...1C"
+        },
+        {
+          "otype": "MGr",
+          "comments": "from id [MGC2022] Crius 229",
+          "bibcode": null
+        },
+        {
+          "otype": "MGr",
+          "comments": "from bibcode",
+          "bibcode": "2022ApJ...939...94M"
+        },
+        {
+          "otype": "OpC",
+          "comments": "from bibcode",
+          "bibcode": "2013A&A...558A..53K"
+        },
+        {
+          "otype": "OpC",
+          "comments": "from bibcode",
+          "bibcode": "2014A&A...564A..79D"
+        },
+        {
+          "otype": "OpC",
+          "comments": "from bibcode",
+          "bibcode": "2020A&A...633A..99C"
+        },
+        {
+          "otype": "OpC",
+          "comments": "from bibcode",
+          "bibcode": "2020AJ....159..199D"
+        },
+        {
+          "otype": "OpC",
+          "comments": "from bibcode",
+          "bibcode": "2021MNRAS.504..356D"
+        },
+        {
+          "otype": "OpC",
+          "comments": "from bibcode",
+          "bibcode": "2017AstBu..72..257L"
+        },
+        {
+          "otype": "OpC",
+          "comments": "from bibcode",
+          "bibcode": "2022ApJS..262....7H"
+        }
+      ],
+      "mesPLX": [
+        {
+          "bibcode": "2018A&A...616A..10G",
+          "obscode": null,
+          "plx": 5.718,
+          "plx_err": 0.005
+        },
+        {
+          "bibcode": "2018A&A...618A..93C",
+          "obscode": null,
+          "plx": 5.668,
+          "plx_err": 0.192
+        },
+        {
+          "bibcode": "2019AJ....158..122K",
+          "obscode": null,
+          "plx": 6.37594,
+          "plx_err": null
+        },
+        {
+          "bibcode": "2020A&A...633A..99C",
+          "obscode": null,
+          "plx": 5.668,
+          "plx_err": 0.007
+        },
+        {
+          "bibcode": "2020A&A...640A...1C",
+          "obscode": null,
+          "plx": 5.668,
+          "plx_err": 0.192
+        },
+        {
+          "bibcode": "2021MNRAS.504..356D",
+          "obscode": null,
+          "plx": 5.695,
+          "plx_err": 0.203
+        },
+        {
+          "bibcode": "2021MNRAS.503.3279S",
+          "obscode": null,
+          "plx": 5.69,
+          "plx_err": 0.244
+        },
+        {
+          "bibcode": "2022A&A...659A..59T",
+          "obscode": null,
+          "plx": 5.77,
+          "plx_err": 0.201
+        },
+        {
+          "bibcode": "2022ApJS..262....7H",
+          "obscode": null,
+          "plx": 5.746,
+          "plx_err": 0.171
+        },
+        {
+          "bibcode": "2023A&A...674A..37G",
+          "obscode": null,
+          "plx": 5.755,
+          "plx_err": 0.193
+        }
+      ],
+      "mesPM": [
+        {
+          "bibcode": "2014A&A...564A..79D",
+          "coosystem": "ICRS",
+          "pmde": -1.2,
+          "pmde_err": 2.4,
+          "pmra": 0.87,
+          "pmra_err": 2.84
+        },
+        {
+          "bibcode": "2018A&A...616A..10G",
+          "coosystem": "ICRS",
+          "pmde": -25.556,
+          "pmde_err": 0.095,
+          "pmra": 22.929,
+          "pmra_err": 0.071
+        },
+        {
+          "bibcode": "2018A&A...618A..93C",
+          "coosystem": "ICRS",
+          "pmde": -25.378,
+          "pmde_err": 1.205,
+          "pmra": 22.864,
+          "pmra_err": 1.127
+        },
+        {
+          "bibcode": "2020A&A...633A..99C",
+          "coosystem": "ICRS",
+          "pmde": -25.378,
+          "pmde_err": 0.048,
+          "pmra": 22.864,
+          "pmra_err": 0.048
+        },
+        {
+          "bibcode": "2020A&A...640A...1C",
+          "coosystem": "ICRS",
+          "pmde": -25.378,
+          "pmde_err": 1.205,
+          "pmra": 22.864,
+          "pmra_err": 1.127
+        },
+        {
+          "bibcode": "2021MNRAS.504..356D",
+          "coosystem": null,
+          "pmde": -25.403,
+          "pmde_err": 1.326,
+          "pmra": 22.845,
+          "pmra_err": 1.323
+        },
+        {
+          "bibcode": "2017AstBu..72..257L",
+          "coosystem": "ICRS",
+          "pmde": -25.998,
+          "pmde_err": 0.25,
+          "pmra": 22.261,
+          "pmra_err": 0.21
+        },
+        {
+          "bibcode": "2020ApJ...903...55P",
+          "coosystem": null,
+          "pmde": -0.7,
+          "pmde_err": 0.88,
+          "pmra": 0.02,
+          "pmra_err": 1.16
+        },
+        {
+          "bibcode": "2021MNRAS.503.3279S",
+          "coosystem": null,
+          "pmde": -25.49,
+          "pmde_err": 1.363,
+          "pmra": 22.863,
+          "pmra_err": 1.282
+        },
+        {
+          "bibcode": "2022A&A...659A..59T",
+          "coosystem": null,
+          "pmde": -25.434,
+          "pmde_err": 0.772,
+          "pmra": 23.017,
+          "pmra_err": 0.63
+        },
+        {
+          "bibcode": "2022ApJS..262....7H",
+          "coosystem": null,
+          "pmde": -25.431,
+          "pmde_err": 1.078,
+          "pmra": 22.97,
+          "pmra_err": 1.01
+        },
+        {
+          "bibcode": "2023A&A...674A..37G",
+          "coosystem": null,
+          "pmde": -25.413,
+          "pmde_err": 1.293,
+          "pmra": 22.859,
+          "pmra_err": 1.188
+        }
+      ],
+      "mesVelocities": [
+        {
+          "bibcode": "2017A&A...600A.106C",
+          "d": null,
+          "meanerror": 1,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "B",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": -2.4,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2018A&A...616A..10G",
+          "d": null,
+          "meanerror": 0.08,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": -0.29,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2018A&A...619A.155S",
+          "d": null,
+          "meanerror": 0.18,
+          "nature": "s",
+          "nbmes": 126,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": -0.1,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2019A&A...623A..80C",
+          "d": null,
+          "meanerror": 0.59,
+          "nature": "s",
+          "nbmes": 12,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "V  ",
+          "velvalue": 0.21,
+          "wdomain": "NIR "
+        },
+        {
+          "bibcode": "2020AJ....159..199D",
+          "d": null,
+          "meanerror": 1.3,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "B",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 1,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2021MNRAS.504..356D",
+          "d": null,
+          "meanerror": 1.703,
+          "nature": "s",
+          "nbmes": 126,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "B",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": -0.517,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2017AstBu..72..257L",
+          "d": null,
+          "meanerror": 0.65,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": -1.4,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2020ApJ...903...55P",
+          "d": null,
+          "meanerror": 1.05,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "B",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 0.75,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2021A&A...647A..19T",
+          "d": null,
+          "meanerror": 0.16,
+          "nature": "s",
+          "nbmes": 251,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": 0.72,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2022A&A...668A...4F",
+          "d": null,
+          "meanerror": 0.4268,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": null,
+          "quality": "C",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": -4.778491,
+          "wdomain": "Opt "
+        },
+        {
+          "bibcode": "2023A&A...674A..37G",
+          "d": null,
+          "meanerror": 0.503,
+          "nature": "s",
+          "nbmes": null,
+          "obsdate": null,
+          "origin": null,
+          "qual": "A",
+          "quality": "A",
+          "remark": null,
+          "remarks": null,
+          "resolution": null,
+          "veltype": "v  ",
+          "velvalue": -0.961,
+          "wdomain": "Opt "
+        }
+      ]
+    },
+    "atmosphere_measurements": [
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.073,
+        "bibcode": "2022A&A...668A...4F"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.01,
+        "bibcode": "2022MNRAS.509..421N"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.14,
+        "bibcode": "2014A&A...561A..93H"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.14,
+        "bibcode": "2016A&A...585A.150N"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.013,
+        "bibcode": "2020A&A...640A.127Z"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.08,
+        "bibcode": "2019A&A...623A..80C"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": -0.1,
+        "bibcode": "2024A&A...691A.317A"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.158,
+        "bibcode": "2021MNRAS.504..356D"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": -0.013,
+        "bibcode": "2021MNRAS.503.3279S"
+      },
+      {
+        "teff": null,
+        "log_g": null,
+        "fe_h": 0.01,
+        "bibcode": "2020AJ....159..199D"
+      }
+    ],
+    "teff_median": null,
+    "vsini_measurements": [],
+    "distance_measurements": [
+      {
+        "dist": 190,
+        "unit": "pc  ",
+        "plus_err": null,
+        "minus_err": null,
+        "method": "ST-L    ",
+        "bibcode": "2005A&A...438.1163K"
+      },
+      {
+        "dist": 175,
+        "unit": "pc  ",
+        "plus_err": null,
+        "minus_err": null,
+        "method": null,
+        "bibcode": "2018MNRAS.473..849D"
+      },
+      {
+        "dist": 177,
+        "unit": "pc  ",
+        "plus_err": 2,
+        "minus_err": -2,
+        "method": "paral   ",
+        "bibcode": "2021MNRAS.504..356D"
+      },
+      {
+        "dist": 184,
+        "unit": "pc  ",
+        "plus_err": null,
+        "minus_err": null,
+        "method": null,
+        "bibcode": "2017AstBu..72..257L"
+      },
+      {
+        "dist": 171,
+        "unit": "pc  ",
+        "plus_err": null,
+        "minus_err": null,
+        "method": "paral   ",
+        "bibcode": "2021A&A...651A.104P"
+      },
+      {
+        "dist": 0.177,
+        "unit": "kpc ",
+        "plus_err": 0.008,
+        "minus_err": -0.008,
+        "method": null,
+        "bibcode": "2021MNRAS.503.3279S"
+      },
+      {
+        "dist": 0.17,
+        "unit": "kpc ",
+        "plus_err": null,
+        "minus_err": null,
+        "method": "paral   ",
+        "bibcode": "2022MNRAS.509..421N"
+      },
+      {
+        "dist": 166.2,
+        "unit": "pc  ",
+        "plus_err": null,
+        "minus_err": null,
+        "method": "paral   ",
+        "bibcode": "2022ApJ...939...94M"
+      }
+    ],
+    "types": [
+      "As*",
+      "Cl*",
+      "MGr",
+      "MGr",
+      "OpC",
+      "OpC"
+    ],
+    "url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Cl%20Melotte%20%20%2020"
+  },
+  "papers_count": 948,
+  "wikipedia": {
+    "title": "Alpha Persei Cluster",
+    "description": "Open cluster in the constellation Perseus",
+    "summary": "The Alpha Persei Cluster, also known as Melotte 20 or Collinder 39, is an open cluster of stars in the northern constellation of Perseus. To the naked eye, the cluster consists of several blue-hued spectral type B stars. The most luminous member is the ~2nd magnitude yellow supergiant Mirfak, also known as Alpha Persei. Bright members also include Delta, Sigma, Psi, 29, 30, 34, and 48 Persei. The Hipparcos satellite and infrared color-magnitude diagram fitting have been used to establish a distance to the cluster of ~560 light-years (172 pc). The distance established via the independent analyses agree, thereby making the cluster an important rung on the cosmic distance ladder. As seen from the Earth, the extinction of the cluster due to interstellar dust is around 0.30 magnitudes.",
+    "intro": "The Alpha Persei Cluster, also known as Melotte 20 or Collinder 39, is an open cluster of stars in the northern constellation of Perseus. To the naked eye, the cluster consists of several blue-hued spectral type B stars. The most luminous member is the ~2nd magnitude yellow supergiant Mirfak, also known as Alpha Persei. Bright members also include Delta, Sigma, Psi, 29, 30, 34, and 48 Persei. The Hipparcos satellite and infrared color-magnitude diagram fitting have been used to establish a distance to the cluster of ~560 light-years (172 pc). The distance established via the independent analyses agree, thereby making the cluster an important rung on the cosmic distance ladder. As seen from the Earth, the extinction of the cluster due to interstellar dust is around 0.30 magnitudes.",
+    "url": "https://en.wikipedia.org/wiki/Alpha_Persei_Cluster",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Melotte_20.jpg/330px-Melotte_20.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Melotte_20.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "wikidata": "Q1072618",
+    "sections_count": 5
+  },
+  "wikidata": {
+    "id": "Q1072618",
+    "facts": {
+      "constellation": [
+        {
+          "value": "Perseus"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 1.2,
+          "unit": ""
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 172.4,
+          "unit": "pc"
+        },
+        {
+          "value": 190.0,
+          "unit": "pc"
+        }
+      ],
+      "radius": [
+        {
+          "value": 13.3,
+          "unit": "pc"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.14,
+          "unit": ""
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -2.4,
+          "unit": "km/s",
+          "plus": 1.0,
+          "minus": 1.0
+        },
+        {
+          "value": -0.29,
+          "unit": "km/s",
+          "plus": 0.07999999999999999,
+          "minus": 0.08000000000000002
+        }
+      ],
+      "parallax": [
+        {
+          "value": 5.718,
+          "unit": "mas",
+          "plus": 0.004999999999999893,
+          "minus": 0.004999999999999893
+        }
+      ],
+      "discoverer or inventor": [
+        {
+          "value": "Giovan Battista Hodierna"
+        }
+      ],
+      "time of discovery": [
+        {
+          "value": "1654"
+        }
+      ],
+      "named after": [
+        {
+          "value": "Alpha Persei"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "open cluster"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 51.675,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 48.8,
+          "unit": "°"
+        }
+      ]
+    },
+    "all_claims": {
+      "image": [
+        {
+          "value": "Melotte 20.jpg",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Melotte_20.jpg"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "open cluster",
+          "qid": "Q11387",
+          "type": "wikibase-item"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Perseus",
+          "qid": "Q10511",
+          "type": "wikibase-item"
+        }
+      ],
+      "discoverer or inventor": [
+        {
+          "value": "Giovan Battista Hodierna",
+          "qid": "Q55007799",
+          "type": "wikibase-item"
+        }
+      ],
+      "named after": [
+        {
+          "value": "Alpha Persei",
+          "qid": "Q13790",
+          "type": "wikibase-item"
+        }
+      ],
+      "Commons category": [
+        {
+          "value": "Alpha Persei Cluster",
+          "type": "string"
+        }
+      ],
+      "catalog code": [
+        {
+          "value": "Melotte 20",
+          "type": "string"
+        },
+        {
+          "value": "OCl 392.0",
+          "type": "string"
+        },
+        {
+          "value": "C 0318+484",
+          "type": "string"
+        },
+        {
+          "value": "[KPS2012] MWSC 0274",
+          "type": "string"
+        }
+      ],
+      "time of discovery or invention": [
+        {
+          "value": "1654",
+          "type": "time"
+        }
+      ],
+      "Freebase ID": [
+        {
+          "value": "/m/03cm7vn",
+          "type": "external-id",
+          "url": "https://www.google.com/search?kgmid=/m/03cm7vn"
+        }
+      ],
+      "topic's main category": [
+        {
+          "value": "Category:Alpha Persei Cluster",
+          "qid": "Q16785582",
+          "type": "wikibase-item"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 1.2,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "radius": [
+        {
+          "value": 13.3,
+          "unit": "pc",
+          "type": "quantity"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 5.718,
+          "unit": "mas",
+          "plus": 0.004999999999999893,
+          "minus": 0.004999999999999893,
+          "type": "quantity"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -0.29,
+          "unit": "km/s",
+          "plus": 0.07999999999999999,
+          "minus": 0.08000000000000002,
+          "type": "quantity"
+        }
+      ],
+      "metallicity": [
+        {
+          "value": 0.14,
+          "unit": "",
+          "type": "quantity"
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 172.4,
+          "unit": "pc",
+          "type": "quantity"
+        },
+        {
+          "value": 190.0,
+          "unit": "pc",
+          "type": "quantity"
+        }
+      ],
+      "SIMBAD ID": [
+        {
+          "value": "Cl Melotte 20",
+          "type": "external-id",
+          "url": "https://simbad.u-strasbg.fr/simbad/sim-id?Ident=Cl%20Melotte%2020"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 51.675,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "declination": [
+        {
+          "value": 48.8,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "epoch": [
+        {
+          "value": "J2000.0",
+          "qid": "Q1264450",
+          "type": "wikibase-item"
+        }
+      ],
+      "declination component of proper motion": [
+        {
+          "value": -25.556,
+          "unit": "mas/yr",
+          "plus": 0.09500000000000242,
+          "minus": 0.09499999999999886,
+          "type": "quantity"
+        }
+      ],
+      "right ascension component of proper motion": [
+        {
+          "value": 22.929,
+          "unit": "mas/yr",
+          "plus": 0.0710000000000015,
+          "minus": 0.07099999999999795,
+          "type": "quantity"
+        }
+      ]
+    },
+    "property_ids": {
+      "image": "P18",
+      "instance of": "P31",
+      "constellation": "P59",
+      "discoverer or inventor": "P61",
+      "named after": "P138",
+      "Commons category": "P373",
+      "catalog code": "P528",
+      "time of discovery or invention": "P575",
+      "Freebase ID": "P646",
+      "topic's main category": "P910",
+      "apparent magnitude": "P1215",
+      "radius": "P2120",
+      "parallax": "P2214",
+      "radial velocity": "P2216",
+      "metallicity": "P2227",
+      "distance from Earth": "P2583",
+      "SIMBAD ID": "P3083",
+      "right ascension": "P6257",
+      "declination": "P6258",
+      "epoch": "P6259",
+      "declination component of proper motion": "P10751",
+      "right ascension component of proper motion": "P10752"
+    },
+    "commons_image": "Melotte 20.jpg",
+    "url": "https://www.wikidata.org/wiki/Q1072618"
+  },
+  "summary": {
+    "designation": "Cl Melotte 20",
+    "object_type": "Moving Group",
+    "ra_deg": 51.61708333333334,
+    "dec_deg": 48.974999999999994,
+    "v_mag": 1.2,
+    "distance_pc": 174.9,
+    "distance_ly": 570.4,
+    "radius": {
+      "value": 13.3,
+      "unit": "pc"
+    },
+    "constellation": "Perseus",
+    "abs_mag": -5.01,
+    "gal_l": 147.35661,
+    "gal_b": -6.40397,
+    "description": "Open cluster in the constellation Perseus"
+  },
+  "id": "alpha-persei-moving-clus",
+  "path": "other/alpha-persei-moving-clus",
+  "gz_id": "GZ-122",
+  "observations": [
+    {
+      "datetime": "2026-10-12 21:18",
+      "location": "Royse City, Texas",
+      "rating": 2.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "equipment": "binoculars",
+      "incomplete": false,
+      "utc": "2026-10-13 02:18",
+      "altitude_deg": 23.2,
+      "azimuth_deg": 45.5
+    }
+  ]
+}
