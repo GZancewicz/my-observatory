@@ -27,6 +27,11 @@
   background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; color: var(--text);
   padding: 5px 8px; font-size: 13px; max-width: 100%;
 }
+.mo-sizes .mo-sz-btn {
+  background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; color: var(--text);
+  padding: 5px 10px; font-size: 13px; cursor: pointer;
+}
+.mo-sizes .mo-sz-btn:hover { border-color: var(--accent); color: var(--accent); }
 
 .mo-sizes .mo-sz-stage { position: relative; border: 1px solid var(--line); border-radius: var(--radius); background: var(--mo-sz-space); }
 .mo-sizes .mo-sz-strip { overflow-x: auto; overflow-y: hidden; border-radius: var(--radius); cursor: grab; user-select: none; -webkit-user-select: none; }

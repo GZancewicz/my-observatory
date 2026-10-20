@@ -386,6 +386,9 @@
       e.preventDefault(); st.scrollBy({ left: step, behavior: "smooth" });
     });
     on(S.pick, "change", () => scrollToItem(+S.pick.value, true));
+    const jump = (k) => { S.pick.value = String(k); scrollToItem(k, true); };
+    on(S.first, "click", () => jump(0));
+    on(S.last, "click", () => jump(S.list.length - 1));
     on(S.sort, "change", () => { sortKey = S.sort.value; applySort(); });
   }
 
@@ -417,6 +420,10 @@
     S.pick = el("select", "mo-sz-pick"); S.pick.setAttribute("aria-label", "Jump to object");
     controls.appendChild(el("span", "mo-sz-controls__label", "Jump to"));
     controls.appendChild(S.pick);
+    S.first = el("button", "mo-sz-btn", "First"); S.first.type = "button"; S.first.title = "Jump to the start of the row";
+    S.last = el("button", "mo-sz-btn", "Last"); S.last.type = "button"; S.last.title = "Jump to the end of the row";
+    controls.appendChild(S.first);
+    controls.appendChild(S.last);
     const legend = el("div", "mo-sz-legend");
     legend.appendChild(el("span", "mo-sz-legend__label", "Blackbody colour"));
     const bar = el("span", "mo-sz-legend__bar");
