@@ -427,16 +427,23 @@
   // Nearest-point hover, click-to-open and optional rectangular brush over a plot group.
   function interact(chart, svg, g, pts, opts) {
     const R = opts.radius || 16;
-    const valid = pts.filter((p) => Number.isFinite(p.px) && Number.isFinite(p.py));
-    const delaunay = valid.length ? d3.Delaunay.from(valid, (p) => p.px, (p) => p.py) : null;
+    let valid, delaunay;
+    // The sky map moves its points when spun, so the hit test can be rebuilt (chart.rehit).
+    const rehit = () => {
+      valid = pts.filter((p) => Number.isFinite(p.px) && Number.isFinite(p.py));
+      delaunay = valid.length ? d3.Delaunay.from(valid, (p) => p.px, (p) => p.py) : null;
+    };
+    rehit();
+    chart.rehit = rehit;
     const ring = g.append("circle").attr("class", "mo-hover").attr("r", 0).style("display", "none");
     const nearest = (ev) => {
       if (!delaunay) return null;
       const [mx, my] = d3.pointer(ev, g.node());
       const i = delaunay.find(mx, my);
       const p = valid[i];
-      return p && Math.hypot(p.px - mx, p.py - my) <= R ? p : null;
+      return p && Math.hypot(p.px - mx, p.py - my) <= R / (chart.zoomK || 1) ? p : null;
     };
+    chart.hideHover = () => { ring.style("display", "none"); hideTip(); };
     svg.on("pointermove.mo", (ev) => {
       if (S.brushing) return;
       const p = nearest(ev);
@@ -452,7 +459,10 @@
       return;
     }
     const ext = opts.brush;
-    const brush = d3.brush().extent(ext)
+    // brushShift: only a shift-drag brushes (a plain drag is left for the chart, e.g. spinning the
+    // sky). d3's own shift = lock-to-one-axis modifier is switched off there, or the box never widens.
+    const brush = d3.brush().extent(ext).keyModifiers(!opts.brushShift)
+      .filter((ev) => !ev.ctrlKey && !ev.button && (!opts.brushShift || ev.shiftKey))
       .on("start", (ev) => { if (ev.sourceEvent) { S.brushing = true; hideTip(); ring.style("display", "none"); } })
       .on("brush end", (ev) => {
         if (!ev.sourceEvent) return;
@@ -483,7 +493,7 @@
 
   // ---------------------------------------------------------------- charts
   const CHARTS = [
-    { id: "sky", wide: true, title: "All-sky map", gl: "All-sky map|celestial sphere|Hammer projection", sub: "Hammer projection of right ascension and declination, centred on 6h. Point size shows apparent brightness; colour shows temperature. Drag to highlight a region.", draw: drawSky },
+    { id: "sky", wide: true, title: "All-sky map", gl: "All-sky map|celestial sphere|Hammer projection", sub: "Hammer projection of right ascension and declination, centred on 6h. Point size shows apparent brightness; colour shows temperature. Drag to spin the sphere; pinch, ⌘/Ctrl-scroll or double-click to zoom; shift-drag to highlight a region.", draw: drawSky },
     { id: "hr", title: "Hertzsprung–Russell diagram", gl: "Hertzsprung–Russell diagram|Hertzsprung-Russell diagram|H-R diagram|HR diagram", sub: "Colour index against absolute magnitude. Hot stars to the left, luminous stars at the top. Drag to highlight.", draw: drawHR },
     { id: "dist", title: "Distance and apparent magnitude", gl: "apparent magnitude|Distance and apparent magnitude", sub: "Diagonal lines join points of equal absolute magnitude M. Drag to highlight.", draw: drawDist },
     { id: "polar", title: "Where they were in my sky", gl: "altitude-azimuth|alt-az|horizontal coordinate system|altitude", sub: "Altitude and azimuth at each observation. Zenith at the centre, horizon at the rim, north up, east right.", draw: drawPolar },
@@ -662,26 +672,32 @@
     const m = { t: 8, r: 8, b: 8, l: 8 };
     const w = W - m.l - m.r, h = Math.round(w / 2);
     const H = h + m.t + m.b;
-    const proj = d3.geoProjection(hammerRaw).rotate([90, 0]).precision(0.3)
+    const ROT0 = [90, 0];
+    const view = S.skyView || (S.skyView = { rot: ROT0.slice(), k: 1, x: 0, y: 0, W: W });
+    if (view.W !== W) { view.k = 1; view.x = 0; view.y = 0; view.W = W; }
+    const proj = d3.geoProjection(hammerRaw).rotate(view.rot).precision(0.3)
       .fitExtent([[0, 0], [w, h]], { type: "Sphere" });
     const path = d3.geoPath(proj);
     const svg = makeSvg(plot, W, H, "All-sky map");
+    const clipId = "mo-sky-clip";
+    svg.append("clipPath").attr("id", clipId).append("rect").attr("width", W).attr("height", H);
+    const zoomable = svg.append("g").attr("clip-path", "url(#" + clipId + ")").append("g").attr("class", "mo-zoom");
     // sphere fill sits in its own layer so the brush (first child of g) stays visible above it
-    svg.append("path").attr("class", "mo-sphere").attr("transform", "translate(" + m.l + "," + m.t + ")").attr("d", path({ type: "Sphere" }));
-    const g = svg.append("g").attr("transform", "translate(" + m.l + "," + m.t + ")");
-    g.append("path").attr("class", "mo-graticule").attr("d", path(d3.geoGraticule().step([30, 30])()));
-    // constellation boundaries
+    const sphere = zoomable.append("path").attr("class", "mo-sphere").attr("transform", "translate(" + m.l + "," + m.t + ")");
+    const g = zoomable.append("g").attr("transform", "translate(" + m.l + "," + m.t + ")");
+    // one group per layer, in drawing order; redraw() refills them when the sphere is spun
+    const L = {};
+    ["grat", "bound", "lines", "zenith", "ref", "ticks", "cons", "passes", "marks", "labels"].forEach((k) => { L[k] = g.append("g").attr("class", "mo-layer-" + k); });
+    L.ticks.attr("class", "mo-sky-ticks"); L.cons.attr("class", "mo-cons-names"); L.passes.attr("class", "mo-passes"); L.marks.attr("class", "mo-marks");
     const visibleCons = new Set(S.view.objects.map((o) => o.constellation).filter(Boolean).map((n) => n.toLowerCase()));
     const consObjAbbr = new Set();
+    const allLines = [], strongLines = [];
     if (SK) {
       S.view.objects.filter((o) => o.category === "constellations").forEach((o) => {
         const k = (o.abbr && SK.byAbbr[o.abbr]) ? o.abbr : SK.byName[o.name.toLowerCase()];
         if (k) consObjAbbr.add(k);
       });
-      const all = [], strong = [];
-      Object.keys(SK.byAbbr).forEach((k) => (consObjAbbr.has(k) ? strong : all).push.apply(consObjAbbr.has(k) ? strong : all, SK.byAbbr[k].lines));
-      g.append("path").attr("class", "mo-bound").attr("d", path({ type: "MultiLineString", coordinates: all }));
-      if (strong.length) g.append("path").attr("class", "mo-bound is-strong").attr("d", path({ type: "MultiLineString", coordinates: strong }));
+      Object.keys(SK.byAbbr).forEach((k) => (consObjAbbr.has(k) ? strongLines : allLines).push.apply(consObjAbbr.has(k) ? strongLines : allLines, SK.byAbbr[k].lines));
       chart.foot.textContent = "";
     } else {
       chart.foot.textContent = "Constellation boundaries are not loaded (data/sky/boundaries.js).";
@@ -693,72 +709,129 @@
       const L = l * RAD;
       return lonlat(norm360(Math.atan2(Math.sin(L) * Math.cos(eps), Math.cos(L)) / RAD), Math.asin(Math.sin(eps) * Math.sin(L)) / RAD);
     });
-    g.append("path").attr("class", "mo-equator").attr("d", path({ type: "LineString", coordinates: eq }));
-    g.append("path").attr("class", "mo-ecliptic").attr("d", path({ type: "LineString", coordinates: ecl }));
-    drawZenith(g, proj, path, w);
-    const pEq = proj(lonlat(232, 0)), pEc = proj(ecl[121]);
-    if (pEq) g.append("text").attr("class", "mo-ref-label").attr("x", pEq[0]).attr("y", pEq[1] - 4).attr("text-anchor", "middle").attr("data-gl", "celestial equator|equator").text("equator");
-    if (pEc && w > 420) g.append("text").attr("class", "mo-ref-label").attr("x", pEc[0]).attr("y", pEc[1] - 5).attr("text-anchor", "middle").attr("data-gl", "ecliptic").text("ecliptic");
-    // RA hour labels along the equator, Dec labels along the central meridian
     const hourStep = w < 520 ? 4 : 2;
-    const ticks = g.append("g").attr("class", "mo-sky-ticks");
-    d3.range(0, 24, hourStep).forEach((hh) => {
-      if (hh === 6) return;
-      const p = proj(lonlat(hh * 15, 0));
-      if (p) ticks.append("text").attr("x", p[0]).attr("y", p[1] + 12).attr("text-anchor", "middle").attr("data-gl", "right ascension").text(hh + "h");
-    });
-    [-60, -30, 30, 60].forEach((dd) => {
-      const p = proj(lonlat(90, dd));
-      if (p) ticks.append("text").attr("x", p[0] + 4).attr("y", p[1] - 3).attr("data-gl", "declination").text((dd > 0 ? "+" : "−") + Math.abs(dd) + "°");
-    });
-    // constellation names for constellations with objects in view
-    if (SK && w >= 520) {
-      const cl = g.append("g").attr("class", "mo-cons-names");
-      Object.keys(SK.byAbbr).forEach((k) => {
-        const c = SK.byAbbr[k];
-        if (!visibleCons.has(String(c.name).toLowerCase()) || consObjAbbr.has(k)) return;
-        const p = proj(lonlat(c.centroid[0], c.centroid[1]));
-        if (p) cl.append("text").attr("x", p[0]).attr("y", p[1]).attr("text-anchor", "middle").text(w < 520 ? k : c.name);
-      });
-    }
     // points
     const rScale = d3.scaleLinear().domain([-1.5, 7.5]).range([7, 2.4]).clamp(true);
     const placed = S.view.objects.filter((o) => o.ra !== null && o.dec !== null);
-    const pts = placed.map((o) => {
-      const p = proj(lonlat(o.ra, o.dec));
-      return { o, key: o.path, px: p ? p[0] : NaN, py: p ? p[1] : NaN, r: o.category === "constellations" ? 7 : o.v !== null ? rScale(o.v) : 3 };
-    }).sort((a, b) => b.r - a.r);
+    const pts = placed.map((o) => ({ o, key: o.path, px: NaN, py: NaN, r: o.category === "constellations" ? 7 : o.v !== null ? rScale(o.v) : 3 }))
+      .sort((a, b) => b.r - a.r);
     const unplaced = S.view.objects.length - placed.length;
     if (unplaced > 0) chart.foot.textContent = (chart.foot.textContent ? chart.foot.textContent + " " : "") + unplaced + " object" + (unplaced > 1 ? "s" : "") + " without a position (satellites) not shown.";
-    const sp = g.append("g").attr("class", "mo-passes");
-    const boxes = S.skyLabelBoxes = [];
-    satPasses().sort((x, y) => y.q.sighting - x.q.sighting).forEach((x) => {
-      sp.append("path").attr("class", passClass(x.q))
-        .attr("d", path({ type: "LineString", coordinates: x.q.points.map((q) => lonlat(q[1], q[2])) }))
-        .append("title").text(passTitle(x));
-      const xy = x.q.points.map((q) => proj(lonlat(q[1], q[2])));
-      if (x.q.sighting) labelLine(sp, xy, x.o.name + " · pass you saw " + shortTime(x.q.start_utc), "is-seen", boxes, 0.35);
-      else labelLine(sp, xy, "pass " + shortTime(x.q.start_utc), "", boxes, 0.15);
-    });
-    const mk = g.append("g").attr("class", "mo-marks");
-    const stars = mk.selectAll("circle").data(pts.filter((p) => p.o.category !== "planets" && p.o.category !== "constellations")).join("circle")
-      .attr("class", "mo-dot").attr("cx", (p) => p.px).attr("cy", (p) => p.py).attr("r", (p) => p.r).attr("fill", (p) => colorOf(p.o));
-    const planets = mk.selectAll("path.mo-planet").data(pts.filter((p) => p.o.category === "planets")).join("path")
-      .attr("class", "mo-dot mo-planet").attr("transform", (p) => "translate(" + p.px + "," + p.py + ")")
-      .attr("d", d3.symbol(d3.symbolDiamond, 110)).attr("fill", S.theme.gold);
-    const cons = mk.selectAll("path.mo-cons").data(pts.filter((p) => p.o.category === "constellations")).join("path")
-      .attr("class", "mo-cons").attr("transform", (p) => "translate(" + p.px + "," + p.py + ")")
-      .attr("d", d3.symbol(d3.symbolCross, 70));
-    const lab = g.append("g");
-    const cands = pts.filter((p) => p.o.category === "planets" || p.o.category === "constellations")
-      .concat(pts.filter((p) => p.o.category === "stars" && p.o.v !== null).sort((a, b) => a.o.v - b.o.v))
-      .map((p) => ({ x: p.px, y: p.py, r: p.r, text: p.o.name }));
-    placeLabels(lab, cands.filter((c) => Number.isFinite(c.x)), w, h, w < 400 ? 4 : w < 620 ? 6 : 12);
-    interact(chart, svg, g, pts, { tip: (p) => objTip(p.o), brush: [[0, 0], [w, h]], radius: 14 });
+    const passes = satPasses().sort((x, y) => y.q.sighting - x.q.sighting);
+    let stars, planets, cons;
+
+    function redraw() {
+      Object.keys(L).forEach((k) => L[k].selectAll("*").remove());
+      sphere.attr("d", path({ type: "Sphere" }));
+      L.grat.append("path").attr("class", "mo-graticule").attr("d", path(d3.geoGraticule().step([30, 30])()));
+      if (SK) {
+        L.bound.append("path").attr("class", "mo-bound").attr("d", path({ type: "MultiLineString", coordinates: allLines }));
+        if (strongLines.length) L.bound.append("path").attr("class", "mo-bound is-strong").attr("d", path({ type: "MultiLineString", coordinates: strongLines }));
+      }
+      L.lines.append("path").attr("class", "mo-equator").attr("d", path({ type: "LineString", coordinates: eq }));
+      L.lines.append("path").attr("class", "mo-ecliptic").attr("d", path({ type: "LineString", coordinates: ecl }));
+      drawZenith(L.zenith, proj, path, w);
+      const pEq = proj(lonlat(232, 0)), pEc = proj(ecl[121]);
+      if (pEq) L.ref.append("text").attr("class", "mo-ref-label").attr("x", pEq[0]).attr("y", pEq[1] - 4).attr("text-anchor", "middle").attr("data-gl", "celestial equator|equator").text("equator");
+      if (pEc && w > 420) L.ref.append("text").attr("class", "mo-ref-label").attr("x", pEc[0]).attr("y", pEc[1] - 5).attr("text-anchor", "middle").attr("data-gl", "ecliptic").text("ecliptic");
+      // RA hour labels along the equator, Dec labels along the central meridian
+      d3.range(0, 24, hourStep).forEach((hh) => {
+        const p = proj(lonlat(hh * 15, 0));
+        if (p) L.ticks.append("text").attr("x", p[0]).attr("y", p[1] + 12).attr("text-anchor", "middle").attr("data-gl", "right ascension").text(hh + "h");
+      });
+      [-60, -30, 30, 60].forEach((dd) => {
+        const p = proj(lonlat(90, dd));
+        if (p) L.ticks.append("text").attr("x", p[0] + 4).attr("y", p[1] - 3).attr("data-gl", "declination").text((dd > 0 ? "+" : "−") + Math.abs(dd) + "°");
+      });
+      // constellation names for constellations with objects in view
+      if (SK && w >= 520) {
+        Object.keys(SK.byAbbr).forEach((k) => {
+          const c = SK.byAbbr[k];
+          if (!visibleCons.has(String(c.name).toLowerCase()) || consObjAbbr.has(k)) return;
+          const p = proj(lonlat(c.centroid[0], c.centroid[1]));
+          if (p) L.cons.append("text").attr("x", p[0]).attr("y", p[1]).attr("text-anchor", "middle").text(w < 520 ? k : c.name);
+        });
+      }
+      pts.forEach((p) => { const q = proj(lonlat(p.o.ra, p.o.dec)); p.px = q ? q[0] : NaN; p.py = q ? q[1] : NaN; });
+      const boxes = S.skyLabelBoxes = [];
+      passes.forEach((x) => {
+        L.passes.append("path").attr("class", passClass(x.q))
+          .attr("d", path({ type: "LineString", coordinates: x.q.points.map((q) => lonlat(q[1], q[2])) }))
+          .append("title").text(passTitle(x));
+        const xy = x.q.points.map((q) => proj(lonlat(q[1], q[2])));
+        if (x.q.sighting) labelLine(L.passes, xy, x.o.name + " · pass you saw " + shortTime(x.q.start_utc), "is-seen", boxes, 0.35);
+        else labelLine(L.passes, xy, "pass " + shortTime(x.q.start_utc), "", boxes, 0.15);
+      });
+      stars = L.marks.selectAll("circle").data(pts.filter((p) => p.o.category !== "planets" && p.o.category !== "constellations")).join("circle")
+        .attr("class", "mo-dot").attr("cx", (p) => p.px).attr("cy", (p) => p.py).attr("r", (p) => p.r).attr("fill", (p) => colorOf(p.o));
+      planets = L.marks.selectAll("path.mo-planet").data(pts.filter((p) => p.o.category === "planets")).join("path")
+        .attr("class", "mo-dot mo-planet").attr("transform", (p) => "translate(" + p.px + "," + p.py + ")")
+        .attr("d", d3.symbol(d3.symbolDiamond, 110)).attr("fill", S.theme.gold);
+      cons = L.marks.selectAll("path.mo-cons").data(pts.filter((p) => p.o.category === "constellations")).join("path")
+        .attr("class", "mo-cons").attr("transform", (p) => "translate(" + p.px + "," + p.py + ")")
+        .attr("d", d3.symbol(d3.symbolCross, 70));
+      const cands = pts.filter((p) => p.o.category === "planets" || p.o.category === "constellations")
+        .concat(pts.filter((p) => p.o.category === "stars" && p.o.v !== null).sort((a, b) => a.o.v - b.o.v))
+        .map((p) => ({ x: p.px, y: p.py, r: p.r, text: p.o.name }));
+      placeLabels(L.labels, cands.filter((c) => Number.isFinite(c.x)), w, h, w < 400 ? 4 : w < 620 ? 6 : 12);
+      if (chart.rehit) chart.rehit();
+      if (chart.applySelection) chart.applySelection(S.selection);
+    }
+    redraw();
+    interact(chart, svg, g, pts, { tip: (p) => objTip(p.o), brush: [[0, 0], [w, h]], brushShift: true, radius: 14 });
     chart.applySelection = (sel) => { [stars, planets, cons].forEach((s) => styleMarks(sel, s, (p) => p.key)); };
+
+    // ---- zoom (pinch, ⌘/Ctrl-scroll, double-click, buttons) and spin (drag)
+    const zoom = d3.zoom().scaleExtent([1, 8]).translateExtent([[0, 0], [W, H]]).extent([[0, 0], [W, H]])
+      .filter((ev) => {
+        if (ev.type === "wheel") return ev.ctrlKey || ev.metaKey;
+        if (ev.type === "touchstart") return ev.touches && ev.touches.length >= 2;
+        return ev.type === "dblclick" && !ev.button;
+      })
+      .on("zoom", (ev) => {
+        const t = ev.transform;
+        view.k = t.k; view.x = t.x; view.y = t.y; chart.zoomK = t.k;
+        zoomable.attr("transform", t.toString());
+        svg.classed("is-zoomed", t.k > 1.001);
+        if (chart.hideHover) chart.hideHover();
+      });
+    svg.call(zoom).on("dblclick.zoom", null);
+    svg.on("dblclick.mo", (ev) => { if (!ev.button) svg.transition().duration(250).call(zoom.scaleBy, 2, d3.pointer(ev, svg.node())); });
+    chart.zoomK = view.k;
+    svg.call(zoom.transform, d3.zoomIdentity.translate(view.x, view.y).scale(view.k));
+    let spinStart = null, spinT = null;
+    const spin = d3.drag()
+      .filter((ev) => !ev.ctrlKey && !ev.button && !ev.shiftKey)
+      .on("start", (ev) => {
+        spinStart = { x: ev.x, y: ev.y, rot: view.rot.slice() };
+        svg.classed("is-spinning", true); S.brushing = true; // also mutes hover while spinning
+        if (chart.clearBrush) chart.clearBrush();
+        if (chart.hideHover) chart.hideHover();
+      })
+      .on("drag", (ev) => {
+        if (!spinStart) return;
+        const degPerPx = 360 / w / (view.k || 1);
+        view.rot = [spinStart.rot[0] + (ev.x - spinStart.x) * degPerPx, Math.max(-90, Math.min(90, spinStart.rot[1] - (ev.y - spinStart.y) * degPerPx))];
+        if (spinT) return;
+        spinT = requestAnimationFrame(() => { spinT = null; proj.rotate(view.rot); redraw(); });
+      })
+      .on("end", () => { spinStart = null; svg.classed("is-spinning", false); S.brushing = false; });
+    svg.call(spin);
+    // tool buttons
+    const tools = chart.tools;
+    tools.replaceChildren();
+    const btn = (label, title, fn) => {
+      const b = el("button", "mo-chip", label); b.type = "button"; b.title = title; b.setAttribute("aria-label", title);
+      b.addEventListener("click", fn); tools.appendChild(b); return b;
+    };
+    btn("+", "Zoom in", () => svg.transition().duration(250).call(zoom.scaleBy, 1.6));
+    btn("−", "Zoom out", () => svg.transition().duration(250).call(zoom.scaleBy, 1 / 1.6));
+    btn("Reset view", "Zoom out fully and centre on 6h", () => {
+      view.rot = ROT0.slice(); proj.rotate(view.rot); redraw();
+      svg.transition().duration(250).call(zoom.transform, d3.zoomIdentity);
+    });
   }
 
-  // ---- 3. Distance vs apparent magnitude
   function drawDist(chart, plot, W) {
     legendTemp(chart.legend, false, false);
     const data = S.view.objects.filter((o) => o.distLy !== null && o.distLy > 0 && o.v !== null);
@@ -1249,12 +1322,13 @@
       card.dataset.chart = def.id;
       card.appendChild(gl(el("h2", "mo-card__title", def.title), def.gl));
       card.appendChild(el("p", "mo-card__sub", def.sub));
+      const tools = el("div", "mo-tools");
       const legend = el("div", "mo-legend");
       const plot = el("div", "mo-plot");
       const foot = el("p", "mo-card__foot");
-      card.appendChild(legend); card.appendChild(plot); card.appendChild(foot);
+      card.appendChild(tools); card.appendChild(legend); card.appendChild(plot); card.appendChild(foot);
       grid.appendChild(card);
-      S.charts.push({ id: def.id, def, card, plot, legend, foot });
+      S.charts.push({ id: def.id, def, card, plot, tools, legend, foot });
     });
     root.appendChild(grid);
     const det = el("details", "mo-table");

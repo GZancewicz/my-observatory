@@ -153,6 +153,12 @@
 .mo-overview .mo-mean { stroke: var(--text); stroke-width: 2; stroke-linecap: round; pointer-events: none; }
 .mo-overview .mo-brush .selection { fill: var(--accent); fill-opacity: .12; stroke: var(--accent); stroke-opacity: .7; }
 .mo-overview .mo-brush .overlay { cursor: crosshair; }
+.mo-overview .mo-card[data-chart="sky"] .mo-brush .overlay { cursor: grab; }
+.mo-overview .mo-card[data-chart="sky"] .mo-svg.is-spinning,
+.mo-overview .mo-card[data-chart="sky"] .mo-svg.is-spinning .mo-brush .overlay { cursor: grabbing; }
+.mo-overview .mo-tools { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0; }
+.mo-overview .mo-tools:empty { display: none; }
+.mo-overview .mo-tools .mo-chip { min-width: 32px; text-align: center; }
 .mo-overview .mo-svg.is-pointing .mo-brush .overlay,
 .mo-overview .mo-svg.is-pointing { cursor: pointer; }
 .mo-overview .mo-bar { transition: opacity .15s; }
