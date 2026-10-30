@@ -91,6 +91,7 @@ button, select, input { font: inherit; color: inherit; }
 .item .t { font-weight: 600; line-height: 1.2; }
 .item .s { font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .item .r { font-size: 12px; color: var(--muted); text-align: right; white-space: nowrap; }
+.item .r .when { color: var(--text); opacity: .8; }
 
 .detail { padding: 24px; max-width: 1100px; min-width: 0; }
 .list { min-width: 0; }

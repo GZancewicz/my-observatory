@@ -432,6 +432,14 @@
       `<button class="chip" data-cat="${c}" aria-pressed="${state.category === c}">${c === "all" ? "All" : CATEGORIES[c]}<span class="n">${c === "all" ? state.objects.length : counts[c]}</span></button>`).join("");
   }
 
+  // "Oct 16", or "Oct 16, 2025" when the night was not in the current year (local time at the site).
+  function lastSeenLabel(utc) {
+    const d = new Date(utc.replace(" ", "T") + ":00Z");
+    if (Number.isNaN(d.getTime())) return utc;
+    const opts = { timeZone: "America/Chicago", month: "short", day: "numeric" };
+    if (d.getFullYear() !== new Date().getFullYear()) opts.year = "numeric";
+    return d.toLocaleDateString("en-US", opts);
+  }
   function renderList() {
     const current = location.hash.slice(1);
     const shown = state.objects.filter(matches).sort(sorters[state.sort]);
@@ -445,7 +453,8 @@
         const des = cleanId(o.designation);
         const sub = [des && des !== o.name ? des : null, o.app_type, o.constellation]
           .filter(Boolean).join(" · ");
-        const right = [o.v_mag != null ? `<span data-gl="apparent magnitude|magnitude" data-vk="mag" data-vv="${esc(o.v_mag)}">mag ${num(o.v_mag, 1)}</span>` : "", `${o.observations}× seen`].filter(Boolean).join("<br>");
+        const right = [o.v_mag != null ? `<span data-gl="apparent magnitude|magnitude" data-vk="mag" data-vv="${esc(o.v_mag)}">mag ${num(o.v_mag, 1)}</span>` : "", `${o.observations}× seen`,
+          o.last_observed ? `<span class="when" title="Last observed ${esc(o.last_observed)} UTC">${esc(lastSeenLabel(o.last_observed))}</span>` : ""].filter(Boolean).join("<br>");
         const img = o.thumb ? `<img loading="lazy" src="${esc(fileUrl(o, o.thumb))}" alt="">` : '<div class="noimg"></div>';
         return `<a class="item" href="#${esc(o.path)}" aria-current="${current === o.path}">${img}<div><div class="t">${esc(o.name)}</div><div class="s">${esc(sub)}</div></div><div class="r">${right}</div></a>`;
       }).join("");
