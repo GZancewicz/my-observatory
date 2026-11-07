@@ -197,8 +197,10 @@ def parse_card(card, img, refs, source):
     name = clean(card["name"])
     check = []
 
-    m = re.fullmatch(r"(\S{1,3}) ([A-Z][A-Za-z]{2})", name)
-    if m and m.group(2) in IAU and not (m.group(1).isdigit() and m.group(1) != "0"):  # Flamsteed numbers OCR fine; "0" is θ
+    # OCR sometimes drops the space ("nOri" for η Ori). Flamsteed numbers OCR fine,
+    # but they never start with 0: "0", "01", "02" are θ, θ¹, θ².
+    m = re.fullmatch(r"(\S{1,3}?) ?([A-Z][A-Za-z]{2})", name)
+    if m and m.group(2) in IAU and not (m.group(1).isdigit() and not m.group(1).startswith("0")):
         glyph = bayer_prefix_crop(img, card["name"])
         label, score = classify(glyph, refs) if glyph is not None and refs else (None, 0)
         if label and score >= GLYPH_MATCH:
@@ -209,6 +211,9 @@ def parse_card(card, img, refs, source):
 
     when = datetime.strptime(clean(card["date"]), "%d %b %Y, %H:%M")
     badges = {b["text"][0]: b["text"].split(":", 1)[1].strip() for b in card["badges"]}
+    for k in ("S", "T"):  # seeing and transparency are always n/5; OCR can garble the "/5" ("2/śął")
+        if k in badges and (d := re.match(r"\s*(\d)", badges[k])):
+            badges[k] = f"{d.group(1)}/5"
     stars = rating(img, card["name"])
     if not badges:
         check.append("card cut off: rating and S/T/B not visible")

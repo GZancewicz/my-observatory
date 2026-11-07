@@ -1,0 +1,776 @@
+{
+  "name": "Zosma",
+  "category": "stars",
+  "app_type": "A-Star",
+  "harvested": "2026-11-07T20:12:37Z",
+  "sources": [
+    {
+      "name": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Delta_Leonis",
+      "retrieved": "2026-11-07T20:30:06Z"
+    },
+    {
+      "name": "Wikidata",
+      "url": "https://www.wikidata.org/wiki/Q14204",
+      "retrieved": "2026-11-07T20:30:08Z"
+    }
+  ],
+  "images": {
+    "photo": {
+      "file": "photo.jpg",
+      "credit": "Wikipedia / Wikimedia Commons",
+      "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leo_constellation_map.svg/330px-Leo_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    }
+  },
+  "resolved": {
+    "method": "wikipedia-redirect",
+    "simbad_id": "* del Leo",
+    "wikidata": "Q14204",
+    "wikipedia": "Delta Leonis"
+  },
+  "wikipedia": {
+    "title": "Delta Leonis",
+    "description": "Binary star system in the constellation Leo",
+    "summary": "Delta Leonis, also named Zosma, is a star in the zodiac constellation of Leo. Based upon parallax measurements, it lies at a distance of about 58.4 light-years from the Sun.",
+    "intro": "Delta Leonis (δ Leonis), also named Zosma , is a star in the zodiac constellation of Leo. Based upon parallax measurements, it lies at a distance of about 58.4 light-years (17.9 parsecs) from the Sun.",
+    "url": "https://en.wikipedia.org/wiki/Delta_Leonis",
+    "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leo_constellation_map.svg/330px-Leo_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Leo_constellation_map.svg/330px-Leo_constellation_map.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikidata": "Q14204",
+    "sections_count": 3
+  },
+  "wikidata": {
+    "id": "Q14204",
+    "facts": {
+      "spectral class": [
+        {
+          "value": "A4V"
+        },
+        {
+          "value": "A3"
+        },
+        {
+          "value": "A5Vw"
+        },
+        {
+          "value": "A4Vvar"
+        },
+        {
+          "value": "A3V"
+        },
+        {
+          "value": "A5IV(n)"
+        },
+        {
+          "value": "A2V"
+        },
+        {
+          "value": "A4"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Leo"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 2.53,
+          "unit": "",
+          "plus": 0.050000000000000266,
+          "minus": 0.04999999999999982
+        },
+        {
+          "value": 2.79,
+          "unit": ""
+        },
+        {
+          "value": 2.68,
+          "unit": ""
+        },
+        {
+          "value": 2.44,
+          "unit": ""
+        },
+        {
+          "value": 2.41,
+          "unit": ""
+        },
+        {
+          "value": 2.33,
+          "unit": ""
+        },
+        {
+          "value": 2.28,
+          "unit": ""
+        },
+        {
+          "value": 2.24,
+          "unit": "",
+          "plus": 0.05999999999999961,
+          "minus": 0.06000000000000005
+        },
+        {
+          "value": 2.571632,
+          "unit": "",
+          "plus": 0.00463599999999964,
+          "minus": 0.0046360000000000845
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 17.693,
+          "unit": "pc",
+          "plus": 0.259999999999998,
+          "minus": 0.26000000000000156
+        }
+      ],
+      "mass": [
+        {
+          "value": 2.2,
+          "unit": "M☉"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 8297.0,
+          "unit": "K"
+        },
+        {
+          "value": 8222.0,
+          "unit": "K"
+        },
+        {
+          "value": 8085.0,
+          "unit": "K"
+        },
+        {
+          "value": 8080.0,
+          "unit": "K"
+        },
+        {
+          "value": 7889.0,
+          "unit": "K"
+        },
+        {
+          "value": 7881.0,
+          "unit": "K"
+        },
+        {
+          "value": 8037.0,
+          "unit": "K"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 5200.0,
+          "unit": "centimetre per square second"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -20.6,
+          "unit": "km/s",
+          "plus": 2.0,
+          "minus": 2.0
+        },
+        {
+          "value": -20.9,
+          "unit": "km/s",
+          "plus": 0.5999999999999979,
+          "minus": 0.6000000000000014
+        },
+        {
+          "value": -20.2,
+          "unit": "km/s"
+        },
+        {
+          "value": -23.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -15.9,
+          "unit": "km/s"
+        },
+        {
+          "value": -17.9,
+          "unit": "km/s"
+        },
+        {
+          "value": -22.3,
+          "unit": "km/s"
+        },
+        {
+          "value": -19.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -25.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -18.0,
+          "unit": "km/s"
+        },
+        {
+          "value": -14.1,
+          "unit": "km/s"
+        },
+        {
+          "value": -23.9,
+          "unit": "km/s"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 46.1,
+          "unit": "mas",
+          "plus": 7.299999999999997,
+          "minus": 7.300000000000004
+        },
+        {
+          "value": 55.82,
+          "unit": "mas",
+          "plus": 0.25,
+          "minus": 0.25
+        },
+        {
+          "value": 56.52,
+          "unit": "mas",
+          "plus": 0.8299999999999983,
+          "minus": 0.8300000000000054
+        }
+      ],
+      "instance of": [
+        {
+          "value": "double star"
+        },
+        {
+          "value": "variable star"
+        },
+        {
+          "value": "infrared source"
+        },
+        {
+          "value": "high proper-motion star"
+        },
+        {
+          "value": "near-infrared source"
+        },
+        {
+          "value": "ultraviolet source"
+        },
+        {
+          "value": "star"
+        },
+        {
+          "value": "suspected variable"
+        },
+        {
+          "value": "subgiant"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 168.52777245409,
+          "unit": "°"
+        }
+      ],
+      "declination": [
+        {
+          "value": 20.52313704127,
+          "unit": "°"
+        }
+      ]
+    },
+    "all_claims": {
+      "image": [
+        {
+          "value": "Leo constellation map.png",
+          "type": "commonsMedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Leo_constellation_map.png"
+        }
+      ],
+      "instance of": [
+        {
+          "value": "high proper-motion star",
+          "qid": "Q2247863",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "near-infrared source",
+          "qid": "Q67206785",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "ultraviolet source",
+          "qid": "Q71798788",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "star",
+          "qid": "Q523",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "suspected variable",
+          "qid": "Q66521853",
+          "type": "wikibase-item"
+        },
+        {
+          "value": "subgiant",
+          "qid": "Q6227",
+          "type": "wikibase-item"
+        }
+      ],
+      "constellation": [
+        {
+          "value": "Leo",
+          "qid": "Q8853",
+          "type": "wikibase-item"
+        }
+      ],
+      "spectral class": [
+        {
+          "value": "A5IV(n)",
+          "type": "string"
+        }
+      ],
+      "part of": [
+        {
+          "value": "Right Wall of the Supreme Palace Enclosure",
+          "qid": "Q10941554",
+          "type": "wikibase-item"
+        }
+      ],
+      "catalog code": [
+        {
+          "value": "2MASS J11140651+2031258",
+          "type": "string"
+        },
+        {
+          "value": "HD 97603",
+          "type": "string"
+        },
+        {
+          "value": "HIP 54872",
+          "type": "string"
+        },
+        {
+          "value": "HR 4357",
+          "type": "string"
+        },
+        {
+          "value": "SAO 81727",
+          "type": "string"
+        },
+        {
+          "value": "GJ 419",
+          "type": "string"
+        },
+        {
+          "value": "δ Leo",
+          "type": "string"
+        },
+        {
+          "value": "ASCC 776748",
+          "type": "string"
+        },
+        {
+          "value": "BD+21 2298",
+          "type": "string"
+        },
+        {
+          "value": "CCDM J11141+2032A",
+          "type": "string"
+        },
+        {
+          "value": "CSV 101190",
+          "type": "string"
+        },
+        {
+          "value": "FK5 422",
+          "type": "string"
+        },
+        {
+          "value": "GC 15438",
+          "type": "string"
+        },
+        {
+          "value": "GCRV 6892",
+          "type": "string"
+        },
+        {
+          "value": "HIC 54872",
+          "type": "string"
+        },
+        {
+          "value": "IDS 11088+2104 A",
+          "type": "string"
+        },
+        {
+          "value": "IRC +20226",
+          "type": "string"
+        },
+        {
+          "value": "JP11 2038",
+          "type": "string"
+        },
+        {
+          "value": "LSPM J1114+2031",
+          "type": "string"
+        },
+        {
+          "value": "LTT 13027",
+          "type": "string"
+        },
+        {
+          "value": "N30 2637",
+          "type": "string"
+        },
+        {
+          "value": "NLTT 26691",
+          "type": "string"
+        },
+        {
+          "value": "NSV 5143",
+          "type": "string"
+        },
+        {
+          "value": "PLX 2614",
+          "type": "string"
+        },
+        {
+          "value": "PLX 2614.00",
+          "type": "string"
+        },
+        {
+          "value": "PMC 90-93 304",
+          "type": "string"
+        },
+        {
+          "value": "PPM 100996",
+          "type": "string"
+        },
+        {
+          "value": "ROT 1671",
+          "type": "string"
+        },
+        {
+          "value": "SRS 30422",
+          "type": "string"
+        },
+        {
+          "value": "TD1 15474",
+          "type": "string"
+        },
+        {
+          "value": "TYC 1439-2479-1",
+          "type": "string"
+        },
+        {
+          "value": "UBV 10242",
+          "type": "string"
+        },
+        {
+          "value": "uvby98 100097603",
+          "type": "string"
+        },
+        {
+          "value": "WDS J11141+2031A",
+          "type": "string"
+        },
+        {
+          "value": "YPAC 46",
+          "type": "string"
+        },
+        {
+          "value": "HGAM 602",
+          "type": "string"
+        },
+        {
+          "value": "WEB 9902",
+          "type": "string"
+        },
+        {
+          "value": "68 Leo",
+          "type": "string"
+        },
+        {
+          "value": "Gaia DR3 3990320597065899776",
+          "type": "string"
+        },
+        {
+          "value": "TIC 159523958",
+          "type": "string"
+        },
+        {
+          "value": "AG+20 1243",
+          "type": "string"
+        },
+        {
+          "value": "BDS 5709 A",
+          "type": "string"
+        },
+        {
+          "value": "UBV M 16901",
+          "type": "string"
+        },
+        {
+          "value": "GEN# +1.00097603",
+          "type": "string"
+        },
+        {
+          "value": "SKY# 21407",
+          "type": "string"
+        }
+      ],
+      "Freebase ID": [
+        {
+          "value": "/m/057t3f",
+          "type": "external-id",
+          "url": "https://www.google.com/search?kgmid=/m/057t3f"
+        }
+      ],
+      "type of variable star": [
+        {
+          "value": "Cepheid variable",
+          "qid": "Q188593",
+          "type": "wikibase-item"
+        }
+      ],
+      "ARICNS": [
+        {
+          "value": "00854",
+          "type": "external-id",
+          "url": "https://wwwadd.zah.uni-heidelberg.de/datenbanken/aricns/cnspages/4c00854.htm"
+        }
+      ],
+      "apparent magnitude": [
+        {
+          "value": 2.53,
+          "unit": "",
+          "plus": 0.050000000000000266,
+          "minus": 0.04999999999999982,
+          "type": "quantity"
+        },
+        {
+          "value": 2.79,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 2.68,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 2.44,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 2.41,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 2.33,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 2.28,
+          "unit": "",
+          "type": "quantity"
+        },
+        {
+          "value": 2.24,
+          "unit": "",
+          "plus": 0.05999999999999961,
+          "minus": 0.06000000000000005,
+          "type": "quantity"
+        },
+        {
+          "value": 2.571632,
+          "unit": "",
+          "plus": 0.00463599999999964,
+          "minus": 0.0046360000000000845,
+          "type": "quantity"
+        }
+      ],
+      "mass": [
+        {
+          "value": 2.2,
+          "unit": "M☉",
+          "type": "quantity"
+        }
+      ],
+      "parallax": [
+        {
+          "value": 55.82,
+          "unit": "mas",
+          "plus": 0.25,
+          "minus": 0.25,
+          "type": "quantity"
+        }
+      ],
+      "radial velocity": [
+        {
+          "value": -20.9,
+          "unit": "km/s",
+          "plus": 0.5999999999999979,
+          "minus": 0.6000000000000014,
+          "type": "quantity"
+        }
+      ],
+      "distance from Earth": [
+        {
+          "value": 17.693,
+          "unit": "pc",
+          "plus": 0.259999999999998,
+          "minus": 0.26000000000000156,
+          "type": "quantity"
+        }
+      ],
+      "SIMBAD ID": [
+        {
+          "value": "* del Leo",
+          "type": "external-id",
+          "url": "https://simbad.u-strasbg.fr/simbad/sim-id?Ident=%2A%20del%20Leo"
+        }
+      ],
+      "stellar rotational velocity": [
+        {
+          "value": 180.0,
+          "unit": "km/s",
+          "type": "quantity"
+        }
+      ],
+      "angular diameter": [
+        {
+          "value": 1.18,
+          "unit": "mas",
+          "plus": 0.010000000000000009,
+          "minus": 0.010000000000000009,
+          "type": "quantity"
+        }
+      ],
+      "right ascension": [
+        {
+          "value": 168.52777245409,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "declination": [
+        {
+          "value": 20.52313704127,
+          "unit": "°",
+          "type": "quantity"
+        }
+      ],
+      "epoch": [
+        {
+          "value": "J2000.0",
+          "qid": "Q1264450",
+          "type": "wikibase-item"
+        }
+      ],
+      "effective temperature": [
+        {
+          "value": 8297.0,
+          "unit": "K",
+          "type": "quantity"
+        }
+      ],
+      "surface gravity": [
+        {
+          "value": 5200.0,
+          "unit": "centimetre per square second",
+          "type": "quantity"
+        }
+      ],
+      "declination component of proper motion": [
+        {
+          "value": -129.88,
+          "unit": "mas/yr",
+          "plus": 0.21000000000000796,
+          "minus": 0.21000000000000796,
+          "type": "quantity"
+        }
+      ],
+      "right ascension component of proper motion": [
+        {
+          "value": 143.42,
+          "unit": "mas/yr",
+          "plus": 0.30000000000001137,
+          "minus": 0.29999999999998295,
+          "type": "quantity"
+        }
+      ],
+      "Gaia ID": [
+        {
+          "value": "3990320597065899776",
+          "type": "external-id",
+          "url": "https://vizier.cds.unistra.fr/viz-bin/VizieR-S?Gaia%20DR3%203990320597065899776"
+        }
+      ]
+    },
+    "property_ids": {
+      "image": "P18",
+      "instance of": "P31",
+      "constellation": "P59",
+      "spectral class": "P215",
+      "part of": "P361",
+      "catalog code": "P528",
+      "Freebase ID": "P646",
+      "type of variable star": "P881",
+      "ARICNS": "P999",
+      "apparent magnitude": "P1215",
+      "mass": "P2067",
+      "parallax": "P2214",
+      "radial velocity": "P2216",
+      "distance from Earth": "P2583",
+      "SIMBAD ID": "P3083",
+      "stellar rotational velocity": "P4296",
+      "angular diameter": "P5348",
+      "right ascension": "P6257",
+      "declination": "P6258",
+      "epoch": "P6259",
+      "effective temperature": "P6879",
+      "surface gravity": "P7015",
+      "declination component of proper motion": "P10751",
+      "right ascension component of proper motion": "P10752",
+      "Gaia ID": "P13228"
+    },
+    "commons_image": "Leo constellation map.png",
+    "url": "https://www.wikidata.org/wiki/Q14204"
+  },
+  "summary": {
+    "mass": {
+      "value": 2.2,
+      "unit": "M☉"
+    },
+    "constellation": "Leo",
+    "teff_k": 8297.0,
+    "v_mag": 2.53,
+    "distance_ly": 57.7,
+    "description": "Binary star system in the constellation Leo"
+  },
+  "id": "zosma",
+  "path": "stars/zosma",
+  "gz_id": "GZ-185",
+  "observations": [
+    {
+      "datetime": "2026-11-02 05:44",
+      "location": "Royse City, Texas",
+      "rating": 2.0,
+      "seeing": "3/5",
+      "transparency": "3/5",
+      "bortle": "6",
+      "incomplete": false,
+      "utc": "2026-11-02 11:44"
+    }
+  ]
+}
