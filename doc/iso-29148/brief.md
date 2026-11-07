@@ -67,7 +67,50 @@ The originator describes the current app as "kind of boring" and wants a more en
 - The originator's MO Pro screenshot route is one input. Other inputs are expected: other astronomy apps, other observing logs, CSV files, or a plain list of object names.
 - The research step (name resolution and data collection from public services) runs for any user's objects, not only on the originator's machine.
 
-### 2.6 Treated as a real development project
+### 2.6 Further features
+
+The originator selected these on 2026-11-07 from a list of suggestions.
+
+Seeing the sky as the observer saw it:
+
+- **Start from your own sky.** A trip to an observed object opens at the observer's site on the night of the observation, with the horizon, the object's altitude, the sky glow for the logged Bortle class and the logged conditions. The view then lifts off from the ground and travels to the object.
+- **Light-travel time.** For each object, the app shows how long its light took to reach the observer and the year it left the object, with a marker for what was happening on Earth in that year.
+
+Getting around:
+
+- **Time controls.** The user can run the clock forwards or backwards. Planets and moons move along their orbits, and stars move by their proper motion and radial velocity over thousands of years, so constellation patterns change shape.
+- **Scale modes.** The user can switch between true scale, a compressed scale and a mode that fits every object in view. A scale bar shows the current scale and changes as the user travels.
+- **Guided tours.** Prepared routes through the user's objects, for example a night's session in the order observed, nearest to farthest, hottest to coolest, or one constellation at a time.
+- **Look back at the Sun.** From any star, the user can turn to find the Sun. The app shows how bright the Sun would appear from there, whether it would be visible to the naked eye, and which constellation it would appear in.
+
+More to see:
+
+- **Planetary systems.** Known exoplanets are drawn around their host stars, from the NASA Exoplanet Archive.
+- **Star life stages.** For each star, the app shows where it is in its life cycle and what it will become (for example red giant, supernova, white dwarf).
+- **Unobserved objects.** Stars the user has not observed are shown faintly for context. Objects on the user's target list are highlighted as places still to visit.
+- **Size comparison.** The user can place two objects side by side in 3D to compare their sizes, extending the current Sizes page.
+
+Progress and sharing:
+
+- **Discovery log.** Objects light up as the user observes them, so the map grows with the user's observing history. The app shows counts by object type, the farthest object reached and the constellations covered.
+- **Milestones.** The app marks milestones such as every spectral class observed, a new farthest object, all main stars of a constellation, or a first planet.
+- **Share a trip.** The user can send a link to a tour of their objects, and two observers' logs can be compared in one view.
+
+Planning and presentation:
+
+- **Plan tonight.** From the user's site and tonight's sky, the app suggests unobserved objects to look for, extending the current target list.
+- **Narration.** Spoken or captioned commentary on each object, drawn from the Wikipedia and SIMBAD data the research step already collects.
+- **Sound.** Ambient audio during travel, and sonified data where it exists, such as measured stellar oscillation frequencies.
+
+### 2.7 Considered and excluded
+
+The originator considered and excluded these on 2026-11-07:
+
+- **Eyepiece view:** showing the object as it looked through the logged equipment.
+- **Club or class mode:** a shared object set that several people add to.
+- **VR and phone modes:** viewing in a VR headset, or holding up a phone to look around the sky.
+
+### 2.8 Treated as a real development project
 
 - The originator wants this run as a bona fide development project, with requirements produced through the ISO/IEC/IEEE 29148 processes before design and build.
 
