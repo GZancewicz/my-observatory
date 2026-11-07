@@ -40,25 +40,34 @@ The originator describes the current app as "kind of boring" and wants a more en
 - Deep-sky objects (clusters, nebulae, galaxies) are at very large and very different distances from stars, so scale is a central design problem. Distances run from low Earth orbit to millions of light-years.
 - The user can fly freely, jump to a chosen object, or follow a tour (for example, a night's session in the order observed, or nearest to farthest).
 
-### 2.2 Heads-up display (HUD)
+### 2.2 Close approach
+
+- When the user gets close enough to an object, it is shown as a detailed body rather than a point of light.
+- A star is drawn in the right colour for its temperature and spectral class, at its right size relative to other stars, with the surface and atmospheric features a close view of the Sun shows: limb darkening, granulation, sunspots, the corona, prominences and flares.
+- These features vary with the type of star. A red giant or supergiant has a different surface, size and corona from a hot blue star or a white dwarf. Where catalogue data exists for the object (variability, rotation, flare activity, companions), the rendering reflects it; where it does not, the rendering follows what is typical for the star's type and is identifiable as such.
+- Multiple and binary stars are shown as their separate components when the user is close enough to resolve them.
+- Planets and moons show their surfaces, atmospheres, rings and phases. Deep-sky objects (clusters, nebulae, galaxies) show their structure when approached.
+- The transition from a distant point to the close-up view is continuous as the user approaches.
+
+### 2.3 Heads-up display (HUD)
 
 - A HUD shows stats about whatever the user is looking at or travelling to: name, type, distance from Earth and from the user's current position, magnitude, temperature, size, spectral class, constellation, and the user's own observing history for that object (when, where, rating, conditions, equipment).
 - The HUD also shows travel state: current position, speed (possibly as a multiple of light speed), and travel time to the target.
 - The HUD links through to the full object record that the current viewer already shows (SIMBAD, Wikidata, Wikipedia, papers).
 
-### 2.3 Absorb what has been built
+### 2.4 Absorb what has been built
 
 - The new app reuses the existing pipeline and data model: extraction, research, the per-object folders, the GZ catalogue, the overview charts and the Sizes page.
 - The existing pages may become views inside the new app or stay alongside it. This is undecided.
 
-### 2.4 Anyone can use it with their own objects
+### 2.5 Anyone can use it with their own objects
 
 - The app is restructured so that anyone can upload their own observations and the app works for them.
 - Each user has their own set of observed objects, their own sites, and their own catalogue numbering.
 - The originator's MO Pro screenshot route is one input. Other inputs are expected: other astronomy apps, other observing logs, CSV files, or a plain list of object names.
 - The research step (name resolution and data collection from public services) runs for any user's objects, not only on the originator's machine.
 
-### 2.5 Treated as a real development project
+### 2.6 Treated as a real development project
 
 - The originator wants this run as a bona fide development project, with requirements produced through the ISO/IEC/IEEE 29148 processes before design and build.
 
