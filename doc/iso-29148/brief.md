@@ -1,13 +1,13 @@
-# Brief: virtual space trip through the objects of Burnham's Celestial Handbook
+# Brief: virtual space trip through a comprehensive catalogue of celestial objects
 
 Status: crude brief, raw input to an ISO/IEC/IEEE 29148 requirements pipeline (business or mission analysis, stakeholder requirements, system/software requirements). Nothing in this document is a requirement yet. Statements below are the originator's intent, observations of the existing system, and open questions.
 
-Date: 2026-11-07 (revised the same day: object set changed to Burnham's Celestial Handbook; app separated from the existing viewer; observation status deferred)
+Date: 2026-11-07 (revised the same day: object set changed to a comprehensive directory of the kind of Burnham's Celestial Handbook, built from openly licensed catalogues; app separated from the existing viewer; observation status deferred)
 Originator: Greg Zancewicz
 
 ## 1. Summary
 
-The originator wants a new app in which the user travels through 3D space to every object catalogued in *Burnham's Celestial Handbook*. Objects are seen as the user approaches them and as the user moves away from them, and a heads-up display (HUD) shows facts about each one. When the user gets close, a star is drawn as a body with its true colour, size, surface, corona and flares.
+The originator wants a new app in which the user travels through 3D space to the objects of a comprehensive directory comparable in scope to *Burnham's Celestial Handbook*: stars, double and multiple stars, variable stars, star clusters, nebulae and galaxies. The directory is assembled from openly licensed catalogues. Objects are seen as the user approaches them and as the user moves away from them, and a heads-up display (HUD) shows facts about each one. When the user gets close, a star is drawn as a body with its true colour, size, surface, corona and flares.
 
 The app is separate from the existing My Observatory viewer on GitHub Pages. It is deployed to Render to start, on whatever stack best handles the rendering load and loads quickly. Games and existing space-simulation software have already solved many of the same problems, and their techniques are expected to be borrowed.
 
@@ -15,13 +15,23 @@ Whether the user has observed an object is not part of the first scope. It is ad
 
 ## 2. What the originator wants
 
-### 2.1 The object set: Burnham's Celestial Handbook
+### 2.1 The object set
 
-- The app contains every object listed in *Burnham's Celestial Handbook: An Observer's Guide to the Universe Beyond the Solar System* (Robert Burnham Jr., three volumes, Dover). The handbook is arranged by constellation and lists double and multiple stars, variable stars, star clusters, nebulae and galaxies, with notes on each.
-- The user can travel to each of these objects.
-- Each object is identified by its catalogue designations (Bayer, Flamsteed, Messier, NGC, IC and others) and linked to current data from public astronomical services (SIMBAD, Gaia, VizieR, Wikidata, Wikipedia and others), so that positions, distances, magnitudes, spectral types and sizes come from current measurements, not from the 1978 text.
-- The handbook's descriptive text is copyrighted and is not reproduced. The app uses the list of objects and current public data about them.
-- The Sun is the starting point. Whether the solar system itself (planets, moons) is rendered is an open question, since the handbook does not cover it.
+- The originator wants a comprehensive directory of the kind of *Burnham's Celestial Handbook* (Robert Burnham Jr., three volumes, Dover), which lists double and multiple stars, variable stars, star clusters, nebulae and galaxies by constellation. The handbook itself is copyrighted, so the directory is assembled from catalogues whose terms allow use with credit:
+
+  | Object kind | Catalogue | Terms (as found 2026-11-07, to be confirmed) |
+  |---|---|---|
+  | Galaxies, star clusters, nebulae (all NGC and IC objects, with Messier cross-references) | OpenNGC | CC BY-SA 4.0: credit required; published copies of the data, changed or not, carry the same licence |
+  | Stars | Gaia DR3 (ESA) | Free to use with credit to "ESA/Gaia/DPAC" |
+  | Double and multiple stars | Washington Double Star Catalog (US Naval Observatory) | Open for public use; credit to USNO requested; no explicit licence found |
+  | Variable stars | AAVSO International Variable Star Index (VSX), as mirrored by NASA HEASARC | HEASARC copy listed as a US government work |
+
+- OpenNGC is the core of the directory: it holds the clusters, nebulae and galaxies that are the main destinations.
+- Gaia DR3 is incomplete for the very brightest stars, which saturate its detectors. These are filled from the Hipparcos catalogue (ESA), whose terms are to be confirmed.
+- The catalogues are cross-matched through SIMBAD, so each object carries all its designations (Bayer, Flamsteed, Messier, NGC, IC, HD, Gaia, WDS and others) and appears once.
+- Further data per object (spectral type, temperature, radius, orbits of double stars, variability periods, distances to galaxies) comes from public services such as SIMBAD, VizieR, NED, Wikidata and Wikipedia.
+- The user can travel to each object in the directory.
+- The Sun is the starting point. Whether the solar system itself (planets, moons) is rendered is an open question; none of the catalogues above covers it.
 
 ### 2.2 Travel
 
@@ -37,7 +47,7 @@ Whether the user has observed an object is not part of the first scope. It is ad
 - When the user gets close enough to an object, it is shown as a detailed body rather than a point of light.
 - A star is drawn in the right colour for its temperature and spectral class, at its right size relative to other stars, with the surface and atmospheric features a close view of the Sun shows: limb darkening, granulation, sunspots, the corona, prominences and flares.
 - These features vary with the type of star. A red giant or supergiant has a different surface, size and corona from a hot blue star or a white dwarf. Where catalogue data exists for the object (variability, rotation, flare activity, companions), the rendering reflects it; where it does not, the rendering follows what is typical for the star's type and is identifiable as such.
-- Double and multiple stars, a large part of the handbook, are shown as their separate components when the user is close enough to resolve them, with their orbits where these are known.
+- Double and multiple stars are shown as their separate components when the user is close enough to resolve them, with their orbits where these are known.
 - Variable stars change brightness, and where relevant colour and size, according to their known period and type.
 - Star clusters, nebulae and galaxies show their structure when approached: individual stars in a cluster, the gas and dust of a nebula, the arms and core of a galaxy.
 - The transition from a distant point to the close-up view is continuous as the user approaches.
@@ -55,11 +65,11 @@ The originator selected these on 2026-11-07 from a list of suggestions. Features
 - **Light-travel time.** For each object, the app shows how long its light takes to reach Earth and the year the light now arriving left the object, with a marker for what was happening on Earth in that year.
 - **Time controls.** The user can run the clock forwards or backwards. Stars move by their proper motion and radial velocity over thousands of years, so constellation patterns change shape.
 - **Scale modes.** The user can switch between true scale, a compressed scale and a mode that fits every object in view. A scale bar shows the current scale and changes as the user travels.
-- **Guided tours.** Prepared routes through the objects, for example one constellation at a time in the handbook's order, nearest to farthest, hottest to coolest, or all objects of one type.
+- **Guided tours.** Prepared routes through the objects, for example one constellation at a time, nearest to farthest, hottest to coolest, or all objects of one type.
 - **Look back at the Sun.** From any object, the user can turn to find the Sun. The app shows how bright the Sun would appear from there, whether it would be visible to the naked eye, and which constellation it would appear in.
 - **Planetary systems.** Known exoplanets are drawn around their host stars, from the NASA Exoplanet Archive.
 - **Star life stages.** For each star, the app shows where it is in its life cycle and what it will become (for example red giant, supernova, white dwarf).
-- **Background stars.** Stars outside the handbook are shown for context, from a general star catalogue such as Gaia or Hipparcos, so the sky does not look empty between handbook objects.
+- **Background stars.** Gaia DR3 holds about 1.8 billion stars, far more than can be destinations. Stars below the cut that defines the destination set are still shown faintly for context, so the sky looks full between destinations.
 - **Size comparison.** The user can place two objects side by side in 3D to compare their sizes.
 - **Narration.** Spoken or captioned commentary on each object, drawn from public sources such as Wikipedia and SIMBAD.
 - **Sound.** Ambient audio during travel, and sonified data where it exists, such as measured stellar oscillation frequencies.
@@ -110,7 +120,7 @@ Not in the first scope. The originator expects to add it later.
 
 - A user can upload their own observations, and the app marks the objects they have observed.
 - The originator's MO Pro screenshot route is one input. Others are expected: other astronomy apps, other observing logs, CSV files, or a plain list of object names.
-- Objects the user has observed that are not in the handbook are added to their view.
+- Objects the user has observed that are not in the directory are added to their view.
 - Each user has their own observed objects, sites and catalogue numbering.
 
 Features that depend on this, selected by the originator on 2026-11-07:
@@ -119,7 +129,7 @@ Features that depend on this, selected by the originator on 2026-11-07:
 - **Discovery log.** Objects light up as the user observes them. The app shows counts by object type, the farthest object observed and the constellations covered.
 - **Milestones.** For example every spectral class observed, a new farthest object, all main stars of a constellation.
 - **Share a trip.** The user can send a link to a tour of their objects, and two observers' logs can be compared in one view.
-- **Plan tonight.** From the user's site and tonight's sky, the app suggests handbook objects not yet observed.
+- **Plan tonight.** From the user's site and tonight's sky, the app suggests directory objects not yet observed.
 - **Observing history in the HUD.** When, where, rating, conditions and equipment for each of the user's sightings.
 
 ## 4. What exists today
@@ -136,17 +146,18 @@ At the date of this brief it holds about 345 observations of about 160 objects, 
 ## 5. Likely stakeholders
 
 - The originator, as first user, product owner and developer.
-- Amateur astronomers who use Burnham's Celestial Handbook or observe the objects in it.
+- Amateur astronomers who observe stars, double stars, variable stars and deep-sky objects.
 - Casual users interested in exploring space.
 - Possibly educators and students.
-- Operators of the public data services the app depends on (CDS, ESA Gaia archive, NASA Exoplanet Archive, Wikimedia), whose usage policies and rate limits apply.
-- The rights holder of Burnham's Celestial Handbook, regarding use of the object list and the title.
+- Maintainers of the source catalogues (OpenNGC, ESA Gaia and Hipparcos, US Naval Observatory, AAVSO), whose terms and credit lines apply.
+- Operators of the public data services the app depends on (CDS SIMBAD and VizieR, NED, NASA HEASARC, NASA Exoplanet Archive, Wikimedia), whose usage policies and rate limits apply.
 - Render, as the first host, and whoever pays for hosting.
 
 ## 6. Constraints and conditions known now
 
 - Public data sources only, used within their terms and rate limits.
-- The handbook's text is not reproduced.
+- Object data comes from openly licensed catalogues. Each catalogue is credited as its terms require, and published copies of OpenNGC data carry CC BY-SA 4.0.
+- The text of Burnham's Celestial Handbook and other copyrighted guides is not used.
 - Deployed to Render to start.
 - Separate from the existing GitHub Pages viewer.
 - VR and phone modes are excluded.
@@ -154,8 +165,8 @@ At the date of this brief it holds about 345 observations of about 160 objects, 
 
 ## 7. Open questions for the pipeline
 
-1. Is there a machine-readable list of the handbook's objects, or must one be compiled from the volumes? How many objects are there, and how are ambiguous or obsolete designations resolved?
-2. Can the handbook's name be used in the app, or only its object list?
+1. Which stars are destinations? Gaia DR3 is far too large to use whole; the cut might be by magnitude, by distance, by having a name or Bayer or Flamsteed designation, or by appearing in the double or variable star catalogues.
+2. Are the licence terms of each catalogue confirmed (in particular WDS, VSX and Hipparcos), and what credit lines must the app show?
 3. Is the solar system rendered, or does the trip start from the Sun as a point?
 4. How are objects with uncertain or unknown distances placed, particularly nebulae and galaxies?
 5. How realistic must the close-up rendering be, and how is the user told which details are measured and which are typical for the type?
