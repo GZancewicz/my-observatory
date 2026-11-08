@@ -39,6 +39,8 @@ Whether the user has observed an object is not part of the first scope. It is ad
 - The user can fly freely, jump to a chosen object, or follow a guided tour.
 - As the user approaches an object, it grows from a point of light into a resolved body or structure. As the user moves away, it shrinks back and stays in its correct place behind the user, where the user can turn to see it.
 - Objects the user passes on the way to a target are seen approaching and receding in the same way.
+- The user flies from a ship's bridge. The originator pictures something like the bridge of a science-fiction starship: a main viewscreen showing space ahead, with the HUD and controls arranged around it as bridge stations. The design is original and does not reproduce any film or television set, name or insignia.
+- Speed is set with a throttle slider at a helm station. Objects pass across the viewscreen according to the ship's speed, heading and position: slowly at low speed, streaming past at high speed.
 - Distances run from the nearest stars at a few light-years to galaxies at tens of millions of light-years. Making travel across this range usable is a central design problem.
 - Constellations are not physical groupings. From near the Sun the familiar patterns are visible; as the user flies away they break apart.
 
